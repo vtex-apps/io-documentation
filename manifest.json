@@ -1,0 +1,17 @@
+{
+    "vendor": "vtex",
+    "name": "io-documentation",
+    "version": "0.0.0",
+    "title": "VTEX IO Documentation",
+    "description": "VTEX IO Documentation",
+    "builders": {
+      "docs": "0.x"
+    },
+    "categories": [],
+    "registries": [
+      "smartcheckout"
+    ],
+    "settingsSchema": {},
+    "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+  }
+  
