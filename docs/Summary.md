@@ -18,6 +18,7 @@
 
 - Components
   - [General](components/general)
+    - [Image](vtex.store-components/Image.md)
   - [Navigation](components/navigation)
   - [Product Related](components/product-related)
   - [Search Related](components/search-related)
@@ -30,3 +31,5 @@
   - [Item4](resources/item4)
   - [Item5](resources/item5)
   - [Item6](resources/item6)
+
+- [Latest Features](latest)
