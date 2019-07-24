@@ -1,0 +1,79 @@
+{
+    "general": [
+        {
+            "appName": "vtex.carousel",
+            "title": "Carousel",
+            "description": "VTEX Carousel component",
+            "url": "https://github.com/vtex-apps/carousel"
+        },
+        {
+            "appName": "vtex.store-components",
+            "file": "InfoCard.md",
+            "title": "Info Card",
+            "description": "VTEX Info Card component",
+            "url": "https://github.com/vtex-apps/store-components"
+        },
+        {
+            "appName": "vtex.rich-text",
+            "title": "Rich Text",
+            "description": "VTEX Rich text component",
+            "url": "https://github.com/vtex-apps/rich-text"
+        },
+        {
+            "appName": "vtex.store-components",
+            "file": "Image.md",
+            "title": "Image",
+            "description": "VTEX Image component",
+            "url": "https://github.com/vtex-apps/store-components"
+        },
+        {
+            "appName": "vtex.store-components",
+            "file": "Notification.md",
+            "title": "Notification Message",
+            "description": "VTEX Notifications component",
+            "url": "https://github.com/vtex-apps/store-components"
+        },
+        {
+            "appName": "vtex.store-components",
+            "file": "Newsletter.md",
+            "title": "Newsletter",
+            "description": "VTEX Newsletter component",
+            "url": "https://github.com/vtex-apps/store-components"
+        },
+        {
+            "appName": "vtex.store-components",
+            "file": "Logo.md",
+            "title": "Store Logo",
+            "description": "VTEX Store Logo component",
+            "url": "https://github.com/vtex-apps/store-components"
+        },
+        {
+            "appName": "vtex.store-header",
+            "title": "Store Header",
+            "description": "VTEX Header component for IO Stores",
+            "url": "https://github.com/vtex-apps/store-header"
+        },
+        {
+            "appName": "vtex.store-footer",
+            "title": "Store Footer",
+            "description": "VTEX Footer component for IO Stores",
+            "url": "https://github.com/vtex-apps/store-footer"
+        },
+        {
+            "appName": "vtex.minicart",
+            "title": "Minicart",
+            "description": "VTEX Minicart component for IO Stores",
+            "url": "https://github.com/vtex-apps/minicart"
+        },
+        {
+            "appName": "vtex.shelf",
+            "title": "Shelf",
+            "description": "VTEX Shelf component for IO Stores",
+            "url": "https://github.com/vtex-apps/shelf"
+        }
+    ],
+    "navigation": [],
+    "product-related": [],
+    "search-related": [],
+    "all": []
+}
