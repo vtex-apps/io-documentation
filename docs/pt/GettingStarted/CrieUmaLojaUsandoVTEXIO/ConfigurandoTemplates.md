@@ -10,8 +10,6 @@ Como vimos anteriormente, a pasta responsável pela organização dos blocos e t
 
 Para compreender melhor essa estrutura, vamos dar uma olhada no template pré-definido pelo Store Theme para a página inicial da sua loja, acessando `store` > `blocks`> `home`> `home.jsonc`. 
 
-<img width="239" alt="vscode-home-step4" src="https://user-images.githubusercontent.com/52087100/61896867-3c60c300-aeec-11e9-9aa8-42a6f188a446.png">
-
 
 ```
 {
@@ -56,9 +54,9 @@ De acordo com as necessidades do seu negócio, é possível personalizar os bloc
 
 ## Declarando um novo bloco 
  
-Vamos então adicionar um novo componente [__Shelf__](*link doc de shelf*) à página inicial da loja. Para isso, devemos adicionar `shelf#deals` ao template `store.home` em `home.jsonc` e declarar o bloco mais abaixo neste mesmo arquivo. 
+Vamos então adicionar um novo componente [__Shelf__](*link doc de shelf*) à página inicial da loja. Para isso, devemos adicionar `shelf#deals` ao template `store.home` em `home.jsonc` de acordo com o posicionamento desejado para o componente e declarar o bloco mais abaixo neste mesmo arquivo.
  
-<img width="684" alt="shelf#deals declared" src="https://user-images.githubusercontent.com/52087100/61896965-6e722500-aeec-11e9-84d1-76f4a2076f94.png">
+<img width="684" alt="shelf#deals declared" src="https://user-images.githubusercontent.com/52087100/61897575-b9406c80-aeed-11e9-8656-c736e53ffcd8.png">
 
 
 ```
@@ -106,7 +104,7 @@ Vamos então adicionar um novo componente [__Shelf__](*link doc de shelf*) à p�
 O comportamento dos componentes da sua loja varia de acordo com as propriedades definidas para o bloco declarado. Confira os exemplos de configuração de blocos na [documentação](*link página doc componentes*) de cada componente. 
 </div>
 
-Ao salvar suas alterações no código e rodar `vtex link` no seu terminal, você deverá ver a nova prateleira renderizada logo abaixo a da prateleira `Top sellers` ao visitar a página inicial da sua loja:
+Ao salvar suas alterações no código e rodar `vtex link` no seu terminal, você deverá ver a nova prateleira renderizada ao visitar a página inicial da sua loja:
 
 <img width="1426" alt="best-deals" src="https://user-images.githubusercontent.com/52087100/61897037-93ff2e80-aeec-11e9-9a1c-33e0dc68e031.png">
 
