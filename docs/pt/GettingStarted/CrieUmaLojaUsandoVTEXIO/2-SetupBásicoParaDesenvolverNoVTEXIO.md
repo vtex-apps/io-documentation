@@ -56,7 +56,11 @@ Isso muda o seu toolbelt para um workspace chamado `nomeexemplo` e o cria se ele
 
 <img width="549" alt="vtex-use-nomeexemplo PT" src="https://user-images.githubusercontent.com/52087100/61886135-7ffc0280-aed5-11e9-983f-4a76615d0574.png">
 
-[DISCLAIMER ATENÇÃO] O `vtex use` faz com que todas as suas operações passem a ocorrer no workspace definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt  `vtex use master`, por exemplo. 
+
+<div class=“alert alert-warning”>
+ O <code>vtex use</code> faz com que todas as suas operações passem a ocorrer no workspace definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt  `vtex use master`, por exemplo. 
+</div>
+
 
 Com o seu próprio workspace de desenvolvimento criado, você pode navegar na sua loja através dele acessando:
 
