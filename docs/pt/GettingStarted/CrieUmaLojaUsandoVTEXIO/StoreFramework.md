@@ -1,4 +1,4 @@
-# Store framework
+# Store Framework
 
 Ao comparar duas ou mais lojas online, é possível perceber semelhanças na estrutura de todas elas. Por exemplo: independente da loja em que estamos navegando, é comum visualizarmos nas interfaces vitrines com alguns produtos em destaque, barras de busca, menus, páginas de produto com botão para comprá-lo, logo, etc.
 
