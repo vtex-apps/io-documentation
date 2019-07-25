@@ -72,7 +72,7 @@ Vamos então adicionar um novo componente [__Shelf__](*link doc de shelf*) à p�
         "itemsPerPage": 5,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Top sellers"
+        "titleText": "Best deals"
       }
     }
   },
