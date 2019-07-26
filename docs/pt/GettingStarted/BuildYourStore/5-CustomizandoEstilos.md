@@ -34,7 +34,7 @@ Por exemplo: podemos definir no arquivo `style.json` que a cor de fundo do tema 
         
 ````
 
-Faça as alteração de `"base"` no seu código e salve as alterações feitas para conferir o resultado na loja:
+Faça as alteração em `"base"` e salve as alterações feitas no seu código para conferir o resultado na loja:
 
 
 <img width="1423" alt="STORE-THEME-BLUE-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972132-31269980-afb7-11e9-863f-0727c363cb8f.png">
@@ -71,14 +71,13 @@ Salve suas alterações e acesse a sua loja mais uma vez para conferir o novo es
 
 ### Block Class
 
-Agora que você aprendeu como sobrescrever a aparência da prateleira, imagine a seguinte situação: ao invés de todas a da sua loja terem o mesmo estilo, você agora deseja que cada uma delas tenha um.
+Agora que você aprendeu como sobrescrever a aparência da prateleira, imagine a seguinte situação: ao invés de todos os Infocards da sua loja terem o mesmo estilo, você agora deseja que cada um deles tenha um.
 
-Isso quer dizer que será necessário não só declarar uma substituição de CSS para o componente Shelf, como também criar uma substituição de CSS para um bloco específico dele. 
+Isso quer dizer que será necessário não só declarar uma substituição de CSS para o componente Infocard, como também criar uma substituição de CSS para um bloco específico dele. 
 
-O __Block Class__ (`"blockClass"`), portanto, é uma propriedade que pode ser adicionada a qualquer bloco declarado e permite a customização específica dele por substituição de CSS. 
+O __Block Class__ (`"blockClass"`), portanto, é uma propriedade que pode ser adicionada a qualquer bloco declarado, permitindo sua customização exclusiva. 
 
-Por exemplo, vamos customizar a maneira como o bloco `info-card#bestdeals`
-é renderizado, adicionando a prop `"blockClass"` a ele:
+Por exemplo, vamos customizar a maneira como o bloco `info-card#bestdeals` é renderizado, adicionando a prop `"blockClass"` a ele:
 
 
 <img width="649" alt="EXEMPLO-VSCODE-BLOCKCLASS-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972722-a5ae0800-afb8-11e9-9478-222f6d317fe4.png">
