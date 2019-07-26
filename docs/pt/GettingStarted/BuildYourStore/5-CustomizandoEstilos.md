@@ -36,77 +36,83 @@ Por exemplo: podemos definir no arquivo `style.json` que a cor de fundo do tema 
 
 Faça as alteração de `"base"` no seu código e salve as alterações feitas para conferir o resultado na loja:
 
-<img width="1425" alt="store-theme-azul" src="https://user-images.githubusercontent.com/52087100/61905178-d467a800-aefe-11e9-9442-e13e1a186e95.png">
+
+<img width="1423" alt="STORE-THEME-BLUE-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972132-31269980-afb7-11e9-863f-0727c363cb8f.png">
+
+
 
 ## Estilos avançados com substituições de CSS
 
 O arquivo `style.json` possibilita a customização do seu tema de forma mais genérica. Porém, pode ser que você queira criar uma identidade mais personalizada para a sua loja, definindo uma aparência exclusiva para um componente dela. 
 
-As __substituições de CSS__ permitem que você customize componentes com estilos diferentes do tema padrão, sobrescrevendo o que foi declarado no arquivo `styles.json` para a sua loja.  Por exemplo: é possível que você deseje que as prateleiras da sua home page tenham um estilo diferente daquele genérico implementado pelo Store Theme. 
+As __substituições de CSS__ customizam componentes com estilos diferentes do tema padrão, sobrescrevendo o que foi declarado no arquivo `styles.json` para a sua loja.  É possível que você deseje que os Infocards da sua página inicial tenha um estilo diferente daquele genérico implementado pelo Store Theme, por exemplo. 
 
-Você declara as substituições de CSS criando um novo arquivo dentro da pasta `style` em `css`. O arquivo criado deve ter como nome a __app__  que terá sua customização sobrescrita, seguindo o seguinte formato: `vtex.{app}.css`. Verifique quais apps podem ter seus estilos sobrescritos acessando o `manifest.json` do seu tema. 
+Você declara novas substituições de CSS criando um novo arquivo dentro da pasta `style` em `css`. O arquivo criado deve ter como nome a __app__  que terá sua customização sobrescrita, seguindo o seguinte formato: `vtex.{app}.css`. Verifique quais apps podem ter seus estilos sobrescritos acessando o `manifest.json` do seu tema. 
 
-Dentro deste arquivo, as classes de componente que serão sobrescritas devem ser dividas para a customização, como mostra o exemplo abaixo. As classes de um componente podem ser encontradas na [documentação](*link doc*) de cada um deles.
+As classes dos componentes podem ser encontradas na [documentação](*link doc*) de cada um deles e devem ser dividas dentro do arquivo para a sua customização. 
 
-Crie o arquivo `vtex.shelf.css` na pasta `css` e declare dentro dele a seguinte substituição de CSS:
+No arquivo `vtex.store-components.css`, declare a seguinte substituição de CSS:
 
 ```
-.container {
-    background-color: #FE2E2E
+.infoCardContainer {
+ background-color: #E71111
+
 }
+
 ```
 
-Salve suas alterações e acesse a sua loja mais uma vez para conferir o estilo vermelho das prateleiras sobrescever azul da sua loja:
+Salve suas alterações e acesse a sua loja mais uma vez para conferir o novo estilo vermelho dos infocards sobrescrever o azul pré-definido para a sua loja:
 
-<img width="1421" alt="shelfs-substituição-css" src="https://user-images.githubusercontent.com/52087100/61905097-a3877300-aefe-11e9-99d7-2a688b9e334f.png">
+
+<img width="1425" alt="banner-1-substituiçãocss-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972638-7a2b1d80-afb8-11e9-8fd3-65e3852f1022.png">
+
+
+<img width="1422" alt="banner-2-sobrescrevendo-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972620-697aa780-afb8-11e9-81a9-729478961e62.png">
 
 ### Block Class
 
-Agora que você sobrescreveu a aparência das prateleiras, imagine a seguinte situação: ao invés de todas as prateleiras da sua loja terem o mesmo estilo, você agora deseja que cada uma delas tenha um.
+Agora que você aprendeu como sobrescrever a aparência da prateleira, imagine a seguinte situação: ao invés de todas a da sua loja terem o mesmo estilo, você agora deseja que cada uma delas tenha um.
 
 Isso quer dizer que será necessário não só declarar uma substituição de CSS para o componente Shelf, como também criar uma substituição de CSS para um bloco específico dele. 
 
 O __Block Class__ (`"blockClass"`), portanto, é uma propriedade que pode ser adicionada a qualquer bloco declarado e permite a customização específica dele por substituição de CSS. 
 
-Por exemplo, vamos customizar a maneira como o bloco que declaramos `shelf#deals` é renderizado:
+Por exemplo, vamos customizar a maneira como o bloco `info-card#bestdeals`
+é renderizado, adicionando a prop `"blockClass"` a ele:
 
-IMAGEM VSCODE
+
+<img width="649" alt="EXEMPLO-VSCODE-BLOCKCLASS-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972722-a5ae0800-afb8-11e9-9478-222f6d317fe4.png">
+
 
 ```
-"shelf#deals": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 5,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Best deals",
-        "blockClass": "secondshelf",
-      }
-    }
-  },
-  
-  ```
+"info-card#bestdeals": {
+   "props": {
+     "blockClass": "sales",
+     "isFullModeStyle": false,
+     "textPosition": "center",
+     "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
+     "headline": "BEST DEALS",
+     "callToActionText": "DISCOVER",
+     "callToActionUrl": "/sale/d",
+     "textAlignment": "center"
+   }
+ },
+```
 
 <div class=“alert alert-info”>
 A propriedade `"blockClass"` pode ter o valor de sua preferência, desde que ele seja referenciado corretamente no arquivo de CSS criado. 
 </div>
 
-Para referenciar o bloco, basta adicionar o valor da propriedade `"blockClass"` na substituição de CSS do seu componente seguindo o formato `.{class}--{blockClassvalue}`. 
+Para referenciar corretamente o bloco, basta adicionar o valor da propriedade `"blockClass"` na substituição de CSS do seu componente seguindo o formato `.{class}--{blockClassvalue}`. 
 
 ```
-.container--secondshelf {
-    background-color: #FE2E2E
+.container--sales {
+    background-color: #E6BB12
+
 }
 ```
 
 Depois de salvar as alterações feitas, conseguimos ver as duas prateleiras customizadas de formas diferentes:
-
-IMAGEM RENDERIZADO
 
 
 <div class=“alert alert-warning”>
@@ -116,9 +122,3 @@ As substituições de CSS só podem ser alteradas manualmente por código enquan
 Ao longo desse tutorial, você entendeu o que é Store Framework, Toolbelt e Store Theme, além de aprender como estruturar as páginas da sua loja configurando templates e customizando estilos. Para continuar aprendendo sobre o VTEX IO, não se esqueça de acessar o restante da nossa [documentação](link página docs). 
 
 
-
-  
-
-Vamos escrever um pouco de CSS, para acrescentar uma linha vermelha sólida:
-
-  
