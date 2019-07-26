@@ -75,10 +75,9 @@ Agora que você aprendeu como sobrescrever a aparência da prateleira, imagine a
 
 Isso quer dizer que será necessário não só declarar uma substituição de CSS para o componente Infocard, como também criar uma substituição de CSS para um bloco específico dele. 
 
-O __Block Class__ (`"blockClass"`), portanto, é uma propriedade que pode ser adicionada a qualquer bloco declarado, permitindo sua customização exclusiva. 
+O __Block Class__ (`"blockClass"`) é uma propriedade de alguns componentes do Store Theme que, quando declarada em um bloco, permite a sua customização exclusiva. 
 
 Por exemplo, vamos customizar a maneira como o bloco `info-card#bestdeals` é renderizado, adicionando a prop `"blockClass"` a ele:
-
 
 <img width="649" alt="EXEMPLO-VSCODE-BLOCKCLASS-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972722-a5ae0800-afb8-11e9-9478-222f6d317fe4.png">
 
@@ -97,6 +96,7 @@ Por exemplo, vamos customizar a maneira como o bloco `info-card#bestdeals` é re
    }
  },
 ```
+
 
 <div class=“alert alert-info”>
 A propriedade `"blockClass"` pode ter o valor de sua preferência, desde que ele seja referenciado corretamente no arquivo de CSS criado. 
