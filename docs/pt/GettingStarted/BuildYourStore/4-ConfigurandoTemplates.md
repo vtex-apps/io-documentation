@@ -61,16 +61,18 @@ Vamos então adicionar um novo componente [__Infocard__](*link doc infocard*) à
 
 ```
 "info-card#bestdeals": {
-   "props": {
-     "isFullModeStyle": false,
-     "textPosition": "center",
-     "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
-     "headline": "BEST DEALS",
-     "callToActionText": "DISCOVER",
-     "callToActionUrl": "/sale/d",
-     "textAlignment": "center"
-   }
- },
+    "props": {
+      "id": "sales",
+      "blockClass": "sales",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
+      "headline": "BEST DEALS",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
 
 ```
 
