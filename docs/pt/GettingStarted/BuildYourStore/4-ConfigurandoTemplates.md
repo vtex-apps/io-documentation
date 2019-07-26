@@ -29,13 +29,13 @@ Para compreender melhor essa estrutura, vamos dar uma olhada no template pré-de
 ```
 Como podemos ver, o template da página inicial padrão `store.home` declara os seguintes blocos: 
 
-- carousel#home
-- flex-layout.row#deals
-- shelf#home
-- info-card#home
-- rich-text#question
-- rich-text#link
-- newsletter
+- `"carousel#home"`
+- `"flex-layout.row#deals"`
+- `"shelf#home"`
+- `"info-card#home"`
+- `"rich-text#question"`
+- `"rich-text#link"`
+- `"newsletter"`
 
 Isso quer dizer que esses blocos declarados serão, na ordem em que estão dispostos, os componentes da página inicial padrão da sua loja. 
 
@@ -54,7 +54,7 @@ De acordo com as necessidades do seu negócio, é possível personalizar os bloc
 
 ## Declarando um novo bloco 
  
-Vamos então adicionar um novo componente [__Infocard__](*link doc infocard*) à página inicial da loja, antes da prateleira. Para isso, devemos adicionar `info-cardf#bestdeals` ao template `store.home` em `home.jsonc` e declarar o bloco mais abaixo neste mesmo arquivo.
+Vamos então adicionar um novo componente [__Infocard__](*link doc infocard*) à página inicial da loja. Para isso, devemos adicionar `info-cardf#bestdeals` ao template `store.home` em `home.jsonc` e declarar o bloco mais abaixo neste mesmo arquivo.
  
 <img width="645" alt="newblock-step4" src="https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png">
 
@@ -63,7 +63,6 @@ Vamos então adicionar um novo componente [__Infocard__](*link doc infocard*) à
 "info-card#bestdeals": {
     "props": {
       "id": "sales",
-      "blockClass": "sales",
       "isFullModeStyle": false,
       "textPosition": "center",
       "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
@@ -80,11 +79,12 @@ Vamos então adicionar um novo componente [__Infocard__](*link doc infocard*) à
 O comportamento dos componentes da sua loja varia de acordo com as propriedades definidas para o bloco declarado. Confira os exemplos de configuração de blocos na [documentação](*link página doc componentes*) de cada componente. 
 </div>
 
-Ao salvar suas alterações no código e rodar `vtex link` no seu terminal, você deverá ver o novo Infocard renderizado ao visitar a página inicial da sua loja:
+Ao salvar suas alterações no código e rodar `vtex link` no seu terminal, você deverá ver o novo componente Infocard renderizado na página inicial da sua loja:
 
 <img width="1422" alt="BANNER-INFOCARD-STEP4-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972032-e73db380-afb6-11e9-833e-977964fe5105.png">
 
 <div class=“alert alert-warning”>
-As mudanças serão refletidas no workspace em que elas foram feitas. Por isso, ao conferir a renderização do novo infocard na sua loja, não se esqueça de conferir qual workspace da conta você está acessando.
+As mudanças serão refletidas no workspace em que elas foram feitas. Por isso, ao conferir a renderização do novo Infocard na sua loja, não se esqueça de conferir qual workspace da conta você está acessando.
 </div>
-
+ 
+Agora que você entendeu sobre a configuração dos templates do seu tema, vamos aprender a personalizá-los com a customização dos seus estilos. 
