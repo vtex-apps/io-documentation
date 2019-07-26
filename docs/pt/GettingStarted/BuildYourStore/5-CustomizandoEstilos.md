@@ -79,22 +79,23 @@ O __Block Class__ (`"blockClass"`) é uma propriedade de alguns componentes do S
 
 Por exemplo, vamos customizar a maneira como o bloco `info-card#bestdeals` é renderizado, adicionando a prop `"blockClass"` a ele:
 
-<img width="649" alt="EXEMPLO-VSCODE-BLOCKCLASS-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972722-a5ae0800-afb8-11e9-9478-222f6d317fe4.png">
-
+<img width="639" alt="INFOCARD-BLOCKCLASS-FORREAL-REAL" src="https://user-images.githubusercontent.com/52087100/61976127-54564680-afc1-11e9-9f62-ab3473639805.png">
 
 ```
 "info-card#bestdeals": {
-   "props": {
-     "blockClass": "sales",
-     "isFullModeStyle": false,
-     "textPosition": "center",
-     "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
-     "headline": "BEST DEALS",
-     "callToActionText": "DISCOVER",
-     "callToActionUrl": "/sale/d",
-     "textAlignment": "center"
-   }
- },
+    "props": {
+      "id": "sales",
+      "blockClass": "sales",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
+      "headline": "BEST DEALS",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+
 ```
 
 
@@ -102,16 +103,19 @@ Por exemplo, vamos customizar a maneira como o bloco `info-card#bestdeals` é re
 A propriedade `"blockClass"` pode ter o valor de sua preferência, desde que ele seja referenciado corretamente no arquivo de CSS criado. 
 </div>
 
-Para referenciar corretamente o bloco, basta adicionar o valor da propriedade `"blockClass"` na substituição de CSS do seu componente seguindo o formato `.{class}--{blockClassvalue}`. 
+Para referenciar corretamente o bloco, basta adicionar o valor da propriedade `"blockClass"` em uma substituição de CSS do seu componente seguindo o formato `.{class}--{blockClassvalue}`. 
 
 ```
-.container--sales {
-    background-color: #E6BB12
-
+.infoCardContainer--sales {
+  background-color: #E6BB12
 }
+
 ```
 
-Depois de salvar as alterações feitas, conseguimos ver as duas prateleiras customizadas de formas diferentes:
+Depois de salvar as alterações feitas, será possível visualizar o Infocard com a sua customização exclusiva:
+
+
+<img width="1426" alt="infocard-yellow-forreal" src="https://user-images.githubusercontent.com/52087100/61976477-405f1480-afc2-11e9-842d-de5caa3f07d9.png">
 
 
 <div class=“alert alert-warning”>
