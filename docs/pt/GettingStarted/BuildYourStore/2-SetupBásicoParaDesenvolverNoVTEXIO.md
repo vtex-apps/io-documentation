@@ -39,7 +39,7 @@ Quando já estiver logado, você pode usar o comando `vtex whoami` para descobri
 
 Ao usar o VTEX IO, toda interação com uma conta acontece em um __[workspace]__(*link doc*), uma versão isolada de sua loja.
 
-Por padrão, quando efetua login em uma loja, você está no workspace master, correspondente à versão disponível para o usuário final. Quaisquer alterações no workspace master de uma conta são refletidas automaticamente em todos os outros workspaces da sua loja. Por isso, lembre-se que sempre que você quiser testar uma nova configuração, você deve criar seu próprio workspace de desenvolvimento usando o comando `vtex use`.
+Por padrão, quando efetua login em uma loja, você está no workspace master, correspondente à versão disponível para o usuário final. Quaisquer alterações no workspace master de uma conta são refletidas automaticamente em todos os outros workspaces da sua loja. Por isso, lembre-se que sempre que você quiser testar uma nova configuração, o seu próprio workspace de desenvolvimento deve ser criado usando o comando `vtex use`.
 
 ```
 $ vtex use {nomeexemplo}
