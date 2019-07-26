@@ -54,62 +54,35 @@ De acordo com as necessidades do seu negócio, é possível personalizar os bloc
 
 ## Declarando um novo bloco 
  
-Vamos então adicionar um novo componente [__Shelf__](*link doc de shelf*) à página inicial da loja. Para isso, devemos adicionar `shelf#deals` ao template `store.home` em `home.jsonc` de acordo com o posicionamento desejado para o componente e declarar o bloco mais abaixo neste mesmo arquivo.
+Vamos então adicionar um novo componente [__Infocard__](*link doc infocard*) à página inicial da loja, antes da prateleira. Para isso, devemos adicionar `info-cardf#bestdeals` ao template `store.home` em `home.jsonc` e declarar o bloco mais abaixo neste mesmo arquivo.
  
-<img width="684" alt="shelf#deals declared" src="https://user-images.githubusercontent.com/52087100/61897575-b9406c80-aeed-11e9-8656-c736e53ffcd8.png">
+<img width="645" alt="newblock-step4" src="https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png">
 
 
 ```
-
-"shelf#deals": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 5,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Best deals"
-      }
-    }
-  },
-
-  "product-summary#deals": {
-    "props": {
-      "isOneClickBuy": false,
-      "showBadge": true,
-      "badgeText": "OFF",
-      "buyButtonText": "Add to cart",
-      "displayBuyButton": "displayButtonAlways",
-      "showCollections": false,
-      "showListPrice": true,
-      "labelSellingPrice": "To",
-      "labelListPrice": "From",
-      "showLabels": true,
-      "showInstallments": true,
-      "showSavings": true,
-      "name": {
-        "showBrandName": true,
-        "showSku": true,
-        "showProductReference": true
-      }
-    }
-  },
+"info-card#bestdeals": {
+   "props": {
+     "isFullModeStyle": false,
+     "textPosition": "center",
+     "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
+     "headline": "BEST DEALS",
+     "callToActionText": "DISCOVER",
+     "callToActionUrl": "/sale/d",
+     "textAlignment": "center"
+   }
+ },
 
 ```
+
 <div class=“alert alert-info”>
 O comportamento dos componentes da sua loja varia de acordo com as propriedades definidas para o bloco declarado. Confira os exemplos de configuração de blocos na [documentação](*link página doc componentes*) de cada componente. 
 </div>
 
-Ao salvar suas alterações no código e rodar `vtex link` no seu terminal, você deverá ver a nova prateleira renderizada ao visitar a página inicial da sua loja:
+Ao salvar suas alterações no código e rodar `vtex link` no seu terminal, você deverá ver o novo Infocard renderizado ao visitar a página inicial da sua loja:
 
-<img width="1426" alt="best-deals" src="https://user-images.githubusercontent.com/52087100/61897037-93ff2e80-aeec-11e9-9a1c-33e0dc68e031.png">
+<img width="1422" alt="BANNER-INFOCARD-STEP4-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972032-e73db380-afb6-11e9-833e-977964fe5105.png">
 
 <div class=“alert alert-warning”>
-As mudanças serão refletidas no workspace em que elas foram feitas. Por isso, ao conferir a renderização da nova prateleira na sua loja, não se esqueça de conferir qual workspace da conta você está acessando.
+As mudanças serão refletidas no workspace em que elas foram feitas. Por isso, ao conferir a renderização do novo infocard na sua loja, não se esqueça de conferir qual workspace da conta você está acessando.
 </div>
 
- 
