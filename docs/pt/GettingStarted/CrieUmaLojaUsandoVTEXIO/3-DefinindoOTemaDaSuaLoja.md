@@ -1,6 +1,6 @@
 #  Definindo o tema da sua loja
 
-O [Store Theme](*link doc*) é um tema padrão aplicável para todas as lojas na plataforma VTEX IO. O tema realiza duas ações:
+O [__Store Theme__](*link doc*) é um tema padrão aplicável para todas as lojas na plataforma VTEX IO. O tema realiza duas ações:
 
 - Declara templates, configurando e combinando componentes.
 
@@ -15,7 +15,7 @@ O Toolbelt do VTEX IO oferece um comando `vtex init` que pode rapidamente copiar
 Usando seu terminal, navegue até um diretório dos seus arquivos locais já existente onde você deseja que o Store Theme seja copiado. Então, use o comando `vtex init` , selecione a opção __store-theme__ e confirme que você gostaria de fazer o download do projeto modelo na pasta de destino previamente definida.
 
 ```
-$ cd {{anyfolder}}
+$ cd {{diretórioexemplo}}
 ```
 ```
 $ vtex init
@@ -73,6 +73,5 @@ Onde `workspace` é o workspace que você acabou de criar e `accountname` é o n
 Após o login, você deve ver o Store Theme já refletido na sua loja:
 
 <img width="1426" alt="store-theme" src="https://user-images.githubusercontent.com/52087100/61896668-d4aa7800-aeeb-11e9-906b-9d6b04fd03c0.png">
-
 
 Agora que sua loja já está no ar com o tema padrão, podemos construir a sua identidade configurando seus templates e customizando seus estilos.
