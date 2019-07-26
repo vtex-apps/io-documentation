@@ -47,7 +47,7 @@ O arquivo `style.json` possibilita a customização do seu tema de forma mais ge
 
 As __substituições de CSS__ customizam componentes com estilos diferentes do tema padrão, sobrescrevendo o que foi declarado no arquivo `styles.json` para a sua loja.  É possível que você deseje que os Infocards da sua página inicial tenha um estilo diferente daquele genérico implementado pelo Store Theme, por exemplo. 
 
-Você declara novas substituições de CSS criando um novo arquivo dentro da pasta `style` em `css`. O arquivo criado deve ter como nome a __app__  que terá sua customização sobrescrita, seguindo o seguinte formato: `vtex.{app}.css`. Verifique quais apps podem ter seus estilos sobrescritos acessando o `manifest.json` do seu tema. 
+Você declara novas substituições de CSS criando um arquivo dentro da pasta `style` em `css`. O arquivo criado deve ter como nome a __app__  que terá sua customização sobrescrita, seguindo o formato `vtex.{app}.css`. Verifique quais [apps](*link doc*) podem ter seus estilos sobrescritos acessando o `manifest.json` do seu tema. 
 
 As classes dos componentes podem ser encontradas na [documentação](*link doc*) de cada um deles e devem ser dividas dentro do arquivo para a sua customização. 
 
