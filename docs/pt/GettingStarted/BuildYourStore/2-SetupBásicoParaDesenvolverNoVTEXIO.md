@@ -11,7 +11,7 @@ Entenda melhor o que são apps no VTEX IO acessando o nosso [glossário](*link d
 
 Para instalar a CLI do VTEX IO, você precisa garantir que o seu computador tenha o [Yarn](https://yarnpkg.com/) instalado.
 
-Então, digite `yarn global add vtex` no terminal do seu computador.
+Em seguida, digite `yarn global add vtex` no terminal do seu computador.
 
 ```
 $ yarn global add vtex
