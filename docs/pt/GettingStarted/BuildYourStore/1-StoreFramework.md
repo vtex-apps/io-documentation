@@ -1,6 +1,6 @@
 # Store Framework
 
-Ao comparar duas ou mais lojas online, é possível perceber semelhanças na estrutura de todas elas. Por exemplo: independente da loja em que estamos navegando, é comum visualizarmos nas interfaces vitrines com alguns produtos em destaque, barras de busca, menus, páginas de produto com botão para comprá-lo, logo, etc.
+Ao comparar duas ou mais lojas _online_, é possível perceber semelhanças na estrutura de todas elas. Por exemplo: independente da loja em que estamos navegando, é comum visualizarmos nas interfaces vitrines com alguns produtos em destaque, barras de busca, menus, páginas de produto com botão para comprá-lo, logo, etc.
 
 Isso nos mostra que existe uma correspondência entre os componentes de lojas online, independente da identidade de cada uma. Essa correspondência facilita o processo de criação de lojas, permitindo o desenvolvimento front-end de uma __única estrutura__ de componentes compartilhável entre todas elas.
 
