@@ -32,7 +32,7 @@ Substitua o valor pré-definido de <i>vendor</i> pelo nome da conta da loja que 
 
 ## _Linkando_ seu código local ao VTEX IO
 
-Agora que o Store Theme já foi copiado para os seus arquivos locais, você deve executar no seu terminal o comando `cd store-theme` . Depois, execute `vtex link` para ver seu tema projeto ser compilado e publicado na conta e no workspace que você acabou de criar.
+Agora que o Store Theme já foi copiado para os seus arquivos locais, você deve executar no seu terminal o comando `cd store-theme` . Depois, execute `vtex link` para ver o tema ser compilado e publicado na conta e no workspace que você acabou de criar.
 
 <div class=“alert alert-warning”>
 Execute `vtex whoami` para ter certeza de que você está na conta certa e em um workspace de desenvolvimento. Caso contrário, o Toolbelt não irá aceitar o link direto com o master.
