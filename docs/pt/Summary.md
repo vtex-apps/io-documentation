@@ -1,8 +1,12 @@
 # Summary
 
-- [Getting Started](getting-started)
+- Getting Started
+
+  - [What is VTEX IO?](getting-started/WhatIsVTEXIO/1)
+  - [Build stores with VTEX IO](getting-started/BuildYourStore/1)
 
 - Recipes
+
   - [Style](recipes/style)
     - [Customize the general colors of your store](recipes/style/customizeColors.md)
     - [Customize the general typography of your store](recipes/style/customizeTypography.md)
@@ -17,6 +21,7 @@
   - [All Recipes](recipes/all)
 
 - Components
+
   - [General](components/general)
     - [Carousel](components/general/vtex.store-components/Image.md)
     - [Info Card](components/general/vtex.store-components/InfoCard.md)
@@ -39,6 +44,7 @@
   - [All Components](components/all)
 
 - Resources
+
   - [Item1](resources/item1)
   - [Item2](resources/item2)
   - [Item3](resources/item3)
