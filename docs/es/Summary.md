@@ -43,13 +43,6 @@
   - [Search Related](components/search-related)
   - [All Components](components/all)
 
-- Resources
-
-  - [Item1](resources/item1)
-  - [Item2](resources/item2)
-  - [Item3](resources/item3)
-  - [Item4](resources/item4)
-  - [Item5](resources/item5)
-  - [Item6](resources/item6)
+- [Resources](resources)
 
 - [Latest Features](latest)
