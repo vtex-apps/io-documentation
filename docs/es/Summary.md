@@ -2,8 +2,8 @@
 
 - Getting Started
 
-  - [What is VTEX IO?](getting-started/WhatIsVTEXIO/1)
-  - [Build stores with VTEX IO](getting-started/BuildYourStore/1)
+  - [What is VTEX IO?](getting-started/what-is-vtex-io/1)
+  - [Build stores with VTEX IO](getting-started/build-stores-with-io/1)
 
 - Recipes
 
