@@ -45,4 +45,4 @@
 
 - [Resources](resources)
 
-- [Latest Features](latest)
+- [Latest Features](https://github.com/vtex-apps/io-documentation)
