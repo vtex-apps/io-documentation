@@ -14,6 +14,8 @@
     - [Customize your breakpoints for a better responsive experience](recipes/style/customizeBreakpoints.md)
     - [Customize your icons](recipes/style/customizeIcons.md)
   - [Layout](recipes/layout)
+  - [Apps](recipes/app)
+    - [How to setup the product page of your app in the App Store](recipes/app/how-to-app-store.md)
   - [Content](recipes/content)
   - [Routes](recipes/routes)
   - [Plugins](recipes/plugins)
