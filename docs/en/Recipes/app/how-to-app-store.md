@@ -1,10 +1,10 @@
 ---
 title: How to setup the product page of your app in the App Store
-description: ""
+description: "Your app can have a nice product page in our App Store."
 date: "2019-08-1"
 tags: ["vtex-io", "app-store"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/app/how-to-app-store.md"
 ---
 
 # How to setup the product page of your app in the App Store
