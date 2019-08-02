@@ -45,6 +45,6 @@
   - [Search Related](components/search-related)
   - [All Components](components/all)
 
-- [Resources](resources)
+<!-- - [Resources](resources) -->
 
 - [Latest Features](https://github.com/vtex-apps/release-notes)
