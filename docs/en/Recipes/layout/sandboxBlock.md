@@ -1,3 +1,12 @@
+---
+title: Build sandbox blocks
+description: "With Store Framework you're able to use iframes to attend specific custom needs"
+date: "2019-08-19"
+tags: ["iframe", "sandbox", "custom"]
+version: "0.x"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/sandboxBlock.md"
+---
+
 # Build sandbox blocks
 
 VTEX's store framework is a very powerful tool that is going bigger everyday, so that it can attend most of the its' clients needs. It's understandable, though, that there are extra customizations that compose your store's needs and that the framework may not attend. That's what the **Sandbox App** was created for. 
