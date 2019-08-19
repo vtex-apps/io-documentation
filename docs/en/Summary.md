@@ -14,6 +14,7 @@
     - [Customize your breakpoints for a better responsive experience](recipes/style/customizeBreakpoints.md)
     - [Customize your icons](recipes/style/customizeIcons.md)
   - [Layout](recipes/layout)
+    - [Build sandbox blocks](recipes/layout/sandboxBlock.md)
   - [Apps](recipes/app)
     - [How to setup the product page of your app in the App Store](recipes/app/how-to-app-store.md)
   - [Content](recipes/content)
