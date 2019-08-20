@@ -8,11 +8,7 @@
 - Recipes
 
   - [Style](recipes/style)
-    - [Customize the general colors of your store](recipes/style/customizeColors.md)
-    - [Customize the general typography of your store](recipes/style/customizeTypography.md)
-    - [Add custom CSS to a specific block](recipes/style/customCSS.md)
-    - [Customize your breakpoints for a better responsive experience](recipes/style/customizeBreakpoints.md)
-    - [Customize your icons](recipes/style/customizeIcons.md)
+    - [Customize store's icons](recipes/style/customizeIcons.md)
   - [Layout](recipes/layout)
     - [Build sandbox blocks](recipes/layout/sandboxBlock.md)
   - [Apps](recipes/app)
