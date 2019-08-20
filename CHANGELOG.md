@@ -10,6 +10,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.2.5] - 2019-08-20
 
 Added
+  - GTM Recipe 
+  - Google Analytics Recipe
+  - A/B Test Recipe
+  
+## [0.2.5] - 2019-08-20
+
+Added
+  - GTM Recipe 
+  - Google Analytics Recipe
+  - A/B Test Recipe
+  
+## [0.2.5] - 2019-08-20
+
+Added
  - Customize icons recipe
  
 ## [0.2.4] - 2019-08-20
