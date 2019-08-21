@@ -19,11 +19,11 @@ There two basic building blocks of every `flex-layout`, the `flex-layout.row` co
 
 We are going to build the About Us page from our default [`store-theme`](https://storetheme.vtex.com/about-us) using `flex-layout` from scratch.
 
-[Screenshot]
+![Screen Shot 2019-08-21 at 5 47 45 PM](https://user-images.githubusercontent.com/27777263/63467414-d0667180-c43b-11e9-8cf3-473c1c94f10e.png)
 
 This page can easily be thought of as a `row` with two columns, and in fact that's exactly how we are going to model it. The image below is from the finished page with the `Flexbox Highlighter` from Firefox enabled, which shows how this layout is divided.
 
-[Screenshot]
+![Screen Shot 2019-08-21 at 4 05 19 PM](https://user-images.githubusercontent.com/27777263/63467270-736abb80-c43b-11e9-8a7b-dfe8f218f081.png)
 
 To achieve this layout, we are going to use `flex-layout.row` and `flex-layout.col`. Which are going to define each row and column in this layout.
 
