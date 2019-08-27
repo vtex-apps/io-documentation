@@ -16,7 +16,7 @@ These default pages path are already defined in the Admin Pages. You can check t
 
 Notice that these URLs’ format cannot be changed, since they are default for every store. See the store.product's example:
 
-<img width="600" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63775040-ea2d0c00-c8b4-11e9-8697-d33d40df45f4.png">
+<img width="750" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63775040-ea2d0c00-c8b4-11e9-8697-d33d40df45f4.png">
 
 
 
@@ -47,7 +47,7 @@ As an institutional page is not directly connected to any specific product we wi
 
 We will create a simple template with a row that contains an image in its left column and, in its right column, a title and text content:
 
-<img width="600" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63775975-dbdfef80-c8b6-11e9-9b76-e50924b828ae.png">
+<img width="750" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63775975-dbdfef80-c8b6-11e9-9b76-e50924b828ae.png">
 
 
 
@@ -140,7 +140,7 @@ Check that everytime you create a new template, a new page is created at your Ad
 
 Also, this new template becomes available to be set to any `Standard Page`.
 
-<img width="600" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63776208-498c1b80-c8b7-11e9-9e46-3c7f76f58036.png">
+<img width="750" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63776208-498c1b80-c8b7-11e9-9e46-3c7f76f58036.png">
 
 
 
