@@ -2,7 +2,7 @@
 title: Customizar a tipografia da loja
 description: "A escolha da tipografia de uma loja é um passo fundamental do processo de construção da sua identidade. Nesta receita, aprenda como customizar estilos de tipografia de forma rápida e fácil através da interface do admin, sem precisar recorrer ao código do seu tema."
 date: "08/27/2019"
-tags: ["customizar", "editar", "customização", "fontes", "tipografia", "fonte", "storefront", "design"]
+tags: ["customizar", "customização", "tipografia", "fonte", "storefront", "design"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation"
 ---
