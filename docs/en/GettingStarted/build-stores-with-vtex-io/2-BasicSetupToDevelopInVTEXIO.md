@@ -38,7 +38,7 @@ $ vtex use {examplename}
 
 This changes your Toolbelt to a so-called `examplename` workspace and creates it if it doesn’t already exist.
 
-IMAGE
+<img width="429" alt="workspace-examplename EN" src="https://user-images.githubusercontent.com/52087100/63979000-30899300-ca8e-11e9-9d9d-234e31ac45f7.png">
 
 <div class="alert alert-warning">
 <code>vtex use</code> makes all your operations run in the workspace set in the command, which means you can shift your operations to Master simply by executing <code>vtex use master</code> in Toolbelt, for example.
