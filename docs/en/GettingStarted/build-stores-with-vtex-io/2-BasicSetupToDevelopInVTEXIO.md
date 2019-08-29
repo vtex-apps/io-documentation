@@ -14,6 +14,8 @@ $ yarn global add vtex
 
 To confirm that the installation occurred as expected, you can execute the `vtex` command. This should display all available commands in a help text. 
 
+## Login
+
 Once VTEX IO’s CLI is installed, you can login to your VTEX account with the following command: 
 
 ```
