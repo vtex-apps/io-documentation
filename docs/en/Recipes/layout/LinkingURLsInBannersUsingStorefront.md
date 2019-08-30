@@ -2,7 +2,7 @@
 title: Linking URLs in banners using Storefront
 description: "Linking URLs in banners can be a great opportunity to influence user browsing! Check out how fast and easy linking URLs in your store's banners can be when using Storefront."
 date: "30/08/2019"
-tags: ["storefront", "url", "banner", "link", "linking", "internal-url", "external-url"]
+tags: ["storefront", "url", "banner", "link", "linking", "internal-url", "external-url", "redirect"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/LinkingURLsInBannersUsingStorefront.md"
 ---
@@ -19,7 +19,10 @@ You can configure one of your store’s banner to have page redirect, meaning th
 
 **3.** Select the **Carousel** block and choose the banner that will have its content edited.
 
-**4.** Indicate that an internal URL will be inserted in the banner, selecting the **External Route** toggle. Then, in the `Internal URL` field, simply copy and paste the internal desired address.
+**4.** Maintain the **External route** toggle active and in the `Internal URL` field, simply copy and paste the internal desired address.
+
+
+Indicate that an internal URL will be inserted in the banner, selecting the **External Route** toggle. Then, in the `Internal URL` field, simply copy and paste the internal desired address.
 
 <img width="1142" alt="internal-url-field" src="https://user-images.githubusercontent.com/52087100/63995069-6e59dc00-cacd-11e9-92de-da14a89b4117.png">
 
@@ -37,7 +40,7 @@ The <code>Banner target page</code> and <code>Params</code> fields were deprecat
 
 **3.** Select the **Carousel** block and choose the banner that will have its content edited.
 
-**4.** Maintain the **External route** toggle active and in the `URL (external)` field, simply copy and paste the desired external address.
+**4.** Selecting the **External Route** toggle and in the `URL (external)` field, simply copy and paste the external desired address.
 
 <img width="1143" alt="external-url-field-storefront" src="https://user-images.githubusercontent.com/52087100/63995053-541ffe00-cacd-11e9-9760-385e2f526941.png">
 
