@@ -12,6 +12,7 @@
     - [Customizing your store’s typography](Recipes/style/CustomizingYourStore’sTypography.md)
   - [Layout](recipes/layout)
     - [Build sandbox blocks](recipes/layout/sandboxBlock.md)
+    - [Linking URLs in banners using Storefront](Recipes/layout/LinkingURLsInBannersUsingStorefront.md)
     - [Flex-Layout](recipes/layout/flexLayout.md)
     - [Building a Product Details Page](recipes/layout/productDetailsPage.md)
   - [Store Managing](recipes/store)
