@@ -1,6 +1,6 @@
 # IO Documentation
 
-This is a central repository that structures [VTEX IO Docs](https://vtex.io/docs).
+An app that structures [VTEX IO Docs](https://vtex.io/docs).
 
 ## How documentation works in VTEX IO?
 
@@ -36,4 +36,38 @@ To be able to use the Docs Builder, you need to go through some quick steps:
 
 3. Inside the `docs/` folder create a `README.md` file.
 
-**DISCLAIMER:** In order not to have to keep track of two `README.md` files(one at the root of the project and the other at the `docs/` folder), you can delete the one at the root at the project and keep only the one at the `docs/` folder. GitHub will read the one at `docs/` on the landing page.
+**DISCLAIMER:** In order not to have to keep track of two `README.md` files(one at the root of the project and the other at the `docs/` folder), you can delete the one at the root of the project and keep only the one at the `docs/` folder. GitHub will read the one at `docs/` on the landing page.
+
+## How to create multi page documentation
+ 
+Docs builder will create complex pages with navigation handling and multipage content as well. To be able to accomplish that you need to: 
+
+1. Create a `SUMMARY.md` file that follows the usual markdown summary format, for instance:
+ 
+```
+  - [Get started](README.md)
+  - [Further](further.md)
+      - [Even further](evenfurther.md)
+```
+
+2. Create the files following up the exact links you declared on your `summary` file
+
+This will render a page with both a side bar that follows your `summary` implementation and that renders your multi page documentation. This very app (`vtex.io-documentation`) was created following up this architecture. 
+
+## Contribution is easy and open-source on VTEX IO
+
+Apps are, at the very beginning, programming code and they're are therefore stored on git repositories. Docs builder enables documentation contribution on a Pull Request/Merge Request level. 
+
+**VTEX Open Source Native Apps and Documentation** are fully stored on [VTEX Apps Organization](https://github.com/vtex-apps) on GitHub, that means the documentation, as well as the code, is open source and may be contributed by creating new Pull Requests. 
+
+
+## Keeping track of outdated docs
+
+It wouldn't mean much if a tool for bringing documentation closer to the developer was created but no effort was done to create awareness of always keeping documentation up-to-date.
+
+[VTEX Apps Organization](https://github.com/vtex-apps)  has, therefore, a bot [Docs Bot](https://github.com/vtex-apps/docs-bot) that is vigilant on documentation status. Its responsibilities are:
+
+- Checks if PRs come with documentation changes and, if they don't, checks the reason for that. In case it's just because the timing is not good, then an issue is created at [IO Documentation](https://github.com/vtex-apps/io-documentation) and a note is created at the `README.md` of the repo to report that new documentation is coming soon.
+- Creates issues weekly for repos that don't have their documentation structured properly
+
+[Docs Bot](https://github.com/vtex-apps/docs-bot) is an **open-source** project and may be used at any third-party repo/organization with only a few tweaks. Also, it's contributions are encouraged to make it even more powerful, if **VTEX IO Docs** are important for you.
