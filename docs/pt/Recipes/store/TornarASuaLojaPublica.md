@@ -4,7 +4,7 @@ description: "Se você deseja tornar a sua nova loja publicamente disponível, l
 date: "30/08/2019"
 tags: ["release", "loja", "promover", "produção", "master", "workspace", "pública", "disponível", "usuário-final"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/abTest.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/pt/Recipes/store/TornarASuaLojaP%C3%BAblica.md"
 ---
 
 # Tornar a sua loja pública
