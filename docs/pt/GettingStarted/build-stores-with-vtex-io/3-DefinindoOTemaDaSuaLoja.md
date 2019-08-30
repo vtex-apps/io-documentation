@@ -68,8 +68,6 @@ Navegue novamente até a sua loja acessando:
 
 `https://{{workspace}}-{{conta}}.myvtex.com`
 
-Onde `workspace` é o *workspace* que você acabou de criar e `conta` é o nome da conta em que você está trabalhando.
-
 Após o login, você deve ver o Store Theme já refletido na sua loja:
 
 <img width="1426" alt="store-theme" src="https://user-images.githubusercontent.com/52087100/61896668-d4aa7800-aeeb-11e9-906b-9d6b04fd03c0.png">
