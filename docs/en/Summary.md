@@ -9,6 +9,7 @@
 
   - [Style](recipes/style)
     - [Customize store's icons](recipes/style/customizeIcons.md)
+    - [Customizing your store’s typography](Recipes/style/CustomizingYourStore’sTypography.md)
   - [Layout](recipes/layout)
     - [Build sandbox blocks](recipes/layout/sandboxBlock.md)
     - [Flex-Layout](recipes/layout/flexLayout.md)
