@@ -1,4 +1,4 @@
-# Setup básico para desenvolver no VTEX IO
+# *Setup* básico para desenvolver no VTEX IO
 
 Todo desenvolvimento no VTEX IO começa com o [**Toolbelt**](*link*), nossa CLI (Command Line Interface) que permite fazer login, desenvolver novas [apps](*link*) e gerenciar as já instaladas.
 
