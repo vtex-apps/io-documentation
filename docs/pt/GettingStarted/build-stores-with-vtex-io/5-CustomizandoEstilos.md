@@ -70,7 +70,7 @@ Agora que você aprendeu como sobrescrever a aparência de um componente, imagin
 
 Isso quer dizer que será necessário não só declarar uma substituição de CSS para o componente Infocard, como também criar uma substituição de CSS para um bloco específico dele.
 
-**O Block Class (`"blockClass"`) é uma propriedade de alguns componentes do Store Theme que, quando declarada em um bloco, permite a sua customização exclusiva.**
+**O Block Class (**`"blockClass"`**) é uma propriedade de alguns componentes do Store Theme que, quando declarada em um bloco, permite a sua customização exclusiva.**
 
 Por exemplo: vamos customizar a maneira como o bloco `info-card#bestdeals` é renderizado, adicionando a prop `"blockClass"` a ele:
 
