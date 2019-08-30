@@ -68,8 +68,6 @@ Navegue de nuevo hasta su tienda accediendo a:
 
 `https://{{Workspace}}-{{AccountName}}.myvtex.com`
 
-Donde `Workspace` es el workspace que usted acaba de crear y `AccountName` es el nombre de la cuenta VTEX.
-
 Después de iniciar sesión, debe ver el Store Theme ya reflejado en su tienda:
 
 <img width="1426" alt="store-theme" src="https://user-images.githubusercontent.com/52087100/61896668-d4aa7800-aeeb-11e9-906b-9d6b04fd03c0.png">
