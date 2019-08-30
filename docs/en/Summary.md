@@ -17,6 +17,7 @@
   - [Store Managing](recipes/store)
     - [Setting up Google Analytics](recipes/store/googleAnalytics.md)
     - [Using Google Tag Manager](recipes/store/googleTagManager.md)
+    - [Making your new store publicly available](Recipes/store/MakingYourNewStorePubliclyAvailable.md)
     - [Running A/B tests](recipes/store/abTest.md)
     - [Creating new page](recipes/store/creatingNewPage.md)
   - [Routes](recipes/routes)
