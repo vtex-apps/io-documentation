@@ -14,6 +14,7 @@
     - [Customize your breakpoints for a better responsive experience](recipes/style/customizeBreakpoints.md)
     - [Customize your icons](recipes/style/customizeIcons.md)
   - [Layout](recipes/layout)
+    - [Linkar URLs em banners através do Storefront](Recipes/layout/LinkarURLsEmBannersAtravésDoStorefront.md)
   - [Store managing](recipes/store)
     - [Tornar a sua loja pública](Recipes/store/TornarASuaLojaPublica.md)
     - [Configurar o rastreamento de busca do Google Analytics](Recipes/store/ConfigurarORastreamentoDeBuscaDoGoogleAnalytics.md)
