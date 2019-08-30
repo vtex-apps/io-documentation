@@ -28,7 +28,7 @@ Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descob
 
 <img width="876" alt="toolbelt-whoami" src="https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png">
   
-## Criando seu próprio workspace
+## Criando seu próprio *workspace*
 
 Ao usar o VTEX IO, toda interação com uma conta acontece em um [***workspace***](*link*).
 
