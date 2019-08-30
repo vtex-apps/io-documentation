@@ -1,4 +1,4 @@
-# Configurando templates
+# Configurando *templates*
 
 Quando uma loja é criada, um ***template*** deve ser configurado para cada uma das páginas que o usuário irá visitar, como a página inicial, de produto, etc.
 
