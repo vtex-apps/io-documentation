@@ -2,13 +2,13 @@
 
 El [**Store Theme**](*link*) es un tema estándar aplicable para todas las tiendas en la plataforma VTEX IO. El tema realiza dos acciones:
 
-- **Declara templates**, configurando y combinando componentes.
+- **Declara *templates***, configurando y combinando componentes.
 
 - **Declara estilos**, configurando colores primarios y secundarios, escalas de tipografía y espaciado, etc.
 
-Esto significa que el Store Theme es un tema estándar responsable de definir la apariencia básica del front de su tienda.
+Esto significa que el Store Theme es un tema estándar responsable de definir la apariencia básica del *front* de su tienda.
 
-El Toolbelt de VTEX IO  ofrece un comando `vtex init` que puede copiar rápidamente el Store Theme en su computadora para que pueda configurarlo y personalizarlo de acuerdo con las necesidades de su negocio.
+El Toolbelt de VTEX IO ofrece un comando `vtex init` que puede copiar rápidamente el Store Theme en su computadora para que pueda configurarlo y personalizarlo de acuerdo con las necesidades de su negocio.
 
 ## Implementando el Store Theme
 
@@ -30,12 +30,12 @@ Reemplace el valor predeterminado de <i>vendor</i> con el nombre de la cuenta de
 
 <img width="942" alt="toolbelt-store-theme-selection " src="https://user-images.githubusercontent.com/52087100/61887063-3d3b2a00-aed7-11e9-92b8-653c4972a218.png">
 
-## _Linkeando_ su código local a VTEX IO
+## *Linkeando* su código local a VTEX IO
 
-Ahora que el Store Theme se ha copiado en sus archivos locales, debe ejecutar el comando `cd store-theme` en su terminal. Luego, ejecute `vtex link` para ver que se compile y publique el tema en la cuenta y el workspace que acaba de crear.
+Ahora que el Store Theme se ha copiado en sus archivos locales, debe ejecutar el comando `cd store-theme` en su terminal. Luego, ejecute `vtex link` para ver que se compile y publique el tema en la cuenta y el *workspace* que acaba de crear.
 
 <div class="alert alert-warning">
-Ejecute `vtex whoami` para asegurarse de estar en la cuenta correcta y en un workspace de desarrollo. De lo contrario, el Toolbelt no aceptará el link directo con el master.
+ Ejecute <code>vtex whoami</code> para asegurarse de estar en la cuenta correcta y en un <i>workspace</i> de desarrollo. De lo contrario, el Toolbelt no aceptará el link directo con el master.
 </div>
 
 ```
@@ -48,7 +48,7 @@ $ cd store-theme
 
 <img width="910" alt="toolbelt-vtex-link" src="https://user-images.githubusercontent.com/52087100/61887229-9dca6700-aed7-11e9-9934-030a153b75b6.png">
   
-Al *linkear* el Store Theme, los archivos locales de su computadora se sincronizan con la plataforma VTEX IO. Esto significa que cualquier alteración que realice localmente en el código será enviada y reflejada en su workspace.
+Al *linkear* el Store Theme, los archivos locales de su computadora se sincronizan con la plataforma VTEX IO. Esto significa que cualquier alteración que realice localmente en el código será enviada y reflejada en su <i>workspace</i>.
 
 ## Entendiendo la estructura del Store Theme
 
@@ -56,7 +56,7 @@ Echemos un vistazo a los archivos que se generaron en sus archivos locales para 
 
 <img width="227" alt="vscode-folders-structure" src="https://user-images.githubusercontent.com/52087100/61887339-ce120580-aed7-11e9-8c7b-eb55d12def2b.png">
 
-- **manifest.json**: archivo principal de cualquier app. Guarda metadatos importantes, como *vendor*, nombre, versión, dependencias de apps, builders y policies.
+- **manifest.json**: archivo principal de cualquier app. Guarda metadatos importantes, como *vendor*, nombre, versión, dependencias de apps y *builders*.
 
 - **store**: carpeta responsable de definir la estructura de una tienda. Es donde se configuran los componentes de cada página y sus propiedades.
 
@@ -72,5 +72,5 @@ Después de iniciar sesión, debe ver el Store Theme ya reflejado en su tienda:
 
 <img width="1426" alt="store-theme" src="https://user-images.githubusercontent.com/52087100/61896668-d4aa7800-aeeb-11e9-906b-9d6b04fd03c0.png">
 
-Ahora que su tienda ya está en el aire con el tema estándar, podemos construir su identidad configurando sus templates y personalizando sus estilos.   
+Ahora que su tienda ya está en el aire con el tema estándar, podemos construir su identidad configurando sus *templates* y personalizando sus estilos.   
 
