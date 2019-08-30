@@ -56,7 +56,7 @@ Vamos dar uma olhada nos arquivos que foram gerados nos seus arquivos locais par
 
 <img width="227" alt="vscode-folders-structure" src="https://user-images.githubusercontent.com/52087100/61887339-ce120580-aed7-11e9-8c7b-eb55d12def2b.png">
 
-- **manifest.json**: arquivo principal de qualquer app. Ele guarda metadados importantes, como *vendor*, nome, versão, dependências de apps e *builders*.
+- **manifest.json**: arquivo principal de qualquer app. Ele guarda metadados importantes, como *vendor*, nome, versão, dependências de apps e [*builders*](*link*).
 
 - **store**: pasta responsável por definir a estrutura de uma loja. É onde se configura os componentes de cada página e suas propriedades.
 
