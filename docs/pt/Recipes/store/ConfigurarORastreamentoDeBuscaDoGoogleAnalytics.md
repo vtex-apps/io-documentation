@@ -1,4 +1,3 @@
-
 ---
 title: Configurar o rastreamento de busca do Google Analytics
 description: "Analise os principais termos buscados na sua loja e aprenda mais sobre o comportamento do seu usuário configurando o rastreamento de busca do Google Analytics."
@@ -7,6 +6,7 @@ tags: ["google-analytics", "busca", "pesquisa", "rastreio", "rastreamento", "tra
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/pt/Recipes/store/ConfigurarORastreamentoDeBuscaDoGoogleAnalytics.md"
 ---
+
 
 # Configurar o rastreamento de busca do Google Analytics
 
