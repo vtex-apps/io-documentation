@@ -77,7 +77,7 @@ Let’s now add a new [__infocard__](*link*) component to your store’s homepag
 ```
 
 <div class="alert alert-info">
-Your store’s component behavior varies according to each block’s defined properties. Check out the block configuration examples for each component in our [related documentation](*link*)
+Your store’s component behavior varies according to each block’s defined properties. Check out the block configuration examples for each component in our <a href="">related documentation</a>.
 </div>
 
 When saving your changes in code and running `vtex.link` in your terminal, you should see the rendered new Infocard in your store’s homepage:  
