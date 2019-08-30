@@ -10,7 +10,7 @@ We declare a new block in a template in order to add a new component to a page, 
 
 As we have previously seen, the folder responsible for organizing your store’s blocks and templates is called `store`. In it, you can declare all your blocks in the `blocks.jsonc` file or create as many files and folders as you want, to then declare these in an organized manner in the `blocks` subfolder. 
 
-For a better understanding of this structure, let’s have a look at your store’s predefined homepage Store Theme template using the code editor of your choice. Access `store` > `blocks`> `home`> `home.jsonc` and you will be able to find the following example:
+For a better understanding of this structure, let’s have a look at your store’s predefined homepage Store Theme template using the code editor of your choice. Access `store` > `blocks`> `home`> `home.jsonc` and you will be able to check out the following example:
 
 
 ```
