@@ -48,4 +48,6 @@ Having created your own development workspace, you can go to your store by acces
 
 `https://{{workspace}}-{{account}}.myvtex.com`
 
+Where `workspace` is the workspace that you've just created and `account` is the name of the account in which you are working.
+
 Done! You can begin developing your store in VTEX IO.
