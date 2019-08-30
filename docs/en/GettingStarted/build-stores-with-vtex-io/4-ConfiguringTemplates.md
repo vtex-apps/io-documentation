@@ -87,3 +87,5 @@ When saving your changes in code and running `vtex.link` in your terminal, you s
 <div class="alert alert-warning">
 Changes will be reflected in the workspace in which they are made. Therefore, when checking your store’s new Infocard rendering, don’t forget to check which account workspace you’re accessing.
 </div>
+
+Now that it's clear to you how to configure your theme's templates, let's see how we can customize them by customizing their styles.
