@@ -5,7 +5,7 @@ description: "Analise os principais termos buscados na sua loja e aprenda mais s
 date: "30/08/2019"
 tags: ["google-analytics", "busca", "pesquisa", "rastreio", "rastreamento", "tracking"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/SettingUpGoogleAnalyticsSearchTracking.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/pt/Recipes/store/ConfigurarORastreamentoDeBuscaDoGoogleAnalytics.md"
 ---
 
 # Configurar o rastreamento de busca do Google Analytics
