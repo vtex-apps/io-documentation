@@ -2,14 +2,14 @@
 title: Making your store publicly available
 description: "If you want to make your new store publicly available, linking it will not suffice. Learn in this recipe the step by step on how to make your new configurations finally available to the end user."
 date: "29/08/2019"
-tags: ["release", "store", "promote", "master", "workspace", "public", "available"]
+tags: ["release", "store", "promote", "production", "master", "workspace", "public", "available", "end-user"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/abTest.md"
 ---
 
 # Making your new store publicly available
 
-If you’re comfortable with the configurations you’ve performed and want your version of the store to be made available to any user, linking the store theme app in which you’re working will not suffice: you’ll also need to **release** it, post its workspace in **production mode** and promote it to **master**.
+If you’re comfortable with the configurations you’ve performed and want your version of the store to be made available to any user, [linking]() the store theme app in which you’re working will not suffice: you’ll also need to **release** it, post its workspace in **production mode** and promote it to **master**.
 
 ## Release
 
