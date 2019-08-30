@@ -6,7 +6,7 @@ The default Store Theme model already implements basic templates for your store�
 
 ## Blocks structure 
 
-We declare a new block in a template in order to add a new component to a page, in the same way that a component can be excluded from a page by removing a block.
+**We declare a new block in a template in order to add a new component to a page**, in the same way that a component can be excluded from a page by removing a block.
 
 As we have previously seen, the folder responsible for organizing your store’s blocks and templates is called `store`. In it, you can declare all your blocks in the `blocks.jsonc` file or create as many files and folders as you want, to then declare these in an organized manner in the `blocks` subfolder. 
 
@@ -79,7 +79,6 @@ Let’s now add a new [__infocard__](*link*) component to your store’s homepag
 <div class="alert alert-info">
 Your store’s component behavior varies according to each block’s defined properties. Check out the block configuration examples for each component in our <a href="">related documentation</a>.
 </div>
-
 
 When saving your changes in code and running `vtex.link` in your terminal, you should see the rendered new Infocard in your store’s homepage:  
 
