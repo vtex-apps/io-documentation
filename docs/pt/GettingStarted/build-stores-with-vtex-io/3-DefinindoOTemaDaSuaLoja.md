@@ -2,9 +2,9 @@
 
 O [**Store Theme**](*link*) é um tema padrão aplicável para todas as lojas na plataforma VTEX IO. O tema realiza duas ações:
 
-- Declara *templates*, configurando e combinando componentes.
+- **Declara *templates***, configurando e combinando componentes.
 
-- Declara estilos, configurando cores primárias e secundárias, escalas de tipografia e espaçamento etc.
+- **Declara estilos**, configurando cores primárias e secundárias, escalas de tipografia e espaçamento etc.
 
 Isso quer dizer que o Store Theme é um tema padrão responsável por definir a aparência básica do *front* da sua loja.
 
