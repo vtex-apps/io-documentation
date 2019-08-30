@@ -4,7 +4,7 @@ description: "Linkar URL em banners pode ser uma grande oportunidade de influenc
 date: "30/08/2019"
 tags: ["storefront", "url", "banner", "link", "linking", "url-interna", "url-externa", "redirecionamento"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/LinkingURLsInBannersUsingStorefront.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/pt/Recipes/layout/LinkarURLsEmBannersAtrav%C3%A9sDoStorefront.md"
 ---
 
 # *Linkar* URLs em *banners* através do Storefront
