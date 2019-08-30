@@ -4,7 +4,7 @@ description: "Linking URLs in banners can be a great opportunity to influence us
 date: "30/08/2019"
 tags: ["storefront", "url", "banner", "link", "linking", "internal-url", "external-url"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/SettingUpGoogleAnalyticsSearchTracking.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/LinkingURLsInBannersUsingStorefront.md"
 ---
 
 # Linking URLs in banners using Storefront
