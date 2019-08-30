@@ -16,6 +16,7 @@
   - [Layout](recipes/layout)
   - [Store managing](recipes/store)
     - [Tornar a sua loja pública](Recipes/store/TornarASuaLojaPublica.md)
+    - [Configurar o rastreamento de busca do Google Analytics](Recipes/store/ConfigurarORastreamentoDeBuscaDoGoogleAnalytics.md)
   - [Routes](recipes/routes)
   - [Plugins](recipes/plugins)
   - [Custom Blocks](recipes/custom-blocks)
