@@ -6,7 +6,7 @@ O modelo padrão Store Theme já implementa *templates* básicos para as página
 
 ## Estrutura de blocos
 
-Declaramos um novo bloco em um *template* para adicionarmos um novo componente a uma página, da mesma forma que podemos remover um bloco para que um componente seja excluído dela.
+**Declaramos um novo bloco em um *template* para adicionarmos um novo componente a uma página**, da mesma forma que podemos remover um bloco para que um componente seja excluído dela.
 
 Como vimos anteriormente, a pasta responsável pela organização dos blocos e *templates* da sua loja é a `store`. Dentro dela, você pode declarar todos os seus blocos no arquivo `blocks.jsonc` ou criar quantas pastas e arquivos forem desejados para declará-los de forma organizada na subpasta `blocks`.
 
