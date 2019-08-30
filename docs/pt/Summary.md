@@ -9,7 +9,7 @@
 
   - [Style](recipes/style)
     - [Customize the general colors of your store](recipes/style/customizeColors.md)
-    - [Customize the general typography of your store](recipes/style/customizeTypography.md)
+    - [Customizar a tipografia da loja](Recipes/style/CustomizarATipografiaDaLoja.md)
     - [Add custom CSS to a specific block](recipes/style/customCSS.md)
     - [Customize your breakpoints for a better responsive experience](recipes/style/customizeBreakpoints.md)
     - [Customize your icons](recipes/style/customizeIcons.md)
