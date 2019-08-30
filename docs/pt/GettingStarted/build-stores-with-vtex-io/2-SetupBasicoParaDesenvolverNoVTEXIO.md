@@ -50,4 +50,6 @@ Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na 
 
 `https://{{nomeexemplo}}-{{accountname}}.myvtex.com`
 
+Onde `workspace` é o *workspace* que você acabou de criar (como `nomeexemplo`) e `conta` é o nome da conta em que você está trabalhando.
+
 Pronto! Agora você já pode desenvolver sua loja no VTEX IO.
