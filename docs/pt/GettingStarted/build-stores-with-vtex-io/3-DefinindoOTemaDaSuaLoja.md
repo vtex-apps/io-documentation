@@ -1,6 +1,6 @@
 # Definindo o tema da sua loja
 
-O [__Store Theme__](_link doc_) é um tema padrão aplicável para todas as lojas na plataforma VTEX IO. O tema realiza duas ações:
+O [**Store Theme**](*link*) é um tema padrão aplicável para todas as lojas na plataforma VTEX IO. O tema realiza duas ações:
 
 - Declara templates, configurando e combinando componentes.
 
@@ -35,7 +35,7 @@ Substitua o valor pré-definido de <i>vendor</i> pelo nome da conta da loja em q
 Agora que o Store Theme já foi copiado para os seus arquivos locais, você deve executar no seu terminal o comando `cd store-theme` . Depois, execute `vtex link` para ver o tema ser compilado e publicado na conta e no workspace que você acabou de criar.
 
 <div class="alert alert-warning">
-Execute `vtex whoami` para ter certeza de que você está na conta certa e em um workspace de desenvolvimento. Caso contrário, o Toolbelt não irá aceitar o link direto com o master.
+Execute <code>vtex whoami</code> para ter certeza de que você está na conta certa e em um workspace de desenvolvimento. Caso contrário, o Toolbelt não irá aceitar o link direto com o master.
 </div>
 
 ```
