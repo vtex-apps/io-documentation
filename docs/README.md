@@ -35,3 +35,5 @@ To be able to use the Docs Builder, you need to go through some quick steps:
 ![image](https://user-images.githubusercontent.com/18701182/64052096-a99eee00-cb53-11e9-8d69-925a451231ab.png)
 
 3. Inside the `docs/` folder create a `README.md` file.
+
+**DISCLAIMER:** In order not to have to keep track of two `README.md` files(one at the root of the project and the other at the `docs/` folder), you can delete the one at the root at the project and keep only the one at the `docs/` folder. GitHub will read the one at `docs/` on the landing page.
