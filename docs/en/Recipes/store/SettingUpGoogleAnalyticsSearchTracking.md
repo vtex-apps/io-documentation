@@ -4,10 +4,8 @@ description: "Measure your store's main searched terms and learn more about user
 date: "30/08/2019"
 tags: ["google-analytics", "search", "track", "tracking"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/MakingYourNewStorePubliclyAvailable.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/SettingUpGoogleAnalyticsSearchTracking.md"
 ---
-
-
 
 # Setting up Google Analytics search tracking
 
