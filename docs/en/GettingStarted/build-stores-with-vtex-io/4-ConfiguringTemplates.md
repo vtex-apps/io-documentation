@@ -80,6 +80,7 @@ Let’s now add a new [__infocard__](*link*) component to your store’s homepag
 Your store’s component behavior varies according to each block’s defined properties. Check out the block configuration examples for each component in our <a href="">related documentation</a>.
 </div>
 
+
 When saving your changes in code and running `vtex.link` in your terminal, you should see the rendered new Infocard in your store’s homepage:  
 
 <img width="1422" alt="BANNER-INFOCARD-STEP4-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972032-e73db380-afb6-11e9-833e-977964fe5105.png">
