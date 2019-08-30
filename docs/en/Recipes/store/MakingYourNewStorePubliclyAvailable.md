@@ -4,7 +4,7 @@ description: "If you want to make your new store publicly available, linking it 
 date: "29/08/2019"
 tags: ["release", "store", "promote", "production", "master", "workspace", "public", "available", "end-user"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/abTest.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/MakingYourNewStorePubliclyAvailable.md"
 ---
 
 # Making your new store publicly available
