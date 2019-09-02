@@ -1,5 +1,5 @@
 ---
-title: Making your store publicly available
+title: Making your store version publicly available
 description: "If you want to make your new store publicly available, linking it will not suffice. Learn in this recipe the step by step on how to make your new configurations finally available to the end user."
 date: "29/08/2019"
 tags: ["release", "store", "promote", "production", "master", "workspace", "public", "available", "end-user", "version", "production-mode"]
@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/MakingYourNewStorePubliclyAvailable.md"
 ---
 
-# Making your new store publicly available
+# Making your new store version publicly available
 
 If you’re comfortable with the configurations you’ve performed and want your version of the store to be made available to any user, [linking]() the store theme app in which you’re working will not suffice: you’ll also need to **release** it, install it in a **production workspace** and promote it to **master**.
 
