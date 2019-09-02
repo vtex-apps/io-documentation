@@ -2,7 +2,7 @@
 title: Making your store publicly available
 description: "If you want to make your new store publicly available, linking it will not suffice. Learn in this recipe the step by step on how to make your new configurations finally available to the end user."
 date: "29/08/2019"
-tags: ["release", "store", "promote", "production", "master", "workspace", "public", "available", "end-user"]
+tags: ["release", "store", "promote", "production", "master", "workspace", "public", "available", "end-user", "version", "production-mode"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/MakingYourNewStorePubliclyAvailable.md"
 ---
