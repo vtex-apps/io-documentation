@@ -29,7 +29,7 @@ vtex use {{workspacename}} --production
 ```
 
 <div class=“alert alert-warning”>
-A partir desse momento, nenhuma alteração no código é mais permitida, uma vez que o <i>workspace</i> está pronto para receber tráfego e ser acessado abertamente. Portanto, garante que todas as mudanças necessárias já foram feitas no <i>workspace</i> de desenvolvimento em que você estava trabalhando. 
+A partir desse momento, nenhuma alteração no código é mais permitida no <i>workspace</i>, uma vez que ele já está pronto para receber tráfego e ser acessado abertamente. Portanto, se você deseja alterar o seu código, trabalhe em um <i>workspace</i> de desenvolvimento e siga os passos novamente. 
 </div>
 
 Uma vez que a *app* já foi instalada e testada no *workspace* de produção, você pode executar no seu terminal o comando `vtex release {major/minor/patch} stable` para lançar a *app* em um ambiente *stable* da conta. 
