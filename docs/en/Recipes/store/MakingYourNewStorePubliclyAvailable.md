@@ -29,7 +29,7 @@ vtex use {{workspacename}} --production
 ```
 
 <div class=“alert alert-warning”>
-From this point onwards, any changes to the code are prohibited, once the workspace is ready to receive traffic and be accessed. Therefore, make sure all needed changes were already made in the dev workspace you were previously working on.
+From this point onwards, any changes to the code are prohibited in this workspace, once it is ready to receive traffic and be accessed. If you want to change your code, work on it in a developer workspace and then follow the above-mentioned steps again.
 </div>
 
 Once the app has been installed and tested in the production workspace, you can run `vtex release {major/minor/patch} stable` in your terminal to automatically launch your new version in a stable environment of your store. 
