@@ -1,5 +1,5 @@
 ---
-title: Creating a new page
+title: Creating a new custom page
 description: "This guide will help you to learn how to create a new custom page in your website. You'll be introduced to the framework's template types and default pages. Also, a simple institutional page will be built from scratch."
 date: "30/08/2019"
 tags: ["institutional page", "page", "new page", "template", "institutional"]
@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creatingNewPage.md"
 ---
 
-# Creating a new page
+# Creating a new custom page
 
 ### Introduction
 Stores are made of several different pages, each one with a different layout and content. When creating a store from scratch, some default pages are already available:
