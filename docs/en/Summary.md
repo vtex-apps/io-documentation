@@ -9,7 +9,7 @@
 
   - [Style](recipes/style)
     - [Customize store's icons](recipes/style/customizeIcons.md)
-    - [Customizing your store’s typography](Recipes/style/CustomizingYourStore’sTypography.md)
+    - [Customizing your store’s typography](Recipes/style/CustomizingYourStoresTypography.md)
   - [Layout](recipes/layout)
     - [Build sandbox blocks](recipes/layout/sandboxBlock.md)
     - [Linking URLs in banners using Storefront](Recipes/layout/LinkingURLsInBannersUsingStorefront.md)
@@ -76,7 +76,7 @@
     - [Product Price](components/product/vtex.store-components/ProductPrice.md)
     - [Product Specifications](components/product/vtex.store-components/ProductSpecifications.md)
     - [SKU Selector](components/product/vtex.store-components/SKUSelector.md)
-    - [SKU Selector](components/product/vtex.store-components/ShippingSimulator.md)
+    - [Shipping Simulator](components/product/vtex.store-components/ShippingSimulator.md)
     - [Shelf](components/product/vtex.shelf)
     - [Rebuy](components/product/vtex.rebuy)
     - [Product Teaser Interfaces](components/product/vtex.product-teaser-interfaces)
