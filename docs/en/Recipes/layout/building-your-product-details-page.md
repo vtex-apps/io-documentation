@@ -1,13 +1,13 @@
 ---
-title: Building your Product Page
+title: Building your Product Details Page
 description: "Custom product pages are simple to build with our flexible components"
 date: "2019-08-29"
-tags: ["pdp", "product", "product page", "product details page"]
+tags: ["pdp", "product", "product-page", "product-details-page"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/productDetailsPage.md"
 ---
 
-# Building your Product Page
+# Building your Product Details Page
 ​
 ### Disclaimer
 ​
