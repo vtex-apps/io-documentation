@@ -8,11 +8,7 @@
 - Recipes
 
   - [Style](recipes/style)
-    - [Customize the general colors of your store](recipes/style/customizeColors.md)
-    - [Personalizar la tipografía de la tienda](recipes/style/PersonalizarLaTipografiaDeLaTienda.md)
-    - [Add custom CSS to a specific block](recipes/style/customCSS.md)
-    - [Customize your breakpoints for a better responsive experience](recipes/style/customizeBreakpoints.md)
-    - [Customize your icons](recipes/style/customizeIcons.md)
+    - [Personalizar la tipografía de la tienda](recipes/style/personalizar-la-tipografia-de-la-tienda.md)
   - [Layout](recipes/layout)
   - [Content](recipes/content)
   - [Routes](recipes/routes)
