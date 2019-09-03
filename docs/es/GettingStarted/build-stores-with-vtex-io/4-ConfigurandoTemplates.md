@@ -85,7 +85,7 @@ Al guardar sus alteraciones en el código y ejecutar `vtex link` en su terminal,
 
 <img width="1422" alt="BANNER-INFOCARD-STEP4-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972032-e73db380-afb6-11e9-833e-977964fe5105.png">
 
-<div class=“alert alert-warning”>
+<div class="alert alert-warning">
 Los cambios se reflejarán en el <i>workspace</i> en que estos se realizaron. Por esto, al comprobar la renderización del nuevo Infocard en su tienda, asegúrese de verificar a cuál <i>workspace</i> de la cuenta está accediendo.
 </div>
 

@@ -28,7 +28,7 @@ vtex use {{workspacename}} --production
 
 ```
 
-<div class=“alert alert-warning”>
+<div class="alert alert-warning">
 A partir desse momento, nenhuma alteração no código é mais permitida no <i>workspace</i>, uma vez que ele já está pronto para receber tráfego e ser acessado abertamente. Portanto, se você deseja alterar o seu código, trabalhe em um <i>workspace</i> de desenvolvimento e siga os passos novamente. 
 </div>
 

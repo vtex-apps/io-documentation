@@ -12,7 +12,7 @@ Luego, digite `yarn global add vtex` en el terminal de su computadora.
 $ yarn global add vtex
 ```
 
-<div class=“alert alert-warning”>
+<div class="alert alert-warning">
 Para confirmar que la instalación ocurrió con normalidad, puede ejecutar el comando <code>vtex</code>. Este deberá mostrar un texto de ayuda con todos los comandos disponibles.
 </div>
 
@@ -44,7 +44,7 @@ Esto cambia su Toolbelt a un *workspace* llamado `nombreejemplo` y lo crea si es
 
 <img width="436" alt="workspace-nombreejemplo ES" src="https://user-images.githubusercontent.com/52087100/63979676-d1c51900-ca8f-11e9-826b-43293439e630.png">
 
-<div class=“alert alert-warning”>
+<div class="alert alert-warning">
 <code>vtex use</code> hace que todas sus operaciones se produzcan en el <i>workspace</i> definido en el comando. Esto significa que es posible alternar sus operaciones para master apenas ejecutando en Toolbelt <code>vtex use master</code>, por ejemplo.
 </div>
 

@@ -33,6 +33,6 @@ After choosing the font family, you can apply it to your store’s text content.
 
 For a better understanding of this feature and customization recommendations for each of your store’s text content, access the [VTEX Styleguide](https://styleguide.vtex.com/#/Styles?id=section-typography).
 
-<div class=“alert alert-warning”>
+<div class="alert alert-warning">
 After performing the desired customizations, don’t forget to save the changes.
 </div>

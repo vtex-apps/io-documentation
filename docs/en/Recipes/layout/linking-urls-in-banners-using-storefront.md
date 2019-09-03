@@ -28,7 +28,7 @@ Indicate that an internal URL will be inserted in the banner, selecting the **Ex
 
 **5.** Click on **Save**.
 
-<div class=“alert alert-warning”>
+<div class="alert alert-warning">
 The <code>Banner target page</code> and <code>Params</code> fields were deprecated. Therefore, the filled in Internal URL data will be the only data taken into account when indicating the desired internal route.
 </div>
 

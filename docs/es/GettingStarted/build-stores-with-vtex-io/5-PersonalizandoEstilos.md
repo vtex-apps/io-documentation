@@ -28,7 +28,7 @@ Por ejemplo: podemos definir en el archivo `style.json` que el color de fondo de
           "muted-5": "#f2f4f5"
         },
         
-````
+```
 
 Guarde las alteraciones hechas en su código y verifique la nueva apariencia de su tienda:
 
@@ -94,7 +94,7 @@ Por ejemplo: vamos a personalizar la manera como el bloque `info-card#bestdeals`
 
 ```
 
-<div class=“alert alert-info”>
+<div class="alert alert-info">
 La propiedad <code>"blockClass"</code> puede tener el valor de su preferencia, siempre que se haga su referencia correctamente en el archivo CSS creado.
 </div>
 
@@ -112,7 +112,7 @@ Una vez que haya guardado las alteraciones, podrá ver el Infocard con su person
 
 <img width="1426" alt="infocard-yellow-forreal" src="https://user-images.githubusercontent.com/52087100/61976477-405f1480-afc2-11e9-842d-de5caa3f07d9.png">
 
-<div class=“alert alert-warning”>
+<div class="alert alert-warning">
 Las sustituciones de CSS solo pueden alterarse manualmente por código, mientras que las personalizaciones hechas por el archivo `style.json` pueden editarse fácilmente a través de la sección de Storefront del admin. Por lo tanto, cuando personalice el estilo de su tema, le recomendamos que evite realizar grandes personalizaciones que requieran de sustitución de CSS.
 </div>
 
