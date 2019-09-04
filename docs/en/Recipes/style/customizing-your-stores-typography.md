@@ -9,9 +9,13 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Customizing your store’s typography
 
+## Introduction
+
 In addition to being crucial for communicating with users, a store’s typography should be a reflection of its identity, using its characteristic styles, such as font size and spacing.
 
-Using admin’s Storefront, you can customize a store’s typography faster and easier, without the need to resort to your theme’s code for direct CSS changes. Simply follow the steps below:
+Using admin’s Storefront, you can customize a store’s typography faster and easier, without the need to resort to your theme’s code for direct CSS changes. 
+
+## Step by step
 
 **1.** Access **Storefront** in the desired account’s admin, in **CMS**.
 
