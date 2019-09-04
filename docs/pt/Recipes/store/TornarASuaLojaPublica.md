@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/pt/Recipes/
 
 # Tornar a sua loja pública
  
-Se você está seguro das configurações feitas por você e deseja que a sua nova versão da loja fique disponível para todo e qualquer usuário, [linkar](*link*) a store theme app em que você está trabalhando não será suficiente: ela também precisará ser **lançada**, instalada em um *workspace* em **modo de produção** e promovido para **master**.
+Se você está seguro das configurações feitas por você e deseja que a sua nova versão da loja fique disponível para todo e qualquer usuário, [linkar](*link*) a store theme app em que você está trabalhando não será suficiente: ela também precisará ser **lançada**, **publicada**, instalada em um *workspace* em **modo de produção** e promovido para **master**.
  
 ## Lançamento
  
@@ -17,8 +17,22 @@ Se você está seguro de todas as configurações feitas no seu *workspace* de d
  
 Vamos usar o comando `vtex release` para lançar a nova versão dentro do `manifest.json`  da app de acordo com a nomenclatura de versionamento semântico, atualizando seu `CHANGELOG.md`, atribuindo etiquetas (*commits tags*) e enviando as alterações feitas para o seu repositório remoto.
  
-Você deve executar `vtex release {major/minor/patch} beta` no seu terminal para automaticamente lançar a sua nova versão em um ambiente *beta* da conta e publicá-la no seu registro. Isso irá permitir que ela não exista somente no seu ambiente local e possa ser instalada para testes por você e outros usuários com acesso à conta.
- 
+Você deve executar `vtex release {major/minor/patch} beta` no seu terminal para automaticamente lançar a sua nova versão em um ambiente *beta* da conta. Isso irá permitir que ela não exista somente no seu ambiente local e possa ser instalada para testes por você e outros usuários com acesso à conta.
+
+## Publicação
+
+Com a nova versão lançada, a app deve ser instalada para que as suas novas configurações sejam testadas. Mas não é possível instalar uma app que existe somente no seu ambiente local. Para que ela possa ser instalada por você e outras pessoas, a app também deve ser publicada.
+
+Use o comando `vtex publish` para publicar a app no registro da conta em que você está trabalhando.
+
+<div class="alert alert-warning">
+Você deve estar logado na conta em que deseja que a nova versão seja publicada. Para isso, assegure-se que o <code>vendor</code> da app é <b>igual</b> ao <code>account</code> dela.
+</div>
+
+Se a sua app **não** possuir `billingOptions`, ela poderá ser instalada através da seção de Apps, dentro do admin, por usuários com acesso à conta em que ela foi registrada.
+
+Caso contrário, a app estará disponível para instalação através do Toolbelt, independentemente do modelo de cobrança especificado. [Clique aqui](http://help.vtex.com/pt/tutorial/modelos-de-cobranca-de-apps) para mais informações sobre modelos de cobrança de apps.
+
 ## Modo de produção
  
 Para instalar e testar sua nova versão da loja, você deve criar um *workspace* em modo de produção usando o seguinte comando:
