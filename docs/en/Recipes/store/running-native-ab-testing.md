@@ -4,16 +4,20 @@ description: "Our native A/B testing solution is designed entirely for ecommerce
 date: "19/08/2019"
 tags: ["ab", "test", "a/b", "running", "store", "testing", "workspace", "native"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/abTest.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/store/running-native-ab-testing.md"
 ---
 
 # Running native A/B testing
+
+## Introduction
 
 Our native A/B testing solution is designed entirely for ecommerce businesses seeking to optimize their conversion by measuring and comparing traffic between a variant workspace and the master.
 
 <img width="621" alt="ab-testing" src="https://user-images.githubusercontent.com/52087100/64129197-21a62780-cd91-11e9-86f9-1ec8a3d2e2c8.png">
 
 Follow the next steps and learn more about the installation and execution of an A/B testing running entirely on the VTEX IO platform.  
+
+## Step by step
 
 **1.** Start off by implementing and saving the changes you want to test in a chosen workspace. Then, do not forget to put it in the **production mode**. 
 
