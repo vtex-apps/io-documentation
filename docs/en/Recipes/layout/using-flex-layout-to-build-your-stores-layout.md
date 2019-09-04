@@ -9,13 +9,13 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Using flex-layout to build your store's layout
 
-## What is `flex-layout`?
+## What is flex-layout?
 
 Flex-layout is a layout structuring paradigm built within VTEX IO store framework to allow the construction of complex custom layouts. This paradigm uses the concept of rows and columns to set the desired structure and positioning of components in a given page.
 
 There two basic building blocks of every `flex-layout`, the `flex-layout.row` component and the `flex-layout.col` component. If you are already familiar with the [`flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) layout used in CSS, `flex-layout` should be easy to get a grasp since that's being used by `flex-layout.row` and `flex-layout.col` under the hood.
 
-## Using `flex-layout`
+## Using flex-layout
 
 We are going to build the About Us page from our default [`store-theme`](https://storetheme.vtex.com/about-us) using `flex-layout` from scratch.
 
@@ -92,7 +92,7 @@ Now we are declaring `flex-layout.col#text-about-us` with two children, which ar
 
 We are also passing down a specific prop to the `flex-layout.col`: `preventVerticalStretch`, which prevents the column from occupying 100% of its parent height.
 
-We are not going to use all of the available props for customizing the row in this example, but they can be found at: [vtex.flex-layout](https://vtex.oi/docs/components/general/vtex.flex-layout).
+We are not going to use all of the available props for customizing the row in this example, but they can be found at: [vtex.flex-layout](https://vtex.io/docs/components/general/vtex.flex-layout).
 
 Okay! So that's pretty much what it takes to use `flex-layout` to build a simple layout. Here's the final `about-us.json`[https://github.com/vtex-apps/store-theme/blob/master/store/blocks/about-us.json] file:
 
