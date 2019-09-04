@@ -1,6 +1,6 @@
 ---
 title: Publishing an app
-description: "Publique a sua nova versão da app para que ela possa ser instalada e testada por você e outros usuários."
+description: "Publish your app’s new version so that it can be installed and tested by other users."
 date: "04/09/2019"
 tags: ["publishing", "publish", "app"]
 version: "0.x"
