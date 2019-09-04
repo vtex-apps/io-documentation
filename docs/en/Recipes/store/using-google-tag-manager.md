@@ -4,7 +4,7 @@ description: "This recipe will explain how to start using Google Tag Manager on 
 date: "19/08/2019"
 tags: ["google", "tag", "manager", "store", "googletagmanager", "gtm"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/googleTagManager.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/using-google-tag-manager.md"
 ---
 
 # Using Google Tag Manager
