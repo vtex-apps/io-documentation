@@ -20,9 +20,7 @@ Follow the next steps and learn more about the installation and execution of an 
 ## Step by step
 
 **1.** Start off by implementing and saving the changes you want to test in a chosen workspace. Then, do not forget to put it in the **production mode**. 
-
 **2.** Open your terminal and authenticating yourself by running `vtex login`.
-
 **3.** 	Then, you must install our A/B testing app on the desired account master workspace. In order to do so, simply run `vtex install vtex.ab-tester`. 
 
 <div class="alert alert-info">
