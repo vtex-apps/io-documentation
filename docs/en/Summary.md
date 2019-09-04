@@ -4,6 +4,10 @@
 
   - [What is VTEX IO](getting-started/what-is-vtex-io/1)
   - [Build stores with VTEX IO](getting-started/build-stores-with-vtex-io/1)
+    - [Basic setup](getting-started/build-stores-with-vtex-io/2)
+    - [Setting your store's theme](getting-started/build-stores-with-vtex-io/3)
+    - [Configuring templates](getting-started/build-stores-with-vtex-io/4)
+    - [Customizing styles](getting-started/build-stores-with-vtex-io/5)
 
 - Recipes
 
