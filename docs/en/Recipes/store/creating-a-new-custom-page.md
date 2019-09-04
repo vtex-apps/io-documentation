@@ -4,7 +4,7 @@ description: "This guide will help you to learn how to create a new custom page 
 date: "30/08/2019"
 tags: ["institutional page", "page", "new page", "template", "institutional"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creatingNewPage.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-new-custom-page.md"
 ---
 
 # Creating a new custom page
