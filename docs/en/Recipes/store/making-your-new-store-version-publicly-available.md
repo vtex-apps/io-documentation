@@ -46,6 +46,12 @@ vtex use {{workspacename}} --production
 From this point onwards, any changes to the code are prohibited in the workspace, once it is ready to receive traffic and be accessed. If you want to change your code, work on it in a developer workspace and then follow the above-mentioned steps again.
 </div>
 
+To install an app in the new production workspace, simply run one of the following commands:
+
+- `vtex install` if you are currently in the app's folder.
+- `vtex install {appvendor}.{appname}` to install the latest version of the app.
+- `vtex install {appvendor}.{appname}@{appversion}` to install a specific version of the app.
+
 Once the app has been installed and tested in the production workspace, you can run `vtex release {major/minor/patch} stable` in your terminal to automatically launch your new version in a stable environment of your store. 
 
 ## Master workspace
