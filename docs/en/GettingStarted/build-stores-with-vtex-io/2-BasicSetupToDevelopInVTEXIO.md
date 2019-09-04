@@ -51,6 +51,10 @@ Having created your own development workspace, you can go to your store by acces
 
 `https://{workspace}-{account}.myvtex.com`
 
-> `{workspace}` is the workspace that you've just created and `{account}` is the name of the account in which you are working.
+ > `{workspace}` is the workspace that you've just created and `{account}` is the name of the account in which you are working.
+
+ <div class="alert alert-info">
+<strong>Tip</strong>: you can simply run <code>vtex browse</code> in your terminal to automatically open your browser on the <code>https://{workspace}-{account}.myvtex.com</code> URL.
+</div>
 
 Done! You can begin developing your store in VTEX IO.
