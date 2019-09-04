@@ -1,13 +1,13 @@
 ---
-title: Customize store's icons
-description: "VTEX Styleguide has a default iconography that is used in all VTEX's components. Their implementation is imported via the [Store Icons](https://github.com/vtex-apps/store-icons) app."
+title: Changing your store's icons
+description: "VTEX Styleguide has a default iconography that is used in all VTEX's components. Learn with this recipe how to change it and customize according to your store's identity. "
 date: "19/08/2019"
 tags: ["icon", "custom", "icons", "iconography"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/style/customizeIcons.md"
 ---
 
-# Customizing store's icons
+# Changing your store's icons
 
 [VTEX Styleguide](https://styleguide.vtex.com) has a [default iconography](https://styleguide.vtex.com/#/Icons) that is used in all VTEX's components. Their implementation is imported via the [Store Icons](https://github.com/vtex-apps/store-icons) app. 
 
