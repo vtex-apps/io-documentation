@@ -4,7 +4,7 @@ description: "With Store Framework you're able to use iframes to attend specific
 date: "2019-08-21"
 tags: ["flex-layout", "layout"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/flexLayout.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-flex-layout.md"
 ---
 
 # Using flex-layout
