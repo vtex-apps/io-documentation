@@ -29,7 +29,7 @@ This would in turn open a browser window asking for your credentials.
 
 When you are logged in, you can use the `vtex whoami` command to uncover which **account** and **workspace** is being used by the terminal. 
 
-<img width="876" alt="toolbelt-whoami" src="https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png">
+[toolbelt-whoami](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
 
 ## Creating your own workspace
 
@@ -41,7 +41,7 @@ $ vtex use {examplename}
 
 This changes your Toolbelt to a so-called `examplename` workspace and creates it if it doesn’t already exist.
 
-<img width="429" alt="workspace-examplename EN" src="https://user-images.githubusercontent.com/52087100/63979000-30899300-ca8e-11e9-9d9d-234e31ac45f7.png">
+[workspace-examplename EN](https://user-images.githubusercontent.com/52087100/63979000-30899300-ca8e-11e9-9d9d-234e31ac45f7.png)
 
 <div class="alert alert-warning">
 <code>vtex use</code> makes all your operations run in the workspace set in the command, which means you can shift your operations to Master simply by executing <code>vtex use master</code> in Toolbelt, for example.

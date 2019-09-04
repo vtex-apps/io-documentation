@@ -56,6 +56,7 @@ If you want to have an uptaded list, you can always check the allowed list [here
 ### Real world example
 ​
 Now, we are going to look at our demo store, [Storetheme](https://storetheme.vtex.com/).
+
 ![](https://i.ibb.co/VDjQLyJ/image.png)
 ​
 It has a good example of the usage of the `store.product` flexible block, you can see it [here](https://github.com/vtex-apps/store-theme/blob/master/store/blocks/product.json).
@@ -151,7 +152,9 @@ Here is its definition:
 As you can see, in its `store.product` children, it defines 5 blocks, the first two being `flex-layout.row`.
 ​
 The first row is just the breadcrumb and you can see it here:
+
 ![](https://i.ibb.co/ZhNry22/image.png)
+
 Its related block:
 ​
 ```
@@ -228,11 +231,13 @@ It defines two columns:
 ```
 ​
 The left col is the one with the [product-images](https://github.com/vtex-apps/store-components/tree/master/react/components/ProductImages)
+
 ![](https://i.ibb.co/ns8sP0Y/image.png).
 ​
 Read its readme to get to know its blocks. You can customize the orientation of the thumbnails (vertical or horizontal), its position (left or right), if you want arrows on it if it overflows and what kind of zoom behaviour you would like.
 ​
 The right column has many children:
+
 ![](https://i.ibb.co/Z6zxSc7/image.png)
 ​
 It starts with a [product-name](https://github.com/vtex-apps/store-components/tree/master/react/components/ProductName), used to display the product name, along with its SKU name if you want.
@@ -240,6 +245,7 @@ It starts with a [product-name](https://github.com/vtex-apps/store-components/tr
 Right below it, we have the [product-price](https://github.com/vtex-apps/store-components/tree/master/react/components/ProductPrice). It displays a properly formatted selling price, you can set to show the list price (if different), to show installments, etc.
 ​
 ![](https://i.ibb.co/BykKvJM/image.png)
+
 Another example of product-price, this time displaying discount and list price.
 ​
 Right below the price, we see the `product-separator`, a block that just draws a line.

@@ -25,10 +25,7 @@ These default pages path are already defined in the Admin Pages. You can check t
 
 Notice that these URLs’ format cannot be changed, since they are default for every store. See the store.product's example:
 
-<img width="750" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63775040-ea2d0c00-c8b4-11e9-8697-d33d40df45f4.png">
-
-
-
+![store-product-exp](https://user-images.githubusercontent.com/12139385/63775040-ea2d0c00-c8b4-11e9-8697-d33d40df45f4.png)
 
 Besides these default pages, its possible to create other custom pages, such as the ones with Institutional content, or blog content.
 
@@ -56,9 +53,7 @@ As an institutional page is not directly connected to any specific product we wi
 
 We will create a simple template with a row that contains an image in its left column and, in its right column, a title and text content:
 
-<img width="750" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63775975-dbdfef80-c8b6-11e9-9b76-e50924b828ae.png">
-
-
+![store-product-exp](https://user-images.githubusercontent.com/12139385/63775975-dbdfef80-c8b6-11e9-9b76-e50924b828ae.png)
 
 To do so, on your theme's source code, declare a custom template layout within your blocks folder:
 ```
@@ -149,9 +144,7 @@ Check that everytime you create a new template, a new page is created at your Ad
 
 Also, this new template becomes available to be set to any `Standard Page`.
 
-<img width="750" alt="store-product-exp" src="https://user-images.githubusercontent.com/12139385/63776208-498c1b80-c8b7-11e9-9e46-3c7f76f58036.png">
-
-
+![store-product-exp](https://user-images.githubusercontent.com/12139385/63776208-498c1b80-c8b7-11e9-9e46-3c7f76f58036.png)
 
 >One template can serve different pages. The template will only set the layout of the page, hence you may use the same template to pages that share the same layout but have different URLs and content. To set a new url in your store with a template that already exists, just click on the `Create New` button of your store's Admin Pages, and choose your url and desired template. As these changes affect your workspace immediately, **it's always a good practice to create these new pages on production workspaces and not directly on master.**
 

@@ -21,8 +21,8 @@ Ok, with that in mind, let's get to the point. To use Sandbox App you should fir
 
 ![sandbox dependency](https://lh6.googleusercontent.com/xHiHR8-_xYO2NuPaAHSAC2zxaFMCJyP72NIGAPi0EK77D60bdkFkcmvQLqYbenwvlTuTO875jfrMhh5HGxo9OXI7ZtSANTCxTytUJD0d)
 
+Now you need to declare your sandbox block, let's say you want to create a simple `h1` sandbox block, that would be something like:
 
-Now you need to declare your sandbox block, let's say you want to create a simple `h1` sandbox block, that would be something like: 
 ```
 "sandbox#h1": {
     "props": {
@@ -32,8 +32,8 @@ Now you need to declare your sandbox block, let's say you want to create a simpl
         "allowCookies": false
     }
 }
-
 ```
+
 Finally, just reference it in a another's block `children` or `blocks`, on your `store.home`, for instance: 
 
 ```

@@ -58,7 +58,7 @@ You may customize already declared Store Theme blocks as well as new ones freely
 
 Let’s now add a new [__infocard__](*link*) component to your store’s homepage, before the shelf. To do this, we’ll need to add `info-cardf#bestdeals` to the `store.home` template in `home.jsonc`. Then, we will declare the block below in the same file.
 
-<img width="645" alt="newblock-step4" src="https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png">
+[newblock-step4](https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png)
 
 ```
 "info-card#bestdeals": {
@@ -82,7 +82,7 @@ Your store’s component behavior varies according to each block’s defined pro
 
 When saving your changes in code and running `vtex.link` in your terminal, you should see the rendered new Infocard in your store’s homepage:  
 
-<img width="1422" alt="BANNER-INFOCARD-STEP4-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972032-e73db380-afb6-11e9-833e-977964fe5105.png">
+![BANNER-INFOCARD-STEP4-FORREAL](https://user-images.githubusercontent.com/52087100/61972032-e73db380-afb6-11e9-833e-977964fe5105.png)
 
 <div class="alert alert-warning">
 Changes will be reflected in the workspace in which they are made. Therefore, when checking your store’s new Infocard rendering, don’t forget to check which account workspace you’re accessing.

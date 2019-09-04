@@ -21,7 +21,7 @@ You can configure one of your store’s banner to have page redirect, meaning th
 
 Indicate that an internal URL will be inserted in the banner, selecting the **External Route** toggle. Then, in the `Internal URL` field, simply copy and paste the internal desired address.
 
-<img width="1142" alt="internal-url-field" src="https://user-images.githubusercontent.com/52087100/63995069-6e59dc00-cacd-11e9-92de-da14a89b4117.png">
+![internal-url-field](https://user-images.githubusercontent.com/52087100/63995069-6e59dc00-cacd-11e9-92de-da14a89b4117.png)
 
 5. Click on **Save**.
 
@@ -36,6 +36,6 @@ The <code>Banner target page</code> and <code>Params</code> fields were deprecat
 3. Select the **Carousel** block and choose the banner that will have its content edited.
 4. Selecting the **External Route** toggle and in the `URL (external)` field, simply copy and paste the external desired address.
 
-<img width="1143" alt="external-url-field-storefront" src="https://user-images.githubusercontent.com/52087100/63995053-541ffe00-cacd-11e9-9760-385e2f526941.png">
+![external-url-field-storefront](https://user-images.githubusercontent.com/52087100/63995053-541ffe00-cacd-11e9-9760-385e2f526941.png)
 
 5. Click on **Save**.

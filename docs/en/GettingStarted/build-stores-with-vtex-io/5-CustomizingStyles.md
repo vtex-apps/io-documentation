@@ -28,11 +28,11 @@ For example: in `style.json`, we can set the default theme background color to b
           "muted-5": "#f2f4f5"
         },
         
-````
+```
 
 Save the changes made to your code and check out your store’s new appearance:
 
-<img width="1423" alt="STORE-THEME-BLUE-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972132-31269980-afb7-11e9-863f-0727c363cb8f.png">
+[STORE-THEME-BLUE-FORREAL](https://user-images.githubusercontent.com/52087100/61972132-31269980-afb7-11e9-863f-0727c363cb8f.png)
 
 ## Advanced styles with CSS replacements
 
@@ -60,9 +60,9 @@ In the `vtex.store-components.css` file, declare the following CSS replacement:
 
 Save your changes and access your store once more to check out the Infocards new red style having overwritten your store’s predefined blue: 
 
-<img width="1425" alt="banner-1-substituiçãocss-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972638-7a2b1d80-afb8-11e9-8fd3-65e3852f1022.png">
+[banner-1-substituiçãocss-FORREAL](https://user-images.githubusercontent.com/52087100/61972638-7a2b1d80-afb8-11e9-8fd3-65e3852f1022.png)
 
-<img width="1422" alt="banner-2-sobrescrevendo-FORREAL" src="https://user-images.githubusercontent.com/52087100/61972620-697aa780-afb8-11e9-81a9-729478961e62.png">
+[banner-2-sobrescrevendo-FORREAL](https://user-images.githubusercontent.com/52087100/61972620-697aa780-afb8-11e9-81a9-729478961e62.png)
 
 ### Block Class
 
@@ -74,7 +74,7 @@ This means that you’ll need to not just declare one CSS replacement for the In
 
 For example: let’s customize the way in which the `info-card#bestdeals` block is rendered, adding the `blockClass` prop to it:
 
-<img width="639" alt="INFOCARD-BLOCKCLASS-FORREAL-REAL" src="https://user-images.githubusercontent.com/52087100/61976127-54564680-afc1-11e9-9f62-ab3473639805.png">
+[INFOCARD-BLOCKCLASS-FORREAL-REAL](https://user-images.githubusercontent.com/52087100/61976127-54564680-afc1-11e9-9f62-ab3473639805.png)
 
 ```
 "info-card#bestdeals": {
@@ -108,7 +108,7 @@ To correctly reference the block, simply add the `blockClass` property value in 
 
 After saving the changes, you can see the Infocard with its exclusive customization: 
 
-<img width="1426" alt="infocard-yellow-forreal" src="https://user-images.githubusercontent.com/52087100/61976477-405f1480-afc2-11e9-842d-de5caa3f07d9.png">
+[infocard-yellow-forreal](https://user-images.githubusercontent.com/52087100/61976477-405f1480-afc2-11e9-842d-de5caa3f07d9.png)
 
 <div class="alert alert-warning">
 CSS replacements can only be manually changes by code, whereas customization in `json.style` can easily be edited using admin's Storefront. Therefore, when customizing your theme’s style, it’s recommended that you avoid heavy customizations that require CSS replacements.
