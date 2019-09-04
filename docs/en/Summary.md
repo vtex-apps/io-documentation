@@ -60,7 +60,7 @@
     - [Slider](components/navigation/vtex.slider)
     - [Menu](components/navigation/vtex.menu)
     - [Locale Switcher](components/navigation/vtex.locale-switcher)
-    - [Drawer](components/navigation/vtex.drawer)
+    - [Drawer](components/navigation/vtex.store-drawer)
     - [Category Menu](components/navigation/vtex.category-menu)
     - [Breadcrumb](components/navigation/vtex.breadcrumb)
   - [Product Related](components/product-related)

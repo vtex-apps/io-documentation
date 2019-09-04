@@ -190,7 +190,7 @@
       "url": "https://github.com/vtex-apps/locale-switcher"
     },
     {
-      "appName": "vtex.drawer",
+      "appName": "vtex.store-drawer",
       "title": "Drawer",
       "description": "VTEX Drawer component",
       "url": "https://github.com/vtex-apps/drawer"
