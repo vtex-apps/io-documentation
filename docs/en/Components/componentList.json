@@ -2,91 +2,91 @@
   "general": [
     {
       "appName": "vtex.store-components",
-      "file": "Animation.md",
+      "file": "animation.md",
       "title": "Animation",
       "description": "VTEX Animation component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "CollectionBadges.md",
+      "file": "collection-badges.md",
       "title": "CollectionBadges",
       "description": "VTEX CollectionBadges component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "Container.md",
+      "file": "container.md",
       "title": "Container",
       "description": "VTEX Container component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "GradientCollapse.md",
+      "file": "gradient-collapse.md",
       "title": "GradientCollapse",
       "description": "VTEX GradientCollapse component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "Greeting.md",
+      "file": "greeting.md",
       "title": "Greeting",
       "description": "VTEX Greeting component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "Image.md",
+      "file": "image.md",
       "title": "Image",
       "description": "VTEX Image component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "InfoCard.md",
+      "file": "info-card.md",
       "title": "InfoCard",
       "description": "VTEX InfoCard component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "Logo.md",
+      "file": "logo.md",
       "title": "Logo",
       "description": "VTEX Logo component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "Newsletter.md",
+      "file": "newsletter.md",
       "title": "Newsletter",
       "description": "VTEX Newsletter component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "Notification.md",
+      "file": "notification.md",
       "title": "Notification",
       "description": "VTEX Notification component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "Share.md",
+      "file": "share.md",
       "title": "Share",
       "description": "VTEX Share component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "Slider.md",
+      "file": "slider.md",
       "title": "Slider",
       "description": "VTEX Slider component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "UserAddress.md",
+      "file": "user-address.md",
       "title": "UserAddress",
       "description": "VTEX UserAddress component",
       "url": "https://github.com/vtex-apps/store-components"
@@ -375,91 +375,91 @@
     },
     {
       "appName": "vtex.store-components",
-      "file": "AvailabilitySubscriber.md",
+      "file": "availability-subscriber.md",
       "title": "AvailabilitySubscriber",
       "description": "VTEX AvailabilitySubscriber component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "BuyButton.md",
+      "file": "buy-button.md",
       "title": "BuyButton",
       "description": "VTEX BuyButton component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "CategoriesHighlights.md",
+      "file": "categories-highlights.md",
       "title": "CategoriesHighlights",
       "description": "VTEX CategoriesHighlights component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "DiscountBadge.md",
+      "file": "discount-badge.md",
       "title": "DiscountBadge",
       "description": "VTEX DiscountBadge component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "ProductBrand.md",
+      "file": "product-brand.md",
       "title": "ProductBrand",
       "description": "VTEX ProductBrand component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "ProductDescription.md",
+      "file": "product-description.md",
       "title": "ProductDescription",
       "description": "VTEX ProductDescription component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "ProductHighlights.md",
+      "file": "product-highlights.md",
       "title": "ProductHighlights",
       "description": "VTEX ProductHighlights component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "ProductImages.md",
+      "file": "product-images.md",
       "title": "ProductImages",
       "description": "VTEX ProductImages component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "ProductName.md",
+      "file": "product-name.md",
       "title": "ProductName",
       "description": "VTEX ProductName component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "ProductPrice.md",
+      "file": "product-price.md",
       "title": "ProductPrice",
       "description": "VTEX ProductPrice component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "ProductSpecifications.md",
+      "file": "product-specifications.md",
       "title": "ProductSpecifications",
       "description": "VTEX ProductSpecifications component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "SKUSelector.md",
+      "file": "sku-selector.md",
       "title": "SKUSelector",
       "description": "VTEX SKUSelector component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
-      "file": "ShippingSimulator.md",
+      "file": "shipping-simulator.md",
       "title": "ShippingSimulator",
       "description": "VTEX ShippingSimulator component",
       "url": "https://github.com/vtex-apps/store-components"
@@ -520,49 +520,49 @@
     },
     {
       "appName": "vtex.product-details",
-      "file": "ProductQuantitySelector.md",
+      "file": "product-quantity-selector.md",
       "title": "Product Quantity Selector",
       "description": "VTEX Product Quantity Selector component",
       "url": "https://github.com/vtex-apps/product-details"
     },
     {
       "appName": "vtex.product-summary",
-      "file": "ProductSummaryName.md",
+      "file": "product-summary-name.md",
       "title": "Product Summary Name",
       "description": "VTEX Product Summary Name component",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
-      "file": "ProductSummaryAttachmentList.md",
+      "file": "product-summary-attachmentList.md",
       "title": "Product Summary Attachment List",
       "description": "VTEX Product Summary Attachment List component",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
-      "file": "ProductSummaryBuyButton.md",
+      "file": "product-summary-buy-button.md",
       "title": "Product Summary Buy Button",
       "description": "VTEX Product Summary Buy Button component",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
-      "file": "ProductSummaryDescription.md",
+      "file": "product-summary-description.md",
       "title": "Product Summary Description",
       "description": "VTEX Product Summary Description component",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
-      "file": "ProductSummaryImage.md",
+      "file": "product-summary-image.md",
       "title": "Product Summary Image",
       "description": "VTEX Product Summary Image component",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
-      "file": "ProductSummaryPrice.md",
+      "file": "product-summary-price.md",
       "title": "Product Summary Price",
       "description": "VTEX Product Summary Price component",
       "url": "https://github.com/vtex-apps/product-summary"
@@ -571,7 +571,7 @@
   "search-related": [
     {
       "appName": "vtex.store-components",
-      "file": "SearchBar.md",
+      "file": "search-bar.md",
       "title": "SearchBar",
       "description": "VTEX SearchBar component",
       "url": "https://github.com/vtex-apps/store-components"
