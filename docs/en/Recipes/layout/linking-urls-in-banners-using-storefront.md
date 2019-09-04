@@ -13,20 +13,17 @@ You can configure one of your store’s banner to have page redirect, meaning th
 
 ## Internal URLs
 
-**1.** Access the **CMS** module.
-
-**2.** Click on **Storefront**.
-
-**3.** Select the **Carousel** block and choose the banner that will have its content edited.
-
-**4.** Maintain the **External route** toggle active and in the `Internal URL` field, simply copy and paste the internal desired address.
+1. Access the **CMS** module.
+2. Click on **Storefront**.
+3. Select the **Carousel** block and choose the banner that will have its content edited.
+4. Maintain the **External route** toggle active and in the `Internal URL` field, simply copy and paste the internal desired address.
 
 
 Indicate that an internal URL will be inserted in the banner, selecting the **External Route** toggle. Then, in the `Internal URL` field, simply copy and paste the internal desired address.
 
 <img width="1142" alt="internal-url-field" src="https://user-images.githubusercontent.com/52087100/63995069-6e59dc00-cacd-11e9-92de-da14a89b4117.png">
 
-**5.** Click on **Save**.
+5. Click on **Save**.
 
 <div class="alert alert-warning">
 The <code>Banner target page</code> and <code>Params</code> fields were deprecated. Therefore, the filled in Internal URL data will be the only data taken into account when indicating the desired internal route.
@@ -34,14 +31,11 @@ The <code>Banner target page</code> and <code>Params</code> fields were deprecat
 
 ## External URLs
 
-**1.** Access the **CMS** module.
-
-**2.** Click on **Storefront**.
-
-**3.** Select the **Carousel** block and choose the banner that will have its content edited.
-
-**4.** Selecting the **External Route** toggle and in the `URL (external)` field, simply copy and paste the external desired address.
+1. Access the **CMS** module.
+2. Click on **Storefront**.
+3. Select the **Carousel** block and choose the banner that will have its content edited.
+4. Selecting the **External Route** toggle and in the `URL (external)` field, simply copy and paste the external desired address.
 
 <img width="1143" alt="external-url-field-storefront" src="https://user-images.githubusercontent.com/52087100/63995053-541ffe00-cacd-11e9-9760-385e2f526941.png">
 
-**5.** Click on **Save**.
+5. Click on **Save**.
