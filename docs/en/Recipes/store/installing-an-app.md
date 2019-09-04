@@ -4,7 +4,7 @@ description: "Test your app new settings by learning how to install it in a prod
 date: "04/09/2019"
 tags: ["install", "installing", "app", "workspace", "production"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/MakingYourNewStorePubliclyAvailable.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/installing-an-app.md"
 ---
 
 # Installing an app
