@@ -4,12 +4,12 @@ description: "This guide provides instructions to setup all the necessary Tags, 
 date: "19/08/2019"
 tags: ["google", "analytics", "store", "googletagmanager", "gtm"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/googleTagManager.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/store/setting-up-google-analytics.md"
 ---
 
 # Setting up Google Analytics
 
-This guide provides instructions to setup all the necessary Tags, Triggers, Variables, and configurations to Google Tag Manager and Google Analytics, so at the end of it you will have all the user and ecommerce analytics available in your Google Analytics dashboard.
+This guide provides instructions to setup all the necessary tags, triggers, variables and configurations to your store's Google Tag Manager and Google Analytics. At the end of it you will have all the user and ecommerce analytics available in your Google Analytics dashboard.
 
 ## Google Tag Manager Setup
 
