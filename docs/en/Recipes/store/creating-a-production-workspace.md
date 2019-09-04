@@ -1,10 +1,10 @@
 ---
 title: Creating a production workspace
 description: "Create a workspace in production mode and test your app settings in a environment ready to receive traffic."
-date: "29/08/2019"
-tags: ["create", "creating", "production", "workspace", "production-mode""]
+date: "04/09/2019"
+tags: ["create", "creating", "production", "workspace", "production-mode"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/making-your-new-store-version-publicly-available.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
 ---
 
 # Creating a production workspace
