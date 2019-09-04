@@ -25,8 +25,8 @@ Once the new app version was already released, the app must be installed in orde
 
 Use the `vtex publish` command to publish the app in the account in which you’re working.
 
-<div class=“alert alert-warning”>
-You must be logged into the account where you want the new app to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
+<div class="alert alert-warning">
+You must be logged into the account where you want the new app to be published. Make sure the app’s <code>vendor</code> is <strong>equal</strong> to its <code>account</code>.
 </div>
 
 If your app **doesn’t** have billingOptions, users with access to the account in which the app was added can install it through the Admin’s Apps section.
