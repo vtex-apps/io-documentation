@@ -43,7 +43,7 @@ vtex use {{workspacename}} --production
 ```
 
 <div class="alert alert-warning">
-From this point onwards, any changes to the code are prohibited in the workspace, once it is ready to receive traffic and be accessed. If you want to change your code, work on it in a developer workspace and then follow the above-mentioned steps again.
+From this point onwards, any changes to the code are prohibited in the workspace, once it is ready to receive traffic, that is, to be accessed. If you want to change your code, work on it in a developer workspace and then follow the above-mentioned steps again.
 </div>
 
 To install an app in the new production workspace, simply run one of the following commands:
