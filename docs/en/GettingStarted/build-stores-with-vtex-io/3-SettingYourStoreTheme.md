@@ -15,8 +15,10 @@ VTEX IO Toolbelt offers the `vtex init` command which can quickly copy Store The
 Using your terminal, navigate to an already existing local files directory where you want Store Theme to be copied to. Then, use the `vtex init` command, select the **store-theme** option and confirm that you want to download the theme folder to the destination you just chose.
 
 ```
-$ cd {{exemplefolder}}
+$ cd {examplefolder}
 ```
+
+> `{examplefolder}` should be replaced with the folder name where the Store Theme is going to be copied to.
 
 ```
 $ vtex init
@@ -64,9 +66,9 @@ To better understand the default theme's structure, let's have a closer look at 
 
 ## Visiting your new store
 
-Navigate to your new store by accessing:
+Navigate again to your new store by accessing:
 
-`https://{{workspace}}-{{account}}.myvtex.com`
+`https://{workspace}-{account}.myvtex.com`
 
 After the login, you should already see Store Theme reflected in your store:
 
