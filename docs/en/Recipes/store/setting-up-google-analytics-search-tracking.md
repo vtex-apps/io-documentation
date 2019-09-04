@@ -19,14 +19,11 @@ Follow the steps below and configure your store’s tracking.
 
 ## Step by step
 
-**1.** Accessing Google Analytics in the desired account, click on **Admin** (gear button) in the lower left corner of your screen. 
-
-**2.** Access **View Settings**.
-
-**3.** Enable **Site search Tracking** and fill out the **Query parameter** field with `_q,rest`.
-
-**4.** Enable **Site search categories** and fill out the **Category parameter** field with `_c`.
+1. Accessing Google Analytics in the desired account, click on **Admin** (gear button) in the lower left corner of your screen.  
+2. Access **View Settings**.
+3. Enable **Site search Tracking** and fill out the **Query parameter** field with `_q,rest`.
+4. Enable **Site search categories** and fill out the **Category parameter** field with `_c`.
 
 <img width="392" alt="parameter-fields-analytics" src="https://user-images.githubusercontent.com/52087100/63990605-ff738780-caba-11e9-8f99-ca7ba6751d59.png">
 
-**5.** Click on **Save**.
+5. Click on **Save**.
