@@ -12,12 +12,12 @@
 - Recipes
 
   - [Style](recipes/style)
-    - [Changing your store's icons](recipes/style/customizing-stores-icons.md)
+    - [Changing your store's icons](recipes/style/customizing-your-stores-icons.md)
     - [Customizing your store’s typography](recipes/style/customizing-your-stores-typography.md)
   - [Layout](recipes/layout)
-    - [Using sandbox blocks](recipes/layout/building-sandbox-blocks.md)
+    - [Using sandbox blocks](recipes/layout/using-sandbox-blocks.md)
     - [Linking URLs in banners using Storefront](recipes/layout/linking-urls-in-banners-using-storefront.md)
-    - [Using flex-layout](recipes/layout/using-flex-layout-to-build-your-stores-layout.md)
+    - [Using flex-layout](recipes/layout/using-flex-layout.md)
     - [Building a Product Details Page](recipes/layout/building-a-product-details-page.md)
   - [Store Management](recipes/store)
     - [Setting up Google Analytics](recipes/store/setting-up-google-analytics.md)
