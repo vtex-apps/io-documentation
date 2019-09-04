@@ -23,6 +23,8 @@ Once VTEX IO’s CLI is installed, you can login to your VTEX account with the f
 $ vtex login {VTEXaccount}
 ```
 
+> `{VTEXaccount}` should be replaced with the name of the VTEX account in which you are working 
+
 This would in turn open a browser window asking for your credentials.
 
 When you are logged in, you can use the `vtex whoami` command to uncover which **account** and **workspace** is being used by the terminal. 
@@ -47,8 +49,8 @@ This changes your Toolbelt to a so-called `examplename` workspace and creates it
 
 Having created your own development workspace, you can go to your store by accessing:
 
-`https://{{workspace}}-{{account}}.myvtex.com`
+`https://{workspace}-{account}.myvtex.com`
 
-Where `workspace` is the workspace that you've just created and `account` is the name of the account in which you are working.
+> `{workspace}` is the workspace that you've just created and `{account}` is the name of the account in which you are working.
 
 Done! You can begin developing your store in VTEX IO.
