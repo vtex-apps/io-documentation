@@ -4,7 +4,7 @@ description: "A store’s choice in terms of typography is a fundamental step to
 date: "08/07/2019"
 tags: ["customizing", "customize", "customization", "typography", "print", "storefront", "font", "design" ]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/style/customizing-your-stores-typography.md"
 ---
 
 # Customizing your store’s typography
