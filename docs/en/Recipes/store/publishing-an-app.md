@@ -4,7 +4,7 @@ description: "Publish your app’s new version so that it can be installed and t
 date: "04/09/2019"
 tags: ["publishing", "publish", "app"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creatingNewPage.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/publishing-an-app.md"
 ---
 
 # Publishing an app
