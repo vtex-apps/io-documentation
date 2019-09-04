@@ -4,7 +4,7 @@ description: "With Store Framework you're able to use iframes to attend specific
 date: "2019-08-19"
 tags: ["iframe", "sandbox", "custom"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/building-sandbox-blocks.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-sandbox-blocks.md"
 ---
 
 # Using sandbox blocks
