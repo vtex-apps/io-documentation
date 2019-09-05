@@ -18,7 +18,7 @@ Using your terminal, navigate to an already existing local files directory where
 $ cd {examplefolder}
 ```
 
-`{examplefolder}` should be replaced with the folder name where the Store Theme is going to be copied to.
+Notice that `{examplefolder}` should be replaced with the folder name where the Store Theme is going to be copied to.
 
 ```
 $ vtex init
