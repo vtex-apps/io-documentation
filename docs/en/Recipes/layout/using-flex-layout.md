@@ -1,35 +1,38 @@
 ---
 title: Using flex-layout
-description: "With Store Framework you're able to use iframes to attend specific custom needs"
+description: "Improve your store's layout building by positioning its component as desired with flex-layout."
 date: "2019-08-21"
-tags: ["flex-layout", "layout"]
+tags: ["flex-layout", "layout", "using"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-flex-layout.md"
 ---
 
 # Using flex-layout
 
-## What is flex-layout?
+## Introduction
 
-Flex-layout is a layout structuring paradigm built within VTEX IO store framework to allow the construction of complex custom layouts. This paradigm uses the concept of rows and columns to set the desired structure and positioning of components in a given page.
+Flex-layout is a layout structuring paradigm built within VTEX IO Store Framework that allows the construction of complex custom layouts. This paradigm uses the concept of rows and columns to set the desired positioning of components in a given page.
 
-There two basic building blocks of every `flex-layout`, the `flex-layout.row` component and the `flex-layout.col` component. If you are already familiar with the [`flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) layout used in CSS, `flex-layout` should be easy to get a grasp since that's being used by `flex-layout.row` and `flex-layout.col` under the hood.
+There two basic building blocks of every `flex-layout`: the `flex-layout.row` and the `flex-layout.col`. If you are already familiar with the [`flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) layout used in CSS, `flex-layout` should be easy to get a grasp since that's what `flex-layout.row` and `flex-layout.col` use under the hood.
 
-## Using flex-layout
+The flex layout not only improves the layout building but also helps to make everything aligned since gaps, margins and paddings can be passed down to `flex-layout.row` and `flex-layout.col` as props.
 
-We are going to build the About Us page from our default [`store-theme`](https://storetheme.vtex.com/about-us) using `flex-layout` from scratch.
+## Practical example
+
+Let's build an About Us page as the one below using `flex-layout` from scratch. 
 
 ![Screen Shot 2019-08-21 at 5 47 45 PM](https://user-images.githubusercontent.com/27777263/63467414-d0667180-c43b-11e9-8cf3-473c1c94f10e.png)
 
-This page can easily be thought of as a `row` with two columns, and in fact, that's exactly how we are going to model it. The image below is from the finished page with the `Flexbox Highlighter` from Firefox enabled, which shows how this layout is divided.
+If we think on how we could divide this page layout, we will realize that it could be easily thought as one row with two columns model: 
 
 ![Screen Shot 2019-08-21 at 4 05 19 PM](https://user-images.githubusercontent.com/27777263/63467270-736abb80-c43b-11e9-8a7b-dfe8f218f081.png)
 
-To achieve this layout, we are going to use `flex-layout.row` and `flex-layout.col`, which are going to define each row and column in this layout.
+To achieve the layout shown above, we are going to use the `flex-layout.row` and `flex-layout.col` components, which are going to define each row and column for this page's layout.
 
-First, let's declare the main block for the whole page:
+First, let's declare (in the `blocks` folder or `blocks.jsonc` file) the main block for the whole About Us page:
 
-```json
+```
+json
 "store.custom#about-us": {
   "blocks": [
     "flex-layout.row#about-us"
@@ -37,9 +40,9 @@ First, let's declare the main block for the whole page:
 },
 ```
 
-As you can see, the `store.custom#about-us` consists of a single `flex-layout.row` block. A `flex-layout.row` is always the highest order block of the `flex-layout`, and you should never use the `flex-layout` block directly.
+As you can see, the `store.custom#about-us` block consists of a single `flex-layout.row` block because it is always the highest order block of the `flex-layout`. You should never use the `flex-layout` block directly.
 
-Okay, so now that we declared that we are going to use `flex-layout.row#about-us`, let's actually define it:
+Now that we declared that we are going to use `flex-layout.row#about-us`, let's actually define it:
 
 ```json
 "store.custom#about-us": {
@@ -55,10 +58,11 @@ Okay, so now that we declared that we are going to use `flex-layout.row#about-us
   ]
 },
 ```
+<div class="alert alert-info">
+The <code>flex-layout.row</code> block is going to display na interface its children from left-to-right, one right after the other.
+</div>
 
-So here we declared `flex-layout.row#about-us` with two `children` blocks, one of them being an `image` and the other a `flex-layout.col` block. Notice that the `flex-layout.row` block does not accept only `flex-layout.col` blocks. Actually, both `flex-layout` blocks accept **any** block that is marked as `allowed` by their parent.
-
-The `flex-layout.row` block is going to display its children with the same behavior as a `flexbox` container with the `flex-direction: row;` property, which means from left-to-right, one right after the other.
+As shown above, the `flex-layout.row#about-us` was declared with two `children` blocks, one of them being an `image` and the other a `flex-layout.col` block. The `flex-layout.row` block does not accept first-level blocks in it, but notice that the it does not accept only `flex-layout.col` blocks. Actually, both `flex-layout` blocks only accept blocks classified as `allowed` by their parent.
 
 Let's define our `flex-layout.col#text-about-us` block:
 
@@ -88,13 +92,13 @@ Let's define our `flex-layout.col#text-about-us` block:
 },
 ```
 
-Now we are declaring `flex-layout.col#text-about-us` with two children, which are going to be displayed the same as if they were inside a `flexbox` container with the `flex-direction: column;` property, which means from top-to-bottom.
+<div class="alert alert-info">
+The <code>flex-layout.col#text-about-us</code> block is going to display na interface its children from top-to-bottom, one right after the other.
+</div>
 
-We are also passing down a specific prop to the `flex-layout.col`: `preventVerticalStretch`, which prevents the column from occupying 100% of its parent height.
+The `preventVerticalStretch` prop prevents the column from occupying 100% of its parent height when set as `true`. Other props for a custom row can be used by you and found at the [Flex Layout](https://vtex.io/docs/components/all/vtex.flex-layout/) documentation.
 
-We are not going to use all of the available props for customizing the row in this example, but they can be found at: [vtex.flex-layout](https://vtex.io/docs/components/general/vtex.flex-layout).
-
-Okay! So that's pretty much what it takes to use `flex-layout` to build a simple layout. Here's the final `about-us.json`[https://github.com/vtex-apps/store-theme/blob/master/store/blocks/about-us.json] file:
+Here's the final `about-us.json`[https://github.com/vtex-apps/store-theme/blob/master/store/blocks/about-us.json] file using the flex-layout: 
 
 ```json
 {
@@ -139,14 +143,8 @@ Okay! So that's pretty much what it takes to use `flex-layout` to build a simple
 }
 ```
 
-This is a simple example, but you can also check out the blocks definition files for our default footer used by [`store-theme`](https://storetheme.vtex.com/) here: [Footer](https://github.com/vtex-apps/store-theme/blob/master/store/blocks/footer/footer.json).
-
 ## Rules and recommendations
 
-- The highest level in a `flex-layout` is **always** made of rows.
-- It is only possible to add a `flex-layout.col` inside of a `flex-layout.row` - never as a first-level block.
-- When creating levels, it is necessary to alternate between rows and columns. Inside a row, you can only place columns, and inside of columns, you can only place rows.
-- Each row and column can have as many levels as you need.
-- It is important to note that the flex layout not only improves the layout building but also helps to make everything aligned. Gaps, margins, and paddings can be passed down to `flex-layout.row` and `flex-layout.col` as props.
-- Be aware that the structure that you set in your flex layout does not affect only the organization of your code, but also reflects in the way that blocks will be shown and maintained in the StoreFront CMS.
-  It is always important to take the organization of both the code and the StoreFront CMS into consideration when planning on how to apply the flex-layout into a page.
+- Each row and column can have as **many levels as you need**.
+- When creating levels, it is necessary to **alternate between rows and columns**. Inside a row, you can only place columns, and inside of columns, you can only place rows.
+- Be aware that the structure that you set in your flex layout does not only affect your code organization, but also reflects in the way that blocks will be shown and managed through the admin's Storefront. Therefore, it is always important to **take the organization of both the code and the StoreFront into account when planning to apply the flex-layout** into a page.
