@@ -19,7 +19,7 @@ As a front end developer, it might be the case that you tend to think that it's 
 
 Ok, with that in mind, let's get to the point. To use Sandbox App you should first declare it as a dependency. Go ahead to your `manifest.json` file. Edit the dependencies node and add the sandbox app:
 
-![sandbox dependency](https://lh6.googleusercontent.com/xHiHR8-_xYO2NuPaAHSAC2zxaFMCJyP72NIGAPi0EK77D60bdkFkcmvQLqYbenwvlTuTO875jfrMhh5HGxo9OXI7ZtSANTCxTytUJD0d)
+![sandbox dependency](https://user-images.githubusercontent.com/18701182/64338608-9b6c2a00-cfb8-11e9-863c-9444fec31304.png)
 
 Now you need to declare your sandbox block, let's say you want to create a simple `h1` sandbox block, that would be something like:
 
@@ -55,4 +55,5 @@ Finally, just reference it in a another's block `children` or `blocks`, on your 
 
 That should, therefore, render the h1 sandbox on the store's page:
 
-![Hello world sandbox](https://lh3.googleusercontent.com/Rc4W95PP3U7vWemeuT_Btgw3e-itXkK-L84NFTlHet_2zge_l50ygV4e5CX5CLaH2R4G9xmHya7xiwz3hQ8gPr7QN9RQYgLrLidPs_UN)
+![Hello world sandbox](https://user-images.githubusercontent.com/18701182/64338604-99a26680-cfb8-11e9-9260-fac6297d5b35.png)
+
