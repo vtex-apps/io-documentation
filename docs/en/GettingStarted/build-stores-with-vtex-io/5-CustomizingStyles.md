@@ -114,4 +114,4 @@ After saving the changes, you can see the Infocard with its exclusive customizat
 CSS replacements can only be manually changes by code, whereas customization in `json.style` can easily be edited using admin's Storefront. Therefore, when customizing your theme’s style, it’s recommended that you avoid heavy customizations that require CSS replacements.
 </div>
 
-Throughout this tutorial, you understood what **Store Framework**, **Toolbelt** and **Store Theme** are, in addition to learning how to structure your store’s pages by configuring **templates** and customizing **styles**. For further study on VTEX IO, don’t forget to access the rest of our [documentation](*link*).
+Throughout this tutorial, you understood what **Store Framework**, **Toolbelt** and **Store Theme** are, in addition to learning how to structure your store’s pages by configuring **templates** and customizing **styles**. For further study on VTEX IO, don’t forget to access the rest of our [documentation](https://vtex.io/docs/recipes/all).
