@@ -48,7 +48,7 @@ $ cd store-theme
  $ vtex link
 ```
 
-[VTEX link example](https://user-images.githubusercontent.com/52087100/61887229-9dca6700-aed7-11e9-9934-030a153b75b6.png)
+![VTEX link example](https://user-images.githubusercontent.com/52087100/61887229-9dca6700-aed7-11e9-9934-030a153b75b6.png)
 
 When linking Store Theme, your computer's local files are synced with the VTEX IO platform. This means that any change done locally to the code will be sent to and reflected in your workspace.
 
@@ -56,7 +56,7 @@ When linking Store Theme, your computer's local files are synced with the VTEX I
 
 To better understand the default theme's structure, let's have a closer look at the files that were created in your local files. You can browse through your code with whatever editor you prefer.
 
-[Repository tree](https://user-images.githubusercontent.com/52087100/61887339-ce120580-aed7-11e9-8c7b-eb55d12def2b.png)
+![Repository tree](https://user-images.githubusercontent.com/52087100/61887339-ce120580-aed7-11e9-8c7b-eb55d12def2b.png)
 
 - **manifest.json**: main file of any app. It saves important metadata, such as _vendor_, name, version, app dependencies and builders.
 
@@ -72,6 +72,6 @@ Navigate again to your new store by accessing:
 
 After the login, you should already see Store Theme reflected in your store:
 
-[Store Theme](https://user-images.githubusercontent.com/52087100/61896668-d4aa7800-aeeb-11e9-906b-9d6b04fd03c0.png)
+![Store Theme](https://user-images.githubusercontent.com/52087100/61896668-d4aa7800-aeeb-11e9-906b-9d6b04fd03c0.png)
 
 Now that your store is online and has a default theme, we can build its identity by configuring its templates and customizing its styles.
