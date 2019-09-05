@@ -57,7 +57,7 @@ You can always check out the full and updated list <a href="https://github.com/v
 
 ## Practical example
 
-Let's take a look at our demo store, [Storetheme](https://storetheme.vtex.com/). It has a good example of the usage of the `store.product` flexible block:
+Let's take a look at our demo store [Storetheme](https://storetheme.vtex.com/). It has a good example of the usage of the `store.product` flexible block:
 
 ![storetheme-product-details-page](https://user-images.githubusercontent.com/52087100/64383385-26c2db00-d00c-11e9-96d4-d3b7ecaf0376.png)
 
