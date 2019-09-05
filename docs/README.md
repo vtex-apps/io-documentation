@@ -1,7 +1,5 @@
 # IO Documentation
 
-An app that structures [VTEX IO Docs](https://vtex.io/docs).
-
 ## How documentation works in VTEX IO?
 
 Documentation in VTEX IO is built with the mindset that it should be closer to developers, in order to encourage scaling and maintenance. Therefore, what that means is that all the content that is on [VTEX IO Docs](https://vtex.io/docs) is dynamically rendered from each and every app's code on VTEX IO's registries, using the **Docs Builder**. 
