@@ -128,4 +128,4 @@
 
 <!-- - [Resources](resources) -->
 
-- [Latest Features](https://github.com/vtex-apps/release-notes)
+- [Latest releases](https://github.com/vtex-apps/release-notes)
