@@ -1,6 +1,6 @@
 # Basic setup to develop in VTEX IO
 
-Any development in VTEX IO beings with the [**Toolbelt**](*link*), our CLI (Command Line Interface) that allows you to login, develop new [apps](*link*) and manage already installed ones.
+Any development in VTEX IO beings with the **Toolbelt**, our CLI (Command Line Interface) that allows you to login, develop new apps and manage already installed ones.
 
 ## VTEX IO Toolbelt
 
@@ -11,6 +11,7 @@ Thereafter, type `yarn global add vtex` in your computer’s terminal.
 ```
 $ yarn global add vtex
 ```
+
 <div class="alert alert-info">
 To confirm that the installation occurred as expected, you can execute the `vtex` command. This should display all available commands in a help text. 
 </div>
@@ -33,7 +34,7 @@ When you are logged in, you can use the `vtex whoami` command to uncover which *
 
 ## Creating your own workspace
 
-When using VTEX IO, any interaction with an account happens in a [**workspace**](*link*). As you log into a store, you are automatically in its master workspace, meaning you are in the version available to the end user. Therefore, always remember to create a development workspace using the `vtex use` command whenever you want to test a new configuration. 
+When using VTEX IO, any interaction with an account happens in a **workspace**. As you log into a store, you are automatically in its master workspace, meaning you are in the version available to the end user. Therefore, always remember to create a development workspace using the `vtex use` command whenever you want to test a new configuration. 
 
 ```
 $ vtex use {examplename}
@@ -53,7 +54,7 @@ Having created your own development workspace, you can go to your store by acces
 
  > `{workspace}` is the workspace that you've just created and `{account}` is the name of the account in which you are working.
 
- <div class="alert alert-info">
+<div class="alert alert-info">
 <strong>Tip</strong>: you can simply run <code>vtex browse</code> in your terminal to automatically open your browser on the <code>https://{workspace}-{account}.myvtex.com</code> URL.
 </div>
 
