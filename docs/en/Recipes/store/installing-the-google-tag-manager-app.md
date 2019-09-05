@@ -24,7 +24,7 @@ The VTEX IO's Google Tag Manager native solution is compliant with the Universal
 
 <div class="alert alert-info">
 In order to set the tracking of these events on Google Analytics, learn how to<a href="https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/setting-up-google-analytics.md"> set up Google Analytics</a> in your store.
-</div>
+</div> 
 
 ## Step by step
 
