@@ -1,6 +1,6 @@
 # Setting your store's theme
 
-The [**Store Theme**](*link*) is a default theme applicable to all VTEX IO stores. The theme performs two tasks:
+The **Store Theme** is a default theme applicable to all VTEX IO stores. The theme performs two tasks:
 
 - **Declares templates**, configuring and mixing components.
 
@@ -12,13 +12,13 @@ VTEX IO Toolbelt offers the `vtex init` command which can quickly copy Store The
 
 ## Implementing your Store Theme
 
-Using your terminal, navigate to an already existing local files directory where you want Store Theme to be copied to. Then, use the `vtex init` command, select the **store-theme** option and confirm that you want to download the theme folder to the destination you just chose.
+Using your terminal, navigate to an already existing local files directory where you want Store Theme to be copied to. Then, use the `vtex init` command, select the `store-theme` option and confirm that you want to download the theme folder to the destination you just chose.
 
 ```
 $ cd {examplefolder}
 ```
 
-> `{examplefolder}` should be replaced with the folder name where the Store Theme is going to be copied to.
+`{examplefolder}` should be replaced with the folder name where the Store Theme is going to be copied to.
 
 ```
 $ vtex init
@@ -58,7 +58,7 @@ To better understand the default theme's structure, let's have a closer look at 
 
 [Repository tree](https://user-images.githubusercontent.com/52087100/61887339-ce120580-aed7-11e9-8c7b-eb55d12def2b.png)
 
-- **manifest.json**: main file of any app. It saves important metadata, such as _vendor_, name, version, app dependencies and [builders](*link*).
+- **manifest.json**: main file of any app. It saves important metadata, such as _vendor_, name, version, app dependencies and builders.
 
 - **store**: folder responsible for defining a store's structure. It's where you configure each page's components and its properties. 
 
