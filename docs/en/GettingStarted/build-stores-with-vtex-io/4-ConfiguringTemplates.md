@@ -2,7 +2,7 @@
 
 When a store is created, a **template** must be configured for each page the user will visit, such as homepage, product page, etc.
 
-The default Store Theme model already implements basic templates for your store’s pages. It is however possible to configure these either by adding or removing components, using [**blocks**](*link*).
+The default Store Theme model already implements basic templates for your store’s pages. It is however possible to configure these either by adding or removing components, using blocks.
 
 ## Blocks structure 
 
@@ -56,7 +56,7 @@ You may customize already declared Store Theme blocks as well as new ones freely
 
 ## Declaring a new block
 
-Let’s now add a new [__infocard__](*link*) component to your store’s homepage, before the shelf. To do this, we’ll need to add `info-cardf#bestdeals` to the `store.home` template in `home.jsonc`. Then, we will declare the block below in the same file.
+Let’s now add a new [__infocard__](https://vtex.io/docs/components/all/vtex.store-components/info-card) component to your store’s homepage, before the shelf. To do this, we’ll need to add `info-cardf#bestdeals` to the `store.home` template in `home.jsonc`. Then, we will declare the block below in the same file.
 
 [newblock-step4](https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png)
 
