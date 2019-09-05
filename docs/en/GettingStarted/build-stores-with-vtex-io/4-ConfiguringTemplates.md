@@ -56,9 +56,9 @@ You may customize already declared Store Theme blocks as well as new ones freely
 
 ## Declaring a new block
 
-Let’s now add a new [__infocard__](https://vtex.io/docs/components/all/vtex.store-components/info-card) component to your store’s homepage, before the shelf. To do this, we’ll need to add `info-cardf#bestdeals` to the `store.home` template in `home.jsonc`. Then, we will declare the block below in the same file.
+Let’s now add a new [__infocard__](https://vtex.io/docs/components/all/vtex.store-components/info-card) component to your store’s homepage, before the shelf. To do this, we’ll need to add `info-card#bestdeals` to the `store.home` template in `home.jsonc`. Then, we will declare the block below in the same file.
 
-[newblock-step4](https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png)
+![newblock-step4](https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png)
 
 ```
 "info-card#bestdeals": {
@@ -77,10 +77,10 @@ Let’s now add a new [__infocard__](https://vtex.io/docs/components/all/vtex.st
 ```
 
 <div class="alert alert-info">
-Your store’s component behavior varies according to each block’s defined properties. Check out the block configuration examples for each component in our <a href="">related documentation</a>.
+Your store’s component behavior varies according to each block’s defined properties. Check out the block configuration examples for each component in our <a href="https://vtex.io/docs/components/all">related documentation</a>.
 </div>
 
-When saving your changes in code and running `vtex.link` in your terminal, you should see the rendered new Infocard in your store’s homepage:  
+When saving your changes in code and running `vtex link` in your terminal, you should see the rendered new Infocard in your store’s homepage:  
 
 ![BANNER-INFOCARD-STEP4-FORREAL](https://user-images.githubusercontent.com/52087100/61972032-e73db380-afb6-11e9-833e-977964fe5105.png)
 
