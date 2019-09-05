@@ -1,5 +1,5 @@
 ---
-title: Setting up Google Tag Manager
+title: Installing the Google Tag Manager app
 description: "Start using Google Tag Manager app on your VTEX store to easily track your data through Google Analytics."
 date: "05/09/2019"
 tags: ["google", "tag", "manager", "store", "google-tag-manager", "gtm"]
@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/setting-up-google-tag-manager.md"
 ---
 
-# Setting up Google Tag Manager
+# Installing the Google Tag Manager app
 
 ## Introduction 
 
