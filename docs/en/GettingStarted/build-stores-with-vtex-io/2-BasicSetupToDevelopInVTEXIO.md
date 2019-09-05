@@ -21,10 +21,10 @@ To confirm that the installation occurred as expected, you can execute the `vtex
 Once VTEX IO’s CLI is installed, you can login to your VTEX account with the following command: 
 
 ```
-$ vtex login {VTEXaccount}
+$ vtex login {account}
 ```
 
-> `{VTEXaccount}` should be replaced with the name of the VTEX account in which you are working 
+**Remember:**`{account}` should be replaced with the name of the VTEX account in which you are working 
 
 This would in turn open a browser window asking for your credentials.
 
