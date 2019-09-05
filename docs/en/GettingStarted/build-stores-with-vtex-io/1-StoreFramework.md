@@ -4,7 +4,7 @@ When comparing two or more online stores, we can notice similarities between the
 
 This shows us that there is a correspondence between online store components, no matter each store’s identity. This correspondence makes the store creation process easier, allowing a front-end development with a **single shareable component structure** among stores.
 
-Within [VTEX IO](*link*), the [Store Framework](*link*) is responsible for laying the foundations of this structure for any platform store through our high quality, customizable [components](*link*) and open source code.
+Within [VTEX IO](https://vtex.io/docs/getting-started/what-is-vtex-io/1), the Store Framework is responsible for laying the foundations of this structure for any platform store through our high quality, customizable [components](https://vtex.io/docs/components/all) and open source code.
 
 This means that Store Framework enables you to:
 
