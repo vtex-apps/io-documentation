@@ -22,7 +22,7 @@
   - [Store Management](recipes/store)
     - [Installing an app](recipes/store/installing-an-app.md)
     - [Creating a new custom page](recipes/store/creating-a-new-custom-page.md)
-    - [Setting up Google Tag Manager](recipes/store/setting-up-google-tag-manager.md)
+    - [Installing the Google Tag Manager app](recipes/store/installing-the-google-tag-manager-app.md)
     - [Setting up Google Analytics](recipes/store/setting-up-google-analytics.md)
     - [Setting up Google Analytics search tracking](recipes/store/setting-up-google-analytics-search-tracking.md)
     - [Creating a production workspace](recipes/store/creating-a-production-workspace.md)
