@@ -10,7 +10,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 # Building a Product Details Page
 
 <div class="alert alert-warning">
-For this recipe, knowledge on how the flex-layout works is required. If you have any doubts regarding it, we strongly recommend you access its own <a href="https://vtex.io/docs/recipes/layout/using-flex-layout">documentation</a>.`
+For this recipe, knowledge on how the flex-layout works is required. If you have any doubts regarding it, we strongly recommend you to access its own <a href="https://vtex.io/docs/recipes/layout/using-flex-layout">documentation</a>.`
 </div>
 
 ### Introduction
