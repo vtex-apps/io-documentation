@@ -6,7 +6,7 @@ The **Store Theme** is a default theme applicable to all VTEX IO stores. The the
 
 - **Declares styles**, configuring primary and secondary colors, typography scales and spacing, etc.
 
-This means that the Store Theme is a default theme responsible for defining the basic look of your store's font.
+This means that the Store Theme is a default theme responsible for defining the basic look of your store's front.
 
 VTEX IO Toolbelt offers the `vtex init` command which can quickly copy Store Theme to your computer where it may be configured and customized according to your business needs.
 
