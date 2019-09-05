@@ -30,7 +30,7 @@ You'll receive important information about Store Theme, such as vendor, name, ti
 Replace the predefined vendor value with the account name of the store that you are developing, so that you'll be able to correctly publish its theme later on. 
 </div>
 
-[toolbelt-store-theme-selection](https://user-images.githubusercontent.com/52087100/61887063-3d3b2a00-aed7-11e9-92b8-653c4972a218.png)
+![toolbelt-store-theme-selection](https://user-images.githubusercontent.com/52087100/61887063-3d3b2a00-aed7-11e9-92b8-653c4972a218.png)
 
 ## Linking your local code to VTEX IO
 
