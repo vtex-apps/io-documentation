@@ -8,19 +8,17 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 ---
 
 # Building a Product Details Page
-​
-### Disclaimer
-​
-In this tutorial, we will not cover much about `flex-layout`, we highly recommend you reading its own tutorial to understand everything taught here properly.
-​
+
+<div class="alert alert-warning">
+For this recipe, knowledge on how the flex-layout works is required. If you have any doubts regarding it, we strongly recommend you access its own <a href="https://vtex.io/docs/recipes/layout/using-flex-layout">documentation</a>.`
+</div>
+
 ### Introduction
-​
-The Product Page is customized by changing the `store.product` block.
-​
-The `store.product` is a block that is composed with children, meaning it is a flexible block, so you can compose its children blocks using `flex-layout` to easily build a responsive page.
-​
-It accepts as children, all the blocks allowed in `store`, the `flex-layout` block and the following blocks:
-​
+
+The Product Page can customized by changing the `store.product` block in your `store-theme` source code. The `store.product` is a block with children, that is, it is composed by other blocks. This means that the `store.product` block is flexible, so its children blocks can be declared using `flex-layout` to easily build a responsive page.
+
+The `store.product` accepts as children all the blocks allowed by the `store` and `flex-layout` blocks, as well as the following blocks list:
+
 ```
 "product-add-to-list-button"
 "product-details"
@@ -50,19 +48,17 @@ It accepts as children, all the blocks allowed in `store`, the `flex-layout` blo
 "product-assembly-options"
 "product-teaser.product"
 ```
-​
-If you want to have an uptaded list, you can always check the allowed list [here](https://github.com/vtex-apps/store/blob/master/store/interfaces.json).
-​
-### Real world example
-​
-Now, we are going to look at our demo store, [Storetheme](https://storetheme.vtex.com/).
+
+You can always check out the full and updated list [here](https://github.com/vtex-apps/store/blob/master/store/interfaces.json).
+
+## Practical example
+
+Let's take a look at our demo store, [Storetheme](https://storetheme.vtex.com/). It has a good example of the usage of the `store.product` flexible block:
 
 ![](https://i.ibb.co/VDjQLyJ/image.png)
-​
-It has a good example of the usage of the `store.product` flexible block, you can see it [here](https://github.com/vtex-apps/store-theme/blob/master/store/blocks/product.json).
-​
-Here is its definition:
-​
+
+Follows below its definition:
+
 ```
 
 {
@@ -134,7 +130,7 @@ Here is its definition:
     },
     "children": ["buy-button"]
   },
-​
+
   "share#default": {
     "props": {
       "social": {
@@ -146,17 +142,17 @@ Here is its definition:
     }
   }
 }
-​
+
 ```
-​
-As you can see, in its `store.product` children, it defines 5 blocks, the first two being `flex-layout.row`.
-​
-The first row is just the breadcrumb and you can see it here:
+
+As you can verify, the `store.product` children define 5 blocks, the first two being `flex-layout.row`. 
+
+### Breadcrumb
+
+The first row is declaring just the [breadcrumb](https://vtex.io/docs/components/all/vtex.breadcrumb/) and you can see it here:
 
 ![](https://i.ibb.co/ZhNry22/image.png)
 
-Its related block:
-​
 ```
 "flex-layout.row#product-breadcrumb": {
     "props": {
@@ -165,11 +161,9 @@ Its related block:
     "children": ["breadcrumb"]
   },
 ```
-​
-As you can see, it says via its `children` array, to render the [breadcrumb](https://github.com/vtex-apps/breadcrumb) block.
-​
-If wanted to customize the breadcrumb, like change its props, you can then define the breadcrumb block and set it just like you want to:
-​
+
+Notice above that it says via its `children` array to render the [breadcrumb](https://vtex.io/docs/components/all/vtex.breadcrumb/) block. If your desire is to customize the breadcrumb, such as change its props, you can then declare the breadcrumb block and define it just like you want to. For instance:
+ 
 ```
 "breadcrumb": {
     "props": {
@@ -177,11 +171,9 @@ If wanted to customize the breadcrumb, like change its props, you can then defin
     }
 }
 ```
-​
-The next row is the one with the image and the right column with name, price, sku selector, button, etc.
-​
-This row is defined:
-​
+
+The second row is the one with the image and the right column with name, price, sku selector, button, etc. as shown below:
+
 ```
  "flex-layout.row#product-main": {
     "props": {
@@ -195,9 +187,9 @@ This row is defined:
     "children": ["flex-layout.col#product-image", "flex-layout.col#right-col"]
   },
 ```
-​
-It defines two columns:
-​
+
+Notice that the second row defines two columns, the `flex-layout.col#product-image` and the `flex-layout.col#right-col`:
+
 ```
 "flex-layout.col#product-image": {
     "props": {
@@ -229,43 +221,56 @@ It defines two columns:
     ]
   },
 ```
-​
-The left col is the one with the [product-images](https://github.com/vtex-apps/store-components/tree/master/react/components/ProductImages)
+### Product images
+
+The left column is the one with the [product-images](https://vtex.io/docs/components/product/vtex.store-components/product-images) since it was the first one declared. 
 
 ![](https://i.ibb.co/ns8sP0Y/image.png).
-​
-Read its readme to get to know its blocks. You can customize the orientation of the thumbnails (vertical or horizontal), its position (left or right), if you want arrows on it if it overflows and what kind of zoom behaviour you would like.
-​
-The right column has many children:
+
+As you can see rendered, the right column has many children:
 
 ![](https://i.ibb.co/Z6zxSc7/image.png)
-​
-It starts with a [product-name](https://github.com/vtex-apps/store-components/tree/master/react/components/ProductName), used to display the product name, along with its SKU name if you want.
-​
-Right below it, we have the [product-price](https://github.com/vtex-apps/store-components/tree/master/react/components/ProductPrice). It displays a properly formatted selling price, you can set to show the list price (if different), to show installments, etc.
-​
+
+### Product name
+
+It starts with a [product-name](https://vtex.io/docs/components/product/vtex.store-components/product-name), used to display the product name, along with its SKU name if desired.
+
+### Product price
+
+Right below it, we can find the [product-price](https://vtex.io/docs/components/product/vtex.store-components/product-price) displaying a properly formatted selling price. You can set it to show the list price (if they diverge), installments, etc. Check out below an example of a Produc Price also displaying discount and list price:
+
 ![](https://i.ibb.co/BykKvJM/image.png)
 
-Another example of product-price, this time displaying discount and list price.
-​
-Right below the price, we see the `product-separator`, a block that just draws a line.
-​
-Then we have the [product-quantity](https://github.com/vtex-apps/product-quantity).
-With this block, you can let users choose how much items will be added to the cart when the add to cart button is clicked.
-​
+Below the Product Price there is the `product-separator`, a block that just draws a line in your Product Page.
+
+### Product quantity
+
+Then, we have the [product-quantity](https://vtex.io/docs/components/product/vtex.product-quantity). With this block, you can let users choose how many items will be added to the cart.
+
 ![](https://i.ibb.co/8Y8gF0R/image.png)
-​
-Continuing from this screen, below the quantity component, we arrive at the [product-identifier.product](https://github.com/vtex-apps/product-identifier).
-This component allows you to show to the user the product identifier, you can then customize it with different props and choose the label you want before the identifier, different display modes and more.
-​
-We then have a really important component, the [SKU Selector](https://github.com/vtex-apps/store-components/tree/master/react/components/SKUSelector). It allows the user to choose what SKU it wants, automatically hiding impossible combinations or indicates combinations that are currently unavailable. Please take your time reading its readme.
-​
-The [buy-button](https://github.com/vtex-apps/store-components/tree/master/react/components/BuyButton) is the classic component that adds the SKU to the cart. Take a look at its readme, you can customize if you want to show or not the toast with successful message, if you want to redirect user to cart page immediately, etc.
-​
-You can then have a [shipping-simulator](https://github.com/vtex-apps/store-components/tree/master/react/components/ShippingSimulator). It allows the user to input its postal code and displays the available shipping options and its prices, given that product.
-​
-We finally have the [share](https://github.com/vtex-apps/store-components/tree/master/react/components/Share). The component lets user share the product in its social media. With its props, you can control what options the user can see.
-​
+
+### Product Identifier
+
+Scrolling down, below the Product Quantity component, we arrive at the [product-identifier](https://vtex.io/docs/components/product/vtex.product-identifier). This component allows you to show the user the product identifier. 
+
+You can then customize it with different props, choosing the label you want before the identifier, the display mode and more.
+
+### SKU Selector
+
+We then have a really important component: the [SKU Selector](https://vtex.io/docs/components/product/vtex.store-components/sku-selector). It allows the user to choose his desired SKU, automatically hiding impossible combinations or indicates combinations that are currently unavailable. 
+
+### Buy button
+
+The [buy-button](https://github.com/vtex-apps/store-components/tree/master/react/components/BuyButton) is the classic component that adds a SKU to the cart. You can customize it to show a successful message, to redirect the user to the Cart page immediately, etc.
+
+### Shipping simulator 
+
+Your store can also have a [shipping-simulator](https://vtex.io/docs/components/product/vtex.store-components/shipping-simulator). It allows the user to fill in its postal code and displays the available shipping options and its prices, given that product.
+
+### Share 
+
+Finally, there is [share](https://vtex.io/docs/components/general/vtex.store-components/share). The component allows product sharing in social media by the user. By customizing its props, you can control which options will be displayed to the user:
+
 ```
 "share#default": {
     "props": {
@@ -278,25 +283,25 @@ We finally have the [share](https://github.com/vtex-apps/store-components/tree/m
     }
   }
 ```
-​
-With this block, we are hiding the Twitter option from our sharing list.
-The available social media for now are: `Facebook`,`Twitter`,`Telegram`,`WhatsApp`,`Google+`,`Pinterest` and `E-mail`.
-​
+
+Notice that with this block we are hiding the Twitter option from our sharing list. The available social media for now are: `Facebook`,`Twitter`,`Telegram`,`WhatsApp`,`Google+`,`Pinterest` and `E-mail`.
+
 After this right column is done, we our blocks start to render the blocks defined beneath them in our `store.product` block.
-​
-In this case it is a `shelf.relatedProducts` block. It is a [shelf](https://github.com/vtex-apps/shelf). More specifically, a shelf that displays related products.
-​
+
+### Related products 
+
+In this case it is a `shelf.relatedProducts` block. It is a [Shelf](https://vtex.io/docs/components/all/vtex.shelf/). More specifically, a shelf that displays related products.
+
 ![](https://i.ibb.co/QpyMyXM/image.png)
-​
-The related products displayed for that product in page can be set in catalog. The `shelf.relatedProducts` block lets you choose different types of recommendation.
-​
-The recommendation property can be a value between: `['similars', 'view', 'buy', 'accessories', 'viewAndBought', 'suggestions']`.
-​
+
+The related products displayed in a product page can be defined through your store's admin Catalog. 
+
+The `shelf.relatedProducts` block lets you choose between different recommendation types. The recommendation property can be a value between: `['similars', 'view', 'buy', 'accessories', 'viewAndBought', 'suggestions']`.
+
 Each value matches on Catalog API being called for that shelf.
-Please check its readme for more details.
-​
+
 Here is a brief example of a Related products shelf:
-​
+
 ```
 "shelf.relatedProducts": {
     "props": {
@@ -308,9 +313,9 @@ Here is a brief example of a Related products shelf:
     }
 }
 ```
-​
+
 ### Mobile
-​
+
 Its important to note that the `flex-layout` makes some modifications depending if you are on mobile. Check the `flex-layout` tutorial for more information.
-​
+
 ![](https://i.ibb.co/vcTGBpq/image.png)
