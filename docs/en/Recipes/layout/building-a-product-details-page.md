@@ -59,7 +59,7 @@ You can always check out the full and updated list <a href="https://github.com/v
 
 Let's take a look at our demo store, [Storetheme](https://storetheme.vtex.com/). It has a good example of the usage of the `store.product` flexible block:
 
-![](https://i.ibb.co/VDjQLyJ/image.png)
+![storetheme-product-details-page](https://user-images.githubusercontent.com/52087100/64383385-26c2db00-d00c-11e9-96d4-d3b7ecaf0376.png)
 
 Follows below its definition:
 
@@ -239,11 +239,13 @@ As you can see rendered, the right column has many children:
 
 It starts with a [product-name](https://vtex.io/docs/components/product/vtex.store-components/product-name), used to display the product name, along with its SKU name if desired.
 
+![productdetailspage-productname](https://user-images.githubusercontent.com/52087100/64384533-6f7a9400-d00c-11e9-91f3-82b1cb394d88.png)
+
 ### Product price
 
 Right below it, we can find the [product-price](https://vtex.io/docs/components/product/vtex.store-components/product-price) displaying a properly formatted selling price. You can set it to show the list price (if they diverge), installments, etc. Check out below an example of a Produc Price also displaying discount and list price:
 
-![](https://i.ibb.co/BykKvJM/image.png)
+![productdetailspage-productprice](https://user-images.githubusercontent.com/52087100/64384891-83be9100-d00c-11e9-9f54-5e501cb7c9a0.png)
 
 Below the Product Price there is the `product-separator`, a block that just draws a line in your Product Page.
 
@@ -251,11 +253,13 @@ Below the Product Price there is the `product-separator`, a block that just draw
 
 Then, we have the [product-quantity](https://vtex.io/docs/components/product/vtex.product-quantity). With this block, you can let users choose how many items will be added to the cart.
 
-![](https://i.ibb.co/8Y8gF0R/image.png)
+![productdetailspage-productquantity](https://user-images.githubusercontent.com/52087100/64385226-9933bb00-d00c-11e9-8332-ff8c49b7cea7.png)
 
 ### Product Identifier
 
-Scrolling down, below the Product Quantity component, we arrive at the [product-identifier](https://vtex.io/docs/components/product/vtex.product-identifier). This component allows you to show the user the product identifier. 
+Below the Product Quantity component, we arrive at the [product-identifier](https://vtex.io/docs/components/product/vtex.product-identifier). This component allows you to show the user the product identifier. 
+
+![productdetailspage-productidentifier](https://user-images.githubusercontent.com/52087100/64385400-bbc5d400-d00c-11e9-8d39-852b880a753f.png)
 
 You can then customize it with different props, choosing the label you want before the identifier, the display mode and more.
 
@@ -263,17 +267,27 @@ You can then customize it with different props, choosing the label you want befo
 
 We then have a really important component: the [SKU Selector](https://vtex.io/docs/components/product/vtex.store-components/sku-selector). It allows the user to choose his desired SKU, automatically hiding impossible combinations or indicates combinations that are currently unavailable. 
 
+![productdetailspage-skuselector](https://user-images.githubusercontent.com/52087100/64385450-d8faa280-d00c-11e9-8630-2dc07b7dc010.png)
+
 ### Buy button
 
 The [buy-button](https://github.com/vtex-apps/store-components/tree/master/react/components/BuyButton) is the classic component that adds a SKU to the cart. You can customize it to show a successful message, to redirect the user to the Cart page immediately, etc.
+
+![productdetailspage-buybutton](https://user-images.githubusercontent.com/52087100/64385524-fdef1580-d00c-11e9-86f8-76edaf02263b.png)
 
 ### Shipping simulator 
 
 Your store can also have a [shipping-simulator](https://vtex.io/docs/components/product/vtex.store-components/shipping-simulator). It allows the user to fill in its postal code and displays the available shipping options and its prices, given that product.
 
+![productdetailspage-shippingsimulator](https://user-images.githubusercontent.com/52087100/64385562-1bbc7a80-d00d-11e9-9a22-de78ebb49050.png)
+
 ### Share 
 
-Finally, there is [share](https://vtex.io/docs/components/general/vtex.store-components/share). The component allows product sharing in social media by the user. By customizing its props, you can control which options will be displayed to the user:
+Finally, there is [share](https://vtex.io/docs/components/general/vtex.store-components/share). The component allows product sharing in social media by the user. 
+
+![productdetailspage-share](https://user-images.githubusercontent.com/52087100/64385594-368eef00-d00d-11e9-8cb8-90ea770d55ac.png)
+
+By customizing its props, you can control which options will be displayed to the user:
 
 ```
 "share#default": {
