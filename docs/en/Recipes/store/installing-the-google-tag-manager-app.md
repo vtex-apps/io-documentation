@@ -4,7 +4,7 @@ description: "Start using Google Tag Manager app on your VTEX store to easily tr
 date: "05/09/2019"
 tags: ["google", "tag", "manager", "store", "google-tag-manager", "gtm"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/using-google-tag-manager.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/installing-the-google-tag-manager-app.md"
 ---
 
 # Installing the Google Tag Manager app
