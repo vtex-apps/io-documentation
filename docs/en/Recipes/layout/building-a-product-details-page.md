@@ -15,7 +15,9 @@ For this recipe, knowledge on how the flex-layout works is required. If you have
 
 ### Introduction
 
-The Product Page can customized by changing the `store.product` block in your `store-theme` source code. The `store.product` is a block with children, that is, it is composed by other blocks. This means that the `store.product` block is flexible, so its children blocks can be declared using `flex-layout` to easily build a responsive page.
+Your store's Product Page can customized simply by changing the `store.product` block in your `store-theme` source code. 
+
+The `store.product` is a block with children, that is, it is composed by other blocks. This means that the `store.product` block is flexible, so its children blocks can be declared using `flex-layout` to easily build a responsive page.
 
 The `store.product` accepts as children all the blocks allowed by the `store` and `flex-layout` blocks, as well as the following blocks list:
 
@@ -49,7 +51,9 @@ The `store.product` accepts as children all the blocks allowed by the `store` an
 "product-teaser.product"
 ```
 
-You can always check out the full and updated list [here](https://github.com/vtex-apps/store/blob/master/store/interfaces.json).
+<div class="alert alert-info">
+You can always check out the full and updated list <a href="https://github.com/vtex-apps/store/blob/master/store/interfaces.json">here</a>.
+</div>
 
 ## Practical example
 
@@ -290,17 +294,15 @@ After this right column is done, we our blocks start to render the blocks define
 
 ### Related products 
 
-In this case it is a `shelf.relatedProducts` block. It is a [Shelf](https://vtex.io/docs/components/all/vtex.shelf/). More specifically, a shelf that displays related products.
+The Related Products Shelf (`shelf.relatedProducts`) is a [Shelf](https://vtex.io/docs/components/all/vtex.shelf/) component that displays products related to the one you are browsing. 
+
+The related products displayed in a product page can be defined through your store's admin Catalog. As you can see above, the product we are using as example does not have any. But it should look exactly like this:
 
 ![](https://i.ibb.co/QpyMyXM/image.png)
 
-The related products displayed in a product page can be defined through your store's admin Catalog. 
-
 The `shelf.relatedProducts` block lets you choose between different recommendation types. The recommendation property can be a value between: `['similars', 'view', 'buy', 'accessories', 'viewAndBought', 'suggestions']`.
 
-Each value matches on Catalog API being called for that shelf.
-
-Here is a brief example of a Related products shelf:
+Here is a brief example of a Related Products Shelf:
 
 ```
 "shelf.relatedProducts": {
@@ -314,8 +316,8 @@ Here is a brief example of a Related products shelf:
 }
 ```
 
-### Mobile
+## Mobile
 
-Its important to note that the `flex-layout` makes some modifications depending if you are on mobile. Check the `flex-layout` tutorial for more information.
+Have in mind that the `flex-layout` may suffer modifications if you are on mobile mode. You can check the [Flex Layout](https://vtex.io/docs/recipes/layout/using-flex-layout) recipe out for more information.
 
 ![](https://i.ibb.co/vcTGBpq/image.png)
