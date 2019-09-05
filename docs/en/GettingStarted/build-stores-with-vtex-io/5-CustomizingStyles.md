@@ -2,7 +2,9 @@
 
 The `style.json` file in the `style` folder is the one responsible for defining your theme’s style. This means that you can customize your entire store’s appearance by simply adjusting the default definitions declared in this file, without the need to declare CSS for each page’s components.
 
-This customization can be done swiftly and easily using [VTEX Styleguide](https://styleguide.vtex.com/#/Styles), the `style.json` file style guide based on a highly configurable CSS structure, [VTEX Tachyons](https://vtex.github.io/vtex-tachyons/).
+
+Thankfully, this is easy to do thanks to the [VTEX Styleguide](https://styleguide.vtex.com/#/Styles), a highly-configurable CSS framework responsible for defining the component style guideline. There, your can find a proper translation for what your `styles.json` file props and blocks mean in order to help your customization. 
+
 
 For example: in `style.json`, we can set the default theme background color to blue, by simply changing the `semanticColors` block’s `base` property:
 
