@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 ## Introduction 
 
-Google Tag Manager is a JavaScript and HTML tags management system for tracking user browsing. It avoids any contact with the source code when adding, editing or removing your website tags and provides easily user browsing tracking for Google Analytics as well.  
+Google Tag Manager is a **JavaScript and HTML tags management system** for tracking user browsing. It avoids any contact with the source code when adding, editing or removing your website tags and provides easily user browsing tracking for Google Analytics as well.  
 
 The VTEX IO's Google Tag Manager native solution is compliant with the Universal Analytics [Enhanced Ecommerce](https://developers.google.com/tag-manager/enhanced-ecommerce) events format and supports the following events natively emitted by our components:
 
@@ -35,9 +35,6 @@ It is possible to install the GTM app in your store via App Store or using the V
 1. Access the [Google Tag Manager app](https://apps.vtex.com/google-tag-manager/p) in your **VTEX App Store** and install it. 
 2. Follow all account login steps and click on the **Install** button.
 3. You'll see a warning message indicating to enter the needed configurations. Scroll down your page and type your **GTM ID** in the `Google Tag Manager` field.
-
--> onde consegue o ID
-
 4. Click on the **Save** button. You are good to go! 
 
 To check or updtate the app's settings posteriormente, simply visit the **Apps** section in your account's admin and select the Google Tag Manager box. 
@@ -68,9 +65,6 @@ You can confirm that the app is now installed by running again `vtex ls`.
 
 4. Access the **Apps** section within your account's admin page and click on Google Tag Manager box.
 5. Fill in the `Google Tag Manager` field with your **GTM ID**. 
-
--> ONDE FICA ISSO
-
 6. Click on the **Save** button.
 
 After installing the Google Tag Manager app, you are ready to use your GTM as usual by accessing your account's dashboard at [Google Tag Manager](https://tagmanager.google.com/). 
