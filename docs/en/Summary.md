@@ -128,6 +128,6 @@
     - [Search Result](components/search/vtex.search-result)
   - [All Components](components/all)
 
-<!-- - [Resources](resources) -->
-
 - [Latest releases](home#latest-releases)
+
+- [How this documenation works](app/vtex.io-documentation)
