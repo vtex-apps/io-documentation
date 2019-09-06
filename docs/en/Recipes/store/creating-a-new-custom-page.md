@@ -1,6 +1,6 @@
 ---
 title: Creating a new custom page
-description: "This guide will help you to learn how to create a new custom page in your website. You'll be introduced to the framework's template types and default pages. Also, a simple institutional page will be built from scratch."
+description: "Learn how to define a different layout, path and content for a store’s new custom page."
 date: "30/08/2019"
 tags: ["institutional page", "page", "new page", "template", "institutional"]
 version: "0.x"
@@ -9,80 +9,74 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Creating a new custom page
 
-### Introduction
-Stores are made of several different pages, each one with a different layout and content. When creating a store from scratch, some default pages are already available:
+Stores are made up of several different pages, each one having a different layout and content. When creating a store from scratch in VTEX IO, some default pages with predefined URLs are available to you, such as:
 
-- store.home
-- store.product
-- store.search
-- store.account
-- store.login
-- store.orderplaced
+- `store.home` (Home page)
+- `store.product`(Product page)
+- `store.search` (Search Results page)
+- `store.account` (Client Account page)
+- `store.login` (Login page)
+- `store.orderplaced`(Order Placed page)
 
-These default pages path are already defined in the Admin Pages. You can check them in the website:
+<div class="alert alert-info">
+You can manage each page's title and template in the Pages section, within the admin's CMS. 
+</div>
 
->https://YOUR-ACCOUNT.myvtex.com/admin/cms/pages/
+However, you may want to create a new custom page for your store. In this case, a new URL and content to go with it must also be created by you. 
 
-Notice that these URLs’ format cannot be changed, since they are default for every store. See the store.product's example:
+Follow the steps below and learn how to define a different layout and path for a new store page:
 
-![store-product-exp](https://user-images.githubusercontent.com/12139385/63775040-ea2d0c00-c8b4-11e9-8697-d33d40df45f4.png)
+1. Create a **new template** in your store theme.
+2. Create your **new page's path**.
+3. **Add content** to your page using Site Editor.
+4. Promote your changes to a **master workspace**.
 
-Besides these default pages, its possible to create other custom pages, such as the ones with Institutional content, or blog content.
+## New template
 
-It is necessary to create a new custom page whenever you need to define **new URLs with different layouts than the ones already created or defined by default.** 
+A template sets the page layout, so if you want to create a custom page for your store you also will need to create a new template for it. 
 
-This recipe will show you how to create a simple institutional page.
+In order to do so, you first must choose one of three template types to host your new template:
 
+- **Product** - Template type for pages that must deal with the content of a single product. For instance, a product details page. Adding any new product automatically generates a new Product page.
 
-### Step by step
+- **Product collections** - Template type for pages containing a group of products, such as the Search Result page.
 
-**1 - Create a template in your store theme**
+- **Standard** - Template type for pages with no specific product content. For instance, the Home page.
 
-Our store framework has 3 different templates’ context:
+<div class="alert alert-info">
+Even though <code>Standard</code> pages are not directly linked to any specific product, they may display shelves or lists of any chosen group of products. The main difference is that the group of products shown in such page does not depend on the URL query, but only on the setting of the shelf itself. 
+</div>
 
-`Product` - Pages that must deal with the content of a single product. For instance,  a product details page. Every new product registry automatically generates a new product page.
-
-`Product collections` - Pages that must deal with the content of a group of products. For instance, a search result page.
-
-`Standard` - Pages that must deal with no specific product content. For instance, the home page.
-
-> Even though standard pages are not directly linked to any specific product, they may show shelves or lists of any chosen group of products. The main difference is that the group of products to be shown on that page do not depend on the url content, but only on the setting of the shelf itself. 
-Product pages, for instance, show the product that is defined in the page's url path, and search results pages show the list of products defined by the urls’ query.
-
-As an institutional page is not directly connected to any specific product we will create a custom Standard Template.
-
-We will create a simple template with a row that contains an image in its left column and, in its right column, a title and text content:
+Let's suppose we are going to create a simple About Us page for a store. As such the page is not directly connected to any specific product, we should create a custom `Standard` template for it with an image in its left column and a a title and text content in its right column:
 
 ![store-product-exp](https://user-images.githubusercontent.com/12139385/63775975-dbdfef80-c8b6-11e9-9b76-e50924b828ae.png)
 
-To do so, on your theme's source code, declare a custom template layout within your blocks folder:
-```
+To do so, in your store theme's code, declare a new template within your `blocks` folder or `blocks.jsonc` file
 
+```
 {
- "store.custom#your-template-name-here": {
-     "blocks": [	
+ "store.custom#{templatename}": {
+     "blocks": [  
      ]
   }
 }
 ```
 
-And then, fill them up with the blocks that will set the desired layout:
+Then, fill it out with the blocks that will set the desired layout:
 
 ```
 {
- "store.custom#your-template-name-here": {
+ "store.custom#{templatename}": {
    "blocks": [
      "flex-layout.row#about-us"
    ]
  },
- 
  "flex-layout.row#about-us": {
    "children": [
      "image#about-us",
      "flex-layout.col#text-about-us"
    ]
  },
- 
  "flex-layout.col#text-about-us": {
    "children": [
      "rich-text#about-title",
@@ -92,74 +86,73 @@ And then, fill them up with the blocks that will set the desired layout:
      "preventVerticalStretch": true
    }
  },
- 
 "rich-text#about-title": {
    "props": {
      "text":
      "# About us Title"
    }
  },
- 
  "rich-text#about-content": {
    "props": {
      "text":
      " About us content - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
    }
  },
- 
  "image#about-us": {
    "props": {
-     "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+     "src": "https://storecomponents.vteximg.com/files/mobile-phone.png",
      "maxHeight": "600px"
    }
  }
 }
 ```
 
-Learn more about how the flex layout works in its own recipe.
+To learn more about how the Flex Layout works, access its [documentation](https://vtex.io/docs/recipes/layout/using-flex-layout).
 
+## Page's path
 
-**2 - Create your page's Route**
+Now that your page layout has been defined in the store theme code, the next step is to define the page's path to make the page accessible. You can define it through direct code changes or by using the account's admin. 
 
-Go to your routes.json file, that can be found in the store folder. There, add a route to the json:
+### Through code changes
+
+In your theme's source code, access the `routes.json` file. It can be found in the `store` folder. There, add a path to the recently created template's JSON:
+
 ```
-   "store.custom#your-template-name-here": {
-   "path": "/your-url-here"
+   "store.custom#{templatename}": {
+   "path": "/{URL}"
  }
 ```
 
+Save your files and link the theme to your workspace using the `vtex link` command. You will also be able to see your new page here:
 
-**3 - Check if it worked**
+`https://{workspace}--{account}.myvtex.com/{URL}`
 
-Now, save your files and, through VTEX toolbelt, link the theme to your workspace.
+If the new page satisfies your store needs, [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new store's version in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).   
 
->$ vtex link
+### Using the account admin
 
-Go to the page in your workspace and check that it works:
+If you prefer to set the new page path using account admin, you must first must [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes regarding template creation and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new version of your store in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).
 
->https://yourworkspace--youraccount.myvtex.com/your-url-here
+Then, simply access the **Pages** section and click on **Create New**. Afterwards, simply choose the desired URL and any created template. For instance, the About Us page template. 
 
-Check that everytime you create a new template, a new page is created at your Admin Pages, that can be reached at: 
- >https://yourworkspace--youraccount.myvtex.com/admin/cms/pages
+![custom-pages-pages](https://user-images.githubusercontent.com/52087100/64428903-36353900-d08b-11e9-8d19-186c8831b4d7.png)
 
-Also, this new template becomes available to be set to any `Standard Page`.
+Notice that a template only sets the page layout, hence any new template becomes available to be set on any page that accepts templates of the same type as the page itself. 
 
-![store-product-exp](https://user-images.githubusercontent.com/12139385/63776208-498c1b80-c8b7-11e9-9e46-3c7f76f58036.png)
+<div class="alert alert-info">
+When editing any content using the CMS section, it's always good to make your changes in a production workspace. Therefore, make sure you are not creating your new custom page in the store's master workspace.
+</div>
 
->One template can serve different pages. The template will only set the layout of the page, hence you may use the same template to pages that share the same layout but have different URLs and content. To set a new url in your store with a template that already exists, just click on the `Create New` button of your store's Admin Pages, and choose your url and desired template. As these changes affect your workspace immediately, **it's always a good practice to create these new pages on production workspaces and not directly on master.**
+## Content
 
+Your new page now has a custom layout, thanks to the newly created template, and can be accessed thanks to its route creation. The next step is editing its content. 
 
-**4 - Add content to your page on store-front**
+In the account admin, access **Site Editor**, in CMS. You can browse to your custom page or simply write its URL in the `Page URL` field. 
 
->Be aware that a content can only be promoted to master if created in a **production workspace**. Before setting the content to your new page, check if you are in a production workspace in order to prevent rework.
+![custom-pages-siteeditor](https://user-images.githubusercontent.com/52087100/64428904-36cdcf80-d08b-11e9-8de4-06bf0a89b14f.png)
 
-Go to your storefront:
-> https://yourworkspace--youraccount.myvtex.com/admin/cms/storefront
+Once there, feel free to change its content by customizing the page's component. For more on possible customization, access our [Layout recipes](https://vtex.io/docs/recipes/layout) 
 
-Then navigate to your custom page - or simply write it down at the Page url field. 
-Now change the content to each one of the available components of the page.
+## Master workspace 
 
-
-**5 - Promote your workspace to master**
-
-To make this page available in your store, you might simply promote your production workspace. You can find all the instructions to do so in its own recipe
+Finally, to make the new page available on your store, that is, available to end users, you must [promote your production workspace to master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) .
