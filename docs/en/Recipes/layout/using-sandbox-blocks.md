@@ -1,27 +1,30 @@
 ---
-title: Using sandbox blocks
-description: "With Store Framework you're able to use iframes to attend specific custom needs"
+Title: Using Sandbox blocks
+description: "Understand what the Sandbox app is and use iframes to attend to your store's custom needs"
 date: "2019-08-19"
-tags: ["iframe", "sandbox", "custom"]
+tags: ["iframe", "sandbox-app", "sandbox-block", "custom"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-sandbox-blocks.md"
 ---
 
-# Using sandbox blocks
 
-VTEX's store framework is a very powerful tool that is going bigger everyday, so that it can attend most of the its' clients needs. It's understandable, though, that there are extra customizations that compose your store's needs and that the framework may not attend. That's what the **Sandbox App** was created for. 
+# Using Sandbox blocks
 
-The **Sandbox App** is basically a component that supports iFrames. Therefore, it's intended to make available the possibility to use custom `html`, `css` and `js` code.
+## Introduction
 
-As a front end developer, it might be the case that you tend to think that it's easier then to just use this app whenever it fits, but that is not really what the Store Framework, neither the Sandbox App is about. Creating everything using iFrames will make your store easily obsolete to new Store Framework's features and not really performatic.
+VTEX Store Framework is a very powerful tool meant to attend most client needs. It's understandable, though, that some custom requirements that your store needs and will not be served by the framework. That's where the **Sandbox App** comes in. 
 
-**So when, then, should I use the Sandbox App?**, you might be wondering. Take a good look at [all the components](link componentes) we offer see what they're capable of. If you think a component is very similar to what you're trying to accomplish but with some minor changes, then you should find the right styling and props so that it becomes what you need. **Sandbox should be used whenever Store Framework native components won't handle your scenario, and what you want to do is simple enough that doesn't require much out source data.**
+The **Sandbox App** is basically a component that supports iFrames. Therefore, it allows you to use custom `html`, `css` and `js` code to customize your store.
 
-Ok, with that in mind, let's get to the point. To use Sandbox App you should first declare it as a dependency. Go ahead to your `manifest.json` file. Edit the dependencies node and add the sandbox app:
+## Step by step
 
-![sandbox dependency](https://user-images.githubusercontent.com/18701182/64338608-9b6c2a00-cfb8-11e9-863c-9444fec31304.png)
+1. Go ahead and open your `manifest.json` file and declare the Sandbox app as a dependency. 
 
-Now you need to declare your sandbox block, let's say you want to create a simple `h1` sandbox block, that would be something like:
+![sandbox dependency](https://lh6.googleusercontent.com/xHiHR8-_xYO2NuPaAHSAC2zxaFMCJyP72NIGAPi0EK77D60bdkFkcmvQLqYbenwvlTuTO875jfrMhh5HGxo9OXI7ZtSANTCxTytUJD0d)
+
+2. Then, declare the Sandbox block in the `blocks` folder or in the `blocks.jsonc` file.
+
+Let's suppose you want to create a simple `h1` sandbox block. It would look similar to the following:
 
 ```
 "sandbox#h1": {
@@ -34,11 +37,10 @@ Now you need to declare your sandbox block, let's say you want to create a simpl
 }
 ```
 
-Finally, just reference it in a another's block `children` or `blocks`, on your `store.home`, for instance: 
+3. Reference it in another's block `child dependency` or `blocks`. For instance, your `store.home`: 
 
 ```
 //home.jsonc
-
 "store.home": {
     "blocks": [
       "carousel#home",
@@ -53,7 +55,12 @@ Finally, just reference it in a another's block `children` or `blocks`, on your 
 },
 ```
 
-That should, therefore, render the h1 sandbox on the store's page:
+That should render the h1 sandbox on the store's page:
 
-![Hello world sandbox](https://user-images.githubusercontent.com/18701182/64338604-99a26680-cfb8-11e9-9260-fac6297d5b35.png)
+![Hello world sandbox](https://lh3.googleusercontent.com/Rc4W95PP3U7vWemeuT_Btgw3e-itXkK-L84NFTlHet_2zge_l50ygV4e5CX5CLaH2R4G9xmHya7xiwz3hQ8gPr7QN9RQYgLrLidPs_UN)
 
+## Best Practices
+
+If you think that a component is very similar to what will serve your store needs but that it still needs some tweaks, you should find the right style and props to turn into the custom component you are looking for. 
+
+**Sandbox should only be used whenever Store Framework native components won't handle your scenario** and when what you intend to do is simple enough that it doesn't require a lot of outsource data. Creating everything using iFrames will make your store easily obsolete to new Store Framework features and not very good in terms of performance.
