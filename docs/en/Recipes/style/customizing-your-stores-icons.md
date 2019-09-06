@@ -31,7 +31,7 @@ For instance, let's customize the cart icon (`hpa-cart`) changing only its `g` c
 
 ![image](https://user-images.githubusercontent.com/18701182/61139096-0dcffa80-a49f-11e9-8ff9-4c4f805a2738.png) 
 
-[Link](*link*)your code and you should see your change through your browse:
+[Link](https://vtex.io/docs/recipes/store/linking-an-app)your code and you should see your change through your browse:
 
 ![image](https://user-images.githubusercontent.com/18701182/61139698-360c2900-a4a0-11e9-910b-8391ca58565e.png) 
 
