@@ -130,4 +130,4 @@
 
 <!-- - [Resources](resources) -->
 
-- [Latest releases](docs#latest-releases)
+- [Latest releases](home#latest-releases)
