@@ -130,4 +130,4 @@
 
 - [Latest releases](home#latest-releases)
 
-- [How this documenation works](app/vtex.io-documentation)
+- [How to contribute](app/vtex.io-documentation)
