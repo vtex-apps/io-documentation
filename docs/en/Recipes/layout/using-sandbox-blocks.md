@@ -1,5 +1,5 @@
 ---
-Title: Using Sandbox blocks
+title: Using Sandbox blocks
 description: "Understand what the Sandbox app is and use iframes to attend to your store's custom needs"
 date: "2019-08-19"
 tags: ["iframe", "sandbox-app", "sandbox-block", "custom"]
@@ -20,7 +20,7 @@ The **Sandbox App** is basically a component that supports iFrames. Therefore, i
 
 1. Go ahead and open your `manifest.json` file and declare the Sandbox app as a dependency. 
 
-![sandbox dependency](https://lh6.googleusercontent.com/xHiHR8-_xYO2NuPaAHSAC2zxaFMCJyP72NIGAPi0EK77D60bdkFkcmvQLqYbenwvlTuTO875jfrMhh5HGxo9OXI7ZtSANTCxTytUJD0d)
+![sandbox dependency](https://user-images.githubusercontent.com/19555647/64436924-ae0b5f80-d09b-11e9-9080-fd4c983689d1.png)
 
 2. Then, declare the Sandbox block in the `blocks` folder or in the `blocks.jsonc` file.
 
@@ -57,7 +57,7 @@ Let's suppose you want to create a simple `h1` sandbox block. It would look simi
 
 That should render the h1 sandbox on the store's page:
 
-![Hello world sandbox](https://lh3.googleusercontent.com/Rc4W95PP3U7vWemeuT_Btgw3e-itXkK-L84NFTlHet_2zge_l50ygV4e5CX5CLaH2R4G9xmHya7xiwz3hQ8gPr7QN9RQYgLrLidPs_UN)
+![Hello world sandbox](https://user-images.githubusercontent.com/19555647/64436951-b95e8b00-d09b-11e9-90af-7d11f6d9d501.png)
 
 ## Best Practices
 
