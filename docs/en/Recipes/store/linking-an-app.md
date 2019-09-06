@@ -4,7 +4,7 @@ description: "Sync your local files with an app and ensure that your code change
 date: "06/09/2019"
 tags: ["local-files", "linking", "link", "app"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/installing-the-google-tag-manager-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/linking-an-app.md"
 ---
 
 # Linking an app
