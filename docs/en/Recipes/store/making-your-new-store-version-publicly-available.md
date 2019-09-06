@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Making your new store version publicly available
 
-If you’re comfortable with the configurations you’ve performed and want your version of the store to be made available to any user, [linking]() the store theme app in which you’re working will not suffice: you’ll also need to **release** it, **publish** it, install it in a **production workspace** and promote it to **master**.
+If you’re comfortable with the configurations you’ve performed and want your version of the store to be made available to any user, [linking](https://vtex.io/docs/recipes/store/linking-an-app) the store theme app in which you’re working will not suffice: you’ll also need to **release** it, **publish** it, install it in a **production workspace** and promote it to **master**.
 
 ## Release
 
