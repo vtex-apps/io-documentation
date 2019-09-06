@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Installing an app
 
-Installing an app in a [production workspace](*link*) is a fundamental step for testing the reliability of your new code settings. Once your app is already [published](*link*), you should follow the steps below
+Installing an app in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace) is a fundamental step for testing the reliability of your new code settings. Once your app is already [published](https://vtex.io/docs/recipes/store/publishing-an-app), you should follow the steps below
 
 ## Command
 
