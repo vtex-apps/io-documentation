@@ -233,7 +233,7 @@ The left column is the one with the [product-images](https://vtex.io/docs/compon
 
 As you can see rendered, the right column has many children:
 
-![](https://i.ibb.co/Z6zxSc7/image.png)
+![storetheme-product-details-page](https://user-images.githubusercontent.com/52087100/64394071-ddce4f00-d02a-11e9-8c7a-2a4b346d59e3.png)
 
 ### Product name
 
