@@ -130,4 +130,4 @@
 
 <!-- - [Resources](resources) -->
 
-- [Latest releases](https://vtex.io/docs#latest-releases)
+- [Latest releases](/docs#latest-releases)
