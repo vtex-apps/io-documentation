@@ -1,6 +1,6 @@
 # Basic setup to develop in VTEX IO
 
-Any development in VTEX IO beings with the **Toolbelt**, our CLI (Command Line Interface) that allows you to login, develop new apps and manage already installed ones.
+Any development in VTEX IO begins with the **Toolbelt**, our CLI (Command Line Interface) that allows you to login, develop new apps and manage already installed ones.
 
 ## VTEX IO Toolbelt
 
