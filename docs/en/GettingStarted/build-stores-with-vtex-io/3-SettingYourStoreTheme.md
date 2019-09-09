@@ -68,7 +68,7 @@ To better understand the default theme's structure, let's have a closer look at 
 
 Navigate again to your new store by accessing:
 
-`https://{workspace}-{account}.myvtex.com`
+`https://{workspace}--{account}.myvtex.com`
 
 After the login, you should already see Store Theme reflected in your store:
 
