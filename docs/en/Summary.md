@@ -31,8 +31,7 @@
     - [Releasing a new app version](recipes/store/releasing-a-new-app-version.md)
     - [Making your new store version publicly available](recipes/store/making-your-new-store-version-publicly-available.md)
     - [Running A/B tests](recipes/store/running-native-ab-testing.md)
-  - [Routes](recipes/routes)
-    -  [Creating a new custom page](recipes/routes/creating-a-new-custom-page.md)
+    - [Creating a new custom page](recipes/routes/creating-a-new-custom-page.md)
 
   - [All Recipes](recipes/all)
 
@@ -128,6 +127,6 @@
     - [Search Result](components/search/vtex.search-result)
   - [All Components](components/all)
 
-- [Latest releases](home#latest-releases)
+- [Latest releases](https://github.com/vtex-apps/release-notes/tree/master/docs)
 
 - [How to contribute](app/vtex.io-documentation)
