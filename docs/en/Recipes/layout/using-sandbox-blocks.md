@@ -20,11 +20,9 @@ The **Sandbox App** is basically a component that supports iFrames. Therefore, i
 
 1. Go ahead and open your `manifest.json` file and declare the Sandbox app as a dependency. 
 
-![sandbox dependency](https://user-images.githubusercontent.com/19555647/64436924-ae0b5f80-d09b-11e9-9080-fd4c983689d1.png)
+![sandbox dependency](https://user-images.githubusercontent.com/19555647/64436951-b95e8b00-d09b-11e9-90af-7d11f6d9d501.png)
 
 2. Then, declare the Sandbox block in the `blocks` folder or in the `blocks.jsonc` file.
-
-Let's suppose you want to create a simple `h1` sandbox block. It would look similar to the following:
 
 ```
 "sandbox#h1": {
@@ -37,6 +35,11 @@ Let's suppose you want to create a simple `h1` sandbox block. It would look simi
 }
 ```
 
+Let's suppose you want to create a simple `h1` sandbox block. It would look similar to the following:
+
+![sanbox hello world](https://user-images.githubusercontent.com/19555647/64436924-ae0b5f80-d09b-11e9-9080-fd4c983689d1.png)
+
+
 3. Reference it in another's block `child dependency` or `blocks`. For instance, your `store.home`: 
 
 ```
@@ -44,7 +47,7 @@ Let's suppose you want to create a simple `h1` sandbox block. It would look simi
 "store.home": {
     "blocks": [
       "carousel#home",
-      *"sandbox#h1"*,
+      "sandbox#h1",
       "flex-layout.row#deals",
       "shelf#home",
       "info-card#home",
@@ -55,9 +58,7 @@ Let's suppose you want to create a simple `h1` sandbox block. It would look simi
 },
 ```
 
-That should render the h1 sandbox on the store's page:
-
-![Hello world sandbox](https://user-images.githubusercontent.com/19555647/64436951-b95e8b00-d09b-11e9-90af-7d11f6d9d501.png)
+That should render the h1 sandbox on the store's page!
 
 ## Best Practices
 
