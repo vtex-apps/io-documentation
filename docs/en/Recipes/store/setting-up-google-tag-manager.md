@@ -4,7 +4,7 @@ description: "Set up all the necessary tags, triggers, variables and configurati
 date: "19/08/2019"
 tags: ["google-analytics", "store", "google-tag-manager", "gtm", "tags", "variables", "triggers"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/store/setting-up-google-analytics.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/setting-up-google-tag-manager.md"
 ---
 
 # Setting up Google Tag Manager
