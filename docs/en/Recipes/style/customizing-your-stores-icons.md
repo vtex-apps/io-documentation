@@ -4,7 +4,7 @@ description: "VTEX Styleguide has a default iconography that is used in all VTEX
 date: "04/09/2019"
 tags: ["icon", "custom", "icons", "iconography", "change", "edit"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/style/changing-your-stores-icons.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/style/customizing-your-stores-icons.md"
 ---
 
 # Customizing your store's icons
