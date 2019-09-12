@@ -4,7 +4,7 @@ description: "Linking URLs in banners can be a great opportunity to influence us
 date: "2019-08-21"
 tags: ["storefront", "site-editor", "url", "banner", "link", "linking", "internal-url", "external-url", "redirect"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/LinkingURLsInBannersUsingStorefront.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/layout/linking-urls-in-banners-using-site-editor.md"
 ---
 
 # Linking URLs in banners using Site Editor
