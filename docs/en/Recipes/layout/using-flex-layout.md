@@ -1,5 +1,5 @@
 ---
-title: Using flex-layout
+title: Using Flex Layout
 description: "Improve the way your store layout is built by using Flex Layout to place page components as desired."
 date: "2019-08-21"
 tags: ["flex-layout", "layout", "using", "use"]
@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-flex-layout.md"
 ---
 
-# Using flex-layout
+# Using Flex Layout
 
 ## Introduction
 
