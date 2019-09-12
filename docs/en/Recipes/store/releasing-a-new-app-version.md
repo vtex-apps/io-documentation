@@ -4,7 +4,7 @@ description: "Overwrite the app's manifest.json, update the app's changelog.md a
 date: "04/09/2019"
 tags: ["release", "releasing", "app", "version"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/tree/master/docs/en/Recipes/store"
+git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/store/releasing-a-new-app-version.md"
 ---
 
 # Releasing a new app version
