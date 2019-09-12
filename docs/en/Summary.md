@@ -23,7 +23,7 @@
     - [Creating a new custom page](recipes/store/creating-a-new-custom-page.md)
     - [Running A/B tests](recipes/store/running-native-ab-testing.md)
     - [Installing the Google Tag Manager app](recipes/store/installing-the-google-tag-manager-app.md)
-    - [Setting up Google Analytics](recipes/store/setting-up-google-analytics.md)
+    - [Setting up Google Tag Manager](recipes/store/setting-up-google-tag-manager.md)
     - [Setting up Google Analytics search tracking](recipes/store/setting-up-google-analytics-search-tracking.md)
     - [Making your new store version publicly available](recipes/store/making-your-new-store-version-publicly-available.md)
     - [Linking an app](recipes/store/linking-an-app.md)
