@@ -1,6 +1,6 @@
 ---
 title: Setting up Google Tag Manager
-description: "Set up all the necessary tags, triggers, variables and configurations to Google Tag Manager and easily manage user and website data using Google Analytics dashboards."
+description: "Set up all the necessary tags, triggers, variables and configurations with Google Tag Manager and easily manage user and website data using Google Analytics dashboards."
 date: "19/08/2019"
 tags: ["google-analytics", "store", "google-tag-manager", "gtm", "tags", "variables", "triggers"]
 version: "0.x"
@@ -9,17 +9,17 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Setting up Google Tag Manager
 
-In order to set up Google Tag Manager in your store, you first must set up all necessary variables, triggers and tags. These GTM components will work together measuring your store data, allowing you to properly manager user and website traffic in your Google Analytics dashboard. 
+In order to set up Google Tag Manager in your store, you first must set up all necessary variables, triggers and tags. These GTM components will work together to measure your store's data, allowing you to properly manage user and website traffic in your Google Analytics dashboard. 
 
 <div class="alert alert-info">
 If you are not familiar with the GTM components, we strongly recommend you to access the <a href="https://support.google.com/tagmanager/answer/6103657?hl=en">Google Tag Manager documentation</a> before starting your setup.
 </div>
 
-Follow the steps below to create all necessary GTM components for your store. To start off, open your Google Tag Manager account dashboard at [tagmanager.google.com](https://tagmanager.google.com/).
+Follow the steps below to create all necessary GTM components for your store. Begin by opening your Google Tag Manager account dashboard at [tagmanager.google.com](https://tagmanager.google.com/).
 
 ## Creating variables
 
-To create a variable, click on **Variables** on the left menu and then on the button **New**.
+To create a variable, click on **Variables** in the left menu and then on **New**.
 
 ![GTM-variables-menu](https://user-images.githubusercontent.com/52087100/64815325-ae17cd80-d57b-11e9-90fb-ff13e4026e72.png)
 
@@ -30,7 +30,7 @@ To create a variable, click on **Variables** on the left menu and then on the bu
 3. Type `campaignMedium` in the `Data Layer Variable Name` field.
 4. Click on **Save** and save it as **Data Layer Variable - campaignMedium**.
 
-Repeat the instruction above for the following variables: 
+Repeat the instructions above for the following variables: 
 
 - `campaignName`
 - `campaignSource`
@@ -46,15 +46,16 @@ Repeat the instruction above for the following variables:
 2. Click on the **Variable Configuration** box and select **Google Analytics Settings**. 
 3. Type in your Google Analytics **Tracking ID**. 
 4. Click on **More Settings** and then on **Ecommerce**. 
-5. Check the **Enable Enhanced Ecommerce Features** and **Use data layer** boxes.
+5. Tick the **Enable Enhanced Ecommerce Features** and **Use data layer** boxes.
 6. **Save** your changes as **Google Analytics**.
 
 #### Checkout
 
+
 1. In the **User-Defined Variables** box, click on **New**.
 2. Click on the **Variable Configuration** box and select **Google Analytics Settings**.
 3. Type in your Google Analytics **Tracking ID**.
-4. Click on **More Settings** and then **Fields to Set*.
+4. Click on **More Settings** and then **Fields to Set**.
 5. **Add** the following fields:
 
 |  Field Name     |                 Value                    |   
@@ -69,7 +70,8 @@ Repeat the instruction above for the following variables:
 
 ## Creating triggers
 
-To create a trigger, click on **Trigger** on the left menu and then on the button **New**.
+
+To create a trigger, click on **Trigger** in the left menu and then on **New**.
 
 ![GTM-triggers-menu](https://user-images.githubusercontent.com/52087100/64815364-c7207e80-d57b-11e9-8d7a-5f2634c7bdb7.png)
 
@@ -80,7 +82,7 @@ To create a trigger, click on **Trigger** on the left menu and then on the butto
 3. Type `addToCart` in the `Event Name` field. 
 4. Click on **Save** and save it as `Custom Event - addToCart`
 
-Repeat the instruction above for the following event triggers: 
+Repeat the instructions above for the following event triggers: 
 
 - `cart`
 - `email`
@@ -94,7 +96,7 @@ Repeat the instruction above for the following event triggers:
 
 ## Creating Tags
 
-To create a tag, click on **Tags** on the left menu and then on the **New** button.
+To create a tag, click on **Tags** in the left menu and then on **New**.
 
 ![GTM-tags-menu](https://user-images.githubusercontent.com/52087100/64815399-e28b8980-d57b-11e9-8913-1c0dc05f96a0.png)
 
@@ -102,10 +104,10 @@ To create a tag, click on **Tags** on the left menu and then on the **New** butt
 
 1. Click on the **Tag Configuration** box.
 2. Select **Google Analytics - Universal Analytics**.
-3. Choose **Event** in the `Track Type` field.
-4. Type **Ecommerce** in the `Category` field.
-5. Type **Event** in the `Action` field.
-6. In `Google Analytics Settings`, choose **Google Analytics - Checkout**.
+3. Choose **Event** from the `Track Type` field.
+4. Type in **Ecommerce** in the `Category` field.
+5. Type in **Event** in the `Action` field.
+6. In `Google Analytics Settings`, select **Google Analytics - Checkout**.
 7. In the **Triggering** box, choose the following triggers: 
   - Custom Event - `cart`
   - Custom Event - `email`
@@ -117,13 +119,14 @@ To create a tag, click on **Tags** on the left menu and then on the **New** butt
 
 ### Google Analytics - Enhanced Ecommerce
 
+
 1. Click on the **Tag Configuration** box.
 2. Select **Google Analytics - Universal Analytics**.
-3. Choose **Event** in the `Track Type` field.
-4. Type **Ecommerce** in the `Category` field.
-5. Type **Event** in the `Action` field.
+3. Choose **Event** from the `Track Type` field.
+4. Type in **Ecommerce** in the `Category` field.
+5. Type in **Event** in the `Action` field.
 6. In `Google Analytics Settings`, choose **Google Analytics**. 
-7. In the **Triggering** box, choose the following triggers:
+7. In the **Triggering** box, choose the following trigger
   - Custom Event - `addToCart`
   - Custom Event - `productDetail`
   - Custom Event - `productImpression`
@@ -134,9 +137,9 @@ To create a tag, click on **Tags** on the left menu and then on the **New** butt
 
 1. Click on the **Tag Configuration** box. 
 2. Select **Google Analytics - Universal Analytics**.
-3. Choose **Page View** in the `Track Type` field. 
-4. In `Google Analytics Settings`, choose **Google Analytics**.
-5. In the **Triggering** box, choose the `All Pages` trigger.
+3. Choose **Page View** from the `Track Type` field. 
+4. In `Google Analytics Settings`, select **Google Analytics**.
+5. In the **Triggering** box, select the `All Pages` trigger.
 6. Save the new tag as **Google Analytics - Page View**.
 
 ### Conversion Linker
