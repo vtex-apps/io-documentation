@@ -4,7 +4,7 @@ Todo desarrollo en VTEX IO comienza con [**Toolbelt**](*link*), nuestra CLI (Com
 
 ## VTEX IO Toolbelt
 
-Para instalar la CLI de VTEX IO, debe asegurarse de que su computadora tenga [Yarn](https://yarnpkg.com/) instalado.
+Para instalar la CLI de VTEX IO, debe asegurarse de que su computadora tenga [Node.js](https://nodejs.org/) e [Yarn](https://yarnpkg.com/) instalados.
 
 Luego, digite `yarn global add vtex` en el terminal de su computadora.
 
