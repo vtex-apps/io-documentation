@@ -10,6 +10,14 @@ Isso quer dizer que o Store Theme é um tema padrão responsável por definir a 
 
 O Toolbelt do VTEX IO oferece um comando `vtex init` que pode rapidamente copiar o Store Theme no seu computador para que você o configure e customize de acordo com as necessidades do seu negócio.
 
+>Observe que você deve instalar os seguintes apps a partir do terminal:
+
+```
+vtex install vtex.store-sitemap
+vtex install vtex.store --force
+vtex install vtex.admin-pages
+```
+
 ## Implementando o Store Theme
 
 Usando o seu terminal, navegue até um diretório já existente dos seus arquivos locais onde você deseja que o Store Theme seja copiado. Então, use o comando `vtex init` , selecione a opção **store-theme** e confirme que você gostaria de fazer o download do tema na pasta de destino previamente definida.
