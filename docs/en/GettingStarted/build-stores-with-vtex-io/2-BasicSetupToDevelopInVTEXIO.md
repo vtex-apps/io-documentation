@@ -48,7 +48,7 @@ This changes your Toolbelt to a so-called `examplename` workspace and creates it
 
 Having created your own development workspace, you can go to your store by accessing:
 
-`https://{workspace}-{account}.myvtex.com`
+`https://{workspace}--{account}.myvtex.com`
 
 Where `{workspace}` is the workspace that you've just created and `{account}` is the name of the account in which you are working.
 
