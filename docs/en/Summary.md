@@ -105,7 +105,7 @@
     - [Bluecore](components/pixel/vtex.bluecore)
     - [Btg360](components/pixel/vtex.btg360)
     - [Criteo](components/pixel/vtex.criteo)
-    - [Facebook Pixel](components/pixel/vtex.facebook-pixel)
+    - [Facebook](components/pixel/vtex.facebook-pixel)
     - [Flixmedia](components/pixel/vtex.flixmedia)
     - [Google Adwords](components/pixel/vtex.google-adwords)
     - [Google Search Console](components/pixel/vtex.google-search-console)
