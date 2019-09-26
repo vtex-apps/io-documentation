@@ -79,19 +79,19 @@ To create a trigger, click on **Trigger** in the left menu and then on **New**.
 
 1. Click on the **Trigger Configuration** box.
 2. Select **Custom Event**.
-3. Type `addToCart` in the `Event Name` field. 
+3. Type `addToCart` in the `Event Name` field.
 4. Click on **Save** and save it as `Custom Event - addToCart`
 
-Repeat the instructions above for the following event triggers: 
+Repeat the instructions above for the following event triggers:
 
 - `cart`
 - `email`
-- `orderPlaced` 
+- `orderPlaced`
 - `payment`
 - `productDetail`
-- `productImpression` 
+- `productImpression`
 - `profile`
-– `remoFromCart`
+- `removeFromCart`
 - `shipping`
 
 ## Creating Tags
