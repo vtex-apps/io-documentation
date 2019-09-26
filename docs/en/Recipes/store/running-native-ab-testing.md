@@ -42,5 +42,5 @@ Then, a list of all workspaces being tested  by the `vtex.ab-tester` app will sh
 ![ab-testing-step6](https://user-images.githubusercontent.com/52087100/64129622-a7c36d80-cd93-11e9-9b77-9a0bae552439.png)
 
 <div class="alert alert-warning">
-By finishing the test, you will only be ending the test on the select workspace. <strong>It will not promote any workspace to master.  You must do that yourself.</strong> If you've built an A/B Test with other workspaces you must end them manually as well.
+By finishing the test, you will only be ending the test on the select workspace. <strong>It will not promote any workspace to master. You must do that yourself.</strong> If you've built an A/B Test with other workspaces you must end them manually as well.
 </div>
