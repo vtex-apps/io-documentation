@@ -19,15 +19,10 @@ Using admin’s Storefront, you can customize a store’s typography faster and 
 
 1. Access **Storefront** in the desired account’s admin, in **CMS**.
 2. Click on **Design**, in the upper part of the page.
-
 ![customize-typo-image1 EN](https://user-images.githubusercontent.com/52087100/63810454-24b99780-c8fb-11e9-8baf-acb48491a4a0.png)
-
 3. In **Styles**, select the More Options (three dots) menu for the store’s style whose typography will be edited.
-
 ![customize-typo-image2 EN](https://user-images.githubusercontent.com/52087100/63810485-3602a400-c8fb-11e9-8077-41ab76c66ad2.png)
-
 4. Click on **Edit** and select **Typography**.
-
 ![customize-typo-image3 EN](https://user-images.githubusercontent.com/52087100/63810513-431f9300-c8fb-11e9-9f37-9789fbd52776.png)
 
 In the **Font Family** section, you can add a font family of your choosing in order to use in your store’s theme. Simply click on **Add custom font** and upload the desired font’s file.
