@@ -32,6 +32,7 @@
     - [Installing an app](recipes/store/installing-an-app.md)
     - [Creating a production workspace](recipes/store/creating-a-production-workspace.md)
     - [Promoting a workspace to master](recipes/store/promoting-a-workspace-to-master.md)
+    - [Using Support Apps](recipes/store/using-support-apps.md)
 
   - [All Recipes](recipes/all)
 
