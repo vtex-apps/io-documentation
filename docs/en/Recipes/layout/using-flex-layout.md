@@ -13,7 +13,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 Flex-layout is a layout structuring paradigm built within the VTEX IO Store Framework that allows the construction of complex and custom layouts. This paradigm uses the concept of rows and columns to set the desired component positioning on a given page.
 
-There two basic building blocks in every `flex-layout`: the `flex-layout.row` and the `flex-layout.col`. If you are already familiar with the [`flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) layout used in CSS, `flex-layout` should be easy to get a grasp of, since that's what `flex-layout.row` and `flex-layout.col` boast under the hood.
+There are two basic building blocks in every `flex-layout`: the `flex-layout.row` and the `flex-layout.col`. If you are already familiar with the [`flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) layout used in CSS, `flex-layout` should be easy to get a grasp of, since that's what `flex-layout.row` and `flex-layout.col` boast under the hood.
 
 The flex layout not only improves layout building but also helps to align everything, since gaps, margins and padding can be passed down to `flex-layout.row` and `flex-layout.col` as props.
 
