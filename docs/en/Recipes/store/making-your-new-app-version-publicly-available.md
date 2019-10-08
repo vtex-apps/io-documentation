@@ -4,7 +4,7 @@ description: "If you want to make your new app version publicly available, linki
 date: "29/08/2019"
 tags: ["release", "app", "promote", "production", "master", "workspace", "public", "available", "end-user", "version", "production-mode"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/making-your-new-store-version-publicly-available.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/making-your-new-app-version-publicly-available.md"
 ---
 
 # Making your new app version publicly available
