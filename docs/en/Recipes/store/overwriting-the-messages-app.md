@@ -4,10 +4,10 @@ description: "Learn how to override Messages and replace message content transla
 date: "10/09/2019"
 tags: ["messages", "messages-app", "overwriting", "overwrite", "translation"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-new-custom-page.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/overwriting-the-messages-app.md"
 ---
 
-# Overwriting Messages
+# Overwriting the Messages app
 
 ## Introduction
 
