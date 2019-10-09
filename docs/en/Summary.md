@@ -21,6 +21,7 @@
     - [Using Sandbox blocks](recipes/layout/using-sandbox-blocks.md)
   - [Store Management](recipes/store)
     - [Creating a new custom page](recipes/store/creating-a-new-custom-page.md)
+    - [Overwriting the Messages app](recipes/store/overwriting-the-messages-app.md)
     - [Running A/B tests](recipes/store/running-native-ab-testing.md)
     - [Installing the Google Tag Manager app](recipes/store/installing-the-google-tag-manager-app.md)
     - [Setting up Google Tag Manager](recipes/store/setting-up-google-tag-manager.md)
