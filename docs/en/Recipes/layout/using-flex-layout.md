@@ -137,6 +137,6 @@ Here is the final `about-us.json`[https://github.com/vtex-apps/store-theme/blob/
 ```
 
 ## Rules and recommendations
-- Each row and column can have as **many levels needed**.
+- Each row and column could have **many levels as needed**.
 - When creating levels, it is necessary to **alternate between rows and columns**. Within a row, you can only place columns, and within columns, only rows.
-- Be mindful that the structure that you set in your flex layout does not only affect your code organization, but also reflects in the way that blocks will be shown and managed through the Site Editor admin. Therefore, it is always important to **take the organization of both code and Site Editor into account when planning to apply the Flex Layout** onto a page.
+- Be mindful about the structure that you set in your flex layout does not only affect your code organization, but also reflects in the way that blocks will be shown and managed through the Site Editor admin. Therefore, it is always important to **take the organization of both code and Site Editor into account when planning to apply the Flex Layout** onto a page.
