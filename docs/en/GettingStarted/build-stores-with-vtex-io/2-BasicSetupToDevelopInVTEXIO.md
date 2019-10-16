@@ -13,7 +13,7 @@ $ yarn global add vtex
 ```
 
 <div class="alert alert-info">
-To confirm that the installation occurred as expected, you can execute the `vtex` command. This should display all available commands in a help text. 
+  To confirm that the installation occurred as expected, you can execute the <code>vtex</code> command. This should display all available commands in a help text. 
 </div>
 
 ## Login
