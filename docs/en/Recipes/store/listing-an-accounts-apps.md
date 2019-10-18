@@ -4,7 +4,7 @@ description: "List all account's apps running a single Toolbelt command"
 date: "10/18/2019"
 tags: ["list", "listing", "account", "app", "account-app"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/listing-an-accounts-apps.md"
 ---
 
 # Listing an account’s apps 
