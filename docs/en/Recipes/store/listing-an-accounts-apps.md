@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
 ---
 
-# List an account’s apps 
+# Listing an account’s apps 
 
 While developing in an account, we should be aware of all its installed or linked apps. With Toolbelt, access to the app list is made easy by running a single command.
 
