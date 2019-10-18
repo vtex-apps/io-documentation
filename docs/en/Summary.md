@@ -26,6 +26,7 @@
     - [Installing the Google Tag Manager app](recipes/store/installing-the-google-tag-manager-app.md)
     - [Setting up Google Tag Manager](recipes/store/setting-up-google-tag-manager.md)
     - [Setting up Google Analytics search tracking](recipes/store/setting-up-google-analytics-search-tracking.md)
+    - [Listing an account’s apps](recipes/store/listing-an-accounts-apps.md)
     - [Making your new app version publicly available](recipes/store/making-your-new-app-version-publicly-available.md)
     - [Linking an app](recipes/store/linking-an-app.md)
     - [Releasing a new app version](recipes/store/releasing-a-new-app-version.md)
