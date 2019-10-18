@@ -36,6 +36,12 @@
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
+      "appName": "vtex.iframe",
+      "title": "Iframe",
+      "description": "An app for using iframe in stores",
+      "url": "https://github.com/vtex-apps/iframe"
+    },
+    {
       "appName": "vtex.store-components",
       "file": "image.md",
       "title": "Image",
