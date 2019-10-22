@@ -4,7 +4,7 @@ description: "CSS Handles are magic tools developed by VTEX IO to make it easier
 date: "10/22/2019"
 tags: ["customization", "css", "css-selectors", "css-handles", "layout"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/layout/linking-urls-in-banners-using-site-editor.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-css-handles.md"
 ---
 
 # Using CSS Handles for store's customization
