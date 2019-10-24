@@ -1,7 +1,7 @@
 ---
 title: Using CSS Handles for store customization
 description: "CSS Handles are magic tools developed by VTEX IO to make it easier to customize components using CSS. Have a look at this recipe for more on how to identify and apply CSS Handles to your store, without the need for HTML CSS selectors"
-date: "10/22/2019"
+date: "10/24/2019"
 tags: ["customization", "css", "css-selectors", "css-handles", "layout"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-css-handles-for-store-customization.md"
