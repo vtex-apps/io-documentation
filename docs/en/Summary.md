@@ -15,7 +15,7 @@
     - [Changing your store's icons](recipes/style/customizing-your-stores-icons.md)
     - [Customizing your store’s typography](recipes/style/customizing-your-stores-typography.md)
   - [Layout](recipes/layout)
-    - [Using CSS Handles for store customization](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-css-handles-for-store-customization.md)
+    - [Using CSS Handles for store customization](recipes/layout/using-css-handles-for-store-customization.md)
     - [Linking URLs in banners using Site Editor](recipes/layout/linking-urls-in-banners-using-site-editor.md)
     - [Using Flex Layout](recipes/layout/using-flex-layout.md)
     - [Building a Product Details Page](recipes/layout/building-a-product-details-page.md)
