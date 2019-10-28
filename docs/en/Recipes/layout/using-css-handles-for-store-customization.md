@@ -53,7 +53,7 @@ In order to standardize CSS customization and avoid any potential breakdown in l
 
 However, it's common to come across store scenarios whose customization uses CSS Selectors. As the name implies, they are used to select elements for CSS customization according to the page HTML hierarchy. 
 
-This customization practice by HTML hierarchy was mostly [deprecated](link announcement). It means that starting from mm/dd/yyyy, **only** the CSS Selectors listed below will continue to be allowed for your store customization:
+This customization practice by HTML hierarchy was mostly deprecated. It means that **only** the CSS Selectors listed below will continue to be allowed for your store customization:
 
 - `:hover`   
 - Link selectors, such as `:visited`, `:active` and `:focus`.   
