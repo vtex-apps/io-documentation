@@ -59,6 +59,7 @@ This customization practice by HTML hierarchy was mostly deprecated. It means th
 - Link selectors, such as `:visited`, `:active` and `:focus`.   
 - Every pseudo-element, such as  `::before`, `::after` and `::placeholder`. 
 - `:nth-child(even)` and `:nth-child(odd)` 
+- `:first-child` and `:last-child`
 - Descendant combination element through space, such as `.{Element1} .{Element2}` 
 - `[data-*]` 
 - `:global(vtex-{AppName}-{AppVersion}-{ComponentName})`
