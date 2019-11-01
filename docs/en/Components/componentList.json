@@ -1,4 +1,43 @@
 {
+  "layout": [
+    {
+      "appName": "vtex.slider-layout",
+      "title": "Slider Layout",
+      "description": "VTEX Slider Wrapper",
+      "url": "https://github.com/vtex-apps/slider-layout"
+    },
+    {
+      "appName": "vtex.responsive-layout",
+      "title": "Responsive Layout",
+      "description": "VTEX Responsive Layout",
+      "url": "https://github.com/vtex-apps/responsive-layout"
+    },
+    {
+      "appName": "vtex.tab-layout",
+      "title": "Tab Layout",
+      "description": "VTEX Tabs Layout",
+      "url": "https://github.com/vtex-apps/tab-layout"
+    },
+    {
+      "appName": "vtex.store-image",
+      "title": "Image List",
+      "description": "VTEX Image List",
+      "url": "https://github.com/vtex-apps/store-image"
+    },
+    {
+      "appName": "vtex.stack-layout",
+      "title": "Stack Layout",
+      "description": "VTEX Stack Layout",
+      "url": "https://github.com/vtex-apps/stack-layout"
+    },
+    {
+      "appName": "vtex.sticky-layout",
+      "title": "Sticky Layout",
+      "description": "VTEX Sticky Layout",
+      "url": "https://github.com/vtex-apps/sticky-layout"
+    }
+  ],
+
   "general": [
     {
       "appName": "vtex.store-components",
@@ -156,6 +195,18 @@
       "title": "Address Locator",
       "description": "VTEX Address Locator component",
       "url": "https://github.com/vtex-apps/address-locator"
+    },
+    {
+      "appName": "vtex.wordpress-integration",
+      "title": "Wordpress Integration",
+      "description": "VTEX Wordpres Integration",
+      "url": "https://github.com/vtex-apps/wordpress-integration"
+    },
+    {
+      "appName": "vtex.iframe",
+      "title": "iFrame",
+      "description": "Render an external iframes on a store",
+      "url": "https://github.com/vtex-apps/iframe"
     }
   ],
   "navigation": [
@@ -364,6 +415,12 @@
       "title": "Accessibe",
       "description": "VTEX Accessibe component",
       "url": "https://github.com/vtex-apps/accessibe"
+    },
+    {
+      "appName": "vtex.hotjar",
+      "title": "Hotjar",
+      "description": "VTEX Hotjar integration",
+      "url": "https://github.com/vtex-apps/hotjar"
     }
   ],
   "product-related": [
@@ -457,6 +514,12 @@
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
+      "appName": "vtex.product-specification-badges",
+      "title": "Product Specification Badges",
+      "description": "VTEX Product Specification Badges component",
+      "url": "https://github.com/vtex-apps/product-specification-badges"
+    },
+    {
       "appName": "vtex.store-components",
       "file": "sku-selector.md",
       "title": "SKUSelector",
@@ -511,6 +574,12 @@
       "title": "Rebuy",
       "description": "VTEX Rebuy component",
       "url": "https://github.com/vtex-apps/rebuy"
+    },
+    {
+      "appName": "vtex.pickup-availability",
+      "title": "Pickup Availability",
+      "description": "VTEX Pickupt Availability component",
+      "url": "https://github.com/vtex-apps/pickup-availability"
     },
     {
       "appName": "vtex.product-teaser-interfaces",
