@@ -96,7 +96,7 @@ The <code>flex-layout.col#text-about-us</code> block is going to display its chi
 
 The `preventVerticalStretch` prop prevents the column from occupying 100% of its parent's height when set as `true`. You can use other custom row props, which can be found in the [Flex Layout](https://vtex.io/docs/components/all/vtex.flex-layout/) documentation.
 
-Here is the final `about-us.json`[https://github.com/vtex-apps/store-theme/blob/master/store/blocks/about-us.json] file, using Flex Layout: 
+Here is the final `about-us.json` file, using Flex Layout: 
 
 ```json
 {
