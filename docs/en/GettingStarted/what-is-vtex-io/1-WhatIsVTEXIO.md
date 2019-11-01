@@ -1,17 +1,21 @@
 # What is VTEX IO
 
-VTEX IO is a development platform used to create and operate Software as a Service at a high performance and low development and maintenance cost.
+VTEX IO is a cloud-native low code development platform that helps you deliver business solutions faster. From smooth, PWA-ready web stores, to custom admin interfaces and back-end integrations, VTEX IO offers an opinionated set of frameworks that allow you to evolve fast and safely.
 
-## Serverless
+## Scale your business, forget the servers
 
-At present, in addition to the need to develop codes that implement business functionalities, tech companies also need to worry about a large part of the infrastructure that lies behind what is being developed, such as server configuration, performance, access permissions, horizontal and vertical resource scalability, security, etc.
+> Leverage our fully managed, auto-scalable serverless infrastructure.
 
-With VTEX IO, server configuration and maintenance is outside the developer’s scope, who can redirect his or her efforts to other requests without wasting time managing the infrastructure and related challenges.
+The VTEX IO platform is battle-tested and scales automatically to meet your business demands because infrastructure is abstracted away from developer. Our multi-cluster, kubernetes-backed elastic back-end allows you to maintain uptime through traffic surges without having to pre-scale or prepare manually. Your users get to enjoy a smooth shopping experience while you focus on sales, not servers.
 
-## Cloud native
+## Deliver solutions, skip the classes
 
-By being serverless, VTEX IO is ran on a cloud infrastructure. This basically means that it’s not running in two different environments, one locally and the other on a cloud server.
+> Opinionated, best-in-class frameworks that you can learn on the go.
 
-Resources used by VTEX IO are automatically scaled according to the platform use frequency, allows retailers and development agencies to focus on business demands without having to worry about the scalability needs.
+Work with familiar and highly productive technologies like TypeScript, React, GraphQL, .NET and Node, using simple and intuitive frameworks which you can learn on-the-go. With nothing to install locally but a command-line application, developers enjoy a unprecedented fast setup time and become productive in record time. Using VTEX IO, you don't run any of your code locally. During development, all local changes to code are immediately synced to our cloud development environment and your software is redeployed instantly. You get a local development experience with automatic cloud deploys. Ready for prime time? Publish your app and see it live in under one minute, while knowing that it will behave the same. "Works on my machine" just became a thing of the past.
 
-In addition, a cloud-based infrastructure benefits from fast integrations with other areas and third-party services that are involved in the online purchasing flow, such as Google, carrier deliveries, marketing, inventories, etc.
+## Evolve fast, without breaking things
+
+> Your customers demand bug-free, fast shopping experiences.
+
+You should be able to deploy changes to code and configuration confidently, knowing that they will not disrupt your users' experience and will improve your business metrics. VTEX IO Workspaces allow you to do just that by creating multiple versions of your entire technology stack - from API implementations to React components to storefront home banners - and A/B test them. Our smart routing layer will automatically shift traffic to the best performing version and eventually promote it as your main production version. At the same time, our Progressive Rollout deployment strategy guarantees that all pieces of your distributed architeture evolve safely by testing each change against, at most, 10% of your production traffic before deploying to all your user base. Focus your engineering manpower in business needs while enjoying the same ability to evolve as Big Tech companies.
