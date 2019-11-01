@@ -13,7 +13,7 @@ VTEX IO Toolbelt offers the `vtex init` command which can quickly copy Store The
 ## Implementing your Store Theme
   
 <div class="alert alert-warning">
-The following apps need to be installed before downloading the Store There in your local files: <code>vtex install vtex.store-sitemap</code>, <code>vtex install vtex.store --force</code>, <code>vtex.rewriter</code>, <code>vtex install vtex.admin-pages</code>.
+The following apps need to be installed before downloading the Store There in your local files: <code>vtex install vtex.store-sitemap</code>, <code>vtex install vtex.store --force</code>, <code>vtex install vtex.rewriter</code>, <code>vtex install vtex.admin-pages</code>.
 <code>
 </div>
 
