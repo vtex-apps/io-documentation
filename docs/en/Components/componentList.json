@@ -1,6 +1,12 @@
 {
   "layout": [
     {
+      "appName": "vtex.flex-layout",
+      "title": "Flex Layout",
+      "description": "VTEX Flex Layout component",
+      "url": "https://github.com/vtex-apps/flex-layout"
+    },
+    {
       "appName": "vtex.slider-layout",
       "title": "Slider Layout",
       "description": "VTEX Slider Wrapper",
@@ -177,12 +183,6 @@
       "title": "Login",
       "description": "VTEX Login component",
       "url": "https://github.com/vtex-apps/login"
-    },
-    {
-      "appName": "vtex.flex-layout",
-      "title": "Flex Layout",
-      "description": "VTEX Flex Layout component",
-      "url": "https://github.com/vtex-apps/flex-layout"
     },
     {
       "appName": "vtex.device-detector",
