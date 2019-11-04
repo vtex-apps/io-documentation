@@ -22,7 +22,7 @@ For a better understanding of this structure, letâ€™s have a look at your storeâ
      "shelf#home",
      "info-card#home",
      "rich-text#question",
-     "rich-test#link"
+     "rich-text#link"
      "newsletter"
    ]
  }, 

@@ -21,7 +21,7 @@ Para compreender melhor essa estrutura, vamos dar uma olhada no template pré-de
      "shelf#home",
      "info-card#home",
      "rich-text#question",
-     "rich-test#link"
+     "rich-text#link"
      "newsletter"
    ]
  },

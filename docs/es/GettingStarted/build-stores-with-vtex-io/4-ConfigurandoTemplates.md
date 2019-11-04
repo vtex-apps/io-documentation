@@ -23,7 +23,7 @@ Para comprender mejor esta estructura, echemos un vistazo al template predefinid
      "shelf#home",
      "info-card#home",
      "rich-text#question",
-     "rich-test#link"
+     "rich-text#link"
      "newsletter"
    ]
  }, 
