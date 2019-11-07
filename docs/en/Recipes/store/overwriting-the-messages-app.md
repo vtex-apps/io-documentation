@@ -29,8 +29,8 @@ This recipe will show you how to overwrite the Messages app and easily create ne
 4. Write the following mutation command in the text box that is displayed:
 
 ```
-mutation Save($save: SaveArgs!){
-  save(args: $save)
+mutation Save($args: SaveArgsV2!) {
+  saveV2(args: $args)
 }
 ```
 
@@ -39,25 +39,27 @@ mutation Save($save: SaveArgs!){
 
 ```
 {
-  "save": {
+  "args": {
     "to": "en-US",
-    "messagesByProvider": [{
-      "provider": "vtex.login@2.x",
-      "messages": [{
-        "id": "store/login.signIn",
-        "content": "Welcome! Please log in "
-      }]
-    }]
+    "messages": [
+      {
+        "srcLang": "en-DV",
+        "srcMessage": "store/login.signIn",
+        "targetMessage": "Welcome! Please log in ",
+        "context": "vtex.login@2.x"
+      }
+    ]
   }
 }
 ```
 
-Note that the variable values `to`, `provider`, `id` and `content` will tell the Messages app where and what the message change will be. Therefore, **these variables are flexible and must fit your store's desired scenario**. The variables are as follows:
+Note that the variable values `to`, `srcLang`, `srcMessage`, `targetMessage` and `context` will tell the Messages app where and what the message change will be. Therefore, **these variables are flexible and must fit your store's desired scenario**. The variables are as follows:
 
-- `to`: where the message is located. 
-- `provider`: App message provider. 
-- `id`: message ID.
-- `content`: message content itself. 
+- `to`: Target translation locale. 
+- `srcLang`: Original message locale. 
+- `srcMessage`: Original message string.
+- `targetMessage`: The message translation.
+- `context`: The context of the message translation.
 
 Following the given example above, your admin should look similar to this: 
 
@@ -72,7 +74,7 @@ The expected response is as follows:
 ```
 {
   "data": {
-    "save": true
+    "saveV2": true
   }
 }
 ```
