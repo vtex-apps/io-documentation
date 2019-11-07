@@ -55,11 +55,11 @@ mutation Save($args: SaveArgsV2!) {
 
 Note that the variable values `to`, `srcLang`, `srcMessage`, `targetMessage` and `context` will tell the Messages app where and what the message change will be. Therefore, **these variables are flexible and must fit your store's desired scenario**. The variables are as follows:
 
-- `to`: target translation locale. 
-- `srcLang`: original message locale.
-- `srcMessage`: original message string.
-- `targetMessage`: the message translation.
-- `context`: the context of the message translation.
+- `to`: target translation locale
+- `srcLang`: source message locale
+- `srcMessage`: source message string
+- `targetMessage`: message translation string
+- `context`: message translation context 
 
 Following the given example above, your admin should look similar to this: 
 
