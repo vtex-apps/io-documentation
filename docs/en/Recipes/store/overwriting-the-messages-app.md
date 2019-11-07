@@ -56,18 +56,17 @@ mutation Save($args: SaveArgsV2!) {
 Note that the variable values `to`, `srcLang`, `srcMessage`, `targetMessage` and `context` will tell the Messages app where and what the message change will be. Therefore, **these variables are flexible and must fit your store's desired scenario**. The variables are as follows:
 
 - `to`: Target translation locale. 
-- `srcLang`: Original message locale. 
+- `srcLang`: Original message locale.
 - `srcMessage`: Original message string.
 - `targetMessage`: The message translation.
 - `context`: The context of the message translation.
 
 Following the given example above, your admin should look similar to this: 
 
-![overriding-messages-interface](https://user-images.githubusercontent.com/52087100/66517040-bdc1fd80-eab8-11e9-8082-ab0c4bdc640e.png)
 
-Finally, click on the play button to run the declared mutation. 
+![overriding-messages-interface](https://user-images.githubusercontent.com/284515/68409148-5bb2f180-0165-11ea-94c2-b2f34c8c9f44.png)
 
-![overwriting-messages-play](https://user-images.githubusercontent.com/52087100/66517074-d29e9100-eab8-11e9-9d30-2fd4e91d4de1.png)
+Finally, click on the play button to run the declared mutation.
 
 The expected response is as follows:
 
