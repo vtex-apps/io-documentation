@@ -4,7 +4,7 @@ description: "PWA is a sort of web app used to natively promote certain advantag
 date: "11/11/2019"
 tags: ["pwa", "store-pwa"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/layout/building-a-carousel-through-lists-and-slider-layout.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/enabling-the-stores-pwa-notice.md"
 ---
 
 # Enabling the store's PWA notice
