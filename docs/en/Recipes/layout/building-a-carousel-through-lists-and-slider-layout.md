@@ -62,7 +62,7 @@ _For example:_
 Bear in mind that <strong>list blocks do not render anything in your store</strong>, they simply hold content that can be edited using the Site Editor and pass it down to their child blocks.
 </div>
 
-4. Now that you've specified which data (in this case, which images) will be displayed in your slider using a `list` block, you need to configure the [slider properties](link) themselves, meaning those of the `slider-layout`. 
+4. Now that you've specified which data (in this case, which images) will be displayed in your slider using a `list` block, you need to configure the [slider properties](https://vtex.io/docs/app/vtex.slider-layout) themselves, meaning those of the `slider-layout`. 
 
 _For example:_
 
