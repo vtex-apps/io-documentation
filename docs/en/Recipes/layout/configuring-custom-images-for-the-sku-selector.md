@@ -1,5 +1,5 @@
 ---
-title: Configuring custom images for the SKU Selector component
+title: Configuring custom images for the SKU Selector
 description: "Learn how to configure the SKU Selector to display a custom image, different than the default one already used by the SKU."
 date: "11/11/2019"
 tags: ["custom-images", "sku-selector", "image"]
@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/configuring-custom-images-for-the-sku-selector-component.md"
 ---
 
-# Configuring custom images for the SKU Selector component
+# Configuring custom images for the SKU Selector
 
 ## Introduction 
 
