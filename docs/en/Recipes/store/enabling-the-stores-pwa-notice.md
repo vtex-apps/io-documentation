@@ -1,6 +1,6 @@
 ---
 title: Enabling the store's PWA notice
-description: "PWA is a sort of web app used to natively promote certain advantageous features to users, such as offline functionalities. This recipe will help you find out how to enable notices that prompt users to install the PWA of your store."
+description: "PWA is a sort of web app used to natively promote certain advantageous features to users, such as offline functionalities. This recipe will help you find out how to enable notices that prompt users to install your store's PWA."
 date: "11/11/2019"
 tags: ["pwa", "store-pwa"]
 version: "0.x"
