@@ -1,11 +1,11 @@
 ---
-title: Creating a Carousel through lists and Slider Layout
+title: Building a Carousel through lists and Slider Layout
 description: "The new Carousel configuration is practical, easy and gives the component a lot of flexibility. Learn how to replace the old block using the Slider Layout and lists."
 date: "11/11/2019"
-git: "https://github.com/vtex-apps/release-notes/blob/master/docs/2019-week-41-42/product-summary.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/layout/building-a-carousel-through-lists-and-slider-layout.md"
 ---
 
-# Creating a Carousel through lists and Slider Layout
+# Building a Carousel through lists and Slider Layout
 
 ## Introduction
 
