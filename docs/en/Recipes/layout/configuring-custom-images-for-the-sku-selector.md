@@ -17,7 +17,9 @@ By default, the [SKU selector](https://vtex.io/docs/app/vtex.store-components/sk
 
 These images that the component uses are taken from the SKU's previously given information in admin's Catalog.
 
-However, you can configure the SKU selector to display a **custom image**, meaning an image different than the default one used by the SKU. 
+However, you can configure the SKU selector to display a **custom image**, meaning an image different than the default one used by the SKU. For example:
+
+![sku-selector-image-custom](https://user-images.githubusercontent.com/52087100/68700719-20992f80-0564-11ea-955a-d65c5a5808be.png)
 
 Follow the step-by-step below to see how to apply this configuration in your store.
 
@@ -58,11 +60,11 @@ The way out of this scenario is to **hide the custom image** that's linked to th
 ```
 
 <div class="alert alert-info">
-Remember to replace the value inserted in the brackets with real values, according to your SKU labels.
+Remember to replace the value inserted in the brackets with real values, according to your SKU label.
 </div>
 
 Consequently, you'll be able to configure a customized image exclusively for your SKU selector component, without it affecting your store's layout or that of the SKU images displayed to users.
 
 <div class="alert alert-warning">
-For this configuration to properly work, <strong>all SKU images must also have given labels</strong>. Otherwise, even by following the steps above, the SKU selector will continue to render the default images.
+For this configuration to properly work, <strong>all SKU custom images must have the same label value</strong> (which must be the only value given between brackets). Otherwise, even by following the steps above, the SKU selector will continue to render the default images.
 </div>
