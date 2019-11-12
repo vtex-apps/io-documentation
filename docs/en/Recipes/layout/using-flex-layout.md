@@ -31,8 +31,7 @@ To achieve the layout shown above, we are going to use the `flex-layout.row` and
 
 First, let's declare (in the `blocks` folder or `blocks.jsonc` file) the main block for the entire About Us page:
 
-```
-json
+```json
 "store.custom#about-us": {
   "blocks": [
     "flex-layout.row#about-us"
@@ -51,7 +50,7 @@ Now that we declared that we are going to use `flex-layout.row#about-us`, let's 
   ]
 },
 "flex-layout.row#about-us": {
-  "child": [
+  "children": [
     "image#mobile-phone",
     "flex-layout.col#text-about-us"
   ]
@@ -73,13 +72,13 @@ Let's define our `flex-layout.col#text-about-us` block:
   ]
 },
 "flex-layout.row#about-us": {
-  "child": [
+  "children": [
     "image#mobile-phone",
     "flex-layout.col#text-about-us"
   ]
 },
 "flex-layout.col#text-about-us": {
-  "child": [
+  "children": [
     "rich-text#title-about-us",
     "rich-text#about-us"
   ],
@@ -104,10 +103,10 @@ Here is the final `about-us.json` file, using Flex Layout:
     "blocks": ["flex-layout.row#about-us"]
   },
   "flex-layout.row#about-us": {
-    "child": ["image#mobile-phone", "flex-layout.col#text-about-us"]
+    "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]
   },
   "flex-layout.col#text-about-us": {
-    "child": ["rich-text#title-about-us", "rich-text#about-us"],
+    "children": ["rich-text#title-about-us", "rich-text#about-us"],
     "props": {
       "blockclass": "textColumn",
       "preventVerticalStretch": true
