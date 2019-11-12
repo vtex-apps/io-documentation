@@ -56,4 +56,13 @@ The way out of this scenario is to **hide the custom image** that's linked to th
   }  
 },
 ```
+
+<div class="alert alert-info">
+Remember to replace the value inserted in the brackets with real values, according to your SKU labels.
+</div>
+
 Consequently, you'll be able to configure a customized image exclusively for your SKU selector component, without it affecting your store's layout or that of the SKU images displayed to users.
+
+<div class="alert alert-warning">
+For this configuration to properly work, <strong>all SKU images must also have given labels</strong>. Otherwise, even by following the steps above, the SKU selector will continue to render the default images.
+</div>
