@@ -58,7 +58,7 @@ Now that we declared that we are going to use `flex-layout.row#about-us`, let's 
 ```
 
 <div class="alert alert-info">
-The <code>flex-layout.row</code> block is going to display its child dependencies in an interface, from left to right, one after the other.
+The <code>flex-layout.row#about-us</code> block is going to display its child dependencies in an interface, from left to right, one after the other.
 </div>
 
 As shown above, the `flex-layout.row#about-us` was declared with two child blocks, one of them being an `image` and the other a `flex-layout.col` block. Both `flex-layout` blocks only accept blocks allowed by their parent.
@@ -90,7 +90,7 @@ Let's define our `flex-layout.col#text-about-us` block:
 ```
 
 <div class="alert alert-info">
-The <code>flex-layout.col#text-about-us</code> block is going to display its child dependencies in an interface, from left to right, one after the other.
+The <code>flex-layout.col#text-about-us</code> block is going to display its child dependencies in an interface, from top to bottom, one after the other.
 </div>
 
 The `preventVerticalStretch` prop prevents the column from occupying 100% of its parent's height when set as `true`. You can use other custom row props, which can be found in the [Flex Layout](https://vtex.io/docs/components/all/vtex.flex-layout/) documentation.
