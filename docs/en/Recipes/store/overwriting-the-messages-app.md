@@ -37,6 +37,34 @@ mutation Save($args: SaveArgsV2!) {
 5. Then, click on  __Query variables__ at the bottom of the page. 
 6. **According to your store's scenario**, write the following variables into the text box:
 
+### For the store's catalog translations
+
+```
+{
+  "args": {
+    "to": "en-US",
+    "messages": [
+      {
+        "srcLang": "pt-BR",
+        "srcMessage": "Bem vindo! Faça seu Login.",
+        "targetMessage": "Welcome! Please, log in. ",
+        "context": "vtex.login@2.x"
+      }
+    ]
+  }
+}
+```
+
+**These variables are flexible and must fit your store's given scenario**. The variables for the store catalog translations are as follows:
+
+- `to`: target translation locale.
+- `srcLang`: source message locale.
+- `srcMessage`: source message string.
+- `targetMessage`: message translation string.
+- `context`: message translation context. This variable is not mandatory and only serves to give Messages the context desired for the translation, since the same word can have different meaning depending on the language. If you want o use this variable, you'll have to add, between 3 parenthesis, the desired context to the product name, in the admin's catalog. I.e:  `Mouse (((rodent)))`. The desired value will therefore not be displayed next to the product name and will only be used to the catalog translation.
+
+### For app messages translation:
+
 ```
 {
   "args": {
@@ -53,13 +81,13 @@ mutation Save($args: SaveArgsV2!) {
 }
 ```
 
-Note that the variable values `to`, `srcLang`, `srcMessage`, `targetMessage` and `context` will tell the Messages app where and what the message change will be. Therefore, **these variables are flexible and must fit your store's desired scenario**. The variables are as follows:
+**These variables are flexible and must match your store's desired scenario**. The variables for app message translations are as follows:
 
-- `to`: target translation locale
-- `srcLang`: source message locale
-- `srcMessage`: source message string
-- `targetMessage`: message translation string
-- `context`: message translation context 
+- `to`: target translation locale.
+- `srcLang`: source message locale. This variable must contain the value `en-DV`, no matter which locale is rendered on the app's interface. 
+- `srcMessage`: source message string.  
+- `targetMessage`: message translation string.
+- `context`: message translation context, meaning the name of the app in which the Messages are being overwritten. 
 
 Following the given example above, your admin should look similar to this: 
 
