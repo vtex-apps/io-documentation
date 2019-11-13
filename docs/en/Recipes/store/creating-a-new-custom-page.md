@@ -123,7 +123,7 @@ In your theme's source code, access the `routes.json` file. It can be found in t
  }
 ```
 
-Save your files and link the theme to your workspace using the `vtex link` command. You will also be able to see your new page here:
+Save your files and link the theme to your workspace using the `vtex link` command. You will be able to see your new page here:
 
 `https://{workspace}--{account}.myvtex.com/{URL}`
 
