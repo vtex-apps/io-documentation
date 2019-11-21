@@ -24,6 +24,7 @@
     - [Creating a new custom page](recipes/layout/creating-a-new-custom-page.md)
     - [Using Sandbox blocks](recipes/layout/using-sandbox-blocks.md)
   - [Store Management](recipes/store)
+    - [Installing the VTEX IO Toolbelt](recipes/store/installing-the-vtex-io-toolbelt.md)
     - [Overwriting the Messages app](recipes/store/overwriting-the-messages-app.md)
     - [Running A/B tests](recipes/store/running-native-ab-testing.md)
     - [Enabling the store's PWA notice](recipes/store/enabling-the-stores-pwa-notice.md)
