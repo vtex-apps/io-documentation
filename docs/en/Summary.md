@@ -46,7 +46,7 @@
   - [Layout](components/layout)
     - [Flex Layout](components/layout/vtex.flex-layout)
     - [Image List](components/layout/vtex.store-image)
-    - [Resposive Layout](components/layout/vtex.responsive-layout)
+    - [Responsive Layout](components/layout/vtex.responsive-layout)
     - [Slider Layout](components/layout/vtex.slider-layout)
     - [Stack Layout](components/layout/vtex.stack-layout)
     - [Sticky Layout](components/layout/vtex.sticky-layout)
