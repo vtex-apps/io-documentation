@@ -4,7 +4,7 @@ description: "Learn how to define a different layout, path and content for a sto
 date: "30/08/2019"
 tags: ["institutional page", "page", "new page", "template", "institutional"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-new-custom-page.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/creating-a-new-custom-page.md"
 ---
 
 # Creating a new custom page
