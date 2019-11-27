@@ -20,7 +20,7 @@ The `store.product` is a block with child dependencies, which means it consists 
 
 The `store.product` accepts all blocks allowed by the `store` and `flex-layout` blocks as child dependencies, as well as the following blocks list:
 
-```
+```json
 "product-add-to-list-button"
 "product-details"
 "product-kit"
@@ -49,6 +49,7 @@ The `store.product` accepts all blocks allowed by the `store` and `flex-layout` 
 "product-assembly-options"
 "product-teaser.product"
 ```
+
 <div class="alert alert-info">
 You can always check out the full and updated list <a href="https://github.com/vtex-apps/store/blob/master/store/interfaces.json">here</a>.
 </div>
@@ -61,8 +62,7 @@ Let's take a look at our demo store, [Storetheme](https://storetheme.vtex.com/).
 
 Its definition is as follows:
 
-```
-
+```json
 {
   "store.product": {
     "children": [
@@ -155,7 +155,7 @@ The first row is only declaring the [breadcrumb](https://vtex.io/docs/components
 
 ![](https://i.ibb.co/ZhNry22/image.png)
 
-```
+```json
 "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
@@ -166,7 +166,7 @@ The first row is only declaring the [breadcrumb](https://vtex.io/docs/components
 
 Notice that above that it sets out to render the [breadcrumb](https://vtex.io/docs/components/all/vtex.breadcrumb/) block through its `child` array.  If you want to customize the breadcrumb, with changes to its props, you can declare the breadcrumb block and define it according to your goal. For instance:
  
-```
+```json
 "breadcrumb": {
     "props": {
         "showOnMobile": true
@@ -176,7 +176,7 @@ Notice that above that it sets out to render the [breadcrumb](https://vtex.io/do
 
 The second row is the one showing the image, while the right column displays name, price, sku selector, button, etc. as shown below:
 
-```
+```json
  "flex-layout.row#product-main": {
     "props": {
       "colGap": 7,
@@ -192,7 +192,7 @@ The second row is the one showing the image, while the right column displays nam
 
 Notice that the second row defines two columns, `flex-layout.col#product-image` and `flex-layout.col#right-col`:
 
-```
+```json
 "flex-layout.col#product-image": {
     "props": {
       "width": "60%",
@@ -288,7 +288,7 @@ Finally, we have the [share](https://vtex.io/docs/components/general/vtex.store-
 
 By customizing its props, you can control which options will be shown to the user:
 
-```
+```json
 "share#default": {
     "props": {
       "social": {
@@ -305,8 +305,7 @@ Notice that in this block we are hiding the Twitter option from our sharing list
 
 After this right column is done, we start to render the blocks defined under them in our `store.product` block.
 
-### Related products 
-
+### Related products
 
 The Related Products Shelf (`shelf.relatedProducts`) is a [Shelf](https://vtex.io/docs/components/all/vtex.shelf/) component that displays products related to the one you are browsing. 
 
@@ -318,7 +317,7 @@ The `shelf.relatedProducts` block lets you choose between different recommendati
 
 Here is a brief example of a Related Products Shelf:
 
-```
+```json
 "shelf.relatedProducts": {
     "props": {
         "recommendation": "view",
