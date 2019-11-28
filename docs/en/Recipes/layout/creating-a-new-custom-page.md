@@ -9,6 +9,8 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Creating a new custom page
 
+## Introduction
+
 Stores are made up of several different pages, each one having a different layout and content. When creating a store from scratch in VTEX IO, some default pages with predefined URLs are available to you, such as:
 
 - `store.home` (Home page)
@@ -22,26 +24,28 @@ Stores are made up of several different pages, each one having a different layou
 You can manage each page's title and template in the Pages section, within the admin's CMS. 
 </div>
 
-However, you may want to create a new custom page for your store. In this case, a new URL and content to go with it must also be created by you. 
+However, you may want to create a new custom page for your store. In this case, a new URL and content to go with it must be created by you. 
+
+## Stey by step
 
 Follow the steps below and learn how to define a different layout and path for a new store page:
 
-1. Create a **new template** in your store theme.
-2. Create your **new page's path**.
-3. **Add content** to your page using Site Editor.
+1. Create a **new template** in your store theme;
+2. Create your **new page's path**;
+3. **Add content** to your page using Site Editor;
 4. Promote your changes to a **master workspace**.
 
-## New template
+### Creating the new template
 
 A template sets the page layout, so if you want to create a custom page for your store you also will need to create a new template for it. 
 
-In order to do so, you first must choose one of three template types to host your new template:
+In order to do so, you first must choose one of three template types to host your new page:
 
-- **Product** - Template type for pages that must deal with the content of a single product. For instance, a product details page. Adding any new product automatically generates a new Product page.
+- **Product** - For pages that must deal with the content of a single product. For instance, a product details page. Adding any new product automatically generates a new Product page.
 
-- **Product collections** - Template type for pages containing a group of products, such as the Search Result page.
+- **Product collections** - For pages containing a group of products, such as the Search Result page.
 
-- **Standard** - Template type for pages with no specific product content. For instance, the Home page.
+- **Standard** - For pages with no specific product content. For instance, the Home page.
 
 <div class="alert alert-info">
 Even though <code>Standard</code> pages are not directly linked to any specific product, they may display shelves or lists of any chosen group of products. The main difference is that the group of products shown in such page does not depend on the URL query, but only on the setting of the shelf itself. 
@@ -100,7 +104,7 @@ Then, fill it out with the blocks that will set the desired layout:
  },
  "image#about-us": {
    "props": {
-     "src": "https://storecomponents.vteximg.com/files/mobile-phone.png",
+     "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
      "maxHeight": "600px"
    }
  }
@@ -109,27 +113,27 @@ Then, fill it out with the blocks that will set the desired layout:
 
 To learn more about how the Flex Layout works, access its [documentation](https://vtex.io/docs/recipes/layout/using-flex-layout).
 
-## Page's path
+### Creating the new page's path
 
 Now that your page layout has been defined in the store theme code, the next step is to define the page's path to make the page accessible. You can define it through direct code changes or by using the account's admin. 
 
-### Through code changes
+#### Through code changes
 
 In your theme's source code, access the `routes.json` file. It can be found in the `store` folder. There, add a path to the recently created template's JSON:
 
 ```
-   "store.custom#{templatename}": {
-   "path": "/{URL}"
- }
+{
+  "store.custom#about-us": {
+    "path": "/about-us"
+  }
+}
 ```
 
-Save your files and link the theme to your workspace using the `vtex link` command. You will be able to see your new page here:
-
-`https://{workspace}--{account}.myvtex.com/{URL}`
+Save your files and link the theme to your workspace using the `vtex link` command. You will be able to access and see your new page through your workspace. 
 
 If the new page satisfies your store needs, [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new store's version in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).   
 
-### Using the account admin
+#### Using the account admin
 
 If you prefer to set the new page path using account admin, you must first must [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes regarding template creation and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new version of your store in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).
 
@@ -143,7 +147,7 @@ Notice that a template only sets the page layout, hence any new template becomes
 When editing any content using the CMS section, it's always good to make your changes in a production workspace. Therefore, make sure you are not creating your new custom page in the store's master workspace.
 </div>
 
-## Content
+### Adding the content
 
 Your new page now has a custom layout, thanks to the newly created template, and can be accessed thanks to its route creation. The next step is editing its content. 
 
@@ -153,6 +157,6 @@ In the account admin, access **Site Editor**, in CMS. You can browse to your cus
 
 Once there, feel free to change its content by customizing the page's component. For more on possible customization, access our [Layout recipes](https://vtex.io/docs/recipes/layout) 
 
-## Master workspace 
+### Promoting to a master workspace 
 
 Finally, to make the new page available on your store, that is, available to end users, you must [promote your production workspace to master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) .
