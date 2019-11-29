@@ -31,7 +31,7 @@ For instance, let's customize the cart icon (`hpa-cart`) changing only its `g` c
 
 ![image](https://user-images.githubusercontent.com/18701182/61139096-0dcffa80-a49f-11e9-8ff9-4c4f805a2738.png) 
 
-[Link](https://vtex.io/docs/recipes/store/linking-an-app)your code and you should see your change through your browse:
+After [linking](https://vtex.io/docs/recipes/store/linking-an-app) your app, you should see the changes in the browser:
 
 ![image](https://user-images.githubusercontent.com/18701182/61139698-360c2900-a4a0-11e9-910b-8391ca58565e.png) 
 
@@ -40,4 +40,3 @@ Check out each icon's ID by accessing the [Icon Pack list](https://github.com/vt
 <div class="alert alert-warning">
 If you've linked your code and haven't seen your changes, it may be because your <code>Styles builder</code> is not up-to-date with this functionality. Make sure your store has it installed at version <bold>1.8.1</bold> or higher. 
 </div>
-

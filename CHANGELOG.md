@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Missing whitespace and "browser" typo.
+
 ## [0.15.4] - 2019-11-28
 
 ## [0.15.3] - 2019-11-27
@@ -169,23 +173,26 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.2.5] - 2019-08-20
 
-Added
-  - GTM Recipe 
-  - Google Analytics Recipe
-  - A/B Test Recipe
-  
+### Added
+
+- GTM Recipe
+- Google Analytics Recipe
+- A/B Test Recipe
+
 ## [0.2.5] - 2019-08-20
 
-Added
-  - GTM Recipe 
-  - Google Analytics Recipe
-  - A/B Test Recipe
-  
+### Added
+
+- GTM Recipe
+- Google Analytics Recipe
+- A/B Test Recipe
+
 ## [0.2.5] - 2019-08-20
 
-Added
- - Customize icons recipe
- 
+### Added
+
+- Customize icons recipe
+
 ## [0.2.4] - 2019-08-20
 
 ## [0.2.3] - 2019-08-19
