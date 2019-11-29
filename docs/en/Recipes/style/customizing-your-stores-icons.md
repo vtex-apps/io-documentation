@@ -31,7 +31,7 @@ For instance, let's customize the cart icon (`hpa-cart`) changing only its `g` c
 
 ![image](https://user-images.githubusercontent.com/18701182/61139096-0dcffa80-a49f-11e9-8ff9-4c4f805a2738.png) 
 
-[Link](https://vtex.io/docs/recipes/store/linking-an-app) you should see the changes in your browser:
+After [linking](https://vtex.io/docs/recipes/store/linking-an-app) your app, you should see the changes in the browser:
 
 ![image](https://user-images.githubusercontent.com/18701182/61139698-360c2900-a4a0-11e9-910b-8391ca58565e.png) 
 
