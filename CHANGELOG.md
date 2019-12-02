@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Fixed
 
-- CSS handles example formatting;
+- Explicitly alert about nth-child with number argument.
+- CSS handles example formatting.
 
 ## [0.15.5] - 2019-11-29
 
