@@ -51,7 +51,7 @@ The `store.product` accepts all blocks allowed by the `store` and `flex-layout` 
 ```
 
 <div class="alert alert-info">
-You can always check out the full and updated list <a href="https://github.com/vtex-apps/store/blob/master/store/interfaces.json#L46">here</a>.
+You can always check out the full and updated list <a href="https://github.com/vtex-apps/store/blob/master/store/interfaces.json#L49">here</a>.
 </div>
 
 ## Practical example
