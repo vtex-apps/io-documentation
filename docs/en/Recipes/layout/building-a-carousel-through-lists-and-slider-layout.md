@@ -30,7 +30,7 @@ See the instructions below for how it can be easily done!
 "vtex.slider-layout": "0.x"
 ```
 
-3. Declare the `list-context.image-list` block and use the `slider-layout` as its only child. Each desired image should be forwarded to the `list-context.image-list` as an object with the following properties:_
+3. Declare the `list-context.image-list` block and use the `slider-layout` as its only child. Each desired image should be forwarded to the `list-context.image-list` as an object with the following properties:
 
 | Property      | Type                                                                                                                                | Description                                                | Default value |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------- |
