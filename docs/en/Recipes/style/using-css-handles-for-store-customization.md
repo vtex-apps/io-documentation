@@ -45,7 +45,7 @@ Following the example given above, we get:
 Once you app is linked and the changes duly saved, the new customization should immediately be reflected onto your workspace.
 
 <div class="alert alert-info">
-Our team is constantly working on developing CSS Handles for every possible store component. If however your are unable to find a CSS Handle for a component you wish to customize, share this scenario with us at <a href="https://github.com/vtex-apps/store-discussion">Store Discussion</a>.
+Our team is constantly working on developing CSS Handles for every possible store component. If, however, your are unable to find a CSS Handle for a component you wish to customize, share this scenario with us at <a href="https://github.com/vtex-apps/store-discussion">Store Discussion</a>.
 </div>
 
 ## Best practices
