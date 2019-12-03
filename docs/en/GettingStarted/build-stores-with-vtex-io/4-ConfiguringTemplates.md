@@ -13,7 +13,7 @@ As we have previously seen, the folder responsible for organizing your store’s
 For a better understanding of this structure, let’s have a look at your store’s predefined homepage Store Theme template using the code editor of your choice. Access `store` > `blocks`> `home`> `home.jsonc` and you will be able to check out the following example:
 
 
-```
+```json
 {
  "store.home": {
    "blocks": [
@@ -25,10 +25,11 @@ For a better understanding of this structure, let’s have a look at your store�
      "rich-text#link"
      "newsletter"
    ]
- }, 
-    (...)
+ },
+  (...)
 }
 ```
+
 As we can see, the default `store.home` homepage template declares the following blocks: 
 
 - `carousel#home`
@@ -43,7 +44,7 @@ This means that your default store homepage components will be comprised of thes
 
 You’ll be able to find each block’s declaration in this same file, as in the following example:
 
-```
+```json
 "rich-text#question": {
   "props": {
     "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
@@ -60,7 +61,7 @@ Let’s now add a new [__infocard__](https://vtex.io/docs/components/all/vtex.st
 
 ![newblock-step4](https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png)
 
-```
+```json
 "info-card#bestdeals": {
    "props": {
      "isFullModeStyle": false,
@@ -72,8 +73,6 @@ Let’s now add a new [__infocard__](https://vtex.io/docs/components/all/vtex.st
      "textAlignment": "center"
    }
  },
-
-
 ```
 
 <div class="alert alert-info">

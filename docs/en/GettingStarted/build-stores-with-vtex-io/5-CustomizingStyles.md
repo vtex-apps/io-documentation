@@ -2,34 +2,31 @@
 
 The `style.json` file in the `style` folder is the one responsible for defining your theme’s style. This means that you can customize your entire store’s appearance by simply adjusting the default definitions declared in this file, without the need to declare CSS for each page’s components.
 
-
 Thankfully, this is easy to do thanks to the [VTEX Styleguide](https://styleguide.vtex.com/#/Styles), a highly-configurable CSS framework responsible for defining the component style guideline. There, your can find a proper translation for what your `styles.json` file props and blocks mean in order to help your customization. 
-
 
 For example: in `style.json`, we can set the default theme background color to blue, by simply changing the `semanticColors` block’s `base` property:
 
-```
+```json
 "semanticColors": {
-        "background": {
-          "base": "#00BFFF",
-          "base--inverted": "#03044e",
-          "action-primary": "#0F3E99",
-          "action-secondary": "#eef3f7",
-          "emphasis": "#f71963",
-          "disabled": "#f2f4f5",
-          "success": "#8bc34a",
-          "success--faded": "#eafce3",
-          "danger": "#ff4c4c",
-          "danger--faded": "#ffe6e6",
-          "warning": "#ffb100",
-          "warning--faded": "#fff6e0",
-          "muted-1": "#727273",
-          "muted-2": "#979899",
-          "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
-          "muted-5": "#f2f4f5"
-        },
-        
+  "background": {
+    "base": "#00BFFF",
+    "base--inverted": "#03044e",
+    "action-primary": "#0F3E99",
+    "action-secondary": "#eef3f7",
+    "emphasis": "#f71963",
+    "disabled": "#f2f4f5",
+    "success": "#8bc34a",
+    "success--faded": "#eafce3",
+    "danger": "#ff4c4c",
+    "danger--faded": "#ffe6e6",
+    "warning": "#ffb100",
+    "warning--faded": "#fff6e0",
+    "muted-1": "#727273",
+    "muted-2": "#979899",
+    "muted-3": "#cacbcc",
+    "muted-4": "#e3e4e6",
+    "muted-5": "#f2f4f5"
+  },
 ```
 
 Save the changes made to your code and check out your store’s new appearance:
@@ -52,12 +49,10 @@ Classes should be individually customized within the file. You can find a compon
 
 In the `vtex.store-components.css` file, declare the following CSS replacement:
 
-```
+```css
 .infoCardContainer {
- background-color: #E71111
-
+  background-color: #E71111
 }
-
 ```
 
 Save your changes and access your store once more to check out the Infocards new red style having overwritten your store’s predefined blue:
@@ -78,20 +73,19 @@ For example: let’s customize the way in which the `info-card#bestdeals` block 
 
 ![INFOCARD-BLOCKCLASS-FORREAL-REAL](https://user-images.githubusercontent.com/52087100/61976127-54564680-afc1-11e9-9f62-ab3473639805.png)
 
-```
+```json
 "info-card#bestdeals": {
-    "props": {
-      "blockClass": "sales",
-      "isFullModeStyle": false,
-      "textPosition": "center",
-      "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
-      "headline": "BEST DEALS",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
-    }
-  },
-
+  "props": {
+    "blockClass": "sales",
+    "isFullModeStyle": false,
+    "textPosition": "center",
+    "imageUrl": "http://cybercitycomix.com/wp-content/uploads/2015/08/Sale-sign.jpg",
+    "headline": "BEST DEALS",
+    "callToActionText": "DISCOVER",
+    "callToActionUrl": "/sale/d",
+    "textAlignment": "center"
+  }
+},
 ```
 
 <div class="alert alert-info">
@@ -100,11 +94,10 @@ The <code>blockClass</code> property can have a value of your choosing, as long 
 
 To correctly reference the block, simply add the `blockClass` property value in one of your component’s CSS replacement adhering to the `.{class}--{blockClassvalue}` format.
 
-```
+```css
 .infoCardContainer--sales {
   background-color: #E6BB12
 }
-
 ```
 
 After saving the changes, you can see the Infocard with its exclusive customization:

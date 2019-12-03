@@ -19,12 +19,10 @@ To install the VTEX IO’s CLI, you need to ensure that [Node.js](https://nodejs
 
 Thereafter, type `yarn global add vtex` in your computer’s terminal.
 
-```
+```sh
 $ yarn global add vtex
 ```
 
 <div class="alert alert-info">
 To confirm that the installation occurred as expected, you can execute the <code>vtex</code> command. This should display all available commands in a help text. 
 </div>
-
-

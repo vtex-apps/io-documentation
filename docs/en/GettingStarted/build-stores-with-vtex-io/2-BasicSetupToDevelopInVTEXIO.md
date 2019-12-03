@@ -8,7 +8,7 @@ To install VTEX IO’s CLI, you need to ensure that [Node.js](https://nodejs.org
 
 Thereafter, type `yarn global add vtex` in your computer’s terminal.
 
-```
+```sh
 $ yarn global add vtex
 ```
 
@@ -20,7 +20,7 @@ $ yarn global add vtex
 
 Once VTEX IO’s CLI is installed, you can login to your VTEX account with the following command. This would in turn open a browser window asking for your credentials.
 
-```
+```sh
 $ vtex login {account}
 ```
 
@@ -34,7 +34,7 @@ When you are logged in, you can use the `vtex whoami` command to uncover which *
 
 When using VTEX IO, any interaction with an account happens in a **workspace**. As you log into a store, you are automatically in its master workspace, meaning you are in the version available to the end user. Therefore, always remember to create a development workspace using the `vtex use` command whenever you want to test a new configuration. 
 
-```
+```sh
 $ vtex use {examplename}
 ```
 

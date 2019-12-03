@@ -25,13 +25,13 @@ During the inspection, bear in mind your store's following **component identific
 
 ![component-id-structure](https://user-images.githubusercontent.com/52087100/67318281-adab1480-f4e1-11e9-9c8f-c20b8f0647ec.png)
 
-2. In your store theme code, create a file inside the `css` folder, giving it the name of the app in which the inspected component is defined and adding `vtex.` as the beginning of the name and `.css` at the end, such as `vtex.store-components.css`. 
+2. In your store theme code, create a file inside the `css` folder, giving it the name of the app in which the inspected component is defined and adding `vtex.` as the beginning of the name and `.css` at the end, such as `vtex.store-components.css`.
 3. In the recently created file, declare the component's CSS Handle, taking into account the following format: 
 
-```
+```css
 .{CSSHandleName} {  
-{CSSClass1}: {DesiredValue};
-{CSSClass2}: {DesiredValue};  
+  {CSSClass1}: {DesiredValue};
+  {CSSClass2}: {DesiredValue};  
 }
 ```
 

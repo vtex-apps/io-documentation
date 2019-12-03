@@ -57,7 +57,7 @@ Let's suppose we are going to create a simple About Us page for a store. As such
 
 To do so, in your store theme's code, declare a new template within your `blocks` folder or `blocks.jsonc` file
 
-```
+```json
 {
  "store.custom#{templatename}": {
      "blocks": [  
@@ -68,7 +68,7 @@ To do so, in your store theme's code, declare a new template within your `blocks
 
 Then, fill it out with the blocks that will set the desired layout:
 
-```
+```json
 {
  "store.custom#{templatename}": {
    "blocks": [
@@ -121,27 +121,25 @@ Now that your page layout has been defined in the store theme code, the next ste
 
 In your theme's source code, access the `routes.json` file. It can be found in the `store` folder. There, add a path to the recently created template's JSON:
 
-```
-{
-  "store.custom#about-us": {
-    "path": "/about-us"
-  }
+```json
+"store.custom#{templatename}": {
+  "path": "/{URL}"
 }
 ```
 
 Save your files and link the theme to your workspace using the `vtex link` command. You will be able to access and see your new page through your workspace. 
 
-If the new page satisfies your store needs, [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new store's version in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).   
+If the new page satisfies your store needs, [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new store's version in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).
 
 #### Using the account admin
 
 If you prefer to set the new page path using account admin, you must first must [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes regarding template creation and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new version of your store in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).
 
-Then, simply access the **Pages** section and click on **Create New**. Afterwards, simply choose the desired URL and any created template. For instance, the About Us page template. 
+Then, simply access the **Pages** section and click on **Create New**. Afterwards, simply choose the desired URL and any created template. For instance, the About Us page template.
 
 ![custom-pages-pages](https://user-images.githubusercontent.com/52087100/64428903-36353900-d08b-11e9-8d19-186c8831b4d7.png)
 
-Notice that a template only sets the page layout, hence any new template becomes available to be set on any page that accepts templates of the same type as the page itself. 
+Notice that a template only sets the page layout, hence any new template becomes available to be set on any page that accepts templates of the same type as the page itself.
 
 <div class="alert alert-info">
 When editing any content using the CMS section, it's always good to make your changes in a production workspace. Therefore, make sure you are not creating your new custom page in the store's master workspace.
@@ -149,14 +147,14 @@ When editing any content using the CMS section, it's always good to make your ch
 
 ### Adding the content
 
-Your new page now has a custom layout, thanks to the newly created template, and can be accessed thanks to its route creation. The next step is editing its content. 
+Your new page now has a custom layout, thanks to the newly created template, and can be accessed thanks to its route creation. The next step is editing its content.
 
-In the account admin, access **Site Editor**, in CMS. You can browse to your custom page or simply write its URL in the `Page URL` field. 
+In the account admin, access **Site Editor**, in CMS. You can browse to your custom page or simply write its URL in the `Page URL` field.
 
 ![custom-pages-siteeditor](https://user-images.githubusercontent.com/52087100/64428904-36cdcf80-d08b-11e9-8de4-06bf0a89b14f.png)
 
-Once there, feel free to change its content by customizing the page's component. For more on possible customization, access our [Layout recipes](https://vtex.io/docs/recipes/layout) 
+Once there, feel free to change its content by customizing the page's component. For more on possible customization, access our [Layout recipes](https://vtex.io/docs/recipes/layout).
 
 ### Promoting to a master workspace 
 
-Finally, to make the new page available on your store, that is, available to end users, you must [promote your production workspace to master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) .
+Finally, to make the new page available on your store, that is, available to end users, you must [promote your production workspace to master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master).

@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Configuring custom images for the SKU Selector
 
-## Introduction 
+## Introduction
 
 By default, the [SKU selector](https://vtex.io/docs/app/vtex.store-components/sku-selector) component uses **miniatures of SKU images** when rendered.
 
@@ -34,7 +34,7 @@ Follow the step-by-step below to see how to apply this configuration in your sto
 4. Upload the file in the `File` field and set an ID for the recently uploaded file in the `Label` field. Click on **Save** after performing all your changes.
 5. In your theme's code `sku-selector` block, add the `thumbnailImage` prop, whose past value should be the same as the label added in the catalog. For example:
 
-```
+```json
 "sku-selector":{  
   "props": {  
     "thumbnailImage": ["LabelName"]  
@@ -50,7 +50,7 @@ The way out of this scenario is to **hide the custom image** that's linked to th
 
 6. In the `product-images` block you can use the `hiddenImages` prop to activate a sort of image blacklist. This prop's value should be the custom image's label, the same one used in the previous step. For example: 
 
-```
+```json
 "product-images": {  
   "props": {  
     "displayThumbnailsArrows": true,  
