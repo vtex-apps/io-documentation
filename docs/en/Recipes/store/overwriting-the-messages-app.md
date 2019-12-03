@@ -28,7 +28,7 @@ This recipe will show you how to overwrite the Messages app and easily create ne
 3. From the dropdown list, choose the `vtex.messages` app.
 4. Write the following mutation command in the text box that is displayed:
 
-```
+```graphql
 mutation Save($args: SaveArgsV2!) {
   saveV2(args: $args)
 }
@@ -39,7 +39,7 @@ mutation Save($args: SaveArgsV2!) {
 
 ### For the store's catalog translations
 
-```
+```json
 {
   "args": {
     "to": "en-US",
@@ -65,7 +65,7 @@ mutation Save($args: SaveArgsV2!) {
 
 ### For app messages translation:
 
-```
+```json
 {
   "args": {
     "to": "en-US",
@@ -84,12 +84,12 @@ mutation Save($args: SaveArgsV2!) {
 **These variables are flexible and must match your store's desired scenario**. The variables for app message translations are as follows:
 
 - `to`: target translation locale.
-- `srcLang`: source message locale. This variable must contain the value `en-DV`, no matter which locale is rendered on the app's interface. 
+- `srcLang`: source message locale. This variable must contain the value `en-DV`, no matter which locale is rendered on the app's interface.
 - `srcMessage`: source message string.  
 - `targetMessage`: message translation string.
-- `context`: message translation context, meaning the name of the app in which the Messages are being overwritten. 
+- `context`: message translation context, meaning the name of the app in which the Messages are being overwritten.
 
-Following the given example above, your admin should look similar to this: 
+Following the given example above, your admin should look similar to this:
 
 ![recipe-messages-overwriting](https://user-images.githubusercontent.com/52087100/68410089-eb0cd480-0166-11ea-89bf-217aa7994b91.png)
 
@@ -97,7 +97,7 @@ Finally, click on the play button to run the declared mutation.
 
 The expected response is as follows:
 
-```
+```json
 {
   "data": {
     "saveV2": true

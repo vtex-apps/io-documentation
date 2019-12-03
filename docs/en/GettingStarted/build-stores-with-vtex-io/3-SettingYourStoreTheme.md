@@ -18,13 +18,13 @@ The following apps need to be <a href="https://vtex.io/docs/recipes/store/instal
 
 Using your terminal, navigate to an already existing local files directory where you want Store Theme to be copied to. Then, use the `vtex init` command, select the `store-theme` option and confirm that you want to download the theme folder to the destination you just chose.
 
-```
+```sh
 $ cd {examplefolder}
 ```
 
 Notice that `{examplefolder}` should be replaced with the folder name where the Store Theme is going to be copied to.
 
-```
+```sh
 $ vtex init
 ```
 
@@ -44,11 +44,11 @@ Now that Store Theme has been copied to your local folder, you have to run `cd s
 Run <code>vtex whoami</code> to be sure that you're in the right account and in a development workspace. Otherwise, Toolbelt will not accept the link directly with the master workspace.
 </div>
 
-```
+```sh
 $ cd store-theme
 ```
 
-```
+```sh
  $ vtex link
 ```
 

@@ -43,13 +43,13 @@ To check or update the app's settings afterwards, simply visit the **Apps** sect
 
 1. Using your terminal, **login** to your account.
 
-```
+```sh
 vtex login {account}
 ```
 
 2. Access the account's desired **workspace**.
 
-```
+```sh
 vtex use {workspace}
 ```
 
@@ -57,7 +57,7 @@ You can confirm whether or not the GTM app is installed by running `vtex ls`.
 
 3. **Install** the GTM app.
 
-```
+```sh
 vtex install vtex.google-tag-manager@2.x
 ```
 
@@ -98,4 +98,3 @@ Check the full list of tags and variables that are blocked in VTEX IO Google Tag
 
 - Custom JavaScript Variable - `jsm`
 See a list with all the GTM available tags in the [Google Developer Guide](https://developers.google.com/tag-manager/devguide).
-

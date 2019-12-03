@@ -7,12 +7,11 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-sandbox-blocks.md"
 ---
 
-
 # Using Sandbox blocks
 
 ## Introduction
 
-VTEX Store Framework is a very powerful tool meant to attend most client needs. It's understandable, though, that some custom requirements that your store needs and will not be served by the framework. That's where the **Sandbox App** comes in. 
+VTEX Store Framework is a very powerful tool meant to attend most client needs. It's understandable, though, that some custom requirements that your store needs and will not be served by the framework. That's where the **Sandbox App** comes in.
 
 The **Sandbox App** is basically a component that supports iFrames. Therefore, it allows you to use custom `html`, `css` and `js` code to customize your store.
 
@@ -24,14 +23,14 @@ The **Sandbox App** is basically a component that supports iFrames. Therefore, i
 
 2. Then, declare the Sandbox block in the `blocks` folder or in the `blocks.jsonc` file.
 
-```
+```json
 "sandbox#h1": {
-    "props": {
-        "width": "100%",
-        "height": "auto",
-        "initialContent": "<h1 style=\"text-align:center;\">Hello World</h1>",
-        "allowCookies": false
-    }
+  "props": {
+    "width": "100%",
+    "height": "auto",
+    "initialContent": "<h1 style=\"text-align:center;\">Hello World</h1>",
+    "allowCookies": false
+  }
 }
 ```
 
@@ -39,22 +38,21 @@ Let's suppose you want to create a simple `h1` sandbox block. It would look simi
 
 ![sanbox hello world](https://user-images.githubusercontent.com/19555647/64436924-ae0b5f80-d09b-11e9-9080-fd4c983689d1.png)
 
-
 3. Reference it in another's block `child dependency` or `blocks`. For instance, your `store.home`: 
 
-```
+```json
 //home.jsonc
 "store.home": {
-    "blocks": [
-      "carousel#home",
-      "sandbox#h1",
-      "flex-layout.row#deals",
-      "shelf#home",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
-    ]
+  "blocks": [
+    "carousel#home",
+    "sandbox#h1",
+    "flex-layout.row#deals",
+    "shelf#home",
+    "info-card#home",
+    "rich-text#question",
+    "rich-text#link",
+    "newsletter"
+  ]
 },
 ```
 

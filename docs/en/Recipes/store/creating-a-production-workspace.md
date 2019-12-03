@@ -15,7 +15,7 @@ Workspaces in production mode are ready to receive traffic, that is, to be acces
 
 You can create a production workspace simply using the following command: 
 
-```
+```sh
 vtex use {{workspacename}} --production
 ```
 

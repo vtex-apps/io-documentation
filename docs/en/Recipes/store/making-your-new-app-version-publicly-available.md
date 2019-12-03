@@ -29,11 +29,10 @@ You can use the <code>vtex publish</code> command to make your app beta version 
 
 ## Production workspace
 
-In order to install and test your beta app version, you must create a workspace in production mode using the following command: 
+In order to install and test your beta app version, you must create a workspace in production mode using the following command:
 
-```
+```sh
 vtex use {{workspacename}} --production
-
 ```
 
 <div class="alert alert-warning">
@@ -49,14 +48,16 @@ To install an app in the new production workspace, simply run one of the followi
 Once the **beta** app has been installed and tested in the production workspace, you can run `vtex release {major/minor/patch} stable` in your terminal to automatically make an app **stable** version ready for installation.
 
 Having completed the above, simple follow the app installation steps to finally install the app **stable** version in your production workspace.
- 
+
 ## Master workspace
 
 Promoting a workspace to master means making any changes performed in it available to the end user, in other words, making your new app version publicly available.
 
 You can promote your production mode workspace to master using the following command:
 
-`vtex workspace promote`
+```sh
+vtex workspace promote
+```
 
 <div class="alert alert-info">
 The status of a workspace in master is <code>production true</code>.
