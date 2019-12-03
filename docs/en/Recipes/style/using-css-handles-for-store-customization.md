@@ -17,7 +17,7 @@ At the end of the day, CSS Handles are nothing more than your **store's layout b
 
 ## Step by step 
 
-1. Upon inspecting the page, find the CSS Handle for the component you want to customize. 
+1. Upon inspecting the page, find the CSS Handle for the component you want to customize. You can also check the Customization section in the [block's documentation](https://vtex.io/docs/components/all) 
 
 ![css-handles-inspect](https://user-images.githubusercontent.com/52087100/67318146-79cfef00-f4e1-11e9-8c63-56cae3c6d593.png)
 
@@ -30,8 +30,8 @@ During the inspection, bear in mind your store's following **component identific
 
 ```css
 .{CSSHandleName} {  
-  {CSSClass1}: {DesiredValue};
-  {CSSClass2}: {DesiredValue};  
+  {CSSProperty}: {DesiredValue};
+  {CSSProperty}: {DesiredValue};  
 }
 ```
 
