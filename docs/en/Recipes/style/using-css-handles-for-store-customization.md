@@ -17,31 +17,52 @@ At the end of the day, CSS Handles are nothing more than your **store's layout b
 
 ## Step by step 
 
-1. Upon inspecting the page, find the CSS Handle for the component you want to customize.
+1. While you are viewing your workspace on your browser, add `?__inspect` at the end of the URL of the page, and press enter. For example, `https://yourworkspace--youraccount.myvtex.com?__inspect`. Note that it must be a development workspace, rather than a production one, and it must be under the domain `myvtex.com`.
 
-![css-handles-inspect](https://user-images.githubusercontent.com/52087100/67318146-79cfef00-f4e1-11e9-8c63-56cae3c6d593.png)
+2. Hover on the element you want to customize. It should display its available CSS handles in a box (the large names beginning with `.`), along with their respective CSS file names, and other information.
 
-During the inspection, bear in mind your store's following **component identification structure**: 
+![css-handles-inspect](https://user-images.githubusercontent.com/5691711/70256857-ffdd8780-1767-11ea-936d-a98cbfc924c1.png)
 
-![component-id-structure](https://user-images.githubusercontent.com/52087100/67318281-adab1480-f4e1-11e9-9c8f-c20b8f0647ec.png)
+3. In your store theme code, create a file inside the `css` folder, with name displayed below the desired handle (in the example above, `vtex.menu.css`).
 
-2. In your store theme code, create a file inside the `css` folder, giving it the name of the app in which the inspected component is defined and adding `vtex.` as the beginning of the name and `.css` at the end, such as `vtex.store-components.css`.
-3. In the recently created file, declare the component's CSS Handle, taking into account the following format: 
+3. In the new file, use one of the CSS handles listed and customize its properties. For example:
 
 ```css
-.{CSSHandleName} {  
-  {CSSProperty}: {DesiredValue};
-  {CSSProperty}: {DesiredValue};  
+/* vtex.menu.css */
+
+.menuItem {  
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    border-radius: 5px;
 }
 ```
 
-_Remember to replace the value inserted in the keys with real values, according to your store's scenario._
-
-Following the example given above, we get: 
-
-![css-handles-vscode](https://user-images.githubusercontent.com/52087100/67318352-c287a800-f4e1-11e9-921c-ec3ed3b681f1.png) 
-
 Once you app is linked and the changes duly saved, the new customization should immediately be reflected onto your workspace.  
+
+![css handles customization applied to the menuItem](https://user-images.githubusercontent.com/5691711/70257811-d160ac00-1769-11ea-8434-67f71afc2056.png)
+
+Note that the change was applied to all `menu-item` blocks. To apply changes to a single `menu-item` block or to a subsect of blocks, you should use the  `blockClass` prop.
+
+1. In the `json` file where your block is declared, add the prop `blockClass` to the element you want to customize, with any name as a value.
+
+For example:
+```json
+"menu-item#your-item": {
+  "props": {
+    ...,
+    "blockClass": "header"
+  },
+  ...
+}
+```
+
+After saving and updating your workspace, when you inspect the element it should display an additional CSS handle along with its default one, like this:
+
+![css handles with block class](https://user-images.githubusercontent.com/5691711/70259211-7c726500-176c-11ea-9252-32b4aad76c12.png)
+
+After that, you can use the class `.menuItem--header` to target specifically the elements that have this `blockClass`.
+
+![specific menu items with css handles applied using blockClass](https://user-images.githubusercontent.com/5691711/70259424-e985fa80-176c-11ea-93e7-5c72770804f6.png)
 
 <div class="alert alert-info">  
 Our team is constantly working on developing CSS Handles for every possible store component. If however your are unable to find a CSS Handle for a component you wish to customize, share this scenario with us at <a href="https://github.com/vtex-apps/store-discussion">Store Discussion</a>.  
@@ -69,3 +90,4 @@ This customization practice by HTML hierarchy was mostly deprecated. It means th
 <div class="alert alert-warning">  
 Bear in mind that any customization that uses CSS Selectors is dependent on a HTML structure that, when changed, can break the retailer's desired customization.<strong> Always opt to use CSS Handles</strong>. 
 </div>
+
