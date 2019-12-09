@@ -51,30 +51,22 @@
       "url": "https://github.com/vtex-apps/address-locator"
     },
     {
-      "appName": "vtex.store-components",
-      "file": "animation.md",
-      "title": "Animation",
-      "description": "VTEX Animation component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
       "appName": "vtex.carousel",
       "title": "Carousel",
       "description": "VTEX Carousel component",
       "url": "https://github.com/vtex-apps/carousel"
     },
     {
+      "appName": "vtex.challenge-tp-condition",
+      "title": "Challenge Trade Policy Condition",
+      "description": "Challenge that checks if an user can access the current Trade Policy based on a specified condition rule.",
+      "url": "https://github.com/vtex-apps/challenge-tp-condition"
+    },
+    {
       "appName": "vtex.store-components",
       "file": "collection-badges.md",
       "title": "CollectionBadges",
       "description": "VTEX CollectionBadges component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "container.md",
-      "title": "Container",
-      "description": "VTEX Container component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
@@ -88,13 +80,6 @@
       "file": "gradient-collapse.md",
       "title": "GradientCollapse",
       "description": "VTEX GradientCollapse component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "greeting.md",
-      "title": "Greeting",
-      "description": "VTEX Greeting component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
