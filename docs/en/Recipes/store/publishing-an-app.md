@@ -22,10 +22,9 @@ If you are releasing a beta app version and all settings were already tested aft
 2. Make sure of the release candidate’s **stability** by means of an [A/B test](https://vtex.io/docs/recipes/store/running-native-ab-testing).
 3. Use the `vtex validate` command to **publish** the release candidate **as a stable version**. By using this command, Housekeeper will automatically install the new app version on all accounts that use the app.
 
-If your app **doesn’t** have billingOptions, users with access to the account in which the app was added can install it through the Admin’s Apps section.
-
-Otherwise, the app can be installed using Toolbelt, regardless of the specified billing method. [Click here](http://help.vtex.com/en/tutorial/app-pricing-models--2ZKBKxLe08Q6seA6sCi6o2) for more information on app billing models.
-
 <div class=“alert alert-warning”>
 You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
 </div>
+
+If your app **doesn’t** have billingOptions, users with access to the account in which the app was published can install it through the Admin’s Apps section. Otherwise, the app can be installed using Toolbelt, regardless of the specified [billing method](http://help.vtex.com/en/tutorial/app-pricing-models--2ZKBKxLe08Q6seA6sCi6o2).
+
