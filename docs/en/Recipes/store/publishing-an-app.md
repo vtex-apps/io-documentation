@@ -14,8 +14,8 @@ Once a app version was released, the app **must be installed** in order to test 
 ## Command
 
 1. Use the `vtex publish` command to turn the account version in which you were working into the app’s **release candidate version**. A release candidate can **only** be installed on an account if the user orders Toolbelt to install the exact version.
-2. Test the release candidate’s stability by means of an A/B test.
-3. Use the `vtex validate` command to turn the release candidate into the stable version and thus be able to have Housekeeper install it on all accounts that use the app.
+2. Test the release candidate’s **stability** by means of an [A/B test](https://vtex.io/docs/recipes/store/running-native-ab-testing).
+3. Use the `vtex validate` command to turn the release candidate into the **stable version** and thus be able to have Housekeeper install it on all accounts that use the app.
 
 If your app **doesn’t** have billingOptions, users with access to the account in which the app was added can install it through the Admin’s Apps section.
 
