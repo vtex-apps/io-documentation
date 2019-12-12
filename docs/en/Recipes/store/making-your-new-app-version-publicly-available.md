@@ -33,9 +33,7 @@ Use the `vtex publish` command to turn the account version in which you were wor
 You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
 </div>
 
-If your app **doesn’t** have billingOptions, users with access to the account in which the app was published can install it through the Admin’s Apps section.
-
-Otherwise, the app can be installed using Toolbelt, regardless of the specified [billing method](http://help.vtex.com/en/tutorial/app-pricing-models--2ZKBKxLe08Q6seA6sCi6o2).
+If your app **doesn’t** have billingOptions, users with access to the account in which the app was published can install it through the Admin’s Apps section. Otherwise, the app can be installed using Toolbelt, regardless of the specified [billing method](http://help.vtex.com/en/tutorial/app-pricing-models--2ZKBKxLe08Q6seA6sCi6o2).
 
 ## Production workspace
 
