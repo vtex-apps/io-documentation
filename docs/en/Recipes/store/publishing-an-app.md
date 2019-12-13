@@ -26,7 +26,7 @@ Once the version is already installed in a production workspace, it is time to *
 2. Test the release candidate’s **stability** by means of an [A/B test](https://vtex.io/docs/recipes/store/running-native-ab-testing).
 
 <div class="alert alert-info">
-If you are releasing a beta app version and all settings were already tested by you, you should release a non-beta version for your app, publish it, install it in a production workspace and test its stability once more in order to follow the step 3 stated below. 
+If you are releasing a beta app version and all settings were already tested by you, you should release a non-beta version for your app, publish it, install it in a production workspace and test its stability once more in order to follow the next step. 
 </div>
 
 3. Use the `vtex validate` command to **publish the release candidate as a stable version**. By using this command, Housekeeper will automatically install the new app stable version on all accounts that use the app.
