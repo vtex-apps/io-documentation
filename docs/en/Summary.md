@@ -66,6 +66,7 @@
     - [Modal](components/general/vtex.modal)
     - [Newsletter](components/general/vtex.store-components/newsletter.md)
     - [Notification Message](components/general/vtex.store-components/notification.md)
+    - [Reviews and Ratings](components/general/vtex.reviews-and-ratings.md)
     - [Rich Text](components/general/vtex.rich-text)
     - [Sandbox](components/general/vtex.sandbox)
     - [Share](components/general/vtex.store-components/share.md)
