@@ -87,4 +87,4 @@ The status of a workspace in master is <code>production true</code>.
 
 ---
 
-Done! Upon completing all the steps, your app’s new version will have been released, published, tested, validated and will finally be made public for all your end users!
+**Done**! Upon completing all the steps, your app’s new version will have been released, published, tested, validated and will finally be made public for all your end users!
