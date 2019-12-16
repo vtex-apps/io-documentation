@@ -136,6 +136,12 @@
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
+      "appName": "vtex.reviews-and-ratings",
+      "title": "Reviews and Ratings",
+      "description": "VTEX native reviews and ratings solution",
+      "url": "https://github.com/vtex/ReviewsRatings"
+    },
+    {
       "appName": "vtex.rich-text",
       "title": "Rich Text",
       "description": "VTEX Rich text component",
