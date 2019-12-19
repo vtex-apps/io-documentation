@@ -17,7 +17,7 @@ If you’re **sure about all the changes** that you’ve done to your developmen
 
 We’ll use the `vtex release {major/minor/patch}` command to increment the version in the app’s `manifest.json` according to the SemVer (semantic versioning) best practices, update the app's `CHANGELOG.md`, create a release commit and a release tag and finally send the performed changes to the app's repository.
 
-If you desire to release a beta version, you should run `vtex release {major/minor/patch} beta` in your terminal. This command will perform the same activities as the previous one, the difference being that you’ll be launching the app’s beta version.
+If you desire to release a beta version, you should run `vtex release {major/minor/patch} beta` in your terminal. This command will perform the same tasks as the previous one, the difference being that you’ll be launching a beta version for your app.
 
 <div class="alert alert-warning">
 You must be logged into the account where you want the new app version to be released. Make sure the app’s <code>vendor</code> is <strong>equal</strong> to its <code>account</code>.
