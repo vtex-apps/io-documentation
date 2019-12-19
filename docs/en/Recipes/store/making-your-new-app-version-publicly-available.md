@@ -25,9 +25,9 @@ You must be logged into the account where you want the new app version to be rel
 
 ## Publishing
 
-Once an app version is released, the app **must be installed** in order to test its new settings. However, it is not possible to install an app that only exists in your local environment. You must **publish** the app so that it can be installed by yourself or by others as well.
+Once an app version is released, the app **must be installed** in order to test its new settings and behavior. However, it is not possible to install an app that only exists in your local environment. You must **publish** the app so that it can be installed by yourself or by others as well.
 
-Use the `vtex publish` command to turn the account version in which you were working into the app’s **release candidate version** for installment. Notice: a release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
+Use the `vtex publish` command to turn the new app’s version in which you were working into a **release candidate version**. Notice: a release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
 
 <div class=“alert alert-warning”>
 You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
@@ -37,7 +37,7 @@ If your app **doesn’t** have billing options, users with access to the account
 
 ## Production workspace
 
-Now that you candidate release version is ready to be installed, you must **create a workspace in production mode** using the following command in order to test the app version settings:
+Now that you candidate release version is ready to be installed, you must **create a workspace in production mode** using the following command in order to test the app version settings and behavior:
 
 ```sh
 vtex use {{WorkspaceName}} --production
@@ -52,11 +52,11 @@ From this point onwards, any changes to the code are prohibited in the workspace
 To install the candidate release in the new production workspace, simply run one of the following commands:
 
 ```sh
-`vtex install {appvendor}.{appname}@{appversion}` to install a specific version of the app.
+vtex install {appvendor}.{appname}@{appversion}
 ```
 
 <div class="alert alert-info">
-  If you are releasing a <strong>beta</strong> app version and all settings were already tested by you, you should release a non-beta version for your app, publish it and install it in a production workspace, as stated previously. 
+If you are releasing a <strong>beta</strong> app version and all settings were already tested by you, you should release a non-beta version for your app, publish it and install it in a production workspace, as stated previously. 
 </div>
 
 ## Validating
