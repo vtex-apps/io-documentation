@@ -389,6 +389,12 @@
       "url": "https://github.com/vtex-apps/tradetracker"
     },
     {
+      "appName": "vtex.yotpo",
+      "title": "Yotpo",
+      "description": "VTEX Yotpo component",
+      "url": "https://github.com/vtex-apps/yotpo"
+    },
+    {
       "appName": "vtex.zendesk-chat",
       "title": "Zendesk Chat",
       "description": "VTEX Zendesk Chat component",
