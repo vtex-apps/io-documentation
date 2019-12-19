@@ -25,7 +25,7 @@ You must be logged into the account where you want the new app version to be rel
 
 ## Publishing
 
-Once a app version was released, the app **must be installed** in order to test its new settings. However, it is not possible to install an app that only exists in your local environment. You must **publish** the app so that it can be installed by yourself or by others as well.
+Once an app version is released, the app **must be installed** in order to test its new settings. However, it is not possible to install an app that only exists in your local environment. You must **publish** the app so that it can be installed by yourself or by others as well.
 
 Use the `vtex publish` command to turn the account version in which you were working into the app’s **release candidate version** for installment. Notice: a release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
 
