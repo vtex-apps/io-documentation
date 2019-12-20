@@ -15,7 +15,7 @@ Once a app version was released, the app **must be installed** in order to test 
 
 1. Use the `vtex publish` command to turn the new app’s version in which you were working into a **release candidate version**. Notice: a release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
 
-<div class=“alert alert-warning”>
+<div class="alert alert-warning">
 You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
 </div>
 
