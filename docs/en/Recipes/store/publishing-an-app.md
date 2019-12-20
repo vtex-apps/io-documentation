@@ -13,12 +13,10 @@ Once a app version was released, the app **must be installed** in order to test 
 
 ## Command
 
-Use the `vtex publish` command to publish the app in the account in which you’re working.
+Use the `vtex publish` command to publish the new app’s version in which you are working. 
 
-<div class=9"alert alert-warning9">
-You must be logged into the account where you want the new app to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
+<div class=“alert alert-warning”>
+You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
 </div>
 
-If your app **doesn’t** have billingOptions, users with access to the account in which the app was added can install it through the Admin’s Apps section.
-
-Otherwise, the app can be installed using Toolbelt, regardless of the specified billing method. [Click here](http://help.vtex.com/en/tutorial/app-pricing-models--2ZKBKxLe08Q6seA6sCi6o2) for more information on app billing models.
+If your app **doesn’t** have billing options, users with access to the account in which the app was published can install it through the Admin’s Apps section. Otherwise, the app can be installed using Toolbelt, regardless of the specified [billing method](http://help.vtex.com/en/tutorial/app-pricing-models--2ZKBKxLe08Q6seA6sCi6o2).
