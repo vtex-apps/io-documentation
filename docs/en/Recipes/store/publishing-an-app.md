@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Publishing an app
 
-Once a app version was released, the app **must be installed** in order to test its new settings. However, it is not possible [to install an app](https://vtex.io/docs/recipes/store/installing-an-app) that only exists in your local environment. You must publish the app so that it can be installed by yourself or by others as well.
+Once an app's version was already [released](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) by you, the app **must also be installed** in order to test its new settings. However, it is not possible [to install an app](https://vtex.io/docs/recipes/store/installing-an-app) that only exists in your local environment. Therefore, after the new app's version was released, you must publish it that it can be installed by yourself or by others as well.
 
 ## Command
 
