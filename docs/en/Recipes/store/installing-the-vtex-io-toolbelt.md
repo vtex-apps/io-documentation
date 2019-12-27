@@ -26,3 +26,19 @@ $ yarn global add vtex
 <div class="alert alert-info">
 To confirm that the installation occurred as expected, you can execute the <code>vtex</code> command. This should display all available commands in a help text. 
 </div>
+
+## Troubleshooting
+
+- After installing and running `vtex` in the terminal an error saying that the command or program wasn't found is shown
+
+This may be because the path for the yarn binaries isn't in your `PATH` system environment variable. If you're on **Windows** follow the instructions on this [link](https://sung.codes/blog/2017/12/30/yarn-global-add-command-not-work-windows/). Otherwise, if you're on **MacOS** or **Linux**, you'll have to add to the end of your profile file the line:
+
+`` export PATH="$PATH:`yarn global bin ``
+
+If you're using `bash`, your profile file will be on `~/.bashrc`, if you use `zsh`, it will be on `~/.zshrc`.
+
+In case you use the Fish shell, simply run the command:
+`set -U fish_user_paths (yarn global bin) $fish_user_paths`
+
+(src: https://yarnpkg.com/lang/en/docs/install/)
+
