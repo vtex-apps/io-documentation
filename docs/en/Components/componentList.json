@@ -409,6 +409,12 @@
   ],
   "product-related": [
     {
+      "appName": "vtex.add-to-cart-button",
+      "title": "Add to Cart Button",
+      "description": "VTEX Add To Cart Button component",
+      "url": "https://github.com/vtex-apps/add-to-cart-button"
+    },
+    {
       "appName": "vtex.store-components",
       "file": "availability-subscriber.md",
       "title": "AvailabilitySubscriber",
