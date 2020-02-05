@@ -13,6 +13,12 @@
       "url": "https://github.com/vtex-apps/store-image"
     },
     {
+      "appName": "vtex.modal-layout",
+      "title": "Modal Layout",
+      "description": "VTEX Modal Layout component",
+      "url": "https://github.com/vtex-apps/modal-layout"
+    },
+    {
       "appName": "vtex.responsive-layout",
       "title": "Responsive Layout",
       "description": "VTEX Responsive Layout",
