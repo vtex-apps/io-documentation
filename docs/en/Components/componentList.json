@@ -174,6 +174,12 @@
       "url": "https://github.com/vtex-apps/store-icons"
     },
     {
+      "appName": "vtex.store-link",
+      "title": "VTEX Store Link",
+      "description": "VTEX Store Link app",
+      "url": "https://github.com/vtex-apps/store-link"
+    },
+    {
       "appName": "vtex.store-components",
       "file": "user-address.md",
       "title": "UserAddress",
@@ -247,163 +253,175 @@
     {
       "appName": "vtex.accessibe",
       "title": "Accessibe",
-      "description": "VTEX Accessibe component",
+      "description": "VTEX Accessibe native integration",
       "url": "https://github.com/vtex-apps/accessibe"
     },
     {
       "appName": "vtex.audara",
       "title": "Audara",
-      "description": "VTEX Audara component",
+      "description": "VTEX Audara native integration",
       "url": "https://github.com/vtex-apps/audara"
     },
     {
       "appName": "vtex.avantlink",
       "title": "Avantlink",
-      "description": "VTEX Avantlink component",
+      "description": "VTEX Avantlink native integration",
       "url": "https://github.com/vtex-apps/avantlink"
     },
     {
       "appName": "vtex.bazaarvoice",
       "title": "Bazaarvoice",
-      "description": "VTEX Bazaarvoice component",
+      "description": "VTEX Bazaarvoice native integration",
       "url": "https://github.com/vtex-apps/bazaarvoice"
     },
     {
       "appName": "vtex.bluecore",
       "title": "Bluecore",
-      "description": "VTEX Bluecore component",
+      "description": "VTEX Bluecore native integration",
       "url": "https://github.com/vtex-apps/bluecore"
     },
     {
       "appName": "vtex.btg360",
       "title": "Btg360",
-      "description": "VTEX Btg360 component",
+      "description": "VTEX Btg360 native integration",
       "url": "https://github.com/vtex-apps/btg360"
     },
     {
       "appName": "vtex.criteo",
       "title": "Criteo",
-      "description": "VTEX Criteo component",
+      "description": "VTEX Criteo native integration",
       "url": "https://github.com/vtex-apps/criteo"
     },
     {
       "appName": "vtex.facebook-pixel",
       "title": "Facebook Pixel",
-      "description": "VTEX Facebook Pixel component",
+      "description": "VTEX Facebook Pixel native integration",
       "url": "https://github.com/vtex-apps/facebook-pixel"
     },
     {
       "appName": "vtex.flixmedia",
       "title": "Flixmedia",
-      "description": "VTEX Flixmedia component",
+      "description": "VTEX Flixmedia native integration",
       "url": "https://github.com/vtex-apps/flixmedia"
     },
     {
       "appName": "vtex.google-adwords",
       "title": "Google Adwords",
-      "description": "VTEX Google Adwords component",
+      "description": "VTEX Google Adwords native integration",
       "url": "https://github.com/vtex-apps/google-adwords"
     },
     {
       "appName": "vtex.google-search-console",
       "title": "Google Search Console",
-      "description": "VTEX Google Search Console component",
+      "description": "VTEX Google Search Console native integration",
       "url": "https://github.com/vtex-apps/google-search-console"
     },
     {
       "appName": "vtex.google-tag-manager",
       "title": "Google Tag Manager",
-      "description": "VTEX Google Tag Manager component",
+      "description": "VTEX Google Tag Manager native integration",
       "url": "https://github.com/vtex-apps/google-tag-manager"
     },
     {
       "appName": "vtex.hotjar",
       "title": "Hotjar",
-      "description": "VTEX Hotjar integration",
+      "description": "VTEX Hotjar native integration",
       "url": "https://github.com/vtex-apps/hotjar"
     },
     {
       "appName": "vtex.ideacrm",
       "title": "Ideacrm",
-      "description": "VTEX Ideacrm component",
+      "description": "VTEX Ideacrm native integration",
       "url": "https://github.com/vtex-apps/ideacrm"
+    },
+    {
+      "appName": "vtex.jivochat",
+      "title": "JivoChat",
+      "description": "VTEX JivoChat native integration",
+      "url": "https://github.com/vtex-apps/jivochat"
     },
     {
       "appName": "vtex.konduto-antifraud",
       "title": "Konduto Antifraud",
-      "description": "VTEX Konduto Antifraud component",
+      "description": "VTEX Konduto Antifraud  native integration",
       "url": "https://github.com/vtex-apps/konduto-antifraud"
+    },
+    {
+      "appName": "vtex.listrak-pixel",
+      "title": "Listrak",
+      "description": "VTEX Listrak native integration",
+      "url": "https://github.com/vtex-apps/listrak-pixel"
     },
     {
       "appName": "vtex.logrocket",
       "title": "Logrocket",
-      "description": "VTEX Logrocket component",
+      "description": "VTEX Logrocket native integration",
       "url": "https://github.com/vtex-apps/logrocket"
     },
     {
       "appName": "vtex.lomadee",
       "title": "Lomadee",
-      "description": "VTEX Lomadee component",
+      "description": "VTEX Lomadee native integration",
       "url": "https://github.com/vtex-apps/lomadee"
     },
     {
       "appName": "vtex.lucky-orange",
       "title": "Lucky Orange",
-      "description": "VTEX Lucky Orange component",
+      "description": "VTEX Lucky Orange native integration",
       "url": "https://github.com/vtex-apps/lucky-orange"
     },
     {
       "appName": "vtex.order-sms-notification",
       "title": "Order Sms Notification",
-      "description": "VTEX Order Sms Notification component",
+      "description": "VTEX Order Sms Notification native integration",
       "url": "https://github.com/vtex-apps/order-sms-notification"
     },
     {
       "appName": "vtex.powerreviews",
       "title": "Powerreviews",
-      "description": "VTEX Powerreviews component",
+      "description": "VTEX Powerreviews native integration",
       "url": "https://github.com/vtex-apps/powerreviews"
     },
     {
       "appName": "vtex.shareasale",
       "title": "Shareasale",
-      "description": "VTEX Shareasale component",
+      "description": "VTEX Shareasale native integration",
       "url": "https://github.com/vtex-apps/shareasale"
     },
     {
       "appName": "vtex.sidecar-pixel",
       "title": "Sidecar Pixel",
-      "description": "VTEX Sidecar Pixel component",
+      "description": "VTEX Sidecar Pixel native integration",
       "url": "https://github.com/vtex-apps/sidecar-pixel"
     },
     {
       "appName": "vtex.smarthint",
       "title": "Smarthint",
-      "description": "VTEX Smarthint component",
+      "description": "VTEX Smarthint native integration",
       "url": "https://github.com/vtex-apps/smarthint"
     },
     {
       "appName": "vtex.tradetracker",
       "title": "Tradetracker",
-      "description": "VTEX Tradetracker component",
+      "description": "VTEX Tradetracker native integration",
       "url": "https://github.com/vtex-apps/tradetracker"
     },
     {
       "appName": "vtex.yotpo",
       "title": "Yotpo",
-      "description": "VTEX Yotpo component",
+      "description": "VTEX Yotpo native integration",
       "url": "https://github.com/vtex-apps/yotpo"
     },
     {
       "appName": "vtex.zendesk-chat",
       "title": "Zendesk Chat",
-      "description": "VTEX Zendesk Chat component",
+      "description": "VTEX Zendesk Chat native integration",
       "url": "https://github.com/vtex-apps/zendesk-chat"
     },
     {
       "appName": "vtex.zopim",
       "title": "Zopim",
-      "description": "VTEX Zopim component",
+      "description": "VTEX Zopim native integration",
       "url": "https://github.com/vtex-apps/zopim"
     }
   ],
