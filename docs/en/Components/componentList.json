@@ -536,6 +536,13 @@
     },
     {
       "appName": "vtex.product-summary",
+      "file": "product-summary-brand.md",
+      "title": "Product Summary Brand",
+      "description": "VTEX Product Summary Brand component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
       "file": "product-summary-buy-button.md",
       "title": "Product Summary Buy Button",
       "description": "VTEX Product Summary Buy Button component",
@@ -567,6 +574,20 @@
       "file": "product-summary-price.md",
       "title": "Product Summary Price",
       "description": "VTEX Product Summary Price component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+     {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-sku-selector.md",
+      "title": "Product Summary SKU Selector",
+      "description": "VTEX Product Summary SKU Selector component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-specification-badges.md",
+      "title": "Product Summary Specification Badges",
+      "description": "VTEX Product Summary Specification Badges component",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
