@@ -7,4 +7,4 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation"
 ---
 
-# interfaces
+# Interfaces
