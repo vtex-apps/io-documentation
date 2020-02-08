@@ -1,10 +1,10 @@
 ---
 title: Customizing the Header and Footer blocks by page
 description: "Learn how to configure the Header and Footer blocks according to your store's page templates."
-date: "11/11/2019"
+date: "02/08/2020"
 tags: ["header", "footer", "template", "customize"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/configuring-custom-images-for-the-sku-selector.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/header-and-footer-recipe/docs/en/Recipes/layout/customizing-the-header-and-footer-blocks-by-page.md"
 ---
 
 # Customizing the Header and Footer blocks by page
