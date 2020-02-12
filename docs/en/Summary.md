@@ -16,6 +16,7 @@
     - [Customizing your store’s typography](recipes/style/customizing-your-stores-typography.md)
     - [Using CSS Handles for store customization](recipes/style/using-css-handles-for-store-customization.md)
   - [Layout](recipes/layout)
+    - [Customizing the Header and Footer blocks by page](recipes/layout/customizing-the-header-and-footer-blocks-by-page.md)
     - [Linking URLs in banners using Site Editor](recipes/layout/linking-urls-in-banners-using-site-editor.md)
     - [Configuring custom images for the SKU Selector](recipes/layout/configuring-custom-images-for-the-sku-selector.md)
     - [Using Flex Layout](recipes/layout/using-flex-layout.md)
