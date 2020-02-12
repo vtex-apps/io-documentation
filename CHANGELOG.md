@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.19.0] - 2020-02-12
+
 ## [0.18.1] - 2020-02-05
 ### Added
 - modal-layout to list of layouts available.
