@@ -28,6 +28,7 @@
     - [Installing the VTEX IO Toolbelt](recipes/store/installing-the-vtex-io-toolbelt.md)
     - [Overwriting the Messages app](recipes/store/overwriting-the-messages-app.md)
     - [Running A/B tests](recipes/store/running-native-ab-testing.md)
+    - [Configuring a B2B environment](recipes/store/configuring-a-b2b-environment.md)
     - [Enabling the store's PWA notice](recipes/store/enabling-the-stores-pwa-notice.md)
     - [Installing the Google Tag Manager app](recipes/store/installing-the-google-tag-manager-app.md)
     - [Setting up Google Tag Manager](recipes/store/setting-up-google-tag-manager.md)
