@@ -1,5 +1,5 @@
 ---
-title: Configuring a B2B store
+title: Configuring a B2B environment
 description: "Make your store's content available only to users of other customer stores using a B2B environment."
 date: "02/19/2020"
 tags: ["configuring", "b2b", "environment", "company"]
@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
 ---
 
-# Configuring a B2B store
+# Configuring a B2B environment
 
 B2B (Business to Business) is an abbreviation used in e-commerce in reference to **commercial transactions between companies**.
 
