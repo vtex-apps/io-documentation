@@ -70,4 +70,4 @@ In other words, you will add a **field in the profile forms** of the users in qu
 
 ---
 
-There you go! After completing all the steps, your store is ready and safe to focus your sales to other companies!
+There you go! After completing all the steps, your store is **ready** and **safe** to focus your sales to other companies!
