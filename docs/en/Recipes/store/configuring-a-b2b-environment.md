@@ -4,7 +4,7 @@ description: "Make your store's content available only to users of other custome
 date: "02/19/2020"
 tags: ["configuring", "b2b", "environment", "company"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/configuring-b2b-store/docs/en/Recipes/store/configuring-a-b2b-environment.md"
 ---
 
 # Configuring a B2B environment
