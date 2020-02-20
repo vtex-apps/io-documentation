@@ -43,7 +43,7 @@ Once you app is linked and the changes duly saved, the new customization should 
 
 Note that the change was applied to all `menu-item` blocks. To apply changes to a single `menu-item` block or to a subsect of blocks, you should use the  `blockClass` prop.
 
-## Using the blockClass property
+### Using the blockClass property
 
 1. In the `json` file where your block is declared, add the prop `blockClass` to the element you want to customize, with any name as a value.
 
