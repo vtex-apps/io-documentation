@@ -23,9 +23,9 @@ At the end of the day, CSS Handles are nothing more than your **store's layout b
 
 ![css-handles-inspect](https://user-images.githubusercontent.com/5691711/70256857-ffdd8780-1767-11ea-936d-a98cbfc924c1.png)
 
-3. In your store theme code, create a file inside the `css` folder, with name displayed below the desired handle (in the example above, `vtex.menu.css`).
+3. Open the Store Theme code using the code editor of your preference. Then, create a file inside the css folder named after the text displayed below the desired handle. Following the example above, we would have `vtex.menu.css`.
 
-3. In the new file, use one of the CSS handles listed and customize its properties. For example:
+4. In the new file, use one of the CSS handles listed and customize its properties. For example:
 
 ```css
 /* vtex.menu.css */
@@ -42,6 +42,8 @@ Once you app is linked and the changes duly saved, the new customization should 
 ![css handles customization applied to the menuItem](https://user-images.githubusercontent.com/5691711/70257811-d160ac00-1769-11ea-8434-67f71afc2056.png)
 
 Note that the change was applied to all `menu-item` blocks. To apply changes to a single `menu-item` block or to a subsect of blocks, you should use the  `blockClass` prop.
+
+## Using the blockClass property
 
 1. In the `json` file where your block is declared, add the prop `blockClass` to the element you want to customize, with any name as a value.
 
