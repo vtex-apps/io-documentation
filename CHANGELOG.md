@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.20.0] - 2020-02-19
 
+### Added 
+
+- Recipe: Configuring a B2B environment
+
 ## [0.19.0] - 2020-02-12
 
 ## [0.18.1] - 2020-02-05
