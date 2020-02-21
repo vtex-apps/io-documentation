@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Typos in Configuring a B2B environment
+
 ## [0.20.1] - 2020-02-20
 
 ## [0.20.0] - 2020-02-19

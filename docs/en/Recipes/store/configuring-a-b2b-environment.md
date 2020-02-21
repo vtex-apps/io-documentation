@@ -4,7 +4,7 @@ description: "Make your store's content available only to users of other custome
 date: "02/19/2020"
 tags: ["configuring", "b2b", "environment", "company"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/configuring-b2b-store/docs/en/Recipes/store/configuring-a-b2b-environment.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/configuring-a-b2b-environment.md"
 ---
 
 # Configuring a B2B environment
@@ -30,7 +30,7 @@ With the Challenge properly installed and configured, it's time to make the VTEX
 1. Log into the desired account's admin;
 2. Access the **Apps** section in the admin's sidebar;
 3. Click on **VTEX Store**;
-4. Check the ** Enable B2B behavior ** box.
+4. Check the **Enable B2B behavior** box.
 5. Save your changes
   
 ![b2b-enablement](https://user-images.githubusercontent.com/52087100/74885760-223d7500-5355-11ea-9b95-49be69ca87de.gif)
