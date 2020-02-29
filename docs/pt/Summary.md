@@ -44,4 +44,4 @@
 
 <!-- - [Resources](resources) -->
 
-- [Latest Features](https://github.com/vtex-apps/release-notes)
+- [Release Notes](releases/)
