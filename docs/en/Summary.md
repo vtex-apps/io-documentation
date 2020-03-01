@@ -25,6 +25,7 @@
     - [Creating a new custom page](recipes/layout/creating-a-new-custom-page.md)
     - [Using Sandbox blocks](recipes/layout/using-sandbox-blocks.md)
   - [Store Management](recipes/store)
+
     - [Installing the VTEX IO Toolbelt](recipes/store/installing-the-vtex-io-toolbelt.md)
     - [Overwriting the Messages app](recipes/store/overwriting-the-messages-app.md)
     - [Running A/B tests](recipes/store/running-native-ab-testing.md)
@@ -45,6 +46,7 @@
   - [All Recipes](recipes/all)
 
 - Components
+
   - [Layout](components/layout)
     - [Flex Layout](components/layout/vtex.flex-layout)
     - [Image List](components/layout/vtex.store-image)
@@ -146,6 +148,6 @@
     - [Search Result](components/search/vtex.search-result)
   - [All Components](components/all)
 
-- [Latest releases](https://github.com/vtex-apps/release-notes/tree/master/docs)
+- [Release Notes](releases/)
 
 - [How to contribute](app/vtex.io-documentation)
