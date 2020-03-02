@@ -11,6 +11,10 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 The VTEX Assets Builder is responsible for **handling assets** within store theme `blocks`. 
 
+It gets all asset paths used and uploads them in the **File Manager** service. 
+
+As its name implies, the File Manager manages stores all files and their respective URLs. It is able to translate the asset paths and then export the asset immutable URLs so that Pages can properly render all block assets. 
+
 The Builder has two main advantages: 
 
 1) You won't need to declare URLs for assets in each blocks, making your code lighter. 
@@ -34,6 +38,10 @@ Check out the instructions to use it below:
 
 3. In the `assets` folder, add the desired asset files as you want as showed above. You can create subfolders within the `assets` folder and better organize the assets used by the theme blocks. 
 
+<div class="alert alert-info">
+The storage process takes some of the asset particularities into account, such as the app version in which the code input occurred. It means that you can save several images using the same name, as long as these are spread across different versions of the same app. 
+</div>
+
 4. Then, in a given block which uses media, use the desired asset path (directing to the `assets` folder):
 
 ![assets-path-blocks](https://user-images.githubusercontent.com/52087100/75712419-a7565180-5ca6-11ea-9afe-5ce398f7e0f4.png)
@@ -42,18 +50,11 @@ Check out the instructions to use it below:
 Remember to include the folder hierarchy in the asset path, such as: <code>assets/events/vtex-day.png</code>.
 </div>
 
-## Modus operandi
+Done! The Assets Builder is configured and ready to be used by the Platform. 
 
-The Assets Builder gets all asset paths used in store blocks and uploads them in the **File Manager** service. 
+A few things to consider: 
 
-<div class="alert alert-info">
-The storage process takes some of the asset particularities into account, such as the app version in which the code input occurred. It means that you can save several images using the same name, as long as these are spread across different versions of the same app. 
-</div>
-
-As its name implies, the File Manager manages stores all files and their respective URLs. It is able to translate the asset paths and then export the asset immutable URLs so that Pages can properly render all block assets. 
-
-A few things to consider when using the Assets Builder:
-- It is not responsible for URL caching, File Manager is; 
+- The Assets Builder is not responsible for URL caching, File Manager is; 
 - It is not possible to reference assets through React or other apps; 
 - Avoid long file names or unnecessarily heavy assets. This will negatively affect the request payload size and Builder optimization;
 - Any *image* extension is allowed, such as **JPEG**, **PNG** and **GIF**. Videos are not allowed yet.
