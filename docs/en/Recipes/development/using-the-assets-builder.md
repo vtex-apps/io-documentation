@@ -1,7 +1,7 @@
 ---
 title: Using the Assets Builder
 description: "Use the VTEX Assets Builder and easily handle your store block's asset files."
-date: "03/02/2020"
+date: "2020-03-02"
 tags: ["assets", "builder", "file-manager", "files"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
