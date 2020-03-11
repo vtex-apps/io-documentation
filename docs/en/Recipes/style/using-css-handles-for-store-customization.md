@@ -41,7 +41,11 @@ Once you app is linked and the changes duly saved, the new customization should 
 
 ![css handles customization applied to the menuItem](https://user-images.githubusercontent.com/5691711/70257811-d160ac00-1769-11ea-8434-67f71afc2056.png)
 
-Note that the change was applied to all `menu-item` blocks. To apply changes to a single `menu-item` block or to a subsect of blocks, you should use the  `blockClass` prop.
+As we've seen, CSS Handles are used to overwrite a store's default style and thus independently customize a type of block from the rest of the theme. Note that the change above was applied to all `menu-item` blocks.
+
+To independently customize a single `menu-item` block, you should use the  `blockClass` prop.
+
+`blockClass` is a property whose value you may define freely. When passed onto a block, it serves as its single **identifier** for customization. 
 
 ### Using the blockClass property
 
