@@ -1,0 +1,52 @@
+{
+    "layout": [
+      {
+        "appName": "vtex.flex-layout",
+        "title": "Flex Layout",
+        "description": "VTEX Flex Layout component",
+        "url": "https://github.com/vtex-apps/flex-layout"
+      },
+      {
+        "appName": "vtex.store-image",
+        "title": "Image List",
+        "description": "VTEX Image List",
+        "url": "https://github.com/vtex-apps/store-image"
+      },
+      {
+        "appName": "vtex.modal-layout",
+        "title": "Modal Layout",
+        "description": "VTEX Modal Layout component",
+        "url": "https://github.com/vtex-apps/modal-layout"
+      },
+      {
+        "appName": "vtex.responsive-layout",
+        "title": "Responsive Layout",
+        "description": "VTEX Responsive Layout",
+        "url": "https://github.com/vtex-apps/responsive-layout"
+      },
+      {
+        "appName": "vtex.slider-layout",
+        "title": "Slider Layout",
+        "description": "VTEX Slider Wrapper",
+        "url": "https://github.com/vtex-apps/slider-layout"
+      },
+      {
+        "appName": "vtex.stack-layout",
+        "title": "Stack Layout",
+        "description": "VTEX Stack Layout",
+        "url": "https://github.com/vtex-apps/stack-layout"
+      },
+      {
+        "appName": "vtex.sticky-layout",
+        "title": "Sticky Layout",
+        "description": "VTEX Sticky Layout",
+        "url": "https://github.com/vtex-apps/sticky-layout"
+      },
+      {
+        "appName": "vtex.tab-layout",
+        "title": "Tab Layout",
+        "description": "VTEX Tabs Layout",
+        "url": "https://github.com/vtex-apps/tab-layout"
+      }
+    ]
+}

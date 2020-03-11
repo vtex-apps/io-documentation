@@ -35,9 +35,9 @@ mutation Save($args: SaveArgsV2!) {
 ```
 
 5. Then, click on  __Query variables__ at the bottom of the page. 
-6. **According to your store's scenario**, write the following variables into the text box:
+6. **According to your store's desired scenario** (catalog or app messages translation), type the following variables into the text box:
 
-### For the store's catalog translations
+### Catalog translations
 
 ```json
 {
@@ -63,7 +63,7 @@ mutation Save($args: SaveArgsV2!) {
 - `targetMessage`: message translation string.
 - `context`: message translation context. This variable is not mandatory and only serves to give Messages the context desired for the translation, since the same word can have different meaning depending on the language. If you want o use this variable, you'll have to add, between 3 parenthesis, the desired context to the product name, in the admin's catalog. I.e:  `Mouse (((rodent)))`. The desired value will therefore not be displayed next to the product name and will only be used to the catalog translation.
 
-### For app messages translation:
+### App messages
 
 ```json
 {
@@ -93,7 +93,7 @@ Following the given example above, your admin should look similar to this:
 
 ![recipe-messages-overwriting](https://user-images.githubusercontent.com/52087100/68410089-eb0cd480-0166-11ea-89bf-217aa7994b91.png)
 
-Finally, click on the play button to run the declared mutation.
+7. Finally, click on the play button to run the declared mutation.
 
 The expected response is as follows:
 
