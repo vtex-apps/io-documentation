@@ -1,0 +1,655 @@
+{
+  "content": [
+    {
+      "appName": "vtex.address-locator",
+      "title": "Address Locator",
+      "description": "VTEX Address Locator component",
+      "url": "https://github.com/vtex-apps/address-locator"
+    },
+    {
+      "appName": "vtex.add-to-cart-button",
+      "title": "Add to Cart Button",
+      "description": "VTEX Add To Cart Button component",
+      "url": "https://github.com/vtex-apps/add-to-cart-button"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "availability-subscriber.md",
+      "title": "Availability Subscriber",
+      "description": "VTEX AvailabilitySubscriber component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.breadcrumb",
+      "title": "Breadcrumb",
+      "description": "VTEX Breadcrumb component",
+      "url": "https://github.com/vtex-apps/breadcrumb"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "buy-button.md",
+      "title": "BuyButton",
+      "description": "VTEX BuyButton component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.carousel",
+      "title": "Carousel",
+      "description": "VTEX Carousel component",
+      "url": "https://github.com/vtex-apps/carousel"
+    },
+    {
+      "appName": "vtex.category-menu",
+      "title": "Category Menu",
+      "description": "VTEX Category Menu component",
+      "url": "https://github.com/vtex-apps/category-menu"
+    },
+    {
+      "appName": "vtex.challenge-tp-condition",
+      "title": "Challenge Trade Policy Condition",
+      "description": "Challenge that checks if an user can access the current Trade Policy based on a specified condition rule.",
+      "url": "https://github.com/vtex-apps/challenge-tp-condition"
+    },
+    {
+      "appName": "vtex.device-detector",
+      "title": "Device Detector",
+      "description": "VTEX Device Detector component",
+      "url": "https://github.com/vtex-apps/device-detector"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "discount-badge.md",
+      "title": "DiscountBadge",
+      "description": "VTEX DiscountBadge component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-drawer",
+      "title": "Drawer",
+      "description": "VTEX Drawer component",
+      "url": "https://github.com/vtex-apps/drawer"
+    },
+    {
+      "appName": "vtex.iframe",
+      "title": "Iframe",
+      "description": "An app for using iframe in stores",
+      "url": "https://github.com/vtex-apps/iframe"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "image.md",
+      "title": "Image",
+      "description": "VTEX Image component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "info-card.md",
+      "title": "InfoCard",
+      "description": "VTEX InfoCard component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.locale-switcher",
+      "title": "Locale Switcher",
+      "description": "VTEX Locale Switcher component",
+      "url": "https://github.com/vtex-apps/locale-switcher"
+    },
+    {
+      "appName": "vtex.login",
+      "title": "Login",
+      "description": "VTEX Login component",
+      "url": "https://github.com/vtex-apps/login"
+    },
+    {
+      "appName": "vtex.modal",
+      "title": "Modal",
+      "description": "VTEX Modal component",
+      "url": "https://github.com/vtex-apps/modal"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "newsletter.md",
+      "title": "Newsletter",
+      "description": "VTEX Newsletter component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "notification.md",
+      "title": "Notification",
+      "description": "VTEX Notification component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.reviews-and-ratings",
+      "title": "Reviews and Ratings",
+      "description": "VTEX native reviews and ratings solution",
+      "url": "https://github.com/vtex/ReviewsRatings"
+    },
+    {
+      "appName": "vtex.rich-text",
+      "title": "Rich Text",
+      "description": "VTEX Rich text component",
+      "url": "https://github.com/vtex-apps/rich-text"
+    },
+    {
+      "appName": "vtex.sandbox",
+      "title": "Sandbox",
+      "description": "VTEX Sandbox component",
+      "url": "https://github.com/vtex-apps/sandbox"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "share.md",
+      "title": "Share",
+      "description": "VTEX Share component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-footer",
+      "title": "Store Footer",
+      "description": "VTEX Footer component for IO Stores",
+      "url": "https://github.com/vtex-apps/store-footer"
+    },
+    {
+      "appName": "vtex.store-header",
+      "title": "Store Header",
+      "description": "VTEX Header component for IO Stores",
+      "url": "https://github.com/vtex-apps/store-header"
+    },
+    {
+      "appName": "vtex.store-icons",
+      "title": "Store Icons",
+      "description": "VTEX Store Icons component",
+      "url": "https://github.com/vtex-apps/store-icons"
+    },
+    {
+      "appName": "vtex.store-link",
+      "title": "VTEX Store Link",
+      "description": "VTEX Store Link app",
+      "url": "https://github.com/vtex-apps/store-link"
+    },
+    {
+      "appName": "vtex.telemarketing",
+      "title": "Telemarketing",
+      "description": "VTEX Telemarketing component",
+      "url": "https://github.com/vtex-apps/telemarketing"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "user-address.md",
+      "title": "User Address",
+      "description": "VTEX UserAddress component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.wordpress-integration",
+      "title": "Wordpress Integration",
+      "description": "VTEX Wordpres Integration",
+      "url": "https://github.com/vtex-apps/wordpress-integration"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "discount-badge.md",
+      "title": "DiscountBadge",
+      "description": "VTEX DiscountBadge component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.minicart",
+      "title": "Minicart",
+      "description": "VTEX Minicart component for IO Stores",
+      "url": "https://github.com/vtex-apps/minicart"
+    },
+    {
+      "appName": "vtex.pickup-availability",
+      "title": "Pickup Availability",
+      "description": "VTEX Pickupt Availability component",
+      "url": "https://github.com/vtex-apps/pickup-availability"
+    },
+    {
+      "appName": "vtex.product-availability",
+      "title": "Product Availability",
+      "description": "VTEX Product Availability component",
+      "url": "https://github.com/vtex-apps/product-availability"
+    },
+    {
+      "appName": "vtex.product-customizer",
+      "title": "Product Customizer",
+      "description": "VTEX Product Customizer component",
+      "url": "https://github.com/vtex-apps/product-customizer"
+    },
+    {
+      "appName": "vtex.product-details",
+      "title": "Product Details",
+      "description": "VTEX Product Details component",
+      "url": "https://github.com/vtex-apps/product-details"
+    },
+    {
+      "appName": "vtex.product-identifier",
+      "title": "Product Identifier",
+      "description": "VTEX Product Identifier component",
+      "url": "https://github.com/vtex-apps/product-identifier"
+    },
+    {
+      "appName": "vtex.product-quantity",
+      "title": "Product Quantity",
+      "description": "VTEX Product Quantity component",
+      "url": "https://github.com/vtex-apps/product-quantity"
+    },
+    {
+      "appName": "vtex.product-details",
+      "file": "product-quantity-selector.md",
+      "title": "Product Quantity Selector",
+      "description": "VTEX Product Quantity Selector component",
+      "url": "https://github.com/vtex-apps/product-details"
+    },
+    {
+      "appName": "vtex.product-review-interfaces",
+      "title": "Product Review Interfaces",
+      "description": "VTEX Product Review Interfaces component",
+      "url": "https://github.com/vtex-apps/product-review-interfaces"
+    },
+    {
+      "appName": "vtex.product-specification-badges",
+      "title": "Product Specification Badges",
+      "description": "VTEX Product Specification Badges component",
+      "url": "https://github.com/vtex-apps/product-specification-badges"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "title": "Product Summary",
+      "description": "VTEX Product Summary component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-attachmentList.md",
+      "title": "Product Summary Attachment List",
+      "description": "VTEX Product Summary Attachment List component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-brand.md",
+      "title": "Product Summary Brand",
+      "description": "VTEX Product Summary Brand component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-buy-button.md",
+      "title": "Product Summary Buy Button",
+      "description": "VTEX Product Summary Buy Button component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-description.md",
+      "title": "Product Summary Description",
+      "description": "VTEX Product Summary Description component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-image.md",
+      "title": "Product Summary Image",
+      "description": "VTEX Product Summary Image component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-name.md",
+      "title": "Product Summary Name",
+      "description": "VTEX Product Summary Name component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-price.md",
+      "title": "Product Summary Price",
+      "description": "VTEX Product Summary Price component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-sku-selector.md",
+      "title": "Product Summary SKU Selector",
+      "description": "VTEX Product Summary SKU Selector component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-summary",
+      "file": "product-summary-specification-badges.md",
+      "title": "Product Summary Specification Badges",
+      "description": "VTEX Product Summary Specification Badges component",
+      "url": "https://github.com/vtex-apps/product-summary"
+    },
+    {
+      "appName": "vtex.product-teaser-interfaces",
+      "title": "Product Teaser Interfaces",
+      "description": "VTEX Product Teaser Interfaces component",
+      "url": "https://github.com/vtex-apps/product-teaser-interfaces"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-brand.md",
+      "title": "ProductBrand",
+      "description": "VTEX ProductBrand component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-description.md",
+      "title": "ProductDescription",
+      "description": "VTEX ProductDescription component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-images.md",
+      "title": "ProductImages",
+      "description": "VTEX ProductImages component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-name.md",
+      "title": "ProductName",
+      "description": "VTEX ProductName component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-price.md",
+      "title": "ProductPrice",
+      "description": "VTEX ProductPrice component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-specifications.md",
+      "title": "ProductSpecifications",
+      "description": "VTEX ProductSpecifications component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.shelf",
+      "title": "Shelf",
+      "description": "VTEX Shelf component for IO Stores",
+      "url": "https://github.com/vtex-apps/shelf"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "shipping-simulator.md",
+      "title": "ShippingSimulator",
+      "description": "VTEX ShippingSimulator component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "sku-selector.md",
+      "title": "SKUSelector",
+      "description": "VTEX SKUSelector component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.search-result",
+      "title": "Search Result",
+      "description": "VTEX Search Result component",
+      "url": "https://github.com/vtex-apps/search-result"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "search-bar.md",
+      "title": "SearchBar",
+      "description": "VTEX SearchBar component",
+      "url": "https://github.com/vtex-apps/store-components"
+    }
+  ],
+  "pixel": [
+    {
+      "appName": "vtex.accessibe",
+      "title": "Accessibe",
+      "description": "VTEX Accessibe native integration",
+      "url": "https://github.com/vtex-apps/accessibe"
+    },
+    {
+      "appName": "vtex.alexa-certify-code",
+      "title": "Alexa Certify Code",
+      "description": "VTEX Alexa Certify Code native integration",
+      "url": "https://github.com/vtex-apps/alexa-certify-code"
+    },
+    {
+      "appName": "vtex.audara",
+      "title": "Audara",
+      "description": "VTEX Audara native integration",
+      "url": "https://github.com/vtex-apps/audara"
+    },
+    {
+      "appName": "vtex.avantlink",
+      "title": "Avantlink",
+      "description": "VTEX Avantlink native integration",
+      "url": "https://github.com/vtex-apps/avantlink"
+    },
+    {
+      "appName": "vtex.bazaarvoice",
+      "title": "Bazaarvoice",
+      "description": "VTEX Bazaarvoice native integration",
+      "url": "https://github.com/vtex-apps/bazaarvoice"
+    },
+    {
+      "appName": "vtex.bluecore",
+      "title": "Bluecore",
+      "description": "VTEX Bluecore native integration",
+      "url": "https://github.com/vtex-apps/bluecore"
+    },
+    {
+      "appName": "vtex.btg360",
+      "title": "Btg360",
+      "description": "VTEX Btg360 native integration",
+      "url": "https://github.com/vtex-apps/btg360"
+    },
+    {
+      "appName": "vtex.criteo",
+      "title": "Criteo",
+      "description": "VTEX Criteo native integration",
+      "url": "https://github.com/vtex-apps/criteo"
+    },
+    {
+      "appName": "vtex.cybersource-fingerprint",
+      "title": "CyberSource Fingerprint ",
+      "description": "VTEX CyberSource Fingerprint native integration",
+      "url": "https://github.com/vtex-apps/cybersource-fingerprint"
+    },
+    {
+      "appName": "vtex.facebook-pixel",
+      "title": "Facebook Pixel",
+      "description": "VTEX Facebook Pixel native integration",
+      "url": "https://github.com/vtex-apps/facebook-pixel"
+    },
+    {
+      "appName": "vtex.flixmedia",
+      "title": "Flixmedia",
+      "description": "VTEX Flixmedia native integration",
+      "url": "https://github.com/vtex-apps/flixmedia"
+    },
+    {
+      "appName": "vtex.google-adwords",
+      "title": "Google Adwords",
+      "description": "VTEX Google Adwords native integration",
+      "url": "https://github.com/vtex-apps/google-adwords"
+    },
+    {
+      "appName": "vtex.google-search-console",
+      "title": "Google Search Console",
+      "description": "VTEX Google Search Console native integration",
+      "url": "https://github.com/vtex-apps/google-search-console"
+    },
+    {
+      "appName": "vtex.google-tag-manager",
+      "title": "Google Tag Manager",
+      "description": "VTEX Google Tag Manager native integration",
+      "url": "https://github.com/vtex-apps/google-tag-manager"
+    },
+    {
+      "appName": "vtex.hotjar",
+      "title": "Hotjar",
+      "description": "VTEX Hotjar native integration",
+      "url": "https://github.com/vtex-apps/hotjar"
+    },
+    {
+      "appName": "vtex.ideacrm",
+      "title": "Ideacrm",
+      "description": "VTEX Ideacrm native integration",
+      "url": "https://github.com/vtex-apps/ideacrm"
+    },
+    {
+      "appName": "vtex.jivochat",
+      "title": "JivoChat",
+      "description": "VTEX JivoChat native integration",
+      "url": "https://github.com/vtex-apps/jivochat"
+    },
+    {
+      "appName": "vtex.konduto-antifraud",
+      "title": "Konduto Antifraud",
+      "description": "VTEX Konduto Antifraud  native integration",
+      "url": "https://github.com/vtex-apps/konduto-antifraud"
+    },
+    {
+      "appName": "vtex.listrak-pixel",
+      "title": "Listrak",
+      "description": "VTEX Listrak native integration",
+      "url": "https://github.com/vtex-apps/listrak-pixel"
+    },
+    {
+      "appName": "vtex.logrocket",
+      "title": "Logrocket",
+      "description": "VTEX Logrocket native integration",
+      "url": "https://github.com/vtex-apps/logrocket"
+    },
+    {
+      "appName": "vtex.lomadee",
+      "title": "Lomadee",
+      "description": "VTEX Lomadee native integration",
+      "url": "https://github.com/vtex-apps/lomadee"
+    },
+    {
+      "appName": "vtex.lucky-orange",
+      "title": "Lucky Orange",
+      "description": "VTEX Lucky Orange native integration",
+      "url": "https://github.com/vtex-apps/lucky-orange"
+    },
+    {
+      "appName": "vtex.menu",
+      "title": "Menu",
+      "description": "VTEX Menu component",
+      "url": "https://github.com/vtex-apps/menu"
+    },
+    {
+      "appName": "vtex.order-sms-notification",
+      "title": "Order Sms Notification",
+      "description": "VTEX Order Sms Notification native integration",
+      "url": "https://github.com/vtex-apps/order-sms-notification"
+    },
+    {
+      "appName": "vtex.powerreviews",
+      "title": "Powerreviews",
+      "description": "VTEX Powerreviews native integration",
+      "url": "https://github.com/vtex-apps/powerreviews"
+    },
+    {
+      "appName": "vtex.shareasale",
+      "title": "Shareasale",
+      "description": "VTEX Shareasale native integration",
+      "url": "https://github.com/vtex-apps/shareasale"
+    },
+    {
+      "appName": "vtex.sidecar-pixel",
+      "title": "Sidecar Pixel",
+      "description": "VTEX Sidecar Pixel native integration",
+      "url": "https://github.com/vtex-apps/sidecar-pixel"
+    },
+    {
+      "appName": "vtex.smarthint",
+      "title": "Smarthint",
+      "description": "VTEX Smarthint native integration",
+      "url": "https://github.com/vtex-apps/smarthint"
+    },
+    {
+      "appName": "vtex.tradetracker",
+      "title": "Tradetracker",
+      "description": "VTEX Tradetracker native integration",
+      "url": "https://github.com/vtex-apps/tradetracker"
+    },
+    {
+      "appName": "vtex.yotpo",
+      "title": "Yotpo",
+      "description": "VTEX Yotpo native integration",
+      "url": "https://github.com/vtex-apps/yotpo"
+    },
+    {
+      "appName": "vtex.zendesk-chat",
+      "title": "Zendesk Chat",
+      "description": "VTEX Zendesk Chat native integration",
+      "url": "https://github.com/vtex-apps/zendesk-chat"
+    },
+    {
+      "appName": "vtex.zopim",
+      "title": "Zopim",
+      "description": "VTEX Zopim native integration",
+      "url": "https://github.com/vtex-apps/zopim"
+    }
+  ],
+  "layout": [
+    {
+      "appName": "vtex.flex-layout",
+      "title": "Flex Layout",
+      "description": "VTEX Flex Layout component",
+      "url": "https://github.com/vtex-apps/flex-layout"
+    },
+    {
+      "appName": "vtex.store-image",
+      "title": "Image List",
+      "description": "VTEX Image List",
+      "url": "https://github.com/vtex-apps/store-image"
+    },
+    {
+      "appName": "vtex.modal-layout",
+      "title": "Modal Layout",
+      "description": "VTEX Modal Layout component",
+      "url": "https://github.com/vtex-apps/modal-layout"
+    },
+    {
+      "appName": "vtex.responsive-layout",
+      "title": "Responsive Layout",
+      "description": "VTEX Responsive Layout",
+      "url": "https://github.com/vtex-apps/responsive-layout"
+    },
+    {
+      "appName": "vtex.slider-layout",
+      "title": "Slider Layout",
+      "description": "VTEX Slider Wrapper",
+      "url": "https://github.com/vtex-apps/slider-layout"
+    },
+    {
+      "appName": "vtex.stack-layout",
+      "title": "Stack Layout",
+      "description": "VTEX Stack Layout",
+      "url": "https://github.com/vtex-apps/stack-layout"
+    },
+    {
+      "appName": "vtex.sticky-layout",
+      "title": "Sticky Layout",
+      "description": "VTEX Sticky Layout",
+      "url": "https://github.com/vtex-apps/sticky-layout"
+    },
+    {
+      "appName": "vtex.tab-layout",
+      "title": "Tab Layout",
+      "description": "VTEX Tabs Layout",
+      "url": "https://github.com/vtex-apps/tab-layout"
+    }
+  ]
+}
