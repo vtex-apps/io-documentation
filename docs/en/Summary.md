@@ -32,19 +32,20 @@
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
 
-  - [Store Management](recipes/store)
+  - [Store Management](recipes/store-management)
 
-    - [Installing the VTEX IO Toolbelt](recipes/store/installing-the-vtex-io-toolbelt.md)
-    - [Configuring a B2B environment](recipes/store/configuring-a-b2b-environment.md)
-    - [Enabling the store's PWA notice](recipes/store/enabling-the-stores-pwa-notice.md)
-    - [Installing the Google Tag Manager app](recipes/store/installing-the-google-tag-manager-app.md)
-    - [Setting up Google Tag Manager](recipes/store/setting-up-google-tag-manager.md)
-    - [Setting up Google Analytics search tracking](recipes/store/setting-up-google-analytics-search-tracking.md)
+    - [Enabling 404 pages](recipes/store-management/enabling-404-pages.md)
+    - [Configuring a B2B environment](recipes/store-management/configuring-a-b2b-environment.md)
+    - [Enabling the store's PWA notice](recipes/store-management/enabling-the-stores-pwa-notice.md)
+    - [Installing the Google Tag Manager app](recipes/store-management/installing-the-google-tag-manager-app.md)
+    - [Setting up Google Tag Manager](recipes/store-management/setting-up-google-tag-manager.md)
+    - [Setting up Google Analytics search tracking](recipes/store-management/setting-up-google-analytics-search-tracking.md)
 
   - [Development](recipes/development)
 
+    - [Installing the VTEX IO Toolbelt](recipes/development/installing-the-vtex-io-toolbelt.md)
+    - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
     - [Creating a production workspace](recipes/development/creating-a-production-workspace.md)
-    - [Enabling 404 pages](recipes/development/enabling-404-pages.md)
     - [Overwriting the Messages app](recipes/development/overwriting-the-messages-app.md)
     - [Running A/B tests](recipes/development/running-native-ab-testing.md)
     - [Listing an account’s apps](recipes/development/listing-an-accounts-apps.md)
@@ -53,7 +54,6 @@
     - [Releasing a new app version](recipes/development/releasing-a-new-app-version.md)
     - [Publishing an app](recipes/development/publishing-an-app.md)
     - [Installing an app](recipes/development/installing-an-app.md)
-    - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
 
   - [All Recipes](recipes/all)
 
