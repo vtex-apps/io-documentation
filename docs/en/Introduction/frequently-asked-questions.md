@@ -1,6 +1,6 @@
 # Frequently asked questions
 
-If you already understood what VTEX IO is, you may you want to know more and discover how it can be used, who can use it, how much it costs, how VTEX IO Store Framework works, what restrictions may apply and so on.
+If you already understood what VTEX IO is, you may you want to know more and discover how it can be used, who can use it, how much it costs, how VTEX IO Store Framework works, what restrictions may be applied and so on.
 
 Don't worry. You're not alone in wanting to know about all the above. The answers to the VTEX IO and VTEX IO Store Framework frequently asked questions are as follows:
 
@@ -13,14 +13,14 @@ With VTEX IO, you can create:
 - **Custom Storefront App** - *Build sophisticated, tailor-made React storefront components for your store.* 
 - **Custom Admin Apps** - *Unlock and extend VTEX data by creating apps for your store's admin interface*.
 - **Custom back-end Apps** - *Speed up connections with Storefront apps or Admin apps by building back-end services that are developed using Node or .NET Core.*
-- **Custom Pixel apps** -  *Collect user data for a third-party app of your choosing by creating a pixel app.*
-- **Custom mobile Apps** - *Your store website your customers' mobile device.* 
+- **Custom Pixel apps** -  *Collect user data for a third-party service of your choosing by creating a pixel app.*
+- **Custom mobile Apps** - *Your store website in your customers' mobile device.* 
 
 ### Who can use the solution?
 
 VTEX IO is now working as a closed beta, meaning that it's only open to a small group of developers. 
 
-At present, the requisite to enter this closed beta group is to have an *Enterprise* VTEX plan if you are a VTEX account (you can verify plan account you have in your VTEX contract). 
+At present, the requisite to enter this closed beta group is to have an *Enterprise* VTEX plan if you are a VTEX account (you can verify the plan account you have in your VTEX contract). 
 
 If you are a partner, you must be a VTEX IO developer certified partner.
 
@@ -44,7 +44,7 @@ However, you will be able to benefit from our documentation and always keep your
 
 ### What advantages are there to building my store using Store Framework? 
 
-The fastest time-to-market, coupled with the lowest maintenance cost and highest customisable framework. In addition, an accelerated and scalable evolution of your business thanks to a community of developers making every store block  —  and therefore your own store — better every day. Do I need to say more?
+The fastest time-to-market, coupled with the lowest maintenance cost and highest customisable framework. In addition, an accelerated and scalable evolution of your business thanks to a community of developers making every store block  —  and therefore your own store — better every day. 
 
 ### Can I customize Store Framework blocks to adapt them to my business needs?
 
@@ -62,7 +62,7 @@ Any VTEX store can start using Store Framework since it is an open beta. But bea
 
 ### How much does it cost?
 
-Absolutely nothing. The Store Framework solution is already included by default in VTEX contracts, without any additional cost for clients. 
+The Store Framework solution is already included by default in VTEX contracts, without any additional cost for clients. 
 
 ### What type of support is ensured?
 
@@ -80,6 +80,6 @@ Welcome aboard, then! Simply access our getting started material on how to [buil
 
 <div class="alert alert-info">  
 <b>You haven't found the answer you were looking for?</b>
-No worries! These are just the frequently asked question on Store Framework, and not all the questions on everything... so, we are here for you: get in touch with VTEX's support team and send us any questions you may have on the platform. 
+No worries! These are just the frequently asked question on VTEX IO and VTEX IO Store Framework, not all the questions on everything... so, we are here for you: get in touch with VTEX's support team and send us any questions you may have on the platform. 
 </div>
 
