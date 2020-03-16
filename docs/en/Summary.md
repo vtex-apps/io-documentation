@@ -66,6 +66,7 @@
     - [Responsive Layout](apps/layout-blocks/vtex.responsive-layout)
     - [Slider Layout](apps/layout-blocks/vtex.slider-layout)
     - [Stack Layout](apps/layout-blocks/vtex.stack-layout)
+    - [Modal Layout](apps/layout-blocks/vtex.modal-layout)
     - [Sticky Layout](apps/layout-blocks/vtex.sticky-layout)
     - [Tab Layout](apps/layout-blocks/vtex.tab-layout)
   
@@ -73,12 +74,14 @@
 
   - [Pixel](apps/pixel)
     - [Accessibe](apps/pixel/vtex.accessibe)
+    - [Alexa Certify Code](apps/pixel/vtex.vtex.alexa-certify-code)
     - [Audara](apps/pixel/vtex.audara)
     - [Avantlink](apps/pixel/vtex.avantlink)
     - [Bazaarvoice](apps/pixel/vtex.bazaarvoice)
     - [Bluecore](apps/pixel/vtex.bluecore)
     - [Btg360](apps/pixel/vtex.btg360)
     - [Criteo](apps/pixel/vtex.criteo)
+    - [CyberSource Fingerprint](apps/pixel/vtex.cybersource-fingerprint)
     - [Facebook](apps/pixel/vtex.facebook-pixel)
     - [Flixmedia](apps/pixel/vtex.flixmedia)
     - [Google Adwords](apps/pixel/vtex.google-adwords)
