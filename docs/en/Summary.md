@@ -54,6 +54,7 @@
     - [Releasing a new app version](recipes/development/releasing-a-new-app-version.md)
     - [Publishing an app](recipes/development/publishing-an-app.md)
     - [Installing an app](recipes/development/installing-an-app.md)
+    - [Using the Assets Builder](recipes/development/using-the-assets-builder.md)
 
   - [All Recipes](recipes/all)
 

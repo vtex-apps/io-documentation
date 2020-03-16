@@ -4,21 +4,19 @@ description: "Use the VTEX Assets Builder and easily handle your store block's a
 date: "2020-03-02"
 tags: ["assets", "builder", "file-manager", "files"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/using-the-assets-builder.md"
 ---
 
 # Using the Assets Builder
 
-The VTEX Assets Builder is responsible for **handling assets** within store theme `blocks`. 
+The VTEX Assets Builder is responsible for **handling assets** within store theme `blocks` by getting all asset paths used and uploading them in the **File Manager** service. 
 
-It gets all asset paths used and uploads them in the **File Manager** service. 
+As its name implies, the File Manager manages all of your store files and their respective URLs. It is able to translate the asset paths and then export the asset immutable URLs so that all block assets can be properly rendered. 
 
-As its name implies, the File Manager manages stores all files and their respective URLs. It is able to translate the asset paths and then export the asset immutable URLs so that Pages can properly render all block assets. 
+The Assets Builder has two main advantages: 
 
-The Builder has two main advantages: 
-
-1) You won't need to declare URLs for assets in each blocks, making your code lighter. 
-2) You can use it whenever you want, having no prerequisites. 
+- You won't need to declare URLs for assets in each blocks, making your code lighter;
+- You can use it whenever you want, having no prerequisites. 
 
 Check out the instructions to use it below:
 
