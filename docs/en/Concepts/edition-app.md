@@ -4,10 +4,10 @@ description: "Edition app concept"
 date: "2020-03-17"
 tags: ["edition", "edition-app", "sponsor"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/concepts/docs/en/Concepts/edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/edition-app.md"
 ---
 
-#  Edition App
+# Edition App
 
 An Edition App is an app responsible for **exporting an apps and configurations model** that a [Sponsor Account](https://github.com/vtex/io-platform-documentation/blob/master/docs/concepts/sponsor-account.md) (also called parent account) sets for their child accounts to adopt.
 

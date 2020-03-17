@@ -4,7 +4,7 @@ description: "Sponsor account concept"
 date: "2020-03-17"
 tags: ["sponsor", "sponsor-account", "edition"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/concepts/docs/en/Concepts/sponsor-account.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/sponsor-account.md"
 ---
 
 # Sponsor Account
