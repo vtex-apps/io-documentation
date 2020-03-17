@@ -13,6 +13,6 @@ An Edition App is an app responsible for **exporting an apps and configurations 
 
 Being built of top of a **hierarchical relationship between accounts**, the Edition App (and the apps and configurations that it exports) can never be changed by the child accounts. Only its Sponsor Account is authorized to make any changes.
 
-:warning: Each account can only have a single Edition App installed, defined by its Sponsor Account. However, each account is able to **publish** multiple Edition Apps to their registry, which means that children from the same Sponsor Account can have different apps and configurations from each other.
+Each account can only have a single Edition App installed, defined by its Sponsor Account. However, each account is able to **publish** multiple Edition Apps to their registry, which means that children from the same Sponsor Account can have different apps and configurations from each other.
 
-:information_source: Being hierarchical in nature, any child account can also define their own Edition Apps for their child accounts themselves, the only restriction being that these Edition Apps must "extend" exactly one Edition App from their respective Sponsor. This extension is specified through a single dependency in the Edition App's `manifest.json` file.
+Being hierarchical in nature, any child account can also define their own Edition Apps for their child accounts themselves, the only restriction being that these Edition Apps must "extend" exactly one Edition App from their respective Sponsor. This extension is specified through a single dependency in the Edition App's `manifest.json` file.
