@@ -4,7 +4,7 @@ description: "Edition app concept"
 date: "2020-03-17"
 tags: ["edition", "edition-app", "sponsor"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/concepts/docs/en/Concepts/edition-app.md"
 ---
 
 #  Edition App
