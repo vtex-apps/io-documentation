@@ -17,6 +17,8 @@ Along with the efforts in course to bring VTEX Checkout into IO, a **new** `Orde
 
 To make sure we keep backwards-compatibility in Store Framework, while adding this new provider into the core framework, we kept **both** the legacy and the new one, so now every store by default will be using **two** `OrderFormProvider`s. Unfortunately, this does not come with a performance cost, since this means every store is now fetching **two** `orderForm`s in every render. To avoid this unnecessary overhead for stores that don't need both providers, there is a `Enable Order Form optimization` setting available in the Site Editor that disables the legacy `OrderFormProvider`, using just the new one. Enabling this should result in a smoother navigation experience.
 
+:warning: Use this setting with caution, since it may cause problems in your store if any of its components still need the legacy `orderFormProvider` to function. If your store already uses `minicart.v2` and `add-to-cart-button`, and there are no custom components that depend on the legacy provider, there should be no issues.
+
 Find out how to enable this setting in the steps below.
 
 ## Step-by-step
