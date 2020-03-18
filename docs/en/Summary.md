@@ -13,6 +13,11 @@
     - [Configuring templates](getting-started/build-stores-with-store-framework/4)
     - [Customizing styles](getting-started/build-stores-with-store-framework/5)
 
+- Concepts
+
+  - [Edition App](concepts/edition-app)
+  - [Sponsor Account](concepts/sponsor-account)
+
 - Recipes
 
   - [Style](recipes/style)
