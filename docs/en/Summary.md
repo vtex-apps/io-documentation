@@ -76,6 +76,10 @@
     - [Tab Layout](apps/layout-blocks/vtex.tab-layout)
   
   - [Content Blocks](apps/content-blocks)
+  
+  - [Functional]
+    - [Challenge](apps/functional/challenge)
+    - [Checkout UI Settings](apps/functional/checkout-ui-settings)
 
   - [Pixel](apps/pixel)
     - [Accessibe](apps/pixel/vtex.accessibe)
