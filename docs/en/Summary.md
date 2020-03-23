@@ -39,7 +39,6 @@
 
   - [Store Management](recipes/store-management)
 
-    - [Enabling 404 pages](recipes/store-management/enabling-404-pages.md)
     - [Configuring a B2B environment](recipes/store-management/configuring-a-b2b-environment.md)
     - [Enabling the store's PWA notice](recipes/store-management/enabling-the-stores-pwa-notice.md)
     - [Installing the Google Tag Manager app](recipes/store-management/installing-the-google-tag-manager-app.md)
