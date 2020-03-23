@@ -48,10 +48,7 @@
 
   - [Development](recipes/development)
 
-    - [Installing the VTEX IO Toolbelt](recipes/development/installing-the-vtex-io-toolbelt.md)
-    - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
-    - [Creating a production workspace](recipes/development/creating-a-production-workspace.md)
-    - [Overwriting the Messages app](recipes/development/overwriting-the-messages-app.md)
+    - [VTEX IO CLI installment and command reference](recipes/development/vtex-io-cli-installment-and-command-reference.md)
     - [Running A/B tests](recipes/development/running-native-ab-testing.md)
     - [Listing an account’s apps](recipes/development/listing-an-accounts-apps.md)
     - [Making your new app version publicly available](recipes/development/making-your-new-app-version-publicly-available.md)
@@ -59,7 +56,13 @@
     - [Releasing a new app version](recipes/development/releasing-a-new-app-version.md)
     - [Publishing an app](recipes/development/publishing-an-app.md)
     - [Installing an app](recipes/development/installing-an-app.md)
+    - [Creating a production workspace](recipes/development/creating-a-production-workspace.md)
+    - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
+    - [Overwriting the Messages app](recipes/development/overwriting-the-messages-app.md)
     - [Using the Assets Builder](recipes/development/using-the-assets-builder.md)
+    - [Configuring the Sponsor Account requirements](recipes/development/configuring-the-sponsor-account-requirements.md)
+    - [Configuring an Edition app](recipes/development/configuring-an-edition-app.md)
+    - [Updating Edition apps](recipes/development/updating-edition-apps.md)
 
   - [All Recipes](recipes/all)
 
