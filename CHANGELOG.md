@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.27.3] - 2020-03-23
+
 ### Added
 
 - Disclaimer regarding font family files: Changing your store's typography.
