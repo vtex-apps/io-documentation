@@ -80,7 +80,7 @@
   
   - [Content Blocks](apps/content-blocks)
   
-  - [Functional]
+  - [Functional](apps/functional)
     - [Challenge](apps/functional/challenge)
     - [Checkout UI Settings](apps/functional/checkout-ui-settings)
 
