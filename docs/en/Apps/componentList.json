@@ -421,7 +421,8 @@
       "title": "Checkout UI Settings",
       "description": "App that exports scripts to build a custom Checkout UI",
       "url": "https://github.com/vtex-apps/checkout-ui-settings"
-    },
+    }
+  ], 
   "pixel": [
     {
       "appName": "vtex.accessibe",
