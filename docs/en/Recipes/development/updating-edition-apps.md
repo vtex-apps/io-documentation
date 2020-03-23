@@ -4,7 +4,7 @@ description: "Publish a new version of an Edition app and learn how it us update
 date: "2020-03-23"
 tags: ["update", "updating", "edition", "edition-apps", "sponsor", "sponsor-account"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/updating-edition-apps.md"
 ---
 
 # Updating Edition apps
