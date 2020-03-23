@@ -23,12 +23,18 @@ Using admin’s Storefront, you can customize a store’s typography faster and 
 3. Click on **Edit** and select **Typography**.
 ![customize-typo-image3 EN](https://user-images.githubusercontent.com/52087100/63810513-431f9300-c8fb-11e9-9f37-9789fbd52776.png)
 
-In the **Font Family** section, you can add a font family of your choosing in order to use in your store’s theme. Simply click on **Add custom font** and upload the desired font’s file.
+In the **Font Family** section, you can add a font family of your choosing in order to use in your store’s theme. Simply click on **Add custom font** and upload the desired font’s file. 
+
+Remember to give a name for the font family recently uploaded by you, otherwise you won't be able to properly save your changes. 
+
+<div class="alert alert-warning">
+The font family file must be uploaded in the following file extensions: <code>.ttf</code> or <code>.woff</code>. 
+</div>
 
 After choosing the font family, you can apply it to your store’s text content. The **Type Token** option displays all your store’s text content that can be customized. In addition to each one’s font families, you can also customize other parameters, such as **Font Weight**, **Font Size**, capitalization (**Text Transform**) and spacing (**Letter Spacing**).
 
 For a better understanding of this feature and customization recommendations for each of your store’s text content, access the [VTEX Styleguide](https://styleguide.vtex.com/#/Styles?id=section-typography).
 
 <div class="alert alert-warning">
-After performing the desired customizations, don’t forget to save the changes.
+After performing all desired customizations, don’t forget to save your changes! 
 </div>
