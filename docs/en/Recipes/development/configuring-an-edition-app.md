@@ -4,7 +4,7 @@ description: "If you already match all requirements to become a Sponsor Account,
 date: "2020-03-23"
 tags: ["sponsor", "sponsor-account", "edition", "edition-app", "configure", "configuring"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/updating-edition-apps.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/adding-new-docs/docs/en/Recipes/development/configuring-an-edition-app.md"
 ---
 
 # Configuring an Edition App
