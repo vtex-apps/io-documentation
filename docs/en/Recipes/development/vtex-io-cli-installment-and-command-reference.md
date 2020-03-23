@@ -4,7 +4,7 @@ description: "Any development in VTEX IO begins and ends with the Toolbelt, our 
 date: "2020-03-23"
 tags: ["toolbelt", "cli", "command-line-interface", "commands", "install", "installment"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/updating-edition-apps.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/vtex-io-cli-installment-and-command-reference.md"
 ---
 
 # Using the VTEX IO CLI
