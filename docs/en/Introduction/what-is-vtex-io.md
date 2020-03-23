@@ -20,7 +20,7 @@ All local changes to code are immediately synced to our cloud development enviro
 
 You should be able to deploy changes to code knowing that they will not disrupt your users' experience and will improve your business metrics. 
 
-VTEX IO Workspaces, as the name implies, allow you to do just that by creating multiple versions of your code, synchronizing each workspace to our platform and A/B test them.
+VTEX IO Workspaces, as the name implies, allow you to do just that by creating **multiple versions of your code**, synchronizing each workspace to our platform and A/B test them.
 
 ## Opinionated set of frameworks
 
