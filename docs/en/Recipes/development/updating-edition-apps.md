@@ -19,7 +19,7 @@ To do this, follow the walk-through below:
 2. Make the desired apps and settings changes in the file;
 
 <div class="alert alert-warning">
-In a scenario in which an app that is already installed on the account is added to the Edition, the type of installation of that app will become <code>edition</code> and can no longer be modified. This means that it can no longer be removed from the accounts or undergo any changes in major version since it is now enforced by the Edition. In the same way, removing apps from the <code>apps.json</code> will be automatically uninstalled from all child accounts with this Edition. If an removed app is still needed in some of the child accounts, it will need to be manually and individually installed again in each desired child account.
+In a scenario in which an app that is already installed on the account is added to the Edition, the type of installation of that app will become <code>edition</code> and it can no longer be removed from the accounts or undergo any changes in major version since it is now enforced by the Edition. In the same way, removing apps from the <code>apps.json</code> will automatically uninstall them from all child accounts with this Edition. If an removed app is still needed in some of the child accounts, it will need to be manually and individually installed again in each desired child account.
 </div>
 
 3. Save and commit your changes;
