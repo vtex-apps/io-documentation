@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Summary: Functional apps with typo;
+- Content blocks was not being properly rendered due to an typo in the object;
+
 ## [0.27.1] - 2020-03-23
+
+### Fixed
+
+- Typo: Updating Edition apps
 
 ## [0.27.0] - 2020-03-23
 
