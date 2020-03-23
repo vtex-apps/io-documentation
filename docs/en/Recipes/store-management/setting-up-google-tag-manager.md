@@ -37,6 +37,7 @@ Repeat the instructions above for the following variables:
 - `currency`
 - `transactionId`
 - `transactionTotal`
+- `userId`
 
 ### Google Analytics Variables
 
@@ -48,6 +49,14 @@ Repeat the instructions above for the following variables:
 4. Click on **More Settings** and then on **Ecommerce**. 
 5. Tick the **Enable Enhanced Ecommerce Features** and **Use data layer** boxes.
 6. **Save** your changes as **Google Analytics**.
+
+If you intend to use the [User ID feature of Google Analytics](https://support.google.com/analytics/answer/3123662), you need to set a field using the userId variable previously created:
+
+Click in Fields to Set, and add the field:
+
+Field Name | Value
+---|---
+userId | {{userId}}
 
 #### Checkout
 

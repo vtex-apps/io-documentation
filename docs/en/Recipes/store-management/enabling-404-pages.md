@@ -31,7 +31,7 @@ As such, the Store Indexer receives the broadcasted event and properly indexes a
 
 1. Access the desired account's admin. You can use the following URL structure: `{accountName}.myvtex.com/admin` ;
 3. Access the **Apps** section, in the admin's sidebar;
-4. Select the **Broadcaster Worker** app box. If the card is not available, you must first [install](https://vtex.io/docs/recipes/store/installing-an-app) the app on the account;
+4. Select the **Broadcaster Worker** app box. If the card is not available, you must first [install](https://vtex.io/docs/recipes/store/installing-an-app) the app `vtex.broadcaster-worker@0.x` on the account;
 5. Check the `Always Notify` box in the Broadcaster app and save your changes. 
 
 ![broadcaster-worker](https://user-images.githubusercontent.com/52087100/76466530-a61fd580-63c6-11ea-8e1d-1d0dda1feb7a.png)

@@ -45,12 +45,6 @@
       "url": "https://github.com/vtex-apps/category-menu"
     },
     {
-      "appName": "vtex.challenge-tp-condition",
-      "title": "Challenge Trade Policy Condition",
-      "description": "Challenge that checks if an user can access the current Trade Policy based on a specified condition rule.",
-      "url": "https://github.com/vtex-apps/challenge-tp-condition"
-    },
-    {
       "appName": "vtex.device-detector",
       "title": "Device Detector",
       "description": "VTEX Device Detector component",
@@ -120,6 +114,13 @@
       "title": "Notification",
       "description": "VTEX Notification component",
       "url": "https://github.com/vtex-apps/store-components"
+    },
+    {    
+      "appName": "vtex.order-placed",
+      "file": "README.md",
+      "title": "Order Placed",
+      "description": "VTEX Order Placed page blocks",
+      "url": "https://github.com/vtex-apps/order-placed"
     },
     {
       "appName": "vtex.reviews-and-ratings",
@@ -214,11 +215,25 @@
       "description": "VTEX Product Availability component",
       "url": "https://github.com/vtex-apps/product-availability"
     },
+        {
+      "appName": "vtex.store-components",
+      "file": "product-brand.md",
+      "title": "Product Brand",
+      "description": "VTEX ProductBrand component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
     {
       "appName": "vtex.product-customizer",
       "title": "Product Customizer",
       "description": "VTEX Product Customizer component",
       "url": "https://github.com/vtex-apps/product-customizer"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-description.md",
+      "title": "Product Description",
+      "description": "VTEX ProductDescription component",
+      "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.product-details",
@@ -231,6 +246,27 @@
       "title": "Product Identifier",
       "description": "VTEX Product Identifier component",
       "url": "https://github.com/vtex-apps/product-identifier"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-images.md",
+      "title": "Product Images",
+      "description": "VTEX Product Images component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-name.md",
+      "title": "Product Name",
+      "description": "VTEX ProductName component",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-price.md",
+      "title": "Product Price",
+      "description": "VTEX ProductPrice component",
+      "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.product-quantity",
@@ -250,6 +286,13 @@
       "title": "Product Review Interfaces",
       "description": "VTEX Product Review Interfaces component",
       "url": "https://github.com/vtex-apps/product-review-interfaces"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "product-specifications.md",
+      "title": "Product Specifications",
+      "description": "VTEX ProductSpecifications component",
+      "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.product-specification-badges",
@@ -333,48 +376,6 @@
       "url": "https://github.com/vtex-apps/product-teaser-interfaces"
     },
     {
-      "appName": "vtex.store-components",
-      "file": "product-brand.md",
-      "title": "ProductBrand",
-      "description": "VTEX ProductBrand component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "product-description.md",
-      "title": "ProductDescription",
-      "description": "VTEX ProductDescription component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "product-images.md",
-      "title": "ProductImages",
-      "description": "VTEX ProductImages component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "product-name.md",
-      "title": "ProductName",
-      "description": "VTEX ProductName component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "product-price.md",
-      "title": "ProductPrice",
-      "description": "VTEX ProductPrice component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "product-specifications.md",
-      "title": "ProductSpecifications",
-      "description": "VTEX ProductSpecifications component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
       "appName": "vtex.shelf",
       "title": "Shelf",
       "description": "VTEX Shelf component for IO Stores",
@@ -383,14 +384,14 @@
     {
       "appName": "vtex.store-components",
       "file": "shipping-simulator.md",
-      "title": "ShippingSimulator",
+      "title": "Shipping Simulator",
       "description": "VTEX ShippingSimulator component",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-components",
       "file": "sku-selector.md",
-      "title": "SKUSelector",
+      "title": "SKU Selector",
       "description": "VTEX SKUSelector component",
       "url": "https://github.com/vtex-apps/store-components"
     },
@@ -403,11 +404,24 @@
     {
       "appName": "vtex.store-components",
       "file": "search-bar.md",
-      "title": "SearchBar",
+      "title": "Search Bar",
       "description": "VTEX SearchBar component",
       "url": "https://github.com/vtex-apps/store-components"
     }
   ],
+  "functional": [
+    {
+      "appName": "vtex.challenge-tp-condition",
+      "title": "Challenge Trade Policy Condition",
+      "description": "Challenge that checks if an user can access the current Trade Policy based on a specified condition rule.",
+      "url": "https://github.com/vtex-apps/challenge-tp-condition"
+    },
+    {
+      "appName": "vtex.checkout-ui-settings",
+      "title": "Checkout UI Settings",
+      "description": "App that exports scripts to build a custom Checkout UI",
+      "url": "https://github.com/vtex-apps/checkout-ui-settings"
+    },
   "pixel": [
     {
       "appName": "vtex.accessibe",

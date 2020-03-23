@@ -13,6 +13,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Edition recipes (Configuring an Edition app, Configuring the Sponsor Account requirements, Updating Edition apps);
 - VTEX IO CLI installment and command reference
 
+## [0.26.0] - 2020-03-21
+
+## [0.25.0] - 2020-03-18
+
+## [0.24.1] - 2020-03-16
+
+## [0.24.0] - 2020-03-16
+
+## [0.23.0] - 2020-03-16
+
 ## [0.22.0] - 2020-03-12
 
 ## [0.21.0] - 2020-03-12

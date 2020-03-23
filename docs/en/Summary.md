@@ -13,6 +13,11 @@
     - [Configuring templates](getting-started/build-stores-with-store-framework/4)
     - [Customizing styles](getting-started/build-stores-with-store-framework/5)
 
+- Concepts
+
+  - [Edition App](concepts/edition-app)
+  - [Sponsor Account](concepts/sponsor-account)
+
 - Recipes
 
   - [Style](recipes/style)
@@ -54,6 +59,7 @@
     - [Creating a production workspace](recipes/development/creating-a-production-workspace.md)
     - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
     - [Overwriting the Messages app](recipes/development/overwriting-the-messages-app.md)
+    - [Using the Assets Builder](recipes/development/using-the-assets-builder.md)
     - [Configuring the Sponsor Account requirements](recipes/development/configuring-the-sponsor-account-requirements.md)
     - [Configuring an Edition app](recipes/development/configuring-an-edition-app.md)
     - [Updating Edition apps](recipes/development/updating-edition-apps.md)
@@ -68,19 +74,26 @@
     - [Responsive Layout](apps/layout-blocks/vtex.responsive-layout)
     - [Slider Layout](apps/layout-blocks/vtex.slider-layout)
     - [Stack Layout](apps/layout-blocks/vtex.stack-layout)
+    - [Modal Layout](apps/layout-blocks/vtex.modal-layout)
     - [Sticky Layout](apps/layout-blocks/vtex.sticky-layout)
     - [Tab Layout](apps/layout-blocks/vtex.tab-layout)
   
   - [Content Blocks](apps/content-blocks)
+  
+  - [Functional]
+    - [Challenge](apps/functional/challenge)
+    - [Checkout UI Settings](apps/functional/checkout-ui-settings)
 
   - [Pixel](apps/pixel)
     - [Accessibe](apps/pixel/vtex.accessibe)
+    - [Alexa Certify Code](apps/pixel/vtex.vtex.alexa-certify-code)
     - [Audara](apps/pixel/vtex.audara)
     - [Avantlink](apps/pixel/vtex.avantlink)
     - [Bazaarvoice](apps/pixel/vtex.bazaarvoice)
     - [Bluecore](apps/pixel/vtex.bluecore)
     - [Btg360](apps/pixel/vtex.btg360)
     - [Criteo](apps/pixel/vtex.criteo)
+    - [CyberSource Fingerprint](apps/pixel/vtex.cybersource-fingerprint)
     - [Facebook](apps/pixel/vtex.facebook-pixel)
     - [Flixmedia](apps/pixel/vtex.flixmedia)
     - [Google Adwords](apps/pixel/vtex.google-adwords)
