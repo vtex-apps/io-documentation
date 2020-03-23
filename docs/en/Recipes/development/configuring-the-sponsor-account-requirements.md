@@ -4,7 +4,7 @@ description: "Want to publish Edition apps for child accounts? Firstly know how 
 date: "2020-03-23"
 tags: ["sponsor", "sponsor-account", "requirements"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/updating-edition-apps.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/configuring-the-sponsor-account-requirements.md"
 ---
 
 # Configuring the Sponsor Account requirements
