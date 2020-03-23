@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Disclaimer regarding font family files: Changing your store's typography.
+
 ## [0.27.2] - 2020-03-23
 
 ### Fixed
@@ -17,7 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-- Typo: Updating Edition apps
+- Typo: Updating Edition apps.
 
 ## [0.27.0] - 2020-03-23
 
@@ -25,7 +29,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - What is VTEX IO (reviewed);
 - Edition recipes (Configuring an Edition app, Configuring the Sponsor Account requirements, Updating Edition apps);
-- VTEX IO CLI installment and command reference
+- VTEX IO CLI installment and command reference.
 
 ## [0.26.0] - 2020-03-21
 
