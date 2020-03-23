@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.27.2] - 2020-03-23
+
 ### Fixed
 - Summary: Functional apps with typo;
 - Content blocks was not being properly rendered due to an typo in the object;
