@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/vtex-io-cli-installment-and-command-reference.md"
 ---
 
-# Using the VTEX IO CLI
+# VTEX IO CLI installment and command reference
 
 Any development in VTEX IO begins and ends with the **Toolbelt**, our CLI (Command Line Interface). 
 
