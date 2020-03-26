@@ -7,8 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [0.29.1] - 2020-03-26
 ### Fixed
+
+- Several Toolbelt docs are now up-to-date.
+
+## [0.29.1] - 2020-03-26
+
+### Fixed
+
 - Fixed get started urls to "build-stores-with-store-framework"
 
 ## [0.29.0] - 2020-03-24

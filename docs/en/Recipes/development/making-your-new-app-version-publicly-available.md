@@ -9,84 +9,132 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Making your new app version publicly available
 
-If you’re comfortable with the configurations you’ve performed and want your version of the app to be made available to any user, [linking](https://vtex.io/docs/recipes/store/linking-an-app) the app in which you’re working will not suffice: you’ll also need to **release** it, **publish** a release candidate, install it in a **production workspace**, **validate** your release candidate and promote it to **master**.
+If you’re comfortable with the configurations you’ve performed and want your version of the app to be made available to any user, [linking](https://vtex.io/docs/recipes/store/linking-an-app) the app in which you’re working will not suffice: you’ll also need to: 
 
-## Releasing
+1. **Release** it;
+2. **Publish** a release candidate for it;
+3. Install it in a **Production workspace**;
+4. **Validate** your release candidate;
+5. **Deploy** it as a stable version;
+6. Promote the Production workspace to **Master**.
 
-If you’re **sure about all the changes** that you’ve done to your development workspace, it’s time to **release** a new version of your app.
+## Step 1 - Releasing a new app version
 
-We’ll use the `vtex release {major/minor/patch}` command to increment the version in the app’s `manifest.json` according to the SemVer (semantic versioning) best practices, update the app's `CHANGELOG.md`, create a release commit and a release tag and finally send the performed changes to the app's repository.
+If you’re sure about all the changes that you’ve done to your **development** workspace, it’s time to release a new app version.
 
-If you desire to release a beta version, you should run `vtex release {major/minor/patch} beta` in your terminal. This command will perform the same tasks as the previous one, the difference being that you’ll be launching a beta version for your app.
+By one simple command, we will be able to increment the version in the app’s `manifest.json` according to the SemVer (semantic versioning) best practices, update the app's `CHANGELOG.md`, create a release commit and a release tag and finally send the performed changes to the app's repository.
+
+Notice that **releasing a new app version will not create this new version on our infrastructure**. This means that **it will not be available yet for installing** in accounts and workspaces, neither will this new version be automatically upgraded on accounts that have this app's major installed. 
+
+In order to do so, you first need to release the app version and then publish it.
+
+1. Using your terminal, access the app's directory in your local files;
+2. Once in it, run one of the following command according to your app's needs:
+
+- `vtex release {major/minor/patch} stable` - To release a new **major** stable version;
+- `vtex release {major/minor/patch} stable` - To release a new **minor** stable version;
+- `vtex release {major/minor/patch} stable` - To release a new **patch** stable version.
+
+<div class="alert alert-warning">
+  <b>Remember te replace the values between the curly brackets according to your scenario.</b>
+</div>
+
+If you desire to release a **beta version**, you should run `vtex release {major/minor/patch} beta` in your terminal, adjusting the `{major/minor/patch}` value according to your app's needs. This command will perform the same tasks as the previous one, the difference being that you’ll be launching a beta version for your app.
 
 <div class="alert alert-warning">
 You must be logged into the account where you want the new app version to be released. Make sure the app’s <code>vendor</code> is <strong>equal</strong> to its <code>account</code>.
 </div>
 
-## Publishing
+## Step 2 - Publishing the new app version
 
-Once an app version is released, the app **must be installed** in order to test its new settings and behavior. However, it is not possible to install an app that only exists in your local environment. You must **publish** the app so that it can be installed by yourself or by others as well.
+Once an app version was already released, it must also be **installed** in order to test its new settings. 
 
-Use the `vtex publish` command to turn the new app’s version in which you were working into a **release candidate version**. Notice: a release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
+However, it is not possible to install an app that only exists in your local environment. Therefore, after the new app's version was released, you must publish it so that it can be installed by yourself or by others as well.
 
-<div class=“alert alert-warning”>
-You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
+<div class="alert alert-warning">
+You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to the <code>account</code> you are logged into.
 </div>
 
-If your app **doesn’t** have billing options, users with access to the account in which the app was published can install it through the Admin’s Apps section. Otherwise, the app can be installed using Toolbelt, regardless of the specified [billing method](http://help.vtex.com/en/tutorial/app-pricing-models--2ZKBKxLe08Q6seA6sCi6o2).
+Run the `vtex publish {appvendor}.{appname}@{appversion}` command to turn the new app’s version in which you were working into a **release candidate version**. 
 
-## Production workspace
+<div class="alert alert-warning">
+  <b>Remember te replace the values between the curly brackets according to your scenario.</b>
+</div>
 
-Now that you candidate release version is ready to be installed, you must **create a workspace in production mode** using the following command in order to test the app version settings and behavior:
+
+## Step 3 - Creating a Production workspace
+
+Workspaces in production mode are ready to **receive traffic**, that is, to be **accessed by other account users**. 
+
+Now that you candidate release version is ready to be installed, you must **create a workspace in production mode**  in order to test the app version settings and behavior. 
+
+1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference), log into the desired account;
+2. Once logged in, run the following command:
 
 ```sh
 vtex use {{WorkspaceName}} --production
 ```
 
 <div class="alert alert-warning">
-From this point onwards, any changes to the code are prohibited in the workspace, once it is ready to receive traffic, that is, to be accessed. If you want to change your code, work on it in a developer workspace and then follow the above-mentioned steps again.
+From this point onwards, any changes to the code are <b>prohibited</b> in the workspace and you can only install new apps. This means that you are not able to <b>link</b> any app as well. If you want to change your code, work on it in a developer workspace and then copy all performed changes to a production one.
 </div>
 
-### Instaling the candidate release version
+## Step 4 - Installing the candidate release version
 
-To install the candidate release in the new production workspace, simply run one of the following commands:
+A release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
+
+1. Make sure you still are logged into the desired account and using the Production workspace previously created. Then, run the following command:
 
 ```sh
 vtex install {appvendor}.{appname}@{appversion}
 ```
-
-<div class="alert alert-info">
-If you are releasing a <strong>beta</strong> app version and all settings were already tested by you, you should release a non-beta version for your app, publish it and install it in a production workspace, as stated previously. 
+<div class="alert alert-warning">
+  <b>Remember te replace the values between the curly brackets according to your scenario.</b>
 </div>
 
-## Validating
+## Step 5 - Validating the candidate release version
 
-Once the version is already installed in a production workspace, it is time to **validate your candidate release**. 
+Once the candidate release version is already installed in a production workspace, it is time to **validate** it. 
 
-1. Test the release candidate’s **stability** by means of an [A/B test](https://vtex.io/docs/recipes/store/running-native-ab-testing).
+You should test the release candidate’s by means of an [**A/B test**](https://vtex.io/docs/recipes/store/running-native-ab-testing).
 
-<div class="alert alert-info">
-  If you are releasing a <strong>beta</strong> app version and all settings were already tested by you, you should release a non-beta version for your app, publish it, install it in a production workspace and test its stability once more in order to follow the next step. 
+<div class="alert alert-warning">
+  If you are releasing a <strong>beta</strong> app version and all settings were already tested by you, you should release a non-beta version for your app, publish it, install it in a production workspace and test it once more using A/B test in order to follow to the next step. 
 </div>
 
-2. Use the `vtex deploy` command to **publish the release candidate as a stable version**. By using this command, your new app stable version will be automatically installed on all accounts that use your app.
+## Step 6 - Deploying the app stable version
 
-## Master workspace
+If all changes were already tested by you and everything is working as expected, it is time to deploy the candidate release as a stable version.
 
-Promoting a workspace to **master** means making any changes performed in it available to the end user, in other words, making your **new app version publicly available**.
+Still on the Production workspace, use the `vtex deploy {appvendor}.{appname}@{appversion}` command to **publish the release candidate as a stable version**. 
 
-You can promote your production mode workspace to master using the following command:
+<div class="alert alert-warning">
+  <b>Remember te replace the values between the curly brackets according to your scenario.</b>
+</div>
+
+Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
+
+## Step 7 - Promoting the Production workspace to Master
+
+Promoting a workspace to Master means **making any changes performed in it available to the end user**, in other words, making them publicly available.
+
+Once you are sure of the new app version and no further configurations are needed, you should promote to Master the Production workspace it is installed into.
+
+<div class="alert alert-dangerous">
+If you are developing a theme app, e.g. an app that is responsible for building your storefront, <b>make sure you've performed all needed changes regarding the store content</b> through your store theme code or the admin's Site Editor section.
+</div>
+
+1. Make sure you are [logged into](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference) an account and using the desired Production workspace to be promoted;
+2. Run the following command:
 
 ```sh
 vtex workspace promote
 ```
 
-<div class="alert alert-info">
-The status of a workspace in master is <code>production true</code>.
+<div class="alert alert-warning">
+<strong>You can not make changes to a Master workspace</strong> because it corresponds to the version that is available to the end user. Instead, work on the new code in a Development workspace, reproduce it in a Production workspace and then promote it. 
 </div>
 
----
-
-**Done**! Upon completing all the steps, your app’s new version will have been released, published, tested, validated and will finally be made public for all your end users!
+**Done!** Upon completing all the steps, your app’s new version will have been released, published, tested, validated and will finally be made public for all your end users!
 
 
