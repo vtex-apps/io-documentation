@@ -68,7 +68,7 @@ Workspaces in production mode are ready to **receive traffic**, that is, to be *
 
 Now that you candidate release version is ready to be installed, you must **create a workspace in production mode**  in order to test the app version settings and behavior. 
 
-1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into the desired account;
+1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference), log into the desired account;
 2. Once logged in, run the following command:
 
 ```sh
@@ -124,7 +124,7 @@ Once you are sure of the new app version and no further configurations are neede
 If you are developing a theme app, e.g. an app that is responsible for building your storefront, <b>make sure you've performed all needed changes regarding the store content</b> through your store theme code or the admin's Site Editor section.
 </div>
 
-1. Make sure you are logged into an account and using the desired Production workspace to be promoted;
+1. Make sure you are [logged into](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference) an account and using the desired Production workspace to be promoted;
 2. Run the following command:
 
 ```sh
