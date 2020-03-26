@@ -21,11 +21,11 @@ But notice: **the Production workspace will not inherit the changes performed in
 2. Run the following command:
 
 ```sh
-vtex use {{workspaceName}} --production
+vtex use {workspaceName} --production
 ```
 
 <div class="alert alert-warning">
-<b>Remember te replace the values between the curly brackets according to your scenario.</b>
+<b>Remember te replace the values between the curly brackets according to your scenario and your needs.</b>
 </div>
 
 From this point onwards, any changes to the code are <b>prohibited</b> in the workspace and you can only install new apps. This means that you are not able to <b>link</b> any app as well. If you want to change your code, work on it in a developer workspace and then copy all performed changes to a production one.
