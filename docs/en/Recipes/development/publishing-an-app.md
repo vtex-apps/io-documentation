@@ -16,10 +16,15 @@ However, it is not possible to [install an app](https://vtex.io/docs/recipes/sto
 ## Step by step
 
 1. Make sure the app you are about to publish already has been [released](https://vtex.io/docs/recipes/development/releasing-a-new-app-version);
-2. Use the `vtex publish` command to turn the new app’s version in which you were working into a **release candidate version**. Notice: a release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
 
 <div class="alert alert-warning">
-You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to its <code>account</code>.
+You always must be logged into the account where you want the new app version to be published. Make sure the app’s <code>vendor</code> is <b>equal</b> to the <code>account</code> you are logged into.
+</div>
+
+2. Use the `vtex publish {appvendor}.{appname}@{appversion}` command to turn the new app’s version in which you were working into a **release candidate version**. Notice: a release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
+
+<div class="alert alert-warning">
+  <b>Remember te replace the values between the curly brackets according to your scenario.</b>
 </div>
 
 3. Using a [Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace), [install](https://vtex.io/docs/recipes/development/installing-an-app) the release candidate. 
