@@ -11,7 +11,9 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 Workspaces in production mode are ready to **receive traffic**, that is, to be **accessed by other account users**. 
 
-Once you are sure of your changes performed in a Development workspace, it is time to create a Production one in order to test them! But notice: **the Production workspace will not inherit the changes performed in the Developer workspace. You will need to replicate the code and the changes performed into the  production mode workspace.**
+Once you are sure of your changes performed in the Development workspace, it is time to create a Production one in order to test them with traffic.
+
+But notice: **the Production workspace will not inherit the changes performed in the Developer workspace**. All changes performed in the Development workspace will need to be replicated by you into the new Production workspace.
 
 ## Step by step
 
