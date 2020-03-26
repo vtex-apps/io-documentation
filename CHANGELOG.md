@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Several Toolbelt docs are now up-to-date.
+
 ## [0.29.0] - 2020-03-24
 
 ## [0.28.1] - 2020-03-24
