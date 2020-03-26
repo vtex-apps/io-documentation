@@ -17,15 +17,19 @@ But notice: **the Production workspace will not inherit the changes performed in
 
 ## Step by step
 
-You can create a production workspace simply running the following command: 
+1. [Log into](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference) the desired account;
+2. Run the following command:
 
 ```sh
 vtex use {{workspaceName}} --production
 ```
 
 <div class="alert alert-warning">
-From this point onwards, any changes to the code are <b>prohibited</b> in the workspace and you can only install new apps. This means that you are not able to <b>link</b> any app as well. If you want to change your code, work on it in a developer workspace and then copy all performed changes to a production one.
+  <b>Remember te replace the values between the curly brackets according to your scenario.</b>
 </div>
+
+
+From this point onwards, any changes to the code are <b>prohibited</b> in the workspace and you can only install new apps. This means that you are not able to <b>link</b> any app as well. If you want to change your code, work on it in a developer workspace and then copy all performed changes to a production one.
 
 Once all configurations were tested, you can [promote the Production workspace to Master](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master), making any changes performed available to the end user.  
 
