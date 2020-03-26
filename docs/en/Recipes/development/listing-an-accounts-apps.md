@@ -11,11 +11,14 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 While developing in an account, we should be aware of all its installed or linked apps. With Toolbelt, access to the app list is made easy by running a single command.
 
-## Command
+## Step by step
+
+1. Using your terminal and the [VTEX IO Toobelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into the desired account;
+2. Once logged in, run the following command:
 
 `vtex list`
 
-By running the above-mentioned command, Toolbelt will display a table containing the account’s installed and linked apps, in addition to their respective version, as shown in the example below: 
+Toolbelt will then display a table containing the account’s installed and linked apps, in addition to their respective version, as shown in the example below: 
 
 ![listing-apps](https://user-images.githubusercontent.com/52087100/67044546-dfe3fd00-f102-11e9-83d7-936f229b7b26.png)
 
