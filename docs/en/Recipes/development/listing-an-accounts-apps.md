@@ -13,7 +13,7 @@ While developing in an account, we should be aware of all its installed or linke
 
 ## Step by step
 
-1. Using your terminal and the [VTEX IO Toobelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into the desired account;
+1. Using your terminal and the [VTEX IO Toobelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference), log into the desired account;
 2. Once logged in, run the following command:
 
 `vtex list`
