@@ -48,4 +48,9 @@ If you are releasing a <code>beta app version</code> and all settings were alrea
 By using this command, Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
 
 
+<div class="alert alert-info">
+Publishing an app is one of the steps to <b>making your code's new version public</b>, meaning that it will become available to your end users. For more details on the next steps and to better understand the full flow, access the recipe on <a href="https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available">Making your new app version publicly available</a>.
+</div>
+
+
 
