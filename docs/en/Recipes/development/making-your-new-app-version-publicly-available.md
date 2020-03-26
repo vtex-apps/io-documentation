@@ -15,7 +15,7 @@ If you’re comfortable with the configurations you’ve performed and want your
 2. **Publish** a release candidate for it;
 3. Install it in a **Production workspace**;
 4. **Validate** your release candidate;
-5. Deploy it as a stable version;
+5. **Deploy** it as a stable version;
 6. Promote the Production workspace to **Master**.
 
 ## Step 1 - Releasing a new app version
