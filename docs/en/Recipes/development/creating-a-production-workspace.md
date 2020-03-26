@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 Workspaces in production mode are ready to **receive traffic**, that is, to be **accessed by other account users**. 
 
-Once you are sure of your changes performed in a Development workspace, it is time to create a Production one in order to test them! But notice: **the Production workspace will not inherit the changes performed in the Development one**. You will need to reproduce all changes previously performed in the new workspace in order for them to be tested with traffic. 
+Once you are sure of your changes performed in a Development workspace, it is time to create a Production one in order to test them! But notice: **the Production workspace will not inherit the changes performed in the Developer workspace. You will need to replicate the code and the changes performed into the  production mode workspace.**
 
 ## Step by step
 
@@ -26,3 +26,9 @@ From this point onwards, any changes to the code are <b>prohibited</b> in the wo
 </div>
 
 Once all configurations were tested, you can [promote the Production workspace to Master](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master), making any changes performed available to the end user.  
+
+<div class="alert alert-info">
+  Creating a Production workspace is one of the steps to <b>making your code's new version public</b>, meaning that it will become available to your end users. For more details on the next steps and to better understand the full flow, access the recipe on <a href="https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available">Making your new app version publicly available</a>.
+</div>
+
+
