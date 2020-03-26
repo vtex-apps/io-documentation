@@ -15,7 +15,7 @@ Only a [Production workspace](https://vtex.io/docs/recipes/development/creating-
 
 ## Step by step
 
-1. Make sure you are logged into an account and using the desired Production workspace to be promoted;
+1. Make sure you are [logged into](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference) an account and using the desired Production workspace to be promoted;
 2. Run the following command:
 
 `vtex workspace promote`
