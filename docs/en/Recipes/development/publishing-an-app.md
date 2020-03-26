@@ -13,7 +13,7 @@ Once an app version was already [released](https://vtex.io/docs/recipes/store/re
 
 However, it is not possible to [install an app](https://vtex.io/docs/recipes/store/installing-an-app) that only exists in your local environment. Therefore, after the new app's version was released, you must publish it so that it can be installed by yourself or by others as well.
 
-## Command
+## Step by step
 
 1. Use the `vtex publish` command to turn the new app’s version in which you were working into a **release candidate version**. Notice: a release candidate can **only** be installed on an account for testings if the user orders Toolbelt to install the exact version.
 
@@ -33,6 +33,6 @@ A Release Candidate can <b>only</b> be installed in an account for testings if t
 If you are releasing a <code>beta app version</code> and all settings were already tested by you, you should release a non-beta version for your app, publish it, install it in a production workspace and test its stability once more in order to follow the next step. 
 </div>
 
-3. Use the `vtex deploy` command to **publish the release candidate as a stable version**. By using this command, Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
+4. Use the `vtex deploy` command to **publish the release candidate as a stable version**. By using this command, Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
 
 
