@@ -39,6 +39,13 @@ A Release Candidate can <b>only</b> be installed in an account for testings if t
 If you are releasing a <code>beta app version</code> and all settings were already tested by you, you should release a non-beta version for your app, publish it, install it in a production workspace and test its stability once more in order to follow the next step. 
 </div>
 
-5. Use the `vtex deploy` command to **publish the release candidate as a stable version**. By using this command, Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
+5. Use the `vtex deploy {appvendor}.{appname}@{appversion}` command to **publish the release candidate as a stable version**. 
+
+<div class="alert alert-warning">
+  <b>Remember te replace the values between the curly brackets according to your scenario.</b>
+</div>
+
+By using this command, Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
+
 
 
