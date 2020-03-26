@@ -26,6 +26,10 @@ In order to do so, you first need to release the app version and then [**publish
 - `vtex release {major/minor/patch} stable` - To release a new **minor** stable version;
 - `vtex release {major/minor/patch} stable` - To release a new **patch** stable version.
 
+<div class="alert alert-warning">
+  <b>Remember te replace the values between the curly brackets according to your scenario.</b>
+</div>
+
 If you desire to release a **beta version**, you should run `vtex release {major/minor/patch} beta` in your terminal, adjusting the `{major/minor/patch}` value according to your app's needs. This command will perform the same tasks as the previous one, the difference being that you’ll be launching a beta version for your app.
 
 <div class="alert alert-warning">
