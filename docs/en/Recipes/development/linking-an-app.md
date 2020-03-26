@@ -14,7 +14,7 @@ When linking an app, your computer's local files sync to our cloud development e
 In practice, you will be able to actually verify your changes by accessing the account you are logged in using the workspace you are using to develop.
 
 <div class="alert alert-warning">
-Linking an app is only possible in <b>Development</b> workspaces. When using a Production workspace, an app can only be tested if it is already published and installed. 
+Linking an app is only possible in <b>Development</b> workspaces. When using a Production workspace, an app can only be tested if it is already <a href="https://vtex.io/docs/recipes/development/publishing-an-app">published</a> and <a href="https://vtex.io/docs/recipes/development/installing-an-app">installed</a>. 
 </div>
 
 ## Step by step
