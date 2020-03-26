@@ -11,16 +11,15 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 Promoting a workspace to Master means making any changes performed in it available to the end user, in other words, making them publicly available.
 
-Only a [Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace) can be promoted to Master. 
+Only a [Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace) can be promoted to Master. Developer workspaces only must be used for code development. 
 
-## Command
+## Step by step
 
-If your workspace is already in production mode, it can be promoted to master using using the following command:
+1. Make sure you are logged into an account and using the desired Production workspace to be promoted;
+2. Run the following command:
 
 `vtex workspace promote`
 
-**Notice**: you must be currently logged into an account and using the desired Production workspace to run the command stated above.
-
 <div class="alert alert-warning">
-<strong>You can not make changes to a master workspace</strong> because a master workspace corresponds to the version that is available to the end user. Instead, work on the new code in development workspace, reproduce it in a production workspace and then promote it. 
+<strong>You can not make changes to a Master workspace</strong> because it corresponds to the version that is available to the end user. Instead, work on the new code in a Development workspace, reproduce it in a Production workspace and then promote it. 
 </div>
