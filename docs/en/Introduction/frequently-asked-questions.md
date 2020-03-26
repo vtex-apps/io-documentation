@@ -76,7 +76,7 @@ In addition, you can benefit from our documentation and always be up-to-date wit
 
 ### I want to use Store Framework. What do I need to do?
 
-Welcome aboard, then! Simply access our getting started material on how to [build a store using Store Framework](https://vtex.io/docs/getting-started/build-stores-with-vtex-io/1).  
+Welcome aboard, then! Simply access our getting started material on how to [build a store using Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1).  
 
 <div class="alert alert-info">  
 <b>You haven't found the answer you were looking for?</b>
