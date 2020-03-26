@@ -34,7 +34,7 @@ If your account is new enough, an Edition App may have already come installed on
 In scenarios where no Edition app is installed, one of the Edition Apps available in the `vtex` registry must be manually installed. Presently, they are:
 
 -   `vtex.edition-business@0.x`: for stores whose front-end is on VTEX's [CMS](https://help.vtex.com/tutorial/what-is-cms--EmO8u2WBj2W4MUQCS8262);
--   `vtex.edition-store@2.x`: for stores whose front-end is on VTEX IO's [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-vtex-io/1).
+-   `vtex.edition-store@2.x`: for stores whose front-end is on VTEX IO's [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1).
 
 3. [Open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the most suitable Edition installment. If you have access to the `vtex` account, you will be able to install the Edition app that most fits to your store's account scenario using the following Toolbelt commands: `vtex edition set vtex.edition-store@2.x` or `vtex edition set vtex.edition-business@0.x`. 
 

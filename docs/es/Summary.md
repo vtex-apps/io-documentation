@@ -3,7 +3,7 @@
 - Getting Started
 
   - [What is VTEX IO](getting-started/what-is-vtex-io/1)
-  - [Build stores with VTEX IO](getting-started/build-stores-with-vtex-io/1)
+  - [Build stores with VTEX IO](getting-started/build-stores-with-store-framework/1)
 
 - Recipes
 
