@@ -35,3 +35,8 @@ If you desire to release a **beta version**, you should run `vtex release {major
 <div class="alert alert-warning">
 You must be logged into the account where you want the new app version to be released. Make sure the app’s <code>vendor</code> is <strong>equal</strong> to its <code>account</code>.
 </div>
+
+
+<div class="alert alert-info">
+Releasing a new app version is one of the steps to <b>making your code's new version public</b>, meaning that it will become available to your end users. For more details on the next steps and to better understand the full flow, access the recipe on <a href="https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available">Making your new app version publicly available</a>.
+</div>
