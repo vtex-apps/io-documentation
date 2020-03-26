@@ -17,9 +17,10 @@ Notice that **releasing a new app version will not create this new version on ou
 
 In order to do so, you first need to release the app version and then [**publish**](https://vtex.io/docs/recipes/development/publishing-an-app) it.
 
-## Command
+## Step by step
 
-Open your terminal and run one of the following command according to your app's needs:
+1. Using your terminal, access the app's directory in your local files;
+2. Once in it, run one of the following command according to your app's needs:
 
 - `vtex release {major/minor/patch} stable` - To release a new **major** stable version;
 - `vtex release {major/minor/patch} stable` - To release a new **minor** stable version;
