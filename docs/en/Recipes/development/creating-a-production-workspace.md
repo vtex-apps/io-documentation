@@ -7,18 +7,26 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
 ---
 
-# Creating a production workspace
+# Creating a Production workspace
 
-Workspaces in production mode are ready to receive traffic, that is, to be accessed by other account users. Once you are sure of your changes to the code, it is time to create one.  
+Workspaces in production mode are ready to **receive traffic**, that is, to be **accessed by other account users**. 
 
-## Command
+Once you are sure of your changes performed in a Developer workspace, it is time to create a Production one.  
 
-You can create a production workspace simply using the following command: 
+<div class="alert alert-warning">
+The Production workspace will not inherit the changes performed in the Developer one. You will need to replicate the code and changes performed to the workspace in production mode.
+</div>
+
+## Step by step
+
+You can create a production workspace simply running the following command: 
 
 ```sh
-vtex use {{workspacename}} --production
+vtex use {{workspaceName}} --production
 ```
 
 <div class="alert alert-warning">
-From this point onwards, any changes to the code are prohibited in the workspace. If you want to change your code, work on it in a developer workspace and then switch to a production one.
+From this point onwards, any changes to the code are <b>prohibited</b> in the workspace and you can only install new apps. This means that you are not able to <b>link</b> any app as well. If you want to change your code, work on it in a developer workspace and then copy all performed changes to a production one.
 </div>
+
+Once all configurations were tested, you can [promote the Production workspace to Master](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master), making any changes performed available to the end user.  
