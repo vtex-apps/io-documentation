@@ -32,3 +32,8 @@ After that, IO performs a series of tasks on its own until the following message
 From then on, every change can be seen in your browser in real time. But remember: the changes remain in your local files and can only be seen using the workspace you are workingon. 
 
 If you are confortable with your changes and want to **make your changes publicly available** , verify our [documentation](https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available) for it.
+
+
+<div class="alert alert-info">
+Linking an app is one of the steps to <b>making your code's new version public</b>, meaning that it will become available to your end users. For more details on the next steps and to better understand the full flow, access the recipe on <a href="https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available">Making your new app version publicly available</a>.
+</div>
