@@ -1,5 +1,5 @@
 ---
-title: Creating a production workspace
+title: Creating a Production workspace
 description: "Create a workspace in production mode and test your app settings in a environment ready to receive traffic."
 date: "04/09/2019"
 tags: ["create", "creating", "production", "workspace", "production-mode"]
