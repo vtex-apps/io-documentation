@@ -15,6 +15,8 @@ By one simple command, we will be able to increment the version in the app’s `
 
 Notice that **releasing a new app version will not create this new version on our infrastructure**. This means that **it will not be available yet for installing** in accounts and workspaces, neither will this new version be automatically upgraded on accounts that have this app's major installed. 
 
+In order to do so, you first need to release the app version and then [**publish**](https://vtex.io/docs/recipes/development/publishing-an-app) it.
+
 ## Command
 
 Open your terminal and run one of the following command according to your app's needs:
