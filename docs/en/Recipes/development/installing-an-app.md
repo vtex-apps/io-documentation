@@ -9,12 +9,15 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Installing an app
 
-Installing an app in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace) is a fundamental step for testing the reliability of your new code settings. Once your app is already [published](https://vtex.io/docs/recipes/store/publishing-an-app), you should follow the steps below
+Installing an app is a fundamental step for testing the reliability of your new code settings. 
 
-## Command
+Once your app is already [published](https://vtex.io/docs/recipes/store/publishing-an-app), you are able to install it in any workspace you may be working on.
 
-To install an app in the production workspace, simply run one of the following commands:
+## Step by step
 
-- `vtex install` if you are currently in the app's folder.
-- `vtex install {appvendor}.{appname}` to install the latest version of the app.
-- `vtex install {appvendor}.{appname}@{appversion}` to install a specific version of the app.
+1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), make sure you are logged into the desired account and using the desired workspace;
+2. Then, run one of the following commands according to your needs and scenario:
+
+- `vtex install {appVendor}.{appName}` - To install the **latest version** of the app;
+- `vtex install {appVendor}.{appName}@{appVersion}` - To install a **specific version** of the app;
+- `vtex install` - To install the **latest version** of the app if you are currently in the **app's directory**.
