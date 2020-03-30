@@ -81,8 +81,8 @@
   - [Content Blocks](apps/content-blocks)
   
   - [Functional](apps/functional)
-    - [Challenge](apps/functional/challenge)
-    - [Checkout UI Settings](apps/functional/checkout-ui-settings)
+    - [Challenge](apps/functional/vtex.challenge-tp-condition)
+    - [Checkout UI Settings](apps/functional/vtex.checkout-ui-settings)
 
   - [Pixel](apps/pixel)
     - [Accessibe](apps/pixel/vtex.accessibe)
