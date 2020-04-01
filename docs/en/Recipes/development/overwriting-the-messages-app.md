@@ -19,13 +19,13 @@ This recipe will show you how to overwrite the Messages app and easily create ne
 
 ## Step by step
 
-1. [Install](https://vtex.io/docs/recipes/store/installing-an-app) the `vtex.admin-graphql-ide@3.x` app using your terminal.
+1. [Install](https://vtex.io/docs/recipes/store/installing-an-app) the `vtex.admin-graphql-ide@3.x` app using your terminal;
 
 2. Access the **GraphQL admin IDE** section of the desired account. You may find it in the admin's side-bar menu:
 
 ![overwriting-messages-adminsidebarmenu](https://user-images.githubusercontent.com/52087100/66516950-95d29a00-eab8-11e9-8cea-080fbdab84d5.png)
 
-3. From the dropdown list, choose the `vtex.messages` app.
+3. From the dropdown list, choose the `vtex.messages` app;
 4. Write the following mutation command in the text box that is displayed:
 
 ```graphql
@@ -34,10 +34,15 @@ mutation Save($args: SaveArgsV2!) {
 }
 ```
 
-5. Then, click on  __Query variables__ at the bottom of the page. 
+5. Then, click on  __Query variables__ at the bottom of the page;
 6. **According to your store's desired scenario** (catalog or app messages translation), type the following variables into the text box:
 
 ### Catalog translations
+
+<div class="alert alert-info">
+Use the following variable if you aim to translate text messages from your store's catalog, such as a product name and description.
+</div>
+
 
 ```json
 {
@@ -64,6 +69,10 @@ mutation Save($args: SaveArgsV2!) {
 - `context`: message translation context. This variable is not mandatory and only serves to give Messages the context desired for the translation, since the same word can have different meaning depending on the language. If you want o use this variable, you'll have to add, between 3 parenthesis, the desired context to the product name, in the admin's catalog. I.e:  `Mouse (((rodent)))`. The desired value will therefore not be displayed next to the product name and will only be used to the catalog translation.
 
 ### App messages
+
+<div class="alert alert-info">
+Use the following variable if you aim to translate text messages exported from an app (declared in the app's <code>messages</code> folder.
+</div>
 
 ```json
 {

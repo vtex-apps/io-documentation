@@ -46,7 +46,7 @@
     - [Setting up Google Tag Manager](recipes/store-management/setting-up-google-tag-manager.md)
     - [Setting up Google Analytics search tracking](recipes/store-management/setting-up-google-analytics-search-tracking.md)
 
-  - [Development](recipes/development)
+  - [VTEX IO Development](recipes/development)
 
     - [VTEX IO CLI installment and command reference](recipes/development/vtex-io-cli-installment-and-command-reference.md)
     - [Running A/B tests](recipes/development/running-native-ab-testing.md)

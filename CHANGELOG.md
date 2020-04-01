@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed 
+
+- Summary: Developer category is now VTEX IO Development;
+- Overwriting Messages app: Added description for each section.
+
 ## [0.29.3] - 2020-03-30
 
 ## [0.29.2] - 2020-03-26
