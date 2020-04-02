@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.30.0] - 2020-04-02
+
 ### Added and fixed
 
 - Fixed: Running A/B tests;
