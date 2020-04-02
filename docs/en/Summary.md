@@ -40,6 +40,7 @@
   - [Store Management](recipes/store-management)
 
     - [Configuring a B2B environment](recipes/store-management/configuring-a-b2b-environment.md)
+    - [Installing apps in live stores: best practices](recipes/store-management/installing-apps-in-live-stores-best-practices.md)
     - [Enabling the store's PWA notice](recipes/store-management/enabling-the-stores-pwa-notice.md)
     - [Enabling the Order Form optimization](recipes/store-management/enabling-order-form-optimization.md)
     - [Installing the Google Tag Manager app](recipes/store-management/installing-the-google-tag-manager-app.md)
