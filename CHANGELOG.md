@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added and fixed
+
+- Fixed: Running A/B tests;
+- Added: Installing apps in live stores: best practices.
+
 ## [0.29.4] - 2020-04-01
 
 ### Fixed 
