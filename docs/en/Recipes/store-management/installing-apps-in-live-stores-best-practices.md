@@ -1,8 +1,8 @@
 ---
 title: Installing apps in live stores: best practices
-description: "Without a clear visibility of their potential impact, performing changes that directly affect your store's operation becomes extremely risky. But it doesn't have to be. Learn now the best practices to install new apps in your live store. "
+description: "Without a clear visibility of their potential impact, performing changes that directly affect your store's operation becomes extremely risky. But it doesn't have to be. Learn now the best practices to install new apps in your live store."
 date: "2020-04-02"
-tags: ["a/b-test", "a/b", "installing", "best-practices", "live"]
+tags: ["ab-test", "a/b", "installing", "best-practices", "live"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/configuring-a-b2b-environment.md"
 ---
@@ -13,7 +13,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 Once a store is live, worries and uncertainties about security, stability and performance begin to grow.
 
-Without a clear visibility of their potential impact, performing changes that directly affect your store's operation, such as installing new apps, becomes extremely risky. But it doesn't have to be.
+Without a clear visibility of their potential impact, performing changes that directly affect your store's operation, such as installing new apps, becomes extremely risky. **But it doesn't have to be**.
 
 You can follow best practices to mitigate any loss your store may face - from stability to sales conversion.
 
