@@ -4,7 +4,7 @@ description: "Without a clear visibility of their potential impact, performing c
 date: "2020-04-02"
 tags: ["ab-tests", "install", "apps", "best-practices"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/a/b-testing-and-best-practices/docs/en/Recipes/store-management/installing-apps-in-live-stores-best-practices.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/store/installing-apps-in-live-stores-best-practices.md"
 ---
 
 # Installing apps in live stores: best practices
