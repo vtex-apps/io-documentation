@@ -82,14 +82,14 @@ However, it's common to come across store scenarios whose customization uses CSS
 
 This customization practice by HTML hierarchy was mostly deprecated. It means that **only** the CSS Selectors listed below will continue to be allowed for your store customization:
 
-- `:hover`   
-- Link selectors, such as `:visited`, `:active` and `:focus`.   
-- Every pseudo-element, such as  `::before`, `::after` and `::placeholder`. 
-- `:nth-child(even)` and `:nth-child(odd)` 
+- Pseudo-selectors `:hover`, `:visited`, `:active`, `:disabled`, `:focus`, `:local`, and `:target`
+- `:not()`
 - `:first-child` and `:last-child`
-- Descendant combination element through space, such as `.{Element1} .{Element2}` 
-- `[data-*]` 
-- `:global(vtex-{AppName}-{AppVersion}-{ComponentName})`
+- `:nth-child(even)` and `:nth-child(odd)`
+- All pseudo-elements, such as  `::before`, `::after` and `::placeholder`
+- Space combinator (e.g. `.foo .bar`)
+- `[data-...]`
+- `:global(vtex-{AppName}-{AppVersion}-{ComponentName})` for selection of elements that come from different apps
 
 **Any CSS Selectors not on this list, such as** `:nth-child(n)`**,** `foo > bar` **and** `[alt="bar"]`**, will no longer be accepted by Toolbelt during the [linking](https://vtex.io/docs/recipes/store/linking-an-app) of the store's theme with its local files.**
 
