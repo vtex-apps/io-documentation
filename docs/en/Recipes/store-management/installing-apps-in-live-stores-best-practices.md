@@ -1,5 +1,5 @@
 ---
-title: Installing apps in live stores: best practices
+title: "Installing apps in live stores: best practices"
 description: "Without a clear visibility of their potential impact, performing changes that directly affect your store's operation becomes extremely risky. But it doesn't have to be. Learn now the best practices to install apps in live stores."
 date: "2020-04-02"
 tags: ["ab-tests", "install", "apps", "best-practices"]
