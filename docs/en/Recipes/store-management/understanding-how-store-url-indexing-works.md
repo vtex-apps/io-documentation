@@ -4,7 +4,7 @@ description: "Understand how VTEX IO indexes your store's URLs."
 date: "2020-04-08"
 tags: ["indexing", "url", "seo", "canonical", "most-visited"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/style/using-css-handles-for-store-customization.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs/docs/en/Recipes/store-management/understanding-how-store-url-indexing-works.md"
 ---
 
 # Understanding how store URL indexing works
