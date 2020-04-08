@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added and fixed
+
+- Fixed: VTEX IO CLI installment and command reference
+- Added: Managing URL redirects, Understanding how store URL indexing works and Contributing with new CSS Handles.
+
 ## [0.30.2] - 2020-04-07
 
 ## [0.30.1] - 2020-04-06
