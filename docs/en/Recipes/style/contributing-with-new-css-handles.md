@@ -4,7 +4,7 @@ description: "Create new CSS Handles whenever you feel the need following this s
 date: "2020-04-08"
 tags: ["contribution", "contributing", "css", "handles"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/adding-new-docs/docs/en/Recipes/development/configuring-an-edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs/docs/en/Recipes/style/contributing-with-new-css-handles.md"
 ---
 
 # Contributing with new CSS Handles
