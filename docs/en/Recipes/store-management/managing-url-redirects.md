@@ -4,7 +4,7 @@ description: "VTEX IO offers a fast and easy way to add, remove and manage your 
 date: "2020-04-08"
 tags: ["adding", "removing", "verifying", "managing", "url", "redirect"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/adding-new-docs/docs/en/Recipes/development/configuring-an-edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs/docs/en/Recipes/store-management/managing-url-redirects.md"
 ---
 
 # Managing URL Redirects
