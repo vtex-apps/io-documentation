@@ -1,13 +1,13 @@
 ---
-title: VTEX IO CLI installment and command reference
+title: VTEX IO CLI installation and command reference
 description: "Any development in VTEX IO begins and ends with the Toolbelt, our CLI (Command Line Interface). Learn now how to install it in your terminal and all needed command to development in the platform."
 date: "2020-03-23"
-tags: ["toolbelt", "cli", "command-line-interface", "commands", "install", "installment"]
+tags: ["toolbelt", "cli", "command-line-interface", "commands", "install", "installation"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/vtex-io-cli-installment-and-command-reference.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/vtex-io-cli-installation-and-command-reference.md"
 ---
 
-# VTEX IO CLI installment and command reference
+# VTEX IO CLI installation and command reference
 
 Any development in VTEX IO begins and ends with the **Toolbelt**, our CLI (Command Line Interface). 
 
