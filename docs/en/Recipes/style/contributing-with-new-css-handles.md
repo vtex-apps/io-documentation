@@ -112,7 +112,7 @@ Following our example, we would have something like:
 <div class="vtex-foobar-1-x-headline ph0 mr2">
 ```
 
-### Using the `import styles from './styles.css'` function
+#### Using the `import styles from './styles.css'` function
  
 1. Open the CSS file referenced in the `import styles from './styles.css'` function;
 
