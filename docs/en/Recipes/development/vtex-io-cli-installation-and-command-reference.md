@@ -82,6 +82,9 @@ If the error persists, don't hesitate to [send a ticket](https://help-tickets.vt
 | `local token` | Displays the user's authentication token current being used and copies it to the clipboard. | `vtex local token`|
 | `promote` | Promotes the production workspace you are working in to Master. | `vtex workspace promote` | 
 | `publish` | Publishes the app as a release candidate version. | `vtex publish vtex.menu@2.23.1` or `vtex publish`  | 
+| `redirects import` | Adds a URL redirect into the account and workspace you are logged into. | `vtex redirects import {fileName}.csv` |
+| `redirects export` | Gets existing redirects from the account and workspace you are logged into. | `vtex redirects export {fileName}.csv`|
+| `redirects delete` | Deletes redirects in the the account and workspace you are logged into. | `vtex redirects delete {urlPath}` |
 | `release` | Only for git users. When executed in the app's directory, it releases the app's new version in the `manifest.json` file according to SemVer (semantic versioning) best practices, updates the `CHANGELOG.md` file, assigns commit tags and sends the performed changes to the app's repository.  | `vtex release major beta` | 
 | `support` |  Logs you into an account using a support role. | `vtex support storecomponents` | 
 | `test` | Runs the app's **unit tests** according to the directory you are in (in case the app has any tests already configured for it). | `vtex test`| 
