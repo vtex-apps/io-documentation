@@ -4,7 +4,7 @@ description: "Builders concept"
 date: "2020-04-09"
 tags: ["builders"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Concepts/builders.md"
 ---
 
 # Builders
