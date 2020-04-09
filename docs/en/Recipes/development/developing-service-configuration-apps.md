@@ -1,13 +1,13 @@
 ---
-title: Creating service configuration apps
-description: "Improve your VTEX IO app development by creating another app which is solely dedicated to services configuration."
+title: Developing service configuration apps
+description: "Improve your VTEX IO app development by developing another app which is solely dedicated to services configuration."
 date: "2020-04-09"
-tags: ["create", "creating", "service", "configurations", "settings", "apps"]
+tags: ["develop", "development", "service", "configurations", "settings", "apps"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/development/creating-service-configuration-apps.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/development/developing-service-configuration-apps.md"
 ---
 
-# Creating service configuration apps
+# Developing service configuration apps
 
 ## Introduction
 
@@ -23,7 +23,7 @@ By becoming apps that are **independent**, service configurations gain the follo
 - **Versioning**, which makes it easier to rollback or deprecate;
 - Can be **altered according to requests sent by other platform apps**, allowing a single service to be individually configured by one or more apps. 
 
-Read the instructions below to better understand how you can improve your VTEX IO app development by creating another app which is solely dedicated to services configuration.
+Read the instructions below to better understand how you can improve your VTEX IO app development by developing another app which is solely dedicated to services configuration.
 
 ## Step by step
 
