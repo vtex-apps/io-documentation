@@ -4,7 +4,7 @@ description: "Improve your VTEX IO app development by creating another app which
 date: "2020-04-09"
 tags: ["create", "creating", "service", "configurations", "settings", "apps"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/development/creating-service-configuration-apps.md"
 ---
 
 # Creating service configuration apps
