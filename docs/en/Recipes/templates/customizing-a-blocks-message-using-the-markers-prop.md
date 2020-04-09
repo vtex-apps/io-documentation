@@ -4,7 +4,7 @@ description: "Use the Markers prop and customize messages exported by blocks."
 date: "2020-04-09"
 tags: ["message", "markers", "prop", "customize"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs/docs/en/Recipes/style/contributing-with-new-css-handles.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/templates/customizing-a-blocks-message-using-the-markers-prop.md"
 ---
 
 # Customizing a block's message using the Markers prop
