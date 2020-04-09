@@ -4,7 +4,7 @@ description: "Interfaces concept"
 date: "2020-04-09"
 tags: ["interface"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Concepts/interfaces.md"
 ---
 
 # Interfaces
