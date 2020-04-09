@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.32.0] - 2020-04-09
+
 ### Added
 
 - New recipes: Creating a development workspace | Developing service configuration apps | Creating a native form for your store users | Using the Markers prop to customize a block's message
