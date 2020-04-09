@@ -50,9 +50,7 @@ And, of course, they should **concisely express the app's  purpose.** You should
 
 ## Version
 
-We follow the [Semantic Versioning specification](https://semver.org/) for versioning our apps, which differences how we release new version. For development, **you should always start with major 0**, so, for new apps, **don't request whitelist for majors 1 or greater**.
-
-When publishing the app, making it publicly available, **it should start with major 1**, like `1.0.0`.
+We follow the [Semantic Versioning specification](https://semver.org/) for versioning our apps, which impacts on how we release new versions. For development, **you should always start with major 0**, so, for new apps, **don't request whitelist for majors 1 or greater**.
 
 If you want to know more about VTEX versioning and release process, check [this doc](https://vtex.io/docs/recipes/development/releasing-a-new-app-version/) on our VTEX IO documentation.
 
