@@ -15,8 +15,12 @@
 
 - Concepts
 
+  - [Builders](concepts/builders)
   - [Edition App](concepts/edition-app)
+  - [Interfaces](concepts/interfaces)
   - [Sponsor Account](concepts/sponsor-account)
+  - [Toolbelt](concepts/toolbelt)
+  - [Workspace](concepts/workspace)
 
 - Recipes
 
@@ -26,6 +30,7 @@
     - [Customizing your store’s typography](recipes/style/customizing-your-stores-typography.md)
     - [Using CSS Handles for store customization](recipes/style/using-css-handles-for-store-customization.md)
     - [Contributing with new CSS Handles](recipes/style/contributing-with-new-css-handles.md)
+    - [Using the Markers prop to customize a block's message](recipes/style/using-the-markers-prop-to-customize-a-blocks-message.md)
 
   - [Templates](recipes/templates)
 
@@ -37,6 +42,7 @@
     - [Building a Product Details Page](recipes/templates/building-a-product-details-page.md)
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
+    - [Creating a native form for your store users](recipes/templates/creating-a-native-form-for-your-store-users.md)
 
   - [Store Management](recipes/store-management)
 
@@ -60,9 +66,11 @@
     - [Releasing a new app version](recipes/development/releasing-a-new-app-version.md)
     - [Publishing an app](recipes/development/publishing-an-app.md)
     - [Installing an app](recipes/development/installing-an-app.md)
-    - [Creating a production workspace](recipes/development/creating-a-production-workspace.md)
+    - [Creating a Development workspace](recipes/development/creating-a-development-workspace.md)
+    - [Creating a Production workspace](recipes/development/creating-a-production-workspace.md)
     - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
     - [Overwriting the Messages app](recipes/development/overwriting-the-messages-app.md)
+    - [Developing service configuration apps](recipes/development/developing-service-configuration-apps.md)
     - [Using the Assets Builder](recipes/development/using-the-assets-builder.md)
     - [Configuring the Sponsor Account requirements](recipes/development/configuring-the-sponsor-account-requirements.md)
     - [Configuring an Edition app](recipes/development/configuring-an-edition-app.md)
