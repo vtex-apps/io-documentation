@@ -1,13 +1,13 @@
 ---
-title: Customizing a block's message using the Markers prop
+title: Using the Markers prop to customize a block's message
 description: "Use the Markers prop and customize messages exported by blocks."
 date: "2020-04-09"
 tags: ["message", "markers", "prop", "customize"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/style/customizing-a-blocks-message-using-the-markers-prop.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/style/using-the-markers-prop-to-customize-a-blocks-message.md"
 ---
 
-# Customizing a block's message using the Markers prop
+# Using the Markers prop to customize a block's message
   
 CSS Handles and Block Classes are identifiers used to give storefront components a unique identity through CSS classes.
 
