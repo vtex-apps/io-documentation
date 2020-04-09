@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- New recipes: Creating a development workspace | Developing service configuration apps | Creating a native form for your store users | Customizing a block's message using the Markers prop
+- New recipes: Creating a development workspace | Developing service configuration apps | Creating a native form for your store users | Using the Markers prop to customize a block's message
 - New concepts: Workspace | Toolbelt | Interface | Builders 
 
 ## [0.31.0] - 2020-04-08
