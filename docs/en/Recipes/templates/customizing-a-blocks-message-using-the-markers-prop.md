@@ -1,0 +1,61 @@
+---
+title: Customizing a block's message using the Markers prop
+description: "Use the Markers prop and customize messages exported by blocks."
+date: "2020-04-09"
+tags: ["message", "markers", "prop", "customize"]
+version: "0.x"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs/docs/en/Recipes/style/contributing-with-new-css-handles.md"
+---
+
+# Customizing a block's message using the Markers prop
+  
+CSS Handles and Block Classes are identifiers used to give storefront components a unique identity through CSS classes.
+
+While capable of solving most scenarios, both identifiers have limitations in terms of more specific customization.
+
+For example: you can customize all blocks exported by an app in the same way using CSS Handles or you can customize each one of them in a unique way using Block Classes. However, none of the two identifiers is capable of customizing the **messages** these blocks export. 
+
+To resolve this scenario, we use the `markers` prop. Following the same logic as the Block Class prop, the `markers` prop is tasked with **defining unique values that will ultimately act as identifiers for the text messages** that are exported by the block in which it was declared. 
+
+Find out how to configure the `markers` prop in the step-by-step below. 
+
+## Step by step
+
+<div class="alert alert-info">
+Before going through the steps, make sure that the block in which you are working accepts the <code>markers</code> prop. You can check this in its <a href="https://vtex.io/docs/apps/all/">documentation</a>.
+</div>
+
+1. Using your terminal and [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/), log in to the desired VTEX in a development workspace;
+2. Access the directory where your store's theme is stored and open it using your code editor;
+3. Once the theme's code is open, add the `markers` prop to the desired block and give it a unique value. For example:
+
+```json
+"product-price-savings#summary": {
+  "props": {
+    "markers": [
+      "discount"
+    ],
+  }
+},
+```
+
+4. Save your changes and [link](https://vtex.io/docs/recipes/development/linking-an-app/) the app;
+5. Using the developer workspace you were previously working in, access the admin of the VTEX account in which your are working (`{workspaceName}--{accountName}.myvtex.com/admin`);
+6. Then, open the admin's Site Editor in the CMS module;
+7. Select the block in which the `markers` prop was added during step 3;
+8. Once the editing screen is open, use the prop's value as a tag, wrapping the block's message that will ultimately be customized. For example: `<discount>-{savingsPercentage}</discount>`
+
+![markers-prop-site-editor](https://user-images.githubusercontent.com/52087100/78163670-0f6f9300-741f-11ea-83a4-7122113234fb.gif)
+
+9. Save the changes.
+
+*This will give the wrapped text a unique identifier, allowing for CSS customization of the HTML message related element.*
+
+10. Using the development workspace, access the site of the account that you are working on (`{workspaceName}--{accountName}.myvtex.com`). Thereafter, inspect the HTML element that corresponds to the edited block's message.
+
+![product-price-markers-inspect](https://user-images.githubusercontent.com/52087100/78162509-578db600-741d-11ea-9d7d-e4c74399576e.png)
+
+Notice that the message's HTML element is wrapped in a new `span` with its own unique selector: `<span class="vtex-product-price-1-x-savings-discount">`.
+
+11. Once you've checked the changes, repeat the steps using a [**production workspace**](https://vtex.io/docs/recipes/development/creating-a-production-workspace/): save the theme's configuration that include the `markers` prop to that workspace and, using Site Editor, repeat step 8. After inspecting the page and ensuring that everything is running normally, you should [promote your production workspace to master](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master/), making the changes permanent. 
+12. Use the new identifier created for the HTML element to customize it at will. Access the recipe on [customizing your store using CSS Handles](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/) for more on this topic.
