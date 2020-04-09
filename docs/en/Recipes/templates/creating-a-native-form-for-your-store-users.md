@@ -4,7 +4,7 @@ description: "Learn how to display a 100% native form component which is integra
 date: "2020-04-09"
 tags: ["form", "master-data", "store-form", "native"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs/docs/en/Recipes/style/contributing-with-new-css-handles.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/templates/creating-a-native-form-for-your-store-users.md"
 ---
 
 # Creating a native form for your store users
