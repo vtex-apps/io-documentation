@@ -66,8 +66,8 @@ According to the function, follow the most suitable instructions stated below:
 
 ```jsx
 const CSS_HANDLES = [
-'container',
-'element',
+  'container',
+  'element',
 ]
 // ...
 const handles = useCssHandles(CSS_HANDLES)
@@ -78,20 +78,20 @@ const handles = useCssHandles(CSS_HANDLES)
 2. Add a new string to the `CSS_HANDLES` array with the new CSS Handle name;
 
 ```diff
-const CSS_HANDLES = [
-'container',
-'element',
-+ 'headline',
-]
+ const CSS_HANDLES = [
+   'container',
+   'element',
++  'headline',
+ ]
 ```
 
 *Following the example given above and considering the* `const handles = useCssHandles(CSS_HANDLES)` *function, the* `CSS_HANDLES` *variable would be an object in the following format*:
   
 ```js
 {
-container: 'vtex-foobar-1-x-container',
-element: 'vtex-foobar-1-x-element',
-headline: 'vtex-foobar-1-x-headline',
+  container: 'vtex-foobar-1-x-container',
+  element: 'vtex-foobar-1-x-element',
+  headline: 'vtex-foobar-1-x-headline',
 }
 ```
 
@@ -167,11 +167,11 @@ If the new class is being properly rendered, it means that everything is ready f
 4. Using the same branch, update the block documentation (in the `docs` folder of the app's repository) with the new CSS Handles. Use the **Customization** section and the `CSS Handles` table for that. For example:
 
 ```diff
-| CSS Handles |
-| --------------- |
-| `container` |
-| `element` |
-+| `headline` |
+ | CSS Handles |
+ | ----------- |
+ | `container` |
+ | `element`   |
++| `headline`  |
 ```
 
 5. Lastly, save your changes in the branch and [open a Pull Request for the team](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork). In the Pull Request description, remember to provide a link to the workspace used in the development so all of your changes can be tested. For example: `https://john--storecomponents.myvtex.com`.
