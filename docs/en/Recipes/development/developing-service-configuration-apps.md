@@ -13,7 +13,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 As we know, **a service is basically what an app configures**. At the end of the day, it is responsible for delivering a given functionality to the app's users.
 
-Previously, the code of any service that was configured by an app developed on the VTEX IO platform was part of that app's code package. This meand that each VTEX IO app needed to carry the services configuration required for its proper functioning.
+Previously, the code of any service that was configured by an app developed on the VTEX IO platform was part of that app's code package. This mean that each VTEX IO app needed to carry the services configuration required for its proper functioning.
 
 Thanks to a new Builder called **Configurations**, you can now allocate code pertaining to service configurations to an app that's independent of the platform.
 
@@ -42,37 +42,34 @@ git clone https://github.com/vtex-apps/service-example.git
 4. Open the app using your code editor;
 5. In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
 
-```
+```json
 "status": {
-"path": "/_v/status/:code",
-"public": true,
-"settingsType": "workspace"
+  "path": "/_v/status/:code",
+  "public": true,
+  "settingsType": "workspace"
 }
-...
 ```
 
 6. In the `manifest.json` file, add the `configuration` Builder to the `builders` list and update the app's name to one of your choosing. For example:
 
 ``` diff
-"name": "most-amazing-service-ever",
-"version": "0.0.0",
-"builders": {
-+ "configuration": "0.x",
-...
-},
-...
+ "name": "most-amazing-service-ever",
+ "version": "0.0.0",
+ "builders": {
+   "node": "4.x",
++  "configuration": "0.x",
 ```
 
 7. Create a `schema.json` file in the `configuration` folder. You will need this `configuration/schema.json` file to define the settings structure that the service app is going to accept from other apps on the platform.
 8. Once the file is created, create a JSON Schema in that file, according to your scenario. For example:
 
-```
+```json
 {
-"type": "object",
-"properties": {
-"id": { "type": "number" },
-"name": { "type": "string" }
-}
+ "type": "object",
+ "properties": {
+  "id": { "type": "number" },
+  "name": { "type": "string" }
+ }
 }
 ```
 
@@ -89,10 +86,9 @@ Once your service app is deployed, it is ready to receive configurations from ot
 1. In your VTEX IO app, add the recently created service app as a new builder. For example:
 
 ```diff
-"builders": {
-+ "vtex.most-amazing-service-ever": "0.x",
-...
-},
+ "builders": {
++  "vtex.most-amazing-service-ever": "0.x",
+ },
 ```
 
 Notice that the name of the builder is exactly the same as that of the service you want your app to configure. The version also needs to match the desired service app version.
@@ -100,10 +96,10 @@ Notice that the name of the builder is exactly the same as that of the service y
 2. In your app code, create a new file in the `configuration.json` folder named after the desired Service App name. Following our example, we would have something similar to: `vtex.most-amazing-service-ever/configuration.json`.
 3. In the file you've just created, define which service configurations are expected according to the JSON schema structure previously defined in the Service App. For example:
 
-```
+```json
 {
-"name": "little foot",
-"id": 19
+  "name": "little foot",
+  "id": 19
 }
 ```
 
@@ -123,15 +119,15 @@ const settings = ctx.vtex.settings
 
 The structure of the received configurations list is similar to the example below: 
 
-```
+```json
 [
-{
-'vtex.app-test': {
-"name":"little foot",
-"id":1
-},
-declarer: 'vtex.app-test@0.0.7+build1580823094'
-}
+  {
+    "vtex.app-test": {
+      "name":"little foot",
+      "id":1
+    },
+    "declarer": "vtex.app-test@0.0.7+build1580823094"
+  }
 ]
 ```
 
