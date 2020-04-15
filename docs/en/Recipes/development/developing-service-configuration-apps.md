@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 ## Introduction
 
-As we know, **a service is basically what an app configures**. At the end of the day, it is responsible for delivering a given functionality to the app's users.
+**A service is basically what an app configures**. At the end of the day, services are responsible for delivering a given functionality to the app's users.
 
 Previously, the code of any service that was configured by an app developed on the VTEX IO platform was part of that app's code package. This mean that each VTEX IO app needed to carry the services configuration required for its proper functioning.
 
