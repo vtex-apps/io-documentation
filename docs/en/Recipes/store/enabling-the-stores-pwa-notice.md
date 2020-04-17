@@ -19,14 +19,11 @@ Find out how to configure the prompt in your store by following the steps below.
 
 ## Step-by-step
 
-1. In the desired account's admin, access **CMS** and select the **Site Editor**. 
-2. Click on **Store**.
+1. In the desired account's admin, access **CMS** and select the **Store**;
+2. Click on the **PWA** tab;
+3. Click on **Other PWA settings**;
+4. Toggle the **Add to Home Screen** button and select the browsing moment during which you want the notice to be triggered; 
 
-![site-editor-cms](https://user-images.githubusercontent.com/52087100/68609303-ab5e2980-0493-11ea-99ad-880dffeb8c5d.png)
-
-3. In the **Advanced** tab, click on **Other PWA settings**. 
-4. Toggle the **Add to Home Screen** button and select the browsing moment during which you want the notice to be triggered. 
-
-![enabling-pwa](https://user-images.githubusercontent.com/52087100/68609344-c466da80-0493-11ea-9994-52b380985d64.gif)
+![pwa-recipe](https://user-images.githubusercontent.com/52087100/79599412-cfb1d800-80bb-11ea-8864-77f77111491b.gif)
 
 5. Save your changes.
