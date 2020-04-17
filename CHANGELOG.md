@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Recipe: Enabling the store's PWA notice 
+
 ## [0.32.4] - 2020-04-15
 
 ## [0.32.3] - 2020-04-14
