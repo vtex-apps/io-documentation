@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/editio
 
 # Edition App
 
-An Edition App is an app responsible for **exporting an apps and configurations model** that a [Sponsor Account](https://github.com/vtex/io-platform-documentation/blob/master/docs/concepts/sponsor-account.md) (also called parent account) sets for their child accounts to adopt.
+An Edition App is an app responsible for **exporting an apps and configurations model** that a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/) (also called parent account) sets for their child accounts to adopt.
 
 Being built of top of a **hierarchical relationship between accounts**, the Edition App (and the apps and configurations that it exports) can never be changed by the child accounts. Only its Sponsor Account is authorized to make any changes.
 
