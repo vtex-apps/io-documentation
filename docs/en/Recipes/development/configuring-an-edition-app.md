@@ -9,9 +9,9 @@ git: "https://github.com/vtex-apps/io-documentation/edit/adding-new-docs/docs/en
 
 # Configuring an Edition App
 
-Using an [Edition app](https://vtex.io/docs/concepts/edition-app) is very advantageous for **complex account families** under the same brand or holding.
+Using an [Edition app](https://vtex.io/docs/concepts/edition-app/) is very advantageous for **complex account families** under the same brand or holding.
 
-Such a hierarchical relationship between a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account) and its children with a Edition Apps provides **uniformity** throughout the account family, which can share some similar apps and settings base configuration.
+Such a hierarchical relationship between a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/) and its children with a Edition Apps provides **uniformity** throughout the account family, which can share some similar apps and settings base configuration.
 
 Any VTEX account is able to configure an Edition app and thereby define apps and settings for other accounts. Simply follow the steps detailed below. 
 
@@ -23,7 +23,7 @@ The first step to configuring an Edition app is to **become a Sponsor Account**.
 
 Any account can become a Sponsor Account, including those that are children of another account i.e. have a Sponsor themselves.
 
-To become a Sponsor Account and be able to configure child account Editions, go through our documentation on [configuring the Sponsor Account requirements](https://vtex.io/docs/recipes/development/configuring-the-sponsor-account-requirements).
+To become a Sponsor Account and be able to configure child account Editions, go through our documentation on [configuring the Sponsor Account requirements](https://vtex.io/docs/recipes/development/configuring-the-sponsor-account-requirements/).
 
 ### Step 2 - Creating an Edition app
 
@@ -84,4 +84,4 @@ An app's billing options do not interfere in the Edition's architecture. Whether
 
 After your Edition App is installed in the child account's master workspace, no further actions are required: the child account configuration with an Edition App is **done**!
 
-You may want to **launch new versions** bearing changes in the apps and configurations list, for which you'll need to check out our documentation on [updating Edition apps](https://vtex.io/docs/recipes/development/updating-edition-apps).
+You may want to **launch new versions** bearing changes in the apps and configurations list, for which you'll need to check out our documentation on [updating Edition apps](https://vtex.io/docs/recipes/development/updating-edition-apps/).
