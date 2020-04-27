@@ -61,7 +61,7 @@ mutation Save($args: SaveArgsV2!) {
 - `srcLang`: source message locale.
 - `srcMessage`: source message string.
 - `targetMessage`: message translation string.
-- `context`: message translation context. This variable is required for product/brand/category/specification and are their respective Ids so their translations are well scoped.
+- `context`: ID responsible for providing context, based on the Catalog data, about the source message string being translated. Each product/brand/category/specification in your store has a unique ID that can be found in its registration on the admin's Catalog. 
 
 ### For app messages translation:
 
