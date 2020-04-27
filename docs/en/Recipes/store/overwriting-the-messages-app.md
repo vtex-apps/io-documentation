@@ -46,8 +46,8 @@ mutation Save($args: SaveArgsV2!) {
     "messages": [
       {
         "srcLang": "pt-BR",
-        "srcMessage": "Meu produto maneiro em Portugues",
-        "targetMessage": "My awesome product in English",
+        "srcMessage": "Nome do produto em português",
+        "targetMessage": "Product's name in english",
         "context": "543123"
       }
     ]
