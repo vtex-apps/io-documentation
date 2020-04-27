@@ -46,9 +46,9 @@ mutation Save($args: SaveArgsV2!) {
     "messages": [
       {
         "srcLang": "pt-BR",
-        "srcMessage": "Bem vindo! Faça seu Login.",
-        "targetMessage": "Welcome! Please, log in. ",
-        "context": "vtex.login@2.x"
+        "srcMessage": "Nome do produto em português",
+        "targetMessage": "Product's name in english",
+        "context": "543123"
       }
     ]
   }
@@ -61,7 +61,7 @@ mutation Save($args: SaveArgsV2!) {
 - `srcLang`: source message locale.
 - `srcMessage`: source message string.
 - `targetMessage`: message translation string.
-- `context`: message translation context. This variable is not mandatory and only serves to give Messages the context desired for the translation, since the same word can have different meaning depending on the language. If you want o use this variable, you'll have to add, between 3 parenthesis, the desired context to the product name, in the admin's catalog. I.e:  `Mouse (((rodent)))`. The desired value will therefore not be displayed next to the product name and will only be used to the catalog translation.
+- `context`: ID responsible for providing context, based on the Catalog data, about the source message string being translated. Each product/brand/category/specification in your store has a unique ID that can be found in its registration on the admin's Catalog. 
 
 ### For app messages translation:
 
