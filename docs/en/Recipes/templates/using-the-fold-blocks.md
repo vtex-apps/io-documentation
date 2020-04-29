@@ -4,7 +4,7 @@ description: "Improve your website performance using these two Fold blocks."
 date: "2020-04-29"
 tags: ["performance", "fold", "experimentalLazyAssets", "blocks"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/adding-new-docs/docs/en/Recipes/development/configuring-an-edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/templates/using-the-fold-blocks.md"
 ---
 
 # Using the Fold blocks
