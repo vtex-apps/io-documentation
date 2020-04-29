@@ -1,5 +1,5 @@
 ---
-title: Best practices for rendering images in your store's theme
+title: Best practices for rendering images
 description: "Learn now all best practices for rendering images in your store's theme and improve the way in which images are cropped, rendered and displayed to end users"
 date: "2020-04-29"
 tags: ["best-practices", "guidelines", "images", "rendering", "display"]
@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/store-management/improving-your-stores-performance.md"
 ---
 
-# Best practices for rendering images in your store's theme
+# Best practices for rendering images
 
 When setting up your store's theme, you'll often want to use images for the brand's visual identity.
 
