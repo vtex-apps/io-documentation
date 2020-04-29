@@ -4,7 +4,7 @@ description: "A common worry among us all: site performance. Check out now the g
 date: "2020-03-23"
 tags: ["good", "practices", "guideline", "performance", "sales-conversion", "site"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/adding-new-docs/docs/en/Recipes/development/configuring-an-edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/store-management/improving-your-stores-performance.md"
 ---
 
 # Improving your store's performance
@@ -87,4 +87,4 @@ These two props are responsible for controlling the SKUs returned for each produ
 
 To improve your search results page performance and consequently your website, we recommend that you **only allow the first available SKU to be returned for each product** (using the `FIRST_AVAILABLE` value in the `skusFilter` prop ) and that **use cache to display the search data** (using the `skip` value in the `simulationBehavior` prop).
 
-Find out more about how to properly configure the above by going through our [**Search Results**]() app documentation.
+Find out more about how to properly configure the above by going through our [**Search Results**](https://www.vtex.io/docs/components/all/vtex.search-result@3.56.1/) app documentation.
