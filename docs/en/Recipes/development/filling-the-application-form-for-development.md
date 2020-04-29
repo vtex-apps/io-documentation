@@ -63,12 +63,12 @@ Your development project should be **as descriptive as possible!** This means th
 
 #### Dont's
 
-- `It's a marketplace integration.`
-- `It's for developing this store's components.`
+- "*It's a marketplace integration.*"
+- "`*It's for developing this store's components.*"
 
 #### Do's
 
-- `This app will integrate a VTEX Storefront with Instagram API, allowing merchants to display their latests Instagram posts and stories. It will also allow style customization via Admin. We also need a backend service because of the external service's API quotas , since an application key is necessary for high usage.`
-- `The account I'm targetting with this app needs a frontend component to show the customer where the nearest physical store is. Using the browser's geolocalization API, it fetches all the pickup points availabe on vtex.store-graphql and displays the nearest one.`
+- "*This app will integrate a VTEX Storefront with Instagram API, allowing merchants to display their latests Instagram posts and stories. It will also allow style customization via Admin. We also need a backend service because of the external service's API quotas, since an application key is necessary for high usage.*"
+- "*The account I'm targetting with this app needs a frontend component to show the customer where the nearest physical store is. Using the browser's geolocalization API, it fetches all the pickup points availabe on vtex.store-graphql and displays the nearest one.*"
 
 If you have any question about these guidelines or about the Application form, feel free to contact our team on [Store Discussion](http://github.com/vtex-apps/store-discussion/)!
