@@ -1,13 +1,13 @@
 ---
-title: Filling the application form for development
-description: "Find now all guidelines regarding the VTEX IO application form to make it easier for you to start developing on the platform!"
+title: Filling the Application form for development
+description: "Find now all guidelines regarding the VTEX IO Application form to make it easier for you to start developing on the platform!"
 date: "2020-04-28"
 tags: ["application", "form", "development", "naming", "versioning", "guidelines"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/development/filling-the-application-form-for-development.md"
 ---
 
-# Filling the application form for development
+# Filling the Application form for development
 
 VTEX IO works as a **closed beta solution**, meaning that it's only open to a small group of developers.
 
@@ -15,7 +15,7 @@ To become part of this group, you need to first fill in the [**Application form*
 
 During this process, you may feel uncertain as to which permission best suits your scenario, or about what to name the new app or even about how much detail to provide on the project when filling in the form.
   
-To help answer some of these questions, we've put together **guidelines regarding the VTEX IO application form** which will make it easier for you to start developing on the platform.
+To help answer some of these questions, we've put together **guidelines regarding the VTEX IO Application form** which will make it easier for you to start developing on the platform.
 
 ## Guidelines
 
@@ -37,7 +37,7 @@ The most important practice is to **understand which service your app is meant t
 
 ### App naming
 
-The app name filled in our application form must be permanent. In other words, this means that you should be careful when choosing it once the name filled in also must be the one used in the app's `manifest.json` file. 
+The app name filled in our Application form must be permanent. In other words, this means that you should be careful when choosing it once the name filled in also must be the one used in the app's `manifest.json` file. 
 
 On the VTEX IO platform, apps' names are *[kebab case](https://en.wiktionary.org/wiki/kebab_case)*. Basically, they must be comprised of lowercase letters separated by hyphens. Special characters, such as `*` and `@`, and numbers in the beginning of the name are not recommended.
 
