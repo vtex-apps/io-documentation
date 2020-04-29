@@ -35,19 +35,23 @@
   - [Templates](recipes/templates)
 
     - [Customizing the Header and Footer blocks by page](recipes/templates/customizing-the-header-and-footer-blocks-by-page.md)
+    - [Best practices for rendering images](recipes/templates/best-practices-for-rendering-images.md)
     - [Linking URLs in banners using Site Editor](recipes/templates/linking-urls-in-banners-using-site-editor.md)
     - [Configuring custom images for the SKU Selector](recipes/templates/configuring-custom-images-for-the-sku-selector.md)
     - [Using Flex Layout](recipes/templates/using-flex-layout.md)
-    - [Building a Carousel through lists and Slider Layout](recipes/templates/building-a-carousel-through-lists-and-slider-layout.md)
+    - [Building a Carousel using Slider Layout](recipes/templates/building-a-carousel-using-slider-layout.md)
     - [Building a Product Details Page](recipes/templates/building-a-product-details-page.md)
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
+    - [Using the Fold blocks](recipes/templates/using-the-fold-blocks.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
     - [Creating a native form for your store users](recipes/templates/creating-a-native-form-for-your-store-users.md)
 
   - [Store Management](recipes/store-management)
 
+    - [Improving your store's performance](recipes/store-management/improving-your-stores-performance.md)
     - [Configuring a B2B environment](recipes/store-management/configuring-a-b2b-environment.md)
     - [Installing apps in live stores: best practices](recipes/store-management/installing-apps-in-live-stores-best-practices.md)
+    - [Making your theme content public](recipes/store-management/making-your-theme-content-public.md)
     - [Understanding how store URL indexing works](recipes/store-management/understanding-how-store-url-indexing-works.md)
     - [Managing URL Redirects](recipes/store-management/managing-url-redirects.md)
     - [Enabling the store's PWA notice](recipes/store-management/enabling-the-stores-pwa-notice.md)
@@ -58,6 +62,7 @@
 
   - [VTEX IO Development](recipes/development)
 
+    - [Filling the Application form for development](recipes/development/filling-the-application-form-for-development.md)
     - [VTEX IO CLI installation and command reference](recipes/development/vtex-io-cli-installation-and-command-reference.md)
     - [Running A/B tests](recipes/development/running-native-ab-testing.md)
     - [Listing an account’s apps](recipes/development/listing-an-accounts-apps.md)
