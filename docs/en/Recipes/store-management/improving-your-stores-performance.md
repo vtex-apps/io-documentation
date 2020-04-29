@@ -51,7 +51,7 @@ Check out how to apply both configurations in the [**Menu's documentation**](htt
 
 The size of a website's displayed images can directly impact its performance. Therefore, it's crucial that you **adopt best practices with regards to which media is used in your theme**.
 
-Learn how to optimize your website's image rendering and improve its performance by reading the recipe on [**Best practices for rendering images in your store's theme**](https://vtex.io/docs/recipes/templates/best-practices-for-rendering-images-in-your-stores-theme/).
+Learn how to optimize your website's image rendering and improve its performance by reading the recipe on [**Best practices for rendering images**](https://vtex.io/docs/recipes/templates/best-practices-for-rendering-images/).
 
 ### Optimizing the `OrderFormProvider`
 
