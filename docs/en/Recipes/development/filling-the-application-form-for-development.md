@@ -4,7 +4,7 @@ description: "Find now all guidelines regarding the VTEX IO application form to 
 date: "2020-04-28"
 tags: ["application", "form", "development", "naming", "versioning", "guidelines"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/adding-new-docs/docs/en/Recipes/development/configuring-an-edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/development/filling-the-application-form-for-development.md"
 ---
 
 # Filling the application form for development
