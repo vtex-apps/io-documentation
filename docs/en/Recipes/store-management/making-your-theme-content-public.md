@@ -4,7 +4,7 @@ description: "If you are always struggling with making your theme content public
 date: "2020-04-28"
 tags: ["theme", "public", "store", "available"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/adding-new-docs/docs/en/Recipes/development/configuring-an-edition-app.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/store-management/making-your-theme-content-public.md"
 ---
 
 # Making your theme content public
