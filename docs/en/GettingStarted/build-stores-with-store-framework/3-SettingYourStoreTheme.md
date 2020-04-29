@@ -13,7 +13,7 @@ VTEX IO Toolbelt offers the `vtex init` command which can quickly copy Store The
 ## Implementing your Store Theme
   
 <div class="alert alert-warning">
-The following apps need to be <a href="https://vtex.io/docs/recipes/store/installing-an-app">installed</a> before downloading the Store There in your local files: <code>vtex.store-sitemap</code>, <code>vtex.store</code>, <code>vtex.rewriter --force</code>, <code>vtex.admin-pages</code> and <code>vtex.colossus-legacy-proxy@2.x</code>.
+Before downloading the Store There in your local files, <b>make sure your VTEX account has installed the Store Edition app</b>, otherwise you won't be able to work with VTEX IO. For more details on Edition apps and their importance, check out the <a href="https://vtex.io/docs/concepts/edition-app/">documentation</a>.
 </div>
 
 Using your terminal, navigate to an already existing local files directory where you want Store Theme to be copied to. Then, use the `vtex init` command, select the `store-theme` option and confirm that you want to download the theme folder to the destination you just chose.
