@@ -38,7 +38,9 @@ The file must be a <code>.csv</code> type file. Otherwise, the redirects upload 
 | `type` | The type of the redirect (`TEMPORARY` or `PERMANENT`) | `TEMPORARY` |
 | `endDate` | Date, on the format `mm/dd/yyyy` at which the redirect will expire. Notice that if the redirect is permanent, no value for `endDate` is required. | `5/20/2020` |
 
-> Only the `to` columns accepts domains, like *myotherstore.com* ou *mystore.myvtex.com*. Do not use them on the `from` column! 
+<div class="alert alert-info">
+<strong>Only</strong> the <code>to</code> column accepts domains, such as <code>myotherstore.com</code> or <code>mystore.myvtex.com</code>. You should not use them in the <code>from</code> column. 
+</div>
 
 <div class="alert alert-warning">
 <code>TEMPORARY</code> type redirects will receive the <code>302</code> status code, while <code>PERMANENT</code> type ones will receive the <code>301</code> status code.
