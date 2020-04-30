@@ -60,7 +60,7 @@ After the sixth step, Toolbelt will receive the file, validate it, and save it. 
 2. Once logged in, run the `vtex redirects delete {path}`, replacing`{path}` with the URL path that will have its redirect removed.
 
 <div class="alert alert-warning">
-The path that is sent when running <code>vtex redirects delete {path}</code> will have its redirects removed, so it must be one of paths from the `from` column of the <code>.csv</code> type file.
+The path that is sent when running <code>vtex redirects delete {path}</code> will have its redirect removed, so it must be one of paths from the `from` column of the <code>.csv</code> type file.
 </div>
 
 ### Verifying redirects
