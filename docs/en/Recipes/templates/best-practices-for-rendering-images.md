@@ -25,6 +25,10 @@ Declaring the URLs of the desired images directly in the theme's code in the `bl
   
 The Assets Builder, along with the admin's Site Editor, ensures that uploaded images are cropped to size when rendered in the UI, making their presentation consistent and uniform to end users. 
 
+<div class="alert alert-warning">
+Avoid using images whose dimensions are large since Site Editor may not be able to crop it. 
+</div>
+
 ## Choosing the most adequate block
 
 VTEX IO Store Framework has so many different blocks that you can often configure one in your theme that's not the best fit for what you're trying to achieve.   
@@ -35,21 +39,21 @@ Therefore, another best practice is to **understand the main functionality of ea
   
 The image blocks are:
 
-- **Logo** - Responsible for rendering your brand's logo. It should preferably be used in your store's Header or Footer. The block is exported by the Store Components app. 
-- **Infocard** - The Infocard block creates images in the UI which have links and buttons that direct the user's flow. Infocards are recommended in scenarios in which you want to render an image that's specifically tied to a redirect with Call to action buttons/links. This block is also exported by the Store Components app.
-- **Rich Text** - The Rich Texts blocks, exported by the Rich Text app, are meant to create markdown texts in your UI. It may be a block that seems simple, but it allows plenty of customization, such as passing an image URL to be rendered. The Rich Text is mainly recommended for building text communications that may need to have an image linked to them.
-- **Product Summary Image** - The Product Summary Image block is responsible for displaying the product image usually attached to other product summary informations, such as name and price. This block, exported by the Product Summary, must be displayed within other store components, such as the Shelf. 
-- **Image** - The Image block basically renders a image in your store's UI, without links/buttons/markdown texts/product info summary attached to it. It is responsible solely for rendering an image of your choosing in your store's theme. 
-
-<div class="alert alert-info">
-Find more details on each block accessing the <a href="https://vtex.io/docs/apps/all/">VTEX IO app documentations</a>.
-</div>
+- [**Logo**](https://vtex.io/docs/components/all/vtex.store-components/logo) - Responsible for rendering your brand's logo. It should preferably be used in your store's Header or Footer. 
+- [**Infocard**](https://vtex.io/docs/components/all/vtex.store-components/infocard) - The Infocard block creates images in the UI which have links and buttons that direct the user's flow. Infocards are recommended in scenarios in which you want to render an image that's specifically tied to a redirect with Call to action buttons/links. 
+- [**Rich Text**](https://vtex.io/docs/components/all/vtex.rich-text@0.9.1/) - The Rich Texts blocks are meant to create markdown texts in your UI. It may be a block that seems simple, but it allows plenty of customization, such as passing an image URL to be rendered. The Rich Text is mainly recommended for building text communications that may need to have an image linked to them.
+- [**Product Summary Image**](https://vtex.io/docs/components/all/vtex.product-summary@2.53.3/product-summary-image/) - The Product Summary Image block is responsible for displaying the product image usually attached to other product summary informations, such as name and price. This block, exported by the Product Summary, must be displayed within other store components, such as the Shelf. 
+- [**Image**](https://vtex.io/docs/components/all/vtex.store-image@0.4.3/) - The Image block basically renders a image in your store's UI, without links/buttons/markdown texts/product info summary attached to it. It is responsible solely for rendering an image of your choosing in your store's theme. 
 
 ### Product Summary Image block
 
 When we talk about product images being rendered in the Product Summary component, a best practice is to use the `aspectRatio`, `width`, `height` and `maxHeight` props pertaining to the `product-summary-image` block.
 
-These props will let **Product Summary images be of identical size** when rendered, even if each image was originally submitted with a different size in the admin's Catalog.
+These props define image dimensions and enable you to let **Product Summary images be of identical size** when rendered (even if each image was originally submitted with a different size in the admin's Catalog).
+
+<div class="alert alert-info">
+You do not have to use these 4 props at the same time in your Product Summary Image block. Each one of them has its own functionality and can be used independently. 
+</div>
 
 This in turn allows your store's Shelf, for example, to have image consistency across all products being displayed, differently from the Shelf example below: 
 
