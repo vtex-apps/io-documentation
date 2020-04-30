@@ -74,7 +74,7 @@ That's because the **Slider Layout natively performs a lazy load of the product 
 You can find more details on how to use the Slider Layout when configuring these two blocks by accessing the [**Shelf documentation**](https://vtex.io/docs/components/all/vtex.shelf/) and the recipe on [**Building a Carousel using Slider Layout**](https://vtex.io/docs/recipes/templates/building-a-carousel-using-slider-layout/).
 
 <div class="alert alert-info">
-The more products your Shelf or Carousel contains, the bigger the impact on your website's performance.
+The more products your Shelf or the more images your Carousel contains, the bigger the impact on your website's performance.
 </div>
 
 ### Configuring the Search Result page
