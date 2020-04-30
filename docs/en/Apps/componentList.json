@@ -9,103 +9,103 @@
     {
       "appName": "vtex.add-to-cart-button",
       "title": "Add to Cart Button",
-      "description": "VTEX Add To Cart Button component",
+      "description": "A button for adding items into the shopping cart.",
       "url": "https://github.com/vtex-apps/add-to-cart-button"
     },
     {
       "appName": "vtex.store-components",
-      "file": "availability-subscriber.md",
+      "file": "AvailabilitySubscriber.md",
       "title": "Availability Subscriber",
-      "description": "VTEX AvailabilitySubscriber component",
+      "description": "Shows the availability subscriber form when a product isn't available.",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "BackToTopButton.md",
+      "title": "Back To Top Button",
+      "description": "Store component's block that redirects users to the top of the page when clicked on.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.breadcrumb",
       "title": "Breadcrumb",
-      "description": "VTEX Breadcrumb component",
+      "description": "Navigation scheme that shows a user's browsing history up to their current location in your store.",
       "url": "https://github.com/vtex-apps/breadcrumb"
     },
     {
       "appName": "vtex.store-components",
-      "file": "buy-button.md",
-      "title": "BuyButton",
-      "description": "VTEX BuyButton component",
+      "file": "BuyButton.md",
+      "title": "Buy Button",
+      "description": "Button responsible for adding products in the minicart.",
       "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.carousel",
-      "title": "Carousel",
-      "description": "VTEX Carousel component",
-      "url": "https://github.com/vtex-apps/carousel"
     },
     {
       "appName": "vtex.category-menu",
       "title": "Category Menu",
-      "description": "VTEX Category Menu component",
+      "description": "Shows the store's department list on an customizable menu.",
       "url": "https://github.com/vtex-apps/category-menu"
-    },
-    {
-      "appName": "vtex.device-detector",
-      "title": "Device Detector",
-      "description": "VTEX Device Detector component",
-      "url": "https://github.com/vtex-apps/device-detector"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "discount-badge.md",
-      "title": "DiscountBadge",
-      "description": "VTEX DiscountBadge component",
-      "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-drawer",
       "title": "Drawer",
-      "description": "VTEX Drawer component",
+      "description": "Designed for Mobile devices, this app renders a sliding drawer for the store's menu.",
       "url": "https://github.com/vtex-apps/drawer"
     },
     {
       "appName": "vtex.iframe",
       "title": "Iframe",
-      "description": "An app for using iframe in stores",
+      "description": "Renders external iframes on your store.",
       "url": "https://github.com/vtex-apps/iframe"
     },
     {
-      "appName": "vtex.store-components",
-      "file": "image.md",
+      "appName": "vtex.store-image",
       "title": "Image",
-      "description": "VTEX Image component",
-      "url": "https://github.com/vtex-apps/store-components"
+      "description": "Render an pre-defined image on the UI.",
+      "url": "https://github.com/vtex-apps/store-image"
     },
     {
       "appName": "vtex.store-components",
-      "file": "info-card.md",
+      "file": "InfoCard.md",
       "title": "InfoCard",
-      "description": "VTEX InfoCard component",
+      "description": "Store component's block that displays content combining image and a markdown text.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.locale-switcher",
       "title": "Locale Switcher",
-      "description": "VTEX Locale Switcher component",
+      "description": "Component responsible for changing the current language of the store.",
       "url": "https://github.com/vtex-apps/locale-switcher"
     },
     {
       "appName": "vtex.login",
       "title": "Login",
-      "description": "VTEX Login component",
+      "description": "Handles every functionality related to user login.",
       "url": "https://github.com/vtex-apps/login"
     },
     {
-      "appName": "vtex.modal",
-      "title": "Modal",
-      "description": "VTEX Modal component",
-      "url": "https://github.com/vtex-apps/modal"
+      "appName": "vtex.store-components",
+      "file": "Logo.md",
+      "title": "Logo",
+      "description": "Store component's block that displays an image logo for the store's header.",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.menu",
+      "title": "Menu",
+      "description": "Renders the Menu component, displaying a bar containing links and drop-down sub-menus.",
+      "url": "https://github.com/vtex-apps/menu"
+    },
+    {
+      "appName": "vtex.minicart",
+      "title": "Minicart",
+      "description": "Fetching data from the Checkout OrderForm API, the Minicart component displays a summary list of all items added by customers in their shopping cart.",
+      "url": "https://github.com/vtex-apps/minicart"
     },
     {
       "appName": "vtex.store-components",
       "file": "newsletter.md",
       "title": "Newsletter",
-      "description": "VTEX Newsletter component",
+      "description": "Store component's block that dStore component's block that displays a newsletter form.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
@@ -119,293 +119,266 @@
       "appName": "vtex.order-placed",
       "file": "README.md",
       "title": "Order Placed",
-      "description": "VTEX Order Placed page blocks",
+      "description": "Renders the the orderPlaced page with all order data.",
       "url": "https://github.com/vtex-apps/order-placed"
-    },
-    {
-      "appName": "vtex.reviews-and-ratings",
-      "title": "Reviews and Ratings",
-      "description": "VTEX native reviews and ratings solution",
-      "url": "https://github.com/vtex/ReviewsRatings"
-    },
-    {
-      "appName": "vtex.rich-text",
-      "title": "Rich Text",
-      "description": "VTEX Rich text component",
-      "url": "https://github.com/vtex-apps/rich-text"
-    },
-    {
-      "appName": "vtex.sandbox",
-      "title": "Sandbox",
-      "description": "VTEX Sandbox component",
-      "url": "https://github.com/vtex-apps/sandbox"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "share.md",
-      "title": "Share",
-      "description": "VTEX Share component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-footer",
-      "title": "Store Footer",
-      "description": "VTEX Footer component for IO Stores",
-      "url": "https://github.com/vtex-apps/store-footer"
-    },
-    {
-      "appName": "vtex.store-header",
-      "title": "Store Header",
-      "description": "VTEX Header component for IO Stores",
-      "url": "https://github.com/vtex-apps/store-header"
-    },
-    {
-      "appName": "vtex.store-icons",
-      "title": "Store Icons",
-      "description": "VTEX Store Icons component",
-      "url": "https://github.com/vtex-apps/store-icons"
-    },
-    {
-      "appName": "vtex.store-link",
-      "title": "VTEX Store Link",
-      "description": "VTEX Store Link app",
-      "url": "https://github.com/vtex-apps/store-link"
-    },
-    {
-      "appName": "vtex.telemarketing",
-      "title": "Telemarketing",
-      "description": "VTEX Telemarketing component",
-      "url": "https://github.com/vtex-apps/telemarketing"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "user-address.md",
-      "title": "User Address",
-      "description": "VTEX UserAddress component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.wordpress-integration",
-      "title": "Wordpress Integration",
-      "description": "VTEX Wordpres Integration",
-      "url": "https://github.com/vtex-apps/wordpress-integration"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "discount-badge.md",
-      "title": "DiscountBadge",
-      "description": "VTEX DiscountBadge component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.minicart",
-      "title": "Minicart",
-      "description": "VTEX Minicart component for IO Stores",
-      "url": "https://github.com/vtex-apps/minicart"
     },
     {
       "appName": "vtex.pickup-availability",
       "title": "Pickup Availability",
-      "description": "VTEX Pickupt Availability component",
+      "description": "Enables users to verify the availability for in-store pickup regarding the selected SKU",
       "url": "https://github.com/vtex-apps/pickup-availability"
     },
     {
       "appName": "vtex.product-availability",
       "title": "Product Availability",
-      "description": "VTEX Product Availability component",
+      "description": "Store component's block that that display messages for users regarding the product availability in the inventory.",
       "url": "https://github.com/vtex-apps/product-availability"
     },
         {
       "appName": "vtex.store-components",
-      "file": "product-brand.md",
+      "file": "ProductBrand.md",
       "title": "Product Brand",
-      "description": "VTEX ProductBrand component",
+      "description": "Store component's block that displays either the name or the logo of a product's brand.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.product-customizer",
       "title": "Product Customizer",
-      "description": "VTEX Product Customizer component",
+      "description": "Allows a product's attachments to be made available and ready to be chosen by users from the product page.",
       "url": "https://github.com/vtex-apps/product-customizer"
     },
     {
       "appName": "vtex.store-components",
-      "file": "product-description.md",
+      "file": "ProductDescription.md",
       "title": "Product Description",
-      "description": "VTEX ProductDescription component",
+      "description": "Store component's block that displays the product's description.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
-      "appName": "vtex.product-details",
-      "title": "Product Details",
-      "description": "VTEX Product Details component",
-      "url": "https://github.com/vtex-apps/product-details"
+      "appName": "vtex.product-gifts",
+      "title": "Product Gifts",
+      "description": "This app's blocks are responsible for displaying, in the Product Description block, all gifts available for a given product.",
+      "url": "https://github.com/vtex-apps/product-gifts"
     },
     {
       "appName": "vtex.product-identifier",
       "title": "Product Identifier",
-      "description": "VTEX Product Identifier component",
+      "description": "Shows a product identifier, such as the product reference, product ID, sku EAN or sku reference.",
       "url": "https://github.com/vtex-apps/product-identifier"
     },
     {
       "appName": "vtex.store-components",
-      "file": "product-images.md",
+      "file": "ProductImages.md",
       "title": "Product Images",
-      "description": "VTEX Product Images component",
+      "description": "Store component's block that renders the product's image.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
+      "appName": "vtex.product-kit",
+      "title": "Product Kit",
+      "description": "Displays a list of product kits.",
+      "url": "https://github.com/vtex-apps/product-kit"
+    },
+    {
       "appName": "vtex.store-components",
-      "file": "product-name.md",
+      "file": "ProductName.md",
       "title": "Product Name",
-      "description": "VTEX ProductName component",
+      "description": "Store component's block that renders the product's name.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
-      "appName": "vtex.store-components",
-      "file": "product-price.md",
+      "appName": "vtex.product-price",
       "title": "Product Price",
-      "description": "VTEX ProductPrice component",
-      "url": "https://github.com/vtex-apps/store-components"
+      "description": "The app exports blocks related to the product's price, such as list price, selling price and savings.",
+      "url": "https://github.com/vtex-apps/product-price"
     },
     {
       "appName": "vtex.product-quantity",
       "title": "Product Quantity",
-      "description": "VTEX Product Quantity component",
+      "description": "Allows users to a add a chosen amount of the displayed product in their cart.",
       "url": "https://github.com/vtex-apps/product-quantity"
     },
     {
-      "appName": "vtex.product-details",
-      "file": "product-quantity-selector.md",
-      "title": "Product Quantity Selector",
-      "description": "VTEX Product Quantity Selector component",
-      "url": "https://github.com/vtex-apps/product-details"
-    },
-    {
-      "appName": "vtex.product-review-interfaces",
-      "title": "Product Review Interfaces",
-      "description": "VTEX Product Review Interfaces component",
-      "url": "https://github.com/vtex-apps/product-review-interfaces"
-    },
-    {
       "appName": "vtex.store-components",
-      "file": "product-specifications.md",
+      "file": "ProductSpecifications.md",
       "title": "Product Specifications",
-      "description": "VTEX ProductSpecifications component",
+      "description": "Store component's block that renders the produt's specifications.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.product-specification-badges",
       "title": "Product Specification Badges",
-      "description": "VTEX Product Specification Badges component",
+      "description": "Shows badges in the product page based on the product's specifications.",
       "url": "https://github.com/vtex-apps/product-specification-badges"
     },
     {
       "appName": "vtex.product-summary",
       "title": "Product Summary",
-      "description": "VTEX Product Summary component",
+      "description": "App responsible for summarizing product information (such as name, price and image) in other store blocks, such as the Shelf and the Minicart.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-attachmentList.md",
       "title": "Product Summary Attachment List",
-      "description": "VTEX Product Summary Attachment List component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying the product's attachments in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-brand.md",
       "title": "Product Summary Brand",
-      "description": "VTEX Product Summary Brand component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying the product's brand in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-buy-button.md",
       "title": "Product Summary Buy Button",
-      "description": "VTEX Product Summary Buy Button component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying a Buy Button block in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-description.md",
       "title": "Product Summary Description",
-      "description": "VTEX Product Summary Description component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying the product's description in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-image.md",
       "title": "Product Summary Image",
-      "description": "VTEX Product Summary Image component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying the product's image in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-name.md",
       "title": "Product Summary Name",
-      "description": "VTEX Product Summary Name component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying the product's name in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-price.md",
       "title": "Product Summary Price",
-      "description": "VTEX Product Summary Price component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying the product's price in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-sku-selector.md",
       "title": "Product Summary SKU Selector",
-      "description": "VTEX Product Summary SKU Selector component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying the SKU Selector block in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
       "appName": "vtex.product-summary",
       "file": "product-summary-specification-badges.md",
       "title": "Product Summary Specification Badges",
-      "description": "VTEX Product Summary Specification Badges component",
+      "description": "This block is exported by the Product Summary app and it is responsible for displaying badges with the product's specifications in other store blocks.",
       "url": "https://github.com/vtex-apps/product-summary"
     },
     {
-      "appName": "vtex.product-teaser-interfaces",
-      "title": "Product Teaser Interfaces",
-      "description": "VTEX Product Teaser Interfaces component",
-      "url": "https://github.com/vtex-apps/product-teaser-interfaces"
+      "appName": "vtex.quickorder",
+      "title": "Quickorder",
+      "description": "Designed for B2B scenarios, it allows users to add multiple products to the cart at once.",
+      "url": "https://github.com/vtex-apps/quickorder"
     },
     {
-      "appName": "vtex.shelf",
-      "title": "Shelf",
-      "description": "VTEX Shelf component for IO Stores",
-      "url": "https://github.com/vtex-apps/shelf"
+      "appName": "vtex.reviews-and-ratings",
+      "title": "Reviews and Ratings",
+      "description": "VTEX native solution for product review and rating.",
+      "url": "https://github.com/vtex/ReviewsRatings"
+    },
+    {
+      "appName": "vtex.rich-text",
+      "title": "Rich Text",
+      "description": "The Rich Text brings texts to your store and everything else that Markdown language is able to. It converts texts written in Markdown language and displays its content as HTML elements.",
+      "url": "https://github.com/vtex-apps/rich-text"
+    },
+    {
+      "appName": "vtex.sandbox",
+      "title": "Sandbox",
+      "description": "Allows building an arbitrary HTML content in extension points from an Iframe.",
+      "url": "https://github.com/vtex-apps/sandbox"
     },
     {
       "appName": "vtex.store-components",
-      "file": "shipping-simulator.md",
-      "title": "Shipping Simulator",
-      "description": "VTEX ShippingSimulator component",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
-      "appName": "vtex.store-components",
-      "file": "sku-selector.md",
-      "title": "SKU Selector",
-      "description": "VTEX SKUSelector component",
+      "file": "SearchBar.md",
+      "title": "Search Bar",
+      "description": "Store component's block that shows a search bar with autocomplete options and displays the matching products as well.",
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.search-result",
       "title": "Search Result",
-      "description": "VTEX Search Result component",
+      "description": "Handles the result fetched by the VTEX Search API and displaying it to users. The app exports all store blocks expected in a search results page, such as the filters and the product gallery.",
       "url": "https://github.com/vtex-apps/search-result"
     },
     {
       "appName": "vtex.store-components",
-      "file": "search-bar.md",
-      "title": "Search Bar",
-      "description": "VTEX SearchBar component",
+      "file": "Share.md",
+      "title": "Share",
+      "description": "Store component's block that allows to share a product URL via social medias.",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.shelf",
+      "title": "Shelf",
+      "description": "Displays a list of products in the store home page.",
+      "url": "https://github.com/vtex-apps/shelf"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "ShippingSimulator.md",
+      "title": "Shipping Simulator",
+      "description": "Store component's block that estimates the shipping fee based on a zip code input.",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "SkuSelector.md",
+      "title": "SKU Selector",
+      "description": "Store component's block that renders every SKU available for a given product.",
+      "url": "https://github.com/vtex-apps/store-components"
+    }, 
+    {
+      "appName": "vtex.seller-selector",
+      "title": "Seller Selector",
+      "description": "Displays the number of sellers your marketplace has for each product, enabling users to compare prices from each one.",
+      "url": "https://github.com/vtex-apps/seller-selector"
+    },
+    {
+      "appName": "vtex.store-footer",
+      "title": "Store Footer",
+      "description": "Displays your store's Footer.",
+      "url": "https://github.com/vtex-apps/store-footer"
+    },
+    {
+      "appName": "vtex.store-form",
+      "title": "Store Form",
+      "description": "Provides blocks responsible for displaying an user form connected to Master Data through a JSON Schema.",
+      "url": "https://github.com/vtex-apps/store-form"
+    },
+    {
+      "appName": "vtex.store-header",
+      "title": "Store Header",
+      "description": "Displays your store's Header.",
+      "url": "https://github.com/vtex-apps/store-header"
+    },
+    {
+      "appName": "vtex.store-link",
+      "title": "VTEX Store Link",
+      "description": "Provides blocks responsible for displaying links in other theme blocks, such as the Product Summary.",
+      "url": "https://github.com/vtex-apps/store-link"
+    },
+    {
+      "appName": "vtex.store-components",
+      "file": "user-address.md",
+      "title": "User Address",
+      "description": "VTEX UserAddress component",
       "url": "https://github.com/vtex-apps/store-components"
     }
   ],
@@ -419,9 +392,21 @@
     {
       "appName": "vtex.checkout-ui-settings",
       "title": "Checkout UI Settings",
-      "description": "App that exports scripts to build a custom Checkout UI",
+      "description": "App responsible for exporting scripts to build a custom Checkout UI",
       "url": "https://github.com/vtex-apps/checkout-ui-settings"
-    }
+    },
+    {
+      "appName": "vtex.store-icons",
+      "title": "Store Icons",
+      "description": "Exports all icons used by the store's components",
+      "url": "https://github.com/vtex-apps/store-icons"
+    },
+    {
+      "appName": "vtex.telemarketing",
+      "title": "Telemarketing",
+      "description": "Enables a call center operator impersonate a costumer in the store, and this app is used by store theme.",
+      "url": "https://github.com/vtex-apps/telemarketing"
+    },
   ], 
   "pixel": [
     {
@@ -521,6 +506,12 @@
       "url": "https://github.com/vtex-apps/ideacrm"
     },
     {
+      "appName": "vtex.iubenda",
+      "title": "Iubenda",
+      "description": "VTEX Iubenda native integration",
+      "url": "https://github.com/vtex-apps/iubenda"
+    },
+    {
       "appName": "vtex.jivochat",
       "title": "JivoChat",
       "description": "VTEX JivoChat native integration",
@@ -555,12 +546,6 @@
       "title": "Lucky Orange",
       "description": "VTEX Lucky Orange native integration",
       "url": "https://github.com/vtex-apps/lucky-orange"
-    },
-    {
-      "appName": "vtex.menu",
-      "title": "Menu",
-      "description": "VTEX Menu component",
-      "url": "https://github.com/vtex-apps/menu"
     },
     {
       "appName": "vtex.order-sms-notification",
@@ -599,6 +584,18 @@
       "url": "https://github.com/vtex-apps/tradetracker"
     },
     {
+      "appName": "vtex.trustpilot",
+      "title": "Trustpilot",
+      "description": "VTEX Trustpilot native integration",
+      "url": "https://github.com/vtex-apps/trustpilot"
+    },
+    {
+      "appName": "vtex.wordpress-integration",
+      "title": "Wordpress Integration",
+      "description": "VTEX Wordpress native integration",
+      "url": "https://github.com/vtex-apps/wordpress-integration"
+    },
+    {
       "appName": "vtex.yotpo",
       "title": "Yotpo",
       "description": "VTEX Yotpo native integration",
@@ -619,51 +616,57 @@
   ],
   "layout": [
     {
-      "appName": "vtex.flex-layout",
-      "title": "Flex Layout",
-      "description": "VTEX Flex Layout component",
-      "url": "https://github.com/vtex-apps/flex-layout"
+      "appName": "vtex.condition-layout",
+      "title": "Condition Layout",
+      "description": "Allows a block rendering under pre-defined conditions.",
+      "url": "https://github.com/vtex-apps/condition-layout"
     },
     {
-      "appName": "vtex.store-image",
-      "title": "Image List",
-      "description": "VTEX Image List",
-      "url": "https://github.com/vtex-apps/store-image"
+      "appName": "vtex.flex-layout",
+      "title": "Flex Layout",
+      "description": "Builds a complex custom layout using the concept of rows and columns, setting the desired structure and positioning of blocks in a given page.",
+      "url": "https://github.com/vtex-apps/flex-layout"
     },
     {
       "appName": "vtex.modal-layout",
       "title": "Modal Layout",
-      "description": "VTEX Modal Layout component",
+      "description": "Provides blocks that help you create modals in your store.",
       "url": "https://github.com/vtex-apps/modal-layout"
     },
     {
       "appName": "vtex.responsive-layout",
       "title": "Responsive Layout",
-      "description": "VTEX Responsive Layout",
+      "description": "Declares layout structures that will only be rendered in a specific screen-size breakpoint.",
       "url": "https://github.com/vtex-apps/responsive-layout"
+    },
+    {
+      "appName": "vtex.overlay-layout",
+      "title": "Overlay Layout",
+      "description": "Helps you create a Dropdown, Select or a Tooltip component.",
+      "url": "https://github.com/vtex-apps/overlay-layout"
     },
     {
       "appName": "vtex.slider-layout",
       "title": "Slider Layout",
-      "description": "VTEX Slider Wrapper",
+      "description": "Flexible solution for building sliders of blocks within your store theme.",
       "url": "https://github.com/vtex-apps/slider-layout"
     },
     {
       "appName": "vtex.stack-layout",
       "title": "Stack Layout",
-      "description": "VTEX Stack Layout",
+      "description": "Renders blocks on top of other blocks.",
       "url": "https://github.com/vtex-apps/stack-layout"
     },
     {
       "appName": "vtex.sticky-layout",
       "title": "Sticky Layout",
-      "description": "VTEX Sticky Layout",
+      "description": "Provides layout structures to help building elements that should be fixed positioned.",
       "url": "https://github.com/vtex-apps/sticky-layout"
     },
     {
       "appName": "vtex.tab-layout",
       "title": "Tab Layout",
-      "description": "VTEX Tabs Layout",
+      "description": "Builds custom tabbed layouts. In other words, it allows you to build the store layout using tabs.",
       "url": "https://github.com/vtex-apps/tab-layout"
     }
   ]
