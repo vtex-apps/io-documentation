@@ -406,7 +406,7 @@
       "title": "Telemarketing",
       "description": "Enables a call center operator impersonate a costumer in the store, and this app is used by store theme.",
       "url": "https://github.com/vtex-apps/telemarketing"
-    },
+    }
   ], 
   "pixel": [
     {
