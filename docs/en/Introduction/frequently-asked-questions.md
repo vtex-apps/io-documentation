@@ -28,7 +28,7 @@ If you are a partner, you must be a VTEX IO developer certified partner.
 
 If you've met all the necessary conditions to be part of the small group of VTEX IO developers, fill in and submit the  [Application form](https://forms.gle/f7bYdTA7tfdfB5tt7) with your project's details to let us know about your interest in order to understand your scenario and provide all the necessary permissions. 
 
-Don't forget to give a good read to the documentation on [filling the Application form for development](https://vtex.io/docs/recipes/development/filling-the-application-form-for-development/. 
+Don't forget to give a good read to the documentation on [filling the Application form for development](https://vtex.io/docs/recipes/development/filling-the-application-form-for-development/). 
 
 ### How much does it cost?
 
