@@ -43,12 +43,27 @@ git clone https://github.com/vtex-apps/service-example.git
 5. In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
 
 ```json
-"status": {
-  "path": "/_v/status/:code",
-  "public": true,
-  "settingsType": "workspace"
+"routes": {
+  "status": {
+    "path": "/_v/status/:code",
+    "public": true,
+    "settingsType": "workspace"
+  },
+  ...
 }
 ```
+
+It is also possible to **define your configurations through event listening**. For this scenario, you should add in the  `node/service.json` file something similar to the example below, replacing the values according to your needs: 
+
+```json
+"events": {
+  "eventHandler": {
+    "sender": "appEmittingTheEvent",
+    "keys": ["topic"],
+    "settingsType": "workspace"
+  },
+  ...
+}
 
 6. In the `manifest.json` file, add the `configuration` Builder to the `builders` list and update the app's name to one of your choosing. For example:
 
@@ -116,6 +131,7 @@ To access all configurations sent to the service app, use the following command:
 ```
 const settings = ctx.vtex.settings
 ```
+The `ctx` can be either a `EventContext` or a `ServiceContext`.
 
 The structure of the received configurations list is similar to the example below: 
 
