@@ -52,7 +52,9 @@ git clone https://github.com/vtex-apps/service-example.git
   ...
 }
 ```
-It's important to say that this type of configuration is also available for event listening. If you are listening to an event, in your `service.json` you should have something like this:
+
+It is also possible to **define your configurations through event listening**. For this scenario, you should add in the  `node/service.json` file something similar to the example below, replacing the values according to your needs: 
+
 ```json
 "events": {
   "eventHandler": {
@@ -62,7 +64,6 @@ It's important to say that this type of configuration is also available for even
   },
   ...
 }
-```
 
 6. In the `manifest.json` file, add the `configuration` Builder to the `builders` list and update the app's name to one of your choosing. For example:
 
