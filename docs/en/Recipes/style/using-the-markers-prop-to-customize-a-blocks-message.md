@@ -47,6 +47,10 @@ Before going through the steps, make sure that the block in which you are workin
 
 ![markers-prop-site-editor](https://user-images.githubusercontent.com/52087100/78163670-0f6f9300-741f-11ea-83a4-7122113234fb.gif)
 
+<div class="alert alert-info">
+You can use the prop's value to wrap any desired part of the block's message.
+</div>
+
 9. Save the changes.
 
 *This will give the wrapped text a unique identifier, allowing for CSS customization of the HTML message related element.*
