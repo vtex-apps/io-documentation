@@ -23,7 +23,7 @@ All of the above and more may be easily customized in the Header and Footer bloc
 
 In the desired template, declare the code given as example below to overwrite the Header and Footer automatic duplication.  
 
-:information_source: *Remember to overwrite the values between keys `{}` according to your scenario, meaning for the name of the block you've chosen.*
+:information_source: *Remember to change the CHANGEME to a valid page name, example: "product", "search#category", "custom", etc*
 
 ```json
 {
