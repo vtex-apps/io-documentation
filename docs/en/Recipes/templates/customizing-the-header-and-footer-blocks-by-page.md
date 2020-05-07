@@ -23,14 +23,17 @@ All of the above and more may be easily customized in the Header and Footer bloc
 
 In the desired template, declare the code given as example below to overwrite the Header and Footer automatic duplication.  
 
-:information_source: *Remember to change the CHANGEME to a valid page name, example: "product", "search#category", "custom", etc*
+<div class="alert alert-info">
+Remember to replace the <code>{headerBlock}</code> and <code>{footerBlock}</code> values with real block names. Also, replace the <code>{templateName}</code> value with a valid theme template, such as <code>product</code>, <code>search#category</code> and <code>custom</code>. 
+</div>
+
 
 ```json
 {
-  "store.CHANGEME": {
+  "store.{templateName}": {
     "parent": { 
-      "header": "header#other-header", 
-      "footer": "footer#other-footer"
+      "header": "{headerBlock}", 
+      "footer": "{footerBlock}"
     }
   }
 }
@@ -40,9 +43,9 @@ The code above works in scenarios where the Header **and** Footer will be overwr
 
 ```json
 {
-  "store.CHANGEME": {
+  "store.{templateName}": {
     "parent": { 
-      "header": "header#other-header"
+      "header": "{headerBlock}"
     }
   }
 }
