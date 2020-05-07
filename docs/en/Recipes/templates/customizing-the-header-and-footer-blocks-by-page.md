@@ -26,18 +26,26 @@ In the desired template, declare the code given as example below to overwrite th
 :information_source: *Remember to overwrite the values between keys `{}` according to your scenario, meaning for the name of the block you've chosen.*
 
 ```json
-"parent": { 
-  "header": "{header#Product}", 
-  "footer": "{footer#Product}"
-  },
+{
+  "store.CHANGEME": {
+    "parent": { 
+      "header": "header#other-header", 
+      "footer": "footer#other-footer"
+    }
+  }
+}
 ```
 
 The code above works in scenarios where the Header **and** Footer will be overwritten. When overwriting just one of the two, keep the template's `parent` structure and determine which block will be customized. For example:
 
 ```json
-"parent": { 
-  "header": "{header#Product}"
-},
+{
+  "store.CHANGEME": {
+    "parent": { 
+      "header": "header#other-header"
+    }
+  }
+}
 ```
 
 ## Step 2 - Applying new customizations
@@ -47,36 +55,40 @@ The next step is to configure the previously declared blocks in accordance with 
 If you want to apply new customizations to the blocks, simply follow the usual flow explained in the [Header](https://vtex.io/docs/components/all/vtex.store-header/) and [Footer](https://vtex.io/docs/components/all/vtex.store-footer/) documentation. For example:  
 
 ```json
-"parent": { 
-  "header": "{header#Product}"
-},
 {
-"header#Product": {
-  "blocks": [
-    "header-layout.desktop",
-    "header-layout.mobile"
-  ]
-},
-"header-layout.desktop": {
-  "children": [
-    "header-row#1-desktop"
-  ]
-},
-"header-row#1-desktop": {
-  "children": ["telemarketing"]
-  "props": {
-    "fullWidth": true
-  }
-},
+  "store.product": {
+    "parent": { 
+      "header": "header#product"
+    },
+  },
+  "header#product": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop"
+    ]
+  },
+  "header-row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+   }
+}
 ```
 
 It is possible, however, that you **don't want new configurations**, but rather want to **delete** the blocks from the template. In such a scenario, you need to declare the desired blocks and leave the `children` blank, as shown in the following example:
 
 ```json
-"store.custom#noheaderfooter": {
-  "parent": {
-    "header": "header#empty",
-    "footer": "footer#empty"
+{
+  "store.custom#noheaderfooter": {
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    },
   },
   "header#empty": {
     "blocks": [
@@ -101,7 +113,8 @@ It is possible, however, that you **don't want new configurations**, but rather 
   },
   "footer-layout.mobile#empty": {
     "children": []
-  },
+  }
+}
 ```
 
 **Done!** Once you save the changes and link your app, you'll be able to see the new configurations for these blocks reflected onto the desired page.
