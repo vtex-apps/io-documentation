@@ -25,48 +25,48 @@ In the desired template, declare the code given as example below to overwrite th
 
 :information_source: *Remember to overwrite the values between keys `{}` according to your scenario, meaning for the name of the block you've chosen.*
 
-```
+```json
 "parent": { 
-"header": "{header#Product}", 
-"footer": "{footer#Product}"
-},
+  "header": "{header#Product}", 
+  "footer": "{footer#Product}"
+  },
 ```
 
 The code above works in scenarios where the Header **and** Footer will be overwritten. When overwriting just one of the two, keep the template's `parent` structure and determine which block will be customized. For example:
 
-```
+```json
 "parent": { 
-"header": "{header#Product}"
+  "header": "{header#Product}"
 },
 ```
 
 ## Step 2 - Applying new customizations
 
-The next step is to configure the previously declared blocks in accordance with what's desired for this template. If you want to apply new customizations to the blocks, simply follow the usual flow explained in the [Header](https://vtex.io/docs/components/all/vtex.store-header/) and [Footer](https://vtex.io/docs/components/all/vtex.store-footer/) documentation. For example:  
+The next step is to configure the previously declared blocks in accordance with what's desired for this template.
+
+If you want to apply new customizations to the blocks, simply follow the usual flow explained in the [Header](https://vtex.io/docs/components/all/vtex.store-header/) and [Footer](https://vtex.io/docs/components/all/vtex.store-footer/) documentation. For example:  
 
 ```json
 "parent": { 
-"header": "{header#Product}"
+  "header": "{header#Product}"
 },
 {
 "header#Product": {
-"blocks": [
-"header-layout.desktop",
-"header-layout.mobile"
-]
+  "blocks": [
+    "header-layout.desktop",
+    "header-layout.mobile"
+  ]
 },
 "header-layout.desktop": {
-"children": [
-"header-row#1-desktop"
-]
+  "children": [
+    "header-row#1-desktop"
+  ]
 },
 "header-row#1-desktop": {
-"children": [
-"telemarketing"
-],
-"props": {
-"fullWidth": true
-}
+  "children": ["telemarketing"]
+  "props": {
+    "fullWidth": true
+  }
 },
 ```
 
@@ -74,10 +74,10 @@ It is possible, however, that you **don't want new configurations**, but rather 
 
 ```json
 "store.custom#noheaderfooter": {
-    "parent": {
-      "header": "header#empty",
-      "footer": "footer#empty"
-    },
+  "parent": {
+    "header": "header#empty",
+    "footer": "footer#empty"
+  },
   "header#empty": {
     "blocks": [
       "header-layout.desktop#empty",
