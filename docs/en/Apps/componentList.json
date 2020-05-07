@@ -318,6 +318,12 @@
       "url": "https://github.com/vtex-apps/search-result"
     },
     {
+      "appName": "vtex.seller-selector",
+      "title": "Seller Selector",
+      "description": "Displays the number of sellers your marketplace has for each product, enabling users to compare prices from each one.",
+      "url": "https://github.com/vtex-apps/seller-selector"
+    },
+    {
       "appName": "vtex.store-components",
       "file": "Share.md",
       "title": "Share",
@@ -345,10 +351,10 @@
       "url": "https://github.com/vtex-apps/store-components"
     }, 
     {
-      "appName": "vtex.seller-selector",
-      "title": "Seller Selector",
-      "description": "Displays the number of sellers your marketplace has for each product, enabling users to compare prices from each one.",
-      "url": "https://github.com/vtex-apps/seller-selector"
+      "appName": "vtex.store-components",
+      "title": "Store Components",
+      "description": "App responsible for providing main block themes, such as the SKU Selector and the Logo.",
+      "url": "https://github.com/vtex-apps/store-components"
     },
     {
       "appName": "vtex.store-footer",
@@ -452,6 +458,12 @@
       "url": "https://github.com/vtex-apps/btg360"
     },
     {
+      "appName": "vtex.cookiebot",
+      "title": "Cookiebot",
+      "description": "VTEX Cookiebot native integration",
+      "url": "https://github.com/vtex-apps/cookiebot"
+    },
+    {
       "appName": "vtex.criteo",
       "title": "Criteo",
       "description": "VTEX Criteo native integration",
@@ -480,6 +492,12 @@
       "title": "Google Adwords",
       "description": "VTEX Google Adwords native integration",
       "url": "https://github.com/vtex-apps/google-adwords"
+    },
+    {
+      "appName": "vtex.google-customer-reviews",
+      "title": "Google Customer Reviews",
+      "description": "VTEX Google Customer Reviews native integration",
+      "url": "https://github.com/vtex-apps/google-customer-reviews"
     },
     {
       "appName": "vtex.google-search-console",
