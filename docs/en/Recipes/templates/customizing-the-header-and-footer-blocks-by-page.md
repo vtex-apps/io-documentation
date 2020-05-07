@@ -4,7 +4,7 @@ description: "Learn how to configure the Header and Footer blocks according to y
 date: "02/08/2020"
 tags: ["header", "footer", "template", "customize"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/header-and-footer-recipe/docs/en/Recipes/layout/customizing-the-header-and-footer-blocks-by-page.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/customizing-the-header-and-footer-blocks-by-page.md"
 ---
 
 # Customizing the Header and Footer blocks by page
