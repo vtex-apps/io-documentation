@@ -76,7 +76,8 @@ If you want to apply new customizations to the blocks, simply follow the usual f
     "children": ["telemarketing"],
     "props": {
       "fullWidth": true
-   }
+    }
+  }
 }
 ```
 
