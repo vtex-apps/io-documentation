@@ -4,7 +4,7 @@ description: "Learn how to configure the Header and Footer blocks according to y
 date: "02/08/2020"
 tags: ["header", "footer", "template", "customize"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/header-and-footer-recipe/docs/en/Recipes/layout/customizing-the-header-and-footer-blocks-by-page.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/customizing-the-header-and-footer-blocks-by-page.md"
 ---
 
 # Customizing the Header and Footer blocks by page
@@ -23,21 +23,32 @@ All of the above and more may be easily customized in the Header and Footer bloc
 
 In the desired template, declare the code given as example below to overwrite the Header and Footer automatic duplication.  
 
-:information_source: *Remember to overwrite the values between keys `{}` according to your scenario, meaning for the name of the block you've chosen.*
+<div class="alert alert-info">
+Remember to replace the <code>{headerBlock}</code> and <code>{footerBlock}</code> values with real block names. Also, replace the <code>{templateName}</code> value with a valid theme template, such as <code>product</code>, <code>search#category</code> and <code>custom</code>. 
+</div>
+
 
 ```json
-"parent": { 
-  "header": "{header#Product}", 
-  "footer": "{footer#Product}"
-  },
+{
+  "store.{templateName}": {
+    "parent": { 
+      "header": "{headerBlock}", 
+      "footer": "{footerBlock}"
+    }
+  }
+}
 ```
 
 The code above works in scenarios where the Header **and** Footer will be overwritten. When overwriting just one of the two, keep the template's `parent` structure and determine which block will be customized. For example:
 
 ```json
-"parent": { 
-  "header": "{header#Product}"
-},
+{
+  "store.{templateName}": {
+    "parent": { 
+      "header": "{headerBlock}"
+    }
+  }
+}
 ```
 
 ## Step 2 - Applying new customizations
@@ -47,36 +58,41 @@ The next step is to configure the previously declared blocks in accordance with 
 If you want to apply new customizations to the blocks, simply follow the usual flow explained in the [Header](https://vtex.io/docs/components/all/vtex.store-header/) and [Footer](https://vtex.io/docs/components/all/vtex.store-footer/) documentation. For example:  
 
 ```json
-"parent": { 
-  "header": "{header#Product}"
-},
 {
-"header#Product": {
-  "blocks": [
-    "header-layout.desktop",
-    "header-layout.mobile"
-  ]
-},
-"header-layout.desktop": {
-  "children": [
-    "header-row#1-desktop"
-  ]
-},
-"header-row#1-desktop": {
-  "children": ["telemarketing"]
-  "props": {
-    "fullWidth": true
+  "store.product": {
+    "parent": { 
+      "header": "header#product"
+    }
+  },
+  "header#product": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop"
+    ]
+  },
+  "header-row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
   }
-},
+}
 ```
 
 It is possible, however, that you **don't want new configurations**, but rather want to **delete** the blocks from the template. In such a scenario, you need to declare the desired blocks and leave the `children` blank, as shown in the following example:
 
 ```json
-"store.custom#noheaderfooter": {
-  "parent": {
-    "header": "header#empty",
-    "footer": "footer#empty"
+{
+  "store.custom#noheaderfooter": {
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    },
   },
   "header#empty": {
     "blocks": [
@@ -101,7 +117,8 @@ It is possible, however, that you **don't want new configurations**, but rather 
   },
   "footer-layout.mobile#empty": {
     "children": []
-  },
+  }
+}
 ```
 
 **Done!** Once you save the changes and link your app, you'll be able to see the new configurations for these blocks reflected onto the desired page.
