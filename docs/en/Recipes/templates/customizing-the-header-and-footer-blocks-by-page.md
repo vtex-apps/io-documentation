@@ -59,7 +59,7 @@ If you want to apply new customizations to the blocks, simply follow the usual f
   "store.product": {
     "parent": { 
       "header": "header#product"
-    },
+    }
   },
   "header#product": {
     "blocks": [
