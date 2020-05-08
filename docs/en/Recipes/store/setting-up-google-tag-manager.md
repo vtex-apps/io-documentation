@@ -93,6 +93,7 @@ Repeat the instructions above for the following event triggers:
 - `profile`
 - `removeFromCart`
 - `shipping`
+- `pageView`
 
 ## Creating Tags
 
@@ -139,7 +140,7 @@ To create a tag, click on **Tags** in the left menu and then on **New**.
 2. Select **Google Analytics - Universal Analytics**.
 3. Choose **Page View** from the `Track Type` field. 
 4. In `Google Analytics Settings`, select **Google Analytics**.
-5. In the **Triggering** box, select the `All Pages` trigger.
+5. In the **Triggering** box, select the `Custom Event - pageView` trigger.
 6. Save the new tag as **Google Analytics - Page View**.
 
 ### Conversion Linker
