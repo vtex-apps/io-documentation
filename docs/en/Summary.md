@@ -16,6 +16,7 @@
 - Concepts
 
   - [Builders](concepts/builders)
+  - [Clients](concepts/clients)
   - [Edition App](concepts/edition-app)
   - [Interfaces](concepts/interfaces)
   - [Sponsor Account](concepts/sponsor-account)
@@ -80,6 +81,7 @@
     - [Configuring the Sponsor Account requirements](recipes/development/configuring-the-sponsor-account-requirements.md)
     - [Configuring an Edition app](recipes/development/configuring-an-edition-app.md)
     - [Updating Edition apps](recipes/development/updating-edition-apps.md)
+    - [How to create and use Clients](recipes/development/how-to-create-and-use-clients.md)
 
   - [All Recipes](recipes/all)
 
