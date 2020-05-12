@@ -1,6 +1,6 @@
 ---
 title: How to create and use Clients on VTEX IO?
-description: "Understand what are clients used for on VTEX IO platform and learn how to create custom clients to your specific requirements"
+description: "Understand what are clients used for on VTEX IO platform and learn how to create custom clients for your specific requirements"
 date: "2020-04-28"
 tags: ["clients", "services", "development", "api", "external", "node"]
 version: "0.x"
