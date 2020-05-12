@@ -45,6 +45,8 @@ Let's take a look on the anatomy of an *ExternalClient* to the *Github API*:
 
 4 - There are a lot of other methods available, you can check them on [**HttpClient**].(https://github.com/vtex/node-vtex-api/blob/master/src/HttpClient/HttpClient.ts)
 
+> You're free to add data handling logic inside your client's methods (*i.e:* mapping fields, or filtering data), but be careful to not lose track of the client's responsabilities!
+
 ## Ok, now what?
 
 After you've learned how to create **great clients**, it's time to **ship them**, so you may **use it on your implementations**. It's easy as well!
