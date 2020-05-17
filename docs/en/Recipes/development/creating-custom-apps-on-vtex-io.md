@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/e
 
 # Creating custom apps on VTEX IO
 
-The VTEX IO platform allows developers to create unique commerce experiences using Web technologies. It's possible to create **frontend blocks** for Store Framework, **backend services** exposing REST or GraphQL APIs and combine a series of VTEX frameworks into a complete solution, packaging it in **an app**.
+The VTEX IO platform allows developers to create unique commerce experiences using Web technologies. It's possible to create **frontend blocks** for Store Framework, **backend services** exposing REST or GraphQL APIs and combine a series of VTEX frameworks into a complete solution, packaging it into **an app**.
 
 This tutorial will show you how to quickly start developing a custom app on VTEX IO!
 
@@ -17,6 +17,7 @@ This tutorial will show you how to quickly start developing a custom app on VTEX
 
 Every IO app must have a `manifest.json` file on its root folder. This file holds important information about the app, like it's **name**, **version**, **vendor**, **settingsSchema**, **dependencies**, etc. For guidelines about app naming, you can read [this arcticle](TODO).
 
+Check this manifest from app **vtex.wordpress-integration**:
 ![Wordpress App Manifest](https://user-images.githubusercontent.com/18706156/81855711-14535680-9536-11ea-9e1c-9150d3570c97.png)
 
 _[Original](https://github.com/vtex-apps/wordpress-integration/blob/d3ca9bd43b8d6797f162519d7b8a31ec755bd47d/manifest.json)_
@@ -25,7 +26,9 @@ Now, let's go through some of the fields you can declare on your manifest and ho
 
 ### Builders
 
-These are the entrypoints of the app's functionality. In fact, all implementation must relate to the builders declared on the manifest, and live inside a folder with the corresponding name. For example, if I want to **develop React components** on an app, I should use the builder `react@3.x`, declaring it on the manifest:
+These are the entrypoints of the app's functionality. In fact, all implementation must relate to the builders declared on the manifest, and live inside a folder with the corresponding name.
+
+For example, if you want to **develop React components** on an app,  you should use the builder `react@3.x`, declaring it on the manifest:
 
 ```json
     "builders": {
@@ -35,7 +38,7 @@ These are the entrypoints of the app's functionality. In fact, all implementatio
 
 And create a `react` folder inside the app, placing there the component files. Each builder will have its own set of rules and validation process.
 
-One interesting aspect of this is that **it's possible to use as many builders as you want in one app**, which allows bundling frontend and backend development, delivering just one package with your solution.
+One interesting aspect of this is that **it's possible to use as many builders as you want in one app**, which allows bundling frontend and backend development, delivering you solution with just one package.
 
 The VTEX Product Team is always improving how our builders works (and creating new ones) to ease the development of commerce solutions.
 
@@ -57,9 +60,9 @@ For more technical information about them, read [Builders](https://vtex.io/docs/
 
 ### Dependencies
 
-The `dependencies` field on the manifest accepts IO Apps, with their versions, and its meaning doesn't differ from a `package.json`'s dependencies on a Javascript apps. 
+The `dependencies` field on the manifest accepts IO Apps, with their versions, and its semantics looks like a `package.json`'s dependencies on Javascript apps. 
 
-If you app needs to interact with another IO app (like a VTEX API), you need to declare it on `dependencies`. There's also some other cases like:
+If your app needs to **interact with another IO app** (like a VTEX API), you need to declare it on `dependencies`. The most common cases of dependency are:
 
 - Using _blocks_ from another app _(example: [vtex.store-theme](https://github.com/vtex-apps/store-theme/blob/fee222b7d337ab35a57eeefe12c27181e9e9e257/store/blocks.jsonc#L12))_
 - Importing React components from another app _(example: [vtex.order-placed](https://github.com/vtex-apps/order-placed/blob/ec6fab76f59ea4eacbea465419c3d026ae26be73/react/BankInvoiceSection.tsx#L3))_
@@ -71,7 +74,7 @@ If you app needs to interact with another IO app (like a VTEX API), you need to 
 
 ### Peer Dependencies
 
-It´s possible to configure app A to be **peer dependant** on on app B. VTEX IO will understand that **app B is required for app A to work**, so it enforces that app B **must already be installed in the workspace before A can be installed.**
+It´s possible to configure app A to be **peer dependant** on an app B. VTEX IO will understand that **app B is required for app A to work**, so it enforces that app B **must already be installed in the workspace before A can be installed.**
 
 > **Keep in mind:** Peer Dependencies will not be automatically installed!
 
@@ -97,9 +100,79 @@ An example would be the Pages admin where the user can't install it without firs
 
 ### settingsSchema
 
+The VTEX Admin for Apps may display configuration forms for each app installed on that account, and it's using this field on `manifest.json` that an app may **declare the schema of its configuration**. Using [JSON Schema](https://json-schema.org/), it's possible to accept multiple field with multiple data types. The persistence of the information is taken care by VTEX Plaftorm, and you may fetch the current configuration on your app code.
+
+For example, on the **vtex.wordpress-integration** app, the following `settingsSchema`: 
+
+```json
+  "settingsSchema": {
+    "title": "Wordpress Integration",
+    "type": "object",
+    "properties": {
+      "endpoint": {
+        "title": "Wordpress URL",
+        "description": "Enter the URL of your Wordpress installation in the form http://www.example.com/",
+        "type": "string"
+      },
+      "titleTag": {
+        "title": "Title tag for blog homepage",
+        "description": "Will also be appended to inner blog pages",
+        "type": "string"
+      },
+      "blogRoute": {
+        "title": "URL path for blog homepage",
+        "description": "Example: if 'foo' is entered here, blog homepage will be at http://www.yoursite.com/foo . Make sure routes in your store-theme match this setting. If left blank, default is 'blog'",
+        "type": "string"
+      }
+    }
+  }
+```
+
+will generate the following form once that app is installed:
+
+![image](https://user-images.githubusercontent.com/18706156/82129418-fb96ab00-9798-11ea-8d22-915fb2f59f6e.png)
+
+On your app's code, it's possible to **retrieve this configuration**, when configured by the merchant, in two ways:
+
+- With a GraphQL query from the frontend to the `vtex.apps-graphql` (like [vtex.shopper-approved](https://github.com/vtex-apps/shopper-approved/blob/3d33e84f3b36eabcea4e3f940cd63095d48767bb/react/graphql/shopperApprovedSettings.graphql))
+- On the backend, using the `getAppSettings` metod from `ctx.clients.apps` client  (like [vtex.store-indexer](https://github.com/vtex-apps/store-indexer/blob/9bff58ebcb560560ad1a598a080c93e4bde38ecb/node/middlewares/settings.ts#L18))
+
 ### credentialType
 
+When creating Node.js services that needs to communicate with other VTEX services **on behalf of the app**, instead of the user, the `credentialType` should be `absolute`.
+
+This will result in the contents of `ctx.vtex.authToken` being **the app's token**, what may be used to authenticate into other services.
+
+> The credential for the user who sent the request may be still accesed in `ctx.vtex.adminUserAuthToken` or `ctx.vtex.storeUserAuthToken`. Details [here](https://github.com/vtex/node-vtex-api/blob/929b9335f9fb0fe8fca6bf705e0aee80f923443c/src/service/worker/runtime/typings.ts#L122).
+
 ### policies
+
+If the app being built needs to **access some external services** or get some specific data from other places, it needs to inform so, even for exernal API's.
+
+The `policies` field on the app's manifest is **a list of resources** representing the "permissions" required by the apps. These resources might be of two types:
+
+- A specific resource (like `vtex.catalog-api-proxy:catalog-proxy` on [vtex.store-graphql](https://github.com/vtex-apps/store-graphql/blob/040bcc3e2a96d1537fe05647e0db677bda9fcb15/manifest.json#L140)) that was declared by [other app](https://github.com/vtex-apps/catalog-api-proxy/blob/5bb8085e5ea21c9be418b6f86c495584e3fc2c90/policies.json#L3) on `policies.json`. This file is used by apps that want to **declare policies for its resources.**
+
+- A descrition of an `outbound-access` resource, providing information about the HTTP API that the app needs to communicate with. This was the case for all `policies` from the `vtex.wordpress-integration` app displayed above.
+
+```json
+"policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/dataentities/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*",
+        "path": "/wp-json/wp/v2/*"
+      }
+    }
+  ]
+ ```
 
 ## Templates and Examples
 
@@ -117,7 +190,7 @@ Here's a list of our example/template apps:
 | [events-example](https://github.com/vtex-apps/events-example) | Exposes a Node.js app that handles platform events 
 | [search-engine-example](https://github.com/vtex-apps/search-engine-example) | Backend service that implements VTEX's Search Protocol |
 
-Another great way of learning about VTEX IO apps is **checking our [vtex-apps](https://github.com/vtex-app) organization on Github**, as most of the code that powers Store Framework **is open-source**. Here are some of the apps you'll find there:
+Another great way of learning about VTEX IO apps is **checking the [vtex-apps](https://github.com/vtex-apps) organization on Github**, as most of the code that powers Store Framework **is open-source**. Here are some of the apps you'll find there:
 
 | App | Description | Builders |
 |--|--| -- |
