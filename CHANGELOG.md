@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed 
+
+- Edition concept documentation: added info regarding VTEX 2 native edition apps
+
 ## [0.34.9] - 2020-05-11
 
 ## [0.34.8] - 2020-05-07
