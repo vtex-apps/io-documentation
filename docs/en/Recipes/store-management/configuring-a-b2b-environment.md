@@ -25,7 +25,7 @@ Check out the [Challenge Trade Policy documentation](https://vtex.io/docs/compon
 
 ### Step 2 - Enabling B2B behavior
 
-With the Challenge properly installed and configured, it's time to make the VTEX IO platform understand that your store's environment will assume a B2B behavior. To do that, follow the steps below:
+With the challenge properly installed and configured, it's time to make the VTEX IO platform understand that your store's environment will assume a B2B behavior. To do that, follow the steps below:
 
 1. Log into the desired account's admin;
 2. Access the **Apps** section in the admin's sidebar;
