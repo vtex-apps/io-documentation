@@ -1,6 +1,5 @@
 # What is VTEX IO
-
-VTEX IO is an enterprise **low-code development platform** that provides performance management, scalability and safety to your project. 
+dhewifgcewuidfeuwdfyedfydfw-code development platform** that provides performance management, scalability and safety to your project. 
 
 It gives you the tools to focus on code that really matters for your business instead of needing to deal with infrastructure problems and challenges - that's our job.  
 
