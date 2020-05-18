@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/development/how-to-create-and-use-clients.md"
 ---
 
-# How to create and use Clients on VTEX IO?
+# Managing Clients
 
 ## Prerequisites
 - Being familiar with the [concept of Clients](concepts/clients)
