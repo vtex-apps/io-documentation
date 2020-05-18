@@ -16,3 +16,10 @@ Being built of top of a **hierarchical relationship between accounts**, the Edit
 Each account can only have a single Edition App installed, defined by its Sponsor Account. However, each account is able to **publish** multiple Edition Apps to their registry, which means that children from the same Sponsor Account can have different apps and configurations from each other.
 
 Being hierarchical in nature, any child account can also define their own Edition Apps for their child accounts themselves, the only restriction being that these Edition Apps must "extend" exactly one Edition App from their respective Sponsor. This extension is specified through a single dependency in the Edition App's `manifest.json` file.
+
+In VTEX platform, there are **two native Edition Apps** available to be installed. Presently, they are:
+
+- `vtex.edition-business@0.x`: for stores whose front-end is built using [VTEX's CMS](https://help.vtex.com/tutorial/o-que-e-o-cms--EmO8u2WBj2W4MUQCS8262);
+- `vtex.edition-store@2.x`: for stores whose front-end is built using [VTEX IO's Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/).
+
+
