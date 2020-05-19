@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Concepts/services.md"
 ---
 
-# Service
+# Services
 
 VTEX IO powers big e-commerce operations, and for most of that it's necessary to **run code on a server**. Services are how we run **Node.js or .NET** code on VTEX IO infrastructure, backed by API abstractions to improve developer experience.
 
