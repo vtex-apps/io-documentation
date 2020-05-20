@@ -62,6 +62,7 @@
 
   - [VTEX IO Development](recipes/development)
 
+    - [Creating custom apps on VTEX IO](recipes/development/creating-custom-apps-on-vtex-io.md)
     - [Filling the Application form for development](recipes/development/filling-the-application-form-for-development.md)
     - [VTEX IO CLI installation and command reference](recipes/development/vtex-io-cli-installation-and-command-reference.md)
     - [Running A/B tests](recipes/development/running-native-ab-testing.md)
