@@ -173,7 +173,13 @@ The `policies` field on the app's manifest is **a list of resources** representi
     }
   ]
  ```
-
+- best practices (react hooks and all of that)
+- course store-block
+- declaring routes
+- quickstart service
+- finalizar (falar do vtex link)
+- vtex styleguide (para admin)
+- add dotnet
 ## Templates and Examples
 
 Instead of writing the boilerplate code when creating an VTEX IO App, try using one of our **app templates**. If your solution will be composed by multiple functionalities (like frontend components and backend services), you might want to **merge the examples apps**, adding the appropriate builders on `manifest.json` and centering all folders into one app.
