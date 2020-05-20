@@ -147,7 +147,7 @@ This will result in the contents of `ctx.vtex.authToken` being **the app's token
 
 ### policies
 
-If the app being built needs to **access some external services** or get some specific data from other places, it needs to inform so, even for exernal API's.
+If the app being built needs to **access some external services** or get some specific data from other places, it needs to declare so, even for external API's.
 
 The `policies` field on the app's manifest is **a list of resources** representing the "permissions" required by the apps. These resources might be of two types:
 
@@ -173,13 +173,29 @@ The `policies` field on the app's manifest is **a list of resources** representi
     }
   ]
  ```
-- best practices (react hooks and all of that)
-- course store-block
-- declaring routes
-- quickstart service
-- finalizar (falar do vtex link)
-- vtex styleguide (para admin)
-- add dotnet
+
+ ## Best Practices
+
+- Use [Typescript](https://www.typescriptlang.org/) when developing React or Node. We provide some default environment configuration on [vtex/typescript](http://github.com/vtex/typescript).
+- Use [VTEX Styleguide](https://styleguide.vtex.com/) when developing Admin Apps or extensions to My Account. 
+- Use [React Hooks](https://reactjs.org/docs/hooks-intro.html) when developing custom blocks. We already expose some VTEX API's with hooks like [*useRuntime*](https://vtex.io/docs/app/vtex.render-runtime) or [*useProduct*](https://github.com/vtex-apps/product-quantity/blob/8e83b0fd64d0496d36ced2645e53961e1e37211a/react/ProductQuantity.tsx#L2).
+- Always **prefer GraphQL** if you're creating a complete frontend/backend solution, since it will help us constantly improve page load time.
+
+### React Apps
+- Visit the documentation for [**render-runtime**](https://vtex.io/docs/app/vtex.render-runtime) to check available **navigation** API's. It's not necessary to inject third-party routers on your app.
+
+ ## Courses
+
+If you want to learn from stratch about VTEX IO and Store Framework, a great way to start is **enrolling on our courses**. As of now, we have two:
+
+1. The [Store Framework Course](https://lab.github.com/vtex-trainings/store-framework), where you'll learn about Store Framework and how to create beautiful themes.
+2. The [Store Block Course](https://lab.github.com/vtex-trainings/vtex-store-block-course/), where you'll learn how to creating custom Store Framework blocks using React.
+
+ ## Development
+
+- The development flow for IO apps is seamless. Just run `vtex link` and you should be good to go! More details on [Linking an app](https://vtex.io/docs/recipes/development/linking-an-app/).
+- When using service builders, the _link_ process will probably **output the URL for your service**, where you may test endpoints directly. If you're building GraphQL API's, it will print the location of a **GraphiQL IDE** where you may test your queries and resolvers.
+
 ## Templates and Examples
 
 Instead of writing the boilerplate code when creating an VTEX IO App, try using one of our **app templates**. If your solution will be composed by multiple functionalities (like frontend components and backend services), you might want to **merge the examples apps**, adding the appropriate builders on `manifest.json` and centering all folders into one app.
@@ -201,6 +217,7 @@ Another great way of learning about VTEX IO apps is **checking the [vtex-apps](h
 | App | Description | Builders |
 |--|--| -- |
 | [store-theme](https://github.com/vtex-apps/store-theme) | Theme definition for [Store Theme](https://storetheme.vtex.com) | `store`, `styles` and `sitemap`
+| [store](https://github.com/vtex-apps/store) | Declaration of default blocks and store routes | `react`, `store`, and `messages`
 | [wordpress-integration](https://github.com/vtex-apps/wordpress-integration) | Complete solution for integrating a VTEX Store with Wordpress, fetching external data and exposing blocks | `react`, `store`, `node`, `graphql` and `messages`
 | [seller-selector](https://github.com/vtex-apps/seller-selector) | Exports blocks and route to marketplaces with multiple sellers | `react`, `store`, and `messages`
 | [admin-pages](https://github.com/vtex-apps/admin-pages) | VTEX Site Editor | `react`, `admin`, and `messages`
