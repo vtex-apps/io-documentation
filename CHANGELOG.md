@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- 2 new docs: Enabling 404 pages & Internationalizing product prices
+
 ## [0.34.10] - 2020-05-18
 
 ### Fixed 

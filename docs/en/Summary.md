@@ -49,8 +49,10 @@
   - [Store Management](recipes/store-management)
 
     - [Improving your store's performance](recipes/store-management/improving-your-stores-performance.md)
+    - [Enabling 404 pages](recipes/store-management/enabling-404-pages.md)
     - [Configuring a B2B environment](recipes/store-management/configuring-a-b2b-environment.md)
     - [Installing apps in live stores: best practices](recipes/store-management/installing-apps-in-live-stores-best-practices.md)
+    - [Internationalizing product prices](recipes/store-management/internationalizing-product-prices.md)
     - [Making your theme content public](recipes/store-management/making-your-theme-content-public.md)
     - [Understanding how store URL indexing works](recipes/store-management/understanding-how-store-url-indexing-works.md)
     - [Managing URL Redirects](recipes/store-management/managing-url-redirects.md)
