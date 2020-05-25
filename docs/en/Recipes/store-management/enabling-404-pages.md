@@ -4,7 +4,7 @@ description: "Avoid problems with SEO by enabling 404 pages in your VTEX IO stor
 date: "2020-05-23"	
 tags: ["404", "404-pages", "not-found", "HTTP"]	
 version: "0.x"	
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management"	
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/enabling-404-pages.md"	
 ---
 
 # Enabling 404 pages
