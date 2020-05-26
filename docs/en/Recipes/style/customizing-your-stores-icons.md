@@ -19,7 +19,7 @@ Although these can satisfy your store’s needs, you may want to override and cu
 
 1. In your `store-theme` code, create a new folder named `iconpacks/` within `styles/`. 
 2. Inside `iconpacks/`, create the file `iconpack.svg`. 
-3. Copy the content from VTEX'S default [iconpack.svg](https://raw.githubusercontent.com/vtex-apps/store-icons/master/styles/iconpacks/iconpack.svg) and paste it in the `iconpack.svg` file. 
+3. Copy the content from VTEX'S default [iconpack.svg](https://github.com/vtex-apps/store-icons/blob/master/styles/iconpacks/iconpack.svg?short_path=62ebf4b) and paste it in the `iconpack.svg` file. 
 
 This is how your `styles/` folder structure should look like after you've accomplished that: 
 
