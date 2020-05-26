@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
-- Enabling 404 pages (added the block customization) and Running A/B test (fixed a command)
+- Enabling 404 pages (added the block customization)
 
 ## [0.35.2] - 2020-05-26
 
