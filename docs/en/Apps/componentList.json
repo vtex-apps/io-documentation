@@ -261,13 +261,6 @@
     },
     {
       "appName": "vtex.product-summary",
-      "file": "product-summary-price.md",
-      "title": "Product Summary Price",
-      "description": "This block is exported by the Product Summary app and it is responsible for displaying the product's price in other store blocks.",
-      "url": "https://github.com/vtex-apps/product-summary"
-    },
-    {
-      "appName": "vtex.product-summary",
       "file": "product-summary-sku-selector.md",
       "title": "Product Summary SKU Selector",
       "description": "This block is exported by the Product Summary app and it is responsible for displaying the SKU Selector block in other store blocks.",
