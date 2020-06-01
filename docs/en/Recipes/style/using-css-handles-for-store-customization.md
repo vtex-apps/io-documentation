@@ -83,7 +83,7 @@ However, it's common to come across store scenarios whose customization uses CSS
 This customization practice by HTML hierarchy was mostly deprecated. It means that **only** the CSS Selectors listed below will continue to be allowed for your store customization:
 
 - Class selectors (e.g. `.foo`)
-- Pseudo-selectors `:hover`, `:visited`, `:active`, `:disabled`, `:focus`, `:local`, and `:target`
+- Pseudo-selectors `:hover`, `:visited`, `:active`, `:disabled`, `:focus`, `:local`, `:empty`, and `:target`
 - `:not()`
 - `:first-child` and `:last-child`
 - `:nth-child(even)` and `:nth-child(odd)`
