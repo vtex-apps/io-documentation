@@ -40,8 +40,8 @@ Once your changes are duly saved, your store is ready to display 404 pages whene
 Now that you've enabled 404 pages in your store for the scenarios stated above, you can customize them using blocks in your store's theme following the step by step below:
 
 1. In your terminal, [create a development workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/);
-2. Then, open your store's theme folder using your preferred code editor;
-3. In the theme's product or search template (`store.product` or `store.search`) you can declare, respectively, the block `store.not-found#product` or `store.not-found#search`  and have it contain, for example, another Rich Text block inside. 
+2. Then, open your store theme app using your preferred code editor;
+3. In the theme's product or search template (`store.product` or `store.search` in the `blocks` folder) you can declare, respectively, the block `store.not-found#product` or `store.not-found#search`  and have it contain, for example, another Rich Text block inside. 
 
  Find below an example of a `store.not-found#product` in a product template: 
  
