@@ -108,7 +108,7 @@ Once your service app is deployed, it is ready to receive configurations from ot
 
 ```diff
  {
-   "name": "vtex.amazing-service-configuration",
+   "name": "vtex.amazing-configuration",
    "version": "0.0.0",
    "builders": {
 +    "vtex.most-amazing-service-ever": "0.x",
@@ -149,15 +149,15 @@ The structure of the received configurations list is similar to the example belo
 ```json
 [
   {
-    "vtex.amazing-service-configuration": {
+    "vtex.amazing-configuration": {
       "name":"little foot",
       "id":1
     },
-    "declarer": "vtex.amazing-service-configuration@0.0.0+build1580823094"
+    "declarer": "vtex.amazing-configuration@0.0.0+build1580823094"
   }
 ]
 ```
 
 We're looking at an array where each object is a configuration originating from a different app - since you can have multiple apps configuring the same service.
 
-In each array element, you have an object with two keys: the name of the app that is configuring the service (`vtex.amazing-service-configuration`, in the example above) and the `declarer`. The first contains the settings itself, according to the structure defined in the service app's JSON Schema. The second corresponds to the full name of the app that carries such configurations.
+In each array element, you have an object with two keys: the name of the app that is configuring the service (`vtex.amazing-configuration`, in the example above) and the `declarer`. The first contains the settings itself, according to the structure defined in the service app's JSON Schema. The second corresponds to the full name of the app that carries such configurations.
