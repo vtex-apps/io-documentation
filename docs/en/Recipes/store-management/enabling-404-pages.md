@@ -67,7 +67,7 @@ The <code>store.not-found</code> blocks will only be triggered when the server r
 
 ![not-found-block](https://user-images.githubusercontent.com/52087100/76447318-4108b780-63a7-11ea-9b03-77413e0e4855.png)
 
-5. If you’re happy with all your configurations, [release](https://vtex.io/docs/recipes/development/releasing-a-new-app-version/) a new version for your store theme and then [publish](https://vtex.io/docs/recipes/development/publishing-an-app/) it;
-6. Then, [create a production workspace](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) and [install](https://vtex.io/docs/recipes/development/installing-an-app/) the store theme app  (in the version previously published);
+5. If you’re happy with all your configurations, [release](https://vtex.io/docs/recipes/development/releasing-a-new-app-version/) a new version for your store theme app and then [publish](https://vtex.io/docs/recipes/development/publishing-an-app/) it;
+6. Then, [create a production workspace](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) and [install](https://vtex.io/docs/recipes/development/installing-an-app/)  the store theme app (in the version previously published) in it;
 7. Access your store through your product workspace ({workspaceName}--{accountName}.myvtex.com) and inspect the page to ensure everything is running normally;
-8. Finally, [promote your production workspace](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) to master, making the changes permanent and public to your end users.
+8. Finally, [promote your production workspace](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) to master, making the changes permanent and public to your end-users.
