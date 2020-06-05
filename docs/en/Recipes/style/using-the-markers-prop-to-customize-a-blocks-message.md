@@ -61,5 +61,9 @@ You can use the prop's value to wrap any desired part of the block's message.
 
 Notice that the message's HTML element is wrapped in a new `span` with its own unique selector: `<span class="vtex-product-price-1-x-savings-discount">`.
 
-11. Once you've checked the changes, repeat the steps using a [**production workspace**](https://vtex.io/docs/recipes/development/creating-a-production-workspace/): save the theme's configuration that include the `markers` prop to that workspace and, using Site Editor, repeat step 8. After inspecting the page and ensuring that everything is running normally, you should [promote your production workspace to master](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master/), making the changes permanent. 
-12. Use the new identifier created for the HTML element to customize it at will. Access the recipe on [customizing your store using CSS Handles](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/) for more on this topic.
+11. [Release](https://vtex.io/docs/recipes/development/releasing-a-new-app-version/) a new version for your store theme app with the performed changes and then [publish](https://vtex.io/docs/recipes/development/publishing-an-app/) it;
+12. Then, [create a production workspace](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) and [install](https://vtex.io/docs/recipes/development/installing-an-app/) in it the store theme app (considering the version previously published);
+13. Access your store through your new production workspace (`{workspaceName}--{accountName}.myvtex.com`) and inspect the page to ensure everything is running normally;
+14. Finally, [promote your production workspace](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) to master, making the changes permanent and public to your end users.
+
+After the step 14, you will be able to use the new identifier created for the HTML element and customize it at will. Access the recipe on [customizing your store using CSS Handles](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/) for more on this topic.
