@@ -31,7 +31,7 @@ Check out the instructions to use it below:
 },
 ```
 
-2.  In the _root_  directory of your app, create an  `assets`  folder to store and manage your store's assets, such as images:
+2.  In the `store`  root directory of your app, create an  `assets` folder to manage your store's assets, such as images.
 
 
 3. Then, add the desired asset files in the  `assets` folder. Notice that you can create subfolders within the  `assets`  folder to better organize the assets used by the theme blocks, as shown below:
