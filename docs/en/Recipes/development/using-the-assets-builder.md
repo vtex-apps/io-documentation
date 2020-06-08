@@ -33,7 +33,6 @@ Check out the instructions to use it below:
 
 2.  In the _root_  directory of your app, create an  `assets`  folder to store and manage your store's assets, such as images:
 
-![assets-folder](https://user-images.githubusercontent.com/60782333/83685560-3e40eb80-a5bf-11ea-9ea1-d443bce21b11.png)
 
 3. Add the desired asset files in the  `assets`  folder as shown above. Your asset files are now saved in the **File Manager**. Notice that you can create subfolders within the  `assets`  folder to better organize the assets used by the theme blocks. 
 
