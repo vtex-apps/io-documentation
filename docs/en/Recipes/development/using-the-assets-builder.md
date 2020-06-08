@@ -47,7 +47,8 @@ Check out the instructions to use it below:
     }  
 }
 ```
-Our builder will automatically look for the path `assets/{your-image}.{jpg/png/gif}` of your asset in the **File Manager** to replace its value with its URL. 
+
+Once the asset path was added to the prop and you save the changes performed, Assets Builder will automatically work to save it in the VTEX IO database and then generate a URL for it, which will be considered by the platform during the theme rendering.
 <div class="alert alert-warning">
 If you created subfolders inside the `assets` folder, remember to include the folder hierarchy in the asset path, such as:  `assets/events/vtex-day.jpg`.
 </div>
