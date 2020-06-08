@@ -38,7 +38,7 @@ Check out the instructions to use it below:
 3. Add the desired asset files in the  `assets`  folder as shown above. Your asset files are now saved in the **File Manager**. Notice that you can create subfolders within the  `assets`  folder to better organize the assets used by the theme blocks. 
 
 
-4. Now you're able to use your assets within store theme blocks that uses media, such as an [Image](https://vtex.io/docs/components/all/vtex.store-components@3.115.3/image/) block, an [Info Card](https://vtex.io/docs/components/all/vtex.store-components@3.116.0/infocard/), etc. To do that, you must use the desired asset path as the value of a given prop of your block. For example, for an Image block, you'll use `assets/{your-image}.{jpg/png/gif}` as the `src` value:
+4. Use the asset path (`assets/{imageFileName}.{jpg/png/gif}`) as the value of a given block's prop for media rendering, such as `src`:
 
 ```JSON
 "image": {  
