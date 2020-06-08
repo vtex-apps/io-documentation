@@ -52,7 +52,7 @@ Our builder will automatically look for the path `assets/{your-image}.{jpg/png/g
 If you created subfolders inside the `assets` folder, remember to include the folder hierarchy in the asset path, such as:  `assets/events/vtex-day.jpg`.
 </div>
 
-Done! The Assets Builder is configured and ready to be used by the Platform. 
+ 
 
 A few things to consider: 
 
