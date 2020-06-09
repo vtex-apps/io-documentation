@@ -40,9 +40,11 @@ git clone https://github.com/vtex-apps/service-example.git
 
 3. Once successfully cloned, go to the local app directory. Use the `cd service-example` command;
 4. Open the app using your code editor;
-5. In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
+5. Declare that your app can receive configurations:
+### If your app has `node/service.json` file
+In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
 
-```json
+``` json
 "routes": {
   "status": {
     "path": "/_v/status/:code",
@@ -55,7 +57,7 @@ git clone https://github.com/vtex-apps/service-example.git
 
 It is also possible to **define your configurations through event listening**. For this scenario, you should add in the  `node/service.json` file something similar to the example below, replacing the values according to your needs: 
 
-```json
+``` json
 "events": {
   "eventHandler": {
     "sender": "appEmittingTheEvent",
@@ -64,6 +66,18 @@ It is also possible to **define your configurations through event listening**. F
   },
   ...
 }
+```
+
+### If your app has `grapqhl/schema.graphql` file
+If you are developing a GraphQL app, you may need to add a directive to all of the queries that can receive configurations. This is pretty easy. If you'd add this directive to [the GraphQL `vtex init` app](https://github.com/vtex-apps/graphql-example), in the query `book`, the result would be:
+``` diff
+type Query {
+-  book(id: ID!): Book
++  book(id: ID!): Book @settings(settingsType: "workspace")
+}
+
++@settings(settingsType: "workspace")
+```
 
 6. In the `manifest.json` file, add the `configuration` Builder to the `builders` list and update the app's name to one of your choosing. For example:
 
