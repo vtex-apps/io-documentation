@@ -9,59 +9,33 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Conc
 
 # Builders
 
-A builder is an app (basically a `.json` file) responsible for interpreting the code of other apps and transforming it. It works as an API service that will process and interpret a directory in your app.
+In the VTEX IO platform, a builder basically is an **abstraction to configure other IO services**. It is responsible for **interpreting the code of other apps and transforming it** to a given goal, working as an API service that processes and interprets a directory in your app.
 
-For example: the **React** builder transforms the source code of TypeScript React components into compiled bundles, ready to be imported into Render apps.
+For example: the **React** builder offers a way to configure our react renderer, transforming the source code of TypeScript React components into compiled bundles, ready to be imported into Render apps.
 
-As a result, It's important for builders to:
+As a result, it's important for builders to:
 
 - Have very **well-defined** and **minimal responsibilities**;
-- Be **abstract** and **opinionated**;
+- Be **abstract** and **opinionated** according to their goals;
 - Allow for **fine-grained permission control**.
 
 We currently work with several builders that **simplify app development by making each part of an app's responsibilities clear and well separated**.
 
-By dividing responsibilities into smaller builders, we will be able to evolve them separately - faster and with fewer stop-the-world breaking changes. They are:
+By dividing responsibilities into smaller builders, we are able to evolve them separately - faster and with fewer stop-the-world breaking changes. They are:
 
-## Styles Builder
+- **Styles Builder** - Takes your `styles.json` file when building and uses a [Tachyons](https://tachyons.io/) generator to properly produce your store's CSS.
 
-Styles Builder takes your `styles.json` file when building and uses a [Tachyons](https://tachyons.io/) generator to properly produce your store's CSS.
+- **Store Builder** - Responsible for powering Store Framework store's components. It interprets everything that is inside the theme app's  `/store` directory, validating the blocks, interfaces and routes in order to build the store's front. 
 
-## Store Builder
+- **GraphQL Builder** - Processes GraphQL files (`.graphql` or `.gql`) from an IO app. These files are used to define a GraphQL's API and Schema. As expected, these files are found in the app's `/graphql` directory.
 
-This is the builder responsible for powering Store Framework stores. It interprets everything that is inside an app's  `/store` directory following 4 steps with different complexity levels:
+- **Messages Builder** - Empowers VTEX IO internationalization. It reads `json` files associated with different locales within the app's `/messages` directory and makes them available for front-end applications to use via `react-intl`.
 
-- `createParseFiles` - Where the parsing of `.json` files in `/store` takes place;
-- `resolve` - Responsible for validating the blocks, interfaces and routes defined by those files;
-- `maybeAppendDependency` - Adds new dependencies to the app (if needed);
-- `writeAssets` - Writes the build result that will be sent to the IO registry.
+- **Pixel Builder** - Processes the source-code and configuration of [Pixel Apps](https://vtex.io/docs/apps/pixel/) in VTEX IO. The files picked up by this builder are located in the app's `/pixel` directory.
 
-## Docs Builder
+- **Assets Builder** - Handles assets used by store theme blocks. It gets all asset paths used and uploads them in the File Manager service, the VTEX IO database. You can learn how to use it by accessing the recipe on [Using the Assets Builder](https://vtex.io/docs/recipes/development/using-the-assets-builder/).
 
-Builder that processes an app's documentation and make it available on VTEX IO Docs. Each app is responsible for containing its own documentation, written in Markdown (`.md`) format in a `/docs` directory, where Docs Builder can find it and work on it.
+- **Configurations Builder** - Allows you to allocate code pertaining to service configurations to an app that's independent on the platform. You can learn how to use it by accessing the recipe on [Creating service configuration apps](https://vtex.io/docs/recipes/development/creating-service-configuration-apps/).
 
-## GraphQL Builder
+ - **Docs Builder** - Processes app's documentations and make it available on VTEX IO Docs. Each app is responsible for containing its own documentation, written in Markdown (`.md`) format and uploaded in a a `/docs` directory - where Docs Builder can interpret it.
 
-GraphQL Builder is responsible for processing GraphQL files (`.graphql` or `.gql`) in an IO app. These files are used to define a GraphQL's API and Schema. As expected, these files are found in the `/graphql` directory.
-
-## Messages Builder
-
-Messages Builder empowers VTEX IO internationalization. It reads `json` files associated with different locales within `/messages` and makes them available for front-end applications to use via `react-intl`.
-
-## Pixel Builder
-
-This is the builder responsible for processing the source-code and configuration of [Pixel Apps](https://vtex.io/docs/apps/pixel/) in VTEX IO. The files picked up by this builder are located in `/pixel`.
-
-## Assets Builder
-
-The VTEX Assets Builder is responsible for handling assets within store theme blocks by getting all asset paths used and uploading them in the File Manager service. You can learn how to use it by accessing the recipe on [Using the Assets Builder](https://vtex.io/docs/recipes/development/using-the-assets-builder/).
-
-## Configurations Builder
-
-The Configurations Builder allows you to allocate code pertaining to service configurations to an app that's independent on the platform. You can learn how to use it by accessing the recipe on [Creating service configuration apps](https://vtex.io/docs/recipes/development/creating-service-configuration-apps/).
-
-
-## TypedQL [Deprecated]
-![https://img.shields.io/badge/-Deprecated-red](https://img.shields.io/badge/-Deprecated-red)
-TypedQL Builder is a VTEX IO feature for developing back-end projects. Similar to the GraphQL Builder, it comes as an alternative for back-end apps written in GraphQL + TypeScript. It proposes to be more modern and generic, using only TypeScript Type Declaration files to create the GraphQL interface automatically.
-TypeScript-based projects are greatly benefited by the use of this Builder, since developers only need to write TypeScript types. GraphQL Schema is automatically generated
