@@ -104,7 +104,7 @@ In the example above, the accepted configuration is an object with two keys: `id
 
 Once your service app is deployed, it is ready to receive configurations from others. 
 
-1. In your VTEX IO app, add the recently created service app as a new builder. For example:
+1. In your VTEX IO configuration app, add the recently created service app as a new builder. For example:
 
 ```diff
  {
