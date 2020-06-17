@@ -68,7 +68,7 @@ It is also possible to **define your configurations through event listening**. F
  }
 ```
 
-6. In the `manifest.json` file, add the `configuration` Builder to the `builders` list and update the app's name to one of your choosing. For example:
+6. In your app's root directory, edit the `manifest.json` file by adding the `configuration` Builder to the `builders` list and update the app's `name` to one of your choosing. For example:
 
 ``` diff
  {
