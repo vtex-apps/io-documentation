@@ -70,7 +70,10 @@ It is also possible to **define your configurations through event listening**. F
 ```
 
 #### If you are developing a GraphQL app
-If you are developing a GraphQL app, you may need to add a directive to all of the queries that can receive configurations. 
+If you are developing a GraphQL app, you may need to add a directive to all of the queries that can receive configurations.
+
+A [GraphQL Directive](https://graphql.org/learn/queries/#directives) is a way of changing how the query will be performed.
+When you add the `settings` directive, the systems knows it must search for configurations for that service, thus, under the hood, it includes one more step to the query where it finds all of the configurations and adds them to the context.
 
 For example, consider our [graphql-example](https://github.com/vtex-apps/graphql-example) app (you can play with it if you run `vtex init` in a development workspace and choose `graphql-example`). In this app's root directory, you'll see the following file `grapqhl/schema.graphql`. Now, if you open it and add the `@settings` directive to the query `book`, you'll have something like:
 
