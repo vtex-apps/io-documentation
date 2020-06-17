@@ -68,7 +68,7 @@ It is also possible to **define your configurations through event listening**. F
 }
 ```
 
-### If your app has `grapqhl/schema.graphql` file
+#### If you are developing a GraphQL app
 If you are developing a GraphQL app, you may need to add a directive to all of the queries that can receive configurations. This is pretty easy. If you'd add this directive to [the GraphQL `vtex init` app](https://github.com/vtex-apps/graphql-example), in the query `book`, the result would be:
 ``` diff
 type Query {
