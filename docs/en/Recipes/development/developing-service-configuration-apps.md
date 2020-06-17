@@ -40,8 +40,9 @@ git clone https://github.com/vtex-apps/service-example.git
 
 3. Once successfully cloned, go to the local app directory. Use the `cd service-example` command;
 4. Open the app using your code editor;
-5. Declare that your app can receive configurations:
-### If your app has `node/service.json` file
+5. Now, to declare that your app can receive configurations through requests, check [this section](#if-your-app-has-a-node-service) if your app has a Node service and [this section](#if-you-are-developing-a-graphql-app) if you are developing a GraphQL app.
+
+#### If your app has a Node Service
 In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
 
 ``` json
