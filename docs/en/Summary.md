@@ -41,6 +41,7 @@
     - [Using Flex Layout](recipes/templates/using-flex-layout.md)
     - [Building a Carousel using Slider Layout](recipes/templates/building-a-carousel-using-slider-layout.md)
     - [Building a Product Details Page](recipes/templates/building-a-product-details-page.md)
+    - [Creating modals using icons](recipes/templates/creating-modals-using-icons.md)
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
     - [Using the Fold blocks](recipes/templates/using-the-fold-blocks.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
