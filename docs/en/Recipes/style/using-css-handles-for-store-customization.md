@@ -24,7 +24,7 @@ At the end of the day, CSS Handles are nothing more than your **store's layout b
 ![css-handles-inspect](https://user-images.githubusercontent.com/5691711/70256857-ffdd8780-1767-11ea-936d-a98cbfc924c1.png)
 
 <div class="alert alert-info">  
-<strong>Before proceeding to the third step, check the CSS Handles table in the documentation of the app/block responsible for rendering the HTML element</strong> (following the example above, we would access the Menu app documentation). It will therefore be possible to confirm whether the inspected Handle is valid and mainly if the customization requires another addon to function, such as a Handle modifier or the HTML element's attribute.
+<strong>Before proceeding to the third step, check the CSS Handles table in the documentation of the app/block responsible for rendering the HTML element</strong> (following the example above, we would access the Menu app documentation). It will therefore be possible to confirm whether the inspected Handle is valid and mainly if the customization requires an add-on to function, such as a Handle modifier or the HTML element's attribute.
 </div>
 
 <div class="alert alert-warning">  
@@ -44,7 +44,7 @@ If, upon checking the CSS Handles table, you notice that the desired Handle need
 ```
 
 <div class="alert alert-info">  
-Remember: if the Handle requests an addon, such as the HTML element's attribute or a Handle modifier, add it next to the Handle's name, following this format: <code>{cssHandleName}--{addon)</code>.
+Remember: if the Handle requests an add-on, such as the HTML element's attribute or a Handle modifier, add it next to the Handle's name, following this format: <code>{cssHandleName}--{addon)</code>.
 </div>
 
 Once you app is linked and the changes duly saved, the new customization should immediately be reflected onto your workspace.  
