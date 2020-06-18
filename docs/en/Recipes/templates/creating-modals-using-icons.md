@@ -4,7 +4,7 @@ description: "Trigger modals using UI components in order to force user interact
 date: "2020-06-18"
 tags: ["modals", "icon", "store-icons", "creating"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/templates/best-practices-for-rendering-images.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/creating-modals-using-icons.md"
 ---
 
 # Creating modals using icons 
