@@ -1,12 +1,6 @@
 {
   "content": [
     {
-      "appName": "vtex.address-locator",
-      "title": "Address Locator",
-      "description": "VTEX Address Locator component",
-      "url": "https://github.com/vtex-apps/address-locator"
-    },
-    {
       "appName": "vtex.add-to-cart-button",
       "title": "Add to Cart Button",
       "description": "A button for adding items into the shopping cart.",
@@ -178,6 +172,12 @@
       "title": "Product Kit",
       "description": "Displays a list of product kits.",
       "url": "https://github.com/vtex-apps/product-kit"
+    },
+    {
+      "appName": "vtex.product-list",
+      "title": "Product List",
+      "description": "Works with Minicar to display all items in the user's cart, informing when some of them are unavailable.",
+      "url": "https://github.com/vtex-apps/product-list"
     },
     {
       "appName": "vtex.store-components",
