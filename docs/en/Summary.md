@@ -41,6 +41,7 @@
     - [Using Flex Layout](recipes/templates/using-flex-layout.md)
     - [Building a Carousel using Slider Layout](recipes/templates/building-a-carousel-using-slider-layout.md)
     - [Building a Product Details Page](recipes/templates/building-a-product-details-page.md)
+    - [Creating modals using icons](recipes/templates/creating-modals-using-icons.md)
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
     - [Using the Fold blocks](recipes/templates/using-the-fold-blocks.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
@@ -58,7 +59,6 @@
     - [Managing URL Redirects](recipes/store-management/managing-url-redirects.md)
     - [Enabling the store's PWA notice](recipes/store-management/enabling-the-stores-pwa-notice.md)
     - [Enabling the Order Form optimization](recipes/store-management/enabling-order-form-optimization.md)
-    - [Installing the Google Tag Manager app](recipes/store-management/installing-the-google-tag-manager-app.md)
     - [Setting up Google Tag Manager](recipes/store-management/setting-up-google-tag-manager.md)
     - [Setting up Google Analytics search tracking](recipes/store-management/setting-up-google-analytics-search-tracking.md)
 
