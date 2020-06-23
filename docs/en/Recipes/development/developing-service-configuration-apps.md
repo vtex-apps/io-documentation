@@ -82,7 +82,7 @@ It is also possible to **define your configurations through event listening**. F
 ```
 
 7. Create a `configuration` folder in your app's root directory, and, then, a `schema.json` file inside it. This file will hold information about the settings structure that the service app is going to accept from other apps on the platform.
-8. Once the file is created, create a JSON Schema in that file, according to your scenario. For example:
+8.  In the `configuration/schema.json` file, create a JSON Schema, according to your scenario. For example:
 
 ```json
 {
