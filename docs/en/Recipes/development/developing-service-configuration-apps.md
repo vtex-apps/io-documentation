@@ -42,49 +42,55 @@ git clone https://github.com/vtex-apps/service-example.git
 4. Open the app using your code editor;
 5. In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
 
-```json
-"routes": {
-  "status": {
-    "path": "/_v/status/:code",
-    "public": true,
-    "settingsType": "workspace"
-  },
-  ...
-}
+```diff
+ {
+   "routes": {
+     "status": {
+       "path": "/_v/status/:code",
+       "public": true,
++      "settingsType": "workspace"
+     }
+   }
+ }
 ```
 
 It is also possible to **define your configurations through event listening**. For this scenario, you should add in the  `node/service.json` file something similar to the example below, replacing the values according to your needs: 
 
-```json
-"events": {
-  "eventHandler": {
-    "sender": "appEmittingTheEvent",
-    "keys": ["topic"],
-    "settingsType": "workspace"
-  },
-  ...
-}
-
-6. In the `manifest.json` file, add the `configuration` Builder to the `builders` list and update the app's name to one of your choosing. For example:
-
-``` diff
- "name": "most-amazing-service-ever",
- "version": "0.0.0",
- "builders": {
-   "node": "4.x",
-+  "configuration": "0.x",
+```diff
+ {
+   "events": {
+     "eventHandler": {
+       "sender": "appEmittingTheEvent",
+       "keys": ["topic"],
++      "settingsType": "workspace"
+     }
+   }
+ }
 ```
 
-7. Create a `schema.json` file in the `configuration` folder. You will need this `configuration/schema.json` file to define the settings structure that the service app is going to accept from other apps on the platform.
-8. Once the file is created, create a JSON Schema in that file, according to your scenario. For example:
+6. In your app's root directory, edit the `manifest.json` file by adding the `configuration` Builder to the `builders` list and update the app's `name` to one of your choosing. For example:
+
+``` diff
+ {
+   "name": "vtex.most-amazing-service-ever",
+   "version": "0.0.0",
+   "builders": {
+     "node": "4.x",
++    "configuration": "0.x"
+   }
+ }
+```
+
+7. Create a `configuration` folder in your app's root directory, and, then, a `schema.json` file inside it. This file will hold information about the settings structure that the service app is going to accept from other apps on the platform.
+8.  In the `configuration/schema.json` file, create a JSON Schema, according to your scenario. For example:
 
 ```json
 {
- "type": "object",
- "properties": {
-  "id": { "type": "number" },
-  "name": { "type": "string" }
- }
+  "type": "object",
+  "properties": {
+    "id": { "type": "number" },
+    "name": { "type": "string" }
+  }
 }
 ```
 
@@ -98,12 +104,16 @@ In the example above, the accepted configuration is an object with two keys: `id
 
 Once your service app is deployed, it is ready to receive configurations from others. 
 
-1. In your VTEX IO app, add the recently created service app as a new builder. For example:
+1. In your VTEX IO configuration app, add the recently created service app as a new builder. For example:
 
 ```diff
- "builders": {
-+  "vtex.most-amazing-service-ever": "0.x",
- },
+ {
+   "name": "vtex.amazing-configuration",
+   "version": "0.0.0",
+   "builders": {
++    "vtex.most-amazing-service-ever": "0.x",
+   }
+ }
 ```
 
 Notice that the name of the builder is exactly the same as that of the service you want your app to configure. The version also needs to match the desired service app version.
@@ -128,9 +138,10 @@ As previously mentioned, the service configurations originate from other platfor
 
 To access all configurations sent to the service app, use the following command:
 
-```
+```js
 const settings = ctx.vtex.settings
 ```
+
 The `ctx` can be either a `EventContext` or a `ServiceContext`.
 
 The structure of the received configurations list is similar to the example below: 
@@ -138,15 +149,15 @@ The structure of the received configurations list is similar to the example belo
 ```json
 [
   {
-    "vtex.app-test": {
+    "vtex.amazing-configuration": {
       "name":"little foot",
       "id":1
     },
-    "declarer": "vtex.app-test@0.0.7+build1580823094"
+    "declarer": "vtex.amazing-configuration@0.0.0+build1580823094"
   }
 ]
 ```
 
 We're looking at an array where each object is a configuration originating from a different app - since you can have multiple apps configuring the same service.
 
-In each array element, you have an object with two keys: the name of the app that is configuring the service (`vtex.app-test`, in the example above) and the `declarer`. The first contains the settings itself, according to the structure defined in the service app's JSON Schema. The second corresponds to the full name of the app that carries such configurations.
+In each array element, you have an object with two keys: the name of the app that is configuring the service (`vtex.amazing-configuration`, in the example above) and the `declarer`. The first contains the settings itself, according to the structure defined in the service app's JSON Schema. The second corresponds to the full name of the app that carries such configurations.
