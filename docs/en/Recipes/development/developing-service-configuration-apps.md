@@ -41,51 +41,6 @@ git clone https://github.com/vtex-apps/service-example.git
 3. Once successfully cloned, go to the local app directory. Use the `cd service-example` command;
 4. Open the app using your code editor;
 5. Now, to declare that your app can receive configurations through requests, check [this section](#if-your-app-has-a-node-service) if your app has a Node service and [this section](#if-you-are-developing-a-graphql-app) if you are developing a GraphQL app.
-
-#### If your app has a Node Service
-In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
-
-``` json
-"routes": {
-  "status": {
-    "path": "/_v/status/:code",
-    "public": true,
-    "settingsType": "workspace"
-  },
-  ...
-}
-```
-
-It is also possible to **define your configurations through event listening**. For this scenario, you should add in the  `node/service.json` file something similar to the example below, replacing the values according to your needs: 
-
-``` json
-"events": {
-  "eventHandler": {
-    "sender": "appEmittingTheEvent",
-    "keys": ["topic"],
-    "settingsType": "workspace"
-  },
-  ...
-}
-```
-
-#### If you are developing a GraphQL app
-If you are developing a GraphQL app, you may need to add a directive to all of the queries that can receive configurations.
-
-A [GraphQL Directive](https://graphql.org/learn/queries/#directives) is a way of changing how the query will be performed.
-When you add the `settings` directive, the systems knows it must search for configurations for that service, thus, under the hood, it includes one more step to the query where it finds all of the configurations and adds them to the context.
-
-For example, consider our [graphql-example](https://github.com/vtex-apps/graphql-example) app (you can play with it if you run `vtex init` in a development workspace and choose `graphql-example`). In this app's root directory, you'll see the following file `grapqhl/schema.graphql`. Now, if you open it and add the `@settings` directive to the query `book`, you'll have something like:
-
-``` diff
-type Query {
--  book(id: ID!): Book
-+  book(id: ID!): Book @settings(settingsType: "workspace")
-}
-
-+@settings(settingsType: "workspace")
-```
-
 6. In the `manifest.json` file, add the `configuration` Builder to the `builders` list and update the app's name to one of your choosing. For example:
 
 ``` diff
@@ -114,6 +69,52 @@ The JSON Schema will be used to identify new configurations coming from apps. It
 In the example above, the accepted configuration is an object with two keys: `id` and `name`, where the first is a number, and the second, a string.
 
 9. Save your changes and then [publish your new service app](https://vtex.io/docs/recipes/development/publishing-an-app/).
+
+
+#### If your app has a Node Service
+
+In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
+
+``` json
+"routes": {
+  "status": {
+    "path": "/_v/status/:code",
+    "public": true,
+    "settingsType": "workspace"
+  },
+  ...
+}
+```
+
+It is also possible to **define your configurations through event listening**. For this scenario, you should add in the  `node/service.json` file something similar to the example below, replacing the values according to your needs: 
+
+``` json
+"events": {
+  "eventHandler": {
+    "sender": "appEmittingTheEvent",
+    "keys": ["topic"],
+    "settingsType": "workspace"
+  },
+  ...
+}
+```
+
+#### If you are developing a GraphQL app
+
+If you are developing a GraphQL app, you may need to add a directive to all of the queries that can receive configurations.
+
+A [GraphQL Directive](https://graphql.org/learn/queries/#directives) is a way of changing how the query will be performed. When you add the `settings` directive, the system knows it must search for configurations for that service. Under the hood, this directive is including one extra step to the query, which is responsible for finding all the configurations and adding them to the context.
+
+Take our [graphql-example](https://github.com/vtex-apps/graphql-example) app as an example. In this app's root directory, you'll see the following file `grapqhl/schema.graphql`. Now, if you open it and add the `@settings` directive to the query `book`, you'll have something like:
+
+``` diff
+type Query {
+-  book(id: ID!): Book
++  book(id: ID!): Book @settings(settingsType: "workspace")
+}
+
++@settings(settingsType: "workspace")
+```
 
 ### Step 2 - Linking your app configurations to the service app
 
