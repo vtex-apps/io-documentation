@@ -40,7 +40,7 @@ git clone https://github.com/vtex-apps/service-example.git
 
 3. Once successfully cloned, go to the local app directory. Use the `cd service-example` command;
 4. Open the app using your code editor;
-5. Now, to declare that your app can receive configurations through requests, check [this section](#if-your-app-has-a-node-service) if your app has a Node service and [this section](#if-you-are-developing-a-graphql-app) if you are developing a GraphQL app.
+5. Now, to declare that your app can receive configurations through requests, check the sections "If your app has a node service" or "If you are developing a GraphQL app", according to your scenario.
 6. In your app's root directory, edit the `manifest.json` file by adding the `configuration` Builder to the `builders` list and update the app's `name` to one of your choosing. For example:
 
 ``` diff
