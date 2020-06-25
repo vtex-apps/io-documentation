@@ -19,7 +19,7 @@ This recipe will show you how to overwrite the Messages app and easily create ne
 3. From the dropdown list, choose the `vtex.messages` app.
 4. Write the following mutation command in the text box that is displayed:
 
-```graphql
+```json
 mutation Save($saveArgs: SaveArgsV2!) {
   saveV2(args: $saveArgs)
 }
@@ -39,8 +39,9 @@ mutation Save($saveArgs: SaveArgsV2!) {
   }
 }
 ```
+8. (Optional) If you want to check your changes on the GraphQL IDE, check the " Checking your changes" section.
 
-Now, no other actions are needed on your part. Once you receive the expected response, you are ready to check out the desired changes in your store!
+Now, no further actions are needed on your part. Once you receive the expected response, you are ready to check out the desired changes in your store!
 
 ### Catalog translations
 
@@ -61,6 +62,9 @@ Use the following example as a guide if you aim to translate text messages from 
   }
 }
 ```
+To better understand the full process of overwriting a product message translation, check the following gif:
+
+![ProductTranslation](https://user-images.githubusercontent.com/60782333/85765724-c2811d00-b6ec-11ea-8ada-a9e688c36b86.gif)
 
 **These variables are flexible and must fit your store's given scenario**. The variables for the store catalog translations are as follows:
 
@@ -68,7 +72,7 @@ Use the following example as a guide if you aim to translate text messages from 
 - `messages`: a list of the messages you want to translate, containing the following parameters:
     - `srcLang`: source message locale.
     - `srcMessage`: source message string.
-    - `context`: ID of the product/brand/category that you want to translate. IDs can be found in the admin under Product > Catalog.
+    - `context`: ID of the product/brand/category that you want to translate. IDs can be found in your store's registration on the admin under Product > Catalog.
     - `targetMessage`: translated message string.
 
 ### App messages translations
@@ -96,10 +100,126 @@ Use the following example as a guide if you aim to translate text messages expor
 - `to`: target translation locale.
 - `messages`: a list of the messages you want to translate, containing the following parameters:
     - `srcLang`: source message locale. This variable must contain the value `en-DV`, no matter which locale is rendered on the app's interface.
-    - `srcMessage`: the `id` of your message string. The `id` related to a given string is declared in the app's `messages` folder.
+    - `srcMessage`: the `id` of your message string declared in the app's `messages` folder.
     - `context`: the name of the app in which the message is being overwritten.
     - `targetMessage`: translated message string.
 
 To better understand the full process of overwriting an app message translation, check the following gif:
 
 ![AppMessageTranslation](https://user-images.githubusercontent.com/60782333/85605881-fbf05480-b628-11ea-8ea9-1dbf364f07fd.gif)
+
+## Checking your changes
+
+If you have already performed the desired mutations, you can check your changes through a query in the GraphQL IDE, **according to your store's desired scenario** (*catalog* or *app* messages translations).
+
+### Checking catalog messages translations
+
+1. In the **GraphQL admin IDE**, after choosing the `vtex.messages` app, write the following query command in the text box that is displayed:
+
+```json
+query GetTranslation($args2: TranslateArgs!) {
+  translate(args: $args2) 
+} 
+```
+
+2. Then, click on  **Query Variables** at the bottom of the page.
+
+3. To fill in the "Query Variables" box, you must provide the following parameters:
+
+- `from`: source message locale.
+- `messages`: a list of the messages you want to check translations, containing the following parameters:
+  - `content`: source message string. 
+  - `context`: ID of the product/brand/category that you want to check the translation. IDs can be found in your store's registration on the admin under Product > Catalog.
+- `to`: target translation locale.
+
+Take the following example:
+
+```json
+{
+  "args2": {
+    "indexedByFrom": [
+      {
+      	"from": "en-US",
+      	"messages": [
+          {
+            "content": "Original name of the product in English",
+            "context": "543123"
+          }
+        ]
+      }
+    ],
+    "to": "pt-BR"
+  }
+}
+```
+
+4. After adjusting your query, click on the play button to run it. The expected response is the translated message in the target locale. 
+
+For the given example, the expected response is as follows:
+
+```json
+{
+  "data": {
+    "translate": [
+      "Nome do produto em português"
+    ]
+  }
+}
+```
+
+### Checking app messages translations
+
+1. In the **GraphQL admin IDE**, after choosing the `vtex.messages` app, write the following query command in the text box that is displayed:
+
+```json
+query GetTranslation($args: TranslateWithDependenciesArgs!) {
+  translateWithDependencies(args: $args)
+} 
+```
+
+2. Then, click on  **Query Variables** at the bottom of the page.
+
+3. To fill in the "Query Variables" box, you must provide the following parameters:
+
+- `from`: source message locale.
+- `messages`: a list of the messages you want to check translations, containing the following parameters:
+  - `content`: the `id` of your message string declared in the app's `messages` folder.
+  - `context`: the name of the app in which the message has been overwritten.
+- `to`: target translation locale.
+- `depTree`: the dependency tree as in `"[{\"id\": \"{context}\"}]"`.
+
+Take the following example:
+
+```json
+{
+"args": {
+    "indexedByFrom": [
+      {
+      	"from": "en-DV",
+      	"messages": [
+          {
+            "content": "store/search.placeholder",
+            "context": "vtex.store-components@3.x"
+          }
+        ]
+      }
+    ],
+    "to": "en-US",
+    "depTree": "[{\"id\": \"vtex.store-components@3.x\"}]"
+  }
+}
+```
+
+4. After adjusting your query, click on the play button to run it. The expected response is the translated message in the target locale. 
+
+For the given example, the expected response is as follows:
+
+```json
+{
+  "data": {
+    "translateWithDependencies": [
+      "My personalized Search message"
+    ]
+  }
+}
+```
