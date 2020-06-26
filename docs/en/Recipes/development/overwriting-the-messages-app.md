@@ -55,7 +55,7 @@ Use the following example as a guide if you aim to translate text messages from 
     "messages": [
       {
         "srcLang": "en-US",
-        "srcMessage": "Original name of the product in English",
+        "srcMessage": "Original product name in English",
         "context": "543123",
         "targetMessage": "Nome do produto em português"
       }
