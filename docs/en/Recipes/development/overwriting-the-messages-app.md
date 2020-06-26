@@ -177,8 +177,7 @@ query GetTranslation($args: TranslateWithDependenciesArgs!) {
 } 
 ```
 
-2. Then, click on  **Query Variables** at the bottom of the page.
-3. To fill in the `Query Variables` box, you must provide the following parameters:
+2. Then, to fill in the `Query Variables` box, you must provide the following parameters:
 
 - `from`: source message locale.
 - `messages`: a list of the messages you want to check translations, containing the following parameters:
