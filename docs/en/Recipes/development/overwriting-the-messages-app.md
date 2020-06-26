@@ -43,7 +43,6 @@ Once you receive the expected response, no further actions are needed on your pa
 
 You also can confirm whether Messages properly saved the new translations or not by performing a query. To know further, check out the **Checking your changes** section.
 
-Now, no further actions are needed on your part. Once you receive the expected response, you are ready to check out the desired changes in your store!
 
 ### Catalog translations
 
