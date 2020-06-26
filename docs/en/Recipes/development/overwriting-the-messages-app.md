@@ -143,7 +143,7 @@ Take the following example:
       	"from": "en-US",
       	"messages": [
           {
-            "content": "Original name of the product in English",
+            "content": "Original product name in English",
             "context": "543123"
           }
         ]
