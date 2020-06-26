@@ -39,7 +39,9 @@ mutation Save($saveArgs: SaveArgsV2!) {
   }
 }
 ```
-8. (Optional) If you want to check your changes on the GraphQL IDE, check the " Checking your changes" section.
+Once you receive the expected response, no further actions are needed on your part: you are ready to check out the desired changes in your store!
+
+You also can confirm whether Messages properly saved the new translations or not by performing a query. To know further, check out the **Checking your changes** section.
 
 Now, no further actions are needed on your part. Once you receive the expected response, you are ready to check out the desired changes in your store!
 
