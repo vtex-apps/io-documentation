@@ -4,7 +4,9 @@
 
 Messages is VTEX IO's key tool for your store's **internationalization**, since it's responsible for translating any website message (that is, website text content) for rendering. 
 
-However, you may feel that some translations done by the app are not what you want them to be. Therefore, you may want to change the translated content to something more specific or representative of your store, such as a special login message for Spanish speaking users from Argentina.
+However, you may feel that some translations done by the app are not what you want them to be. Therefore, you may want to change the translated content to something more specific or representative of your store, such as a special login message for Spanish speaking users from Argentina. 
+
+In the next section, we present you a step by step on how to translate a message from your store's catalog, such as a product name or a product description, and text messages exported from an app.
 
 This recipe will show you how to overwrite the Messages app and easily create new message content through your store's admin.
 
