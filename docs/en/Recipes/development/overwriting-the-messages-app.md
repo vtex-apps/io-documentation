@@ -63,9 +63,6 @@ Use the following example as a guide if you aim to translate text messages from 
   }
 }
 ```
-To better understand the full process of overwriting a product message translation, check the following gif:
-
-![ProductTranslation](https://user-images.githubusercontent.com/60782333/85765724-c2811d00-b6ec-11ea-8ada-a9e688c36b86.gif)
 
 **These variables are flexible and must fit your store's given scenario**. The variables for the store catalog translations are as follows:
 
