@@ -152,7 +152,7 @@ Take the following example:
 }
 ```
 
-4. After adjusting your query, click on the play button to run it. The expected response is the translated message in the target locale. 
+3. After adjusting your query, click on the play button to run it. The expected response is the translated message in the target locale. 
 
 For the given example, the expected response is as follows:
 
