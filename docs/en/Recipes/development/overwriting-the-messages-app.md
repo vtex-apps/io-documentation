@@ -29,7 +29,7 @@ mutation Save($saveArgs: SaveArgsV2!) {
 
 ![queryvariables](https://user-images.githubusercontent.com/60782333/85610649-8e92f280-b62d-11ea-9a5e-aa7ced1a1549.png)
 
-6. To fill in the "Query Variables" box, check the next sections **according to your store's desired scenario** (*catalog* or *app* messages translations).
+6. To fill in the `Query Variables` box, check the next sections **according to your store's desired scenario** (*catalog* or *app* messages translations);
 7. After adjusting your query, click on the play button to run the declared mutation. For both scenarios, the expected response is as follows:
 
 ```json
