@@ -73,6 +73,10 @@ Use the following example as a guide if you aim to translate text messages from 
     - `context`: ID of the product/brand/category that you want to translate. IDs can be found in your store's registration on the admin under Product > Catalog.
     - `targetMessage`: translated message string.
 
+To better understand the full process of overwriting a product message translation, check the following gif:
+
+![ProductTranslation](https://user-images.githubusercontent.com/60782333/85765724-c2811d00-b6ec-11ea-8ada-a9e688c36b86.gif)
+
 ### App messages translations
 
 Use the following example as a guide if you aim to translate text messages exported from an app (declared in the app's `messages` folder).
