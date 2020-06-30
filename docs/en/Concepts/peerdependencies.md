@@ -4,7 +4,7 @@ The `peerDependencies` JSON object is a key of a [project manifest](#Manifest) u
 
 To make it more tangible, suppose that you are developing an app and that you include app B as a `dependencies`. App B, in turn, has app C set as its `peerDependencies`. In this case, since your app depends on app B, you'll have to manually install app C. Otherwise, you'll receive a warning when trying to install app B. Notice that, this way, app B forces that anyone trying to use its app, also have app C installed. Hence, **if you depend on a paid app, you must declare it as a peer dependency**. 
 
-> :warning: **Keep in mind:** Peer dependencies will not be automatically installed!
+> <div class="alert alert-warning"><strong>Keep in mind:</strong> Peer dependencies will not be automatically installed!</div>
 
 Check the following manifest of the `example` app:
 
