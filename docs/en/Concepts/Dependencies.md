@@ -26,10 +26,10 @@ The `dependencies` object of your app's `manifest.json` file may look something 
 
 The most recurrent use of VTEX IO apps as dependencies are for:
 
-- Using [store component _blocks_](https://vtex.io/docs/apps/all/) _(example: [vtex.store-theme](https://github.com/vtex-apps/store-theme/blob/fee222b7d337ab35a57eeefe12c27181e9e9e257/store/blocks.jsonc#L12))_
-- Importing React components from another app _(example: [vtex.order-placed](https://github.com/vtex-apps/order-placed/blob/ec6fab76f59ea4eacbea465419c3d026ae26be73/react/BankInvoiceSection.tsx#L3))_
-- Importing Typescript types from a GraphQL service app _(example: [vtex.my-account](https://github.com/vtex-apps/my-account/blob/414c584e8f4acf0d9f3c5e9b37f6d946f7bfa8ac/react/typings/graphql/customerGreeting.gql.d.ts#L3))_
-- Querying GraphQL or REST from another app _(example: [vtex.store-form](https://github.com/vtex-apps/store-form/blob/aca5bbde3c6b9ac311d656e6f5e9659f787ab196/react/graphql/getSchema.graphql))_
-- Implementing a GraphQL schema from anoher app _(example: [vtex.search-resolver](https://github.com/vtex-apps/search-resolver/blob/49dccd1e5a952bf195aed929e8cca85a1cb29a79/node/index.ts#L4))_
+- Using [store framework _blocks_](https://vtex.io/docs/apps/content-blocks/).
+- Importing React components from another app.
+- Importing Typescript types from a GraphQL service app.
+- Using GraphQL or REST definitions declared in another app.
+- Implementing a GraphQL schema from another app.
 
 <div class="alert alert-warning">When installing a VTEX IO app, its dependencies will be automatically installed on the logged account as well, but not as first-class apps (i.e.: indirect dependencies will not be able to declare routes).</div>
