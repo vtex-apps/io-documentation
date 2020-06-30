@@ -6,7 +6,7 @@ This field **specifies which VTEX IO apps your app relies on to properly work**.
 
 In practice, when an app is installed on a VTEX account, every app included in its manifest's `dependencies` field is automatically installed on the account.
 
-Therefore, if your app needs to interact with another IO app, such as a VTEX API or a store framework block, you may declare it in the `manifest.json` file under `dependencies`, according to the following structure `"vtex.{appName}": "{majorVersion}.x"`. 
+Therefore, if your app needs to interact with another IO app, such as a VTEX API or a store framework block, you may declare it in the `manifest.json` file under `dependencies`, according to the following structure `"{account}.{appName}": "{majorVersion}.x"`. 
 
 The `dependencies` object of your app's `manifest.json` file may look something like this:
 
