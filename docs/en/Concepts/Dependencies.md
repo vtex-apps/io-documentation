@@ -2,7 +2,7 @@
 
 The `dependencies` JSON object is a key of a [project manifest](#Manifest) used to specify the set of **IO apps** an app relies on. Its semantics resembles [`package.json`'s `dependencies`](https://docs.npmjs.com/files/package.json#dependencies) property on Javascript apps. 
 
-Therefore, if your app needs to interact with another IO app, such as a VTEX API or a store framework block, you may declare it in the `manifest.json` file under `dependencies`, according to the following structure `"vtex.{app-name}": "{version}"`. 
+Therefore, if your app needs to interact with another IO app, such as a VTEX API or a store framework block, you may declare it in the `manifest.json` file under `dependencies`, according to the following structure `"vtex.{appName}": "{majorVersion}.x"`. 
 
 The `dependencies` object of your app's `manifest.json` file may look something like this:
 
