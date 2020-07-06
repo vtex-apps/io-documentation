@@ -12,7 +12,7 @@ The VTEX IO platform is battle-tested and **scales automatically** to meet your 
 
 Forget the servers, focus on your sales: our elastic back-end allows you to maintain up-time throughout traffic surges without having to pre-scale or manually prepare.
 
-With nothing to install locally and a command-line application, developers enjoy a unprecedented fast setup time and become productive in record time. 
+With nothing to install locally and a command-line application, developers enjoy an unprecedented fast setup time and become productive in record time.
 
 All local changes to code are immediately synced to our cloud development environment and your software is instantly redeployed. "*Works on my machine*" just became a thing of the past. 
 
