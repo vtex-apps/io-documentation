@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Installing an app
 
-In the VTEX IO platform, all code configuration is bundled in what we call **apps**. 
+In the VTEX IO platform, all code configuration is bundled in what we call *apps*. 
 
 Therefore, when using the VTEX Store Framework, you will need to install several applications to your VTEX account in order to properly build the desired storefront.
 
