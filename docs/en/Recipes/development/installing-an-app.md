@@ -1,6 +1,6 @@
 ---
 title: Installing an app
-description: "Test your app new settings by learning how to install it in a production workspace."
+description: "Learn how to correctly install a new app in your VTEX account."
 date: "04/09/2019"
 tags: ["install", "installing", "app", "workspace", "production"]
 version: "0.x"
@@ -9,9 +9,15 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Installing an app
 
-Installing an app is a fundamental step for testing the reliability of your new code settings. 
+In the VTEX IO platform, all code configuration is bundled in what we call **apps**. 
 
-Once your app is already [published](https://vtex.io/docs/recipes/store/publishing-an-app), you are able to install it in any workspace you may be working on.
+Therefore, when using the VTEX Store Framework, you will need to install several applications to your VTEX account in order to properly build the desired storefront.
+
+In addition to that, if you are developing a new project, installing an app is a fundamental step for testing the reliability of your new code settings. Once your app is already [published](https://vtex.io/docs/recipes/store/publishing-an-app), you are able to install it in any workspace you may be working on.
+
+<div class="alert alert-info">
+Remember the following: private apps (apps without the <code>billingOptions</code> field in its <code>manifest.json</code> file) can only be installed in the VTEX account where it was published. Public apps with free <code>billingOptions</code> can be installed in any VTEX account by any admin user. Lastly, public apps with billable <code>billingOptions</code> can only be installed by admin users with the License Manager's <code>BuyApp</code> permission. Once this installation takes place, the app will be charged by the end of every month in the accounts that installed it.
+</div>
 
 ## Step by step
 
