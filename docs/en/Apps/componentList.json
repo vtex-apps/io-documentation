@@ -457,6 +457,12 @@
       "url": "https://github.com/vtex-apps/cookiebot"
     },
     {
+      "appName": "vtex.cookie-script",
+      "title": "Cookie Script",
+      "description": "VTEX Cookie Script native integration",
+      "url": "https://github.com/vtex-apps/cookie-script"
+    },
+    {
       "appName": "vtex.criteo",
       "title": "Criteo",
       "description": "VTEX Criteo native integration",
@@ -587,6 +593,12 @@
       "title": "Smarthint",
       "description": "VTEX Smarthint native integration",
       "url": "https://github.com/vtex-apps/smarthint"
+    },
+    {
+      "appName": "vtex.tawk-to",
+      "title": "Tawk.to",
+      "description": "VTEX Tawk.to native integration",
+      "url": "https://github.com/vtex-apps/tawk-to"
     },
     {
       "appName": "vtex.tradetracker",
