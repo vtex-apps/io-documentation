@@ -17,4 +17,4 @@ With it you can:
 - Develop new apps in [**link mode**](https://vtex.io/docs/recipes/development/linking-an-app/), using automatic synchronization;
 - [**Release**](https://vtex.io/docs/recipes/development/releasing-a-new-app-version/), [**publish**](https://vtex.io/docs/recipes/development/publishing-an-app/) and **deploy** new app versions.
 
-In order to install it and understand more about the command reference, access our article on [**VTEX IO CLI installment and command reference**](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference)
+In order to install it and understand more about the command reference, access our article on [**VTEX IO CLI installation and command reference**](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/)
