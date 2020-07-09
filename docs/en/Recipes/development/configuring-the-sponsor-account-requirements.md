@@ -20,28 +20,28 @@ As every VTEX account is necessarily a child of the `vtex` root Sponsor Account 
  - `vtex.edition-business@0.x`
  - `vtex.edition-store@2.x`
 
-Those editions and the process for setting them are explained in detail below.
+Those Editions and the process for setting them are explained in detail below.
 
 ## Step by step
 
 1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into the account you wish to become the Sponsor of other child accounts;
-2. Execute `vtex edition` to check whether any Edition is already installed on your account or not;
+2. Execute `vtex edition` to check whether any Edition is already installed on your account or not. If your account is new enough, an Edition App may have already come installed on your account creation process. If this is your case, go to the step **4**. 
 
-<div class="alert alert-info">
-If your account is new enough, an Edition App may have already come installed on your account creation process. If this is your case, no further action is required from now on, as your account is ready to <a href="https://vtex.io/docs/recipes/development/configuring-an-edition-app/">configure an Edition app</a>.
-</div>
-
-In scenarios where no Edition app is installed, one of the Edition Apps available in the `vtex` registry must be manually installed. Presently, they are:
+In scenarios where no Edition app is installed, one of the Edition Apps available in the `vtex` registry must be manually installed by our product team. Presently, they are:
 
 -   `vtex.edition-business@0.x`: for stores whose front-end is on VTEX's [CMS](https://help.vtex.com/tutorial/what-is-cms--EmO8u2WBj2W4MUQCS8262);
 -   `vtex.edition-store@2.x`: for stores whose front-end is on VTEX IO's [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1).
 
-3. [Open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the most suitable Edition installment. If you have access to the `vtex` account, you will be able to install the Edition app that most fits to your store's account scenario using the following Toolbelt commands: `vtex edition set vtex.edition-store@2.x` or `vtex edition set vtex.edition-business@0.x`. 
-
-When installing the suitable Edition App, a bundle of apps and configurations will automatically be installed in your account. You can check which apps that Edition App enforces by installing that edition in a separate [production workspace](https://vtex.io/docs/concepts/workspace/) first. Then, if everything is working as expected you can promote that workspace to `master`.
+3. In case no Edition is found, [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the most suitable Edition installment and also asking for becoming a Sponsor Account. The VTEX team will then install the suitable Edition app for you account in a Production workspace and also include your VTEX account in the Sponsor Accounts list. 
 
 <div class="alert alert-warning">
-The Edition App installed by `vtex` can never be changed by any child accounts. Only `vtex` is authorized to make any changes.
+When installing the suitable Edition App, a bundle of apps and configurations will automatically be installed in your account's <a href="https://vtex.io/docs/concepts/workspace/">Production workspace</a>. <strong> Notice that you can uninstall it, since it was set by your account's Sponsor Account </strong> (<code>vtex</code>). Then, if everything is working as expected, you can <a href="https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master/">promote the workspace to Master</a>.
 </div>
 
-Once the Edition is installed, your account is ready to become a Sponsor Account by [**configuring Editions Apps**](https://vtex.io/docs/recipes/development/configuring-an-edition-app/).
+<div class="alert alert-info">
+If you have access to the <code>vtex</code> account, you will be able to install the Edition app that most fits to your store's account scenario using the following Toolbelt commands: <code>vtex edition set vtex.edition-store@3.x</code> or <code>vtex edition set vtex.edition-business@0.x</code>. 
+</div>
+
+4. If you already have an Edition app installed, [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for becoming a Sponsor Account. The VTEX team will then include your VTEX account in the Sponsor Accounts allowed list. 
+
+Once the Edition is installed and the VTEX team already included your VTEX account in the Sponsor Account allowed list, your account is ready to [**configure Editions Apps**](https://vtex.io/docs/recipes/development/configuring-an-edition-app/) for its child accounts.
