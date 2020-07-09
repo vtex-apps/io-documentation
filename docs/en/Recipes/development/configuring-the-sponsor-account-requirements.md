@@ -35,7 +35,7 @@ In scenarios where no Edition app is installed, one of the Edition Apps availabl
 3. In case no Edition is found, [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the most suitable Edition installment and also asking for becoming a Sponsor Account. The VTEX team will then install the suitable Edition app for you account in a Production workspace and also include your VTEX account in the Sponsor Accounts list. 
 
 <div class="alert alert-warning">
-When installing the suitable Edition App, a bundle of apps and configurations will automatically be installed in your account's <a href="https://vtex.io/docs/concepts/workspace/">Production workspace</a>. Notice that you can uninstall it, since it was set by your account's Sponsor Account (<code>vtex</code>). Then, if everything is working as expected, you can <a href="https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master/">promote the workspace to Master</a>.
+When installing the suitable Edition App, a bundle of apps and configurations will automatically be installed in your account's <a href="https://vtex.io/docs/concepts/workspace/">Production workspace</a>. <strong> Notice that you can uninstall it, since it was set by your account's Sponsor Account </strong> (<code>vtex</code>). Then, if everything is working as expected, you can <a href="https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master/">promote the workspace to Master</a>.
 </div>
 
 <div class="alert alert-info">
