@@ -1,3 +1,12 @@
+---
+title: Enabling 404 pages
+description: "Avoid problems with SEO by enabling 404 pages in your VTEX IO store."
+date: "2020-05-23"
+tags: ["404", "404-pages", "not-found", "http"]
+version: "0.x"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/enabling-404-pages.md"
+---
+
 # Enabling 404 pages
 
 The 404 error is a HTTP standard response code for when the server was not able to return what the browser request or was configured to not handle that request.
