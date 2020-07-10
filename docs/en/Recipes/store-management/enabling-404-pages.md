@@ -13,7 +13,7 @@ Due to implementation rules, the native functionality of 404 pages does not func
 <div>
 
 <div class="alert alert-warning">
-In rare cases when the parameter <code>map=specificationFilter</code> is present in the path of such search originated URLs, 404 pages may be rendered. This happens because the platform cannot interpret these URL segments as originating from user searches, since it cannot find the map=ft parameter usually present in such URLs, and therefore renders a 404 error page. This behavior is uncommon and is being addressed by our product team.
+In rare cases when the parameter <code>map=specificationFilter</code> is present in the path of such search originated URLs, 404 pages may be rendered. This happens because the platform cannot interpret these URL segments as originating from user searches, since it cannot find the <code>map=ft</code> parameter usually present in such URLs, and therefore renders a 404 error page. This behavior is uncommon and is being addressed by our product team.
 <div>
 
 ## Step by step
