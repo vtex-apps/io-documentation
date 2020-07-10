@@ -9,7 +9,7 @@ For e-commerce companies, **one of the main advantages of enabling 404 pages is 
 In VTEX IO, 404 pages are **natively** enabled for inexistent product pages and for URLs that have more than one invalid segment. But in addition, it is also possible to allow 404 pages when URLs have a **single** invalid segment, as shown in the step by step section below.
 
 <div class="alert alert-info">
-Due to implementation rules, the native functionality of 404 pages does not function for URLs originating from user searches. The reason behind this is that URLs originating from product searches include the <code>map=ft</code> parameter in their path, parameter which helps the platform to interpret that such URL segments reflect user performed searches, and thus should not be interpreted as non-existent, which would lead to a 404 page being rendered.
+Due to implementation rules, the native functionality of 404 pages does not function for URLs originating from user searches. The reason behind this is that URLs originating from product searches include the <code>map=ft</code> parameter in their path, helping the platform to interpret that such URL segments reflect user performed searches, and thus should not be interpreted as non-existent (which would lead to a 404 page being rendered).
 <div>
 
 <div class="alert alert-warning">
