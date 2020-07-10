@@ -59,4 +59,4 @@ The <code>store.not-found</code> blocks will only be triggered when the server r
 
 ![not-found-block](https://user-images.githubusercontent.com/52087100/76447318-4108b780-63a7-11ea-9b03-77413e0e4855.png)
 
-5. If you're happy with all your configurations, repeat all of the block configuration in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace) this time.
+5. If you're happy with all configurations done in your Development workspace, it is time do [make your new theme version publicly available](https://vtex.io/docs/recipes/store-management/making-your-theme-content-public/). 
