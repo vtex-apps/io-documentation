@@ -1,19 +1,20 @@
-# Peer dependencies
+# Peer Dependencies
 
-The `peerDependencies` JSON object is a key of a [project manifest](#Manifest) used to specify the set of **IO apps** an app relies on. However, unlike regular `dependencies`, `peerDependencies` **are not automatically installed** and they must be used when you need to guarantee that your app's dependency is exactly the same as the one a person installing your app has installed. Notice that this is useful when talking about **paid apps**.
+Peer dependencies is how we call a JSON object field (`peerDependencies`) in the app's `manifest.json` file. 
 
-To make it more tangible, suppose that you are developing an app and that you include app B as a `dependencies`. App B, in turn, has app C set as its `peerDependencies`. In this case, since your app depends on app B, you'll have to manually install app C. Otherwise, you'll receive a warning when trying to install app B. Notice that, this way, app B forces that anyone trying to use its app, also have app C installed. Hence, **if you depend on a paid app, you must declare it as a peer dependency**. 
+This field is used to specify the set of **IO apps** an app relies on to properly work. However, unlike regular dependencies, peer dependencies **are not automatically installed** in an account. Hence, setting peer dependencies can be especially useful for cases when an app relies on a **paid app**, for example.
 
-> <div class="alert alert-warning"><strong>Keep in mind:</strong> Peer dependencies will not be automatically installed!</div>
+Another use case for the `peerDependencies` field is when you need to guarantee that an account trying to install your new app has the exact same version of the dependencies your app relies on previously installed.
 
-Check the following manifest of the `example` app:
+To make it more tangible, take the following example, in which `vtex.store@2.x` and `vtex.paid-app-example@1.x` are declared as peer dependencies of the `vtex.example` app.
 
-```javascript
+```json
 {
-  "name": "example",  
+  "name": "vtex.example",  
   ...
   "peerDependencies": {
-      "vtex.store": "2.x"
+      "vtex.store": "2.x",
+      "vtex.paid-app-example": "1.x"
   },
   "dependencies": {
       "vtex.styleguide": "9.x"
@@ -22,4 +23,14 @@ Check the following manifest of the `example` app:
 }
 ```
 
-For this example, if you needed to use `example` as a dependency of your new app, you'd first need to manually install `vtex.store`, since this is a peer dependency of the `example` app. 
+For this example, if you wanted to install the `vtex.example` app in an account, you'd first need to manually install the exact versions of `vtex.store` and `vtex.paid-app-example` apps declared under the `peerDependencies` field.
+
+Now, considering the development context, suppose the following: you are developing an app that directly depends on the `vtex.example` app. Therefore, you list `vtex.example` as a dependency in the `dependencies` field from the `manifest.json` file. The `vtex.example`, in turn, has `vtex.store@2.x` and `vtex.paid-app-example@1.x` set as its `peerDependencies`. 
+
+In practice, this means that in order to develop your app (whose `dependencies` list includes the `vtex.example`), you will have to manually install `vtex.store@2.x` and `vtex.paid-app-example@1.x` in the VTEX account in which you are working.
+
+If your account does not have `vtex.store@2.x` and `vtex.paid-app-example@1.x` installed, you won't be able to install the `vtex.example` and your development flow will be interrupted.
+
+Notice that, this way, the `vtex.example` forces every account that is installing it to also have `vtex.store@2.x` and `vtex.paid-app-example@1.x` installed. 
+
+<div class="alert alert-warning"><strong>Keep in mind:</strong> Peer dependencies are not automatically installed. So, if your app relies on a paid app, you must declare it as a peer dependency.</div>
