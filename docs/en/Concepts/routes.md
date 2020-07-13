@@ -23,5 +23,5 @@ Optional props such as the ones presented in the following table can also be add
 | Prop | Type | Description |
 | ---- |------| ----------- |
 | `title` | string | The title of your custom route used as an identifier in CMS > Pages. |
-| `canonical` | string | A unique string containing the shortest absolute path. For example, consider the path `/_v/segment/routing/vtex.store@2.x/product/:id/:slug/p`, its canonical path is `/:slug/p`.|
+| `canonical` | string | A unique string containing the shortest absolute path. For example, consider the path `/_v/segment/routing/vtex.store@2.x/product/:id/:slug/p`. Its canonical path is `/:slug/p`.|
 | `isSitemapEntry`| boolean | A prop that allow your custom page to be displayed in your store's [sitemap](https://github.com/vtex-apps/store-sitemap/blob/2.x/README.md) when set as `true`. |
