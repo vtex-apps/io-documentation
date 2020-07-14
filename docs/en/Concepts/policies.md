@@ -1,8 +1,10 @@
 # Policies
 
-Policies are a set of permissions granted to a user or app that allows them to execute a given set of actions in an account or not. In VTEX IO, policies are mostly based on [AWS's IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
+Policies are a set of permissions granted to a resource or a [role]() that allows or forbids them to execute a given set of actions in an account. In VTEX IO, policies are mostly based on [AWS's IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
 
-Policies can be role-based in case a policy is associated with a [role](), or resource-based, in which the resource itself lists who it trusts and provides information about the context in which it trusts those agents.
+VTEX IO accepts two kinds of policies, which are role-based and resource-based. The former, as the name suggests, are policies associated with a role, such as an app. In this case, these policies must be declared in a `policies.json` file in the app's root folder. 
+
+Resource-based policies, in turn, are policies assigned to a resource, such as an API endpoint. In this case, the resource itself may list who it trusts and provide information about the context in which it trusts those agents. Therefore, since the routes an app exports to the world are declared in a `service.json` file, so are the resource-based policies.
 
 ## Role-based policies
 
@@ -26,15 +28,15 @@ To create a role-based policy for an app, one may create a `policies.json` file 
 ]
 ```
 
-Notice that, in this example, a policy named `resolve-graphql` that allows an app to resolve a GraphQL request was declared. 
+Notice that, in this example, a policy named `resolve-graphql` that allows access to an app to resolve a GraphQL request was declared. 
 
 Besides a `name` and a `description`, this policy contains the `statements` prop.
 
-Statements are used in a way of stating: "**allow/do not allow** these **actions** to be performed on these **resources**". 
+Statements are used in a way of stating: "**allow/do not allow** these **actions** to be performed on these **resources** under these **conditions**". 
 
 Therefore, considering the given example, the declared `resolve-graphql` policy allows `POST` and `GET` requests to be performed on the `vrn:vtex.store-graphql:{{region}}:{{account}}:{{workspace}}:/_v/graphql` resource.
 
-The general keys that compose a statement are:
+The keys that compose a statement are:
 
 - `effect` - describes the effect of allowing (`allow`) or denying (`deny`) a resource to be accessed.
 - `actions` - describes the actions related to a given effect and resource. 
@@ -76,7 +78,7 @@ The `effect`, `actions` and `principals` props under `policies` can be translate
 
 Hence, for the given example, a policy related to the `/orders` resource allows the `example.marketplace` app to perform a `POST` request in its route.
 
-The general keys that compose this kind of policy are:
+The keys that compose this kind of policy are:
 
 - `effect` - describes the effect of allowing (`allow`) or denying (`deny`) a principal to perform a set of actions on a route.
 - `actions` - describes the actions related to a given effect, principal, and route. 
