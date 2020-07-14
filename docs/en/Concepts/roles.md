@@ -7,5 +7,3 @@ Since the same user can have different permissions within the same account, each
 A role can be given to a user or an app. The general rule is to have an identity provider, such as `user`, `app`, or `link`, followed by an identity.
 
 For example: an user making a request would receive a role similar to `user:f1sd8705-b34f-48ff-a113-2b8bb8c22411`, or `user:<e-mail>`. Installed and linked apps, in turn, would receive roles as `app:vtex.auth-server@1.0.0` and `link:vtex.auth-server@1.0.0`.
-
-Aside from the identity types above, there are also support roles, which are a *special* kind of role used only in support apps.
