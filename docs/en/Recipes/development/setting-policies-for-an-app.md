@@ -1,6 +1,6 @@
 # Setting policies for an app
 
-[Policies]() are permissions granted to a VTEX IO app that allows it to execute a given set of actions once installed in an account.
+Role-based [policies]() are permissions granted to a VTEX IO app that allows it to execute a given set of actions once installed in an account.
 
 The next section presents a step by step on how to declare the permissions your app may need.
 
