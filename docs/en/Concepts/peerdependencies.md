@@ -4,7 +4,7 @@ Peer dependencies is how we call a JSON object field (`peerDependencies`) in the
 
 This field is used to specify the set of **IO apps** an app relies on to properly work. However, unlike regular dependencies, peer dependencies **are not automatically installed** in an account. Hence, setting peer dependencies can be especially useful for cases when an app relies on a **paid app**, for example.
 
-Another use case for the `peerDependencies` field is when you need to guarantee that an account trying to install your new app has the exact same version of the dependencies your app relies on previously installed.
+Another use case for the `peerDependencies` field is when you need to guarantee that an account installing your new app already has installed your app's dependencies in the same major version specified in the `peerDependencies` field.
 
 To make it more tangible, take the following example, in which `vtex.store@2.x` and `vtex.paid-app-example@1.x` are declared as peer dependencies of the `vtex.example` app.
 
