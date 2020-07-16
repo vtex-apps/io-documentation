@@ -33,4 +33,4 @@ If your account does not have `vtex.store@2.x` and `vtex.paid-app-example@1.x` i
 
 Notice that, this way, the `vtex.example` forces every account that is installing it to also have `vtex.store@2.x` and `vtex.paid-app-example@1.x` installed. 
 
-<div class="alert alert-warning"><strong>Keep in mind:</strong> Peer dependencies are not automatically installed. So, if your app relies on a paid app, you must declare it as a peer dependency.</div>
+<div class="alert alert-warning"><strong>Keep in mind:</strong> Peer dependencies are not automatically installed, therefore you will have to manually install them in the account in which you are working. As a result, if your app relies on a paid app you should declare it as a peer dependency.</div>
