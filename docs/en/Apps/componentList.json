@@ -391,13 +391,19 @@
     {
       "appName": "vtex.checkout-ui-settings",
       "title": "Checkout UI Settings",
-      "description": "App responsible for exporting scripts to build a custom Checkout UI",
+      "description": "App responsible for exporting scripts to build a custom Checkout UI.",
       "url": "https://github.com/vtex-apps/checkout-ui-settings"
+    },
+    {
+      "appName": "vtex.store-sitemap",
+      "title": "Store Sitemap",
+      "description": "App responsible for automatically generating a `sitemap.xml` file of your VTEX IO Store.",
+      "url": "https://github.com/vtex-apps/store-sitemap"
     },
     {
       "appName": "vtex.store-icons",
       "title": "Store Icons",
-      "description": "Exports all icons used by the store's components",
+      "description": "Exports all icons used by the store's components.",
       "url": "https://github.com/vtex-apps/store-icons"
     },
     {
@@ -455,6 +461,12 @@
       "title": "Cookiebot",
       "description": "VTEX Cookiebot native integration",
       "url": "https://github.com/vtex-apps/cookiebot"
+    },
+    {
+      "appName": "vtex.cookie-script",
+      "title": "Cookie Script",
+      "description": "VTEX Cookie Script native integration",
+      "url": "https://github.com/vtex-apps/cookie-script"
     },
     {
       "appName": "vtex.criteo",
@@ -587,6 +599,12 @@
       "title": "Smarthint",
       "description": "VTEX Smarthint native integration",
       "url": "https://github.com/vtex-apps/smarthint"
+    },
+    {
+      "appName": "vtex.tawk-to",
+      "title": "Tawk.to",
+      "description": "VTEX Tawk.to native integration",
+      "url": "https://github.com/vtex-apps/tawk-to"
     },
     {
       "appName": "vtex.tradetracker",

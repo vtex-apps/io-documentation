@@ -23,7 +23,7 @@ The first step to configuring an Edition app is to **become a Sponsor Account**.
 
 Any account can become a Sponsor Account, including those that are children of another account i.e. have a Sponsor themselves.
 
-To become a Sponsor Account and be able to configure child account Editions, go through our documentation on [configuring the Sponsor Account requirements](https://vtex.io/docs/recipes/development/configuring-the-sponsor-account-requirements/).
+To become a Sponsor Account and be able to configure Editions apps, go through our documentation on [configuring the Sponsor Account requirements](https://vtex.io/docs/recipes/development/configuring-the-sponsor-account-requirements/).
 
 ### Step 2 - Creating an Edition app
 
