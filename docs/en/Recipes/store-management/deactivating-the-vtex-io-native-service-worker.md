@@ -29,8 +29,6 @@ Since a website can only have one service worker running, you can **choose to de
 
 5.  Save changes.
 
-<div class="alert alert-info">
-Notice that the toggle button can activate and deactivate the VTEX IO native service worker. Therefore, use the step by step above to manage it according to your store's needs.
-<div>
+:information_source: *Notice that the toggle button can activate and deactivate the VTEX IO native service worker. Therefore, use the step by step above to manage it according to your store's needs.*
 
 Once you save the changes, the VTEX Service Worker will be automatically disabled.
