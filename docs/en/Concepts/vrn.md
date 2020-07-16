@@ -12,7 +12,7 @@ The format of a VRN is `vrn:{service}:{region}:{account}:{workspace}:{path}` who
 - `region` - the region from where the request was performed.
 - `account` - the VTEX account responsible for performing the request.
 - `workspace` - the workspace used to perform a request.
-- `path` - the specific endpoint of a request.
+- `path` - the resource URL or endpoint.
 
 Example of real VRNs are:
 
