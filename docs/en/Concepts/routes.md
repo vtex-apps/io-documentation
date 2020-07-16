@@ -4,7 +4,7 @@ Routes are used to define the URL path related to a store's page template.
 
 In VTEX Store Framework, some default page templates page with predefined URL paths are already available, such as the [home page](https://github.com/vtex-apps/store/blob/master/store/routes.json#L2), [product page](https://github.com/vtex-apps/store/blob/master/store/routes.json#L11), [login page](https://github.com/vtex-apps/store/blob/master/store/routes.json#L8), etc. 
 
-However, it's also possible for you to create a [*custom* landing page](https://developers.vtex.com/docs/vtex-io-documentation-creating-a-new-custom-page). In this case, custom routes can ben defined in a `routes.json` file inside the `store` folder, according to the following example:
+However, it's also possible for you to create a [*custom* landing page](https://developers.vtex.com/docs/vtex-io-documentation-creating-a-new-custom-page). In this case, custom routes can be defined in the `routes.json` file inside the app's `store` folder, according to the following example:
 
 ```json
 {
