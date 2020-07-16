@@ -10,7 +10,7 @@ The format of a VRN is `vrn:{service}:{region}:{account}:{workspace}:{path}` who
 
 - `service` - the infrastructure service that holds the app's information.
 - `region` - the region from where the request was performed.
-- `account` - the tenant account.
+- `account` - the VTEX account responsible for performing the request.
 - `workspace` - the workspace used to perform a request.
 - `path` - the specific endpoint of a request.
 
