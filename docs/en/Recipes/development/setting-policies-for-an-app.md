@@ -16,7 +16,7 @@ For each policy, one must declare:
 
 - a `name`, which is a unique identifier of a given policy.
 - a `reason`, which may briefly describe the policy.
-
+- `attrs` (optional), which may contain the `host` and the `path` of a service's URL that needs to be called.
 >:warning: **Keep in mind:** The `reason` may aid the person who wants to install the app in taking the decision of installing it or not.
 
 - `attrs` (optional), which may contain the `host` and the `path` of a service's URL that needs to be called.
