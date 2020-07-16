@@ -27,7 +27,6 @@ For this example, if you wanted to install the `vtex.example` app in an account,
 
 Now, considering the development context, suppose the following: you are developing an app that directly depends on the `vtex.example` app. Therefore, you list `vtex.example` as a dependency in the `dependencies` field from the `manifest.json` file. The `vtex.example`, in turn, has `vtex.store@2.x` and `vtex.paid-app-example@1.x` set as its `peerDependencies`. 
 
-In practice, this means that in order to develop your app (whose `dependencies` list includes the `vtex.example`), you will have to manually install `vtex.store@2.x` and `vtex.paid-app-example@1.x` in the VTEX account in which you are working.
 
 If your account does not have `vtex.store@2.x` and `vtex.paid-app-example@1.x` installed, you won't be able to install the `vtex.example` and your development flow will be interrupted.
 
