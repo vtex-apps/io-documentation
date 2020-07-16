@@ -1,6 +1,8 @@
 # Policies
 
-Policies are a set of permissions granted to a resource or a [role]() that allows or forbids them to execute a given set of actions in an account. In VTEX IO, policies are mostly based on [AWS's IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
+Policies are a set of permissions granted to a resource ([VRN]())or a [role]() that allows or forbids them to execute a given set of actions in an account, such as performing a request to the platform. 
+
+In VTEX IO, there are two kinds of policies, which are role-based and resource-based. Both of them are based on the [AWS's IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
 
 VTEX IO accepts two kinds of policies, which are role-based and resource-based. The former, as the name suggests, are policies associated with a role, such as an app. In this case, these policies must be declared in a `policies.json` file in the app's root folder. 
 
