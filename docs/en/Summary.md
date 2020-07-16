@@ -61,6 +61,7 @@
     - [Enabling the Order Form optimization](recipes/store-management/enabling-order-form-optimization.md)
     - [Setting up Google Tag Manager](recipes/store-management/setting-up-google-tag-manager.md)
     - [Setting up Google Analytics search tracking](recipes/store-management/setting-up-google-analytics-search-tracking.md)
+    - [Deactivating the VTEX IO native service worker](recipes/store-management/deactivating-the-vtex-io-native-service-worker.md)
 
   - [VTEX IO Development](recipes/development)
 
