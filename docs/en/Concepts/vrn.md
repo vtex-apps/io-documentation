@@ -1,8 +1,10 @@
 # VTEX Resource Name (VRN)
 
-A VTEX Resource Name (VRN) is a resource path identifier used by the VTEX IO platform to express the resource path being called in a request. 
+A VTEX Resource Name (VRN) is how the VTEX IO platform expresses the resource path called in a request. 
 
-Most of the time, a resource is simply the URL that is being called. However, this concept is broad, and, to name a few, a resource can be a proxy, an API segment, an app endpoint, etc. That's why, to make it more tangible, in VTEX IO, we express a resource by a VRN, which structure carries information about the resource itself and the context in which it is being accessed.
+A resource can be accessed by sending a request to its Uniform Resource Locator (URL). However, the resource concept is broad, and, to name a few, a resource can be a proxy, an API segment, an app endpoint, etc. 
+
+Therefore, in VTEX IO, we identify and express a resource by using a VRN, which structure carries essential information about the resource itself and the context in which it is being accessed.
 
 The format of a VRN is:
 
