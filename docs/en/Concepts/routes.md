@@ -14,11 +14,11 @@ However, it's also possible for you to create a [*custom* landing page](https://
 }
 ```
 
-In this example, `store.custom#{templatename}` is the name of the custom template declared within your store's `blocks` folder and `path` is the root-relative URL that you want your page to be accessible.
+In this example, `store.custom#{templatename}` is the name of the custom page template declared within your store's `blocks` folder and `path` is the root-relative URL that you want your page to be accessed by users.
 
 :information_source:  **Tip**: *You can set a path that accepts URL parameters and optional parameters as in: `/path/:param(/:optional-param)`.*
 
-Optional props such as the ones presented in the following table can also be added to your route's definition, according to your desired scenario.
+Optional props such as the ones presented in the following table can also be added to your route's definition, according to your desired scenario:
 
 | Prop | Type | Description |
 | ---- |------| ----------- |
