@@ -26,7 +26,7 @@ The `dependencies` object of your app's `manifest.json` file may look something 
 
 The most recurrent use of VTEX IO apps as dependencies are for:
 
-- Using [store framework _blocks_](https://vtex.io/docs/apps/content-blocks/).
+- Using [VTEX Store Framework blocks](https://vtex.io/docs/apps/content-blocks/).
 - Importing React components from another app.
 - Importing Typescript types from a GraphQL service app.
 - Using GraphQL or REST definitions declared in another app.
