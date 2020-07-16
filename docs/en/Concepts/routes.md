@@ -1,6 +1,6 @@
 # Routes
 
-Routes are used to define the path related to a page template. 
+Routes are used to define the URL path related to a store's page template. 
 
 In VTEX IO, some default pages with preset paths are already available, such as [home page](https://github.com/vtex-apps/store/blob/master/store/routes.json#L2), [product page](https://github.com/vtex-apps/store/blob/master/store/routes.json#L11), [login page](https://github.com/vtex-apps/store/blob/master/store/routes.json#L8), etc. 
 
