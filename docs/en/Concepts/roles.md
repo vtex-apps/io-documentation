@@ -1,7 +1,10 @@
 # Roles
 
-Roles are uniquely identifiable names given to the actors of a request. This means that, in VTEX IO, whenever a request is performed, the actor of this action receives a role. In the sequence, to determine whether or not that call can go through, the role is translated into a set of policies.
+Roles are uniquely identifiable names given to request sources. 
 
+Whenever a request is performed in the VTEX IO platform, the source of this action, which can be the user or app responsible for performing that request, automatically receives a unique role.
+
+In the sequence, to detect whether or not the request source is authorized to perform that particular request, and also to determine if the call can go through, VTEX IO platform checks if the source role contains the required policies attached.
 Since the same user can have different permissions within the same account, each role can have multiple policies attached.
 
 A role can be given to a user or an app. The general rule is to have an identity provider, such as `user`, `app`, or `link`, followed by an identity.
