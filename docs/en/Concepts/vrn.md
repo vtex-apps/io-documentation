@@ -14,11 +14,10 @@ The format of a VRN is `vrn:{service}:{region}:{account}:{workspace}:{path}` who
 - `workspace` - the workspace used to perform a request.
 - `path` - the resource URL or endpoint.
 
-Example of real VRNs are:
+Examples of real VRNs are:
 
-- For a VTEX IO app: `vrn:apps:aws-us-east-1:vtex:example:/v2/apps`
-
-- For an external service: `vrn:proxy:aws-us-east-1:vtex:example:api.visa.com/merchantlocator/v1/locator`
+- `vrn:apps:aws-us-east-1:vtex:example:/v2/apps` *(for a VTEX IO app)*
+- `vrn:proxy:aws-us-east-1:vtex:example:api.visa.com/merchantlocator/v1/locator` *(for an external service)*
 
 Notice that for services outside VTEX IO, the full URL must be provided and that the `service` is simply `proxy`.
 
