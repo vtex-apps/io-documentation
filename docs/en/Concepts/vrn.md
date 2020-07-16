@@ -6,11 +6,7 @@ A resource can be accessed by sending a request to its Uniform Resource Locator 
 
 Therefore, in VTEX IO, we identify and express a resource by using a VRN, which structure carries essential information about the resource itself and the context in which it is being accessed.
 
-The format of a VRN is:
-
-`vrn:{service}:{region}:{account}:{workspace}:{path}`
-
-Which elements can be described as:
+The format of a VRN is `vrn:{service}:{region}:{account}:{workspace}:{path}` whose elements can be described as:
 
 - `service` - the infrastructure service that holds the app's information.
 - `region` - the region where the request was performed.
