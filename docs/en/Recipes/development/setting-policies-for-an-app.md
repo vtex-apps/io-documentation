@@ -58,7 +58,6 @@ Check the example below:
 
 Notice that `catalog-proxy` is the `name` of a policy previously declared in a `policies.json` file of the `app-name` app.
 
-## Modus Operandis
 
 Once you performed the desired changes in the `policies` of your app's `manifest.json` file, a set of permissions will be granted to your app. 
 
