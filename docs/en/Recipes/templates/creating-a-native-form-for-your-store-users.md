@@ -116,9 +116,8 @@ To that end, we will use the admin's Master Data legacy interface:
   ]
   {
     "v-security": {
-      "publicWrite": [ "publicForWrite" ],
+      "publicWrite": ["publicForWrite"],
       "publicJsonSchema": true
-    }
   }
 }
 ```
