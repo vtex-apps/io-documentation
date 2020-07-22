@@ -481,6 +481,12 @@
       "url": "https://github.com/vtex-apps/cybersource-fingerprint"
     },
     {
+      "appName": "vtex.elfsight",
+      "title": "Elfsight",
+      "description": "VTEX Elfsight native integration",
+      "url": "https://github.com/vtex-apps/elfsight"
+    },
+    {
       "appName": "vtex.facebook-pixel",
       "title": "Facebook Pixel",
       "description": "VTEX Facebook Pixel native integration",
