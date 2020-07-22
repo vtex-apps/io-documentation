@@ -15,7 +15,7 @@ To do this, follow the walk-through below:
 
 ## Step by step
 
-1. Using a code edtitor of your preference, open the Edition App folder and access the `apps.json` file;
+1. Using a code editor of your preference, open the Edition App folder and access the `apps.json` file;
 2. Make the desired apps and settings changes in the file;
 
 <div class="alert alert-warning">

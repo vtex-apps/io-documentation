@@ -23,7 +23,7 @@ Follow the steps below to learn more about the installation and execution of an 
 
 ## Step 1 - Enabling A/B testing
 
-1. In your terminal and using the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), authenticate yourself in the desired account by running `vtex login {accountName}`;
+1. In your terminal and using the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/store/installing-the-vtex-io-toolbelt/), authenticate yourself in the desired account by running `vtex login {accountName}`;
 2. Once logged into the desired account, [create a Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace) and run the command `vtex use {productionWorkspaceName}` in order to start working in it;
 3. Perform the changes you want to test, such as the installation of a new app, for example, in the production workspace you are working in. Don't forget to save your changes;
 4. Run the `vtex use master` command in order to change the Production workspace you are working in to the Master one;

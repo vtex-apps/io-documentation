@@ -24,7 +24,7 @@ Those Editions and the process for setting them are explained in detail below.
 
 ## Step by step
 
-1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into the account you wish to become the Sponsor of other child accounts;
+1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/store/installing-the-vtex-io-toolbelt/), log into the account you wish to become the Sponsor of other child accounts;
 2. Execute `vtex edition` to check whether any Edition is already installed on your account or not. If your account is new enough, an Edition App may have already come installed on your account creation process. If this is your case, go to the step **4**. 
 
 In scenarios where no Edition app is installed, one of the Edition Apps available in the `vtex` registry must be manually installed by our product team. Presently, they are:

@@ -22,16 +22,16 @@ Linking an app is only possible in <b>Development</b> workspaces. When using a P
 To link your app and start seeing your changes in real time, follow the instructions below:
 
 1. Make sure you already are logged into the desired account and using a Developer workspace;
-2. Using your terminal, acess the app's directory in your local files;
+2. Using your terminal, access the app's directory in your local files;
 3. Once in the accurate directory, type the following command in the terminal: 
 
 `vtex link`
 
 After that, IO performs a series of tasks on its own until the following message is displayed in the terminal, once everything is OK: `App linked successfully` 
 
-From then on, every change can be seen in your browser in real time. But remember: the changes remain in your local files and can only be seen using the workspace you are workingon. 
+From then on, every change can be seen in your browser in real time. But remember: the changes remain in your local files and can only be seen using the workspace you are working on. 
 
-If you are confortable with your changes and want to **make your changes publicly available** , verify our [documentation](https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available) for it.
+If you are comfortable with your changes and want to **make your changes publicly available** , verify our [documentation](https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available) for it.
 
 
 <div class="alert alert-info">

@@ -21,7 +21,7 @@ Remember the following: private apps (apps without the <code>billingOptions</cod
 
 ## Step by step
 
-1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), make sure you are logged into the desired account and using the desired workspace;
+1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/store/installing-the-vtex-io-toolbelt/), make sure you are logged into the desired account and using the desired workspace;
 2. Then, run one of the following commands according to your needs and scenario:
 
 - `vtex install {appVendor}.{appName}` or `vtex install {appVendor}.{appName}@x` - To install the **latest stable version** of the app;

@@ -51,14 +51,14 @@ The file must be a <code>.csv</code> type file. Otherwise, the redirects upload 
 ![urls-redirect-csv-file](https://user-images.githubusercontent.com/18706156/78902791-a3111700-7a50-11ea-8089-c4fe094a51fb.png)
 
 4. Save and name the document as desired;
-5. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into your VTEX account;
+5. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/store/installing-the-vtex-io-toolbelt/), log into your VTEX account;
 6. Once logged in, run the `vtex redirects import {fileName}.csv`, replacing `{fileName}` with the name of the file that you've just saved.
 
 After the sixth step, Toolbelt will receive the file, validate it, and save it. After that, the redirects will take effect.
 
 ### Removing redirects
 
-1. Using your terminal and [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into your VTEX account;
+1. Using your terminal and [VTEX IO Toolbelt](https://vtex.io/docs/recipes/store/installing-the-vtex-io-toolbelt/), log into your VTEX account;
 2. Once logged in, run the `vtex redirects delete {path}`, replacing`{path}` with the URL path that will have its redirect removed.
 
 <div class="alert alert-warning">

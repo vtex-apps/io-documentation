@@ -29,7 +29,7 @@ To become a Sponsor Account and be able to configure Editions apps, go through o
 
 Once the Sponsor Account requirements are configured, you'll need to create and **publish Edition apps** of your own, as follows:
 
-1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into the Sponsor Account;
+1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/store/installing-the-vtex-io-toolbelt/), log into the Sponsor Account;
 2. Run the `vtex init` command;
 3. Choose the `edition app` option and accept the actions required by Toolbelt;
 
