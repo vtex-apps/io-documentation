@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Using the Assets Builder
 
-The VTEX Assets Builder is responsible for  **handling assets**  within store theme  `blocks`  by getting all asset paths used and uploading them in the  **File Manager**  service.
+The VTEX Assets Builder is responsible for  **handling assets**  within store theme  `blocks` and CSS classes by getting all asset paths used and uploading them in the  **File Manager**  service.
 
 As its name implies, the File Manager manages all of your store files and their respective URLs. It is able to translate the asset paths and then export the asset immutable URLs so that all block assets can be properly rendered.
 
@@ -32,8 +32,6 @@ Check out the instructions to use it below:
 ```
 
 2.  In the `store`  root directory of your app, create an  `assets` folder to manage your store's assets, such as images.
-
-
 3. Then, add the desired asset files in the  `assets` folder. Notice that you can create subfolders within the  `assets`  folder to better organize the assets used by the theme blocks, as shown below:
 
 ![assets-folder](https://user-images.githubusercontent.com/60782333/83685560-3e40eb80-a5bf-11ea-9ea1-d443bce21b11.png)
@@ -42,9 +40,7 @@ Check out the instructions to use it below:
 If you created subfolders inside the Assets folder, remember to include the folder hierarchy in the asset path, such as:  <code>assets/events/vtex-day.jpg</code>.
 </div>
 
-
-
-4. Use the asset path (`assets/{imageFileName}.{jpg/png/gif}`) as the value of a given block's prop for media rendering, such as `src`:
+4. Use the asset path (`assets/{imageFileName}.{jpg/png/gif}`) as the value of a given block's prop, such as `src`, or CSS class for media rendering:
 
 ```JSON
 "image": {  
@@ -54,9 +50,7 @@ If you created subfolders inside the Assets folder, remember to include the fold
 }
 ```
 
-Once the asset path was added to the prop and you save the changes performed, Assets Builder will automatically work to save it in the VTEX IO File Manager and then generate a URL for it, which will be considered by the platform during the theme rendering.
-
- 
+Once the asset path was added and you save the changes performed, Assets Builder will automatically work to save it in the VTEX IO File Manager and then generate a URL for it, which will be considered by the platform during the theme rendering.
 
 A few things to consider: 
 
