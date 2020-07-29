@@ -18,6 +18,7 @@
   - [Builders](concepts/builders)
   - [Edition App](concepts/edition-app)
   - [Interfaces](concepts/interfaces)
+  - [Services](concepts/services)
   - [Sponsor Account](concepts/sponsor-account)
   - [Toolbelt](concepts/toolbelt)
   - [Workspace](concepts/workspace)
