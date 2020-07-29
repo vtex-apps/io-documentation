@@ -1,8 +1,8 @@
 ---
 title: Customizing your store’s typography
-description: "A store’s choice in terms of typography is a fundamental step to building its identity. Within this environment, learn how to customize typography styles swiftly and with ease using the admin’s interface, without needing to resort to your theme’s code."
+description: "A store’s choice in terms of typography is a fundamental step to building its identity. Within this environment, learn how to customize typography styles using the admin’s interface and your theme’s code."
 date: "08/07/2019"
-tags: ["customizing", "customize", "customization", "typography", "print", "cms", "styles" ]
+tags: ["customizing", "customize", "customization", "typography", "print", "cms", "styles", "css"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/style/customizing-your-stores-typography.md"
 ---
@@ -13,9 +13,42 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 In addition to being crucial for communicating with users, a store’s typography should be a reflection of its identity, using its characteristic styles, such as font size and spacing.
 
-Using admin’s Storefront, you can customize a store’s typography faster and easier, without the need to resort to your theme’s code for direct CSS changes. 
+Whether using the admin’s CMS or your store theme CSS files, Store Framework gives you the flexibility to customize your store’s typography according to your business needs. 
 
 ## Step by step
+
+### Using store theme CSS files 
+
+1. Open your store theme directory using a code editor of your preference. 
+2. Create a file called `Fonts` in the `Assets` folder.
+3. Upload in the file the desired fonts using the Assets builder](). 
+
+<div class="alert alert-warning">
+The font family file must be uploaded in the following file extensions: <code>.ttf</code> or <code>.woff</code>. 
+</div>
+
+4. In `styles/configs` folder, create a new file called `font-faces.css`.
+5. Use the `@font-face` rule declaring the CSS properties you desire to apply in your website typography. For example:
+
+```json
+@font-face {
+  font-family: 'MyHelvetica';
+  src: url(assets/fonts/MyHelvetica.woff2), url(assets/fonts/MyHelvetica.ttf);
+  font-weight: bold;
+}
+```
+
+<div class="alert alert-info">
+Notice that fonts uploaded on Assets builder can be referenced in your CSS files by declaring the desired file path in the `src` property. 
+</div>
+
+<div class="alert alert-warning">
+The <code>font-faces.css</code> is a global file meaning its configurations are applied to all texts from the website. If you want to customize a component's typography independently, overriding the global configurations, you can refer the desired font family using the `font-family` property in the app's CSS overriding file.
+</div>
+
+### Using store's admin
+
+Using your store's admin, you can customize a store’s typography faster and easier, without the need to resort to your theme’s code for direct CSS changes. 
 
 1. Access **Styles** in the desired account’s admin, in **CMS**.
 2. Select the More Options (three dots) menu for the store’s style whose typography will be edited.
