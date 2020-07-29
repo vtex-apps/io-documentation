@@ -68,7 +68,7 @@ You can confirm that the app has now been installed by running `vtex ls` again.
 6. Click on **Save**.
 
 <div class="alert alert-info">
-Acess<a href="https://tagmanager.google.com/"> Google Tag Manager page</a> and login to you account in order to find out what is your account <strong>GTM ID</strong>. The number your should use is the one provided by the <code>Container ID</code> column. 
+Access<a href="https://tagmanager.google.com/"> Google Tag Manager page</a> and login to you account in order to find out what is your account <strong>GTM ID</strong>. The number your should use is the one provided by the <code>Container ID</code> column. 
 </div>
 
 After installing the Google Tag Manager app, you are ready to use your GTM as usual by accessing your account dashboard [Google Tag Manager](https://tagmanager.google.com/). 

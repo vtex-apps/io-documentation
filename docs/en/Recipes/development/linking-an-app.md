@@ -22,7 +22,7 @@ Linking an app is only possible in <b>Development</b> workspaces. When using a P
 To link your app and start seeing your changes in real time, follow the instructions below:
 
 1. Make sure you already are logged into the desired account and using a Developer workspace;
-2. Using your terminal, acess the app's directory in your local files;
+2. Using your terminal, access the app's directory in your local files;
 3. Once in the accurate directory, type the following command in the terminal: 
 
 `vtex link`

@@ -99,7 +99,7 @@ _For example:_
 
 And there you go! You now have a fully functioning Carousel for your store. 
 
-![gif-caroulsel-slider-layout](https://user-images.githubusercontent.com/52087100/68598106-ea34b500-047c-11ea-8f69-0b05cf81e6a1.gif)
+![gif-carousel-slider-layout](https://user-images.githubusercontent.com/52087100/68598106-ea34b500-047c-11ea-8f69-0b05cf81e6a1.gif)
 _When inspecting the page you’ll notice that the `carousel` block was not used to build the component._ 
 
 Bear in mind that you are also able to edit data contained in `list-context.image-list` using the admin's Site Editor section: 

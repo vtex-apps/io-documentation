@@ -66,6 +66,6 @@ What you can do is **control the max number of most visited URLs that your site 
 
 The Store Indexer app, which is responsible for indexing your site's main URLs, builds a list of the most visited site URLs according to the frequency with which those pages are accessed and the max number of possible URLs you configured in the above mentioned step-by-step.
 
-The app automatically corrects and uniformizes the listed URLs to create canonical URLs, removing coded values such as  `map=c,c` and `/example?map=specificationFilter_X` from them.
+The app automatically corrects and standardize the listed URLs to create canonical URLs, removing coded values such as  `map=c,c` and `/example?map=specificationFilter_X` from them.
 
 As said previously, these URLs are then added to Sitemap by the Store Indexer and thus get indexed by web search engines.

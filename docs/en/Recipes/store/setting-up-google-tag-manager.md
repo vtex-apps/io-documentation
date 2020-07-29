@@ -60,7 +60,7 @@ Repeat the instructions above for the following variables:
 
 |  Field Name     |                 Value                    |   
 |-----------------|------------------------------------------| 
-|  `campaingName`   | {{Data Layer Variable - campaignName}}   |
+|  `campaignName`   | {{Data Layer Variable - campaignName}}   |
 |  `campaignMedium` | {{Data Layer Variable - campaignMedium}} |
 |  `campaignSource` | {{Data Layer Variable - campaignSource}} |
 

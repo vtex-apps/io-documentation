@@ -47,7 +47,7 @@ vtex use {{WorkspaceName}} --production
 From this point onwards, any changes to the code are prohibited in the workspace, once it is ready to receive traffic, that is, to be accessed. If you want to change your code, work on it in a developer workspace and then follow the above-mentioned steps again.
 </div>
 
-### Instaling the candidate release version
+### Installing the candidate release version
 
 To install the candidate release in the new production workspace, simply run one of the following commands:
 

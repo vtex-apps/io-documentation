@@ -25,7 +25,7 @@ This is how your `styles/` folder structure should look like after you've accomp
 
 ![iconpack-folder](https://user-images.githubusercontent.com/52087100/64298990-d2592600-cf4d-11e9-994c-eaefd317f9ef.png)
 
-The `iconpack.svg` file will implement [SVG frament identifiers](https://css-tricks.com/svg-fragment-identifiers-work/), allowing you to simply change the part of the code that declares the icon's `g` tag instead of customize itself. 
+The `iconpack.svg` file will implement [SVG fragment identifiers](https://css-tricks.com/svg-fragment-identifiers-work/), allowing you to simply change the part of the code that declares the icon's `g` tag instead of customize itself. 
 
 For instance, let's customize the cart icon (`hpa-cart`) changing only its `g` content: 
 

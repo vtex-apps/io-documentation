@@ -26,7 +26,7 @@ You can manage each page's title and template in the Pages section, within the a
 
 However, you may want to create a new custom page for your store. In this case, a new URL and content to go with it must be created by you. 
 
-## Stey by step
+## Step by step
 
 Follow the steps below and learn how to define a different layout and path for a new store page:
 
@@ -99,7 +99,7 @@ Then, fill it out with the blocks that will set the desired layout:
  "rich-text#about-content": {
    "props": {
      "text":
-     " About us content - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+     " About us content - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
    }
  },
  "image#about-us": {

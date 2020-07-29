@@ -104,7 +104,7 @@ const handles = useCssHandles(CSS_HANDLES)
   
 4. Save your changes;
 5. Using your terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference/), log in to a VTEX account and use a Development workspace to [link](https://vtex.io/docs/recipes/development/linking-an-app) the app you are working on;
-6. Access the account's website through the developer workspace (`{workspaceName}--{accountName}.myvtex.com`) and inpect it to verify if the new class is really being properly rendered, making the HTML element targetable.
+6. Access the account's website through the developer workspace (`{workspaceName}--{accountName}.myvtex.com`) and inspect it to verify if the new class is really being properly rendered, making the HTML element targetable.
 
 Following our example, we would have something like:
 
@@ -137,7 +137,7 @@ import styles from '../searchResult.css'
 
 4. Save your changes;
 5. Using your terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference/), log in to a VTEX account and use a Development workspace to [link](https://vtex.io/docs/recipes/development/linking-an-app) the app you are working on;
-6. Access the account's website through the developer workspace (`{workspaceName}--{accountName}.myvtex.com`) and inpect it to verify if the new class is really being properly rendered, making the HTML element targetable.
+6. Access the account's website through the developer workspace (`{workspaceName}--{accountName}.myvtex.com`) and inspect it to verify if the new class is really being properly rendered, making the HTML element targetable.
 
 Following our example, we would have something like:
 

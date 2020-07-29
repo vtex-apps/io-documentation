@@ -1,18 +1,37 @@
 # Qué es VTEX IO
 
+VTEX IO es una **plataforma de desarrollo de código bajo** que proporciona rendimiento, escalabilidad y gestión de seguridad a su proyecto.
 
-VTEX IO es una plataforma de desarrollo para la creación y operación de Software as a service con alta performance y bajo costo de desarrollo y mantenimiento 
+Proporciona las herramientas para que pueda concentrarse en el código que realmente le importa a su empresa, en lugar de tener que lidiar con problemas y desafíos de infraestructura, ese es nuestro trabajo.
 
-## _Serverless_ 
+Desde *tiendas web* hasta *aplicaciones de administración personalizadas* e *integraciones de back-end*: VTEX IO le permite desarrollar y evolucionar de forma rápida y segura, principalmente a través de:
 
-Hoy, además de tener que desarrollar códigos que implementen  funcionalidades de negocio, las empresas de tecnología también necesitan preocuparse con buena parte de la infraestructura por detrás de lo que se está desarrollando, como configuración de servidores, performance, permisos de acceso, escalabilidad horizontal y vertical de recursos, seguridad, etc. 
+## Infraestructura nativa de la nube
 
-Con VTEX IO, la configuración y el mantenimiento de los servidores quedan fuera de la responsabilidad del desarrollador, que puede direccionar sus esfuerzos a otras demandas sin perder tiempo en la gestión de infraestructura y sus desafíos
+La plataforma VTEX IO se prueba en batalla y **se escala automáticamente** para satisfacer las demandas de su negocio porque la infraestructura se elimina del desarrollador.
 
-## Nativo en nube 
+Olvídese de los servidores, concéntrese en sus ventas: nuestro backend elástico le permite mantener el tiempo de actividad durante las fluctuaciones del tráfico sin tener que preescalar o prepararse manualmente.
 
-Por ser _serverless_, VTEX IO se ejecuta en una infraestructura en la nube. Esto se traduce, principalmente, en una mayor previsibilidad del comportamiento de la plataforma, ya que no actúa en dos ambientes diferentes, como local y servidor (nube).
+Sin nada que instalar localmente y una aplicación de línea de comandos, los desarrolladores disfrutan de un tiempo de configuración rápida sin precedentes y se vuelven productivos en un tiempo récord.
 
-Los recursos utilizados por VTEX IO se escalan automáticamente según la frecuencia de uso de la plataforma, permitiendo a los administradores de tiendas y las agencias de desarrollo concentrarse en las demandas de negocio sin preocuparse con las necesidades de escalabilidad.
+Todos los cambios en el código local se sincronizan inmediatamente con nuestro entorno de desarrollo en la nube y su software se vuelve a implementar al instante. "*Funciona en mi máquina*" se ha convertido en una cosa del pasado.
 
-Además, una infraestructura en la nube ofrece la ventaja de una rápida integración con diversas áreas y servicios de terceros involucrados en el flujo de compras en línea, como búsquedas de Google, entregas por correo, marketing, inventarios, etc.
+## Espacios de trabajo
+
+Debe implementar cambios en el código sabiendo que no interrumpirán la experiencia de usuarios y mejorarán las métricas de su negocio.
+
+Los espacios de trabajo de VTEX IO, como su nombre lo indica, le permiten hacer eso creando **múltiples versiones de su código**, sincronizando cada espacio de trabajo con nuestra plataforma y realizando pruebas A/B.
+
+## Conjunto de marcos de opinión
+
+Trabaje con tecnologías conocidas y altamente productivas, como TypeScript, React, GraphQL, .NET y Node, utilizando estructuras simples e intuitivas que puede aprender en cualquier lugar.
+
+### VTEX IO Store Framework
+
+Aprovechando la plataforma VTEX IO, el **VTEX IO Store Framework proporciona las bases necesarias para cualquier estructura de tienda**.
+
+Le proporciona React [store blocks](https://vtex.io/docs/components/all) personalizable de alta calidad para que pueda crear (lo más rápido posible en el mercado) experiencias de compra integrales que nunca envejecen.
+
+---
+
+Ahora que entiendes qué es VTEX IO y VTEX IO Store Framework, consulte las respuestas a las preguntas más frecuentes sobre la plataforma [aquí](https://vtex.io/docs/introduction/frequently-asked-questions).

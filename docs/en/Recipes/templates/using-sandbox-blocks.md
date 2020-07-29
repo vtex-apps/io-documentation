@@ -36,7 +36,7 @@ The **Sandbox App** is basically a component that supports iFrames. Therefore, i
 
 Let's suppose you want to create a simple `h1` sandbox block. It would look similar to the following:
 
-![sanbox hello world](https://user-images.githubusercontent.com/19555647/64436924-ae0b5f80-d09b-11e9-9080-fd4c983689d1.png)
+![sandbox hello world](https://user-images.githubusercontent.com/19555647/64436924-ae0b5f80-d09b-11e9-9080-fd4c983689d1.png)
 
 3. Reference it in another's block `child dependency` or `blocks`. For instance, your `store.home`: 
 

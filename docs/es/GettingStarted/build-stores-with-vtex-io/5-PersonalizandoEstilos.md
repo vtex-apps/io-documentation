@@ -2,7 +2,7 @@
 
 El archivo `style.json` de la carpeta `styles` es el responsable por definir el estilo de su tema. Esto significa que usted puede personalizar la apariencia de toda su tienda apenas ajustando las definiciones estándares declaradas en este archivo, sin la necesidad de declarar CSS para los componentes de cada página.
 
-Esta personalización puede realizarse de maneira fácil y rápida usando [VTEX Styleguide](https://styleguide.vtex.com/#/Styles), guía de estilos del archivo  `style.json` basado en una estructura CSS altamente configurable, el [VTEX Tachyons](https://vtex.github.io/vtex-tachyons/). 
+Esta personalización puede realizarse de manera fácil y rápida usando [VTEX Styleguide](https://styleguide.vtex.com/#/Styles), guía de estilos del archivo  `style.json` basado en una estructura CSS altamente configurable, el [VTEX Tachyons](https://vtex.github.io/vtex-tachyons/). 
 
 Por ejemplo: podemos definir en el archivo `style.json` que el color de fondo del tema estándar ahora será azul. Para esto, basta alterar el valor de la propiedad `base` del bloque `semanticColors`: 
 

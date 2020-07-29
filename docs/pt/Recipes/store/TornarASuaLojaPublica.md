@@ -2,7 +2,7 @@
 title: Tornar a sua loja pública
 description: "Se você deseja tornar a sua nova loja publicamente disponível, linká-la não será suficiente. Aprenda nesta recipe o passo a passo para fazer com que as suas novas configurações finalmente sejam disponibilizadas ao usuário final."
 date: "30/08/2019"
-tags: [ "loja", "promover", "produção", "master", "workspace", "pública", "disponível", "usuário-final", "lançar", "versão", "modo-de-produção"]
+tags: ["loja", "promover", "produção", "master", "workspace", "pública", "disponível", "usuário-final", "lançar", "versão", "modo-de-produção"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/pt/Recipes/store/TornarASuaLojaPublica.md"
 ---

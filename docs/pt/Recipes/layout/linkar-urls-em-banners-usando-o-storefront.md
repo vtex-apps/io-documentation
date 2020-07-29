@@ -26,7 +26,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/pt/Recipes/
 **5.** Clique em **Salvar**.
 
 <div class="alert alert-warning">
-Os campos <code>Página alvo do banner</code> e <code>Parâmetros</code> foram <i>deprecados</i>. Portanto, apenas o valor preenchido no campo <code>URL interna</code> será considerado para o link de URL interna.
+Os campos <code>Página alvo do banner</code> e <code>Parâmetros</code> foram <i>depreciados</i>. Portanto, apenas o valor preenchido no campo <code>URL interna</code> será considerado para o link de URL interna.
 </div>
  
 ## URL externa

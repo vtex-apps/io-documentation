@@ -57,7 +57,7 @@ De acuerdo con las necesidades de su negocio, es posible personalizar los bloque
 
 ## Declarando un nuevo bloque 
  
-Vamos entonces a agregar un nuevo componente [**Infocard**](*link*) a la página de inicio de la tienda, antes del estante. Para esto, debemos agregar `info-cardf#bestdeals` al *template* `store.home` en `home.jsonc`. Despues vamos a declarar el bloque más abajo en este mismo archivo.
+Vamos entonces a agregar un nuevo componente [**Infocard**](*link*) a la página de inicio de la tienda, antes del estante. Para esto, debemos agregar `info-cardf#bestdeals` al *template* `store.home` en `home.jsonc`. Después vamos a declarar el bloque más abajo en este mismo archivo.
  
 <img width="645" alt="newblock-step4" src="https://user-images.githubusercontent.com/52087100/61960418-ca47b700-af9b-11e9-8787-b68cafae1225.png">
 
