@@ -30,7 +30,7 @@ The font family file must be uploaded in the following file extensions: <code>.t
 4. In `styles/configs` folder, create a new file called `font-faces.css`.
 5. Use the `@font-face` rule declaring the CSS properties you desire to apply in your website typography. For example:
 
-```json
+```css
 @font-face {
   font-family: 'MyHelvetica';
   src: url(assets/fonts/MyHelvetica.woff2), url(assets/fonts/MyHelvetica.ttf);
@@ -43,12 +43,10 @@ Notice that fonts uploaded on Assets builder can be referenced in your CSS files
 </div>
 
 <div class="alert alert-warning">
-The <code>font-faces.css</code> is a global file meaning its configurations are applied to all texts from the website. If you want to customize a component's typography independently, overriding the global configurations, you can refer the desired font family using the `font-family` property in the app's CSS overriding file.
+The <code>font-faces.css</code> is a global file meaning its configurations are applied to all texts from the website. If you want to customize a component's typography independently, overriding the global configurations,you should declare the <code>font-faces.css</code> file still and refer the desired component font using the <code>font-family</code> property in the app's CSS overriding file. 
 </div>
 
 ### Using store's admin
-
-Using your store's admin, you can customize a store’s typography faster and easier, without the need to resort to your theme’s code for direct CSS changes. 
 
 1. Access **Styles** in the desired account’s admin, in **CMS**.
 2. Select the More Options (three dots) menu for the store’s style whose typography will be edited.
