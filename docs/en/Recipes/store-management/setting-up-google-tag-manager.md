@@ -23,7 +23,7 @@ The VTEX IO Google Tag Manager native solution is compliant with Universal Analy
 - Purchase.
 
 <div class="alert alert-info">
-In order to set the tracking of these events in Google Analytics, learn how to<a href="https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/setting-up-google-analytics.md">set up Google Analytics</a> in your VTEX IO store.
+In order to set the tracking of these events in Google Analytics, learn how to<a href="https://vtex.io/docs/recipes/store-management/setting-up-google-analytics-search-tracking/">set up Google Analytics search tracking</a> in your VTEX IO store.
 </div>
 
 In order to set up Google Tag Manager in your store, you first must set up all necessary **variables**, **triggers** and **tags**. 
