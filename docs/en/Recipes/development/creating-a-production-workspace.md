@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Creating a Production workspace
 
-Workspaces in production mode are ready to **receive traffic**, that is, to be **accessed by other account users**. 
+[Workspaces](https://vtex.io/docs/concepts/workspace/) in production mode are ready to **receive traffic**, that is, to be **accessed by other account users**. 
 
 Once you are sure of your changes performed in the Development workspace, it is time to create a Production one in order to test them with traffic.
 
@@ -25,7 +25,7 @@ vtex use {workspaceName} --production
 ```
 
 <div class="alert alert-warning">
-<b>Remember te replace the value in the curly brackets according to your store scenario and needs.</b>
+<b>Remember te replace the value in the curly brackets according to your store's scenario and needs.</b>
 </div>
 
 From this point onwards, **any changes to the code are prohibited in the Production workspace and you can only install new apps in it**. This means that you are not able to link any app as well. If you want to change your code, work on it using a [Developer workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/) and then copy all performed changes to a Production one.
