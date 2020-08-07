@@ -32,7 +32,7 @@ From this point onwards, **any changes to the code are prohibited in the Product
 
 Once created, the Production workspace has no expiration date, which means that settings will remain stored in it unless there is any conflict with the configurations of the store’s Master workspace. 
 
-In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Production one in which you are working.
+In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working, since the account's workspaces work as a copy of the version available to the end user. 
 
 <div class="alert alert-info">
 Stick to the list of workspaces created for your account. It is important to keep a short list, not only for your own organization but also to spare platform infrastructure resources. Currently, <strong>there is no service responsible for automatically deleting unused workspaces from an account</strong>. This means that you must manually delete workspaces that are no longer being used by running <code>vtex workspace delete {workspaceName}</code>.
