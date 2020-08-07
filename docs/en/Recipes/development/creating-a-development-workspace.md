@@ -4,7 +4,7 @@ description: "Build your app settings in an isolated environment, ready to recei
 date: "2020-04-09"
 tags: ["create", "creating", "development", "workspace", "develop"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/creating-a-production-workspace.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/creating-a-production-workspace.md"
 ---
 
 # Creating a Development workspace
@@ -32,7 +32,7 @@ But be aware: **the Production workspace will not inherit the changes performed 
 
 Once created, the Developer workspace has no expiration date, which means that settings will remain stored in it unless there is any conflict with the configurations of the store’s Master workspace. 
 
-In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working.
+In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working, since the account's workspaces work as a copy of the version available to the end user. 
 
 <div class="alert alert-info">
 Stick to the list of workspaces created for your account. It is important to keep a short list, not only for your own organization but also to spare platform infrastructure resources. Currently, <strong>there is no service responsible for automatically deleting unused workspaces from an account</strong>. This means that you must manually delete workspaces that are no longer being used by running <code>vtex workspace delete {workspaceName}</code>.
