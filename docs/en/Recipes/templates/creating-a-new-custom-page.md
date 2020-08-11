@@ -1,39 +1,37 @@
 ---
-title: Creating a new custom page
+title: Creating a custom page
 description: "Learn how to define a different layout, path and content for a store’s new custom page."
-date: "30/08/2019"
-tags: ["institutional page", "page", "new page", "template", "institutional"]
+date: "2019-08-30"
+tags: ["institutional-page", "page", "new-page", "template", "institutional"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/creating-a-new-custom-page.md"
 ---
 
 # Creating a new custom page
 
-## Introduction
+Stores are made up of several different pages, each one having a different layout and content. When creating a store from scratch in VTEX IO, some default pages with predefined URLs are already available to you, such as:
 
-Stores are made up of several different pages, each one having a different layout and content. When creating a store from scratch in VTEX IO, some default pages with predefined URLs are available to you, such as:
-
-- `store.home` (Home page)
-- `store.product`(Product page)
-- `store.search` (Search Results page)
-- `store.account` (Client Account page)
-- `store.login` (Login page)
-- `store.orderplaced`(Order Placed page)
+- `store.home` - Home page
+- `store.product`- Product page
+- `store.search` - Search Results page
+- `store.account` - Client Account page
+- `store.login` - Login page
+- `store.orderplaced` - Order Placed page
 
 <div class="alert alert-info">
 You can manage each page's title and template in the Pages section, within the admin's CMS. 
 </div>
 
-However, you may want to create a new custom page for your store. In this case, a new URL and content to go with it must be created by you. 
+However, you may want to create a new custom page to attend your store's specific needs. In this case, a new URL and content to go with it must be created by you from scratch.  
 
 ## Stey by step
 
 Follow the steps below and learn how to define a different layout and path for a new store page:
 
-1. Create a **new template** in your store theme;
-2. Create your **new page's path**;
-3. **Add content** to your page using Site Editor;
-4. Promote your changes to a **master workspace**.
+1. Create a **new template** in your store theme.
+2. Create your **new page's path**.
+3. **Add content** to your page.
+4. Making your new theme content **publicly available**.
 
 ### Creating the new template
 
@@ -55,7 +53,7 @@ Let's suppose we are going to create a simple About Us page for a store. As such
 
 ![store-product-exp](https://user-images.githubusercontent.com/12139385/63775975-dbdfef80-c8b6-11e9-9b76-e50924b828ae.png)
 
-To do so, in your store theme's code, declare a new template within your `blocks` folder or `blocks.jsonc` file
+1. In your store theme's code, declare a new template within your `blocks` folder or `blocks.jsonc` file.
 
 ```json
 {
@@ -66,7 +64,7 @@ To do so, in your store theme's code, declare a new template within your `blocks
 }
 ```
 
-Then, fill it out with the blocks that will set the desired layout:
+2. Fill it out with the blocks that will set the desired layout. For example:
 
 ```json
 {
@@ -119,7 +117,8 @@ Now that your page layout has been defined in the store theme code, the next ste
 
 #### Through code changes
 
-In your theme's source code, access the `routes.json` file. It can be found in the `store` folder. There, add a path to the recently created template's JSON:
+1. In your theme's source code, access the `routes.json` file. It can be found in the `store` folder. 
+2. There, add a path to the recently created template's JSON:
 
 ```json
 "store.custom#{templatename}": {
@@ -127,15 +126,18 @@ In your theme's source code, access the `routes.json` file. It can be found in t
 }
 ```
 
-Save your files and link the theme to your workspace using the `vtex link` command. You will be able to access and see your new page through your workspace. 
-
-If the new page satisfies your store needs, [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new store's version in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).
+3. Save your files.
+4. [Link](https://vtex.io/docs/recipes/development/linking-an-app/) the theme to a Development workspace. You will be able to access and see your new page live through your workspace, using the following format: `{workspaceName}--{accountName}.myvtex.com/{pathName}.
 
 #### Using the account admin
 
-If you prefer to set the new page path using account admin, you must first must [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes regarding template creation and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new version of your store in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).
+If you prefer to set the new page path using account admin, you must first must [release](https://vtex.io/docs/recipes/store/releasing-a-new-app-version) your changes regarding template creation and [install](https://vtex.io/docs/recipes/store/installing-an-app) the new version of your store theme in a [production workspace](https://vtex.io/docs/recipes/store/creating-a-production-workspace).
 
-Then, simply access the **Pages** section and click on **Create New**. Afterwards, simply choose the desired URL and any created template. For instance, the About Us page template.
+Once your changes are set up in a Production workspace, you will be able to use the admin's CMS to create the page's path:
+
+1. Access the admin's **Pages** section.
+2. Click on **Create New**.
+3. Choose the desired URL and any created template. For instance, the About Us page template previously created:
 
 ![custom-pages-pages](https://user-images.githubusercontent.com/52087100/64428903-36353900-d08b-11e9-8d19-186c8831b4d7.png)
 
@@ -149,12 +151,12 @@ When editing any content using the CMS section, it's always good to make your ch
 
 Your new page now has a custom layout, thanks to the newly created template, and can be accessed thanks to its route creation. The next step is editing its content.
 
-In the account admin, access **Site Editor**, in CMS. You can browse to your custom page or simply write its URL in the `Page URL` field.
+You can define your page content performing changes directly to your Store Theme app or using the admin's Site Editor. When using this last one, you can browse to your custom page or simply write its URL in the `Page URL` field. For example:
 
 ![custom-pages-siteeditor](https://user-images.githubusercontent.com/52087100/64428904-36cdcf80-d08b-11e9-8de4-06bf0a89b14f.png)
 
-Once there, feel free to change its content by customizing the page's component. For more on possible customization, access our [Layout recipes](https://vtex.io/docs/recipes/layout).
+Once there, feel free to change its content by customizing the page's component. For more on possible customization, access our [Template recipes](https://vtex.io/docs/recipes/template).
 
-### Promoting to a master workspace 
+### Making your theme content publicly available
 
-Finally, to make the new page available on your store, that is, available to end users, you must [promote your production workspace to master](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master).
+If you are happy with the changes to your store theme, make your new theme content public. Up until this point, the changes were performed in your development workspace. Access our documentation on [**making your theme content publicly available**](https://vtex.io/docs/recipes/store-management/making-your-theme-content-public/) and follow the steps detailed there. 
