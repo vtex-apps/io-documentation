@@ -54,7 +54,7 @@ Let's also imagine that instead of all text components, you now want just one to
 
 For such an advanced customization, you can overwrite the default style declared in `styles.json` using **CSS Handles**, along with the `blockClass` prop for the last given example. 
 
-For more on advanced customization of your store's style, access the recipe on [**Using CSS Handles for store customization**](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/).
+If you are interested on applying advanced customization in your store's style, access the recipe on [**Using CSS Handles for store customization**](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/) for more instructions.
 
 
 
