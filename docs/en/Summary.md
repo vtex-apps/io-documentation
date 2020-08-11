@@ -16,10 +16,16 @@
 - Concepts
 
   - [Builders](concepts/builders)
+  - [Dependencies](concepts/dependencies)
   - [Edition App](concepts/edition-app)
   - [Interfaces](concepts/interfaces)
+  - [Peer Dependencies](concepts/peerdependencies)
+  - [Policies](concepts/policies)
+  - [Roles](concepts/roles)
+  - [Routes](concepts/routes)
   - [Sponsor Account](concepts/sponsor-account)
   - [Toolbelt](concepts/toolbelt)
+  - [VTEX Resource Name (VRN)](concepts/vrn)
   - [Workspace](concepts/workspace)
 
 - Recipes
@@ -43,6 +49,7 @@
     - [Building a Product Details Page](recipes/templates/building-a-product-details-page.md)
     - [Creating modals using icons](recipes/templates/creating-modals-using-icons.md)
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
+    - [Creating a custom search results page](recipes/templates/creating-a-custom-search-results-page.md)
     - [Using the Fold blocks](recipes/templates/using-the-fold-blocks.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
     - [Creating a native form for your store users](recipes/templates/creating-a-native-form-for-your-store-users.md)
