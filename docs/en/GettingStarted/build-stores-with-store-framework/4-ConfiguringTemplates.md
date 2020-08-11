@@ -42,7 +42,7 @@ Let’s now have a look at your store’s predefined homepage template:
 2. Access `store` and then `blocks`. 
 3. Acess `home` and then `home.jsonc`. You will be able to see a result similar to the one below:
 
-```json
+```jsonc
 {
   "store.home": {
     "blocks": [
@@ -224,7 +224,7 @@ Now, let's take a look at the `shelf#home` block in the same file (`home.jsonc`)
 
 Note that it declares another block to your `blocks` list, that in turn declares other blocks below in a list called `children`:
 
-```
+```json
 "product-summary.shelf": {
   "children": [
     "product-summary-name",
