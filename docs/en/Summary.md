@@ -3,6 +3,7 @@
 - Introduction
 
   - [What is VTEX IO](introduction/what-is-vtex-io)
+  - [What is VTEX Store Framework](introduction/what-is-vtex-store-framework)
   - [FAQ](introduction/frequently-asked-questions)
 
 - Getting Started
