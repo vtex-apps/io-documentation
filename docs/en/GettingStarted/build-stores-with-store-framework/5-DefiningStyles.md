@@ -17,7 +17,7 @@ This means that you can customize your entire store’s appearance by simply adj
 
 For example: we can set the default theme background color to blue, by simply changing the `semanticColors` block’s `base` property:
 
-```json
+```css
 "semanticColors": {
   "background": {
     "base": "#00BFFF",
