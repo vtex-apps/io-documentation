@@ -3,23 +3,31 @@
 - Introduction
 
   - [What is VTEX IO](introduction/what-is-vtex-io)
+  - [What is VTEX Store Framework](introduction/what-is-vtex-store-framework)
   - [FAQ](introduction/frequently-asked-questions)
 
 - Getting Started
 
   - [Build stores with Store Framework](getting-started/build-stores-with-store-framework/1)
-    - [Basic setup](getting-started/build-stores-with-store-framework/2)
+    - [Prerequesites](getting-started/build-stores-with-store-framework/2)
     - [Setting your store's theme](getting-started/build-stores-with-store-framework/3)
     - [Configuring templates](getting-started/build-stores-with-store-framework/4)
-    - [Customizing styles](getting-started/build-stores-with-store-framework/5)
+    - [Defining styles](getting-started/build-stores-with-store-framework/5)
+    - [Building your own store theme](etting-started/build-stores-with-store-framework/6)
 
 - Concepts
 
   - [Builders](concepts/builders)
+  - [Dependencies](concepts/dependencies)
   - [Edition App](concepts/edition-app)
   - [Interfaces](concepts/interfaces)
+  - [Peer Dependencies](concepts/peerdependencies)
+  - [Policies](concepts/policies)
+  - [Roles](concepts/roles)
+  - [Routes](concepts/routes)
   - [Sponsor Account](concepts/sponsor-account)
   - [Toolbelt](concepts/toolbelt)
+  - [VTEX Resource Name (VRN)](concepts/vrn)
   - [Workspace](concepts/workspace)
 
 - Recipes
@@ -43,6 +51,7 @@
     - [Building a Product Details Page](recipes/templates/building-a-product-details-page.md)
     - [Creating modals using icons](recipes/templates/creating-modals-using-icons.md)
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
+    - [Creating a custom search results page](recipes/templates/creating-a-custom-search-results-page.md)
     - [Using the Fold blocks](recipes/templates/using-the-fold-blocks.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
     - [Creating a native form for your store users](recipes/templates/creating-a-native-form-for-your-store-users.md)

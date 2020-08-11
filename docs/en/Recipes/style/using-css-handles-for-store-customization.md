@@ -23,12 +23,12 @@ At the end of the day, CSS Handles are nothing more than your **store's layout b
 
 ![css-handles-inspect](https://user-images.githubusercontent.com/5691711/70256857-ffdd8780-1767-11ea-936d-a98cbfc924c1.png)
 
-<div class="alert alert-info">  
-<strong>Before proceeding to the third step, check the CSS Handles table in the documentation of the app/block responsible for rendering the HTML element</strong> (following the example above, we would access the Menu app documentation). It will therefore be possible to confirm whether the inspected Handle is valid and mainly if the customization requires an add-on to function, such as a Handle modifier or the HTML element's attribute.
+<div class="alert alert-warning">  
+Before proceeding to the third step, check the CSS Handles table in the documentation of the app/block responsible for rendering the HTML element. It will therefore be possible to confirm whether the inspected Handle is valid and mainly if the customization requires another add-on to function, such as the HTML element's attribute.
 </div>
 
 <div class="alert alert-warning">  
-If, upon checking the CSS Handles table, you notice that the desired Handle needs to use the attribute of the HTML element that will be customized, inspect the page again - traditionally this time, by using your browser and not the `?__inspect` functionality. Upon inspecting the page, look for the desired HTML element and copy the attribute linked to it. It will be used in the upcoming customization. 
+If upon checking the CSS Handles table, you notice that the desired Handle needs to use the attribute of the HTML element that will be customized, inspect the page again - traditionally this time, by using your browser and not the <code>?__inspect</code> functionality. Upon inspecting the page, look for the desired HTML element and copy the attribute linked to it that will be used in the upcoming customization. 
 </div>
 
 3. Open the Store Theme code using the code editor of your preference. Then, create a file inside the css folder named after the text displayed below the desired handle. Following the example above, we would have `vtex.menu.css`.
