@@ -584,6 +584,12 @@
       "url": "https://github.com/vtex-apps/lucky-orange"
     },
     {
+      "appName": "vtex.onesignal",
+      "title": "OneSignal",
+      "description": "VTEX OneSignal native integration",
+      "url": "https://github.com/vtex-apps/onesignal"
+    },
+    {
       "appName": "vtex.order-sms-notification",
       "title": "Order Sms Notification",
       "description": "VTEX Order Sms Notification native integration",
