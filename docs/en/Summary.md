@@ -9,10 +9,11 @@
 - Getting Started
 
   - [Build stores with Store Framework](getting-started/build-stores-with-store-framework/1)
-    - [Basic setup](getting-started/build-stores-with-store-framework/2)
+    - [Prerequesites](getting-started/build-stores-with-store-framework/2)
     - [Setting your store's theme](getting-started/build-stores-with-store-framework/3)
     - [Configuring templates](getting-started/build-stores-with-store-framework/4)
-    - [Customizing styles](getting-started/build-stores-with-store-framework/5)
+    - [Defining styles](getting-started/build-stores-with-store-framework/5)
+    - [Building your own store theme](etting-started/build-stores-with-store-framework/6)
 
 - Concepts
 
