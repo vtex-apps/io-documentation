@@ -54,7 +54,7 @@ The solution is an alternative to the platform's old native search engine and re
 
 **To proceed to the next steps and begin implementing the framework, both apps must be installed on your VTEX account. If not, you won't be able to perform any front-end changes to your website using the VTEX Store Framework.**
 
-### Implementing the Search apps
+### Installing the Search apps
 
 1. Login to your VTEX account using your terminal:
 
