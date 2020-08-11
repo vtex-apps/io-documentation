@@ -20,7 +20,9 @@ Therefore, making the resource available also entails access control that gives 
 
 Seeking to leverage our resources and keep everyone up-to-date with any changes, **the VTEX Store Framework team asks stores that are interested in the Store Framework solution to submit their VTEX account data through this [Store Framework Application form](https://docs.google.com/forms/d/e/1FAIpQLSclhQed9copSm44UuMBMXxosxndtWvWrYDrrZOaO62mKP8zlg/viewform)**.
 
+<div class="alert alert-info">
 Once the request has been sent, the VTEX Store Framework team will analyze your store's scenario and get in touch within 3 business days for support on your project.
+</div>
 
 ## Implementing the correct Edition app 
 
@@ -60,7 +62,9 @@ The solution is an alternative to the platform's old native search engine and re
 vtex login {accountName}
 ```
 
-*Do not forget to replace `accountName` for your VTEX account name*. 
+<div class="alert alert-info">
+Do not forget to replace <code>accountName</code> for your VTEX account name. 
+</div>
 
 2. Once logged in, run the following command to list the apps already installed on your account:
 
@@ -74,7 +78,9 @@ vtex list
 vtex install vtex.admin-search vtex.search-resolver@1.x
 ```
 
-*Keep in mind that you only install the apps missing from the list*. 
+<div class="alert alert-info">
+Keep in mind that you should only install the apps missing from the list. 
+</div>
 
 Once both apps are installed on your account, along with the correct Edition App, you'll be ready to successfully implement VTEX Store Framework. Time to get busy! Let's go?
 
