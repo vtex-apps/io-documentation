@@ -18,7 +18,7 @@ Making Store Framework available to the users allows for a faster development of
 
 Therefore, making the resource available also entails access control that gives our product team sufficient overview over the entire ecosystem, avoiding lack of transparency in the development of the solution.
 
-Seeking to leverage our resources and keep everyone up-to-date with any changes, the VTEX IO team asks stores that are interested in the Store Framework solution to submit their VTEX account data through this [**Store Framework Application form**](https://docs.google.com/forms/d/e/1FAIpQLSclhQed9copSm44UuMBMXxosxndtWvWrYDrrZOaO62mKP8zlg/viewform).
+Seeking to leverage our resources and keep everyone up-to-date with any changes, **the VTEX Store Framework team asks stores that are interested in the Store Framework solution to submit their VTEX account data through this [Store Framework Application form](https://docs.google.com/forms/d/e/1FAIpQLSclhQed9copSm44UuMBMXxosxndtWvWrYDrrZOaO62mKP8zlg/viewform)**.
 
 Once the request has been sent, the VTEX Store Framework team will analyze your store's scenario and get in touch within 3 business days for support on your project.
 
