@@ -58,7 +58,7 @@ The solution is an alternative to the platform's old native search engine and re
 
 1. Login to your VTEX account using your terminal:
 
-```
+```sh
 vtex login {accountName}
 ```
 
@@ -68,13 +68,13 @@ Do not forget to replace <code>accountName</code> for your VTEX account name.
 
 2. Once logged in, run the following command to list the apps already installed on your account:
 
-```
+```sh
 vtex list
 ```
 
 3. If any of the two apps is missing from the list, install it using Toolbelt as follows:
 
-```
+```sh
 vtex install vtex.admin-search vtex.search-resolver@1.x
 ```
 

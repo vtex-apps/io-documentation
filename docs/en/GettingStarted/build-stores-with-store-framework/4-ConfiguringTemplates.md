@@ -187,7 +187,7 @@ The same file (`home.jsonc`) also has each block’s declaration as well as thei
 More than simply declare a block in the block list template, notice that you will also need to declare the block in order to set its behavior when rendered as a component. For this purpose, you will need to use the block's props (as shown in the next section) and other child blocks as well to define its configuration (as shown in the Block composition section).
 </div>
 
-### Step 4 - Clarifying block naming and properties
+## Step 4 - Clarifying block naming and properties
 
 Still in the `home.jsonc` file, use `ctrl+f` and look up for the `rich-text#question` block:
 
@@ -212,7 +212,7 @@ When looking at the documentation, you'll notice that the exported block's name 
 All the props available to configure a block can be found in the documentation of its exporting app or in the block's own documentation (if it exists).
 </div>
 
-### Step 5 - Understanding blocks composition
+## Step 5 - Understanding blocks composition
 
 Now, let's take a look at the `shelf#home` block in the same file (`home.jsonc`): 
 

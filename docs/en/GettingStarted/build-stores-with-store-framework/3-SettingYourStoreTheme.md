@@ -58,9 +58,7 @@ To better understand the app's structure, let's have a closer look at its files 
 ![Repository tree](https://user-images.githubusercontent.com/52087100/61887339-ce120580-aed7-11e9-8c7b-eb55d12def2b.png)
 
 - **`manifest.json`** - App's main file. It stores important metadata, such as the app's _vendor_, name, version, [dependencies](https://vtex.io/docs/concepts/dependencies/) and builders(https://vtex.io/docs/concepts/builders/).
-
 - **`store`** - Folder responsible for defining the store's templates. It's where you configure each page's components and properties. 
-
 - **`styles`**: folder responsible for setting the store's visual theme. It's where you configure colors, typography and anything related to the store's style. 
 
 <div class="alert alert-info">
