@@ -1,6 +1,6 @@
 # Basic setup to develop in VTEX IO
 
-You may not realize it, but once you've implemented Store Framework in your store, you'll be developing in VTEX IO on a certain scale.
+You may not realize it, but once you've implemented [**VTEX Store Framework**](https://vtex.io/docs/introduction/what-is-vtex-store-framework/) in your store, you'll be developing in [VTEX IO](https://vtex.io/docs/introduction/what-is-vtex-io/) on a certain scale.
 
 That's because **our e-commerce components are in fact native apps to the VTEX IO development platform**. In practice this means that you'll need to install such apps and configure them in order to properly function on your storefront.
 
