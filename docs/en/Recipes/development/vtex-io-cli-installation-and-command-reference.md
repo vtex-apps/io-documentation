@@ -31,14 +31,14 @@ To confirm that the installation occurred as expected, you can execute the <code
 
 After installing and running `vtex` in the terminal, an error saying that the command or program wasn't found may show up. 
 
-This happens is due to an error concerning the Yarn installation. The  `yarn global add` command does not properly add Yarn binaries to a directory known by your terminal as `PATH`.
+This happens due to an error concerning the Yarn installation. The `yarn global add` command does not properly add Yarn binaries to a directory known by your terminal as `PATH`.
 
 By not adding the Yarn binaries to terminal `PATH`, Yarn and its programs can't be found, thereby resulting in an error when running Toolbelt. 
 
 #### Workaround for MacOS and Linux users
 
-1. In your local directories, find the Profile file. It is usually hidden and is named after the command line's interpreter. For example: If you're using <code>bash</code>, your profile file will be named </code>.bashrc</code>. If you use <code>zsh</code>, it will be <code.zshrc</code>;
-2. Once in the Profile file, add the following command: `export PATH="$PATH:`yarn global bin`;
+1. In your local directories, find the Profile file. It is usually hidden and is named after the command line's interpreter. For example: If you're using `bash`, your Profile file will be named `bashrc`. If you use `zsh`, it will be `zshrc`;
+2. Once in the Profile file, add the following command: `export PATH="$PATH: yarn global bin"`;
 3. Log in and log out of your terminal for the changes to take effect; 
 
 <div class="alert alert-info">  
