@@ -396,6 +396,12 @@
       "url": "https://github.com/vtex-apps/challenge-tp-condition"
     },
     {
+      "appName": "vtex.checkout-ui-custom",
+      "title": "Checkout UI Custom",
+      "description": "Customizes your store's Checkout UI through the admin's interface.",
+      "url": "https://github.com/vtex-apps/checkout-ui-custom"
+    },
+    {
       "appName": "vtex.checkout-ui-settings",
       "title": "Checkout UI Settings",
       "description": "App responsible for exporting scripts to build a custom Checkout UI.",
