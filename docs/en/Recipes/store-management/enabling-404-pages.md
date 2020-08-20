@@ -19,11 +19,11 @@ In VTEX IO, 404 pages are **natively** enabled for inexistent product pages and 
 
 <div class="alert alert-info">
 Due to implementation rules, the native functionality of 404 pages does not function for URLs originating from user searches. The reason behind this is that URLs originating from product searches include the <code>map=ft</code> parameter in their path, helping the platform to interpret that such URL segments reflect user performed searches, and thus should not be interpreted as non-existent (which would lead to a 404 page being rendered).
-<div>
+</div>
 
 <div class="alert alert-warning">
 In rare cases when the parameter <code>map=specificationFilter</code> is present in the path of such search originated URLs, 404 pages may be rendered. This happens because the platform cannot interpret these URL segments as originating from user searches since it cannot find the <code>map=ft</code> parameter usually present in such URLs. This behavior is uncommon and is being addressed by our product team.
-<div>
+</div>
 
 ## Step by step
 
