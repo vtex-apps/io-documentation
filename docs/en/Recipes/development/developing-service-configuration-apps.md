@@ -180,3 +180,17 @@ The structure of the received configurations list is similar to the example belo
 We're looking at an array where each object is a configuration originating from a different app - since you can have multiple apps configuring the same service.
 
 In each array element, you have an object with two keys: the name of the app that is configuring the service (`vtex.amazing-configuration`, in the example above) and the `declarer`. The first contains the settings itself, according to the structure defined in the service app's JSON Schema. The second corresponds to the full name of the app that carries such configurations.
+
+## Troubleshooting
+
+If you are developing a configuration app and the service that your app is configuring is not installed or linked in the same workspace you're working at, you may run into some errors.
+
+That happens because, when creating a new configuration app, the configuration builder first looks for the schema of that configuration in all the apps installed in your current workspace. Consequently, if the configuration builder cannot find this specific configuration, linking your app may fail.
+
+Hence, to avoid errors, remember to always have the service you're configuring linked or installed in the same workspace you're developing your configuration app.
+
+Also, if you want to publish your configuration app, but doesn't want to have your service installed in the `master` workspace, you can link or install the service in an alternative branch and, then, when you're ready to publish it, you can use the `-w` flag, as in:
+
+```
+vtex publish -w <alternative-branch-name>
+```
