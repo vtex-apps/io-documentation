@@ -112,6 +112,25 @@ Following our example, we would have something like:
 <div class="vtex-foobar-1-x-headline ph0 mr2">
 ```
 
+Bear in mind that it's also possible to apply modifiers to a specific handle. Let's suppose you have a handle `handles.slide` for each slide of a slider and you want to have a way to select the current visible slide via CSS. This can be achieved by importing the `applyModifiers` method:
+
+`import {useCssHandles, applyModifiers} from 'vtex.css-handles'`
+
+Instead of directly passing the handle, you should pass it through the `applyModifiers` method:
+
+```diff
+-<div class={{`${handles.slide}`}}">...</div>
++<div class={{`${applyModifiers(handles.slide, isCurrentSlide ? 'active' : undefined}`}}">...</div>
+```
+
+Which, for a hypothetical slider with three slides and the first one being focused,  would result in:
+
+```html
+<div class="vtex-foobar-1-x-slide vtex-foobar-1-x-slide--active">...</div>
+<div class="vtex-foobar-1-x-slide">...</div>
+<div class="vtex-foobar-1-x-slide">...</div>
+```
+
 #### Using the `import styles from './styles.css'` function
  
 1. Open the CSS file referenced in the `import styles from './styles.css'` function;
