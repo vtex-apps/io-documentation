@@ -21,6 +21,10 @@ Although these can satisfy your store’s needs, you may want to override and cu
 2. Inside `iconpacks/`, create the file `iconpack.svg`. 
 3. Copy the content from VTEX'S default [iconpack.svg](https://github.com/vtex-apps/store-icons/blob/master/styles/iconpacks/iconpack.svg?short_path=62ebf4b) and paste it in the `iconpack.svg` file. 
 
+<div class="alert alert-warning">
+The maximum size allowed for icons is <code>20x20</code>.
+</div>
+
 This is how your `styles/` folder structure should look like after you've accomplished that: 
 
 ![iconpack-folder](https://user-images.githubusercontent.com/52087100/64298990-d2592600-cf4d-11e9-994c-eaefd317f9ef.png)
