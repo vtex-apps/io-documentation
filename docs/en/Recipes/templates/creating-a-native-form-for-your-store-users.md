@@ -116,7 +116,7 @@ To that end, we will use the admin's Master Data legacy interface:
   ]
   {
     "v-security": {
-      "publicWrite": ["publicForWrite"],
+      "publicWrite": "publicForWrite",
       "publicJsonSchema": true
   }
 }
@@ -214,7 +214,7 @@ When using Master Data v2, you will not need to previously create any field. Sim
   ]
   {
     "v-security": {
-      "publicWrite": [ "publicForWrite" ],
+      "publicWrite": "publicForWrite",
       "publicJsonSchema": true
     }
   }
