@@ -113,11 +113,12 @@ To that end, we will use the admin's Master Data legacy interface:
     "firstName",
     "lastName",
     "agreement"
-  ]
-  {
-    "v-security": {
-      "publicWrite": "publicForWrite",
-      "publicJsonSchema": true
+  ],
+  "v-security": {
+    "allowGetAll": false,
+    "publicRead": [ "fieldExemple" ],
+    "publicWrite": [ "fieldExemple" ],
+    "publicFilter": [ "fieldExemple" ]
   }
 }
 ```
@@ -211,12 +212,12 @@ When using Master Data v2, you will not need to previously create any field. Sim
     "firstName",
     "lastName",
     "agreement"
-  ]
-  {
-    "v-security": {
-      "publicWrite": "publicForWrite",
-      "publicJsonSchema": true
-    }
+  ],
+  "v-security": {
+    "allowGetAll": false,
+    "publicRead": [ "fieldExample" ],
+    "publicWrite": [ "fieldExample" ],
+    "publicFilter": [ "fieldExample" ]
   }
 }
 ```
