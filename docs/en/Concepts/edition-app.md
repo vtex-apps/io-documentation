@@ -9,13 +9,30 @@ git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/editio
 
 # Edition App
 
-An Edition App is an app responsible for **exporting an apps and configurations model** that a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/) (also called parent account) sets for their child accounts to adopt.
+An Edition App consists of a bundle of settings, policies, back- and front-end apps encapsulated and exported by a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/).
 
-Being built on top of a **hierarchical relationship between accounts**, each account can only have a single Edition App installed, and the apps and configurations that it exports can never be changed. Only the account's Sponsor Account is authorized to make any changes.
+Its main objective is to facilitate the installation of numerous apps that might be considered as essential to set up one specific environment. 
 
-In VTEX platform, there are **two native Edition Apps** available to be installed. Presently, they are:
+![EditionApp](https://user-images.githubusercontent.com/60782333/91470034-927c0480-e86a-11ea-866e-54575f3c0975.png)
 
-- `vtex.edition-business@0.x`: for stores whose front-end is built using [VTEX's CMS](https://help.vtex.com/tutorial/o-que-e-o-cms--EmO8u2WBj2W4MUQCS8262);
-- `vtex.edition-store@2.x`: for stores whose front-end is built using [VTEX IO's Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/).
+For example, consider the two Edition Apps developed by the `vtex` account:
 
-You can check out which Edition App is installed in your VTEX account by running the `vtex edition` command using [Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/). 
+- The Edition Business (`vtex.edition-business@0.x`) - installs all the necessary apps to build a store with the [VTEX's CMS](https://help.vtex.com/tutorial/o-que-e-o-cms--EmO8u2WBj2W4MUQCS8262).
+
+- The Edition Store (`vtex.edition-store@2.x`) - installs all the necessary apps to develop a store with the [VTEX IO's Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/).
+
+Also, not only `vtex`, but any VTEX account that meets the [requirements needed to be a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) can develop and release its own Edition App.
+
+Hence, besides the fundamental development environment set up by a `vtex` native Edition App, it's possible to extend an Edition App by creating a new and customized one that meets your account family needs. 
+
+Notice that this is especially useful for complex account families, such as the ones under the same brand or holding.
+
+<div class="alert alert-info">
+Given its importance and considering that its misuse could lead to critical situations, it's always necessary to <a href ="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a ticket</a> to the VTEX Support Team in cases you want to change the Edition App installed in an account.
+</div>
+
+It's important to be aware that, despite the inherited apps - such as the ones from the `vtex` Editions, an Edition App can only contain apps exclusively developed by the same account responsible for the development of that Edition.
+
+Also, keep in mind that, once exported, the apps and configurations that an Edition App includes cannot be changed by the sponsored accounts that had it installed. That means that only the Sponsor Account is authorized to perform modifications in the apps exported by its Edition App, but requiring, in the following, a new release of its Edition.
+
+Summing up, by encapsulating all the necessary settings, policies, back-, and front-end apps, an Edition App provides all the essential functionalities to set up one desired environment.
