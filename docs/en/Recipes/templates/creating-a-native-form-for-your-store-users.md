@@ -43,7 +43,7 @@ To that end, we will use the admin's Master Data legacy interface:
 4. In the response, look for the schema named `mdv1`. This schema is automatically created based on the Master Data v1 existing fields. Find the fields added in step 2 and copy the structures in which these are displayed to the `mdv1` schema. This will help you in the next step when you'll create another JSON Schema for the form including those fields as properties;
 5. Send a request to Master Data's [`Save Schema by name`](https://developers.vtex.com/reference/schemas#saveschemabyname) API, copying the following example in the request's body and using it as a default when making any required changes to the properties (according to your store’s scenario):
   
-```JSON
+```json
 {
   "title": "Person",
   "type": "object",
@@ -141,7 +141,7 @@ Once the API was executed successfully, the JSON Schema is ready and you can alr
 
 When using Master Data v2, you will not need to previously create any field. Simply send a request to the Master Data [`Save Schema by name`](https://developers.vtex.com/reference/schemas#saveschemabyname) API, copying the following example in the request's body and using it as a default when making any required changes to the properties (according to your store’s scenario):
 
-```JSON
+```json
 {
   "title": "Person",
   "type": "object",
