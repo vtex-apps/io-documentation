@@ -4,7 +4,7 @@ description: "Learn how to display a 100% native form component which is integra
 date: "2020-04-09"
 tags: ["form", "master-data", "store-form", "native"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/templates/creating-a-native-form-for-your-store-users.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/creating-a-native-form-for-your-store-users.md"
 ---
 
 # Creating a native form for your store users
@@ -232,7 +232,7 @@ When configuring the API to create the JSON Schema, remember to:
 Once the API was executed successfully, the JSON Schema is ready and you can already create the form in your store's theme.
 
 <div class="alert alert-info">
-Notice that Master Data v2 doesn't have an interface yet, so all actions regarding the user form must be done through <a href="[https://developers.vtex.com/reference/master-data-api-v2-overview](https://developers.vtex.com/reference/master-data-api-v2-overview)">APIs</a>.
+Notice that Master Data v2 doesn't have an interface yet, so all actions regarding the user form must be done through <a href="https://developers.vtex.com/reference/master-data-api-v2-overview">APIs</a>.
 </div>
 
 ### Step 2 - Configure the Store Form app
