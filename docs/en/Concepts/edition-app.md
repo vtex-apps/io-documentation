@@ -28,7 +28,7 @@ Hence, besides the fundamental development environment set up by a `vtex` native
 Notice that this is especially useful for complex account families, such as the ones under the same brand or holding.
 
 <div class="alert alert-info">
-Given its importance and considering that its misuse could lead to critical situations, it's always necessary to <a href ="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a ticket</a> to the VTEX Support Team in cases you want to change the Edition App installed in an account.
+To change the Edition App installed in an account, you must <a href ="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a support ticket</a>. This is required to avoid critical issues that could be caused by its misconfiguration.
 </div>
 
 It's important to be aware that, despite the inherited apps - such as the ones from the `vtex` Editions, an Edition App can only contain apps exclusively developed by the same account responsible for the development of that Edition.
