@@ -35,4 +35,4 @@ It's important to be aware that, despite the inherited apps - such as the ones f
 
 Keep in mind that Sponsored Accounts cannot change the apps and configurations installed through an Edition App. Only the Sponsor Account is authorized to do that, by releasing a new version of its Edition App and requiring it to be reinstalled.
 
-Summing up, by encapsulating all the necessary settings, policies, back-, and front-end apps, an Edition App provides all the essential functionalities to set up one desired environment.
+To sum it up, by encapsulating all the necessary settings, policies, back-, and front-end apps, an Edition App provides all the essential functionalities to set up one desired environment.
