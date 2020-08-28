@@ -21,7 +21,7 @@ For example, consider the two Edition Apps developed by the `vtex` account:
 
 - The Edition Store (`vtex.edition-store@2.x`) - installs all the necessary apps to develop a store with the [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/).
 
-Also, not only `vtex`, but any VTEX account that meets the [requirements needed to be a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) can develop and release its own Edition App.
+In fact, any VTEX account that meets the [requirements needed to be a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) can develop and release their own Edition Apps.
 
 Hence, besides the fundamental development environment set up by a `vtex` native Edition App, it's possible to extend an Edition App by creating a new and customized one that meets your account family needs. 
 
