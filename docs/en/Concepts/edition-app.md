@@ -23,9 +23,9 @@ For example, consider the two Edition Apps developed by the `vtex` account:
 
 In fact, any VTEX account that meets the [requirements needed to be a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) can develop and release their own Edition Apps.
 
-Hence, besides the fundamental development environment set up by a `vtex` native Edition App, it's possible to extend an Edition App by creating a new and customized one that meets your account family needs. 
+Notice that this can be especially useful for complex account families, such as the ones under the same brand or holding.
 
-Notice that this is especially useful for complex account families, such as the ones under the same brand or holding.
+That's because, besides the fundamental development environment set up by a `vtex` native Edition App, a Sponsor Account can extend an Edition App by creating a new and customized one that meets its account family needs. 
 
 <div class="alert alert-info">
 To change the Edition App installed in an account, you must <a href ="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a support ticket</a>. This is required to avoid critical issues that could be caused by its misconfiguration.
