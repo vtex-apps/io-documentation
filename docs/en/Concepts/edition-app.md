@@ -19,7 +19,7 @@ For example, consider the two Edition Apps developed by the `vtex` account:
 
 - The Edition Business (`vtex.edition-business@0.x`) - installs all the necessary apps to build a store with our legacy [CMS](https://help.vtex.com/en/tracks/cms--2YcpgIljVaLVQYMzxQbc3z/6OCY6S9tqBXPD5mgpbBInC).
 
-- The Edition Store (`vtex.edition-store@2.x`) - installs all the necessary apps to develop a store with the [VTEX IO's Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/).
+- The Edition Store (`vtex.edition-store@2.x`) - installs all the necessary apps to develop a store with the [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/).
 
 Also, not only `vtex`, but any VTEX account that meets the [requirements needed to be a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) can develop and release its own Edition App.
 
