@@ -31,7 +31,9 @@ That's because, besides the fundamental development environment set up by a `vte
 To change the Edition App installed in an account, you must <a href ="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a support ticket</a>. This is required to avoid critical issues that could be caused by its misconfiguration.
 </div>
 
-It's important to be aware that, despite the inherited apps - such as the ones from the `vtex` Editions, an Edition App can only contain apps exclusively developed by the same account responsible for the development of that Edition.
+Note that all apps must have the same vendor as the Edition App that bundles them. The only exceptions are inherited apps - those that are included as part of the dependencies of the Edition app.
+
+All Editions apps must depend, directly or indirectly, on either `vtex.edition-business` or `vtex.edition-store`.
 
 Keep in mind that Sponsored Accounts cannot change the apps and configurations installed through an Edition App. Only the Sponsor Account is authorized to do that, by releasing a new version of its Edition App and requiring it to be reinstalled.
 
