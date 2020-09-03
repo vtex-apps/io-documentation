@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/editio
 
 # Edition App
 
-An Edition App consists of a bundle of settings, policies, back- and front-end apps encapsulated and exported by a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/).
+An Edition App consists of a bundle of settings, policies, back-end and front-end apps encapsulated and exported by a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/).
 
 Its main objective is to facilitate the installation of numerous apps that might be considered as essential to set up one specific environment. 
 
