@@ -21,7 +21,7 @@ If you aim to develop and install an Edition App in a child account, and if your
 
 ## Step 1 - Creating an Edition app
 
-1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into the account qualified to sponsor others.
+1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into your Sponsor Account.
 2. Run the `vtex init` command.
 3. Choose the `edition app` option. This will create a boilerplate repository in your local files.
 4. Navigate to the `edition-app` folder and open the `manifest.json` file. It should look something like this:
