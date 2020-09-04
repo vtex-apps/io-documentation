@@ -15,7 +15,7 @@ In the sequence, if your account is qualified to be a Sponsor Account, you can p
 
 ## Requirements
 
-- Have a plentiful account ecosystem. That is, to have a hierarchical relationship with other accounts. For example, it could be the main VTEX account of a holding or of a brand that has many sub-brands.
+- Access to multiple accounts that are related to each other hierarchically. For example, a Sponsor Account could be the main VTEX account of a holding or a brand that has many sub-brands.
 - Have a `vtex` Edition App installed in your account (`vtex.edition-business@0.x` or `vtex.edition-store@2.x`)
 
 <div class="alert alert-warning">
