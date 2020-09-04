@@ -40,8 +40,11 @@ If you aim to develop and install an Edition App in a child account, and if your
     "vtex.edition-business": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
-}```
+}
+```
+
 5. In the `manifest.json` file, change:
+
    - The `vendor` field to the name of the account you are logged in.
    - The `name` field to one of your choosing, which will be your new Edition's name. We suggest to use an `edition-` prefix in your edition name, for easy identification among app lists.
 
@@ -49,11 +52,13 @@ If you aim to develop and install an Edition App in a child account, and if your
 
 Note that `vtex.edition-business` is listed in the `dependencies` section of the `manifest.json` file. This indicates that the new Edition app extends it, by inheriting all its apps and configurations.
 
-That's because a Edition app **must always** have another single Edition app, such as the one installed in the sponsoring account, declared as its **dependency**. 
+According to your development needs, you might have to change the `dependencies`:
 
-This way, its child accounts will inherit all the apps and configurations from that *parent Edition*.
-
-Therefore, according to what's more appropriate for your developing scenario, you might have to change the `dependencies` value.
+- If your store was built with our [legacy CMS](https://help.vtex.com/tutorial/o-que-e-o-cms--EmO8u2WBj2W4MUQCS8262) and this is your first Edition app, keep it as `"vtex.edition-business": "0.x"`.
+- If your store was built with our [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/) and this is your first Edition app, change it to `"vtex.edition-store": "2.x"`.
+- If you have more complex inheritance needs, change it to an Edition app you have previously developed (i.e. the `vendor` needs to be the same in both apps)
+ 
+<div class="alert alert-warning">Every Edition app <strong>must</strong> declare a <code>dependency</code>. Only a single Edition app may be declared as a <code>dependency</code>.</div>
 
 ## Step 3 - Declaring apps
 
