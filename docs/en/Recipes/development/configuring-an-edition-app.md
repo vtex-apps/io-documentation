@@ -66,7 +66,7 @@ Notice that the new Edition App will consist of the union of the apps and config
 Keep in mind that if any conflict arises from this, for example, both Editions declaring the same app on different majors, the priority is always given to the parent Edition. That means: it's impossible to change any inherited app or configuration - only extend them.
 </div>
 
-### Step 4 - Deploying the Edition app
+## Step 4 - Deploying the Edition app
 
 Once you are sure of all the changes performed, it's time to [**publish and deploy**](https://vtex.io/docs/recipes/store/publishing-an-app) your Edition app.
 
