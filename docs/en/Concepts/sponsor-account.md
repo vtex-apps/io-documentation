@@ -23,7 +23,7 @@ In the first level, the `vtex` account sponsors all accounts with Edition Apps. 
 
 - *Edition Store* (`vtex.edition-store@2.x`): user by stores built with our [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/) based on [VTEX IO](https://developers.vtex.com/docs/vtex_io-documentation_what-is-vtex-io)
 
-Notice also that, besides `vtex`, any VTEX account that meets the [requirements needed to become a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) is capable of releasing its own Edition Apps. 
+In the second level of this hierarchy, accounts meeting the [requirements needed to become a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) (e.g. `account2`) are capable of releasing their own derivative Edition App and use it to control the apps and configurations that should be set up in their children accounts (e.g. `account4`, `account5`, `account6`).
 
 Being a Sponsor Account is especially useful for accounts that keep a hierarchical relationship with others, such as the main VTEX account of a holding or of a brand that has many sub-brands.
 
