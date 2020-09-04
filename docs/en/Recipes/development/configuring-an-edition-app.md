@@ -70,7 +70,7 @@ Keep in mind that if any conflict arises from this, for example, both Editions d
 
 Once you are sure of all the changes performed, it's time to [**publish and deploy**](https://vtex.io/docs/recipes/store/publishing-an-app) your Edition app.
 
-### Step 5 - Installing the Edition App in a child account
+## Step 5 - Installing the Edition App in a child account
 
 After developing and deploying your new Edition App, you must 
 [open a new ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the installation of your new Edition App in the desired accounts.
