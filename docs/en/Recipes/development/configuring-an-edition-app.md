@@ -19,7 +19,7 @@ Once you have [enabled Sponsor Account behavior](https://vtex.io/docs/recipes/de
 
 If you aim to develop and install an Edition App in a child account, and if your account is already [**qualified**](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) for that, check the following step by step.
 
-### Step 1 - Creating an Edition app
+## Step 1 - Creating an Edition app
 
 1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into the account qualified to sponsor others.
 2. Run the `vtex init` command.
