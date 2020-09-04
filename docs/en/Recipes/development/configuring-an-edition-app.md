@@ -13,11 +13,7 @@ The hierarchical relationship between a [Sponsor Account](https://vtex.io/docs/c
 
 Hence, it can be advantageous for **complex account families** under the same brand or holding to have its own Edition App.
 
-Knowing that, in the following section, you'll learn how to create and implement an Edition App from scratch.
- 
-<div class="alert alert-warning">
-Before advancing any further in this step by step, it's important that you first check our documentation on <a href="https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/">Becoming a Sponsor Account</a>.
-</div>
+Once you have [enabled Sponsor Account behavior](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account) in one of your accounts, follow the steps below to create your own Edition app.
 
 ## Step by step
 
