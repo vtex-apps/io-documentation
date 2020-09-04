@@ -25,8 +25,13 @@ In the first level, the `vtex` account sponsors all accounts with Edition Apps. 
 
 In the second level of this hierarchy, accounts meeting the [requirements needed to become a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) (e.g. `account2`) are capable of releasing their own derivative Edition App and use it to control the apps and configurations that should be set up in their children accounts (e.g. `account4`, `account5`, `account6`).
 
-Being a Sponsor Account is especially useful for accounts that keep a hierarchical relationship with others, such as the main VTEX account of a holding or of a brand that has many sub-brands.
+## Becoming a Sponsor Account
 
-Hence, considering the great power a Sponsor Account has by defining which apps and configurations their child account should adopt, it's necessary to open a [support ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) expressing the desire to become one.
+To activate Sponsor Account behavior in an account you manage:
 
-In the following, after releasing and implementing an Edition App in other accounts, the account responsible for the development of that Edition App will now be considered the Sponsor Account of the VTEX accounts that had that new Edition App installed.  
+ 1. Make sure it meets the [requirements needed to become a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/)
+ 2. Open a [support ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) requesting activation of Sponsor Account behavior on a specific account. _This setup is made by our team to avoid misconfigurations that could negatively impact your stores._
+3. Develop an Edition App, setting the newly activated Sponsor Account as the app vendor
+4. Release and install your Edition App in the sponsored accounts 
+
+Once these steps are completed, you will be able to manage apps and configurations in multiple accounts at once by releasing new versions of the Edition App through your Sponsor Account. 
