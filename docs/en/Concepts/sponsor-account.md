@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/sponso
 
 A Sponsor Account is a VTEX account responsible for the development and release of the [**Edition App**](https://vtex.io/docs/concepts/edition-app/) installed in its child accounts.
 
-In other words, the Sponsor Account is responsible for establishing which apps and configurations other accounts should adopt by means of an Edition App.
+This is especially useful for accounts that keep a hierarchical relationship with others, such as the main VTEX account of a holding or of a brand that has many sub-brands.
 
 The image below illustrates how this account hierarchy manifests itself.
 
