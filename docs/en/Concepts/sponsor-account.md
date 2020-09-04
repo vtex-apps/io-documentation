@@ -13,7 +13,7 @@ A Sponsor Account is a VTEX account responsible for the development and release 
 
 In other words, the Sponsor Account is responsible for establishing which apps and configurations other accounts should adopt by means of an Edition App.
 
-That implies that, in VTEX, it exists a hierarchical relationship between accounts, such as the one presented in the following Figure, established by the Edition App installed in each account.
+The image below illustrates how this account hierarchy manifests itself.
 
 ![HierarchicalRelationship](https://user-images.githubusercontent.com/60782333/91495980-c9194580-e891-11ea-8f23-f96759a5ece8.png)
 
