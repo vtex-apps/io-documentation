@@ -47,7 +47,7 @@ If you aim to develop and install an Edition App in a child account, and if your
 
 ## Step 2 - Setting the Edition dependencies
 
-In the `manifest.json` file, notice that the `vtex.edition-business` comes as a default dependency of the new Edition App.
+Note that `vtex.edition-business` is listed in the `dependencies` section of the `manifest.json` file. This indicates that the new Edition app extends it, by inheriting all its apps and configurations.
 
 That's because a Edition app **must always** have another single Edition app, such as the one installed in the sponsoring account, declared as its **dependency**. 
 
