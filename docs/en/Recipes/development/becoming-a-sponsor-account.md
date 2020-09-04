@@ -16,10 +16,12 @@ In the sequence, if your account is qualified to be a Sponsor Account, you can p
 ## Requirements
 
 - Have a plentiful account ecosystem. That is, to have a hierarchical relationship with other accounts. For example, it could be the main VTEX account of a holding or of a brand that has many sub-brands.
-- Have an Edition App installed. You can check it by running `vtex edition get` in your terminal.
+- Have a `vtex` Edition App installed in your account (`vtex.edition-business@0.x` or `vtex.edition-store@2.x`)
 
 <div class="alert alert-warning">
-The Edition App and Sponsor Account concepts started being implemented in <strong>2019</strong>. Therefore, if your account is older than that, it's possible that you don't have <strong>any</strong> Edition App installed. If that's the case, you must <a href="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a ticket</a> to the VTEX Support Team expressing your desire to have it installed, considering either the Edition Business (<code>vtex.edition-business@0.x`</code>), if you use the <a href="https://help.vtex.com/tutorial/what-is-cms--EmO8u2WBj2W4MUQCS8262">CMS</a>, or the Edition Store (<code>vtex.edition-store@2.x</code>), if you use the VTEX IO's <a href="https://vtex.io/docs/getting-started/build-stores-with-store-framework/1">Store Framework</a>.
+<p>You can check the Edition App installed in your account by running <code>vtex edition get</code> in your terminal.</p>
+
+<p>If you see the error <code>Message: Edition not set</code>, <a href="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a support ticket</a> requesting the installation of either `vtex.edition-business@0.x` or `vtex.edition-store@2.x`. See <a href="https://vtex.io/docs/concepts/edition-app/">this article</a> to understand the difference between them.</p>
 </div>
 
 ## Step by step
