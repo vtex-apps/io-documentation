@@ -43,7 +43,7 @@ This way, its child accounts will inherit all the apps and configurations from t
 
 Therefore, according to what's more appropriate for your developing scenario, you might have to change the `dependencies` value.
 
-### Step 3 - Declaring apps
+## Step 3 - Declaring apps
 
 After setting up the initial configurations needed to develop your own Edition App, you can advance to declaring the bundle of apps and configurations that your Edition App will include.
 
