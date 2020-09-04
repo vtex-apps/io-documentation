@@ -9,9 +9,9 @@ git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en
 
 # Becoming a Sponsor Account
 
-To become a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/), meaning to be able to release the [Edition App](https://vtex.io/docs/concepts/edition-app/) used by the child accounts, you must first check if your account meets the conditions described in the [Requirements](#Requirements) section.
+To become a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/) and be able to manage apps and configurations across multiple accounts with [Edition Apps](https://vtex.io/docs/concepts/edition-app/), you must first check if your account meets the conditions described in the [Requirements](#Requirements) section.
 
-In the sequence, if your account is qualified to be a Sponsor Account, you can proceed to the [Step by Step](#step-by-step) section and learn how to finally become a Sponsor Account.
+If your account is qualified to be a Sponsor Account, you follow the instructions in the [Step by Step](#step-by-step) section to activate that behavior in your account.
 
 ## Requirements
 
