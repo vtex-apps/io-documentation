@@ -25,13 +25,4 @@ In the first level, the `vtex` account sponsors all accounts with Edition Apps. 
 
 In the second level of this hierarchy, accounts meeting the [requirements needed to become a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/) (e.g. `account2`) are capable of releasing their own derivative Edition App and use it to control the apps and configurations that should be set up in their children accounts (e.g. `account4`, `account5`, `account6`).
 
-## Becoming a Sponsor Account
-
-To activate Sponsor Account behavior in an account you manage:
-
- 1. Make sure it meets the [requirements needed to become a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/)
- 2. Open a [support ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) requesting activation of Sponsor Account behavior on a specific account. _This setup is made by our team to avoid misconfigurations that could negatively impact your stores._
-3. Develop an Edition App, setting the newly activated Sponsor Account as the app vendor
-4. Release and install your Edition App in the sponsored accounts 
-
-Once these steps are completed, you will be able to manage apps and configurations in multiple accounts at once by releasing new versions of the Edition App through your Sponsor Account. 
+To activate the Sponsor Account behavior, follow our documentation on [becoming a Sponsor Account](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account/).
