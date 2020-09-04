@@ -29,7 +29,7 @@ If you aim to develop and install an Edition App in a child account, and if your
    - The `vendor` field to the name of the account you are logged in.
    - The `name` field to one of your choosing, which will be your new Edition's name. We suggest to use an `edition-` prefix in your edition name, for easy identification among app lists.
 
-### Step 2 - Setting the Edition dependencies
+## Step 2 - Setting the Edition dependencies
 
 In the `manifest.json` file, notice that the `vtex.edition-business` comes as a default dependency of the new Edition App.
 
