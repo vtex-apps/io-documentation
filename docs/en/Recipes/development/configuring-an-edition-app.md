@@ -68,7 +68,7 @@ Keep in mind that if any conflict arises from this, for example, both Editions d
 
 ## Step 4 - Deploying the Edition app
 
-Once you are sure of all the changes performed, it's time to [**publish and deploy**](https://vtex.io/docs/recipes/store/publishing-an-app) your Edition app.
+Once you are sure of all the changes performed, it's time to **[publish and deploy](https://vtex.io/docs/recipes/store/publishing-an-app)** your Edition app.
 
 ## Step 5 - Installing the Edition App in a child account
 
