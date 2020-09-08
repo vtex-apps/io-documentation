@@ -89,7 +89,7 @@
     - [Overwriting the Messages app](recipes/development/overwriting-the-messages-app.md)
     - [Developing service configuration apps](recipes/development/developing-service-configuration-apps.md)
     - [Using the Assets Builder](recipes/development/using-the-assets-builder.md)
-    - [Configuring the Sponsor Account requirements](recipes/development/configuring-the-sponsor-account-requirements.md)
+    - [Becoming a Sponsor Account](recipes/development/becoming-a-sponsor-account.md)
     - [Configuring an Edition app](recipes/development/configuring-an-edition-app.md)
     - [Updating Edition apps](recipes/development/updating-edition-apps.md)
 
