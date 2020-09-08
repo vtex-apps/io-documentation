@@ -1,10 +1,10 @@
 ---
-title: Configuring the Sponsor Account requirements
+title: Becoming a Sponsor Account
 description: "Want to publish Edition apps for child accounts? Firstly know how to configure all requirements to be a Sponsor Account."
 date: "2020-03-23"
 tags: ["sponsor", "sponsor-account", "requirements"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/configuring-the-sponsor-account-requirements.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/becoming-a-sponsor-account.md"
 ---
 
 # Becoming a Sponsor Account
