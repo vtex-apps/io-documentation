@@ -25,8 +25,8 @@ Find out how to configure the `markers` prop in the step-by-step below.
 Before going through the steps, make sure that the block in which you are working accepts the <code>markers</code> prop. You can check this in its <a href="https://vtex.io/docs/apps/all/">documentation</a>.
 </div>
 
-1. Using your terminal and [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/), log in to the desired VTEX in a development workspace;
-2. Access the directory where your store's theme is stored and open it using your code editor;
+1. Using your terminal and [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/), log in to the desired VTEX in a [Development workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/).
+2. Access the directory where your store's theme is stored and open it using your code editor.
 3. Once the theme's code is open, add the `markers` prop to the desired block and give it a unique value. For example:
 
 ```json
@@ -39,11 +39,11 @@ Before going through the steps, make sure that the block in which you are workin
 },
 ```
 
-4. Save your changes and [link](https://vtex.io/docs/recipes/development/linking-an-app/) the app;
-5. Using the developer workspace you were previously working in, access the admin of the VTEX account in which your are working (`{workspaceName}--{accountName}.myvtex.com/admin`);
-6. Then, open the admin's Site Editor in the CMS module;
+4. Save your changes and [link](https://vtex.io/docs/recipes/development/linking-an-app/) the app.
+5. Using the Developer workspace you were previously working in, access the admin of the VTEX account in which your are working (`{workspaceName}--{accountName}.myvtex.com/admin`).
+6. Then, open the admin's Site Editor in the CMS module.
 7. Select the block in which the `markers` prop was added during step 3;
-8. Once the editing screen is open, use the prop's value as a tag, wrapping the block's message that will ultimately be customized. For example: `<discount>-{savingsPercentage}</discount>`
+8. Once the editing screen is open, use the prop's value as a tag, wrapping the block's desired message variable that will ultimately be customized. For example: `<discount>-{savingsPercentage}</discount>`
 
 ![markers-prop-site-editor](https://user-images.githubusercontent.com/52087100/78163670-0f6f9300-741f-11ea-83a4-7122113234fb.gif)
 
@@ -51,19 +51,17 @@ Before going through the steps, make sure that the block in which you are workin
 You can use the prop's value to wrap any desired part of the block's message.
 </div>
 
-9. Save the changes.
+<div class="alert alert-info">
+Notice: the block's message variables can be found in the block/app documentation.
+</div>
 
-*This will give the wrapped text a unique identifier, allowing for CSS customization of the HTML message related element.*
 
-10. Using the development workspace, access the site of the account that you are working on (`{workspaceName}--{accountName}.myvtex.com`). Thereafter, inspect the HTML element that corresponds to the edited block's message.
+9. Save the changes. This will give the wrapped text a unique identifier, allowing for CSS customization of the HTML message related element.
+10. Using the Development workspace, access the site of the account that you are working on (`{workspaceName}--{accountName}.myvtex.com`). Thereafter, inspect the HTML element that corresponds to the edited block's message.
 
 ![product-price-markers-inspect](https://user-images.githubusercontent.com/52087100/78162509-578db600-741d-11ea-9d7d-e4c74399576e.png)
+*Notice that the message's HTML element is wrapped in a new `span` with its own unique selector: `<span class="vtex-product-price-1-x-savings-discount">`.*
 
-Notice that the message's HTML element is wrapped in a new `span` with its own unique selector: `<span class="vtex-product-price-1-x-savings-discount">`.
+If you are happy with the changes to your store theme, make your new theme content public. Up until this point, only you could see the changes performed using the `markers` prop in your Development workspace. Access our documentation on [Making your theme content publicly available](https://vtex.io/docs/recipes/store-management/making-your-theme-content-public/) and follow the steps detailed there.
 
-11. [Release](https://vtex.io/docs/recipes/development/releasing-a-new-app-version/) a new version for your store theme app with the performed changes and then [publish](https://vtex.io/docs/recipes/development/publishing-an-app/) it;
-12. Then, [create a production workspace](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) and [install](https://vtex.io/docs/recipes/development/installing-an-app/) in it the store theme app (considering the version previously published);
-13. Access your store through your new production workspace (`{workspaceName}--{accountName}.myvtex.com`) and inspect the page to ensure everything is running normally;
-14. Finally, [promote your production workspace](https://vtex.io/docs/recipes/store/promoting-a-workspace-to-master) to master, making the changes permanent and public to your end users.
-
-After the step 14, you will be able to use the new identifier created for the HTML element and customize it at will. Access the recipe on [customizing your store using CSS Handles](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/) for more on this topic.
+Once your changes are publicly available, meaning they are reflected in your store's Master workspace, you will be able to use the new identifier created for the HTML element and customize it at will. Access the recipe on [customizing your store using CSS Handles](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/) for more on this customization topic.

@@ -110,6 +110,13 @@
       "url": "https://github.com/vtex-apps/store-components"
     },
     {    
+      "appName": "vtex.order-configuration",
+      "file": "README.md",
+      "title": "Order Configuration",
+      "description": "Designed for **B2B scenarios**, the Order Configuration app displays a form responsible for collecting order data in a modal.",
+      "url": "https://github.com/vtex-apps/order-configuration"
+    },
+    {    
       "appName": "vtex.order-placed",
       "file": "README.md",
       "title": "Order Placed",
