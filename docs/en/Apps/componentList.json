@@ -213,10 +213,16 @@
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
-      "appName": "vtex.product-specification-badges",
-      "title": "Product Specification Badges",
-      "description": "Shows badges in the product page based on the product's specifications.",
-      "url": "https://github.com/vtex-apps/product-specification-badges"
+      "appName": "vtex.product-specifications",
+      "title": "Product Specifications",
+      "description": "Shows the product specifications.",
+      "url": "https://github.com/vtex-apps/product-specifications"
+    },
+    {
+      "appName": "vtex.product-highlights",
+      "title": "Product Highlights",
+      "description": "Shows the product highlights.",
+      "url": "https://github.com/vtex-apps/product-highlights"
     },
     {
       "appName": "vtex.product-summary",
@@ -687,6 +693,12 @@
       "title": "Flex Layout",
       "description": "Builds a complex custom layout using the concept of rows and columns, setting the desired structure and positioning of blocks in a given page.",
       "url": "https://github.com/vtex-apps/flex-layout"
+    },
+    {
+      "appName": "vtex.disclosure-layout",
+      "title": "Disclosure Layout",
+      "description": "Builds an accordion or any component that controls visibility of a section of content.",
+      "url": "https://github.com/vtex-apps/disclosure-layout"
     },
     {
       "appName": "vtex.modal-layout",
