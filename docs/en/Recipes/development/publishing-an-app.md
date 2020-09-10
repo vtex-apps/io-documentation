@@ -41,10 +41,14 @@ Notice: you can install a candidate version on an account for testings by indica
 If you are releasing a <strong>beta</strong> version and all the app settings have already been tested, to follow to the next steps, you must release a non-beta version, publish it, install it in a production workspace, and test it once more using the A/B test.
 </div>
 
-5. Run the `vtex deploy {appvendor}.{appname}@{appversion}` command. 
+5. If all the app changes have already been tested and everything is working as expected, run the `vtex deploy {appvendor}.{appname}@{appversion}` command. 
 
 <div class="alert alert-warning">
-  <b>Remember to replace the values between the curly brackets according to your scenario.</b>
+After publishing an app, you must wait 7 minutes to deploy it. Otherwise, you'll receive an "Invalid state transition" error from the Toolbelt.
+</div>
+
+<div class="alert alert-warning">
+<b>Remember to replace the values between the curly brackets according to your scenario.</b>
 </div>
 
 By performing this action, you'll publish the candidate version as a stable version. Also, Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
