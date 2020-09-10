@@ -63,7 +63,7 @@ In your terminal, run the `vtex publish {appvendor}.{appname}@{appversion}` comm
   <b>Remember to replace the values between the curly brackets according to your scenario.</b>
 </div>
 
-By performing this action, you will turn the new app’s version in which you were working into a **candidate version**. 
+By performing this action, you will turn the new app version in which you were working into a **candidate version**, which is an app version that meets all the basic requirements to be deployed.
 
 ## Step 3 - Creating a Production workspace
 
