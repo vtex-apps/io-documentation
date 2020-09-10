@@ -14,9 +14,14 @@ If you’re comfortable with the configurations you’ve performed and want your
 1. [**Release** it](#step-1---releasing-a-new-app-version).
 2. [**Publish** a candidate version for it](#step-2---publishing-the-new-app-version).
 3. [Install it in a **Production workspace**](#step-3---creating-a-production-workspace).
-4. [**Validate** your candidate version](#step-5---validating-the-candidate-release-version).
+4. [**Validate** your candidate version](#step-5---validating-the-candidate-version).
 5. [**Deploy** it as a stable version](#step-6---deploying-the-app-stable-version).
 6. [Promote the Production workspace to **Master**](#step-7---promoting-the-production-workspace-to-master).
+
+
+![public](https://user-images.githubusercontent.com/60782333/92799699-61332680-f38a-11ea-8a06-a342607070d9.png)
+
+## Step by Step
 
 ## Step 1 - Releasing a new app version
 
@@ -82,11 +87,12 @@ vtex use {{WorkspaceName}} --production
 From this point onwards, code changes are prohibited, meaning that you can only install new apps. That also means that you are not able to link any app. Hence, if you want to perform any changes in the app code, you must retreat and work on it in a development workspace.
 </div>
 
-## Step 4 - Installing the candidate release version
+## Step 4 - Installing the candidate version
 
 To perform tests, you must install the candidate version by indicating to the Toolbelt the new app's exact version.
 
-1. Make sure you still are logged into the desired account and using the Production workspace previously created. Then, run the following command:
+1. Make sure you still are logged into the desired account and using the Production workspace previously created. 
+2. Run the following command:
 
 ```sh
 vtex install {appvendor}.{appname}@{appversion}
@@ -114,7 +120,12 @@ If all the app changes have already been tested and everything is working as exp
 After publishing an app, you must wait 7 minutes to deploy it. Otherwise, you'll receive an "Invalid state transition" error from the Toolbelt.
 </div>
 
-Still on the Production workspace, run the `vtex deploy {appvendor}.{appname}@{appversion}` command.
+1. Make sure you still are logged into the desired account and using the Production workspace previously created. 
+2. Run the following command:
+
+```sh
+vtex deploy {appvendor}.{appname}@{appversion}
+```
 
 <div class="alert alert-warning">
   <b>Remember to replace the values between the curly brackets according to your scenario.</b>
