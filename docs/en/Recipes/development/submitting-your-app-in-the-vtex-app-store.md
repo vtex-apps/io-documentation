@@ -1,5 +1,5 @@
 ---
-title: Submitting an app in the VTEX app store
+title: Submitting your app in the VTEX app store
 description: "Learn how to submit your project to the VTEX App Store, the VTEX marketplace for plug-and-play solutions."
 date: "2020-09-11"
 tags: ["app-store", "app", "development", "publish"]
@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/submitting-an-app-in-the-vtex-app-store.md"
 ---
 
-#  Submitting an app in the VTEX app store
+#  Submitting your app in the VTEX app store
 
 The [**VTEX App Store**](https://extensions.vtex.com/) is a marketplace for VTEX IO plug-and-play solutions. 
 
