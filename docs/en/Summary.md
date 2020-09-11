@@ -77,6 +77,7 @@
     - [Filling the Application form for development](recipes/development/filling-the-application-form-for-development.md)
     - [VTEX IO CLI installation and command reference](recipes/development/vtex-io-cli-installation-and-command-reference.md)
     - [Running A/B tests](recipes/development/running-native-ab-testing.md)
+    - [Submitting your app in the VTEX App Store](recipes/development/submitting-your-app-in-the-vtex-app-store)
     - [Listing an account’s apps](recipes/development/listing-an-accounts-apps.md)
     - [Making your new app version publicly available](recipes/development/making-your-new-app-version-publicly-available.md)
     - [Linking an app](recipes/development/linking-an-app.md)
