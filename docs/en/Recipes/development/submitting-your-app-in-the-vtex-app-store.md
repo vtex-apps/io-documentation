@@ -4,7 +4,7 @@ description: "Learn how to submit your project to the VTEX App Store, the VTEX m
 date: "2020-09-11"
 tags: ["app-store", "app", "development", "publish"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/submitting-an-app-in-the-vtex-app-store.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/submitting-your-app-in-the-vtex-app-store.md"
 ---
 
 #  Submitting your app in the VTEX app store
