@@ -106,14 +106,14 @@ Each of the above encompasses their language locale (English, Portuguese, Spanis
 
 The following fields will comprise the app's product page:
 
--   `name` (mandatory): App's title, as VTEX App Store users will see it. Limited to 26 characters.
--   `headline` (mandatory): Objective description, highlighting the app's main benefit to users. Limited to 120 characters.
--   `overview` (mandatory): Product page's first part, comprising the app's description. Insert `\\n` for each line break and `\\n\\n` for each new paragraph.
--   `features` (mandatory): list of `strings`, where each element highlights one of app's functionalities.
--   `additionalInformation` (optional): last section of the product page that contains additional information on the app. Follows the same format as the `overview` field.
--   `video` (optional): Valid URL linking to a video that will be displayed on the product page in order to introduce the app.
--   `websiteURL` (mandatory): Valid URL linking to the app's developer portal.
--   `support` (mandatory): Three contact options are possible (email, URL or phone), of which, at least email or URL are mandatory.
+-   `name`: **Mandatory** - App's title, as VTEX App Store users will see it. Limited to 26 characters.
+-   `headline`: **Mandatory** - Objective description, highlighting the app's main benefit to users. Limited to 120 characters.
+-   `overview`: **Mandatory** - Product page's first part, comprising the app's description. Insert `\\n` for each line break and `\\n\\n` for each new paragraph.
+-   `features`: **Mandatory** - list of `strings`, where each element highlights one of app's functionalities.
+-   `additionalInformation`: **Optional** -last section of the product page that contains additional information on the app. Follows the same format as the `overview` field.
+-   `video`: **Optional** - Valid URL linking to a video that will be displayed on the product page in order to introduce the app.
+-   `websiteURL`: **Mandatory** - Valid URL linking to the app's developer portal.
+-   `support`: **Mandatory** - Three contact options are possible (email, URL or phone), of which, at least email or URL are mandatory.
 
 ####  App icon
 
@@ -166,11 +166,11 @@ After step 3, a GitHub repository will be automatically created and a Pull Reque
 You'll be added to the repository with your GitHub handle and will have read-only permissions to be able to follow your app's review process. Comments can be followed in the same repository and after performing adjustments, any new app version can be submitted following the step 2 above, thereby creating a new `branch` containing the new version in the same repository. 
 </div>
 
-![submitting-github-pr](https://user-images.githubusercontent.com/52087100/92964912-470d4d00-f44b-11ea-8c2b-e09a13093da6.png)
+![submitting-github-terminal](https://user-images.githubusercontent.com/52087100/92964915-483e7a00-f44b-11ea-8bbf-f8f4e8c4da32.png)
 
 When a branch has the adjustments it needs, you should open a _Pull Request_ to the VTEX team.
 
-![submitting-github-terminal](https://user-images.githubusercontent.com/52087100/92964915-483e7a00-f44b-11ea-8bbf-f8f4e8c4da32.png)
+![submitting-github-pr](https://user-images.githubusercontent.com/52087100/92964912-470d4d00-f44b-11ea-8c2b-e09a13093da6.png)
 
 ###  Step 6 - App homologation
 
@@ -178,11 +178,11 @@ Once the app data has been sent in the PR, our product team will validate it in 
 
 This process, called homologation, will ensure that any published application has a clear value proposition, is safe, stable, aligned with VTEX's brand and business guidelines and is in compliance with the company's business, design and technology standards.
 
-Therefore, the 3 main criteria taken into account by the VTEX product team are:
+Therefore, the **3 main criteria** taken into account by the VTEX product team are:
 
-- Business  - Whether the app has a business model with viable and sustainable pricing and accomplishes what it sets out to do.
-- UX  - Whether the app offers a good user experience, following VTEX Styleguide rules.
-- Security and performance  - Whether the app's performance is safe and efficient. 
+- **Business**  - Whether the app has a business model with viable and sustainable pricing and accomplishes what it sets out to do.
+- **UX**  - Whether the app offers a good user experience, following VTEX Styleguide rules.
+- **Security and performance**  - Whether the app's performance is safe and efficient. 
 
 When an app fulfills the above-mentioned criteria, the PR will be approved and your new app version is ready to be released and made available in the VTEX app store. 
 
