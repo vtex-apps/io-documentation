@@ -145,7 +145,7 @@ The terms and conditions are **mandatory** in at least one of the three language
 
 #### App billing
 
-The app billing should be defines in the app's `manifest.json` file, using the `billingOptions` object. For more details on this object and instructions on how to charge your app users, you can access the [Billing Options documentation](https://www.notion.so/VTEX-Fluxo-de-Publica-o-na-App-Store-7b37a14db36c46b88d2ce29291048944#91050246d35f42889a140e102f74c8b0). 
+The app billing should be defines in the app's `manifest.json` file, using the `billingOptions` object. For more details on this object and instructions on how to charge your app users, you can access the [Billing Options documentation](https://vtex.io/docs/concepts/billing-options/). 
 
 ### Step 5 - Sending the app data for validation
 
