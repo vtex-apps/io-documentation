@@ -17,6 +17,7 @@
 
 - Concepts
 
+  - [Billing Options](concepts/billing-options)
   - [Builders](concepts/builders)
   - [Dependencies](concepts/dependencies)
   - [Edition App](concepts/edition-app)
