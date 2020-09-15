@@ -42,7 +42,7 @@ git clone https://github.com/vtex-apps/store-theme-robots
 
 4. Inside the `sitemap/robots` folder, create a `.txt` robots file for each supported locale binding. The name of each file must be the `id` value of its respective `binding`.
 
-:warning: *Follow [this tutorial]() to check your stores' `binding` `id`s.*
+:warning: *Follow [this tutorial](https://developers.vtex.com/docs/checking-your-stores-binding-id) to check your stores' `binding` `id`s.*
 
 Your app's folder may end up with a structure similar to the following:
 
