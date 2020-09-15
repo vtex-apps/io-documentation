@@ -19,7 +19,13 @@ git clone https://github.com/vtex-apps/app-scripts-example
 ```
     
 2. Then, using any code editor of your choice, open the boilerplate repository's directory.
-3. Open the `manifest.json` file and update its metadata, according to your scenario. It's essential that you update the `vendor` field with the VTEX account you're developing and the `name` field with the name of your application. You must also update the  `title` and `description` fields with the name and a short description that will be publicly available in the App Store, providing context for whoever wants to install your app.
+3. Open the `manifest.json` file and update its metadata, according to your scenario. It's essential that you update the following fields:
+
+ - `vendor` - The app owner. That is, the VTEX account responsible for the app development, maintenance, and distribution.
+ - `name` - The app name. It should concisely express the app's purpose. They must be comprised of lowercase letters separated by hyphens. Special characters, such as `*` and `@`, and numbers at the beginning of the name are not recommended.
+- `title` - The app distribution name. This name is the one used in the Apps section from the Administrative Panel and in the VTEX App Store.
+- `description` - A brief description explaining the app's purpose. This description will be publicly available in the App Store, providing context for whoever wants to install your app.
+
 4. In the `/scripts` folder, delete the example files and save your own `.ts` scripts.
 5. In the `/scripts` folder, open the `loader.json` file, and edit it by declaring in which page each script must be executed following the instructions provided in the [Configuring the `loader.json` file](#Configuring-the-loader.json-file) section.
 6. Open the admin of the account you're using to develop your app, and follow the instructions provided in the [Importing scripts](#importing-scripts) section.
