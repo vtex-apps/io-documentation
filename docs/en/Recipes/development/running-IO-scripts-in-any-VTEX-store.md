@@ -44,7 +44,7 @@ git clone https://github.com/vtex-apps/app-scripts-example
 Now that you finished developing your *Scripts* app, you must implement it in the desired VTEX account.
 
 1. Using the Toolbelt or the App Store, install the app you just developed in the desired account.
-2. Follow the instructions provided in the [Importing scripts](#importing-scripts) section.
+2. Follow the instructions provided in the [Importing scripts](#importing-scripts) section, considering a production workspace.
 
 ## Configuring the `loader.json` file
 
