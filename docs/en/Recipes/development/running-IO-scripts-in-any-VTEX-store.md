@@ -50,9 +50,7 @@ Now that you finished developing your *Scripts* app, you must implement it in th
 
 The `loader.json` file acts as a declarer of which scripts should be executed on which page. 
 
-Each entry in the `JSON` `loader` object must have a `RegExp` key, indicating the page path, and a corresponding array of strings. 
-
-Each string must point to the script file that must be loaded to a page if the `RegExp` key matches the path of that page URL.
+Each entry in the `loader` `JSON` object must have a `RegExp` key, indicating the page path, and a corresponding array of strings, where each string points to the script files that must be loaded to a page if the `RegExp` key matches the path of that page URL.
 
 Take the following example:
 
