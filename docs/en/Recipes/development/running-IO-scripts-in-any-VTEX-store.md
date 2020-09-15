@@ -62,7 +62,11 @@ Take the following example:
 }
 ```
 
-In this example, the `script1` will be loaded and executed in all pages of the application. For brand pages, expressed by URLs ending in `/b`, the `script2` will also be loaded. Finally, for product pages, expressed by URLs ending in `/p`, the `script2` and the `script3` will also be loaded.
+In this example, the `script1` will be loaded and executed in all pages (`.*`) of the application. 
+
+For brand pages, expressed by URLs ending in `/b`, besides the `script1`, the `script2` will also be loaded. 
+
+Finally, for product pages, expressed by URLs ending in `/p`, besides the `script1`, the `script2` and the `script3` will also be loaded.
 
 :warning: *Note that, by default, the scripts are located in the `scripts` folder. Hence, the complete path can be omitted. Also, as the scripts builder only looks for `.ts` files, it's not necessary to indicate file extensions.*
 
