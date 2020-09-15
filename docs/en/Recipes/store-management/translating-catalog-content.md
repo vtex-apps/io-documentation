@@ -4,7 +4,7 @@ In this step-by-step, we teach you how to overwrite an automatic message transla
 
 As a background, catalog messages are translatable text strings related to the catalog of a store, saved as external data in the [Catalog API](https://developers.vtex.com/reference/catalog-api-overview).
  
-:warning: *The Catalog API is one of the multiple REST APIs that compose the VTEX Administrative panel. This particular API is responsible for manipulating a store’s sales channels, categories, brands, products, SKUs, and specifications.*
+:information_source: *The Catalog API is one of the multiple REST APIs that compose the VTEX Administrative panel. This particular API is responsible for manipulating a store’s sales channels, categories, brands, products, SKUs, and specifications.*
 
 The following list contains the settings from the Catalog API that are internally set as translatable. Meaning that given a locale, an automatic translation fetched from the *automatic translation service* is available.
 
