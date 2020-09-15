@@ -72,7 +72,7 @@ Although a single `RegExp` can have multiple corresponding scripts and multiple 
 
 ## Importing scripts
 
-1. Open the VTEX admin of the desired account.
+1. Considering the workspace in which you're currently working, open the VTEX admin of the desired account and workspace.
 2. Go to **CMS > Layout**.
 3. Open the desired page template.
 4. Before the `body` closure, place a single HTML `script` tag to import the `load.js` file, as in the following examples:
