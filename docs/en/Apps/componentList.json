@@ -389,7 +389,7 @@
     },
     {
       "appName": "vtex.store-link",
-      "title": "VTEX Store Link",
+      "title": "Store Link",
       "description": "Provides blocks responsible for displaying links in other theme blocks, such as the Product Summary.",
       "url": "https://github.com/vtex-apps/store-link"
     },
@@ -399,6 +399,12 @@
       "title": "User Address",
       "description": "VTEX UserAddress component",
       "url": "https://github.com/vtex-apps/store-components"
+    }
+    {
+      "appName": "vtex.wish-list",
+      "title": "Wish List",
+      "description": "Adds a heart icon to shelves and product detail pages, so users can add the desired products to a Wishlist. Besides that, it also creates a page responsible for listing all wishlisted items for your users.",
+      "url": "https://github.com/vtex-apps/wish-list"
     }
   ],
   "functional": [
