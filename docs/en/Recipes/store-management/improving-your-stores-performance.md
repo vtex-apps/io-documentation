@@ -15,7 +15,7 @@ Performance directly impacts the sales conversion rate, user session time, bounc
 
 This article contains recommendations you can implement in your store to improve site performance and, as a consequence, shopper experience.
 
-:information_source: *Once adopted, such practices can lead to an SEO improvement of up to 80% and over 50% in page loading time. This data can be identified in the main website performance analysis tools, such as Google Lighthouse and Google Analytics Load Time.*
+:information_source: *Once adopted, such practices can lead to an improvement of up to 80% in SEO and over 50% in page loading time. This data can be identified in the main website performance analysis tools, such as [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) and [Google Analytics](https://support.google.com/analytics/answer/1205784?hl=en).*
 
 # Best practices
 
