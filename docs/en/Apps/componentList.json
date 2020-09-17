@@ -206,16 +206,9 @@
       "url": "https://github.com/vtex-apps/product-quantity"
     },
     {
-      "appName": "vtex.store-components",
-      "file": "ProductSpecifications.md",
-      "title": "Product Specifications",
-      "description": "Store component's block that renders the produt's specifications.",
-      "url": "https://github.com/vtex-apps/store-components"
-    },
-    {
       "appName": "vtex.product-specifications",
       "title": "Product Specifications",
-      "description": "Shows the product specifications.",
+      "description": "Displays the product specifications.",
       "url": "https://github.com/vtex-apps/product-specifications"
     },
     {
@@ -399,7 +392,7 @@
       "title": "User Address",
       "description": "VTEX UserAddress component",
       "url": "https://github.com/vtex-apps/store-components"
-    }
+    },
     {
       "appName": "vtex.wish-list",
       "title": "Wish List",
