@@ -19,7 +19,7 @@ This article contains recommendations you can implement in your store to improve
 
 # Best practices
 
-Between the multiple actions that you can take to boost your store's website performance, you can instantly enable some of them through the Administrative Panel, under *Store Setup > CMS > Store > Advanced*. 
+Some actions that can boost your store's website performance can be enabled in your store's Admin Panel, under *Store Setup > CMS > Store > Advanced*. 
 
 ![cms-store](https://user-images.githubusercontent.com/60782333/93489439-ea43e380-f8dd-11ea-8f12-1f5faa956423.png)
 
