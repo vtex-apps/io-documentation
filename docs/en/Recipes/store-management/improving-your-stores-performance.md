@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/e
 
 # Improving your store's performance
 
-A common worry among e-commerce stores is site performance.
+A common concern among e-commerce stores is site performance.
 
 Such worries are more than understandable. Performance directly impacts the sales conversion rate, user session time, bounce rate, and even the number of visited pages and site findability. Consequently, to guarantee your brand's online success, you must look after your site's performance and how fast its content is displayed to end-users.
 
