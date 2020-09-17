@@ -13,7 +13,7 @@ A common concern among e-commerce stores is site performance.
 
 Performance directly impacts the sales conversion rate, user session time, bounce rate, the number of visited pages and more. To guarantee the success of your brand's online presence, you must monitor how fast its content is displayed to end-users.
 
-Thus, we present, in the following, some practices we recommend and that you can instantly implement in your store to ensure a better end-user experience.
+This article contains recommendations you can implement in your store to improve site performance and, as a consequence, shopper experience.
 
 :information_source: *Once adopted, such practices can lead to an SEO improvement of up to 80% and over 50% in page loading time. This data can be identified in the main website performance analysis tools, such as Google Lighthouse and Google Analytics Load Time.*
 
