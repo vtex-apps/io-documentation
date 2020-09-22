@@ -102,6 +102,7 @@
     - [Updating Edition apps](recipes/development/updating-edition-apps.md)
     - [Running IO scripts in any VTEX store](recipes/development/running-IO-scripts-in-any-VTEX-store.md)
     - [Migrating CMS settings after a theme major update](recipes/development/migrating-CMS-settings-after-major-update.md)
+    - [Managing application logs](recipes/development/managing-application-logs.md)
 
   - [All Recipes](recipes/all)
 
