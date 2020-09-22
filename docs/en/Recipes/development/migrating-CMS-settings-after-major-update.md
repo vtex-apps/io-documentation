@@ -10,7 +10,7 @@ To handle this situation, you have the option of migrating template settings by 
 2. Log into the account which the theme is installed.
 3. Run `vtex use {workspaceName} --production` to **create and use a new** production workspace.
 
-⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
+⚠️ *Remember to replace the values between the curly braces according to your scenario.*
 
 4. Run `vtex install {appvendor}.{appname}@{appversion}` to install the `store-theme` published in step 1.
 4. Run `vtex install vtex.admin-graphql-ide@3.x` to install the GraphQL admin IDE.
