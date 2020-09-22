@@ -20,7 +20,7 @@ To handle this situation, you have the option of migrating template settings by 
 
 ```
 mutation{
-  updateThemeIds(from:"{appvendor}.myvtex@{oldmajor}.x", to:"{appvendor}.myvtex@{newmajor}.x")
+  updateThemeIds(from:"{appvendor}.{appname}@{oldmajor}.x", to:"{appvendor}.{appname}@{newmajor}.x")
 }
 ```
 8. Open the workspace and validate content, routes, pages, and redirects.
