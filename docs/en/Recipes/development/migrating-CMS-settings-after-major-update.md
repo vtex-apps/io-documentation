@@ -1,6 +1,6 @@
 # Migrating CMS settings after a theme major update
 
-You may need to do a major update of your `store-theme` due to changes in its peer dependencies, for example. In this situation, however, changing to a new `store-theme` major could lead to undesired consequences, such as losing the page template settings in the admin.
+You may need to do a major update of your app store theme due to changes in its peer dependencies, for example. In this situation, however, changing to a new app store theme major could lead to undesired consequences, such as losing the page template settings in the admin.
 
 To handle this situation, you have the option of migrating template settings by following the step-by-step presented in the sequence.
 
