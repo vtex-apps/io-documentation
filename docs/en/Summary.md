@@ -95,13 +95,13 @@
     - [Creating a Development workspace](recipes/development/creating-a-development-workspace.md)
     - [Creating a Production workspace](recipes/development/creating-a-production-workspace.md)
     - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
-    - [Overwriting the Messages app](recipes/development/overwriting-the-messages-app.md)
     - [Developing service configuration apps](recipes/development/developing-service-configuration-apps.md)
     - [Using the Assets Builder](recipes/development/using-the-assets-builder.md)
     - [Becoming a Sponsor Account](recipes/development/becoming-a-sponsor-account.md)
     - [Configuring an Edition app](recipes/development/configuring-an-edition-app.md)
     - [Updating Edition apps](recipes/development/updating-edition-apps.md)
     - [Running IO scripts in any VTEX store](recipes/development/running-IO-scripts-in-any-VTEX-store.md)
+    - [Migrating CMS settings after a theme major update](recipes/development/migrating-CMS-settings-after-major-update.md)
 
   - [All Recipes](recipes/all)
 
