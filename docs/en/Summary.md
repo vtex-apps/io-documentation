@@ -13,7 +13,7 @@
     - [Setting your store's theme](getting-started/build-stores-with-store-framework/3)
     - [Configuring templates](getting-started/build-stores-with-store-framework/4)
     - [Defining styles](getting-started/build-stores-with-store-framework/5)
-    - [Building your own store theme](etting-started/build-stores-with-store-framework/6)
+    - [Building your own store theme](getting-started/build-stores-with-store-framework/6)
 
 - Concepts
 
@@ -63,7 +63,6 @@
     - [Enabling 404 pages](recipes/store-management/enabling-404-pages.md)
     - [Configuring a B2B environment](recipes/store-management/configuring-a-b2b-environment.md)
     - [Installing apps in live stores: best practices](recipes/store-management/installing-apps-in-live-stores-best-practices.md)
-    - [Internationalizing product prices](recipes/store-management/internationalizing-product-prices.md)
     - [Making your theme content public](recipes/store-management/making-your-theme-content-public.md)
     - [Understanding how store URL indexing works](recipes/store-management/understanding-how-store-url-indexing-works.md)
     - [Managing URL Redirects](recipes/store-management/managing-url-redirects.md)
@@ -72,6 +71,14 @@
     - [Setting up Google Tag Manager](recipes/store-management/setting-up-google-tag-manager.md)
     - [Setting up Google Analytics search tracking](recipes/store-management/setting-up-google-analytics-search-tracking.md)
     - [Deactivating the VTEX IO native service worker](recipes/store-management/deactivating-the-vtex-io-native-service-worker.md)
+    - [Multi-language stores](recipes/store-management/multi-language-stores.md)
+    - [Internationalizing product prices](recipes/store-management/internationalizing-product-prices.md)
+    - [Translating storefront content](recipes/store-management/translating-storefront-content.md)
+    - [Translating catalog content](recipes/store-management/translating-catalog-content.md)
+    - [Cross-border stores](recipes/store-management/cross-border-stores.md)
+    - [Cross-border stores content internationalization](recipes/store-management/cross-border-stores-content-internationalization.md)
+    - [Creating robots files for cross-border stores](recipes/store-management/creating-robots-files-for-cross-border-stores.md)
+    - [Checking your store's binding id](recipes/store-management/checking-your-store-binding-id.md)
 
   - [VTEX IO Development](recipes/development)
 
@@ -88,12 +95,14 @@
     - [Creating a Development workspace](recipes/development/creating-a-development-workspace.md)
     - [Creating a Production workspace](recipes/development/creating-a-production-workspace.md)
     - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
-    - [Overwriting the Messages app](recipes/development/overwriting-the-messages-app.md)
     - [Developing service configuration apps](recipes/development/developing-service-configuration-apps.md)
     - [Using the Assets Builder](recipes/development/using-the-assets-builder.md)
     - [Becoming a Sponsor Account](recipes/development/becoming-a-sponsor-account.md)
     - [Configuring an Edition app](recipes/development/configuring-an-edition-app.md)
     - [Updating Edition apps](recipes/development/updating-edition-apps.md)
+    - [Running IO scripts in any VTEX store](recipes/development/running-IO-scripts-in-any-VTEX-store.md)
+    - [Migrating CMS settings after a theme major update](recipes/development/migrating-CMS-settings-after-major-update.md)
+    - [Managing application logs](recipes/development/managing-application-logs.md)
 
   - [All Recipes](recipes/all)
 
