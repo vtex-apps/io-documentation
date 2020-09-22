@@ -12,7 +12,7 @@ To handle this situation, you have the option of migrating template settings by 
 
 ⚠️ *Remember to replace the values between the curly braces according to your scenario.*
 
-4. Run `vtex install {appvendor}.{appname}@{appversion}` to install the `store-theme` published in step 1.
+4. Run `vtex install {appvendor}.{appname}@{appversion}` to install the app store theme published in step 1.
 4. Run `vtex install vtex.admin-graphql-ide@3.x` to install the GraphQL admin IDE.
 5. In your browser, access your account's admin and select the GraphQL admin IDE in the side-bar menu.
 6. From the dropdown list, choose the `vtex.pages-graphql@2.x` app.
