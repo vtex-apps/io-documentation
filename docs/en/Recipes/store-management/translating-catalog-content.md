@@ -13,6 +13,7 @@ The following list contains the settings from the Catalog API that are internall
 - **Product:** name, keywords (substitute words), page title (tag title), description, short description, meta tag description, and the URL slug (cross-border stores only).
 - **SKU** name.
 - **[SKU or product specification](https://help.vtex.com/en/tracks/catalog-101--5AF0XfnjfWeopIFBgs3LIQ/2NQoBv8m4Yz3oQaLgDRagP):** name, description, and values.
+- **[Category group](https://help.vtex.com/en/tutorial/creating-category-groups--tutorials_246)** name.
 
 However, we understand that considering literal translations and cultural factors, you may want to overwrite automatic translations with specific and representative content of your store. 
 
@@ -281,3 +282,46 @@ query{
 ```
 
 *Where `fieldId` is the specification ID found following this [orientation for SKU specifications](https://help.vtex.com/en/tracks/catalog-101--5AF0XfnjfWeopIFBgs3LIQ/6UjLHdAT5YLuflki10SXLr?locale=en) or this [orientation for product specifications](https://help.vtex.com/en/tracks/catalog-101--5AF0XfnjfWeopIFBgs3LIQ/4fcdmJzQ6QYA9zWf3bLWin).*
+
+## Category group
+
+### Mutation
+
+Fill in the main text box with the following mutation command:
+
+``` 
+mutation translate($args: GroupInputTranslation, $locale:Locale) {
+  translateGroup(group: $args, locale:$locale)
+}
+```
+
+### Query Variables
+
+According to the following example and the following explanations, fill in the Query Variables section with the desired translations of each parameter.
+
+```
+{
+  "args":{
+    "groupId": "14",
+    "name": "Cores"
+  },
+  "locale": "pt-BR" 
+}
+```
+
+- `groupId`: the category group ID.
+- `name`: the category group name.
+- `locale`: target translation locale.
+
+:warning: *Category group IDs can be found by running the following query:*
+
+```
+query{
+  groupsByCategory(categoryId:1){
+    id
+    name
+  }
+}
+```
+
+*Where `categoryId` is the ID of the category related to that group.*
