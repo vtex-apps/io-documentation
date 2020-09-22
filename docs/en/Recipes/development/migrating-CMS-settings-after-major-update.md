@@ -16,7 +16,7 @@ To handle this situation, you have the option of migrating template settings by 
 4. Run `vtex install vtex.admin-graphql-ide@3.x` to install the GraphQL admin IDE.
 5. In your browser, access your account's admin and select the GraphQL admin IDE in the side-bar menu.
 6. From the dropdown list, choose the `vtex.pages-graphql@2.x` app.
-7.  Copy the mutation command presented in the following to the text box that is displayed and update the `from` and `to` values according to your scenario.
+7. Copy the mutation command presented below to the text box that is displayed and update the `from` and `to` values according to your scenario.
 
 ```
 mutation{
