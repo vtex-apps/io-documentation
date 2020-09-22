@@ -7,7 +7,7 @@ To handle this situation, you have the option of migrating template settings by 
 ## Step by step
 
 1. Using your terminal and the VTEX IO [Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/), [publish](https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available/#step-2-publishing-the-new-app-version) the new major version of your app store theme.
-2. Log into the account correspondent to your `store-theme`'s `vendor`.
+2. Log into the account which the theme is installed.
 3. Run `vtex use {workspaceName} --production` to **create and use a new** production workspace.
 
 ⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
