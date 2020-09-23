@@ -37,8 +37,8 @@ export default HelloWorld
 // interfaces.json
 {
   "hello-world": {
-		"component": "HelloWorld"
-	}
+    "component": "HelloWorld"
+  }
 }
 ```
 
@@ -55,8 +55,8 @@ interface Props {
 const HelloWorld = ({ Icon }) => (
   <div className="tc pv5">
     <Icon size={32} />
-	  <h1 className="t-heading-1 c-on-base">Hello, world!<h1>
-	</div>
+      <h1 className="t-heading-1 c-on-base">Hello, world!<h1>
+    </div>
 )
 
 export default HelloWorld
@@ -69,16 +69,16 @@ In practice, users would pass this value to the theme *block* `hello-world`, as 
 ```json
 {
   "hello-world": {
-		"props": {
-			"Icon": "icon-caret#point-up"
-		}
-	},
+    "props": {
+      "Icon": "icon-caret#point-up"
+    }
+  },
 
-	"icon-caret#point-up": {
-		"props": {
-			"orientation": "up"
-		}
-	}
+  "icon-caret#point-up": {
+    "props": {
+      "orientation": "up"
+    }
+  }
 }
 ```
 
@@ -93,14 +93,14 @@ According to the `blocks` prop logic, you could configure your theme as shown be
 ```json
 {
   "hello-world": {
-	  "blocks": ["icon-caret#point-up"]
-	},
+    "blocks": ["icon-caret#point-up"]
+  },
 
-	"icon-caret#point-up": {
-		"props": {
-			"orientation": "up"
-		}
-	}
+  "icon-caret#point-up": {
+    "props": {
+      "orientation": "up"
+    }
+  }
 }
 ```
 
@@ -123,9 +123,9 @@ export default HelloWorld
 // interfaces.json
 {
   "hello-world": {
-		"component": "HelloWorld",
+    "component": "HelloWorld",
     "allowed": ["icon-caret"]
-	}
+  }
 }
 ```
 
@@ -135,22 +135,24 @@ However, if we decide to use the `blocks` composition as shown above, we would f
 - The `blocks` approach would also be trickier to implement in `HelloWorld.tsx` because we would need to check which block was passed by the user to then pass its ID to the `ExtensionPoint` component.
 - Through the use of `ExtensionPoint`s, we would not be able to render multiple instances of the same block as well. For example, if we wanted to render `icon-caret#foo` **and** `icon-caret#bar` in our `HelloWorld` component, we would not be able to do so using `<ExtensionPoint id="icon-caret" />`, since this would be ambiguous. Also, the user would not be able to pass multiple instances of the same block to `hello-world`, such as:
 
-    ```json
-    {
-      "hello-world": {
-    	  "blocks": ["icon-caret#point-up", "icon-caret#point-down"]
-    	},
-    	"icon-caret#point-up": {
-    		"props": {
-    			"orientation": "up"
-    		}
-    	},
-    	"icon-caret#point-down": {
-    		"props": {
-    			"orientation": "down"
-    		}
-    	}
+```json
+{
+  "hello-world": {
+    "blocks": ["icon-caret#point-up", "icon-caret#point-down"]
+  },
+    	
+  "icon-caret#point-up": {
+    "props": {
+      "orientation": "up"
     }
+  },
+  
+  "icon-caret#point-down": {
+    "props": {
+      "orientation": "down"
+    }
+  }
+}
     ```
 
 The main difference, therefore, is that we can offer much more flexibility to our users when using the slots composition.
@@ -161,37 +163,37 @@ There are some limitations put in place to guarantee that your slots will be wor
 
 1. Slots are **always** exposed via `PascalCased` props. This is very important because otherwise our builder would not be able to identify the props as `slots` which, in turn, would block the component rendering:
 
-    ```json
-    {
-      // Does NOT work. This will be interpreted as a string by store builder
-      "props": {
-    		"**i**con": "icon-caret"
-    	}
-    }
-    ```
+```json
+{
+// Does NOT work. This will be interpreted as a string by store builder
+  "props": {
+    "**i**con": "icon-caret"
+  }
+}
+ ```
 
-    ```json
-    {
-      // Works!
-      "props": {
-    		"**I**con": "icon-caret"
-    	}
-    }
-    ```
+```json
+{
+// Works!
+  "props": {
+    "**I**con": "icon-caret"
+  }
+}
+```
 
 2. *Nested* slots are not currently supported. This means that you can't have a slot prop inside of an object, such as shown below:
 
-    ```json
-    {
-      "props": {
-    		"somePropThatsAnObject": {
-    			"p1": "this",
-    			"p2": "will",
-    			"p3": "not",
-    			"p4": "work",
-    			// This will NOT be picked up by the store builder
-    			"Slot": "some-block"
-    		}
-    	}
+```json
+{
+  "props": {
+    "somePropThatsAnObject": {
+      "p1": "this",
+      "p2": "will",
+      "p3": "not",
+      "p4": "work",
+      // This will NOT be picked up by the store builder
+      "Slot": "some-block"
     }
-    ```
+  }
+}
+```
