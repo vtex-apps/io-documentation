@@ -24,7 +24,7 @@ Some advantages of using slots over the traditional blocks composition are, name
 
 Let's suppose you are trying to create a `hello-world` block. At first, it could be as simple as:
 
-```tsx
+```json
 // HelloWorld.tsx
 import React from 'react'
 
@@ -44,7 +44,7 @@ export default HelloWorld
 
 Let's now set up an icon to be displayed right above the "Hello, world!" text:
 
-```tsx
+```json
 // HelloWorld.tsx
 import React, { ReactElement } from 'react'
 
@@ -104,7 +104,7 @@ According to the `blocks` prop logic, you could configure your theme as shown be
 }
 ```
 
-```tsx
+```json
 // HelloWorld.tsx
 import React from 'react'
 import { ExtensionPoint } from 'vtex.render-runtime'  
@@ -135,7 +135,7 @@ However, if we decide to use the `blocks` composition as shown above, we would f
 - The `blocks` approach would also be trickier to implement in `HelloWorld.tsx` because we would need to check which block was passed by the user to then pass its ID to the `ExtensionPoint` component.
 - Through the use of `ExtensionPoint`s, we would not be able to render multiple instances of the same block as well. For example, if we wanted to render `icon-caret#foo` **and** `icon-caret#bar` in our `HelloWorld` component, we would not be able to do so using `<ExtensionPoint id="icon-caret" />`, since this would be ambiguous. Also, the user would not be able to pass multiple instances of the same block to `hello-world`, such as:
 
-    ```jsx
+    ```json
     {
       "hello-world": {
     	  "blocks": ["icon-caret#point-up", "icon-caret#point-down"]
