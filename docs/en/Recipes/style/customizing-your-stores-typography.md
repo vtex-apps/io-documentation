@@ -20,11 +20,11 @@ Whether using the admin’s CMS or your store theme CSS files, Store Framework g
 ### Using store theme CSS files 
 
 1. Open your store theme directory using a code editor of your preference. 
-2. Create a file called `Fonts` in the `Assets` folder.
-3. Upload in the file the desired fonts using the Assets builder](https://vtex.io/docs/recipes/development/using-the-assets-builder/). 
+2. Create a new folder inside the `assets` directory called `fonts`. Make sure your app have the [assets builder in its manifest](https://vtex.io/docs/recipes/development/using-the-assets-builder/).
+3. Paste the font files inside this folder (`assets/fonts/`).
 
 <div class="alert alert-warning">
-The font family file must be uploaded in the following file extensions: <code>.ttf</code> or <code>.woff</code>. 
+The font files must be uploaded in the following file extensions: <code>.ttf</code> or <code>.woff</code>. 
 </div>
 
 4. In `styles/configs` folder, create a new file called `font-faces.css`.
