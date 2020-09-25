@@ -43,7 +43,7 @@ _For example:_
 
 ```json
 "list-context.image-list#demo": {
-    "child": ["slider-layout#demo-images"],
+    "children": ["slider-layout#demo-images"],
     "props": {
       "height": 650,
       "images": [
@@ -70,7 +70,7 @@ _For example:_
 
 ```json
   "list-context.image-list#demo": {
-    "child": ["slider-layout#demo-images"],
+    "children": ["slider-layout#demo-images"],
     "props": {
       "height": 650,
       "images": [
