@@ -115,6 +115,7 @@ To that end, we will use the admin's Master Data legacy interface:
     "agreement"
   ],
   "v-security": {
+    "publicJsonSchema": true,
     "allowGetAll": false,
     "publicRead": [ "fieldExemple" ],
     "publicWrite": [ "fieldExemple" ],
@@ -214,6 +215,7 @@ When using Master Data v2, you will not need to previously create any field. Sim
     "agreement"
   ],
   "v-security": {
+    "publicJsonSchema": true,
     "allowGetAll": false,
     "publicRead": [ "fieldExample" ],
     "publicWrite": [ "fieldExample" ],
