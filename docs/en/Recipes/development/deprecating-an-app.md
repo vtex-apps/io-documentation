@@ -11,7 +11,28 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 A deprecated version of an app or a deprecated app is one that developers discourage its use. It can be because it leads to errors or because a better alternative exists.
 
-For these scenarios, using the [Toolbelt](https://vtex.io/docs/concepts/toolbelt/) and the terminal, log in to the account correspondent to the `vendor` of the app going to be deprecated and run the following command:
+If you have any doubts if you should deprecate an app version or not, take the following example: imagine that you develop the app `mystore.store-theme`, which latest version published is `mystore.store-theme@1.0.1`. You developed a new feature and want to release the new version `mystore.store-theme@1.2.0`. 
+
+You publish the app, but later that day, you realize there's a bug in it. 
+
+There are two options to deal with it:
+
+1. Release a new version with the bug fix.
+2. Deprecate the app version with the bug and downgrade it to the latest stable version.
+
+If the bug is simple, it's not affecting sales, and you know how to solve it, the first option might be the best one.
+
+However, if the bug is critical or if you need a lot of time to fix it, we recommend that you go with the second option. 
+
+By deprecating the app version with the issue, you will be opting for re-establishing the store. In this scenario, it will uninstall `mystore.store-theme@1.2.0` and fallback to the previous released version, `mystore.store-theme@1.0.1`.
+
+Once the store is working fine, you'll have time to work on the fix without affecting sales and users.
+
+For this scenario, check the following step by step. 
+
+## Step by Step
+
+Using the [Toolbelt](https://vtex.io/docs/concepts/toolbelt/) and the terminal, log in to the account correspondent to the `vendor` of the app going to be deprecated and run the following command:
 
 ```
 vtex deprecate {appvendor}.{appname}@{appversion}
@@ -21,7 +42,7 @@ vtex deprecate {appvendor}.{appname}@{appversion}
 
 Once the deprecation is completed, it might take some time, but *eventually*, the deprecated app will be uninstalled and downgraded to its latest stable version in every VTEX account.
 
-You also have the option to *instantly* install the latest stable version of that app in an account by running the following command: 
+You also have the option to *instantly* install the latest stable version of that app in an account by running the following command:
 
 ```
 vtex update {appvendor}.{appname}
