@@ -92,6 +92,7 @@
     - [Releasing a new app version](recipes/development/releasing-a-new-app-version.md)
     - [Publishing an app](recipes/development/publishing-an-app.md)
     - [Installing an app](recipes/development/installing-an-app.md)
+    - [Deprecating an app](recipes/development/deprecating-an-app.md)
     - [Creating a Development workspace](recipes/development/creating-a-development-workspace.md)
     - [Creating a Production workspace](recipes/development/creating-a-production-workspace.md)
     - [Promoting a workspace to master](recipes/development/promoting-a-workspace-to-master.md)
