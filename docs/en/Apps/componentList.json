@@ -123,6 +123,12 @@
       "description": "Renders the the orderPlaced page with all order data.",
       "url": "https://github.com/vtex-apps/order-placed"
     },
+    {    
+      "appName": "vtex.order-quote",
+      "title": "Order Quote",
+      "description": "Provides B2B capabilities to save a cart (its items, quantities and price) for further use.",
+      "url": "https://github.com/vtex-apps/order-quote"
+    },
     {
       "appName": "vtex.pickup-availability",
       "title": "Pickup Availability",
@@ -420,6 +426,12 @@
       "url": "https://github.com/vtex-apps/checkout-ui-settings"
     },
     {
+      "appName": "vtex.product-context",
+      "title": "Product Context",
+      "description": "Provides data regarding a certain product to all of its children blocks.",
+      "url": "https://github.com/vtex-apps/product-context"
+    },
+    {
       "appName": "vtex.store-sitemap",
       "title": "Store Sitemap",
       "description": "App responsible for automatically generating a `sitemap.xml` file of your VTEX IO Store.",
@@ -498,6 +510,12 @@
       "title": "Criteo",
       "description": "VTEX Criteo native integration",
       "url": "https://github.com/vtex-apps/criteo"
+    },
+    {
+      "appName": "vtex.curbside-pickup",
+      "title": "Curbside Pickup",
+      "description": "VTEX Curbside Pickup native integration",
+      "url": "https://github.com/vtex-apps/curbside-pickup"
     },
     {
       "appName": "vtex.cybersource-fingerprint",
