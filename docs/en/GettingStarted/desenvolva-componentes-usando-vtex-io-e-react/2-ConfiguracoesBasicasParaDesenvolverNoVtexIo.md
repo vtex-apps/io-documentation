@@ -26,7 +26,7 @@ $ vtex login {account}
 
 Após executar este comando, uma guia no seu navegador será aberta, solicitando as credenciais de acesso da sua conta VTEX.
 
-div class="alert alert-warning">
+<div class="alert alert-warning">
 O valor entre chaves (<code>{account}</code>) deve ser substituído pelo nome da conta VTEX na qual você está trabalhando.
 </div>
 
