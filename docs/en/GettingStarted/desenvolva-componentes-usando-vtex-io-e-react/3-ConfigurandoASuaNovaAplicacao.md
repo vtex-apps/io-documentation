@@ -7,7 +7,7 @@ Para começar o desenvolvimento da sua aplicação de forma otimizada, você dev
 
 Isto deve ser feito para que você não precise se preocupar com configurações padrões da plataforma VTEX IO, uma vez que o repositório copiado já importará automaticamente os ajustes básicos necessários para você começar a desenvolver a sua aplicação.  
 
-## 1o passo - Clonar o repositório modelo para os seus arquivos locais
+## Clonando o repositório modelo para os seus arquivos locais
 
 Usando o seu terminal, execute o comando abaixo para clonar o repositório modelo para os seus arquivos locais: 
 
@@ -17,7 +17,7 @@ git clone https://github.com/vtex-apps/react-app-template
 
 Em seguida, abra o diretório da aplicação React importada usando o editor de código de sua preferência.
 
-## 2o passo - Editar o arquivo `manifest.json`
+## Editando o arquivo `manifest.json`
 
 Com o código da aplicação aberto no seu editor de código, vamos analisar o arquivo `manifest.json` responsável  por guardar as **informações básicas e essenciais**  do app, como:
 
