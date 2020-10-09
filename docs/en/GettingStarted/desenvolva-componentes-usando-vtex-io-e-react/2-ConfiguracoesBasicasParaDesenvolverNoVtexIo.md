@@ -4,7 +4,7 @@ Todo desenvolvimento no VTEX IO começa e termina com o [**Toolbelt**](https://v
 
 O Toolbelt funciona como uma ponte de comunicação entre a sua conta VTEX e a plataforma de desenvolvimento VTEX IO. Através dele, você será capaz de fazer login na sua conta VTEX, gerenciar [*workspaces*](https://vtex.io/docs/concepts/workspace/) e desenvolver novos apps.
 
-## Passo 1 - Instalar o Toolbelt
+## Instalando o Toolbelt
 
 Para instalar a CLI do VTEX IO, você deve garantir que o [Node.js](https://nodejs.org/) e o [Yarn](https://yarnpkg.com/) estejam corretamente instalados na sua máquina. 
 
@@ -16,7 +16,7 @@ yarn global add vtex
 
 Para mais instruções e detalhes sobre a instalação do Toobelt, acesse a documentação [Instalando a CLI do VTEX IO e referência de comandos](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/).
 
-## Passo 2 - Fazer login na sua conta VTEX
+## Fazendo login na sua conta VTEX
 
 Assim que o Toolbelt for instalado, execute o comando a seguir para fazer login na sua conta VTEX:
 
@@ -34,7 +34,7 @@ Você pode executar em seguida o comando `vtex whoami` para confirmar a conta VT
 
 ![toolbelt-whoami](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
 
-## Passo 3 - Criar o seu workspace
+## Criando um workspace de desenvolvimento
 
 Qualquer e todo desenvolvimento no VTEX IO acontece por meio de um [***workspace***](https://vtex.io/docs/concepts/workspace/). 
 
