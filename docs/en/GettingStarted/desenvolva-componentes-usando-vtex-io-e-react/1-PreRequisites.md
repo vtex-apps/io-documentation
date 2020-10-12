@@ -4,9 +4,9 @@ Por meio de blocos React customizáveis e de alta qualidade, o [VTEX Store Frame
 
 Contudo, é possível que você sinta a necessidade de desenvolver novos componentes capazes de solucionar problemas de *front* mais específicos, ainda não atendidos pelos nossos nativos.
 
-Nesta trilha, você aprenderá a construir componentes React sofisticados e feitos sob medida usando a plataforma VTEX IO e React.
+Nesta trilha, você aprenderá a **construir componentes React sofisticados e feitos sob medida usando a plataforma VTEX IO e React**.
 
-Os componentes desenvolvidos por você poderão ser usados no tema da sua loja ou, ainda, ser disponibilizados para outras lojas por meio da [VTEX App Store](https://extensions.myvtex.com/). Mas lembre-se: eles serão de inteira responsabilidade da conta que os desenvolveu e implementou. A VTEX não se responsabiliza por nenhum aplicativo customizado, nem fornece suporte para eles ou seus usuários.
+Os componentes desenvolvidos por você poderão ser usados no tema da sua loja ou, ainda, ser disponibilizados para outras lojas por meio da [VTEX App Store](https://extensions.myvtex.com/). Mas lembre-se: eles serão de inteira responsabilidade da conta que os desenvolveu e implementou. **A VTEX não se responsabiliza por nenhum aplicativo customizado, nem fornece suporte para eles ou seus usuários**.
 
 ## Pré-requisitos
 
@@ -14,10 +14,10 @@ No momento, a plataforma VTEX IO está funcionando como um beta fechado. Isso si
 
 Para entrar neste grupo, você deve obedecer um dos seguintes requisitos:
 
-- Se você for uma conta VTEX - Ter um plano VTEX Enterprise (você pode verificar a conta do plano que você tem no seu contrato VTEX).
-- Se você for um parceiro VTEX - Ter o certificado de desenvolvedor parceiro do VTEX IO.
+- Se você for uma conta VTEX - Ter um **plano VTEX Enterprise** (você pode verificar a conta do plano que você tem no seu contrato VTEX).
+- Se você for um parceiro VTEX - Ter o **certificado de desenvolvedor parceiro do VTEX IO**.
 
-Se você atende aos requisitos, preencha e envie o [formulário de inscrição](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform) com os detalhes do seu projeto, informando o nosso time sobre as suas motivações e o seu cenário de negócio.
+Se você atende aos requisitos, preencha e envie o [**formulário de inscrição**](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform) com os detalhes do seu projeto, informando o nosso time sobre as suas motivações e o seu cenário de negócio.
 
 Por ser um beta fechado, ainda não há custo extra para desenvolver no VTEX IO.
 
