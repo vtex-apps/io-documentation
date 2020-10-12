@@ -1,6 +1,6 @@
 # Consumindo dados
 
-Agora é preciso aprender como esse novo componente irá dialogar com o sistema *back-end*, isto é, como ele vai **consumir e inserir dados na plataforma**. 
+Agora é preciso aprender como esse novo componente irá dialogar com o sistema *back-end*, isso é, como ele vai **consumir e inserir dados na plataforma**. 
 
 A comunicação entre apps de front de loja e o VTEX IO é feita através de **APIs GraphQL**.
 
