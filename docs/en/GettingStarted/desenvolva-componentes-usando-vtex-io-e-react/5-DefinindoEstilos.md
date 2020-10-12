@@ -64,13 +64,13 @@ Por definir classes de CSS nesses moldes, a ferramenta de CSS Modules se torna l
 
 3. Ainda na pasta `react`, acesse o arquivo do componente sendo customizado e importe o arquivo `styles`, criado no passo 1:
 
-```json
+```jsx
 import styles from './styles.css'
 ```
 
 :warning: *Caso você esteja utilizando Typescript, o <code>import</code> irá acusar um erro. Para consertar isso, você deve criar um arquivo de definição no local <code>/react/typings/css.d.ts</code> contendo o seguinte conteúdo:*
 
-```
+```jsx
 /* /react/typings/css.d.ts */
 declare module '*.css' {
   type CssFiles = Record<string, string | undefined>
@@ -81,7 +81,7 @@ declare module '*.css' {
 
 O `styles` importado para o seu componente será um objeto cujas chaves serão os nomes das classes criadas por você (`className`). Por exemplo:
 
-```json
+```jsx
 /* /react/MyButton.tsx */
 import styles from './styles.css'
 
@@ -126,7 +126,7 @@ Os dois possíveis cenários aqui são:
 1. Na pasta `react` do seu app, acesse o arquivo do componente React desejado.
 2. Copie e cole no arquivo o seguinte exemplo de código:
 
-```json
+```jsx
 import { useCssHandles } from 'vtex.css-handles'
 
 const CSS_HANDLES = ['container', 'background', 'text', 'item'] as const
@@ -177,7 +177,7 @@ Note que os CSS Handles gerados e armazenados no objeto seguem o padrão: <code>
 1. Na pasta `react` do seu app, acesse o arquivo do componente React desejado.
 2. Copie e cole no arquivo o seguinte exemplo de código:
 
-```json
+```jsx
 import { withCssHandles } from 'vtex.css-handles'
 
 const CSS_HANDLES = ['text'] as const
