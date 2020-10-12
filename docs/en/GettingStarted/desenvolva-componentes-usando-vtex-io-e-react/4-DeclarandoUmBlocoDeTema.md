@@ -45,7 +45,7 @@ Ao seguir o passo a passo, lembre-se de substituir os valores de acordo com o ce
 2. Na pasta `react`, crie um novo arquivo TypeScript com o nome do componente React desejado. De acordo com o nosso exemplo, teríamos `HelloWorld.tsx`.
 3. Uma vez no arquivo, adicione o código exemplo abaixo (substituindo os valores de acordo com seu cenário):
 
-```json
+```jsx
 import { React } from 'react'
 
 const HelloWorld = () => <div>Hello, World!</div>
