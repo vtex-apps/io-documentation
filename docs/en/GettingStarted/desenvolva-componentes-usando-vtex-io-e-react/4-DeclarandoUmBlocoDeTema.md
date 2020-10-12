@@ -1,4 +1,4 @@
-# Criando um bloco de tema
+# Declarando um bloco de tema
 
 Com o modelo da aplicação já copiado, vamos agora criar um **novo bloco de tema**. 
 
