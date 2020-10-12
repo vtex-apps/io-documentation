@@ -1,4 +1,4 @@
-# Documentando a aplicação
+# Estruturando a documentação
 
 Agora que você criou um componente e definiu o seu estilo, está na hora de gerar a documentação da nova aplicação!
 
