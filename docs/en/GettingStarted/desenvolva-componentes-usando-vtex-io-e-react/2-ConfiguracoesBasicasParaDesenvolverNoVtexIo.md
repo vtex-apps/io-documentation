@@ -2,7 +2,7 @@
 
 Todo desenvolvimento no VTEX IO começa e termina com o [**Toolbelt**](https://vtex.io/docs/concepts/toolbelt/), a interface de linha de comando do VTEX IO (do inglês, *Command-line Interface*). 
 
-O Toolbelt funciona como uma ponte de comunicação entre a sua conta VTEX e a plataforma de desenvolvimento VTEX IO. Através dele, você será capaz de fazer login na sua conta VTEX, gerenciar [*workspaces*](https://vtex.io/docs/concepts/workspace/) e desenvolver novos apps.
+**O Toolbelt funciona como uma ponte de comunicação entre a sua conta VTEX e a plataforma de desenvolvimento VTEX IO**. Através dele, você será capaz de fazer login na sua conta VTEX, gerenciar [*workspaces*](https://vtex.io/docs/concepts/workspace/) e desenvolver novos apps.
 
 ## Instalando o Toolbelt
 
@@ -38,7 +38,7 @@ Você pode executar em seguida o comando `vtex whoami` para confirmar a conta VT
 
 Qualquer e todo desenvolvimento no VTEX IO acontece por meio de um [***workspace***](https://vtex.io/docs/concepts/workspace/). 
 
-Os *workspaces* funcionam como *branches* do GitHub, de modo que qualquer ação de desenvolvimento é feita em uma área de trabalho específica, separada das demais. 
+Os ***workspaces* funcionam como *branches* do GitHub***, de modo que qualquer ação de desenvolvimento é feita em uma área de trabalho específica, separada das demais. 
 
 Os *workspaces* permitem, portanto, que você desenvolva e teste as suas alterações sem nenhum risco de interferir nos aplicativos ativos ou no trabalho de outros desenvolvedores.
 
