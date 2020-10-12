@@ -1,4 +1,4 @@
-# Aperfeiçoando o desempenho do app com cache
+# Aperfeiçoando o desempenhoc om cache
 
 Buscas repetida por dados semelhantes podem se tornar um investimento caro e frustrante, uma vez que pedem um número alto de respostas do servidor para a entrega das informações requisitadas.  
 
