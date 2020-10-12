@@ -2,15 +2,15 @@
 
 Antes de pensar na globalização da sua marca, é crucial primeiramente cuidar da **internacionalização do conteúdo do seu website**. 
 
-O **Messages** é a app do VTEX IO responsável pela tradução dos componentes de uma loja, atuando diretamente no código dos blocos para que o ciclo de desenvolvimento não seja limitado pelo fluxo necessário de versionamento de um idioma para outro.
+O **Messages** é o app do VTEX IO responsável pela tradução dos componentes de uma loja, atuando diretamente no código dos blocos para que o ciclo de desenvolvimento não seja limitado pelo fluxo necessário de versionamento de um idioma para outro.
 
 Uma vez implementado na aplicação, o Messages se responsabiliza por identificar e interpretar automaticamente as mensagens de texto passivas de tradução, reduzindo obstáculos para a evolução do seu código - salvo os casos em que alguma tradução customizada já tenha sido manualmente inserida por você.
 
-## Passo 1 - Configurando o Messages na sua app
+## Configurando o Messages
 
 Para o funcionamento esperado do Messages, usaremos a biblioteca [`react-intl`](https://formatjs.io/docs/react-intl). Funcionando como motor de tradução, essa biblioteca altamente versátil possui uma série de recursos avançados de internacionalização (*i18n*) para a sua aplicação de *front*. 
 
-1. Abra o código da sua app no editor de código de sua preferência.
+1. Abra o código do seu app no editor de código de sua preferência.
 2. Acesse a pasta `react` e execute em seguida o comando `yarn add react-intl@3 && yarn add @types/react-intl@3 --dev`.
 3. Acesse o arquivo `manifest.json` e adicione o builder `messages` à lista de `builders`, conforme mostra o exemplo a seguir:
 
@@ -30,7 +30,7 @@ Para o funcionamento esperado do Messages, usaremos a biblioteca [`react-intl`](
 
 Pronto! Com todas as dependências do `react-intl` instaladas e o [builder](https://vtex.io/docs/concepts/builders/) de Messages configurado, podemos avançar para as próximas etapas.
 
-## Passo 2 - Permitindo tradução automáticas
+## Permitindo tradução automáticas
 
 Para entendermos na prática como funcionam as traduções do VTEX IO, considere o componente React `HelloWorld` importado no passo 3 desta track:
 
@@ -91,7 +91,7 @@ Ao [*linkar*](https://vtex.io/docs/recipes/development/linking-an-app/) a sua ap
 Para testar esses efeitos na loja vinculada a sua conta VTEX, acesse <code>https://{workspaceName}-{accountName}.myvtex.com</code> e adicione a query string <code>cultureInfo</code> com o valor do idioma desejado. Para verificar, por exemplo, a sua página em português do Brasil, digite: <code>https://{workspaceName}-{accountName}.myvtex.com/?cultureInfo=pt-BR</code>, substituindo <code>{workspaceName}</code> e <code>{accountName}</code> pelo nome do workspace de desenvolvimento sendo usado e pelo nome da sua conta VTEX, respectivamente.
 </div>
 
-## Passo 3 - Sobreescrevendo traduções automáticas
+## Sobreescrevendo traduções automáticas
 
 De acordo com o seu cenário de negócio, é possível que você queira mudar uma tradução realizada automaticamente por outra customizada. 
 
