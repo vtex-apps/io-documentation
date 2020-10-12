@@ -12,7 +12,9 @@ Uma interface funciona basicamente como uma API (*application programming interf
 
 Da mesma forma que uma API usa parâmetros para definir como será a conversa com um servidor, a interface usa o que chamamos de *chaves*. 
 
-**As interfaces, por meio das suas chaves, definem qual será o comportamento de um bloco quando implementado e renderizado em um tema de loja**. Isso significa que, para cada bloco de tema exportado pela sua aplicação, você precisará definir uma [interface](https://vtex.io/docs/concepts/interfaces/), vinculando o bloco a um componente React de sua escolha.
+**As interfaces, por meio das suas chaves, definem qual será o comportamento de um bloco quando implementado e renderizado em um tema de loja**. 
+
+Isso significa que, para cada bloco de tema exportado pela sua aplicação, você precisará definir uma [interface](https://vtex.io/docs/concepts/interfaces/), vinculando o bloco a um componente React de sua escolha.
 
 A tabela a seguir mostra algumas chaves possíveis de serem adicionadas à interface do seu bloco, bem como as suas respectivas descrições:
 
@@ -43,7 +45,7 @@ Ao seguir o passo a passo, lembre-se de substituir os valores de acordo com o ce
 2. Na pasta `react`, crie um novo arquivo TypeScript com o nome do componente React desejado. De acordo com o nosso exemplo, teríamos `HelloWorld.tsx`.
 3. Uma vez no arquivo, adicione o código exemplo abaixo (substituindo os valores de acordo com seu cenário):
 
-```tsx
+```jsx
 import { React } from 'react'
 
 const HelloWorld = () => <div>Hello, World!</div>
@@ -69,7 +71,7 @@ Não se esqueça de conferir a <a href="https://reactjs.org/docs/getting-started
 
 Observe a estrutura acima: a primeira definição dada pela interface é o nome do seu novo bloco de tema (`hello-world`). Dentro dele, declaramos um objeto contendo as chaves da interface apresentadas anteriormente.
 
-Em nosso exemplo básico, usamos apenas a chave `component` para vincular o bloco` hello-world` ao componente React que ele irá renderizar (`HelloWorld`). Observe que o valor da chave `component` é` HelloWorld` - nome do arquivo criado anteriormente para o componente React (`react / HelloWorld.tsx`).
+Em nosso exemplo básico, usamos apenas a chave `component` para vincular o bloco` hello-world` ao componente React que ele irá renderizar (`HelloWorld`). Observe que o valor da chave `component` é `HelloWorld` - nome do arquivo criado anteriormente para o componente React (`react / HelloWorld.tsx`).
 
 <div class="alert alert-info">
 Não deixe de conferir o código de aplicações nativas do Store Framework para aprender mais sobre a estruturação do arquivo <code>interfaces.json</code>, como o da <a href="https://github.com/vtex-apps/search-result/blob/master/store/interfaces.json">Search Result</a> e <a href="https://github.com/vtex-apps/store-header/blob/master/store/interfaces.json">Header</a>. Lembre-se de que a maneira como declaramos uma interface depende diretamente do comportamento que queremos para o novo bloco. Por isso, à medida que estudamos diferentes apps e blocos, entendemos mais as possibilidades de interfaces.
@@ -78,18 +80,22 @@ Não deixe de conferir o código de aplicações nativas do Store Framework para
 Depois de salvar suas alterações no código, o seu novo bloco estará pronto para ser implementado por qualquer usuário que instalar a sua aplicação.
 
 <div class="alert alert-info">
-Se a aplicação em desenvolvimento exportar mais do que um bloco de tema para a renderizacao do componente React, lembre-se de que as interfaces de todos esses blocos também devem ser declaradas no arquivo <code> interfaces.json</code>, de acordo com o formato indicado acima.
+Se a aplicação em desenvolvimento exportar mais do que um bloco de tema para a renderizacao do componente React, as interfaces de todos esses blocos também devem ser declaradas no arquivo <code> interfaces.json</code>, de acordo com o formato indicado acima.
 </div>
 
 ### Declarando diferentes interfaces por breakpoint 
 
 É possível que você queira que a sua aplicação exporte diferentes blocos para a renderização de diferentes componentes de acordo com o *breakpoint* da loja, isso é, de acordo com o dispositivo através do qual ela está sendo acessada.
 
-Para isso, você deverá criar blocos diferentes para cada possível dispositivo e, consequentemente, criar interfaces para cada um deles. Por exemplo: você está desenvolvendo o bloco `hello-world` e deseja criar para ele uma versão móvel e uma desktop. Deve-se criar então os componentes `HelloWorld`, `HelloWorldMobile` e `HelloWorldDesktop`, e definir interfaces para cada um deles, como `hello-world`, `hello-world.mobile` e `hello-world.desktop`. 
+Para isso, você deverá criar blocos diferentes para cada possível dispositivo e, consequentemente, criar interfaces para cada um deles. 
+
+Por exemplo: você está desenvolvendo o bloco `hello-world` e deseja criar para ele uma versão móvel e uma desktop. Deve-se criar então os componentes `HelloWorld`, `HelloWorldMobile` e `HelloWorldDesktop`, e definir interfaces para cada um deles, como `hello-world`, `hello-world.mobile` e `hello-world.desktop`. 
 
 A interface `hello-world` do bloco pai deve conter apenas as chaves `component` e `allowed`, esta última declarando os blocos `hello-world.mobile` e `hello-world.desktop`. 
 
-As interfaces dos últimos blocos, por sua vez, devem declarar as chaves desejadas para definir o comportamento de cada bloco de acordo com o dispositivo para o qual foram projetadas, como a chave `device`. Exemplos de apps que usam diferentes componentes React para diferentes dispositivos são [Header](https://github.com/vtex-apps/store-header) e [Footer](https://github.com/vtex-apps/store-footer).
+As interfaces dos últimos blocos, por sua vez, devem declarar as chaves desejadas para definir o comportamento de cada bloco de acordo com o dispositivo para o qual foram projetadas, como a chave `device`. 
+
+Exemplos de apps que usam diferentes componentes React para diferentes dispositivos são [Header](https://github.com/vtex-apps/store-header) e [Footer](https://github.com/vtex-apps/store-footer).
 
 ## Usando o seu novo bloco de tema
 

@@ -35,7 +35,7 @@ Para entender melhor os tokens do VTEX Tachyons para classes CSS, é importante 
 3. Acesse a [documentação do VTEX Tachyons](https://vtex.github.io/vtex-tachyons/) e, de acordo com a customização desejada por você, procure as classes CSS mais adequadas.
 4. No código do componente React, declare as classes CSS desejadas. Por exemplo:
 
-```
+```css
 const Example = () => (
   <div className="flex justify-center pv4 ph3 bg-base--inverted">
     <p>Hello, World!</p>
@@ -64,26 +64,24 @@ Por definir classes de CSS nesses moldes, a ferramenta de CSS Modules se torna l
 
 3. Ainda na pasta `react`, acesse o arquivo do componente sendo customizado e importe o arquivo `styles`, criado no passo 1:
 
-```tsx
+```jsx
 import styles from './styles.css'
 ```
 
-<div class="alert alert-warning">
-Caso você esteja utilizando Typescript, o <code>import</code> irá acusar um erro. Para consertar isso, você deve criar um arquivo de definição no local <code>/react/typings/css.d.ts</code> contendo o seguinte conteúdo:
+:warning: *Caso você esteja utilizando Typescript, o <code>import</code> irá acusar um erro. Para consertar isso, você deve criar um arquivo de definição no local <code>/react/typings/css.d.ts</code> contendo o seguinte conteúdo:*
 
-<code>
+```jsx
 /* /react/typings/css.d.ts */
 declare module '*.css' {
   type CssFiles = Record<string, string | undefined>
   const CssObj: CssFiles
   export default CssObj
 }
-</code>
-</div>
+```
 
-O `styles` importado para o seu componente é um objeto cujas chaves serão os nomes das classes criadas por você (`className`). Por exemplo:
+O `styles` importado para o seu componente será um objeto cujas chaves serão os nomes das classes criadas por você (`className`). Por exemplo:
 
-```tsx
+```jsx
 /* /react/MyButton.tsx */
 import styles from './styles.css'
 
@@ -128,7 +126,7 @@ Os dois possíveis cenários aqui são:
 1. Na pasta `react` do seu app, acesse o arquivo do componente React desejado.
 2. Copie e cole no arquivo o seguinte exemplo de código:
 
-```tsx
+```jsx
 import { useCssHandles } from 'vtex.css-handles'
 
 const CSS_HANDLES = ['container', 'background', 'text', 'item'] as const
@@ -143,7 +141,7 @@ const Component: FC = () => {
 
 *Seguindo o exemplo dado acima, a variável `(CSS_HANDLES)` será um objeto no seguinte formato:*
   
-```js
+```json
 {
   container: 'vtex-foobar-1-x-container',
   background: 'vtex-foobar-1-x-background',
@@ -172,8 +170,6 @@ Note que os CSS Handles gerados e armazenados no objeto seguem o padrão: <code>
         </ul>
       </div>
     </div>
-  )
-}
 ```
 
 ### Criando CSS Handles para componentes de classe
@@ -181,7 +177,7 @@ Note que os CSS Handles gerados e armazenados no objeto seguem o padrão: <code>
 1. Na pasta `react` do seu app, acesse o arquivo do componente React desejado.
 2. Copie e cole no arquivo o seguinte exemplo de código:
 
-```tsx
+```jsx
 import { withCssHandles } from 'vtex.css-handles'
 
 const CSS_HANDLES = ['text'] as const
@@ -199,7 +195,7 @@ Como componentes definidos como classes não podem utilizar <i>hooks</i>, usarem
 
 *Seguindo o exemplo dado acima, a variável `{ cssHandles }` será um objeto no seguinte formato:*
 
-```tsx
+```json
 {
   text: 'vtex-foobar-1-x-text',
 }
@@ -211,8 +207,8 @@ Note que os CSS Handles gerados e armazenados no objeto seguem o padrão: <code>
 
 4. Adicione o novo *CSS Handle* à classe CSS desejada - de acordo com o elemento HTML a ser personalizado pelos usuários do app. Lembre-se de usar a variável `handle` ao adicioná-lo e também o nome do *CSS Handle* definido no array` CSS_HANDLES` (como `text`). Por exemplo:
 
- ```css
- <div className={`${cssHandles.text} f1 c-white`}>Hello world</div>
+```css
+<div className={`${cssHandles.text} f1 c-white`}>Hello world</div>
 ```
 
 Depois de salvar suas alterações, seu app será capaz de não apenas de exportar um estilo predefinido de acordo com as classes CSS configuradas por você, mas também de exportar *CSS Handles*, fornecendo aos seus usuários maior flexibilidade de personalização.
