@@ -21,7 +21,7 @@ Para mais instruções e detalhes sobre a instalação do Toobelt, acesse a docu
 Assim que o Toolbelt for instalado, execute o comando a seguir para fazer login na sua conta VTEX:
 
 ```sh
-$ vtex login {account}
+vtex login {account}
 ```
 
 Após executar este comando, uma guia no seu navegador será aberta, solicitando as credenciais de acesso da sua conta VTEX.
@@ -49,7 +49,7 @@ Você deve então [criar um workspace de desenvolvimento](https://vtex.io/docs/r
 Usando o seu terminal, execute o seguinte comando:
 
 ```sh
-$ vtex use examplename
+vtex use examplename
 ```
 
 Isso mudará a sua conta para um *workspace* de desenvolvimento chamado `examplename`. Lembre-se de substituir este valor de acordo com o nome desejado por você!
