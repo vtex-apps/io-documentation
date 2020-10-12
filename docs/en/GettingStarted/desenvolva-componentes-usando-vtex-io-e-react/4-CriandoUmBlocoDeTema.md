@@ -12,13 +12,13 @@ Uma interface funciona basicamente como uma API (*application programming interf
 
 Da mesma forma que uma API usa parâmetros para definir como será a conversa com um servidor, a interface usa o que chamamos de *chaves*. 
 
-**As interfaces, por meio das suas chaves, definem qual será o comportamento de um bloco quando implementado e renderizado em um tema de loja**. Isto significa que, para cada bloco de tema exportado pela sua aplicação, você precisará definir uma [interface](https://vtex.io/docs/concepts/interfaces/), vinculando o bloco a um componente React de sua escolha.
+**As interfaces, por meio das suas chaves, definem qual será o comportamento de um bloco quando implementado e renderizado em um tema de loja**. Isso significa que, para cada bloco de tema exportado pela sua aplicação, você precisará definir uma [interface](https://vtex.io/docs/concepts/interfaces/), vinculando o bloco a um componente React de sua escolha.
 
 A tabela a seguir mostra algumas chaves possíveis de serem adicionadas à interface do seu bloco, bem como as suas respectivas descrições:
 
 | Chave | Descrição | 
 |----- | ----- |
-| `component` | Nome do componente React ao qual o bloco de tema está vinculado. Isto é, nome do componente React que o bloco de tema vai renderizar.|
+| `component` | Nome do componente React ao qual o bloco de tema está vinculado, ou seja, nome do componente React que o bloco de tema vai renderizar.|
 | `allowed` | Lista de outros blocos de tema que, quando declarados, ajudarão a construir o componente React desejado. Na prática, os blocos declarados como `allowed` devem ser declarados na app de tema (Store Theme) como filhos do bloco desenvolvido por você.|
 | `composition` | Define se os filhos do bloco sendo desenvolvido por você terão uma posição de renderização específica na interface ou não. Lembre-se de que ao definir a chave `composition`, você não está controlando o posicionamento do bloco sendo definido por ela, mas sim o posicionamento dos filhos desse bloco. Os valores possíveis para esta chave são: `blocks` (os blocos filhos têm uma posição específica na interface, de acordo com o componente React nos quais eles se baseiam) ou `children` (a posição dos blocos filhos depende exclusivamente da maneira como são declarados no tema). Se nenhum valor para a chave `composition` for definido, o padrão assumido pela plataforma é `blocks`.|
 | `device` | Define se o seu bloco de tema é projetado para dispositivos móveis ou desktop. Os valores possíveis são: `mobile` (projetado para dispositivos móveis) e `desktop` (projetado para dispositivos desktop).|
@@ -27,7 +27,7 @@ A tabela a seguir mostra algumas chaves possíveis de serem adicionadas à inter
 | `before` | Lista de blocos de tema que devem ser renderizados na interface antes do seu bloco (acima dele) para o seu correto funcionamento. Por exemplo: cabeçalho. |
 | `after` | Lista de blocos de tema que devem ser renderizados na interface após o seu bloco (abaixo dele) para o seu correto funcionamento. Por exemplo: rodapé. |
 | `preview` | Define o comportamento da página enquanto o bloco é carregado. |
-| `render` | Define o tipo de renderização do bloco. Os valores possíveis são: `lazy` (o bloco só é renderizado quando um usuário interage com ele),` server` (a renderização do bloco é feita pelo lado do servidor) ou `client` (a renderização do bloco é feita pelo lado do cliente, isto é, pelo navegador). |
+| `render` | Define o tipo de renderização do bloco. Os valores possíveis são: `lazy` (o bloco só é renderizado quando um usuário interage com ele),` server` (a renderização do bloco é feita pelo lado do servidor) ou `client` (a renderização do bloco é feita pelo lado do cliente, ou seja, pelo navegador). |
 
 A única chave obrigatória a ser declarada na interface de um bloco é a `component`. As demais devem ser declaradas por você de acordo com o cenário desejado para o seu novo bloco de tema.
  
@@ -37,7 +37,7 @@ Declaramos a interface de um ou mais blocos no arquivo `interfaces.json` da apli
 
 Para este exemplo, vamos criar uma interface para um bloco básico chamado `hello-world` (baseado no componente React `HelloWorld`). 
 
-Ao seguir o passo a passo, lembre-se de substituir os valores de acordo com o cenário real da sua aplicação, isto é, de acordo com o componente React realmente sendo importado por você.
+Ao seguir o passo a passo, lembre-se de substituir os valores de acordo com o cenário real da sua aplicação, de acordo com o componente React realmente sendo importado por você.
 
 1. Abra o código do seu app (anteriormente denominado `react-app-template`) no seu editor de código.
 2. Na pasta `react`, crie um novo arquivo TypeScript com o nome do componente React desejado. De acordo com o nosso exemplo, teríamos `HelloWorld.tsx`.
