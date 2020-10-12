@@ -78,7 +78,7 @@ Note que a propriedade `QUERY_VALUE` está sendo importada de um outro arquivo c
 
 Um exemplo simples para `helloData.gql` seria:
 
-```graphql
+```gql
 query hello {
   hero {
     name  
