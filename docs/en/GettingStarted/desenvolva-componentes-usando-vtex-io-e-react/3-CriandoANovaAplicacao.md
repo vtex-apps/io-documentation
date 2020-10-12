@@ -1,4 +1,4 @@
-# Configurando a sua nova aplicação
+# Criando a nova aplicação
 
 Para começar o desenvolvimento da sua aplicação de forma otimizada, você deverá:
 
