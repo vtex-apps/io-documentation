@@ -19,7 +19,7 @@ Para aprender como configurar corretamente o `manifest.json` da sua app, acesse 
 
 Depois de seguir os passos indicados, a sua aplicação estará pronta para ser devidamente distribuída! 
 
-Lembre-se de que [*linkar*](https://vtex.io/docs/recipes/store/linking-an-app) a app em que você está trabalhando não será suficiente: você também precisará lançá-la, publicá-la, tê-la instalada em workspace de produção para testes e, finalmente, validá-la para o *deploy*.
+Lembre-se de que [*linkar*](https://vtex.io/docs/recipes/store/linking-an-app) a app em que você está trabalhando não será suficiente: você também precisará lançá-la, publicá-la, tê-la instalada em workspace de produção para testes e, finalmente, validá-la para o *deploy*, como veremos a seguir:
 
 ## Lançando uma nova versão
 
@@ -131,7 +131,7 @@ Para disponibilizar a sua app, confira a documentação [Submitting an app in th
 
 ---
 
-**Pronto**! Ao finalizar este passo, a sua app terá sido lançada, publicada, testada, validada e finalmente se tornado pública para todos os seus usuários. 
+**Pronto**! Ao finalizar estes passos, a aplicação terá sido lançada, publicada, testada, validada e finalmente se tornado pública para todos os seus usuários. 
 
 Durante esta track, você aprendeu todos os passos necessários para desenvolver do zero uma aplicação de front usando React, GraphQL, CSS e a plataforma de desenvolvimento VTEX IO. 
 
