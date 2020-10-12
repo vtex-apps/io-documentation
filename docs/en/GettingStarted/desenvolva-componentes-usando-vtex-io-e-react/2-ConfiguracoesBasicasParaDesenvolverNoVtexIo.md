@@ -52,7 +52,7 @@ Usando o seu terminal, execute o seguinte comando:
 $ vtex use examplename
 ```
 
-Isto mudará a sua conta para um *workspace* de desenvolvimento chamado `examplename`. Lembre-se de substituir este valor de acordo com o nome desejado por você!
+Isso mudará a sua conta para um *workspace* de desenvolvimento chamado `examplename`. Lembre-se de substituir este valor de acordo com o nome desejado por você!
 
 ![workspace-examplename EN](https://user-images.githubusercontent.com/52087100/63979000-30899300-ca8e-11e9-9d9d-234e31ac45f7.png)
 
