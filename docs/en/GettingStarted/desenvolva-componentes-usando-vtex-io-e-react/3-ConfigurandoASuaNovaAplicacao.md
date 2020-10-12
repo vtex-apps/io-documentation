@@ -5,7 +5,7 @@ Para começar o desenvolvimento da sua aplicação de forma otimizada, você dev
 - Copiar para os seus arquivos locais um [repositório modelo](https://github.com/vtex-apps/react-app-template).
 - Realizar as primeiras e principais alterações no arquivo `manifest.json` da aplicação React exemplo. 
 
-Isto deve ser feito para que você não precise se preocupar com configurações padrões da plataforma VTEX IO, uma vez que o repositório copiado já importará automaticamente os ajustes básicos necessários para você começar a desenvolver a sua aplicação.  
+Isso deve ser feito para que você não precise se preocupar com configurações padrões da plataforma VTEX IO, uma vez que o repositório copiado já importará automaticamente os ajustes básicos necessários para você começar a desenvolver a sua aplicação.  
 
 ## Clonando o repositório modelo para os seus arquivos locais
 
