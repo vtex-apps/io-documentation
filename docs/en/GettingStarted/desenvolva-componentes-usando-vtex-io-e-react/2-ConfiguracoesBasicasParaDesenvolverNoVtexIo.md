@@ -21,13 +21,13 @@ Para mais instruções e detalhes sobre a instalação do Toobelt, acesse a docu
 Assim que o Toolbelt for instalado, execute o comando a seguir para fazer login na sua conta VTEX:
 
 ```sh
-vtex login {account}
+vtex login {conta}
 ```
 
 Após executar este comando, uma guia no seu navegador será aberta, solicitando as credenciais de acesso da sua conta VTEX.
 
 <div class="alert alert-warning">
-O valor entre chaves (<code>{account}</code>) deve ser substituído pelo nome da conta VTEX na qual você está trabalhando.
+O valor em chaves (<code>{conta}</code>) deve ser substituído pelo nome da conta VTEX na qual você está trabalhando.
 </div>
 
 Você pode executar em seguida o comando `vtex whoami` para confirmar a conta VTEX e o workspace sendo utilizado pelo Toolbelt. 
