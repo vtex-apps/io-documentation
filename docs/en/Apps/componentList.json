@@ -393,6 +393,12 @@
       "url": "https://github.com/vtex-apps/store-link"
     },
     {
+      "appName": "vtex.store-video",
+      "title": "Store Video",
+      "description": "Provides blocks to display video assets on your store pages.",
+      "url": "https://github.com/vtex-apps/store-video"
+    },
+    {
       "appName": "vtex.store-components",
       "file": "user-address.md",
       "title": "User Address",
