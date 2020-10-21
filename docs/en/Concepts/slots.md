@@ -1,13 +1,4 @@
----
-title: Using slots composition
-description: "Learn what is slots composition and how to use them when declaring new blocks in your theme."
-date: "2020-09-23"
-tags: ["slots", "blocks"]
-version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/using-slots-composition.md"
----
-
-# Using slots composition
+# Slots
 
 Slots composition is a new way to declare a React component in your store theme code.
 

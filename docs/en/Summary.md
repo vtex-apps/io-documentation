@@ -29,6 +29,7 @@
 
   - [Billing Options](concepts/billing-options)
   - [Builders](concepts/builders)
+  - [Cross-border stores](concepts/cross-border-stores)
   - [Dependencies](concepts/dependencies)
   - [Edition App](concepts/edition-app)
   - [Interfaces](concepts/interfaces)
@@ -36,10 +37,12 @@
   - [Policies](concepts/policies)
   - [Roles](concepts/roles)
   - [Routes](concepts/routes)
+  - [Slots](concepts/slots)
   - [Sponsor Account](concepts/sponsor-account)
   - [Toolbelt](concepts/toolbelt)
   - [VTEX Resource Name (VRN)](concepts/vrn)
   - [Workspace](concepts/workspace)
+   
 
 - Recipes
 
@@ -85,7 +88,6 @@
     - [Internationalizing product prices](recipes/store-management/internationalizing-product-prices.md)
     - [Translating storefront content](recipes/store-management/translating-storefront-content.md)
     - [Translating catalog content](recipes/store-management/translating-catalog-content.md)
-    - [Cross-border stores](recipes/store-management/cross-border-stores.md)
     - [Cross-border stores content internationalization](recipes/store-management/cross-border-stores-content-internationalization.md)
     - [Managing landing pages in cross-border stores](recipes/store-management/managing-landing-pages-in-cross-border-stores.md)    
     - [Creating robots files for cross-border stores](recipes/store-management/creating-robots-files-for-cross-border-stores.md)

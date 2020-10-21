@@ -393,6 +393,12 @@
       "url": "https://github.com/vtex-apps/store-link"
     },
     {
+      "appName": "vtex.store-video",
+      "title": "Store Video",
+      "description": "Provides blocks to display video assets on your store pages.",
+      "url": "https://github.com/vtex-apps/store-video"
+    },
+    {
       "appName": "vtex.store-components",
       "file": "user-address.md",
       "title": "User Address",
@@ -529,6 +535,12 @@
       "description": "VTEX Elfsight native integration",
       "url": "https://github.com/vtex-apps/elfsight"
     },
+    {
+      "appName": "vtex.facebook-domain-verification",
+      "title": "Facebook Domain Verification",
+      "description": "Adds into the head section of your website's homepage the meta-tag containing the Facebook verification code.",
+      "url": "https://github.com/vtex-apps/facebook-domain-verification"
+    }, 
     {
       "appName": "vtex.facebook-pixel",
       "title": "Facebook Pixel",
