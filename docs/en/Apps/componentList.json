@@ -168,6 +168,12 @@
       "url": "https://github.com/vtex-apps/product-gifts"
     },
     {
+      "appName": "vtex.product-highlights",
+      "title": "Product Highlights",
+      "description": "Shows the product highlights.",
+      "url": "https://github.com/vtex-apps/product-highlights"
+    },
+    {
       "appName": "vtex.product-identifier",
       "title": "Product Identifier",
       "description": "Shows a product identifier, such as the product reference, product ID, sku EAN or sku reference.",
@@ -212,16 +218,17 @@
       "url": "https://github.com/vtex-apps/product-quantity"
     },
     {
+      "appName": "vtex.store-components",
+      "file": "ProductSKUAttributes.md",
+      "title": "Product SKU Attributes",
+      "description": "This block is exported by the Store Components app and it is responsible for displaying a list of the currrent SKU variations** for the product.",
+      "url": "https://github.com/vtex-apps/store-components"
+    },
+    {
       "appName": "vtex.product-specifications",
       "title": "Product Specifications",
       "description": "Displays the product specifications.",
       "url": "https://github.com/vtex-apps/product-specifications"
-    },
-    {
-      "appName": "vtex.product-highlights",
-      "title": "Product Highlights",
-      "description": "Shows the product highlights.",
-      "url": "https://github.com/vtex-apps/product-highlights"
     },
     {
       "appName": "vtex.product-summary",
