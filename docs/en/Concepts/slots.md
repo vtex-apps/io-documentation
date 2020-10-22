@@ -15,7 +15,7 @@ Some advantages of using slots over the traditional blocks composition are, name
 
 Let's suppose you are trying to create a `hello-world` block. At first, it could be as simple as:
 
-```json
+```jsx
 // HelloWorld.tsx
 import React from 'react'
 
@@ -35,7 +35,7 @@ export default HelloWorld
 
 Let's now set up an icon to be displayed right above the "Hello, world!" text:
 
-```json
+```jsx
 // HelloWorld.tsx
 import React, { ReactElement } from 'react'
 
@@ -46,8 +46,8 @@ interface Props {
 const HelloWorld = ({ Icon }) => (
   <div className="tc pv5">
     <Icon size={32} />
-      <h1 className="t-heading-1 c-on-base">Hello, world!<h1>
-    </div>
+    <h1 className="t-heading-1 c-on-base">Hello, world!<h1>
+  </div>
 )
 
 export default HelloWorld
@@ -64,7 +64,6 @@ In practice, users would pass this value to the theme *block* `hello-world`, as 
       "Icon": "icon-caret#point-up"
     }
   },
-
   "icon-caret#point-up": {
     "props": {
       "orientation": "up"
@@ -86,7 +85,6 @@ According to the `blocks` prop logic, you could configure your theme as shown be
   "hello-world": {
     "blocks": ["icon-caret#point-up"]
   },
-
   "icon-caret#point-up": {
     "props": {
       "orientation": "up"
@@ -95,7 +93,7 @@ According to the `blocks` prop logic, you could configure your theme as shown be
 }
 ```
 
-```json
+```jsx
 // HelloWorld.tsx
 import React from 'react'
 import { ExtensionPoint } from 'vtex.render-runtime'  
@@ -103,8 +101,8 @@ import { ExtensionPoint } from 'vtex.render-runtime'
 const HelloWorld = () => (
   <div className="tc pv5">
     <ExtensionPoint id="icon-caret" size={32} />
-	  <h1 className="t-heading-1 c-on-base">Hello, world!<h1>
-	</div>
+    <h1 className="t-heading-1 c-on-base">Hello, world!<h1>
+  </div>
 )
 
 export default HelloWorld
@@ -131,20 +129,18 @@ However, if we decide to use the `blocks` composition as shown above, we would f
   "hello-world": {
     "blocks": ["icon-caret#point-up", "icon-caret#point-down"]
   },
-    	
   "icon-caret#point-up": {
     "props": {
       "orientation": "up"
     }
   },
-  
   "icon-caret#point-down": {
     "props": {
       "orientation": "down"
     }
   }
 }
-    ```
+```
 
 The main difference, therefore, is that we can offer much more flexibility to our users when using the slots composition.
 
@@ -154,27 +150,27 @@ There are some limitations put in place to guarantee that your slots will be wor
 
 1. Slots are **always** exposed via `PascalCased` props. This is very important because otherwise our builder would not be able to identify the props as `slots` which, in turn, would block the component rendering:
 
-```json
+```jsonc
 {
-// Does NOT work. This will be interpreted as a string by store builder
   "props": {
-    "**i**con": "icon-caret"
+    // Does NOT work. This will be interpreted as a string by store builder
+    "icon": "icon-caret"
   }
 }
  ```
 
-```json
+```jsonc
 {
-// Works!
   "props": {
-    "**I**con": "icon-caret"
+    // Works!
+    "Icon": "icon-caret"
   }
 }
 ```
 
 2. *Nested* slots are not currently supported. This means that you can't have a slot prop inside of an object, such as shown below:
 
-```json
+```jsonc
 {
   "props": {
     "somePropThatsAnObject": {
