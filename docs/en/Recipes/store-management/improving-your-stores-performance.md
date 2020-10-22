@@ -108,11 +108,11 @@ This way, content contained inside the user's viewport will be initially loaded 
 
 ### Partially fetching facets 
 
-This last option improves search pages' performance by partially fetching the total number of facets available to be displayed. 
+This option improves search pages' performance by partially fetching the total number of facets available to be displayed.
 
-Once this option is enabled, users on the search results page will only see filters with 10 facets at the most - the remaining facets, if any, will not be automatically fetched by the search query, and therefore will not be displayed as well. 
+Once this option is enabled, users on the search results page will see a maximum of 10 facets per filter - the remaining facets, if any, will not be automatically fetched by the search query, nor displayed to the end-user. 
 
-Instead, a `Show more` button will be displayed among the 10 first facets in order to allow users to fetch and see the remaining ones.
+Instead, a `Show more` button will be displayed below the rendered facets, allowing users to fetch the remaining ones.
 
 :information_source: *Remember: we call Facets the filter's value. For example: `Color` is a filter whose value, `Blue`, is its Facet.*
 
