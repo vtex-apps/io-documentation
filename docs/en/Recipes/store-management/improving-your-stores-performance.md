@@ -1,10 +1,10 @@
 ---
 title: Improving your store's performance
-description: "A common worry among us all: site performance. Check out now the good practices you must adopt in order to "
+description: "A common worry among us all: website performance. Check out now the good practices you must adopt in order to have the fastest store ever!"
 date: "2020-03-23"
 tags: ["good", "practices", "guideline", "performance", "sales-conversion", "site"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/store-management/improving-your-stores-performance.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/improving-your-stores-performance.md"
 ---
 
 # Improving your store's performance
@@ -21,7 +21,7 @@ This article contains recommendations you can implement in your store to improve
 
 Some actions that can boost your store's website performance can be enabled in your store's Admin Panel, under *Store Setup > CMS > Store > Advanced*. 
 
-![cms-store](https://user-images.githubusercontent.com/60782333/93489439-ea43e380-f8dd-11ea-8f12-1f5faa956423.png)
+![cms-store-advanced](https://user-images.githubusercontent.com/52087100/96817679-3a8af580-13f6-11eb-918d-2c60e7c685df.png)
 
 These features are presented and explained in the [Enabling Store settings](#enabling-store-settings) section.
 
@@ -105,6 +105,16 @@ By enabling this option, scrollable facets box and search result pages will be l
 This way, content contained inside the user's viewport will be initially loaded for rendering. On the other hand, content outside the user viewport will be loaded only during scrolling. 
 
 :warning: *Keep in mind that, by enabling this option, you might notice unexpected behaviors, such as gaps while scrolling. Hence, if you experience any kind of side-effect in your website pages, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!*
+
+### Partially fetching facets 
+
+This last option improves search pages' performance by partially fetching the total number of facets available to be displayed. 
+
+Once this option is enabled, users on the search results page will only see filters with 10 facets at the most - the remaining facets, if any, will not be automatically fetched by the search query, and therefore will not be displayed as well. 
+
+Instead, a `Show more` button will be displayed among the 10 first facets in order to allow users to fetch and see the remaining ones.
+
+:information_source: *Remember: we call Facets the filter's value. For example: `Color` is a filter whose value, `Blue`, is its Facet.*
 
 ## Manual optimizations
 
