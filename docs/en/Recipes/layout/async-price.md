@@ -62,14 +62,6 @@ This recipe shows you how to keep the response time by requesting the most up-to
 
 ```diff
 {
-+ "product-price-suspense": {
-+   "children": [
-+     "product-list-price#summary",
-+     "flex-layout.row#selling-price-savings",
-+     "product-installments#summary",
-+     "add-to-cart-button"
-+   ]
-+ },
   "product-summary.shelf": {
     "props": {
      "isPriceAsync": true
@@ -82,7 +74,15 @@ This recipe shows you how to keep the response time by requesting the most up-to
 -     "add-to-cart-button",
 +     "product-price-suspense"
    ]
-  }
+  },
++ "product-price-suspense": {
++   "children": [
++     "product-list-price#summary",
++     "flex-layout.row#selling-price-savings",
++     "product-installments#summary",
++     "add-to-cart-button"
++   ]
++ },
 }
 ```
 
