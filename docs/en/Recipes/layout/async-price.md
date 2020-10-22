@@ -58,7 +58,7 @@ This recipe shows you how to keep the response time by requesting the most up-to
 }
 ```
 
-4. Wrap the price information in the `product-price-suspense`.
+4. Wrap the price blocks in the `product-price-suspense`.
 
 ```diff
 {
