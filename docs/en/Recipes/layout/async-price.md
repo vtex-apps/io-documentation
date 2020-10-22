@@ -82,7 +82,7 @@ This recipe shows you how to keep the response time by requesting the most up-to
 +     "product-installments#summary",
 +     "add-to-cart-button"
 +   ]
-+ },
++ }
 }
 ```
 
