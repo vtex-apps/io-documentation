@@ -39,10 +39,6 @@ Let's now set up an icon to be displayed right above the "Hello, world!" text:
 // HelloWorld.tsx
 import React, { ReactElement } from 'react'
 
-interface Props {
-	Icon: ReactElement
-}
-
 const HelloWorld = ({ Icon }) => (
   <div className="tc pv5">
     <Icon size={32} />
