@@ -68,6 +68,7 @@
     - [Creating a custom search results page](recipes/templates/creating-a-custom-search-results-page.md)
     - [Using the Fold blocks](recipes/templates/using-the-fold-blocks.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
+    - [Using events to trigger automatic responses from store components](recipes/templates/using-events-to-trigger-automatic-responses-from-store-components.md)
     - [Creating a native form for your store users](recipes/templates/creating-a-native-form-for-your-store-users.md)
 
   - [Store Management](recipes/store-management)
