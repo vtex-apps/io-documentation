@@ -41,12 +41,12 @@ This recipe shows you how to keep the response time by requesting the most up-to
 "vtex.product-price": "1.x"
 ```
 
-3. Add the `isPriceAsync` prop to your `product-summary.shelf` block. Set its value to `true`.
+3. Add the `priceBehavior` prop to your `product-summary.shelf` block. Set its value to `"async"`.
 
 ```diff
 "product-summary.shelf": {
   "props": {
-+   "isPriceAsync": true
++   "priceBehavior": "async"
   },
   "children": [
     // other children
@@ -64,7 +64,7 @@ This recipe shows you how to keep the response time by requesting the most up-to
 {
   "product-summary.shelf": {
     "props": {
-     "isPriceAsync": true
+     "priceBehavior": "async"
     },
     "children": [
       // other children
