@@ -1,6 +1,6 @@
-# Running IO scripts in any VTEX store
+# Running IO scripts in non-IO VTEX stores
 
-To make it possible to run VTEX IO scripts in any VTEX store, you must develop and release your own *Scripts app*.
+To make it possible to run VTEX IO scripts in non-IO VTEX stores, you must develop and release your own *Scripts app*.
 
 A *Scripts app* is an application that allows the usage of pre-defined VTEX IO scripts in pages external to the VTEX IO. That means that any VTEX store that installs your new *Scripts app*, even the ones that don't use the VTEX IO, can take advantage of running the VTEX IO scripts defined within your application in its website pages.
 
