@@ -115,7 +115,7 @@
     - [Becoming a Sponsor Account](recipes/development/becoming-a-sponsor-account.md)
     - [Configuring an Edition app](recipes/development/configuring-an-edition-app.md)
     - [Updating Edition apps](recipes/development/updating-edition-apps.md)
-    - [Running IO scripts in any VTEX store](recipes/development/running-IO-scripts-in-any-VTEX-store.md)
+    - [Running IO scripts in non-IO VTEX stores](recipes/development/running-IO-scripts-in-non-IO-VTEX-stores.md)
     - [Migrating CMS settings after a theme major update](recipes/development/migrating-CMS-settings-after-major-update.md)
     - [Managing application logs](recipes/development/managing-application-logs.md)
 
