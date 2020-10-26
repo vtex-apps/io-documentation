@@ -1,3 +1,12 @@
+---
+title: Running IO scripts in non-IO VTEX stores
+description: "Learn how to develop your own Scripts app to make it possible to run VTEX IO scripts in any VTEX store."
+date: "2020-10-26"
+tags: ["scripts", "custom"]
+version: "0.x"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/running-IO-scripts-in-non-IO-VTEX-stores.md"
+---
+
 # Running IO scripts in non-IO VTEX stores
 
 To make it possible to run VTEX IO scripts in non-IO VTEX stores, you must develop and release your own *Scripts app*.
