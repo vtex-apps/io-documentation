@@ -38,7 +38,9 @@ Using the [Toolbelt](https://vtex.io/docs/concepts/toolbelt/) and the terminal, 
 vtex deprecate {appvendor}.{appname}@{appversion}
 ```
 
-:warning: *Remember to replace the value in the curly brackets according to your scenario.*
+> :warning:
+>
+> Remember to replace the value in the curly brackets according to your scenario.
 
 Once the deprecation is completed, it might take some time, but *eventually*, the deprecated app will be uninstalled and downgraded to its latest stable version in every VTEX account.
 
@@ -48,7 +50,9 @@ You also have the option to *instantly* install the latest stable version of tha
 vtex update {appvendor}.{appname}
 ```
 
-:information_source: *Keep in mind that the deprecation won't delete the app or version from our registry, meaning that it will still be possible to manually install it in any account by running `vtex install {appvendor}.{appname}@{appversion}`.*
+> :information_source:
+>
+> Keep in mind that the deprecation won't delete the app or version from our registry, meaning that it will still be possible to manually install it in any account by running `vtex install {appvendor}.{appname}@{appversion}`.
 
 However, if you realize that the deprecation was unnecessary and decide to republish that given version, you can run the following command:
 
