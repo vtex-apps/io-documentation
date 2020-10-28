@@ -4,7 +4,7 @@ description: "Want to publish Edition apps for child accounts? Firstly know how 
 date: "2020-03-23"
 tags: ["sponsor", "sponsor-account", "requirements"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/adding-new-docs/docs/en/Recipes/development/becoming-a-sponsor-account.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/becoming-a-sponsor-account.md"
 ---
 
 # Becoming a Sponsor Account
@@ -18,11 +18,7 @@ If your account is qualified to be a Sponsor Account, you follow the instruction
 - Access to multiple accounts that are related to each other hierarchically. For example, a Sponsor Account could be the main VTEX account of a holding or a brand that has many sub-brands.
 - Have a `vtex` Edition App installed in your account (`vtex.edition-business@0.x` or `vtex.edition-store@2.x`)
 
-<div class="alert alert-warning">
-<p>You can check the Edition App installed in your account by running <code>vtex edition get</code> in your terminal.</p>
-
-<p>If you see the error <code>Message: Edition not set</code>, <a href="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a support ticket</a> requesting the installation of either `vtex.edition-business@0.x` or `vtex.edition-store@2.x`. See <a href="https://vtex.io/docs/concepts/edition-app/">this article</a> to understand the difference between them.</p>
-</div>
+> ⚠️ *You can check the Edition App installed in your account by running `vtex edition get` in your terminal. If you see the error `Message: Edition not set`, [open a support ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) requesting the installation of either `vtex.edition-business@0.x` or `vtex.edition-store@2.x`. See [this article](https://vtex.io/docs/concepts/edition-app/) to understand the difference between them.*
 
 ## Step by step
 
