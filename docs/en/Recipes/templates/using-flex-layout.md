@@ -4,7 +4,7 @@ description: "Improve the way your store layout is built by using Flex Layout to
 date: "2019-08-21"
 tags: ["flex-layout", "layout", "using", "use"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-flex-layout.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/using-flex-layout.md"
 ---
 
 # Using Flex Layout
@@ -53,9 +53,7 @@ Now that we declared that we are going to use `flex-layout.row#about-us`, let's 
 },
 ```
 
-<div class="alert alert-info">
-The <code>flex-layout.row#about-us</code> block is going to display its child dependencies in an interface, from left to right, one after the other.
-</div>
+> ℹ *The `flex-layout.row#about-us` block is going to display its child dependencies in an interface, from left to right, one after the other.*
 
 As shown above, the `flex-layout.row#about-us` was declared with two child blocks, one of them being an `image` and the other a `flex-layout.col` block. Both `flex-layout` blocks only accept blocks allowed by their parent.
 
@@ -87,11 +85,9 @@ Let's define our `flex-layout.col#text-about-us` block:
 },
 ```
 
-<div class="alert alert-info">
-The <code>flex-layout.col#text-about-us</code> block is going to display its child dependencies in an interface, from top to bottom, one after the other.
-</div>
+> ℹ *The `flex-layout.col#text-about-us` block is going to display its child dependencies in an interface, from top to bottom, one after the other.*
 
-The `preventVerticalStretch` prop prevents the column from occupying 100% of its parent's height when set as `true`. You can use other custom row props, which can be found in the [Flex Layout documentation] (https://vtex.io/docs/components/all/vtex.flex-layout/).
+The `preventVerticalStretch` prop prevents the column from occupying 100% of its parent's height when set as `true`. You can use other custom row props, which can be found in the [Flex Layout documentation](https://vtex.io/docs/components/all/vtex.flex-layout/).
 
 ### Final results
 
