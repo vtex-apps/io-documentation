@@ -4,7 +4,7 @@ description: "Understand what the Sandbox app is and use iframes to attend to yo
 date: "2019-08-19"
 tags: ["iframe", "sandbox-app", "sandbox-block", "custom"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/using-sandbox-blocks.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/using-sandbox-blocks.md"
 ---
 
 # Using Sandbox blocks
