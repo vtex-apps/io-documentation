@@ -1,14 +1,14 @@
 # Configuring the Pixel app settings
 
-When you’re creating a native integration with a third party solution, you always need to **link** this last one with the VTEX account for which you’re doing the integration. Without this link, no data will be transferred between the store and the solution, rendering your Pixel app useless.
+When creating a native integration with a third party solution, it is essential to **link** it with the VTEX account for which you’re doing the integration. Without this link, you won't be able to transfer data between the store and the solution, rendering your Pixel app useless.
 
 Such a link is always done through what we call **user identification**. Made available by the third party solution with which you will enable the integration, user identification is what grants permissions for using the service offered by it.
 
-Think of Google Tag Manager, for example: to use it, you need to have an `ID` previously provided by the solution. That’s an example of a user identification, whose value is individual and intransferable, granting you all the needed permissions to actually use GTM.
+Think of Google Tag Manager, for example: to use it, you need to have an `ID` previously provided. That’s an example of a user identification, whose value is individual and intransferable, granting you all the needed permissions to actually the solution.
 
-Therefore, the same user identification is a key part of the proper functioning of your Pixel app, since it ensures the integration based on permissions granted to each account.
+Therefore, the user identification is a key part of the proper functioning of your Pixel app, since it **ensures the integration based on permissions granted to each account**.
 
-The step-by-step below will guide you through the necessary configuration to enable the Pixel app to receive different user identifications and to evaluate whether the integration is allowed or not.
+The step-by-step below will guide you through the necessary configuration to enable the Pixel app to receive different user identifications and to evaluate whether the integration is allowed or not:
 
 1. Access the the app’s `manifest.json` file.
 2. Change the  `vendor` field value  (`vtex`) to the name of the VTEX account in which you are working so that you'll be able to correctly publish the app later on.
