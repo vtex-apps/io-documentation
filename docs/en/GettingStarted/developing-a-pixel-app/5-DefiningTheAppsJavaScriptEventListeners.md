@@ -335,4 +335,4 @@ Below, you can find some store events you can work with in your Pixel app:
 - `pageView` - Triggered on every loaded page view.
 - `productImpression` - Triggered when product data is visible on the page currently being accessed by users.
 
-All the available event properties are typed in TypeScript. Go through them [here](https://github.com/vtex-apps/pixel-app-template/blob/master/react/typings/events.d.ts).
+All the available event properties are typed in **[TypeScript]** - go through them [here](https://github.com/vtex-apps/pixel-app-template/blob/master/react/typings/events.d.ts).
