@@ -11,7 +11,7 @@ Therefore, the same user identification is a key part of the proper functioning 
 The step-by-step below will guide you through the necessary configuration to enable the Pixel app to receive different user identifications and to evaluate whether the integration is allowed or not.
 
 1. Access the the app’s `manifest.json` file.
-2. Change the  `vendor` field value  (`vtex`) to the name of the VTEX account in which you are working.
+2. Change the  `vendor` field value  (`vtex`) to the name of the VTEX account in which you are working so that you'll be able to correctly publish the app later on.
 3. Change the `name` and `title` field values with the name you wish to give your app. You can check the app-naming best practices [here](https://vtex.io/docs/recipes/development/filling-the-application-form-for-development/#guidelines).
 4. Create a new field called `settingsSchema` and declare in it a JSON Schema to receive the needed user identifications. For example:
 
