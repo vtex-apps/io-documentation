@@ -326,9 +326,9 @@ if (canUseDOM) {
   window.addEventListener('message', handleEvents)
 }
 ```
-*This is a example of an event implementation in our [Google Tag Manager Pixel app](https://github.com/vtex-apps/google-tag-manager/blob/master/react/index.tsx).*
+*This is an example of an event implementation in our [Google Tag Manager Pixel app](https://github.com/vtex-apps/google-tag-manager/blob/master/react/index.tsx).*
 
-Below, you can find some store events you can work with in your Pixel app:
+Some store events you can work with in your Pixel app are, namely:
 
 - `addToCart`- Triggered when a product is added to the cart.
 - `removeItem` - Triggered when a product is removed from the cart
