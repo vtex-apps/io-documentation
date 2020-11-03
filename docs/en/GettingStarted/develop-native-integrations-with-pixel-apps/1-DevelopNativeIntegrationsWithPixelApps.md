@@ -1,4 +1,4 @@
-# Developing a Pixel app
+# Develop native integrations with Pixel apps
 
 Several [Pixel apps](https://vtex.io/docs/concepts/pixel-app) are already available through [VTEX Store Framework](https://vtex.io/docs/introduction/what-is-vtex-store-framework/), ensuring that your store has the means to natively integrate with the main third party solutions available on the market. 
 
