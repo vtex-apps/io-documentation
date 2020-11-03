@@ -69,5 +69,5 @@ If needed, you can also add more than one app user identification in the `proper
 
 In the example above, we added a new app user identification called `popupLayout`. 
 
-> ⚠️ *Do not forget to learn more about [JSON Schema](http://json-schema.org/understanding-json-schema/) before building your app's `settingSchema` field.* 
+> ℹ️ *Do not forget to learn more about [JSON Schema](http://json-schema.org/understanding-json-schema/) before building your app's `settingSchema` field.* 
 
