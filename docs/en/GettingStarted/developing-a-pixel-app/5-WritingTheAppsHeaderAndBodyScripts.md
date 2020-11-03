@@ -1,4 +1,4 @@
-# Defining the app's header and body scripts
+# Writing the app's header and body scripts
 
 If your Pixel app employs Javascript, then you’ll also need to add scripts to the store's `<header>` and/or `<body>` tags in order to fetch and send the needed data.
 
