@@ -1,4 +1,4 @@
-# Defining the app's JavaScript event listeners
+# Listening to store events
 
 In some cases, the service provided by the third party solution depends on store Events to properly work.
 
