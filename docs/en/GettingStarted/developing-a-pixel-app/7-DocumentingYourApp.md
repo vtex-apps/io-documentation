@@ -1,4 +1,4 @@
-# Creating the app documentation
+# Documenting your app
 
 Now that your Pixel app is defined, it is time to create its **documentation**! 
 
