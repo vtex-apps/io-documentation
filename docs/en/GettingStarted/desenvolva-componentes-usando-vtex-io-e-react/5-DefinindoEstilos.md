@@ -68,17 +68,6 @@ Por definir classes de CSS nesses moldes, a ferramenta de CSS Modules se torna l
 import styles from './styles.css'
 ```
 
-:warning: *Caso você esteja utilizando Typescript, o <code>import</code> irá acusar um erro. Para consertar isso, você deve criar um arquivo de definição no local <code>/react/typings/css.d.ts</code> contendo o seguinte conteúdo:*
-
-```jsx
-/* /react/typings/css.d.ts */
-declare module '*.css' {
-  type CssFiles = Record<string, string | undefined>
-  const CssObj: CssFiles
-  export default CssObj
-}
-```
-
 O `styles` importado para o seu componente será um objeto cujas chaves serão os nomes das classes criadas por você (`className`). Por exemplo:
 
 ```jsx
