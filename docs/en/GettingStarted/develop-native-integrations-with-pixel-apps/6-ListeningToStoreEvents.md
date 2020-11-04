@@ -9,7 +9,7 @@ For this scenario, it is fundamental to develop a script whose aim is to listen 
 1. Access your app's `react/index.tsx` file.
 2. Write your script according to your Pixel app needs. For example:
 
-```tsx
+```ts
 import { canUseDOM } from 'vtex.render-runtime'
 
 import push from './modules/push'
