@@ -11,9 +11,9 @@ Follow the instructions to install Toolbelt in your machine and get familiar wit
 Once VTEX IO’s CLI is installed, you can log in to your VTEX account by running in your terminal the following command:
 
 ```sh
-$ vtex login AccountName
+$ vtex login accountName
 ```
-> ⚠️ *Remember to replace `AccountName` with the name of the VTEX account in which you are working*.
+> ⚠️ *Remember to replace `accountName` with the name of the VTEX account in which you are working*.
 
 By running the command, a browser window will open and ask for your credentials.
 
@@ -25,7 +25,7 @@ When using VTEX IO, any interaction with an account happens in a [**workspace**]
 
 It works as a version of the account in which you are logged in, in a way that any development operation done using such a workspace will be isolated, separate from other workspaces and the public version of the account itself (called Master). 
 
-> ℹ️ *If you're used to working with Git, think of workspaces as **branches***.
+> ℹ️ *If you're used to working with Git, think of workspaces as **branches**.*
 
 As you log in to a VTEX store using VTEX IO, you are automatically in its master workspace, meaning you are in the version available to the end user.
 
@@ -54,7 +54,7 @@ Having created your own development workspace in VTEX IO, you can now go to your
 - `exampleworkspace` should be replaced with the name of the workspace that you've just created. 
 - `accountName` should be replaced with the name of the VTEX account in which you are working.
 
-> ℹ️ ***Tip**: you can simply run `vtex browse` in your terminal to automatically open your browser using the workspace and account in which you are working*.
+> ℹ️ *You can run `vtex browse` in your terminal to automatically open your browser using the workspace and account in which you are working*.
 
 Done! Your VTEX account is now connected to the VTEX IO platform and you are tecnichally ready to start developing your Pixel app!
 

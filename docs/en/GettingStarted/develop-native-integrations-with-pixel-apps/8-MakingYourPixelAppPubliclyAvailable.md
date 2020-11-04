@@ -19,7 +19,7 @@ Depending on what is chosen, some settings must be made in the `manifest.json` f
 
 Access the documentation on [Billing Options](https://vtex.io/docs/concepts/billing-options/) and follow the instructions to perform the needed settings according to the desired scenario for your app distribution. 
 
-> ℹ️ *Remember that [*linking*](https://vtex.io/docs/recipes/store/linking-an-app) the app you are working on will not suffice: you will also need to release it, publish it, have it installed in a production workspace for testing and, finally, validate it for *deploy* - as we shall see below.*
+> ℹ️ *Remember that [linking](https://vtex.io/docs/recipes/store/linking-an-app) the app you are working on will not suffice: you will also need to release it, publish it, have it installed in a production workspace for testing and, finally, validate it for *deploy* - as we shall see below.*
 
 ## Step 2 - Releasing a new version
 
@@ -71,12 +71,12 @@ Using your terminal, run the following command (replacing `workspaceName` with t
 $ vtex use workspaceName --production
 ```
 
-> ⚠️ *From this moment on, changes in your app code are no longer recommended, since production workspaces are able to receive traffic from users i.e. it can be accessed by other people other than you. If you want to make any changes to YOUR code, work on the new settings from a development workspace and then follow the steps detailed in this documentation again.*
+> ⚠️ *From this moment on, changes in your app code are no longer recommended, since production workspaces are able to receive traffic from users i.e. it can be accessed by other people other than you. If you want to make any changes in the code, work on the new settings from a development workspace and then follow the steps detailed in this documentation again.*
 
 To install the app in the new workspace, run the command below replacing the default values with real ones from your scenario:
 
 ```sh
-$ vtex install appVendor.appNname@appVersion
+$ vtex install appVendor.appName@appVersion
 ```
 
 ## Step 5 - Validating your app deploy 
@@ -113,9 +113,9 @@ $ vtex workspace promote
 
 It is also possible to add your brand new Pixel app in the catalog of the **VTEX App Store**.
 
-The [VTEX app store](https://extensions.vtex.com/) is a marketplace for plug&play solutions, and it can be used by any VTEX account interested in making its solutions available to other VTEX accounts as well.
+The [VTEX App Store](https://extensions.vtex.com/) is a marketplace for plug&play solutions, and it can be used by any VTEX account interested in making its solutions available to other VTEX accounts as well.
 
-To make your Pixel app available, check out the documentation [Submitting an app in the VTEX app store] (https://vtex.io/docs/recipes/development/submitting-your-app-in-the-vtex-app-store/).
+To make your new Pixel app part of our App Store, check out the documentation [Submitting an app in the VTEX App Store] (https://vtex.io/docs/recipes/development/submitting-your-app-in-the-vtex-app-store/).
 
 ---
 
