@@ -149,6 +149,12 @@
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
+      "appName": "vtex.product-comparison",
+      "title": "Product Comparison",
+      "description": "Displays a component that compares specifications of pre-selected SKUs.",
+      "url": "https://github.com/vtex-apps/product-comparison"
+    },
+    {
       "appName": "vtex.product-customizer",
       "title": "Product Customizer",
       "description": "Allows a product's attachments to be made available and ready to be chosen by users from the product page.",
