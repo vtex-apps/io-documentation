@@ -19,6 +19,8 @@ The VTEX IO Google Tag Manager native solution is compliant with Universal Analy
 - Product Click;
 - Product Detail Impression;
 - Add/Remove from Cart;
+- Promotion Impression;
+- Promotion Click;
 - Checkout;
 - Purchase.
 
@@ -117,6 +119,8 @@ Repeat the instructions above, now changing the event name for each of the follo
 - `payment`
 - `productDetail`
 - `productImpression`
+- `promotionClick`
+- `promoView`
 - `profile`
 - `removeFromCart`
 - `shipping`
@@ -157,6 +161,7 @@ To create a tag, click on **Tags** in the left menu and then on **New**:
 8. In the **Triggering** box, choose the following triggers:
   - Custom Event - `productDetail`
   - Custom Event - `productImpression`
+  - Custom Event - `promoView`
 9. Save the new tag as **Google Analytics - Enhanced Ecommerce - No Interaction**.
 
 #### Google Analytics - Enhanced Ecommerce - Yes Interaction
@@ -171,6 +176,7 @@ To create a tag, click on **Tags** in the left menu and then on **New**:
 7. In the **Triggering** box, choose the following triggers:
   - Custom Event - `addToCart`
   - Custom Event - `removeFromCart`
+  - Custom Event - `promotionClick`
 8. Save the new tag as **Google Analytics - Enhanced Ecommerce - Yes Interaction**.
 
 #### Google Analytics - Page View
