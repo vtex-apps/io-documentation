@@ -81,7 +81,8 @@
 
   - [Store Management](recipes/store-management)
 
-    - [Improving your store's performance](recipes/store-management/improving-your-stores-performance.md)
+    - [Best practices for optimizing performance](recipes/store-management/best-practices-for-optimizing-performance.md)
+    - [Safely enabling performance settings](recipes/store-management/safely-enabling-performance-settings.md)
     - [Enabling 404 pages](recipes/store-management/enabling-404-pages.md)
     - [Configuring a B2B environment](recipes/store-management/configuring-a-b2b-environment.md)
     - [Installing apps in live stores: best practices](recipes/store-management/installing-apps-in-live-stores-best-practices.md)
