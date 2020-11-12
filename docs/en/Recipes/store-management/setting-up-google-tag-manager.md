@@ -19,11 +19,13 @@ The VTEX IO Google Tag Manager native solution is compliant with Universal Analy
 - Product Click;
 - Product Detail Impression;
 - Add/Remove from Cart;
+- Promotion Impression;
+- Promotion Click;
 - Checkout;
 - Purchase.
 
 <div class="alert alert-info">
-In order to set the tracking of these events in Google Analytics, learn how to<a href="https://vtex.io/docs/recipes/store-management/setting-up-google-analytics-search-tracking/">set up Google Analytics search tracking</a> in your VTEX IO store.
+In order to set the tracking of these events in Google Analytics, learn how to <a href="https://vtex.io/docs/recipes/store-management/setting-up-google-analytics-search-tracking/">set up Google Analytics search tracking</a> in your VTEX IO store.
 </div>
 
 In order to set up Google Tag Manager in your store, you first must set up all necessary **variables**, **triggers** and **tags**. 
@@ -117,6 +119,8 @@ Repeat the instructions above, now changing the event name for each of the follo
 - `payment`
 - `productDetail`
 - `productImpression`
+- `promotionClick`
+- `promoView`
 - `profile`
 - `removeFromCart`
 - `shipping`
@@ -157,6 +161,7 @@ To create a tag, click on **Tags** in the left menu and then on **New**:
 8. In the **Triggering** box, choose the following triggers:
   - Custom Event - `productDetail`
   - Custom Event - `productImpression`
+  - Custom Event - `promoView`
 9. Save the new tag as **Google Analytics - Enhanced Ecommerce - No Interaction**.
 
 #### Google Analytics - Enhanced Ecommerce - Yes Interaction
@@ -171,6 +176,8 @@ To create a tag, click on **Tags** in the left menu and then on **New**:
 7. In the **Triggering** box, choose the following triggers:
   - Custom Event - `addToCart`
   - Custom Event - `removeFromCart`
+  - Custom Event - `productClick`
+  - Custom Event - `promotionClick`
 8. Save the new tag as **Google Analytics - Enhanced Ecommerce - Yes Interaction**.
 
 #### Google Analytics - Page View
