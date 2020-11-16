@@ -100,6 +100,7 @@
     - [Translating catalog content](recipes/store-management/translating-catalog-content.md)
     - [Cross-border stores content internationalization](recipes/store-management/cross-border-stores-content-internationalization.md)
     - [Managing landing pages in cross-border stores](recipes/store-management/managing-landing-pages-in-cross-border-stores.md)    
+    - [Indicating alternate versions of localized pages in cross border stores](recipes/store-management/indicating-alternate-pages-in-cross-border-stores.md)  
     - [Creating robots files for cross-border stores](recipes/store-management/creating-robots-files-for-cross-border-stores.md)
     - [Checking your store's binding id](recipes/store-management/checking-your-store-binding-id.md)
 
