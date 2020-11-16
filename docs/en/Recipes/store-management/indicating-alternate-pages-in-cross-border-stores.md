@@ -4,7 +4,7 @@ description: "Learn how to improve cross-border store's SEO by indicating the al
 date: "11/16/2020"
 tags: ["alternate", "cross-border", "landing", "page"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/indicating-alternates-pages-in-cross-border-stores.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/indicating-alternate-pages-in-cross-border-stores.md"
 ---
 
 # Indicating alternate versions of localized pages in cross border stores
