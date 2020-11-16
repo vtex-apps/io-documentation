@@ -17,42 +17,30 @@ However, since it is not possible to install an app that exists only in a local 
 
 1. Make sure the app you are about to publish has already been [released](https://vtex.io/docs/recipes/development/releasing-a-new-app-version).
 
-<div class="alert alert-warning">
-To publish your app, you must be logged into the account responsible for the app development. Make sure the app’s <code>vendor</code> is <b>equal</b> to the <code>account</code> you are logged into.
-</div>
+>⚠️ *To publish your app, you must be logged in to the account responsible for the app development. Make sure the app’s `vendor` is **equal** to the `account` you are logged in.*
 
 2. In your terminal, run the `vtex publish {appvendor}.{appname}@{appversion}` command.
 
-<div class="alert alert-warning">
-  <b>Remember to replace the values between the curly brackets according to your scenario.</b>
-</div>
+>⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
 
-By performing this action, you will turn the new app version in which you were working into a candidate version, which is an app version that meets all the basic requirements to be deployed.
+By performing this action, you will turn the new app version in which you were working into a **candidate version**.
 
-<div class="alert alert-info">
-Notice: you can install a candidate version on an account for testings by indicating to the Toolbelt the new app's exact version.
-</div>
+>ℹ️ *A candidate version is an app version that meets all the requirements needed to be deployed.*
+
+>ℹ️ *Notice: you can install a candidate version on an account for testings by indicating to the Toolbelt the new app's exact version.*
 
 3. Using a [Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace), [install](https://vtex.io/docs/recipes/development/installing-an-app) the candidate version by indicating to the Toolbelt the new app's exact version.
 
 4. Test the candidate version’s **stability** by means of an [A/B test](https://vtex.io/docs/recipes/store/running-native-ab-testing).
 
-<div class="alert alert-info">
-If you are releasing a <strong>beta</strong> version and all the app settings have already been tested, to follow to the next steps, you must release a non-beta version, publish it, install it in a production workspace, and test it once more using the A/B test.
-</div>
+>⚠️ *If you are releasing a **beta** version and have already tested all the app settings, to proceed to the next steps, you must first: release a non-beta version, publish it, install it in a production workspace, and test it once more using the A/B test.*
 
 5. If all the app changes have already been tested and everything is working as expected, run the `vtex deploy {appvendor}.{appname}@{appversion}` command. 
 
-<div class="alert alert-warning">
-After publishing an app, you must wait 7 minutes to deploy it. Otherwise, you'll receive an "Invalid state transition" error from the Toolbelt.
-</div>
+>⚠️ *After publishing an app, you must wait 7 minutes to deploy it. Otherwise, you'll receive an "Invalid state transition" error from the Toolbelt. However, if you are using a Toolbelt version higher than `2.118.0` and deploying a **hotfix**, you can use the `--force` flag to instantly deploy your app version.*
 
-<div class="alert alert-warning">
-<b>Remember to replace the values between the curly brackets according to your scenario.</b>
-</div>
+>⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
 
 By performing this action, you'll publish the candidate version as a stable version. Also, Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
 
-<div class="alert alert-info">
-Publishing an app is one of the steps to <b>making your code's new version public</b>. For more details on how to make your app available to your end-users and to better understand the full procedure, access the recipe on <a href="https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available">Making your new app version publicly available</a>.
-</div>
+>ℹ️ *Publishing an app is one of the steps to **making your code's new version public**. For more details on how to make your app available to your end-users and to better understand the full procedure, access the recipe on [Making your new app version publicly available](https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available).*
