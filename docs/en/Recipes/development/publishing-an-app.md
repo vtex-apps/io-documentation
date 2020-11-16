@@ -27,8 +27,6 @@ By performing this action, you will turn the new app version in which you were w
 
 >ℹ️ *A candidate version is an app version that meets all the requirements needed to be deployed.*
 
->ℹ️ *Notice: you can install a candidate version on an account for testings by indicating to the Toolbelt the new app's exact version.*
-
 3. Using a [Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace), [install](https://vtex.io/docs/recipes/development/installing-an-app) the candidate version by indicating to the Toolbelt the new app's exact version.
 
 4. Test the candidate version’s **stability** by means of an [A/B test](https://vtex.io/docs/recipes/store/running-native-ab-testing).
@@ -38,8 +36,6 @@ By performing this action, you will turn the new app version in which you were w
 5. If all the app changes have already been tested and everything is working as expected, run the `vtex deploy {appvendor}.{appname}@{appversion}` command. 
 
 >⚠️ *After publishing an app, you must wait 7 minutes to deploy it. Otherwise, you'll receive an "Invalid state transition" error from the Toolbelt. However, if you are using a Toolbelt version higher than `2.118.0` and deploying a **hotfix**, you can use the `--force` flag to instantly deploy your app version.*
-
->⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
 
 By performing this action, you'll publish the candidate version as a stable version. Also, Housekeeper will automatically update the new app stable version on all accounts that have the app installed.
 
