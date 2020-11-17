@@ -85,6 +85,7 @@
     - [Safely enabling performance settings](recipes/store-management/safely-enabling-performance-settings.md)
     - [Enabling 404 pages](recipes/store-management/enabling-404-pages.md)
     - [Configuring a B2B environment](recipes/store-management/configuring-a-b2b-environment.md)
+    - [Consulting B2B order statuses](recipes/store-management/consulting-b2b-order-statuses.md)
     - [Installing apps in live stores: best practices](recipes/store-management/installing-apps-in-live-stores-best-practices.md)
     - [Making your theme content public](recipes/store-management/making-your-theme-content-public.md)
     - [Understanding how store URL indexing works](recipes/store-management/understanding-how-store-url-indexing-works.md)
