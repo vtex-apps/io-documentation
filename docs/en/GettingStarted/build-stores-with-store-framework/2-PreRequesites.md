@@ -1,12 +1,12 @@
 # Prerequisites
 
-Now that you have completed the VTEX IO basic setup, it is time to make sure that you VTEX account already has:
+Now that you have completed the VTEX IO basic setup, it is time to make sure that your VTEX account already has:
 
 - Filled out the application form.
 - Installed the correct Edition app.
 - Implemented the VTEX Intelligent Search.
 
-These 3 prerequesites guarantee that your store is able to successfully use the VTEX Store Framework facing no technical errors due to implementation details. 
+These 3 prerequisites guarantee that your store is able to successfully use the VTEX Store Framework facing no technical errors due to implementation details. 
 
 Find below more info on each one of them and follow the instructions if necessary. 
 
