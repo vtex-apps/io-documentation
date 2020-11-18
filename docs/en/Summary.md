@@ -67,6 +67,7 @@
 
     - [Customizing the Header and Footer blocks by page](recipes/templates/customizing-the-header-and-footer-blocks-by-page.md)
     - [Best practices for rendering images](recipes/templates/best-practices-for-rendering-images.md)
+    - [Displaying asynchronous prices](recipes/templates/displaying-asynchronous-prices.md)
     - [Linking URLs in banners using Site Editor](recipes/templates/linking-urls-in-banners-using-site-editor.md)
     - [Configuring custom images for the SKU Selector](recipes/templates/configuring-custom-images-for-the-sku-selector.md)
     - [Using Flex Layout](recipes/templates/using-flex-layout.md)
