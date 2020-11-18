@@ -369,6 +369,12 @@
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
+      "appName": "vtex.sku-list",
+      "title": "SKU List",
+      "description": "B2B component responsible for rendering a SKU list in the product details page.",
+      "url": "https://github.com/vtex-apps/sku-list"
+    }, 
+    {
       "appName": "vtex.store-components",
       "file": "SkuSelector.md",
       "title": "SKU Selector",
