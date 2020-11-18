@@ -43,6 +43,7 @@
   - [Interfaces](concepts/interfaces)
   - [Peer Dependencies](concepts/peerdependencies)
   - [Policies](concepts/policies)
+  - [Properties](concepts/properties)
   - [Roles](concepts/roles)
   - [Routes](concepts/routes)
   - [Slots](concepts/slots)
