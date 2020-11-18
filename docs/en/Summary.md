@@ -38,6 +38,7 @@
   - [Billing Options](concepts/billing-options)
   - [Builders](concepts/builders)
   - [Cross-border stores](concepts/cross-border-stores)
+  - [Composition](concepts/composition)
   - [Dependencies](concepts/dependencies)
   - [Edition App](concepts/edition-app)
   - [Interfaces](concepts/interfaces)
