@@ -55,7 +55,7 @@ In this scenario, keep in mind that the blocks ordering matters. The `product-su
 
 ## Slots
 
-The `slots` composition allows you to declare child blocks using regular React props instead of declaring an array for it. 
+The `slots` composition, in turn, allows you to declare child blocks using regular React props instead of declaring an array for it. 
 
 ```json
 {
@@ -71,7 +71,7 @@ The `slots` composition allows you to declare child blocks using regular React p
   }
 }
 ```
-*The `icon-caret#point-up` has `children` composition, thereby it is declared in the `product-summary.shelf`'s children list.*
+*The `icon-caret#point-up` has `slots` composition, thereby it is declared as a prop in the `hello-world` block. Notice that the prop name can be any of your choosing and is usually defined by the block in which it is declared.*
 
 Check out the complete documentation for slots [here](https://vtex.io/docs/concepts/slots/)!
  
