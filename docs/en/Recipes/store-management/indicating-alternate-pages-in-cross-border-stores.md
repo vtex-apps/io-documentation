@@ -40,6 +40,7 @@ Hence, be aware that you'll need to perform the following step by step for each 
       declarer
       type
       id
+      binding
     }
   }
 }
@@ -69,6 +70,7 @@ mutation saveInternal($args: InternalInput!) {
         "declarer": "vtex.store@2.x",
         "type": "userRoute",
         "id": "vtex.store@2.x:store.custom::us-about-us",
+        "binding": "748aafcf-3572-456d-5dec-6ddb3f26e43f",
         "alternates": [
             {
                 "binding": "7cf37a3b-efc0-4e47-8201-d8b58kd4d3fd",
@@ -83,7 +85,7 @@ mutation saveInternal($args: InternalInput!) {
 }
 ```
 
-- Replace the `from`, `declarer`, `type`, and `id` values with the information obtained in step 4.
+- Replace the `from`, `declarer`, `type`, `id`, and `binding` values with the information obtained in step 4.
 - Regarding the `alternates` field, fill in the `binding` and `path` values according to the alternate landing page's data.
 
 > ⚠️ *If you don't know the `binding` values of your stores, follow [this step by step on checking your account's `binding` ids](https://developers.vtex.com/docs/checking-your-stores-binding-id).*
