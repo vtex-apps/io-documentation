@@ -40,6 +40,14 @@ Finally, you may want to remove your landing page from the *default binding*. Fo
       declarer
       type
       id
+      query
+      binding
+      endDate
+      imagePath
+      imageTitle
+      resolveAs
+      origin
+      disableSitemapEntry
     }
   }
 }
