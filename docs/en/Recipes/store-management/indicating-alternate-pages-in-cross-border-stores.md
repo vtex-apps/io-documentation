@@ -15,7 +15,15 @@ This way, search engines will be aware of the different versions of your page an
 
 > ℹ️ *Notice that this is especially useful for improving your store's SEO.*
 
-For implementation details, check the following step by step.
+Keep in mind that when indicating alternate versions of a page, you must do it in pairs. For example, if you point the USA version of a page to a Brazilian variant, then the Brazilian page must point to the USA version as well.
+
+By doing that, search engines are capable of understanding the relationship between those two pages, avoiding issues such as indicating the incorrect title for a given page or wrong indexing.
+
+![Frame 15](https://user-images.githubusercontent.com/60782333/99296845-2a640b80-2826-11eb-978a-a36bd1d49dd5.png)
+
+Hence, be aware that you'll need to perform the following step by step for each localized version of your landing page.
+
+>ℹ️ *It's important for search engines that each version of a page indicates itself as well as the other localized versions as `alternates`. However, **you don't need to worry about self-referencing** since we already do that for you.*
 
 ## Step by step
 
@@ -79,3 +87,5 @@ mutation saveInternal($args: InternalInput!) {
 - Regarding the `alternates` field, fill in the `binding` and `path` values according to the alternate landing page's data.
 
 > ⚠️ *If you don't know the `binding` values of your stores, follow [this step by step on checking your account's `binding` ids](https://developers.vtex.com/docs/checking-your-stores-binding-id).*
+
+Once you perform these changes, remember to repeat the process from step 4 as many times as the number of existing versions of that landing page, using each `alternate` page as the `path`.
