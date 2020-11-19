@@ -76,8 +76,15 @@ mutation saveInternal($args: InternalInput!) {
         "from": "/US/about-us",
         "declarer": "vtex.store@2.x",
         "type": "userRoute",
-        "id": "vtex.store@2.x:store.custom::us-about-us",
-        "binding": "7cf37a3b-efc0-4e47-8201-d8b58kd4d3fd"
+        "id": "vtex.store@2.x:store.custom::{URL}",
+        "query": null,
+        "binding": "7cf37a3b-efc0-4e47-8201-d8b58kd4d3fd",
+        "endDate": null,
+        "imagePath": null,
+        "imageTitle": null,
+        "resolveAs": null,
+        "origin": "vtex.pages-graphql@2.99.1",
+        "disableSitemapEntry": null
     }
 }
 ```
