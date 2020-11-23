@@ -369,6 +369,12 @@
       "url": "https://github.com/vtex-apps/store-components"
     },
     {
+      "appName": "vtex.sku-list",
+      "title": "SKU List",
+      "description": "B2B component responsible for rendering a SKU list in the product details page.",
+      "url": "https://github.com/vtex-apps/sku-list"
+    }, 
+    {
       "appName": "vtex.store-components",
       "file": "SkuSelector.md",
       "title": "SKU Selector",
@@ -404,6 +410,12 @@
       "title": "Store Link",
       "description": "Provides blocks responsible for displaying links in other theme blocks, such as the Product Summary.",
       "url": "https://github.com/vtex-apps/store-link"
+    },
+    {
+      "appName": "vtex.store-locator",
+      "title": "Store Locator",
+      "description": "Uses the Pickup points information to add the Store Locator functionality to the Store.",
+      "url": "https://github.com/vtex-apps/store-locator"
     },
     {
       "appName": "vtex.store-video",
@@ -505,6 +517,12 @@
       "title": "Bluecore",
       "description": "VTEX Bluecore native integration",
       "url": "https://github.com/vtex-apps/bluecore"
+    },
+    {
+      "appName": "vtex.blueknow",
+      "title": "Blueknow",
+      "description": "VTEX Blueknow native integration",
+      "url": "https://github.com/vtex-apps/blueknow"
     },
     {
       "appName": "vtex.btg360",
@@ -613,6 +631,12 @@
       "title": "JivoChat",
       "description": "VTEX JivoChat native integration",
       "url": "https://github.com/vtex-apps/jivochat"
+    },
+    {
+      "appName": "vtex.kelkoo",
+      "title": "Kelkoo",
+      "description": "VTEX Kelkoo native integration",
+      "url": "https://github.com/vtex-apps/kelkoo"
     },
     {
       "appName": "vtex.konduto-antifraud",
