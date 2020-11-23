@@ -96,11 +96,10 @@
       "url": "https://github.com/vtex-apps/minicart"
     },
     {
-      "appName": "vtex.store-components",
-      "file": "newsletter.md",
+      "appName": "vtex.store-newsletter",
       "title": "Newsletter",
-      "description": "Store component's block that dStore component's block that displays a newsletter form.",
-      "url": "https://github.com/vtex-apps/store-components"
+      "description": "Provides a set of blocks that you can use to create a newsletter subscription form.",
+      "url": "https://github.com/vtex-apps/store-newsletter"
     },
     {
       "appName": "vtex.store-components",
