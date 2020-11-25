@@ -76,6 +76,7 @@
     - [Building a Product Details Page](recipes/templates/building-a-product-details-page.md)
     - [Creating modals using icons](recipes/templates/creating-modals-using-icons.md)
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
+    - [Associating a custom page to a content type](recipes/templates/associating-a-custom-page-to-a-content-type.md)
     - [Creating a custom search results page](recipes/templates/creating-a-custom-search-results-page.md)
     - [Using the Fold blocks](recipes/templates/using-the-fold-blocks.md)
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
