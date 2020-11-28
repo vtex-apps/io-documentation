@@ -39,7 +39,7 @@ It will be responsible for:
 
 If you want to release a **Beta** version of your app, run the command `vtex release major beta` on your terminal instead. It will perform the same actions as the previous command, with the difference that you will be releasing a *beta* version of your application instead of *stable*.
 
-> ⚠️ *Don't forget to log in to the desired VTEX account before realeasing the new version - the app's `vendor` should be the VTEX account you are working on!*
+> ⚠️ *Don't forget to log in to the desired VTEX account before releasing the new version - the app's `vendor` should be the VTEX account you are working on!*
 
 ## Step 3 - Publishing the app in the VTEX IO platform 
 
@@ -47,7 +47,7 @@ Once the application has been released, it must be properly installed in other w
 
 It is not possible, however, to install an app that only exists in your local environment: it will be necessary to *publish* your new Pixel app in the VTEX IO platform!
 
-> ℹ️ *Notice that, until this step, the app was not published in the plataform. The `vtex release major` command only automated actions for the app versioning.*
+> ℹ️ *Notice that, until this step, the app was not published in the platform. The `vtex release major` command only automated actions for the app versioning.*
 
 Using your terminal, access the app directory and run the following command:
 

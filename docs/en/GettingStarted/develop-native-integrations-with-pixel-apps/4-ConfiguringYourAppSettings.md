@@ -4,7 +4,7 @@ When creating a native integration with a third party solution, it is essential 
 
 Such a link is always done through what we call **user identification**. Made available by the third party solution with which you will enable the integration, user identification is what grants permissions for using the service offered by it.
 
-Think of Google Tag Manager, for example: to use it, you need to have an `ID` previously provided. That’s an example of a user identification, whose value is individual and intransferable, granting you all the needed permissions to actually the solution.
+Think of Google Tag Manager, for example: to use it, you need to have an `ID` previously provided. That’s an example of a user identification, whose value is individual and untransferable, granting you all the needed permissions to actually the solution.
 
 Therefore, the user identification is a key part of the proper functioning of your Pixel app, since it **ensures the integration based on permissions granted to each account**.
 
