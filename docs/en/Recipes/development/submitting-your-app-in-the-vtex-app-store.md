@@ -40,9 +40,7 @@ If the form was correctly filled out and the team agrees that the application is
 
 This contract, provided by the VTEX team to you, will grant VTEX distribution rights over the app. In addition, it is going to sign your account up to the VTEX **Network Partner Program** if you are not already a member.
 
-<div class="alert alert-info">
-The <a href="https://network.vtex.com/terms_of_use">Network Partner Program</a> provides access to a VTEX account, allowing you to test and develop new apps and have access to tech support from the VTEX partner team. By default, membership requires a monthly fee, but in scenarios where the development aims to add an app to the App Store, the fee can be waived for at least 6 months.
-</div>
+>ℹ️ *The [Network Partner Program](https://network.vtex.com/terms_of_use) provides access to a VTEX account, allowing you to test and develop new apps and have access to tech support from the VTEX partner team.*
 
 ### Step 3 - Registering as a VTEX App Store seller
 
@@ -162,9 +160,7 @@ With the first two prerequisites met, you're ready to send you app through to VT
 
 After step 3, a GitHub repository will be automatically created and a Pull Request link will be displayed on your CLI.
 
-<div class="alert alert-info">
-You'll be added to the repository with your GitHub handle and will have read-only permissions to be able to follow your app's review process. Comments can be followed in the same repository and after performing adjustments, any new app version can be submitted following the step 2 above, thereby creating a new `branch` containing the new version in the same repository. 
-</div>
+>ℹ️ *You'll be added to the repository with your GitHub handle and will have read-only permissions to be able to follow your app's review process. Comments can be followed in the same repository and after performing adjustments, any new app version can be submitted following the step 2 above, thereby creating a new `branch` containing the new version in the same repository.*
 
 ![submitting-github-terminal](https://user-images.githubusercontent.com/52087100/92964915-483e7a00-f44b-11ea-8bbf-f8f4e8c4da32.png)
 
