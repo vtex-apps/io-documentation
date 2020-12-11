@@ -64,6 +64,6 @@ Having created your own development workspace in VTEX IO, you can now go to your
 <strong>Tip</strong>: you can simply run <code>vtex browse</code> in your terminal to automatically open your browser using the workspace and account in which you are working.
 </div>
 
-Done! Your store is now connected to the VTEX IO platform and you are tecnichally ready to implement the VTEX Store Framework!
+Done! Your store is now connected to the VTEX IO platform and you are technically ready to implement the VTEX Store Framework!
 
 

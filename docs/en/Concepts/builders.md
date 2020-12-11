@@ -23,7 +23,7 @@ When running an IO app, each builder converts the files included in its correspo
 
 One important aspect is that an app can have as many builders as you want. That allows bundling front and backend development and delivering your solution with just one package.
 
-Notice that by dividing responsibilities into smaller builders, we are able to evolve them separately - fastly and with fewer stop-the-world breaking changes. Thus, it's expected from a builder to:
+Notice that by dividing responsibilities into smaller builders, we are able to evolve them separately - quickly and with fewer stop-the-world breaking changes. Thus, it's expected from a builder to:
 
 - Have very *well-defined* and *minimal responsibilities*.
 - Be *abstract* and *opinionated* according to its goals.

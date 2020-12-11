@@ -149,7 +149,7 @@ Following our example, we would have something like:
 
 It's also possible to apply modifiers to a specific CSS Handle.
 
-Handle modifiers work as identifiers. They are responsible for overriding the HTML element style according to the behaviour assumed by them on the interface, according to user interaction. 
+Handle modifiers work as identifiers. They are responsible for overriding the HTML element style according to the behavior assumed by them on the interface, according to user interaction. 
 
 Let's suppose you have a handle called `handles.slide` for each slide of a slider and you want to customize the current visible slide via CSS. For this purpose, you should add a modifier to `handles.slide`, allowing the customization according to the user navigation.
 

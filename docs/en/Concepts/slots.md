@@ -68,7 +68,7 @@ In practice, users would pass this value to the theme *block* `hello-world`, as 
 }
 ```
 
-According to the slots composition logic, there is no need to use the `allowed` field in the block's interface definition. the componentn displaying funciona de toda forma, regardless of 
+According to the slots composition logic, there is no need to use the `allowed` field in the block's interface definition the component it displays works independently.
 
 ## What is the difference between slots and blocks composition?
 

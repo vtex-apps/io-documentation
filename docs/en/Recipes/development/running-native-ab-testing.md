@@ -103,7 +103,7 @@ Before completing your A/B test, it's important to understand the comparative an
 
 - **Start Date** - Date and time for the beginning of the test;
 - **Running Time** - Test duration;
-- **Probability B beats A** - Probability, in percentage points, that the production workspace is better for your store than the current master workspace. This calculation is based on the number of sessions and number of sessions with completed sales. Notice: if this metric's result is greater than `10%`, the production workspace is ble to become the winner;
+- **Probability B beats A** - Probability, in percentage points, that the production workspace is better for your store than the current master workspace. This calculation is based on the number of sessions and number of sessions with completed sales. Notice: if this metrics result is greater than `10%`, the production workspace is ble to become the winner;
 - **Winner** - Workspace you chose as winner. 
 
 <div class="alert alert-warning">

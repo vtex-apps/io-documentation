@@ -56,6 +56,6 @@ Having created your own development workspace in VTEX IO, you can now go to your
 
 > ℹ️ *You can run `vtex browse` in your terminal to automatically open your browser using the workspace and account in which you are working*.
 
-Done! Your VTEX account is now connected to the VTEX IO platform and you are tecnichally ready to start developing your Pixel app!
+Done! Your VTEX account is now connected to the VTEX IO platform and you are technically ready to start developing your Pixel app!
 
 

@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 Although useful to enhance user experience, displaying the most up-to-date prices comes at the heavy cost of increasing your store's page response time. 
 
-This is due to the fact that fetching the newest prices in your store database relies on making a new request to the server everytime a product is rendered on the interface. 
+This is due to the fact that fetching the newest prices in your store database relies on making a new request to the server every time a product is rendered on the interface. 
 
 A favorable way out is to set your store to fetch product prices on the client-side, promoting a decrease of response time in your pages in order to display the *asynchronous prices*.
 
