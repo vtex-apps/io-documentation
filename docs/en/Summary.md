@@ -74,6 +74,7 @@
     - [Using Flex Layout](recipes/templates/using-flex-layout.md)
     - [Building a Carousel using Slider Layout](recipes/templates/building-a-carousel-using-slider-layout.md)
     - [Building a Product Details Page](recipes/templates/building-a-product-details-page.md)
+    - [Building a horizontal Product Summary](recipes/templates/building-a-horizontal-product-summary.md)
     - [Creating modals using icons](recipes/templates/creating-modals-using-icons.md)
     - [Creating a new custom page](recipes/templates/creating-a-new-custom-page.md)
     - [Associating a custom page to a content type](recipes/templates/associating-a-custom-page-to-a-content-type.md)
