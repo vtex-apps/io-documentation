@@ -4,7 +4,7 @@ description: "Find out how to disable automatic translation in your store."
 date: "11/01/2021"
 tags: ["translation", "disable", "messages"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-managements/disabling-automatic-translation.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/disabling-automatic-translation.md"
 ---
 
 # Disabling automatic translation
@@ -37,4 +37,4 @@ To disable the automatic translation service, check the following section.
 4. Uncheck the following checkbox: **Enable Automatic Translations**.
 5. Save your changes.
 
-That's it! Now, messages that don't have custom translations won't be automatically translated anymore.
+That's it! Now, the messages that don't have custom translations won't be automatically translated anymore.
