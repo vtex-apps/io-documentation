@@ -67,6 +67,7 @@
   - [Templates](recipes/templates)
 
     - [Customizing the Header and Footer blocks by page](recipes/templates/customizing-the-header-and-footer-blocks-by-page.md)
+    - [Building a search results page with multiple layouts](recipes/templates/building-a-search-results-page-with-multiple-layouts.md)
     - [Best practices for rendering images](recipes/templates/best-practices-for-rendering-images.md)
     - [Displaying asynchronous prices](recipes/templates/displaying-asynchronous-prices.md)
     - [Linking URLs in banners using Site Editor](recipes/templates/linking-urls-in-banners-using-site-editor.md)
