@@ -62,13 +62,19 @@ Por definir classes de CSS nesses moldes, a ferramenta de CSS Modules se torna l
 }
 ```
 
-3. Ainda na pasta `react`, acesse o arquivo do componente sendo customizado e importe o arquivo `styles`, criado no passo 1:
+3. Ainda na pasta `react`, acesse o arquivo do componente sendo customizado e importe o arquivo `styles`, criado no passo 1. Por exemplo:
 
 ```jsx
 import styles from './styles.css'
 ```
 
-O `styles` importado para o seu componente será um objeto cujas chaves serão os nomes das classes criadas por você (`className`). Por exemplo:
+4. É possível também importar o arquivo `styles` de modo que as classes de CSS a serem geradas sejam privadas, isso é, sejam geradas com um identificador único (*hash*) ao invés do formato tradicional `vendor-app-major-x-classname`. Para esse fim, você deve importar seguindo o modelo abaixo:
+
+```jsx
+import styleModule from './style.module.css'
+```
+
+5. A partir daí, o `styles` importado para o seu componente será um objeto cujas chaves serão os nomes das classes criadas por você (`className`). Por exemplo:
 
 ```jsx
 /* /react/MyButton.tsx */
@@ -83,7 +89,14 @@ export default function MyButton() {
 }
 ```
 
-Salve as mudanças efetuadas e faça o [link](https://vtex.io/docs/recipes/development/linking-an-app/) do seu app. Ao ser renderizado e inspecionado, o componente agora apresentará a seguinte estrutura HTML:
+
+<div class="alert alert-info">
+Lembre-se que o nome das classes criadas dependerão do modelo de <i>import</i> feito por você (passo 3 ou passo 4 desta seção). 
+</div>
+
+6. Salve as mudanças efetuadas e faça o [link](https://vtex.io/docs/recipes/development/linking-an-app/) do seu app. 
+
+Ao ser renderizado e inspecionado, o componente agora apresentará a seguinte estrutura HTML caso você tenha optado por seguir o modelo de *import* apresentado no passo 3:
 
 ```html
 <button class="vtex-my-app-name-0-x-myButton">My button</button>
