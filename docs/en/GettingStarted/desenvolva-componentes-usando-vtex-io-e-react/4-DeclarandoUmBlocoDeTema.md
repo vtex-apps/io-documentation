@@ -46,7 +46,7 @@ Ao seguir o passo a passo, lembre-se de substituir os valores de acordo com o ce
 3. Uma vez no arquivo, adicione o código exemplo abaixo (substituindo os valores de acordo com seu cenário):
 
 ```jsx
-import { React } from 'react'
+import React from 'react'
 
 const HelloWorld = () => <div>Hello, World!</div>
 
