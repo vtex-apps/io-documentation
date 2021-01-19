@@ -46,7 +46,7 @@ Neste primeiro momento, é fundamental que essas informações básicas do novo 
 
 ```diff
   "dependencies": {
-+   "vtex.styleguide: 9.x"
++   "vtex.styleguide": "9.x"
 }
 ```
 
