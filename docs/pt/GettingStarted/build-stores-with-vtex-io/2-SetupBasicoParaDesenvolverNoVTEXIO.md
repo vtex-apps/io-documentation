@@ -12,7 +12,7 @@ Em seguida, digite `yarn global add vtex` no terminal do seu computador.
 $ yarn global add vtex
 ```
 
->ℹ️ *Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.*
+>ℹ️ *Para confirmar que a instalação ocorreu normalmente você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.*
 
 ## Login
 
