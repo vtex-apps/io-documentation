@@ -23,7 +23,7 @@ Learn in the instructions below how to use the powerful combination between the 
 
 > ℹ️ *This recipe requires previous understanding of the [Flex Layout app](https://vtex.io/docs/components/layout-blocks/vtex.flex-layout/). It is strongly advised that you read the app documentation before performing the steps below!* 
 
-1. Make sure the Flex Layout app has been declared as a theme's dependency in the `manifest.json` file:
+1. Make sure the Layout app has been declared as a theme's dependency in the `manifest.json` file:
 
 ```json
 "dependencies": {
