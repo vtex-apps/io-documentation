@@ -1,6 +1,6 @@
 # *Setup* básico para desenvolver no VTEX IO
 
-Todo desenvolvimento no VTEX IO começa com o [**Toolbelt**](*link*), nossa CLI (Command Line Interface) que permite fazer login, desenvolver novas [apps](*link*) e gerenciar as já instaladas.
+Todo desenvolvimento no VTEX IO começa com o [**Toolbelt**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference), nossa CLI (Command Line Interface) que permite fazer login, desenvolver novas *apps* e gerenciar as já instaladas.
 
 ## VTEX IO Toolbelt
 
@@ -26,7 +26,7 @@ Isso abrirá uma janela do seu navegador que solicitará suas credenciais.
 
 Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descobrir qual conta e *workspace* estão sendo usados pelo terminal.
 
-![]("https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png"
+![exemplo](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
   
 ## Criando seu próprio *workspace*
 
@@ -42,7 +42,7 @@ Isso muda o seu Toolbelt para um *workspace* chamado `nomeexemplo` e o cria se e
 
 ![vtex-use-nomeexemplo](https://user-images.githubusercontent.com/52087100/61886135-7ffc0280-aed5-11e9-983f-4a76615d0574.png)
 
->⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no `workspace` definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt `vtex use master`, por exemplo.*
+>⚠️ *O **vtex use** faz com que todas as suas operações passem a ocorrer no *workspace* definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt **vtex use master**, por exemplo.*
 
 Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na sua loja acessando:
 
