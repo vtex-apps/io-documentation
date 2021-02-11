@@ -2,7 +2,7 @@
 
 ## How documentation works in VTEX IO
 
-Documentation in VTEX IO is built with the mindset that developers should have it at hand, in order to encourage its scaling and maintenance. Therefore, what that means is that all [VTEX Developer Portal](https://developers.vtex.com/) content is dynamically rendered from the code of each and every app in VTEX IO's registry, using the **Docs Builder**. 
+Documentation in VTEX IO is built with the mindset that developers should have it at hand, in order to encourage its scaling and maintenance. Therefore, what that means is that all [VTEX Developer Portal](https://developers.vtex.com/) content is statically rendered from the code of each and every app in VTEX IO's registry, using the **Docs Builder**. 
 
 ## Docs Builder
 
