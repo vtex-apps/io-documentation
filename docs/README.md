@@ -2,11 +2,11 @@
 
 ## How documentation works in VTEX IO
 
-Documentation in VTEX IO is built with the mindset that developers should have it at hand, in order to encourage its scaling and maintenance. Therefore, what that means is that all [VTEX IO Docs](https://vtex.io/docs) content is dynamically rendered from the code of each and every app in VTEX IO's registry, using the **Docs Builder**. 
+Documentation in VTEX IO is built with the mindset that developers should have it at hand, in order to encourage its scaling and maintenance. Therefore, what that means is that all [VTEX Developer Portal](https://developers.vtex.com/) content is dynamically rendered from the code of each and every app in VTEX IO's registry, using the **Docs Builder**. 
 
 ## Docs Builder
 
-The Docs Builder is a VTEX IO builder that access the `/docs` folder contained in the app's code, reading its markdown content and rendering it as a page in [VTEX IO Docs](https://vtex.io/docs).
+The Docs Builder is a VTEX IO builder that access the `/docs` folder contained in the app's code, reading its markdown content and rendering it as a page in [VTEX Developer Portal](https://developers.vtex.com/).
 
 ![diagram (1)](https://user-images.githubusercontent.com/18701182/64049859-9fc5bc80-cb4c-11e9-8072-4200ead73e9a.png)
 
@@ -14,13 +14,13 @@ Take for instance the `product-identifier` app. Looking at the app's content str
 
 ![image](https://user-images.githubusercontent.com/18701182/64050596-f2a07380-cb4e-11e9-8ad2-69cc7cd850ff.png)
 
-That will render a page in [VTEX IO Docs](https://vtex.io/docs) with a custom URL that makes reference to the app: 
+That will render a page in [VTEX Developer Portal](https://developers.vtex.com/) with a custom URL that makes reference to the app: 
 
-[vtex.io/docs/app/**vtex.product-identifier**](https://vtex.io/docs/app/vtex.product-identifier)
+[https://developers.vtex.com/vtex-developer-docs/docs/**vtex-product-identifier**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-identifier)
 
 The page created is as follows:
 
-![image](https://user-images.githubusercontent.com/18701182/64051239-d00f5a00-cb50-11e9-93d1-29974d9803a4.png)
+![image](https://user-images.githubusercontent.com/67089688/107689913-3118e800-6c88-11eb-9533-346ea698ee45.png)
 
 ## Structuring an app so that it can be built with Docs Builder
 
