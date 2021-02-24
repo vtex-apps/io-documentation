@@ -19,7 +19,7 @@ However, since it is not possible to install an app that exists only in a local 
 
 >⚠️ *To publish your app, you must be logged in to the account responsible for the app development. Make sure the app’s `vendor` is **equal** to the `account` you are logged in.*
 
-2. In your terminal, run the `vtex publish {appvendor}.{appname}@{appversion}` command.
+2. In your terminal, run the `vtex publish` command in the folder of your app.
 
 >⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
 
