@@ -151,6 +151,7 @@ Once you've configured the app assets, it is time to submit the app's data for e
 
 - Have a [**GitHub**](https://github.com/) account (since your project evaluation during the homologation process is made through Pull Requests).
 - [Publish your app on the VTEX IO development platform](https://vtex.io/docs/recipes/development/publishing-an-app/). Remember to publish the app in the VTEX account in which you are working and in a [workspace](https://vtex.io/docs/concepts/workspace/) that can be tested by the team.
+- [Deploy your app on the VTEX IO development platform](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available#step-6---deploying-the-app-stable-version).
 
 With the first two prerequisites met, you're ready to send you app through to VTEX's homologation process:
 
