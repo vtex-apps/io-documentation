@@ -9,7 +9,14 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/e
 
 # Filling the Application form for development
 
-VTEX IO works as a **closed beta solution**, meaning that it's only open to a small group of developers.
+The VTEX IO platform currently works as a **closed beta solution**, only accessible for a small group of developers, for the following development projects: 
+
+- **Custom Admin Apps**
+- **Custom back-end Apps**
+- **Custom Pixel apps**
+- **Custom mobile Apps**
+
+> ℹ️ *Every VTEX account and partner can freely use the VTEX IO to develop custom storefront components, meaning that the platform works as an open beta solution when it comes to React projects. The Application form is therefore not needed for this scenario.*
 
 To become part of this group, you need to first fill in the [**Application form**](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform) which is used by our product team to properly peruse your development project and grant you all the necessary permissions after your project has been approved.
 
@@ -39,7 +46,7 @@ The most important practice is to **understand which service your app is meant t
 
 The app name filled in our Application form must be permanent. In other words, this means that you should be careful when choosing it once the name filled in also must be the one used in the app's `manifest.json` file. 
 
-On the VTEX IO platform, apps' names are *[kebab case](https://en.wiktionary.org/wiki/kebab_case)*. Basically, they must be comprised of lowercase letters separated by hyphens. Special characters, such as `*` and `@`, and numbers in the beginning of the name are not recommended.
+On the VTEX IO platform, apps' names are *[kebab cased](https://en.wiktionary.org/wiki/kebab_case)*. Basically, they must be comprised of lowercase letters separated by hyphens. Special characters, such as `*` and `@`, and numbers in the beginning of the name are not recommended.
 
 When choosing the app name, remember: it should **concisely express the app's purpose.** 
 
@@ -64,11 +71,9 @@ Your development project should be **as descriptive as possible!** This means th
 #### Dont's
 
 - "*It's a marketplace integration.*"
-- "`*It's for developing this store's components.*"
 
 #### Do's
 
 - "*This app will integrate a VTEX Storefront with Instagram API, allowing merchants to display their latests Instagram posts and stories. It will also allow style customization via Admin. We also need a backend service because of the external service's API quotas, since an application key is necessary for high usage.*"
-- "*The account I'm targeting with this app needs a frontend component to show the customer where the nearest physical store is. Using the browser's geolocalization API, it fetches all the pickup points available on vtex.store-graphql and displays the nearest one.*"
 
 If you have any question about these guidelines or about the Application form, feel free to contact our team on [Store Discussion](http://github.com/vtex-apps/store-discussion/)!
