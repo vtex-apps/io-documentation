@@ -22,7 +22,7 @@ Check the following section to learn how to [create](#creating-url-redirects), [
 1. Follow our [CSV file template](#csv-file-template) and create a new `.csv` file with the redirects you want to create. You can use Excel or Google sheets, for example.
 2. Save the file under a name of your choice.
 4. Using the terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference), log in to your VTEX account.
-5. Import redirects to your acccount by running the following command:
+5. Import redirects to your account by running the following command:
 
 ```
 vtex redirects import {CSVpath}
@@ -37,7 +37,7 @@ Once your file is processed, the redirects will take effect. Notice that this mi
 1. Follow our [CSV file template](#csv-file-template) and create a new `.csv` file with the redirects you want to delete. You can use Excel or Google sheets, for example.
 2. Save the file under a name of your choice.
 3. Using the terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log in to your VTEX account.
-4. Delete redirects from your acccount by running the following command:
+4. Delete redirects from your account by running the following command:
 
 ```
 vtex redirects delete {CSVpath}
@@ -64,7 +64,7 @@ Check the [CSV file template](#csv-file-template) to understand the meaning of e
 
 To create or delete URL redirects in your store, you must create a `.csv` file as in the following example.
 
-![csv-file-url-redirect](https://raw.githubusercontent.com/vtex-apps/io-documentation/update/managing-url-redirects/docs/en/Recipes/store-management/managing-URL-redirects-1.png)
+![csv-file-url-redirect](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/managing-URL-redirects-1.png?raw=true)
 
 Notice that the file must contain a row with four columns, and the following values: `from`, `to`, `type` and `endDate`.
 
@@ -72,7 +72,7 @@ Notice that the file must contain a row with four columns, and the following val
 
 Under the first row of your `.csv` file, you must enter the `from`, `to`, `type`, and `endDate` values corresponding to the redirects you want to create or delete, as in the following example:
 
-![urls-redirect-csv-file](https://github.com/vtex-apps/io-documentation/blob/7ab26a6807313ed82dbd715a4b779eeba50971da/docs/en/Recipes/store-management/managing-URL-redirects-2.png?raw=true)
+![urls-redirect-csv-file](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/managing-URL-redirects-2.png?raw=true)
 
 Check in the following the meaning of each one of these fields:
 
@@ -87,9 +87,9 @@ Keep in mind that:
 
 - The `from` column can only receive relative paths.
 - The `to` column can receive either relative paths (e.g., `/blouse/p?skuId=200`) or a full URL (e.g., `https://myotherstore.com`).
-- `TEMPORARY` redirects receive the `302` status code, while `PERMANENT` redirects receives the `301` status code.
+- `TEMPORARY` redirects receive the `302` status code, while `PERMANENT` redirects receive the `301` status code.
 - The `endDate` must be left empty if the redirect is `PERMANENT`.
 
-<div style="text-align: right"><a href="#creating-url-redirects">Creating URL redirects 🔼</a></div><br>
-<div style="text-align: right"><a href="#deleting-url-redirects">Removing URL redirects 🔼</a></div><br>
+<div style="text-align: right"><a href="#creating-url-redirects">Creating URL redirects 🔼</a></div>
+<div style="text-align: right"><a href="#deleting-url-redirects">Removing URL redirects 🔼</a></div>
 <div style="text-align: right"><a href="#verifying-url-redirects">Verifying URL redirects 🔼</a></div>
