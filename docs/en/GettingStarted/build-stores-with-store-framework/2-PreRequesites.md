@@ -2,7 +2,7 @@
 
 Now that you have completed the VTEX IO basic setup, it is time to make sure that your VTEX account already has:
 
-- Filled out the application form.
+- Filled out the Store Framework Application form.
 - Installed the correct Edition app.
 - Implemented the VTEX Intelligent Search.
 
@@ -10,7 +10,7 @@ By meeting these three prerequisites, you guarantee that your store is apt to us
 
 Find below more info on each one of them and follow the instructions if necessary. 
 
-## Filling out the Application form
+## Filling out the Store Framework Application form
 
 As an open beta, Store Framework is included by default in VTEX contracts, being available to any VTEX store at no additional cost.
 
