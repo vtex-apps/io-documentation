@@ -1,7 +1,7 @@
 ---
 title: Developing custom storefront components
 description: "Learn the guidelines adopted by our very own product team to cooperate with your development journey using Store Framework, VTEX IO and the React technology."
-date: "2021-03-09"
+date: "2021-03-12"
 tags: ["storefront", "component", "react", "development", "block", "best-practices"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/edit/docs/en/Recipes/development/developing-custom-storefront-components.md"
