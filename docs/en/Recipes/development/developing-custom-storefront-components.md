@@ -124,15 +124,15 @@ Instead of creating specific props to attend to devices' typical scenarios, leve
 
 #### Don't 
 
-![best-practices-for-storefront-component-development-1](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-1.png?raw=true)
+![best-practices-for-storefront-component-development-1](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-1.png?raw=true)
 
 #### Do
 
-![best-practices-for-storefront-component-development-2](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-2.png?raw=true)
+![best-practices-for-storefront-component-development-2](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-2.png?raw=true)
 
 > ℹ️ *Combine enum props with responsive values, as shown below, and enhance your code quality with super optimized props!*
 
-![best-practices-for-storefront-component-development-3](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-3.png?raw=true)
+![best-practices-for-storefront-component-development-3](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-3.png?raw=true)
 
 ### Slots
 
@@ -142,11 +142,11 @@ You can learn more about Slots [here](https://developers.vtex.com/vtex-developer
 
 #### Don't 
 
-![best-practices-for-storefront-component-development-4](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-4.png?raw=true)
+![best-practices-for-storefront-component-development-4](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-4.png?raw=true)
 
 #### Do
 
-![best-practices-for-storefront-component-development-5](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-5.png?raw=true)
+![best-practices-for-storefront-component-development-5](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-5.png?raw=true)
 
 > ℹ️ *When not using Slots, prefer to use the `children` [composition](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-composition).* 
 
