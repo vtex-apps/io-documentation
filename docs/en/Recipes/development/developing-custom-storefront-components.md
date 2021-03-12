@@ -1,13 +1,13 @@
 ---
-title: Best practices for storefront component development
+title: Developing custom storefront components
 description: "Learn the guidelines adopted by our very own product team to cooperate with your development journey using Store Framework, VTEX IO and the React technology."
 date: "2021-03-09"
 tags: ["storefront", "component", "react", "development", "block", "best-practices"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/docs/en/Recipes/development/best-practices-for-storefront-component-development.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/docs/en/Recipes/development/developing-custom-storefront-components.md"
 ---
 
-# Best practices for storefront component development
+# Developing custom storefront components
 
 During the development process, it is natural to face,  among other issues that directly affect the shopping experience, critical questions regarding performance and internationalization.
 
