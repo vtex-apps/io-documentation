@@ -13,17 +13,13 @@ Promoting a workspace to Master marks the final step to make an app publicly ava
 
 After you launch your app as a stable version and thoroughly test it in a particular [Production workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace), you can promote this workspace to Master.
 
->⚠️ Warning
->
->Whenever you promote a workspace to Master, all workspaces of the logged account are updated with your changes.
+>⚠️ Whenever you promote a workspace to Master, all workspaces of the logged account are updated with your changes.
 
 ![Promoting a Production workspace to Master](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/promoting-a-workspace-to-master.gif?raw=true)
 
 Once promoted to Master, you won't be able to perform new code changes in that workspace. Alternatively, you will need to develop your code in a [Development workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/) and reproduce it in a new Production workspace, so you can test your changes with user traffic and make your new changes publicly available.
 
->ℹ️ Info
->
->Notice that you cannot make changes directly to the Master workspace nor promote a Development workspace to Master.
+>ℹ️ Notice that you cannot make changes directly to the Master workspace nor promote a Development workspace to Master.
 
 ## Step by step
 
@@ -47,10 +43,8 @@ Take the following steps to promote a Production workspace to Master. Remember t
     $ vtex workspace promote
     ```
 
->⚠️ Warning
->
-> When promoting a new version of the [store theme app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-3-settingyourstoretheme) to Master, first make sure to perform all the necessary changes in the store content through the Site Editor or your store theme code.
+>⚠️ When promoting a new version of the [store theme app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-3-settingyourstoretheme) to Master, first make sure to perform all the necessary changes in the store content through the Site Editor or your store theme code.
 
 ---
 
->💡 Promoting a Master workspace is one of the steps to [making your new app version publicly available to end-users.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available)
+💡 Promoting a Master workspace is one of the steps to [making your new app version publicly available to end-users.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available)
