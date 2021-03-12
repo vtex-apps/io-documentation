@@ -21,12 +21,12 @@ The process comprises the following steps, along with required actions for each.
 
 Adding an app to the VTEX app store is based on four main steps:
 
-1. Express your interest to our team.
-2. Sign our commercial agreement.
-3. Register as a VTEX App Store seller.
-4. Configure the app assets.
-5. Send the app's data for validation;
-6. App homologation.
+1. Express your interest to our team
+2. Sign our commercial agreement
+3. Register as a VTEX App Store seller
+4. Check out our business, design and engineering guidelines 
+5. Send the app's data for validation
+6. Wait for the App homologation
 
 ###  Step 1 - Expressing your interest
 
@@ -34,7 +34,7 @@ Fill out the [Application form](https://forms.gle/wpkXMxgSfCXwMPbs8) to **share 
 
 The form will help our team to understand the best approach and prioritize the publication demands.
 
-###  Step 2 - Signing the commercial agreement
+###  Step 2 - Signing our commercial agreement
 
 If the form was correctly filled out and the team agrees that the application is suitable for the VTEX App Store, the next step is to sign a commercial agreement with VTEX.
 
@@ -44,9 +44,9 @@ This contract, provided by the VTEX team to you, will grant VTEX distribution ri
 
 ### Step 3 - Registering as a VTEX App Store seller
 
-The App Store is a **Marketplace VTEX**. Therefore, partners looking to distribute their apps should register as a  **seller** there. 
+The App Store is a **Marketplace**. Therefore, partners looking to distribute their apps should register as a  **seller** there. 
 
-This [structure](https://help.vtex.com/tutorial/configuring-the-marketplace-between-vtex-stores--tutorials_6520) (seller - marketplace) configuration is done through the `vtex.app-store-seller`  app.
+This [structure](https://help.vtex.com/tutorial/configuring-the-marketplace-between-vtex-stores--tutorials_6520) (seller - marketplace) configuration is done through the `vtex.app-store-seller` app.
 
 Follow the steps below to register as a new seller on VTEX App Store:
 
@@ -62,88 +62,8 @@ Follow the steps below to register as a new seller on VTEX App Store:
 
 After submitting the request to be a seller, you can check its `status` until our team approves it. This approval is required in order to complete the next steps and be able to successfully publish your app on the VTEX App Store.
 
-### Step 4 - Configuring the app assets
+### Step 4 - Checking out our business, design and engineering guidelines
 
-To publish and homologate your app on VTEX's App Store, it must have a basic metadata structure as shown below:
-
-![submitting-assets](https://user-images.githubusercontent.com/52087100/92964911-4674b680-f44b-11ea-905f-1bed5db2589a.png)
-
-#### App messages
-
-The messages that an app exports include its most important data, such as its name, public name, short description and full description, among others.
-
-Therefore, the following files are mandatory when publishing your app: `public/metadata/messages/en-US.json`, `public/metadata/messages/pt-BR.json`, `public/metadata/messages/es-AR.json`.
-
-Each of the above encompasses their language locale (English, Portuguese, Spanish) and must adhere to the following model:
-
-```json
-{
-  "name": "Order Tracker",
-    "headline": "Headline Order Tracker",
-  "overview": "Tracks all orders\\nSecond line\\n\\nThird line\\n\\n\\n\\n\\nFourth line",
-  "features": [
-    "First feature",
-    "Second feature",
-    "Third feature",
-    "Fourth feature"
-  ],
-    "additionalInformation": "Additional information\\nYou can also write new lines here\\n\\n\\nIt should work just like overview",
-  "video": "<https://www.youtube.com/embed/645ASYhJS-Q>",
-  "websiteURL": "<https://www.website.com/en>",
-  "support": {
-      "email": "a@bcd.io"
-      "url": "www....",
-      "phone": +1....
-    },
-  "metricDescription": {
-    "track": "English description for metric track",
-    "notify": "English description for metric notify en-US"
-  }
-}
-```
-
-The following fields will comprise the app's product page:
-
--   `name`: **Mandatory** - App's title, as VTEX App Store users will see it. Limited to 26 characters.
--   `headline`: **Mandatory** - Objective description, highlighting the app's main benefit to users. Limited to 120 characters.
--   `overview`: **Mandatory** - Product page's first part, comprising the app's description. Insert `\\n` for each line break and `\\n\\n` for each new paragraph.
--   `features`: **Mandatory** - list of `strings`, where each element highlights one of app's functionalities.
--   `additionalInformation`: **Optional** -last section of the product page that contains additional information on the app. Follows the same format as the `overview` field.
--   `video`: **Optional** - Valid URL linking to a video that will be displayed on the product page in order to introduce the app.
--   `websiteURL`: **Mandatory** - Valid URL linking to the app's developer portal.
--   `support`: **Mandatory** - Three contact options are possible (email, URL or phone), of which, at least email or URL are mandatory.
-
-####  App icon
-
-The icon is another important element that needs to be configured as it expresses the app's visual identity on the VTEX App Store. It must adhere to the following criteria: 
-
--   `png` format.
--   Minimum size of **1024 x 1024px**.
--   Proportion of **1:1**.
--   **transparent** background.
--   **square** form without rounded edges.
-    
-Try to keep the icon's edges limited to 75% of the squares total width, without filling in the entire space, as the following example highlights:
-
-![submitting-assets-icon](https://user-images.githubusercontent.com/52087100/92964904-44125c80-f44b-11ea-8172-810ac823a0a0.png)
-
-#### App screenshots 
-    
-Screenshots are important for clients to visually perceive how your app will behave, whether in the admin dashboard or storefront itself. They are also useful when explaining the app's configuration process (if there is any), in addition to details on how it operates. 
-
-The screenshots from the `public/metadata/images/screenshots/desktop` folder are mandatory and must be in **`png`** format.
-
-You can include specific screenshots to display to users that access the App Store using a mobile device, by simply adding these screenshots to the `public/metadata/images/screenshots/mobile` folder.
-
-#### App Licenses
-
-The apps' terms and conditions must be added to the following files: `public/metadata/licenses/en-US.md`, `public/metadata/licenses/pt-BR.md`, `public/metadata/licenses/es-AR.md`. 
-
-The terms and conditions are **mandatory** in at least one of the three languages. If the app is released outside Brasil, the terms and conditions in English must be made available in `public/metadata/licenses/en-US.md`.
-
-#### App billing
-
-The app billing should be defines in the app's `manifest.json` file, using the `billingOptions` object. For more details on this object and instructions on how to charge your app users, you can access the [Billing Options documentation](https://vtex.io/docs/concepts/billing-options/). 
 
 ### Step 5 - Sending the app data for validation
 
@@ -169,7 +89,7 @@ When a branch has the adjustments it needs, you should open a _Pull Request_ to 
 
 ![submitting-github-pr](https://user-images.githubusercontent.com/52087100/92964912-470d4d00-f44b-11ea-8c2b-e09a13093da6.png)
 
-###  Step 6 - App homologation
+###  Step 6 - Waiting for the app homologation
 
 Once the app data has been sent in the PR, our product team will validate it in order to approve and merge it.
 
@@ -180,6 +100,8 @@ Therefore, the **3 main criteria** taken into account by the VTEX product team a
 - **Business**  - Whether the app has a business model with viable and sustainable pricing and accomplishes what it sets out to do.
 - **UX**  - Whether the app offers a good user experience, following VTEX Styleguide rules.
 - **Security and performance**  - Whether the app's performance is safe and efficient. 
+
+You can find more details on how these criteria will be assessed in our [app development guidelines](). 
 
 When an app fulfills the above-mentioned criteria, the PR will be approved and your new app version is ready to be released and made available in the VTEX app store. 
 
