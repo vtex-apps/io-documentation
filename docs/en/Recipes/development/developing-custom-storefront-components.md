@@ -23,7 +23,7 @@ When creating a custom component, use tools to ease the code development by auto
 
 Features such as [ESLint](https://eslint.org/), [Typescript](https://www.typescriptlang.org/), and [Prettier](https://prettier.io/) are not mandatory for project deployment, but they help development, code maintenance, and testings. 
 
-The [React App repository(https://github.com/vtex-apps/react-app-template) is the go-to model template for tooling since it provides formatting features and the [VTEX Test Tool](https://github.com/vtex/test-tools), a native testing tool from VTEX that leverages from [Jest](https://jestjs.io/).
+The [React App repository](https://github.com/vtex-apps/react-app-template) is the go-to model template for tooling since it provides formatting features and the [VTEX Test Tool](https://github.com/vtex/test-tools), a native testing tool from VTEX that leverages from [Jest](https://jestjs.io/).
 
 Use Typescript types as an ally in your development journey since they provide autocomplete tools that can be used when developing and importing a new component. To have them at hands, run the following command in your terminal: 
 
