@@ -7,9 +7,9 @@ To start developing your app optimally, you need to:
 
 This step is important to eliminate the concerns about the default settings in the VTEX IO platform. Once copied, the repository will automatically import the basic settings that you will need to start developing your app.  
 
-## Cloning the model repository to your local files
+## Cloning the boilerplate repository to your local files
 
-Using your terminal, run the following command to clone the model repository to your local files: 
+Clone the boilerplate repository to your local files by running the following command: 
 
 ```sh
 git clone https://github.com/vtex-apps/react-app-template
@@ -37,16 +37,16 @@ At the beginning of the process, it is very important to incorporate the new app
 4. Add the `store@0.x` builder to the builder list to allow the creation of new blocks:
 
 ```diff
-  "builders": {
-+ "store": "0.x"
-  }
+"builders": {
++  "store": "0.x"
+}
 ```
 
 5. If you want to import any React components previously developed for your new app, update the `dependencies` list with the name of the app that runs the desired component, for example:
 
 ```diff
-  "dependencies": {
-+ "vtex.styleguide: 9.x"
+"dependencies": {
++  "vtex.styleguide: 9.x"
 }
 ```
 
