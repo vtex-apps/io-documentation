@@ -102,8 +102,8 @@ If the VTEX account you are working on already has the Store Theme app for VTEX 
 3. In the Store Theme `manifest.json` file, add the front app you are developing as a dependency in `dependencies`. For example:
 
 ```diff
-  "dependencies": {
-+ "yourVTEXAccountName.yourAppName": "0.x",
+"dependencies": {
++   "yourVTEXAccountName.yourAppName": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
@@ -118,17 +118,17 @@ If the VTEX account you are working on already has the Store Theme app for VTEX 
 ```diff
 {
   "store.home": { 
-    "blocks": [
-+  "hello-world"
-    ]
+     "blocks": [
++       "hello-world"
+     ]
   },
   ...
 }
 ```
 
-5. [Link](https://vtex.io/docs/recipes/development/linking-an-app/) the store's theme with the VTEX IO platform to verify the results:
+5. [Link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) the store's theme with the VTEX IO platform to verify the results:
 
-![image](https://user-images.githubusercontent.com/18701182/78390827-9bb6bd00-75bb-11ea-837e-4cb5aaac9e32.png)
+![image](https://github.com/vtex-apps/io-documentation/blob/new/add-react-track/docs/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/declaring-a-theme-block.png?raw=true)
 
 6. Access your VTEX store using the structure `{workspaceName}-{accountName}.myvtex.com` 
 to see your new `hello-world` block being displayed in your development *workspace*:
