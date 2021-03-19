@@ -44,7 +44,7 @@ yarn add react-apollo
 
 For your component to render the information provided by the VTEX IO platform, you have to query the data stored on the server using *GraphQL APIs*.
 
-![GraphQL-query](https://user-images.githubusercontent.com/52087100/86273914-4fbde900-bba7-11ea-8980-e984df5e7f25.gif)
+![GraphQL-query](https://github.com/vtex-apps/io-documentation/blob/new/add-react-track/docs/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/consuming-data-1.png?raw=true)
 
 We will use the `useQuery` *React Hook* to do this:
 
@@ -109,7 +109,7 @@ In addition to *queries*, *mutations* are another type of operation available fo
 
 *Mutations* are used to insert or modify data that already exists on the platform; they are used to send *updates* to the server.
 
-![GraphQL-mutation](https://user-images.githubusercontent.com/52087100/86273910-4f255280-bba7-11ea-8c2a-ab2db58951bd.gif)
+![GraphQL-mutation](https://github.com/vtex-apps/io-documentation/blob/new/add-react-track/docs/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/consuming-data-2.png?raw=true)
 
 1. Open your app's code in the code editor of your choice.
 2. In the `react` folder, access the `HelloMutation.tsx` file or create it if it does not already exist.
