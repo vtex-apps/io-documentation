@@ -1,30 +1,30 @@
-# Basic development setup in VTEX IO
+# Basic setup to develop in VTEX IO
 
-Any development in VTEX IO begins and ends with the [**VTEX IO CLI**](https://vtex.io/docs/concepts/toolbelt/) (Command Line Interface), that works as a communication gateway between your VTEX account and the VTEX IO development platform. 
+Any development in VTEX IO begins and ends with the [**VTEX IO CLI**](https://vtex.io/docs/concepts/toolbelt/). The VTEX IO CLI works as a communication gateway between your VTEX account and the VTEX IO development platform.
 
-Using the CLI, you will be able to log in to your VTEX account, manage workspaces, develop apps, and install new ones.
+With VTEX IO's CLI, you will be able to log in to your VTEX account, manage workspaces, develop apps, and install new ones.
 
 ## Installing VTEX IO's CLI
 
 To install VTEX IO’s CLI, you need to ensure that [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) are properly installed on your machine. 
 
-To follow all the required steps for installing VTEX IO's CLI, access our documentation on [VTEX IO CLI Installation and Command Reference](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/).
+To follow all the required steps for installing VTEX IO's CLI, access our documentation on [VTEX IO CLI Installation and Command Reference](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference).
 
 ## Logging in to your VTEX account
 
 Once VTEX IO’s CLI is installed, log in to your VTEX account with the following command:
 
 ```sh
-$ vtex login {account}
+$ vtex login {accountName}
 ```
 
 This will open a browser window asking for your credentials.
 
->⚠️ Replace `{account}` with the name of your VTEX account.
+>⚠️ Replace `{accountName}` with the name of your VTEX account.
 
 Once you are logged in, run the `vtex whoami` command to show which **VTEX account** and **workspace** are being used by the VTEX IO CLI. 
 
-![VTEX IO CLI - whoami](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
+![VTEX IO CLI - whoami](https://github.com/vtex-apps/io-documentation/blob/new/add-react-track/docs/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/basic-development-setup-in-vtex-io-1.png?raw=true)
 
 ## Creating your own workspace
 
@@ -37,11 +37,11 @@ To start developing, you have to [create a **Developer workspace**](https://vtex
 Run the `vtex use` command in your terminal as shown below:
 
 ```sh
-$ vtex use {examplename}
+$ vtex use {exampleName}
 ```
 
-This changes your VTEX account to a Development workspace called `examplename`, creating it from scratch if it does not already exist.
+This changes your VTEX account to a Development workspace called `exampleName`, creating it from scratch if it does not already exist.
 
-![workspace-examplename EN](https://user-images.githubusercontent.com/52087100/63979000-30899300-ca8e-11e9-9d9d-234e31ac45f7.png)
+![workspace-examplename EN](https://github.com/vtex-apps/io-documentation/blob/new/add-react-track/docs/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/basic-development-setup-in-vtex-io-2.png?raw=true)
 
 Having logged in to your account and created your own Development workspace, you are ready to begin developing your React app and building your storefront using VTEX IO.
