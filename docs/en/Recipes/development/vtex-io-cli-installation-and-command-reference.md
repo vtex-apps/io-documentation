@@ -38,7 +38,7 @@ By not adding the Yarn binaries to terminal `PATH`, Yarn and its programs can't 
 #### Workaround for MacOS and Linux users
 
 1. In your local directories, find the Profile file. It is usually hidden and is named after the command line's interpreter. For example: If you're using `bash`, your Profile file will be named `bashrc`. If you use `zsh`, it will be `zshrc`;
-2. Once in the Profile file, add the following command: `export PATH="$PATH: yarn global bin"`;
+2. Once in the Profile file, add the following command: `export PATH=$PATH:$(yarn global bin)`;
 3. Log in and log out of your terminal for the changes to take effect; 
 
 <div class="alert alert-info">  
