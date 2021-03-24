@@ -109,7 +109,7 @@ In addition to *queries*, *mutations* are another type of operation available fo
 
 *Mutations* are used to insert or modify data that already exists on the platform; they are used to send *updates* to the server.
 
-![GraphQL-mutation](https://github.com/vtex-apps/io-documentation/blob/master/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/assets/consuming-data-2.png?raw=true)
+![GraphQL-mutation](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/assets/consuming-data-2.png?raw=true)
 
 1. Open your app's code in the code editor of your choice.
 2. In the `react` folder, access the `HelloMutation.tsx` file or create it if it does not already exist.
