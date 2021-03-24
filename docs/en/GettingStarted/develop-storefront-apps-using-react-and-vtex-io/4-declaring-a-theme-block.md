@@ -128,7 +128,7 @@ If the VTEX account you are working on already has the Store Theme app for VTEX 
 
 5. [Link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) the store's theme with the VTEX IO platform to verify the results:
 
-![image](https://github.com/vtex-apps/io-documentation/blob/master/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/assets/declaring-a-theme-block.png?raw=true)
+![image](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/GettingStarted/develop-storefront-apps-using-react-and-vtex-io/assets/declaring-a-theme-block.png?raw=true)
 
 6. Access your VTEX store using the structure `{workspaceName}-{accountName}.myvtex.com` 
 to see your new `hello-world` block being displayed in your development *workspace*:
