@@ -1,4 +1,4 @@
-# Developing a storefront app with React and VTEX IO
+# Developing storefront apps with React and VTEX IO
 
 Leveraging from the VTEX IO platform, the VTEX IO Store Framework solution delivers the needed foundations for any storefront structure, providing high quality and customizable [React](https://reactjs.org/) store blocks so that you can create (in the fastest possible go-to-market time) comprehensive shopping experiences that never become outdated.
 
