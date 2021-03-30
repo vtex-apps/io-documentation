@@ -206,7 +206,7 @@ In terms of content internationalization, be cautious with string text translati
 
 Be aware that internationalization can mean more than string text translations! Take care of interpolation, pluralization, price and percentage formatting, among other discrepancies that may come into your way once borders are crossed.
 
-Read the [Translating the component]() article and the [multi-language store documentations](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-multi-language-stores) to understand how you can make these adjustments in your component! 
+Read the [Translating the component](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-8-translating-the-component) article and the [multi-language store documentations](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-multi-language-stores) to understand how you can make these adjustments in your component! 
 
 ## Styling
 
@@ -218,7 +218,7 @@ Understand both tools' particularities to make the best decision for your compon
 
 Also, do not forget to make CSS Handles available for your component users if its distribution is a goal. Through Handles, future users will be able to style your storefront component as desired, according to their own specific needs. 
 
-Check out the documentation on [Defining styles]() to learn about Tachyons, CSS Modules and CSS Handles, as well as their use cases.
+Check out the documentation on [Defining styles](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-5-defining-styles) to learn about Tachyons, CSS Modules and CSS Handles, as well as their use cases.
 
 Another good styling tip is to be careful with the breakpoints on the screen according to devices. Remember to set the component style for every possible scenario on the interface!
 
