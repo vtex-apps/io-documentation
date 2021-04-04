@@ -73,6 +73,8 @@ $ vtex add APPID [ITHAPPID]
 vtex add vtex.service-example@0.x
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### autoupdate
 
 Automatically updates VTEX IO's CLI.
@@ -88,6 +90,8 @@ Automatically updates VTEX IO's CLI.
 |Argument|Description|
 |--------|-----------|
 |**CHANNEL** (optional)|.|
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### browse
 
@@ -118,6 +122,8 @@ Opens the URL relative to your current workspace and account in a new browser wi
   vtex browse admin
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### config get
 
 Prints the value of the requested configuration key.
@@ -141,6 +147,8 @@ Prints the value of the requested configuration key.
   vtex config get cluster
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### config reset
 
 Resets the specified configuration to its default value.
@@ -163,6 +171,8 @@ Resets the specified configuration to its default value.
   vtex config reset env
   vtex config reset cluster
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### config set
 
@@ -188,6 +198,8 @@ Sets the value of a configuration key.
   vtex config set cluster clusterValue
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### debug dotnet
 
 Debug .NET applications (IDEs only).
@@ -204,6 +216,7 @@ Debug .NET applications (IDEs only).
 |--------|-----------|
 |**DEBUGINST**|Name of the .NET application to debug.|
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### deploy
 
@@ -235,6 +248,8 @@ Publishes an app as a stable version. Only works for apps previously published a
   vtex deploy vtex.service-example@0.0.1
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### deprecate
 
 Deprecates the specified app, uninstalling and downgrading it to the latest stable version in every VTEX account.
@@ -265,6 +280,8 @@ Deprecates the specified app, uninstalling and downgrading it to the latest stab
   vtex deprecate vtex.service-example@0.0.1
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### deps diff
 
 Displays the differences between the dependencies of two distinct workspaces. If a single parameter is passed, the specified workspace's dependencies are compared with the master's. If no parameter is passed, the diff is made between the current workspace and master.
@@ -287,6 +304,8 @@ Displays the differences between the dependencies of two distinct workspaces. If
 ```shell
   vtex deps diff workspace1 workspace2
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### deps list
 
@@ -319,6 +338,8 @@ Displays the complete dependency tree of the current workspace.
   vtex deps ls
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### deps update
 
 Updates a dependency of the current workspace. If not specified which dependency, it updates all of them.
@@ -343,6 +364,8 @@ Updates a dependency of the current workspace. If not specified which dependency
   vtex deps update vtex.service-example@0.0.1
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### edition get
 
 Displays the Edition App version installed on the current account.
@@ -358,6 +381,8 @@ Displays the Edition App version installed on the current account.
 ```shell
   vtex edition get
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### edition set
 
@@ -381,6 +406,8 @@ Sets the Edition App version for the current account.
   vtex edition set editionName
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### help
 
 Displays help for VTEX CLI commands.
@@ -402,6 +429,8 @@ Displays help for VTEX CLI commands.
 |Option|Alias|Description|
 |-------|-----|-----------|
 |**--all**|-|Displays all commands available in the CLI.|
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### infra install
 
@@ -425,6 +454,9 @@ Installs an infra service.
   vtex infra install infra-service
   vtex infra install infra-service@0.0.1
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### infra list
 
 Lists installed infra services.
@@ -461,6 +493,8 @@ Lists installed infra services.
   vtex infra ls
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### infra update
 
 Updates all installed infra services.
@@ -477,6 +511,8 @@ Updates all installed infra services.
   vtex infra update
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### init
 
 Copies starting files and folders from VTEX boilerplates into your local directories.
@@ -492,6 +528,8 @@ Copies starting files and folders from VTEX boilerplates into your local directo
 ```shell
   vtex init
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### install
 
@@ -523,6 +561,8 @@ Installs an app on the current workspace. If not specified which one, it default
   vtex install vtex.service-example@0.x
   vtex install vtex.service-example@0.0.1
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### lighthouse audit
 
@@ -559,6 +599,8 @@ Runs a Lighthouse audit over the specified URL.
   vtex lh audit my.url.com
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### lighthouse show
 
 Shows a previous audit report, filtering by app and/or URL.
@@ -593,6 +635,8 @@ Shows a previous audit report, filtering by app and/or URL.
   vtex lh show -a vtex.awesome-app --url=https://awesome.store.com
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### link
 
 Syncs the app in the current directory with the development workspace in use.
@@ -620,6 +664,8 @@ Syncs the app in the current directory with the development workspace in use.
   vtex link -a youraccount -w yourworkspace
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### list
 
 Lists the apps installed on the current workspace and account.
@@ -644,6 +690,8 @@ Lists the apps installed on the current workspace and account.
   vtex ls
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### local token
 
 Prints the user's auth token and copies it to the clipboard.
@@ -659,6 +707,8 @@ Prints the user's auth token and copies it to the clipboard.
 ```shell
   vtex local token
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### login
 
@@ -689,6 +739,8 @@ Logs in to a VTEX account.
   vtex login storecomponents
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### logout
 
 Logs out of the current VTEX account.
@@ -704,6 +756,8 @@ Logs out of the current VTEX account.
 ```shell
   vtex logout
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### logs
 
@@ -736,6 +790,8 @@ Shows logs of an app. (Only apps in production.)
   vtex logs appName --past
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### publish
 
 Publishes the app in the current directory as a release candidate version.
@@ -762,6 +818,8 @@ Publishes the app in the current directory as a release candidate version.
   vtex publish
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### redirects delete
 
 Deletes redirects from the current account and workspace.
@@ -783,6 +841,8 @@ Deletes redirects from the current account and workspace.
 ```shell
   vtex redirects delete csvPath
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### redirects export
 
@@ -806,6 +866,8 @@ Exports all redirects defined in the current account and workspace to a CSV file
   vtex redirects export csvPath
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### redirects import
 
 Imports redirects from a CSV file to the current account and workspace.
@@ -827,6 +889,8 @@ Imports redirects from a CSV file to the current account and workspace.
 ```shell
   vtex redirects import csvPath
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### release 
 
@@ -854,6 +918,8 @@ Imports redirects from a CSV file to the current account and workspace.
   vtex release minor stable
   vtex release pre
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### settings get
 
@@ -884,6 +950,8 @@ Prints the settings of the specified app.
   vtex settings get vtex.service-example
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### settings set
 
 Sets value to the specified setting of an app.
@@ -908,6 +976,8 @@ Sets value to the specified setting of an app.
   vtex settings set vtex.store enableCriticalCSS true
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### settings unset 
 
 Disables the specified setting of an app.
@@ -931,6 +1001,8 @@ Disables the specified setting of an app.
   vtex settings unset vtex.service-example fieldName
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### setup
 
 Sets up typings and tools for the current development environment.
@@ -950,6 +1022,8 @@ Sets up typings and tools for the current development environment.
 |**--tooling**|-|Sets up Prettier, Husky, and ESLint.|
 |**--tsconfig**|-|Sets up React and Node TSconfig, if applicable.|
 |**--typings**|-|Sets up GraphQL and React typings.|
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### submit
 
@@ -974,6 +1048,8 @@ Submits the current app, or an specified one, to validation from VTEX App Store 
   vtex submit myvendor.myapp@1.2.3
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### support
 
 Logs in as support to another VTEX account.
@@ -995,6 +1071,8 @@ Logs in as support to another VTEX account.
 ```shell
   vtex support storecomponents
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### switch
 
@@ -1024,6 +1102,8 @@ Switches to another VTEX account.
   vtex switch storecomponents
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### test e2e
 
 Runs E2E integration tests for the app in the current directory.
@@ -1042,6 +1122,8 @@ Runs E2E integration tests for the app in the current directory.
 |**--token**|-t|(Not recommended.) Sends your personal authorization token to your testing session, making it available during the tests. It can be dangerous since it exposes your token via the 'authToken' environment variable.|
 |**--workspace**|-w|Runs tests for the apps installed on the specified workspace.|
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### test unit
 
 Runs unit tests for the app in the current directory.
@@ -1057,7 +1139,9 @@ Runs unit tests for the app in the current directory.
 |Option|Alias|Description|
 |-------|-----|-----------|
 |**--unsafe**|-u|Ignores Typescript errors|
-   
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### undeprecate
 
 Reestablishes a deprecated version of an app as a stable version.
@@ -1086,6 +1170,8 @@ Reestablishes a deprecated version of an app as a stable version.
 ```shell
   vtex undeprecate vtex.service-example@0.0.1
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### uninstall
 
@@ -1117,6 +1203,8 @@ Uninstalls an app from the current workspace. If not specified which app to unin
   vtex uninstall vtex.service-example
   vtex uninstall vtex.service-example@0.x
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### unlink
 
@@ -1150,6 +1238,8 @@ appname Name of the app to unlink.
   vtex unlink vtex.service-example@0.x
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### update
 
 Updates all installed apps to the latest (minor or patch) version. Does not upgrade to another major version.
@@ -1165,6 +1255,8 @@ Updates all installed apps to the latest (minor or patch) version. Does not upgr
 ```shell
   vtex update
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### url
 
@@ -1182,6 +1274,8 @@ Prints base URL for the current account and workspace.
   vtex url
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### whoami
 
 Prints the current account, workspace, environment, and login details.
@@ -1198,6 +1292,8 @@ Prints the current account, workspace, environment, and login details.
   vtex whoami
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### workspace abtest finish
 
 Stops all A/B tests from running on the current account.
@@ -1207,6 +1303,8 @@ Stops all A/B tests from running on the current account.
 ```shell
   $ vtex workspace abtest finish
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### workspace abtest start
 
@@ -1218,6 +1316,8 @@ Starts a new A/B test on the current workspace.
   $ vtex workspace abtest start
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### workspace abtest status
 
 Displays the results of the active A/B tests.
@@ -1227,6 +1327,8 @@ Displays the results of the active A/B tests.
 ```shell
   $ vtex workspace abtest status
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### workspace delete
 
@@ -1259,6 +1361,8 @@ Deletes one or many workspaces from the current account.
   vtex workspace delete workspaceName1 workspaceName2
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### workspace list
 
 Lists all workspaces of the current account.
@@ -1283,6 +1387,8 @@ Lists all workspaces of the current account.
   vtex workspace ls
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### workspace promote
 
 Promotes the current workspace to master. Only works for production workspaces.
@@ -1306,6 +1412,8 @@ Promotes the current workspace to master. Only works for production workspaces.
   vtex workspace promote
   vtex promote
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### workspace reset
 
@@ -1337,6 +1445,8 @@ Cleans all configurations of the specified workspace and recreates it with the c
   vtex workspace reset workspaceName
 ```
 
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
 ### workspace status
 
 Displays information about the specified workspace.
@@ -1359,6 +1469,8 @@ Displays information about the specified workspace.
 ```shell
   vtex workspace status
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### workspace use
 
@@ -1395,3 +1507,6 @@ Creates and switches to a new workspace or simply switches to an existing one.
   vtex workspace use workspaceName
   vtex use workspaceName
 ```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
