@@ -9,14 +9,17 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Conc
 
 # Workspace
 
-Workspaces are, as the name suggests, **work spaces isolated from one another**. 
+Workspaces are environments isolated from one another. They can be understood as different versions of the same VTEX account. In practice, this means that changes performed in your own workspace do not affect your store's live version or other developers' work.
 
-A workspace works as a version of the account, in a way that any development operation is done in a specific workspace, separate from others. If you're used to working with `git`, think of workspaces as branches.
+>ℹ️ If you're used to working with git, think of workspaces as branches.
 
-This means that you can test your changes without any risk of interfering with live apps or with the work of other developers.
+There are two main types of workspaces:
 
-There are three types of workspaces in the platform:
+- **Development workspace** - provides more development freedom: allows [linking](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app), [installing](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-installing-an-app), and [publishing](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-publishing-an-app) apps. It can't handle production traffic, be promoted to master, nor be used for A/B testing.
+- **Production workspace** - supports production traffic, can be [promoted to master](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-promoting-a-workspace-to-master) and used for [A/B testing](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-running-native-ab-testing). Linking apps is forbidden.
 
-- [**Development workspace**](https://vtex.io/docs/recipes/development/creating-a-development-workspace/) - Environment where you can link, develop, install and publish apps. It is a workspace in which you have more configuration freedom, but it cannot handle production level traffic, be promoted to master nor used for A/B testing.
-- [**Production workspace**](https://vtex.io/docs/recipes/development/creating-a-production-workspace/) - Environment that handles production level traffic, can be used for A/B testing and can be [promoted to become the `master` workspace](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master/). It can also have apps installed, but app links for development are not allowed.
-- **Master workspace** - Unique `production` workspace in which the content reflects what is served to the store's end user. It should only be altered when you are positively certain that your code is production ready.
+Workspaces are accessible at `https://{workspace}--{account}.myvtex.com`.
+
+There's also the **Master workspace**, a unique production workspace that reflects the content served to the store's end-user.
+
+![Workspaces](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Concepts/Media/workspace.png?raw=true)

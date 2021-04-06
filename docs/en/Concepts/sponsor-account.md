@@ -15,7 +15,7 @@ Having a specific Sponsor Account is convenient for accounts that keep a hierarc
 
 The image below exemplifies the hierarchy among VTEX accounts.
 
-![Accounts hierarchy](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Concepts/sponsoraccount.png?raw=true)
+![Accounts hierarchy](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Concepts/Media/sponsoraccount.png?raw=true)
 
 Notice that the `vtex` account sponsors all the other accounts of the VTEX platform. That's because the `vtex` account is responsible for the development and release of the two standard Edition Apps, which all others derive from:
 
