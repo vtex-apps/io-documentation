@@ -1,5 +1,5 @@
 ---
-title: "Installing apps in live stores: best practices"
+title: "Best practices for installing apps in live stores"
 description: "Without a clear visibility of their potential impact, performing changes that directly affect your store's operation becomes extremely risky. But it doesn't have to be. Learn now the best practices to install apps in live stores."
 date: "2020-04-02"
 tags: ["ab-tests", "install", "apps", "best-practices"]
@@ -7,9 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/store/installing-apps-in-live-stores-best-practices.md"
 ---
 
-# Installing apps in live stores: best practices
-
-## Introduction
+# Installing apps in live stores
 
 Once a store is live, worries and uncertainties about security, stability and performance begin to grow.
 
@@ -19,7 +17,9 @@ You can follow best practices to mitigate any loss your store may face - from st
 
 Check out some of the best practices below that can and should be adhered to when installing new apps in live stores:
 
-## Running A/B tests
+## Best practices
+
+### Running A/B tests
 
 A best practice you certainly must adopt is **A/B testing**.
 
@@ -33,7 +33,7 @@ But note: during the A/B test configuration, it is strongly recommended that you
 The VTEX IO A/B test allows traffic to be directed either manually or automatically. In the latter scenario, the platform initially segments your store's total traffic and directs 50% of it to the Production workspace undergoing testing and the remaining 50% to the Master workspace. While it has considerable advantages for the store's conversion rate, automatically segmenting traffic may also pose greater operational risks by potentially impacting a greater number of users. 
 </div>
 
-## Performing manual tests
+### Performing manual tests
 
 In addition to the platform's A/B test, you can also manually adopt best practices for testing new apps in Development workspaces using the `vtex link` command.
 
