@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/templates/best-practices-for-rendering-images.md"
 ---
 
-# Best practices for rendering images
+# Rendering images
 
 When setting up your store's theme, you'll often want to use images for the brand's visual identity.
 
