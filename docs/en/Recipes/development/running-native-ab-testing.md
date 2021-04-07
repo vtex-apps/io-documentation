@@ -64,9 +64,7 @@ If you opt to manually define traffic and time frame, you should:
 
 1. Answer with `9000` to `What's the proportion of traffic initially directed to workspace master?` in order to set the traffic proportion of 90%;
 
->⚠️
-To not break your store and to promote the changes from the new workspace in the safest way possible, it is strongly recommended that percentage value of traffic dedicated to the master workspace be `90%`, leaving just 10% of the store's total traffic for the production workspace being tested.
-</div>
+>⚠️ To not break your store and to promote the changes from the new workspace in the safest way possible, it is strongly recommended that percentage value of traffic dedicated to the master workspace be `90%`, leaving just 10% of the store's total traffic for the production workspace being tested.
 
 2. Give an answer in hours to the following question: `What's the amount of time respecting the restriction?`.
 
@@ -106,7 +104,7 @@ For example: when starting your test, you can set `0,0001%` as the conversion lo
 
 Run the `vtex workspace abtest finish` command in `master` if your test has already reached the time frame you've manually set for it or if feel that a winner was already detected following as interpretation recommended in step 3.
 
->⚠️  If you have set a predefined time frame of `24` hours to run your A/B for example, it's important that you pay attention to the test during this entire period. Although the platform continues to automatically redistribute traffic according to how each workspace is behaving after the set time frame, overseeing the test is fundamental to its success.
+>⚠️ If you have set a predefined time frame of `24` hours to run your A/B for example, it's important that you pay attention to the test during this entire period. Although the platform continues to automatically redistribute traffic according to how each workspace is behaving after the set time frame, overseeing the test is fundamental to its success.
 
 When running the command, a list of all workspaces being tested by the `vtex.ab-tester` app in Master will show up. Select the one which should end. For example:
 
