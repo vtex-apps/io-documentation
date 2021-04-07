@@ -33,8 +33,7 @@ $ vtex init
 
 ![toolbelt-store-theme-selection](https://user-images.githubusercontent.com/52087100/61887063-3d3b2a00-aed7-11e9-92b8-653c4972a218.png)
 
->ℹ️
-Once you select the `store-theme` option, Toolbelt will ask you for important information about the app, such as a value for the vendor, name, title and description. With the exception of vendor, press enter to keep each field's predefined values.
+>ℹ️ Once you select the `store-theme` option, Toolbelt will ask you for important information about the app, such as a value for the vendor, name, title and description. With the exception of vendor, press enter to keep each field's predefined values.
 
 4. Replace the predefined `vendor` value with the account name of the store that you are developing so that you'll be able to correctly publish its theme app later on. 
 
