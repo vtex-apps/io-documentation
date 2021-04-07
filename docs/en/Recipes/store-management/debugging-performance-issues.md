@@ -109,7 +109,23 @@ To help you guarantee the success of your brand's online presence, we provide a 
 
 We recommend that you gradually enable the available features and measure their impact using Lighthouse and other tools.
 
-## Step 6: Using the Lighthouse Scoring Calculator
+## Step 6: Testing the critical CSS
+
+The content which a user first sees when opening a web page is known as above-the-fold. Besides, since this part of the page must be loaded quickly for better user experience, it can also be referred to as critical.
+
+Fortunately, VTEX IO offers the possibility of enabling critical CSS optimization in home pages, product pages and product listing pages. This feature provides the browser a way to find the minimum blocks of CSS code needed to first display the critical content of the page. Meanwhile, the remainder CSS code is loaded asynchronously.
+
+[Learn how to optimize critical CSS](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance#optimizing-critical-css)
+
+To work, critical CSS optimization requires that the page is server-side rendered and that CSS concatenation is also enabled.
+
+The critical CSS served to the pages can vary by viewport and page, and the process of optimizing it for each page can take some time. Because of this, the optimization may not present when you (or some other user) first open a page. Only subsequent users that access that same page (with a similar viewport) after a while will receive the optimized version.
+
+On the product pages, for example, some products may have SKU selectors, while others don't. These pages don't share the same critical optimization, since serving SKU selector styles for the page that doesn't have this component would be pointless. Similarly, two users accessing the same page using distinct devices such as mobile and desktop won't share the same optimization.
+
+After enabling the critical CSS optimization, you can check if it's being delivered by ensuring the page is being server-side rendered (Step 1) and searching for the style tag `<style id="critical" type="text/css">` inside the `<head>` tag of the page you enabled the optimization. Remember to consider that it takes a while for it to be processed and that it varies per viewport and page, as stated above.
+
+## Step 7: Using the Lighthouse Scoring Calculator
 
 With the performance features enabled, as proposed in Step 5, reproduce your scores in the [Lighthouse Scoring Calculator](https://googlechrome.github.io/lighthouse/scorecalc/#version=6) to identify which metrics have the greatest potential for improvement.
 
