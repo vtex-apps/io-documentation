@@ -23,9 +23,7 @@ Whether using the admin’s CMS or your store theme CSS files, Store Framework g
 2. Create a new folder inside the `assets` directory called `fonts`. Make sure your app have the [assets builder in its manifest](https://vtex.io/docs/recipes/development/using-the-assets-builder/).
 3. Add the font files inside this folder (`assets/fonts/`).
 
-<div class="alert alert-warning">
-The font files must be in the following file extensions: <code>.ttf</code> or <code>.woff</code>. 
-</div>
+>⚠️ The font files must be in the following file extensions: `.ttf` or `.woff`. 
 
 4. In `styles/configs` folder, create a new file called `font-faces.css`.
 5. Use the `@font-face` rule declaring the CSS properties you desire to apply in your website typography. For example:
@@ -38,13 +36,10 @@ The font files must be in the following file extensions: <code>.ttf</code> or <c
 }
 ```
 
-<div class="alert alert-info">
-Notice that fonts uploaded on Assets builder can be referenced in your CSS files by declaring the desired file path in the `src` property. 
-</div>
+>ℹ️ Notice that fonts uploaded on Assets builder can be referenced in your CSS files by declaring the desired file path in the `src` property. 
 
-<div class="alert alert-warning">
-The <code>font-faces.css</code> is a global file meaning its configurations are applied to all texts from the website. If you want to customize a component's typography independently, overriding the global configurations,you should declare the <code>font-faces.css</code> file still and refer the desired component font using the <code>font-family</code> property in the app's CSS overriding file. 
-</div>
+
+>⚠️The `font-faces.css` is a global file meaning its configurations are applied to all texts from the website. If you want to customize a component's typography independently, overriding the global configurations,you should declare the `font-faces.css` file still and refer the desired component font using the `font-family` property in the app's CSS overriding file. 
 
 ### Using store's admin
 
@@ -58,14 +53,10 @@ In the **Font Family** section, you can add a font family of your choosing in or
 
 Remember to give a name for the font family recently uploaded by you, otherwise you won't be able to properly save your changes. 
 
-<div class="alert alert-warning">
-The font family file must be uploaded in the following file extensions: <code>.ttf</code> or <code>.woff</code>. 
-</div>
+>⚠️ The font family file must be uploaded in the following file extensions: `.ttf` or `.woff`. 
 
 After choosing the font family, you can apply it to your store’s text content. The **Type Token** option displays all your store’s text content that can be customized. In addition to each one’s font families, you can also customize other parameters, such as **Font Weight**, **Font Size**, capitalization (**Text Transform**) and spacing (**Letter Spacing**).
 
 For a better understanding of this feature and customization recommendations for each of your store’s text content, access the [VTEX Styleguide](https://styleguide.vtex.com/#/Styles?id=section-typography).
 
-<div class="alert alert-warning">
-After performing all desired customizations, don’t forget to save your changes! 
-</div>
+>⚠️ After performing all desired customizations, don’t forget to save your changes! 

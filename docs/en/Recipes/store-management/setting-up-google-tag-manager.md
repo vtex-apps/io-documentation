@@ -24,17 +24,13 @@ The VTEX IO Google Tag Manager native solution is compliant with Universal Analy
 - Checkout;
 - Purchase.
 
-<div class="alert alert-info">
-In order to set the tracking of these events in Google Analytics, learn how to <a href="https://vtex.io/docs/recipes/store-management/setting-up-google-analytics-search-tracking/">set up Google Analytics search tracking</a> in your VTEX IO store.
-</div>
+>ℹ️ In order to set the tracking of these events in Google Analytics, learn how to <a href="https://vtex.io/docs/recipes/store-management/setting-up-google-analytics-search-tracking/">set up Google Analytics search tracking</a> in your VTEX IO store.
 
 In order to set up Google Tag Manager in your store, you first must set up all necessary **variables**, **triggers** and **tags**. 
 
 These GTM components will work together to measure your store's data, allowing you to properly manage user and website traffic in your Google Analytics dashboard. 
 
-<div class="alert alert-info">
-If you are not familiar with the GTM components, we strongly recommend you to access the <a href="https://support.google.com/tagmanager/answer/6103657?hl=en">Google Tag Manager documentation</a> before starting your setup.
-</div>
+>ℹ️ If you are not familiar with the GTM components, we strongly recommend you to access the <a href="https://support.google.com/tagmanager/answer/6103657?hl=en">Google Tag Manager documentation</a> before starting your setup.
 
 Follow the steps below to create all necessary GTM components for your store. Begin by installing the [Google Tag Manager Pixel App](https://vtex.io/docs/components/pixel/vtex.google-tag-manager) and opening your Google Tag Manager account dashboard at [tagmanager.google.com](https://tagmanager.google.com/).
 
@@ -91,9 +87,7 @@ For this, click on **Fields to Set**, and then add the field `userId` with its d
 |  `campaignMedium` | {Data Layer Variable - campaignMedium} |
 |  `campaignSource` | {Data Layer Variable - campaignSource} |
 
-<div class="alert alert-warning">
-Remember to replace the values between the curly brackets according to your scenario.
-</div>
+>⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
 6. Then, click on **Ecommerce** and check the **Enable Enhanced Ecommerce Features** and **Use data layer** boxes;
 7. **Save** your changes as **Google Analytics - Checkout and Order Placed**.
@@ -206,8 +200,6 @@ To create a tag, click on **Tags** in the left menu and then on **New**:
   - `Order ID`: {Data Layer Variable - transactionId}
   - `Currency Code`: {Data Layer Variable - currency}
   
-<div class="alert alert-warning">
-Remember to replace the values between the curly brackets according to your scenario.
-</div>
+>⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
 5. Save the new tag as **Google Ads Conversion Tracking**.

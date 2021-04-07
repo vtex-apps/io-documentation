@@ -21,9 +21,7 @@ Although these can satisfy your store’s needs, you may want to override and cu
 2. Inside `iconpacks/`, create the file `iconpack.svg`. 
 3. Copy the content from VTEX'S default [iconpack.svg](https://github.com/vtex-apps/store-icons/blob/master/styles/iconpacks/iconpack.svg?short_path=62ebf4b) and paste it in the `iconpack.svg` file. 
 
-<div class="alert alert-warning">
-The maximum size allowed for icons is <code>20x20</code>.
-</div>
+>⚠️ The maximum size allowed for icons is `20x20`.
 
 This is how your `styles/` folder structure should look like after you've accomplished that: 
 
@@ -41,6 +39,6 @@ After [linking](https://vtex.io/docs/recipes/store/linking-an-app) your app, you
 
 Check out each icon's ID by accessing the [Icon Pack list](https://github.com/vtex-apps/store-icons/blob/cbbb1b82bfca247a811d146b1e2cafb642db1928/docs/ICONPACK.md). 
 
-<div class="alert alert-warning">
-If you've linked your code and haven't seen your changes, it may be because your <code>Styles builder</code> is not up-to-date with this functionality. Make sure your store has it installed at version <bold>1.8.1</bold> or higher. 
+>⚠️
+If you've linked your code and haven't seen your changes, it may be because your `Styles builder` is not up-to-date with this functionality. Make sure your store has it installed at version <bold>1.8.1</bold> or higher. 
 </div>

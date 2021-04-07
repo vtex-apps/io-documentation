@@ -63,7 +63,7 @@ Take the following example:
 }
 ```
 
-:warning: *In VTEX IO, translations of storefront components are kept in a `/messages` folder inside the app's root folder. For example, the English translation of the `search.placeholder` message from the `store-components` app is declared [here](https://github.com/vtex-apps/store-components/blob/master/messages/en.json#L2). Hence, in this example, we just overwrote this message with "My personalized Search message" through the Messages app.*
+>⚠️ In VTEX IO, translations of storefront components are kept in a `/messages` folder inside the app's root folder. For example, the English translation of the `search.placeholder` message from the `store-components` app is declared [here](https://github.com/vtex-apps/store-components/blob/master/messages/en.json#L2). Hence, in this example, we just overwrote this message with "My personalized Search message" through the Messages app.
 
 7. After adjusting your query, click on the play button to run the declared mutation. The expected response is as follows:
 

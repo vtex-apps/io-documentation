@@ -55,9 +55,7 @@ For this step, we'll take the example given above: let's add a modal to the icon
   },
 ```
 
-<div class="alert alert-warning">
-Looking at our example, the icon we wish to use to trigger the modal is the one for removal. We therefore add the <code>icon-delete</code> (exported by the Store Icons app) to the list of <code>modal-trigger</code children. Choose the icon according to your store's scenario. 
-</div>
+>⚠️Looking at our example, the icon we wish to use to trigger the modal is the one for removal. We therefore add the `icon-delete` (exported by the Store Icons app) to the list of `modal-trigger` children. Choose the icon according to your store's scenario.
 
 5. Then, declare the `modal-layout` block along with the `modal-actions` block as a child of the first. You can also declare other blocks you may want to have rendered in the modal, such as a [Rich Text](https://vtex.io/docs/components/all/vtex.rich-text/). For example:
 

@@ -2,7 +2,7 @@
 
 A `robots.txt` file defines which folders or files a search engine may or may not ignore when crawling a website. Considering the effects of this file for a store's SEO, the following step by step explains how to create `robots` files for cross-border stores.
 
-:warning: *If your store is **not** a cross-border one, check this [link](https://help.vtex.com/tutorial/google-search-console-tracking-robots-txt--tutorials_574?locale=en) for a step by step on how to create a `robots` file through your store's admin.*
+>⚠️ If your store is **not** a cross-border one, check this [link](https://help.vtex.com/tutorial/google-search-console-tracking-robots-txt--tutorials_574?locale=en) for a step by step on how to create a `robots` file through your store's admin.
 
 The basic structure of a `robots.txt` file contains the following directives:
 
@@ -12,7 +12,7 @@ The basic structure of a `robots.txt` file contains the following directives:
 
 You must adjust these directives according to your scenario.
 
-:warning: *This feature is available for stores using `vtex.edition-store@3.x` [Edition App](https://vtex.io/docs/concepts/edition-app/). To check which Edition App is installed on your account, run `vtex edition get`. If it's a different Edition, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the installation of the `vtex.edition-store@3.x` Edition App.*
+>⚠️ This feature is available for stores using `vtex.edition-store@3.x` [Edition App](https://vtex.io/docs/concepts/edition-app/). To check which Edition App is installed on your account, run `vtex edition get`. If it's a different Edition, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the installation of the `vtex.edition-store@3.x` Edition App.
 
 ## Step by Step
 
@@ -42,7 +42,7 @@ git clone https://github.com/vtex-apps/store-theme-robots
 
 4. Inside the `sitemap/robots` folder, create a `.txt` robots file for each supported locale binding. The name of each file must be the `id` value of its respective `binding`.
 
-:warning: *Follow [this tutorial](https://developers.vtex.com/docs/checking-your-stores-binding-id) to check your stores' `binding` `id`s.*
+>⚠️ Follow [this tutorial](https://developers.vtex.com/docs/checking-your-stores-binding-id) to check your stores' `binding` `id`s.
 
 Your app's folder may end up with a structure similar to the following:
 
@@ -62,7 +62,7 @@ store-theme-robots
 
 7. Run `vtex use {workspace}` to use a developer environment.
 
-:warning: *Remember to replace the values between the curly brackets according to your scenario.*
+>⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
 8. Run `cd store-theme-robots` to go to the local app directory.
 

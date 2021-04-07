@@ -51,9 +51,7 @@ Make sure you fully understand what the [Trade Policies](https://help.vtex.com/t
 ![condition-rule](https://user-images.githubusercontent.com/52087100/74885765-24073880-5355-11ea-81ab-41b9449a718b.png)
 
 
-<div class="alert alert-info">
-The value entered in the Condition Rule field can be any one of your choosing. Remember to choose an intuitive condition and a clear rule, since both will be added to Master Data later for the user's verification to be successful.
-</div>
+>ℹ️ The value entered in the Condition Rule field can be any one of your choosing. Remember to choose an intuitive condition and a clear rule, since both will be added to Master Data later for the user's verification to be successful.
 
 ### Step 4 - Updating the user form in Master Data
 

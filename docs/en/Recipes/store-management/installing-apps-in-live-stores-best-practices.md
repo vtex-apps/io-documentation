@@ -29,9 +29,7 @@ When installing a new app on your store, we strongly recommend you to install it
 
 But note: during the A/B test configuration, it is strongly recommended that you **manually set traffic for each workspace**.
 
-<div class="alert alert-warning">
-The VTEX IO A/B test allows traffic to be directed either manually or automatically. In the latter scenario, the platform initially segments your store's total traffic and directs 50% of it to the Production workspace undergoing testing and the remaining 50% to the Master workspace. While it has considerable advantages for the store's conversion rate, automatically segmenting traffic may also pose greater operational risks by potentially impacting a greater number of users. 
-</div>
+>⚠️ The VTEX IO A/B test allows traffic to be directed either manually or automatically. In the latter scenario, the platform initially segments your store's total traffic and directs 50% of it to the Production workspace undergoing testing and the remaining 50% to the Master workspace. While it has considerable advantages for the store's conversion rate, automatically segmenting traffic may also pose greater operational risks by potentially impacting a greater number of users.
 
 ### Performing manual tests
 

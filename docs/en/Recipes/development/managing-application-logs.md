@@ -12,7 +12,7 @@ The following step-by-step shows how to implement VTEX IO logging service in you
 
 ## Implementing VTEX IO Logging Service
 
-:information_source: The VTEX IO Logging Service was designed for node applications and is not yet available for other applications on the platform.*
+>ℹ️ The VTEX IO Logging Service was designed for node applications and is not yet available for other applications on the platform.
 
 Assuming that you are familiar with how a service node function is implemented on the VTEX IO platform, consider the example below: 
 
@@ -43,7 +43,7 @@ The Logging Service also supports the `warn`,  `error`, and `debug` methods, hav
 }
 ```
 
-:information_source: *Every exception that happens inside a VTEX IO service application is intercepted and automatically logged with a `logger.error` implementation.*
+>ℹ️ Every exception that happens inside a VTEX IO service application is intercepted and automatically logged with a `logger.error` implementation.
 
 ## Retrieving application logs
 
@@ -53,7 +53,7 @@ Using VTEX IO's CLI:
 1. Log in to your VTEX account;
 2. Run the command `vtex logs --all` to retrieve logs from every application installed in your account. 
 
-:information_source: *We suggest running `vtex logs --all > {mylogfile.logs}` to save the log messages in a local file. Remember to replace `{mylogfile.logs}` with the most suitable name for you.*
+>ℹ️ We suggest running `vtex logs --all > {mylogfile.logs}` to save the log messages in a local file. Remember to replace `{mylogfile.logs}` with the most suitable name for you.
 
 ```
 vtex logs --all
@@ -73,4 +73,4 @@ vtex logs --all
   ```
 To retrieve logs from a specific application, use the command  `vtex logs {account}.{serviceAppExample}`, replacing `account` with your account name and `serviceAppExample` with the specific application name.
 
-:information_source: *If you want to see log messages that you have previously retrieved, run `vtex logs --past`. You can run `vtex logs --help` to check out other log commands.*
+>ℹ️ If you want to see log messages that you have previously retrieved, run `vtex logs --past`. You can run `vtex logs --help` to check out other log commands.

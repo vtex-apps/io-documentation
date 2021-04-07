@@ -34,10 +34,6 @@ Notice that releasing a new app version will not create this new version in our 
 - `vtex release minor beta` - To release a **minor** beta version.
 - `vtex release patch beta` - To release a **patch** beta version.
 
-<div class="alert alert-warning">
-  <b>Remember to replace the values between the curly brackets according to your scenario.</b>
-</div>
+>⚠️Remember to replace the values between the curly brackets according to your scenario.
 
-<div class="alert alert-info">
-Releasing a new app version is one of the steps to <b>making your code's new version public</b>. For more details on how to make your app available to your end-users and to better understand the full procedure, access the recipe on <a href="https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available">Making your new app version publicly available</a>.
-</div>
+>ℹ️ Releasing a new app version is one of the steps to making your code's new version public. For more details on how to make your app available to your end-users and to better understand the full procedure, access the recipe on [Making your new app version publicly available](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available).

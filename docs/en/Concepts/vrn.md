@@ -21,6 +21,4 @@ Examples of real VRNs are:
 
 When performing a request for external services (outside VTEX IO), remember to provide the full URL in the `path` element and also to define `proxy` in `service`.
 
-<div class="alert alert-warning">
-As in <code>vrn:apps:aws-us-east-1:vtex:example:/v2/apps/*</code>, a VRN may contain wildcards (<code>*</code>) to represent <strong>any</strong> value or variable. However, for security reasons, the wildcard is <strong>NOT</strong> allowed to replace the VTEX account name responsible for performing the request.
-</div>
+>⚠️As in `vrn:apps:aws-us-east-1:vtex:example:/v2/apps/*`, a VRN may contain wildcards (`*`) to represent **any** value or variable. However, for security reasons, the wildcard is **NOT** allowed to replace the VTEX account name responsible for performing the request.

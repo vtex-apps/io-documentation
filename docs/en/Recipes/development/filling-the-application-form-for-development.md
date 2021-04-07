@@ -36,9 +36,7 @@ Therefore, the existence of several small apps that when put together solve a si
 
 **It's crucial for users to be able to solve any problem in the most practical way possible**, using the solution given by a single app. This includes a **seamless installation process**.  
   
-<div class="alert alert-warning">
-Be careful however: overly generic apps, which bundle up a lot of distinct functionalities, are also not recommended mainly because the code can become complex and heavy.
-</div>
+>⚠️ Be careful however: overly generic apps, which bundle up a lot of distinct functionalities, are also not recommended mainly because the code can become complex and heavy.
 
 The most important practice is to **understand which service your app is meant to offer end users** and, based on that, decide how your development is going to be. Make sure that each functionality is correctly working towards delivering the desired result.
 

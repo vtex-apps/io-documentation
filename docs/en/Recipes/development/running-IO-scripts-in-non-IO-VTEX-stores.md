@@ -41,7 +41,7 @@ git clone https://github.com/vtex-apps/app-scripts-example
 7. Once everything is set up, use the terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/) to log in to the VTEX Account that you are using to develop your VTEX IO *Scripts App*.
 8. Run `vtex use {workspace}` to use a developer environment.
     
-:warning: *Remember to replace the values between the curly brackets according to your scenario.*
+>⚠️ Remember to replace the values between the curly brackets according to your scenario.
     
 9. Run `cd app-scripts-example` to go to the local app directory.
 10. Run `vtex link` to [link](https://vtex.io/docs/recipes/development/linking-an-app/) your new app to your development workspace.
@@ -77,7 +77,7 @@ For brand pages, expressed by URLs ending in `/b`, besides the `script1`, the `s
 
 Finally, for product pages, expressed by URLs ending in `/p`, besides the `script1`, the `script2` and the `script3` will also be loaded.
 
-:warning: *Note that, by default, the scripts are located in the `scripts` folder. Hence, the complete path can be omitted. Also, as the scripts builder only looks for `.ts` files, it's not necessary to indicate file extensions.*
+>⚠️ Note that, by default, the scripts are located in the `scripts` folder. Hence, the complete path can be omitted. Also, as the scripts builder only looks for `.ts` files, it's not necessary to indicate file extensions.
 
 Although a single `RegExp` can have multiple corresponding scripts and multiple `RegExp` can match a single URL path, each script is loaded and executed only one time per page, independently of how many occurrences it has in matched `RegExps`.
 

@@ -37,9 +37,7 @@ In the step by step below, we will guide you on how to **create new CSS Handle w
 
 To start the process of code contribution, you firstly need to [fork the app repository]((https://help.github.com/en/github/getting-started-with-github/fork-a-repo)) in which you desire to add new CSS Handles and clone your fork to a local directory.
 
-<div class="alert alert-warning">
-The forked app must be the one that provides the theme block wrapping the HTML element in which you want to add new Handles to.
-</div>
+>⚠️ The forked app must be the one that provides the theme block wrapping the HTML element in which you want to add new Handles to.
 
 2. In your terminal, clone the code of the forked app to your local files using `git clone` + the URL of the desired repository;
 3. Then, using any code editor, open the app's code;

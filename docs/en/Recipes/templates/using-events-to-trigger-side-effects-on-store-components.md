@@ -75,4 +75,4 @@ In the step by step below, you are going to learn how events and the `customPixe
 
 Once you save your changes and deploy your new Store Theme version, the Add To Cart Button component will send the `example-add-to-cart` event whenever it is clicked on. At the same time, the Minicart will be ready to automatically open itself as a response to any received event with this ID.  
 
-:information_source: *You can check out this behavior live in our [default Store Theme implementation](https://storetheme.vtex.com)!*
+>ℹ️ You can check out this behavior live in our [default Store Theme implementation](https://storetheme.vtex.com)!

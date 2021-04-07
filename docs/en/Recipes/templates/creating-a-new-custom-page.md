@@ -18,9 +18,7 @@ Stores are made up of several different pages, each one having a different layou
 - `store.login` - Login page
 - `store.orderplaced` - Order Placed page
 
-<div class="alert alert-info">
-You can manage each page's title and template in the Pages section, within the admin's CMS. 
-</div>
+>ℹ️ You can manage each page's title and template in the Pages section, within the admin's CMS. 
 
 However, you may want to create a new custom page to attend your store's specific needs. In this case, a new URL and content to go with it must be created by you from scratch.  
 
@@ -45,9 +43,7 @@ In order to do so, you first must choose one of three template types to host you
 
 - **Standard** - For pages with no specific product content. For instance, the Home page.
 
-<div class="alert alert-info">
-Even though <code>Standard</code> pages are not directly linked to any specific product, they may display shelves or lists of any chosen group of products. The main difference is that the group of products shown in such page does not depend on the URL query, but only on the setting of the shelf itself. 
-</div>
+>ℹ️ Even though `Standard` pages are not directly linked to any specific product, they may display shelves or lists of any chosen group of products. The main difference is that the group of products shown in such page does not depend on the URL query, but only on the setting of the shelf itself. 
 
 Let's suppose we are going to create a simple About Us page for a store. As such the page is not directly connected to any specific product, we should create a custom `Standard` template for it with an image in its left column and a a title and text content in its right column:
 
@@ -143,9 +139,7 @@ Once your changes are set up in a Production workspace, you will be able to use 
 
 Notice that a template only sets the page layout, hence any new template becomes available to be set on any page that accepts templates of the same type as the page itself.
 
-<div class="alert alert-info">
-When editing any content using the CMS section, it's always good to make your changes in a production workspace. Therefore, make sure you are not creating your new custom page in the store's master workspace.
-</div>
+>ℹ️ When editing any content using the CMS section, it's always good to make your changes in a production workspace. Therefore, make sure you are not creating your new custom page in the store's master workspace.
 
 ### Adding the content
 
