@@ -1,10 +1,10 @@
 ---
-title: Interfaces
-description: "Interfaces concept"
+title: Interface
+description: "Interface concept"
 date: "2020-04-09"
 tags: ["interface"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Concepts/interfaces.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Concepts/interface.md"
 ---
 
 # Interfaces
