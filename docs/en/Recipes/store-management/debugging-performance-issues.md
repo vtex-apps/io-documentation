@@ -24,7 +24,7 @@ Most websites use JavaScript to support a dynamic and interactive user experienc
 
 Generally, the amount of JavaScript that is shipped to the browser increases as the application complexity grows, for example, with the inclusion of third-party scripts and other JavaScript libraries.
 
-However,  it is important to remember that JavaScript handles data fetching, templating, and routing on the client-side rather than on the server-side.
+However, it is important to remember that JavaScript handles data fetching, templating, and routing on the client-side rather than on the server-side.
 
 Consequently, JavaScript must be processed before the page content is rendered, competing for processing power and delaying the rendering process.
 
