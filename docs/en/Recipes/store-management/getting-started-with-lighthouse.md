@@ -223,3 +223,6 @@ The layout shift score is a product of two measures: the [impact](https://web.de
 |0 - 0.1|Green (good)|
 
 This metric is mostly affected by images, ads, embeds, and iframes without pre-defined dimensions, and content dynamically inserted by JS on the client-side (e.g. a bar that suddenly appears on the header).
+
+---
+If you want to learn more, check our [best practices for optimizing performance.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance)
