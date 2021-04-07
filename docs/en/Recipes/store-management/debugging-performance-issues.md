@@ -12,7 +12,7 @@ With that in mind, the following [section](#step-by-step) intends to guide you w
 
 # Step by step
 
-Before proceeding, we recommend that you run [Lighthouse](https://developers.google.com/speed/pagespeed/insights/), considering the production workspace you're currently working in, by using the following URL pattern `https://{account}.myvtex.com/?workspace={workspace}`, and take note of your store's performance.
+Before proceeding any further, we recommend that you run [Lighthouse](https://developers.google.com/speed/pagespeed/insights/) using the following URL pattern `https://{account}.myvtex.com/?workspace={workspace}`, given the production workspace you're currently working, and take note of your store's performance. You can also analyze the store in production. In this case, please consider the URL available to end-users. 
 
 >⚠️ ***Keep in mind:** you must always use the `?workspace={workspace}` query string to analyze performance in a production workspace. Using the standard URL pattern `https://{workspace}--{account}.myvtex.com/` won't show the performance score of your store in the specified workspace.*
 
