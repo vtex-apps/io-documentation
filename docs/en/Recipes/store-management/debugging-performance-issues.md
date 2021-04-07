@@ -52,7 +52,7 @@ When performing this test, your store will probably not function the same way as
 
 ## Step 2: Checking the effect of third-party apps
 
-One of the first actions to debug performance issues is to test the desired page without *Pixel apps*.
+One of the first actions to debug performance issues is to test the desired page without [Pixel apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-pixel-app).
 
 >ℹ️ *Pixel apps are applications that integrate a third-party solution into your store's website.*
 
