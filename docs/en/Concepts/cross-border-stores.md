@@ -12,7 +12,7 @@ In a multidomain environment, each store can be set up independently. That means
 
 Considering the cross-border business model, it's possible for a single VTEX account to manage multiple stores, such as: `http://{storename}.com/en`, `http://{storename}.com/pt`.
 
-:information_source: *To set up a multidomain environment, please open a [ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) expressing your desire to become a cross-border store.*
+>ℹ️ To set up a multidomain environment, please open a [ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) expressing your desire to become a cross-border store.
 
 ## Essential concepts
 
@@ -24,7 +24,7 @@ This process results in the creation of a new store, which can be identified by 
 
 Hence, keep in mind that every VTEX store has a unique `binding` used as an identifier. This is useful, for example, to filter routes of a specific store from a multidomain VTEX account.
 
-:information_source: *To check the `binding` value of your stores, follow [this guide.](https://developers.vtex.com/docs/checking-your-stores-binding-id)*
+>ℹ️ To check the `binding` value of your stores, follow [this guide.](https://developers.vtex.com/docs/checking-your-stores-binding-id)
 
 Once the binding concept is familiar, it's possible to advance to sales policies.
 

@@ -11,9 +11,7 @@ The Store Theme app will define your store's theme by:
 
 ## Step 1 - Installing the Store Theme app
   
-<div class="alert alert-warning">
-Before installing the Store Theme app, <b>make sure your VTEX account has the Store Edition app installed</b>, as recommended in this track's second step. Otherwise, you won't be able to successfully implement the VTEX Store Framework.
-</div>
+>⚠️Before installing the Store Theme app, make sure your VTEX account has the Store Edition app installed, as recommended in this track's second step. Otherwise, you won't be able to successfully implement the VTEX Store Framework.
 
 VTEX IO Toolbelt offers the `vtex init` command which can quickly copy the Store Theme app repository to your computer, where it may be configured and fine-tuned according to your business needs.
 
@@ -23,9 +21,7 @@ VTEX IO Toolbelt offers the `vtex init` command which can quickly copy the Store
 $ cd {example folder}
 ```
 
-<div class="alert alert-warning">
-Note that <code>{example folder}</code> should be replaced with the folder name where the Store Theme is going to be copied to.
-</div>
+>⚠️ Note that `{example folder}` should be replaced with the folder name where the Store Theme is going to be copied to.
 
 2. Run the `vtex init` command:
 
@@ -37,9 +33,8 @@ $ vtex init
 
 ![toolbelt-store-theme-selection](https://user-images.githubusercontent.com/52087100/61887063-3d3b2a00-aed7-11e9-92b8-653c4972a218.png)
 
-<div class="alert alert-info">
-Once you select the <code>store-theme</code> option, Toolbelt will ask you for important information about the app, such as a value for the vendor, name, title and description. <strong>With the exception of vendor, press enter to keep each field's predefined values</strong>.
-</div>
+>ℹ️
+Once you select the `store-theme` option, Toolbelt will ask you for important information about the app, such as a value for the vendor, name, title and description. With the exception of vendor, press enter to keep each field's predefined values.
 
 4. Replace the predefined `vendor` value with the account name of the store that you are developing so that you'll be able to correctly publish its theme app later on. 
 
@@ -61,9 +56,7 @@ To better understand the app's structure, let's have a closer look at its files 
 - **`store`** - Folder responsible for defining the store's templates. It's where you configure each page's components and properties. 
 - **`styles`**: folder responsible for setting the store's visual theme. It's where you configure colors, typography and anything related to the store's style. 
 
-<div class="alert alert-info">
-Taking a closer look in the <code>store</code> and <code>styles</code> folder and their files, you'll notice code already being declared there. The reason behind this is that <strong>the Store Theme app that was copied to your local machine is already defining a basic theme for your store, declaring default components and styles to help you build your desired store front end</strong>.
-</div>
+>ℹ️ Taking a closer look in the `store` and `styles` folder and their files, you'll notice code already being declared there. The reason behind this is that the Store Theme app that was copied to your local machine is already defining a basic theme for your store, declaring default components and styles to help you build your desired store front end.
 
 ## Step 3 - Linking your local code to the VTEX IO platform
 
@@ -75,9 +68,7 @@ You'll need to sync your local files, where your Store Theme app code was copied
  $ vtex link
 ```
 
-<div class="alert alert-warning">
-You can run <code>vtex whoami</code> in your terminal to make sure that you're logged into the right VTEX account and using the Development workspace you've just created. Otherwise, the link won't work.
-</div>
+>⚠️ You can run `vtex whoami` in your terminal to make sure that you're logged into the right VTEX account and using the Development workspace you've just created. Otherwise, the link won't work.
 
 ![VTEX link example](https://user-images.githubusercontent.com/52087100/61887229-9dca6700-aed7-11e9-9934-030a153b75b6.png)
 

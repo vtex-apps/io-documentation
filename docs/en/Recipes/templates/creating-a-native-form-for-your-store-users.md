@@ -124,18 +124,14 @@ To that end, we will use the admin's Master Data legacy interface:
 }
 ```
 
-<div class="alert alert-info">
-Bear in mind that the schema's language will define the form's default language as well.
-</div>
+>ℹ️ Bear in mind that the schema's language will define the form's default language as well.
 
 When configuring the API to create the JSON Schema, remember to:
 
 - Replace the `data_entity_name` value with the Master Data's Data Entity name in which you want to save the user data fetched from the form;
 - Replace the `schema_name` value with a name of your choosing. The value defined will be the form's JSON Schema name.
 
-<div class="alert alert-info">
-If you have difficulty in setting up the JSON Schema properties based on Master Data fields, remember to use the schema structure for Master Data's fields copied in step 4.
-</div>
+>ℹ️ If you have difficulty in setting up the JSON Schema properties based on Master Data fields, remember to use the schema structure for Master Data's fields copied in step 4.
 
 Once the API was executed successfully, the JSON Schema is ready and you can already create the form in your store's theme.
 
@@ -224,9 +220,7 @@ When using Master Data v2, you will not need to previously create any field. Sim
 }
 ```
 
-<div class="alert alert-info">
-Bear in mind that the schema's language will define the form default language as well.
-</div>
+>ℹ️ Bear in mind that the schema's language will define the form default language as well.
 
 When configuring the API to create the JSON Schema, remember to:
 
@@ -234,9 +228,7 @@ When configuring the API to create the JSON Schema, remember to:
 - Replace the `schema_name` value with a name of your choosing. The value defined will be the form's JSON Schema name.
 Once the API was executed successfully, the JSON Schema is ready and you can already create the form in your store's theme.
 
-<div class="alert alert-info">
-Notice that Master Data v2 doesn't have an interface yet, so all actions regarding the user form must be done through <a href="https://developers.vtex.com/reference/master-data-api-v2-overview">APIs</a>.
-</div>
+>ℹ️ Notice that Master Data v2 doesn't have an interface yet, so all actions regarding the user form must be done through <a href="https://developers.vtex.com/reference/master-data-api-v2-overview">APIs</a>.
 
 ### Step 2 - Configure the Store Form app
 

@@ -17,13 +17,9 @@ For e-commerce companies, **one of the main advantages of enabling 404 pages is 
 
 In VTEX IO, 404 pages are **natively** enabled for inexistent product pages and for URLs that have more than one invalid segment. But in addition, it is also possible to allow 404 pages when URLs have a **single** invalid segment, as shown in the step by step section below.
 
-<div class="alert alert-info">
-Due to implementation rules, the native functionality of 404 pages does not function for URLs originating from user searches. The reason behind this is that URLs originating from product searches include the <code>map=ft</code> parameter in their path, helping the platform to interpret that such URL segments reflect user performed searches, and thus should not be interpreted as non-existent (which would lead to a 404 page being rendered).
-</div>
+>ℹ️ Due to implementation rules, the native functionality of 404 pages does not function for URLs originating from user searches. The reason behind this is that URLs originating from product searches include the `map=ft` parameter in their path, helping the platform to interpret that such URL segments reflect user performed searches, and thus should not be interpreted as non-existent (which would lead to a 404 page being rendered).
 
-<div class="alert alert-warning">
-In rare cases when the parameter <code>map=specificationFilter</code> is present in the path of such search originated URLs, 404 pages may be rendered. This happens because the platform cannot interpret these URL segments as originating from user searches since it cannot find the <code>map=ft</code> parameter usually present in such URLs. This behavior is uncommon and is being addressed by our product team.
-</div>
+>⚠️ In rare cases when the parameter `map=specificationFilter` is present in the path of such search originated URLs, 404 pages may be rendered. This happens because the platform cannot interpret these URL segments as originating from user searches since it cannot find the `map=ft` parameter usually present in such URLs. This behavior is uncommon and is being addressed by our product team.
 
 ## Step by step
 
@@ -60,9 +56,7 @@ Find below an example of a `store.not-found#product` in a product template:
 }
 ```
 
-<div class="alert alert-info">
-The <code>store.not-found</code> blocks will only be triggered when the server returns a 404 error for a browser request. In such scenarios, the block that is set as child will be effectively rendered to users.
-</div>
+>ℹ️ The `store.not-found` blocks will only be triggered when the server returns a 404 error for a browser request. In such scenarios, the block that is set as child will be effectively rendered to users.
 
 4. Save your changes and then run `vtex link` in your terminal to witness the above block being rendered as follows:  
 

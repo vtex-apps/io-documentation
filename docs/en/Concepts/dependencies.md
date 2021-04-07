@@ -32,6 +32,4 @@ The most recurrent use of VTEX IO apps as dependencies are for:
 - Using GraphQL or REST definitions declared in another app.
 - Implementing a GraphQL schema from another app.
 
-<div class="alert alert-warning">
-When installing a VTEX IO app, its dependencies will be automatically installed on the logged account as well, but not as first-class apps. That means that indirect dependencies won't be able to declare routes.
-</div>
+>⚠️ When installing a VTEX IO app, its dependencies will be automatically installed on the logged account as well, but not as first-class apps. That means that indirect dependencies won't be able to declare routes.

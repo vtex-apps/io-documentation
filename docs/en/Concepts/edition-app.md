@@ -27,10 +27,7 @@ Notice that this can be especially useful for complex account families, such as 
 
 That's because, besides the fundamental development environment set up by a `vtex` native Edition App, a Sponsor Account can extend an Edition App by creating a new and customized one that meets its account family needs. 
 
-<div class="alert alert-info">
-To change the Edition App installed in an account, you must <a href ="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a support ticket</a>. This is required to avoid critical issues that could be caused by its misconfiguration.
-</div>
-
+>ℹ️ To change the Edition App installed in an account, you must <a href ="https://help-tickets.vtex.com/smartlink/sso/login/zendesk">open a support ticket</a>. This is required to avoid critical issues that could be caused by its misconfiguration.
 Note that all Edition apps must depend, directly or indirectly, on either `vtex.edition-business` or `vtex.edition-store`.
 
 The apps that are part of the Edition App included as a dependency are considered inherited apps.

@@ -28,9 +28,7 @@ When using VTEX IO, any interaction with an account happens in a [workspace](htt
 
 It works as a version of the account in which you are logged in, in a way that any development operation done using such a workspace will be isolated, separate from other workspaces and the public version of the account itself (called Master). 
 
-<div class="alert alert-info">
-  If you're used to working with GitHub, think of workspaces as <strong>branches</strong>.
-</div>
+>ℹ️ If you're used to working with GitHub, think of workspaces as **branches**.
 
 As you log in to a VTEX store using VTEX IO, you are automatically in its master workspace, meaning you are in the version available to the end user.
 
@@ -52,17 +50,13 @@ Following our example, the command will change the login to the  `examplename` w
 
 ![workspace-examplename EN](https://user-images.githubusercontent.com/52087100/63979000-30899300-ca8e-11e9-9d9d-234e31ac45f7.png)
  
-<div class="alert alert-info">
-The <code>vtex use</code> command makes all your operations run in the workspace specified in the command, which means you can shift your operations to Master simply by running <code>vtex use master</code> in Toolbelt, for example.
-</div>
+>ℹ️ The `vtex use` command makes all your operations run in the workspace specified in the command, which means you can shift your operations to Master simply by running `vtex use master` in VTEX IO CLI, for example.
 
 ## Step 4 - Accessing your store using a workspace
 
 Having created your own development workspace in VTEX IO, you can now go to your store by accessing `https://{workspace}--{account}.myvtex.com`, where `{workspace}` should be replaced with the name of the workspace that you've just created and `{account}` with the name of the VTEX account in which you are working.
 
-<div class="alert alert-info">
-<strong>Tip</strong>: you can simply run <code>vtex browse</code> in your terminal to automatically open your browser using the workspace and account in which you are working.
-</div>
+>ℹ️ **Tip:** you can simply run `vtex browse` in your terminal to automatically open your browser using the workspace and account in which you are working.
 
 Done! Your store is now connected to the VTEX IO platform and you are technically ready to implement the VTEX Store Framework!
 

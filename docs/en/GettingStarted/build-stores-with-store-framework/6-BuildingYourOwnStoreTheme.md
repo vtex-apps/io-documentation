@@ -6,7 +6,4 @@ It's time to put your knowledge to the task and to practice by creating a store 
 
 Access our [**hands-on course on VTEX Store Framework**](http://lab.github.com/vtex-trainings/store-framework) through your GitHub account.
 
-<div class="alert alert-info">
-If you've already completed the course and wish to move on to the next step of configuring your store theme, remember: up until the very last step of this track, the Store Theme app is stored in your local files and is linked to your VTEX store only through your Development workspace. <strong>To make these changes to your store's theme reach end users, you'll need to <a href="https://vtex.io/docs/recipes/store-management/making-your-theme-content-public/">make your theme content public</a></strong>.
-</div>
-
+>ℹ️ If you've already completed the course and wish to move on to the next step of configuring your store theme, remember: up until the very last step of this track, the Store Theme app is stored in your local files and is linked to your VTEX store only through your Development workspace. <strong>To make these changes to your store's theme reach end users, you'll need to <a href="https://vtex.io/docs/recipes/store-management/making-your-theme-content-public/">make your theme content public</a>.

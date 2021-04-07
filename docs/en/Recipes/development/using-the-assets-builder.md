@@ -36,9 +36,7 @@ Check out the instructions to use it below:
 
 ![assets-folder](https://user-images.githubusercontent.com/60782333/83685560-3e40eb80-a5bf-11ea-9ea1-d443bce21b11.png)
 
-<div class="alert alert-warning">
-If you created subfolders inside the Assets folder, remember to include the folder hierarchy in the asset path, such as:  <code>assets/events/vtex-day.jpg</code>.
-</div>
+>⚠️ If you created subfolders inside the Assets folder, remember to include the folder hierarchy in the asset path, such as:  `assets/events/vtex-day.jpg`.
 
 4. Use the asset path (`assets/{imageFileName}.{jpg/png/gif}`) as the value of a given block's prop, such as `src`, or CSS class for media rendering:
 
