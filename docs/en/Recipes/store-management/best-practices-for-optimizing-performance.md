@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/best-practices-for-optimizing-performance.md"
 ---
 
-# Best practices for optimizing performance
+# Optimizing performance
 
 For the e-commerce business, appealing offers, high-quality products, or brand recognition might not be enough for *converting leads* if *user-experience* is left behind.
 
