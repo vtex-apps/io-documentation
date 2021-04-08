@@ -11,6 +11,8 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 The filter navigator is one of the most important components on the search page. This recipe will show you how to set the filter navigator component in a way that has been proven to improve the conversion of your store.
 
+All props mentioned here are documented on [documentation page](https://vtex.io/docs/components/all/vtex.search-result). You will be able to check both the description and the possible values ​​of each prop.
+
 ## Step by step
 
 1. Ensure that you have the `vtex.search-result@3.x` as a dependency of your `manifest.json`:
