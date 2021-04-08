@@ -36,7 +36,7 @@ All props mentioned here are documented on [documentation page](https://vtex.io/
 }
 ```
 
-2. Add the following props to the `search-result-layout.desktop` and the `search-result-layout.mobile`.
+2. Add the following props to the `search-result-layout.desktop` and the `search-result-layout.mobile`:
 
 ```diff
 "search-result-layout.desktop": {
@@ -68,7 +68,7 @@ All props mentioned here are documented on [documentation page](https://vtex.io/
 }
 ```
 
-3. Declare the `filter-navigator.v3` block with the following props
+3. Declare the `filter-navigator.v3` block with the following props:
 
 ```diff
 + "filter-navigator.v3": {
@@ -86,6 +86,6 @@ All props mentioned here are documented on [documentation page](https://vtex.io/
 + },
 ```
 
-4. Your filter-navigator should look like this
+4. Your filter-navigator should look like this:
 
 ![filter-navigator demo](https://user-images.githubusercontent.com/40380674/114074357-abc24600-987a-11eb-86ed-35aa05c4b1e8.gif)
