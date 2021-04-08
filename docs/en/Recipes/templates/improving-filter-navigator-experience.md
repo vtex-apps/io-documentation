@@ -35,9 +35,9 @@ The filter navigator is one of the most important components on the search page.
     "props": {
         // props
 +       "preventRouteChange": true,
-+		"thresholdForFacetSearch": 10,
-+		"showProductsCount": true,
-+		"showFacetQuantity": true
++       "thresholdForFacetSearch": 10,
++       "showProductsCount": true,
++       "showFacetQuantity": true
     }
 }
 ```
