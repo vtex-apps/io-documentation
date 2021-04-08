@@ -11,6 +11,15 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 The filter navigator is one of the most important components on the search page. This recipe will show you how to set the filter navigator component in a way that has been proven to improve the conversion of your store.
 
+Here is a quick summary of the changes that will be made:
+
+- Add a search input to the filter options list
+- Change the filter navigation to use `collapsible` filters
+- Add more info about selected filters and product quantity
+- Update the search result at the moment that the filter is selected
+- Add a show more/less button to the filter options list
+- Add a "clear all" button to each filter options list
+
 All props mentioned here are documented on [documentation page](https://vtex.io/docs/components/all/vtex.search-result). You will be able to check both the description and the possible values ​​of each prop.
 
 ## Step by step
@@ -65,7 +74,6 @@ All props mentioned here are documented on [documentation page](https://vtex.io/
 + "filter-navigator.v3": {
 +     "blocks": ["sidebar-close-button"],
 +     "props": {
-+         "initiallyCollapsed" :true,
 +         "truncateFilters": true,
 +         "showClearByFilter": true,
 +         "fullWidthOnMobile": true,
