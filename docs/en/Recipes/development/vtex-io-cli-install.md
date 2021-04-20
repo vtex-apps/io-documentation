@@ -18,7 +18,11 @@ According to your operating system, take the following steps to install VTEX IO�
 1. Go to the **Homebrew** [page](https://brew.sh/index).
 2. Copy the command below **Install Homebrew**.
 
-![brew](https://user-images.githubusercontent.com/19495917/91765945-283bca80-ebb0-11ea-943d-4d71db627768.png)
+![brew](https://files.readme.io/7a812a5-Screen_Shot_2021-04-20_at_19.49.25.png)
+
+```sh
+$ /bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”
+```
 
 3. Open a terminal by typing `Command + Space` and typing` terminal`.
 
