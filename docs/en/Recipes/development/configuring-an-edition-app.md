@@ -67,7 +67,6 @@ After setting up the initial configurations needed to develop your own Edition A
 
 1. Open the `edition/apps.json` file.
 2. In the `apps` section, add all the apps and settings you want to impose to the child accounts. For example:
-3. 
 ```diff
 {
     "apps": {
@@ -81,7 +80,6 @@ After setting up the initial configurations needed to develop your own Edition A
 }
 ```
 Only the `defaultMajor` (or previously `major`) is obligatory, and all the others can be omited if they don't need to be configured.
-
    * `defaultMajor` or `major` fields determines the major of the app that will be installed by default, when the edition is set in some account.
    * `allowedMajors` allows specifying alternative majors that can be used by any account using the edition. Those majors can be used by manually installing the alternate version of the app using toolbelt (`vtex install`). If this field is omited or empty, it means that only the default major is allowed and it cannot be changed.
    * `allowsUninstall` serves to allow users to uninstall the app from the edition as well, to be done manually using toolbelt (`vtex uninstall`). If omited will default to `false`, i.e. that the app cannot be uninstalled by the account.
