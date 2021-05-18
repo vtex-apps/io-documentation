@@ -13,13 +13,13 @@ The hierarchical relationship between a [Sponsor Account](https://vtex.io/docs/c
 
 Hence, it can be advantageous for **complex account families** under the same brand or holding to have its own Edition App.
 
-Once you [enable the Sponsor Account behavior](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-becoming-a-sponsor-account) in one of your accounts, follow the steps below to create your own Edition app and install it on your child accounts.
+Once you [enable the Sponsor Account behavior](https://vtex.io/docs/recipes/development/becoming-a-sponsor-account) in one of your accounts, follow the steps below to create your own Edition app and install it on your child accounts.
 
 ## Step by step
 
 ### Step 1 - Creating an Edition app
 
-1. Using your terminal and [VTEX IO's CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-toolbelt), log in to your Sponsor Account.
+1. Using your terminal and [VTEX IO's CLI](https://developers.vtex.com/vtex-developer-docs/docs/toolbelt), log in to your Sponsor Account.
 2. Run the `vtex init` command.
 3. Choose the `edition app` option. This will create a boilerplate repository in your local files.
 4. Navigate to the `edition-app` folder and open the `manifest.json` file. It should look something like this:
