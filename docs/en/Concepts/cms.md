@@ -9,20 +9,11 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Conc
 
 CMS stands for Content Management System, which can be understood as a system that manages all the content consumed by one or several digital channels. 
 
-In the VTEX scenario, CMS is the module responsible for managing the pages that build up your store's website.
+In the VTEX scenario, CMS is the module responsible for managing the pages that build up your store's website, giving you the autonomy to create, organize, edit, and define the entire structure of folders, files, and components to make up your site front as desired. 
 
-Through the Admin interface, in the **Layout** section, it gives you the autonomy to create, organize, edit, and define the entire structure of folders, files, and components to make up your site front as desired using HTML and CSS.
+Through the Admin interface, it allows you to create your storefront with the most suitable technology for your scenario: HTML and CSS, on the **Layout** section, or the VTEX Store Framework, on the [**Site Editor**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-site-editor) section. 
 
-![CMS](//images.ctfassets.net/alneenqid6w5/2xGQu0QhxVvd94JOGEmzgS/63c5dac324686df8e6ad4bc6778e2ac1/CMS.png)
+![CMS](https://user-images.githubusercontent.com/52087100/119380423-13035080-bc97-11eb-8c1d-4b0c25f39194.png)
 
-## Store Framework and Site Editor
+![site-editor](https://user-images.githubusercontent.com/52087100/119380417-11398d00-bc97-11eb-9ebd-2be23aad6856.png)
 
-Another powerful resource at hand for you to create page content is the [VTEX Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), which provides a foundation of highly flexible and customizable [React](https://reactjs.org/) components for any needed storefront structure.
-
-The Store Framework solution enables non-tech users to be assisted by the Site Editor to perform updates in the storefront content. 
-
-The Site Editor section, also found in the Admin's CMS module, reflects the account's Store Theme app. It works as a content editor for VTEX Store Framework users, providing support to edit the page's components as desired.
-
-![site-editor](//images.ctfassets.net/alneenqid6w5/4Vm3iktaZ3YeAijFwpeDGn/5542331c1fdc8bae092de556c343aa0c/site-editor.png)
-
-Access all of the available Site Editor documentation [here](https://help.vtex.com/tutorial/--531cHtUCUi3puRXNDmKziw).
