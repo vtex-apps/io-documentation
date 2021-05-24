@@ -23,21 +23,9 @@ The key element that ensures the security of the displayed content is the **Chal
 
 Check out the [Challenge Trade Policy documentation](https://vtex.io/docs/components/all/vtex.challenge-tp-condition/) to configure it correctly in your store and proceed to the next steps.
 
-### Step 2 - Enabling B2B behavior
+### Step 2 - Defining the Condition Rule
 
-With the Challenge properly installed and configured, it's time to make the VTEX IO platform understand that your store's environment will assume a B2B behavior. To do that, follow the steps below:
-
-1. Log into the desired account's admin;
-2. Access the **Apps** section in the admin's sidebar;
-3. Click on **VTEX Store**;
-4. Check the **Enable B2B behavior** box.
-5. Save your changes
-  
-![b2b-enablement](https://user-images.githubusercontent.com/52087100/74885760-223d7500-5355-11ea-9b95-49be69ca87de.gif)
-
-### Step 3 - Defining the Condition Rule
-
-With the Challenge configured and the B2B enabled, it's time for you to define what the access criterion will be - in other words, the **condition rule** that will allow a user to browse your store.
+With the Challenge configured, it's time for you to define what the access criterion will be - in other words, the **condition rule** that will allow a user to browse your store.
 
 To define the condition rule, you first need to choose which of your store's Trade Policy it will be applied to. Each Trade Policy must have its Condition Rule defined **individually**, since each one has its own catalog, price and logistics particularities.
 
@@ -47,13 +35,11 @@ Make sure you fully understand what the [Trade Policies](https://help.vtex.com/t
 2. Choose the desired Trade Policy. You can edit an existing one, by clicking on **Edit**, or [create one from scratch](https://help.vtex.com/faq/how-to-configure-a-new-trade-policy--frequentlyAskedQuestions_700), by clicking on **New Trade Policy**. 
 3. In the **Condition Rule** field, define an access criterion of your choosing for the users who will access the trade policy in question. For example: if only logged in users can access store content, your **Condition Rule** could be something like `approved=true`.
 
-
 ![condition-rule](https://user-images.githubusercontent.com/52087100/74885765-24073880-5355-11ea-81ab-41b9449a718b.png)
-
 
 >ℹ️ The value entered in the Condition Rule field can be any one of your choosing. Remember to choose an intuitive condition and a clear rule, since both will be added to Master Data later for the user's verification to be successful.
 
-### Step 4 - Updating the user form in Master Data
+### Step 3 - Updating the user form in Master Data
 
 In this last step, you will create a link between the Condition Rule and the user profiles you want to have access to the store.
 
