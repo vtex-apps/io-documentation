@@ -54,7 +54,7 @@ Once you [enable the Sponsor Account behavior](https://developers.vtex.com/vtex-
 >ℹ️ Notice that the Edition App being developed extends its dependency, inheriting all its apps and configurations.
 
 - If your store was built with [VTEX legacy CMS](https://help.vtex.com/tutorial/o-que-e-o-cms--EmO8u2WBj2W4MUQCS8262) and this is your first Edition App, keep it as `"vtex.edition-business": "0.x"`.
-- If your store was built with the [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework) and this is your first Edition App, change it to `"vtex.edition-store": "2.x"`.
+- If your store was built with the [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework) and this is your first Edition App, change it to `"vtex.edition-store": "5.x"`.
 - If you have more complex inheritance needs, change it to an Edition App you have previously developed. The dependency's `vendor` must be the same one of the Edition App being developed.
 
 >⚠️ Every Edition app must declare a dependency and only a single Edition App can be declared as a dependency.
