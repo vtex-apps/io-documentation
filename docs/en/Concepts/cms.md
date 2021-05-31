@@ -4,7 +4,7 @@ description: "CMS concept"
 date: "2021-05-31"
 tags: ["cms"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Concepts/cms.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/cms.md"
 ---
 
 CMS stands for Content Management System, which can be understood as a system that manages all the content consumed by one or several digital channels. 
