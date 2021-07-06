@@ -22,7 +22,7 @@ Stores are made up of several different pages, each one having a different layou
 
 However, you may want to create a new custom page to attend your store's specific needs. In this case, a new URL and content to go with it must be created by you from scratch.  
 
-## Stey by step
+## Step by step
 
 Follow the steps below and learn how to define a different layout and path for a new store page:
 
