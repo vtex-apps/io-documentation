@@ -20,7 +20,7 @@ In addition to that, if you are developing a new project, installing an app is a
 
 ## Step by step
 
-1. Using your terminal and the [VTEX IO Toolbelt](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-toolbelt), make sure you are logged into the desired account and using the desired workspace;
+1. Using your terminal and the [VTEX IO Toolbelt](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-toolbelt), make sure you are logged into the desired account and using the desired workspace.
 2. Then, run one of the following commands according to your needs and scenario:
 
 - `vtex install {appVendor}.{appName}` or `vtex install {appVendor}.{appName}@x` - To install the **latest stable version** of the app;
