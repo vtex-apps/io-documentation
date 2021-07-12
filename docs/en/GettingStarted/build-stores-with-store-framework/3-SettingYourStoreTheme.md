@@ -69,7 +69,7 @@ You'll need to sync your local files, where your Store Theme app code was copied
 
 >⚠️ You can run `vtex whoami` in your terminal to make sure that you're logged into the right VTEX account and using the Development workspace you've just created. Otherwise, the link won't work.
 
-![VTEX link example](https://user-images.githubusercontent.com/67270558/125139989-f193e200-e0e7-11eb-9b50-4679e4a2a614.png)
+![VTEX link example](https://user-images.githubusercontent.com/67270558/125298194-50cb3f80-e2fe-11eb-9a7f-89738be2eae5.png)
 
 By successfully running this command in your terminal, your local code is sent to the VTEX IO cloud-native infrastructure and it is reflected in the development workspace you are currently working in.
 
