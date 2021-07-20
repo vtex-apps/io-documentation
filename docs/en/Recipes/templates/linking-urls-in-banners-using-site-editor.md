@@ -9,6 +9,8 @@ git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/
 
 # Linking URLs in banners using Site Editor
 
+> ⚠️ The documentation has been updated and now it is available in [VTEX Help Center](https://help.vtex.com/en/tutorial/linking-urls-to-banners-using-the-site-editor--4z2PagtN733waiWA8ttOuD).
+
 You can configure one of your store’s banner to have a page redirect, meaning that it can take users to any address of your choosing. To configure this using Site Editor, simply link the banner to any external or internal URL by following the steps below:
 
 ## Internal URLs
