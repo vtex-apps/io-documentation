@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 #  Submitting your app in the VTEX app store
 
-The [**VTEX App Store**](https://extensions.vtex.com/) is a marketplace for VTEX IO plug-and-play solutions. 
+The [**VTEX App Store**](https://apps.vtex.com) is a marketplace for VTEX IO plug-and-play solutions. 
 
 It can be used by any VTEX partners willing to **share their solutions** with other VTEX users so they can also **leverage their business**. 
 
