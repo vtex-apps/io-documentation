@@ -3,8 +3,8 @@ title: Homologation requirements for VTEX App Store
 description: "Business, design, and engineering guidelines enforced by the VTEX App Store to guarantee a baseline standard of quality, viability and usability for all apps available for VTEX stores."
 date: "2021-07-21"
 tags: ["app-store", "app", "development", "homologation"]
-version: " "
-git: " "
+version: "0.69.0 "
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/homologation-requirements-for-vtex-app-store.md"
 ---
 
 # Homologation requirements for the VTEX App Store
