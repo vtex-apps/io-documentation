@@ -6,8 +6,7 @@ Whenever a request is performed in the VTEX IO platform, the source of this acti
 
 In the sequence, to detect whether or not the request source is authorized to perform that particular request, and also to determine if the call can go through, VTEX IO platform checks if the source role contains the required policies attached.
 
-<div class="alert alert-info">
-As a single request source can have different permissions within the same account, each role can also have multiple policies attached to it.</div>
+>ℹ️ As a single request source can have different permissions within the same account, each role can also have multiple policies attached to it.
 
 Since apps and users are able to perform a request on the platform, both of them mandatorily receive roles. However, notice the following: app and user roles are structured in different formats.
 

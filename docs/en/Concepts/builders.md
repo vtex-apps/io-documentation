@@ -63,6 +63,7 @@ Name | Functionality
  `docs` | Makes the app documentation stored in `/docs/readme.md` available on [VTEX IO Docs](https://vtex.io/docs/).
  `dotnet` | Interprets the `/dotnet` directory, empowering the development of custom backend services.
  `graphql` | Processes GraphQL API's and schemas by interpreting `.graphql` and `.gql` files contained in the app's `/graphql` directory.
+ `services` | Fetches service workers exported by the account's installed apps and bundles them in a single file, enabling the store to work with several service workers simultaneously. You can learn how to use it by accessing the recipe on [Using several service workers in your store](https://developers.vtex.com/vtex-developer-docs/docs/using-several-service-workers-in-your-store). 
  `styles` | Exports CSS configurations for Store Framework blocks. When building your app, the Styles builder reads the `styles/styles.json` file and uses a [Tachyons](https://tachyons.io/) generator to properly produce your store's CSS.
  `store` | Interprets and validates the blocks, interfaces and routes contained in the theme app's `/store` directory, powering Store Framework store's components and building the storefront.
  `messages` | Exports localized string messages, empowering *VTEX IO internationalization*. It reads `.json` files associated with different locales within the app's `/messages` directory and makes them available for front-end applications to use via `react-intl`.

@@ -12,7 +12,7 @@ Moreover, cross-border stores that share the same catalog can also have their ca
 
 [Rewriter](https://developers.vtex.com/docs/rewriter) is the VTEX IO app responsible for managing product, search, and navigation routes - client-side defined routes related to VTEX IO custom paths and pre-defined templates, such as [department](https://github.com/vtex-apps/store/blob/master/store/routes.json#L27), [brand](https://github.com/vtex-apps/store/blob/master/store/routes.json#L21), and [category](https://github.com/vtex-apps/store/blob/master/store/routes.json#L33) routes.
 
-:information_source: *To learn more about Routes in VTEX IO, please follow [this link](https://developers.vtex.com/docs/routes).*
+>ℹ️ To learn more about Routes in VTEX IO, please follow [this link](https://developers.vtex.com/docs/routes).
 
 The main objective of this app is to make it possible to render requested pages based on shorter rewritten URLs. For example, a route such as `http://{storename}.com/_v/segment/routing/vtex.store@2.x/product/3/blouse/p` can be understood by its canonical `http://{storename}.com/blouse/p`.
 
@@ -26,9 +26,9 @@ That means cross-border stores can also have their catalog URLs translated into 
 
 Hence, a product registered under the `yellow-dress` slug, for example, as in `http://{storename}.com/us/yellow-dress/p`, could have its slug translated to `vestido-amarillo`, as in `http://{storename}.com/ar/vestido-amarillo/p`.
 
-:warning: *Keep in mind that catalog URLs translations are accepted for each `binding`, not for a single multi-language store.*
+>⚠️ Keep in mind that catalog URLs translations are accepted for each `binding`, not for a single multi-language store.
 
-:information_source: *To learn how to translate a catalog URL, please follow this [guide](https://developers.vtex.com/docs/catalog-internationalization).*
+>ℹ️ To learn how to translate a catalog URL, please follow this [guide](https://developers.vtex.com/docs/catalog-internationalization).
 
 By sending the desired URL translation via the right GraphQL mutation to the Catalog API, an alias of the main route is automatically created in the Rewriter app. 
 

@@ -31,9 +31,7 @@ Once your changes are saved, VTEX IO will be able to understand that whenever a 
 
 Therefore, the currency code shown should follow currency code international standards (ISO standard). For these scenarios, the platform will display prices (including their decimal places) according to the international currency code set in the `Currency Code` field.
 
-<div class="alert alert-info">
-The price's decimal places are displayed according to language selected in the <code>Currency Code</code> field, following the ISO standards. Therefore, the <code>Currency Decimal Places</code> field is not mandatory. You should only use it in scenarios where you desire to overwrite the decimal places defined by the ISO standards. 
-</div>
+>ℹ️ The price's decimal places are displayed according to language selected in the `Currency Code` field, following the ISO standards. Therefore, the `Currency Decimal Places` field is not mandatory. You should only use it in scenarios where you desire to overwrite the decimal places defined by the ISO standards. 
 
 Following the same logic, whenever a user's locale is the same as the default one set in the `Culture Info` field, VTEX IO will interpret that it is dealing with a local user and thereby the currency code won’t need to follow international standards - the commonly used currency symbol for that country will suffice.
 
@@ -41,6 +39,4 @@ To make this platform logic more tangible, imagine the following scenario: a Bra
 
 For international users, the product prices will be displayed using the `BRL` currency code but for local ones, meaning for user whose locale is the same as the one set in `Culture Info`, the `R$` currency code is enough.
 
-<div class="alert alert-warning">
-Remember that <strong>the saved configuration will only be applied to the specifically selected trade policy</strong>. To replicate these configurations in all of your store's trade policies, you must fill out the fields in each trade policy and save the changes.
-</div>
+>⚠️Remember that **the saved configuration will only be applied to the specifically selected trade policy**. To replicate these configurations in all of your store's trade policies, you must fill out the fields in each trade policy and save the changes.

@@ -1,13 +1,13 @@
 ---
-title: Best practices for storefront component development
+title: Developing custom storefront components
 description: "Learn the guidelines adopted by our very own product team to cooperate with your development journey using Store Framework, VTEX IO and the React technology."
-date: "2021-03-09"
+date: "2021-03-12"
 tags: ["storefront", "component", "react", "development", "block", "best-practices"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/docs/en/Recipes/development/best-practices-for-storefront-component-development.md"
+git: "https://github.com/vtex-apps/io-documentation/edit/docs/en/Recipes/development/developing-custom-storefront-components.md"
 ---
 
-# Best practices for storefront component development
+# Developing custom storefront components
 
 During the development process, it is natural to face,  among other issues that directly affect the shopping experience, critical questions regarding performance and internationalization.
 
@@ -23,7 +23,7 @@ When creating a custom component, use tools to ease the code development by auto
 
 Features such as [ESLint](https://eslint.org/), [Typescript](https://www.typescriptlang.org/), and [Prettier](https://prettier.io/) are not mandatory for project deployment, but they help development, code maintenance, and testings. 
 
-The [React App repository(https://github.com/vtex-apps/react-app-template) is the go-to model template for tooling since it provides formatting features and the [VTEX Test Tool](https://github.com/vtex/test-tools), a native testing tool from VTEX that leverages from [Jest](https://jestjs.io/).
+The [React App repository](https://github.com/vtex-apps/react-app-template) is the go-to model template for tooling since it provides formatting features and the [VTEX Test Tool](https://github.com/vtex/test-tools), a native testing tool from VTEX that leverages from [Jest](https://jestjs.io/).
 
 Use Typescript types as an ally in your development journey since they provide autocomplete tools that can be used when developing and importing a new component. To have them at hands, run the following command in your terminal: 
 
@@ -124,15 +124,15 @@ Instead of creating specific props to attend to devices' typical scenarios, leve
 
 #### Don't 
 
-![best-practices-for-storefront-component-development-1](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-1.png?raw=true)
+![best-practices-for-storefront-component-development-1](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-1.png?raw=true)
 
 #### Do
 
-![best-practices-for-storefront-component-development-2](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-2.png?raw=true)
+![best-practices-for-storefront-component-development-2](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-2.png?raw=true)
 
 > ℹ️ *Combine enum props with responsive values, as shown below, and enhance your code quality with super optimized props!*
 
-![best-practices-for-storefront-component-development-3](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-3.png?raw=true)
+![best-practices-for-storefront-component-development-3](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-3.png?raw=true)
 
 ### Slots
 
@@ -142,11 +142,11 @@ You can learn more about Slots [here](https://developers.vtex.com/vtex-developer
 
 #### Don't 
 
-![best-practices-for-storefront-component-development-4](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-4.png?raw=true)
+![best-practices-for-storefront-component-development-4](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-4.png?raw=true)
 
 #### Do
 
-![best-practices-for-storefront-component-development-5](https://github.com/vtex-apps/io-documentation/blob/open-react/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-5.png?raw=true)
+![best-practices-for-storefront-component-development-5](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-5.png?raw=true)
 
 > ℹ️ *When not using Slots, prefer to use the `children` [composition](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-composition).* 
 
@@ -206,7 +206,7 @@ In terms of content internationalization, be cautious with string text translati
 
 Be aware that internationalization can mean more than string text translations! Take care of interpolation, pluralization, price and percentage formatting, among other discrepancies that may come into your way once borders are crossed.
 
-Read the [Translating the component]() article and the [multi-language store documentations](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-multi-language-stores) to understand how you can make these adjustments in your component! 
+Read the [Translating the component](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-8-translating-the-component) article and the [multi-language store documentations](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-multi-language-stores) to understand how you can make these adjustments in your component! 
 
 ## Styling
 
@@ -218,7 +218,7 @@ Understand both tools' particularities to make the best decision for your compon
 
 Also, do not forget to make CSS Handles available for your component users if its distribution is a goal. Through Handles, future users will be able to style your storefront component as desired, according to their own specific needs. 
 
-Check out the documentation on [Defining styles]() to learn about Tachyons, CSS Modules and CSS Handles, as well as their use cases.
+Check out the documentation on [Defining styles](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-5-defining-styles) to learn about Tachyons, CSS Modules and CSS Handles, as well as their use cases.
 
 Another good styling tip is to be careful with the breakpoints on the screen according to devices. Remember to set the component style for every possible scenario on the interface!
 

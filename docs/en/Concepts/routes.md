@@ -53,7 +53,7 @@ These routes must be declared in a `routes.json` file inside the store's `store`
 
 Where `store.custom#{templatename}` is the name of the custom template declared within the store's `blocks` folder, and `path` is the root-relative URL where the page will be available.
 
-:information_source: ***Tip**: A path can accept URL parameters and optional parameters as in: `/path/:param(/:optional-param)`. But we recommend that you keep it simple since paths of custom pages are the ones used in the client-side and search engines.*
+>ℹ️ **Tip**: A path can accept URL parameters and optional parameters as in: `/path/:param(/:optional-param)`. But we recommend that you keep it simple since paths of custom pages are the ones used in the client-side and search engines.
 
 Optional props such as the ones presented in the following table can also be added to a custom route definition.
 

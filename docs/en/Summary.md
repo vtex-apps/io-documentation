@@ -84,6 +84,7 @@
     - [Using Sandbox blocks](recipes/templates/using-sandbox-blocks.md)
     - [Using events to trigger side effects on store components](recipes/templates/using-events-to-trigger-side-effects-on-store-components.md)
     - [Creating a native form for your store users](recipes/templates/creating-a-native-form-for-your-store-users.md)
+    - [Improving filter navigator experience](recipes/templates/improving-filter-navigator-experience.md)
 
   - [Store Management](recipes/store-management)
 
