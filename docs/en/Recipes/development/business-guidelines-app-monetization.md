@@ -1,10 +1,10 @@
 ---
-title: Homologation requirements for VTEX App Store
-description: "Business, design, and engineering guidelines enforced by the VTEX App Store to guarantee a baseline standard of quality, viability and usability for all apps available for VTEX stores."
+title: App monetization
+description: "App Store's business models are flexible and, thus, adaptable to different scenarios for marketing your app."
 date: "2021-07-21"
 tags: ["app-store", "app", "development", "homologation"]
 version: " "
-git: " "
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/business-guidelines-app-monetization.md#paid-distribution"
 ---
 
 # App monetization

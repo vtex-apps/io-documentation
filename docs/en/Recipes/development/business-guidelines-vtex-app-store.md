@@ -4,7 +4,7 @@ description: "Business guidelines enforced by the VTEX App Store to guarantee a 
 date: "2021-07-21"
 tags: ["app-store", "app", "development", "Guidelines"]
 version: " "
-git: " "
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/business-guidelines-vtex-app-store.md"
 ---
 
 # Business guidelines
