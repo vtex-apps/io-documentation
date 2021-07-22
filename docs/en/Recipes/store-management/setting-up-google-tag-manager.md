@@ -83,7 +83,7 @@ For this, click on **Fields to Set**, and then add the field `userId` with its d
 
 |  Field name     |                 Value                    |   
 |-----------------|------------------------------------------| 
-|  `campaingName`   | {Data Layer Variable - campaignName}   |
+|  `campaignName`   | {Data Layer Variable - campaignName}   |
 |  `campaignMedium` | {Data Layer Variable - campaignMedium} |
 |  `campaignSource` | {Data Layer Variable - campaignSource} |
 
