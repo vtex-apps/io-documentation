@@ -9,6 +9,6 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Business guidelines
 
-* [App monetization]()
-* [Self-service level]()
-* [Marketing assets]()
+* [App monetization](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-app-monetization#paid-distribution)
+* [Self-service level](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-self-service-level)
+* [Marketing assets](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-marketing-assets)
