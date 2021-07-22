@@ -64,7 +64,7 @@ After submitting the request to be a seller, you can check its `status` until ou
 
 ### Step 4 - Checking out our business, design and engineering guidelines
 
-To submit and publish your app on VTEX App Store, you must follow our business, design and engineering guidelines. These guidelines guarantee the standard of quality, viability and usability of all apps made available to our tenants through the VTEX App Store, so it is important that you are aware of them before submitting your extension for the homologation process. You can check in [Business guidelines](), [Design guidelines](), [Engineering guidelines]().
+To submit and publish your app on VTEX App Store, you must follow our business, design and engineering guidelines. These guidelines guarantee the standard of quality, viability and usability of all apps made available to our tenants through the VTEX App Store, so it is important that you are aware of them before submitting your extension for the homologation process. You can check in [Business guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-vtex-app-store), [Design guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-design-guidelines), [Engineering guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-engineering-guidelines).
 
 ### Step 5 - Sending the app data for validation
 
@@ -102,7 +102,7 @@ Therefore, the **3 main criteria** taken into account by the VTEX product team a
 - **UX**  - Whether the app offers a good user experience, following VTEX Styleguide rules.
 - **Security and performance**  - Whether the app's performance is safe and efficient. 
 
-You can find more details on how these criteria will be assessed in our [Homologation requirements for the VTEX App Store](). 
+You can find more details on how these criteria will be assessed in our [Homologation requirements for the VTEX App Store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-homologation-requirements-for-vtex-app-store). 
 
 When an app fulfills the above-mentioned criteria, the PR will be approved and your new app version is ready to be released and made available in the VTEX app store. 
 
