@@ -126,7 +126,8 @@ $ yarn global add vtex
 <br>
 
 1. Install **Node.js** using the following command: `sudo apt install nodejs`.
-2. Open your command line and run the following command.
+2. Install **Yarn** following the [Yarn installation](https://classic.yarnpkg.com/en/docs/install#gentoo-stable) for Linux.
+3. Open your command line and run the following command.
 
 ```sh
 $ yarn global add vtex
