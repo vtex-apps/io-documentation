@@ -130,7 +130,7 @@ $ yarn global add vtex
 3. Open your command line and run the following command.
 
 ```sh
-$ yarn global add vtex
+$ sudo yarn global add vtex
 ```
 
 
