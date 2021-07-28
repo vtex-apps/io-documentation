@@ -895,7 +895,7 @@ Creates and switches to a new workspace or simply switches to an existing one.
 
 
   > ℹ️ VTEX IO's CLI 3.x now has a plugin-based architecture and the following commands from the previous version were detached from the CLI and transformed into plugins:
-  `vtex add APPID`, `vtex autoupdate`, `vtex config get`, `vtex config reset`, `vtex config set`, `vtex debug`, `vtex infra install`, `vtex infra list`, `vtex infra update`,
+  `vtex add`, `vtex autoupdate`, `vtex config get`, `vtex config reset`, `vtex config set`, `vtex debug`, `vtex infra install`, `vtex infra list`, `vtex infra update`,
   `vtex lighthouse audit`, `vtex lighthouse show`, `vtex logs`, `vtex redirects delete`, `vtex redirects export`, `vtex redirects import`, `vtex settings get`, `vtex settings    set`, `vtex settings unset`, `vtex submit`, `vtex support`, `vtex test e2e`, `vtex test unit`, `vtex url`, `vtex workspace abtest finish`, `vtex workspace abtest start`,
   `vtex workspace abtest status`.
     To Learn more about, check out [VTEX IO's CLI plugins]().
