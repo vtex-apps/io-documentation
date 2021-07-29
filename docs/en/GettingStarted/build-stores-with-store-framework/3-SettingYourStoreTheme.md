@@ -29,22 +29,22 @@ $ cd {example folder}
 $ vtex init
 ```
 
-3. Select the `store-theme` option and confirm that you want to download the theme folder to the destination you just chose:
+3. Select the `store` option and confirm that you want to download the theme folder to the destination you just chose:
 
-![toolbelt-store-theme-selection](https://user-images.githubusercontent.com/52087100/61887063-3d3b2a00-aed7-11e9-92b8-653c4972a218.png)
+![toolbelt-store-theme-selection](https://user-images.githubusercontent.com/67270558/125138057-50eff300-e0e4-11eb-801e-607f1954244f.png)
 
->ℹ️ Once you select the `store-theme` option, Toolbelt will ask you for important information about the app, such as a value for the vendor, name, title and description. With the exception of vendor, press enter to keep each field's predefined values.
+>ℹ️ Once you select the `store` option, Toolbelt will ask you if you want to continue to create the new folder, by typing `y` it will clone a `minimum-boilerplate-theme` to your folder.
 
-4. Replace the predefined `vendor` value with the account name of the store that you are developing so that you'll be able to correctly publish its theme app later on. 
+4. On the `manifest.json` file, replace the predefined `vendor` value with the account name of the store that you are developing so that you'll be able to correctly publish its theme app later on. 
 
 ## Step 2 - Understanding the Store Theme's structure
 
-Once you select the `store-theme` option, Toolbelt will create a copy of the Store Theme app in your local files, allowing you to work on it as you please.
+Once you select the `store` option, Toolbelt will create a copy of the Store Theme app in your local files, allowing you to work on it as you please.
 
 Open the newly created Store Theme folder in your local files using any code editor, such as Visual Studio Code. You can also use your terminal directly to achieve the same result:
 
 ```sh
-$ cd store-theme
+$ cd store
 ```
 
 To better understand the app's structure, let's have a closer look at its files and folders: 
@@ -69,7 +69,7 @@ You'll need to sync your local files, where your Store Theme app code was copied
 
 >⚠️ You can run `vtex whoami` in your terminal to make sure that you're logged into the right VTEX account and using the Development workspace you've just created. Otherwise, the link won't work.
 
-![VTEX link example](https://user-images.githubusercontent.com/52087100/61887229-9dca6700-aed7-11e9-9934-030a153b75b6.png)
+![VTEX link example](https://user-images.githubusercontent.com/67270558/125298194-50cb3f80-e2fe-11eb-9a7f-89738be2eae5.png)
 
 By successfully running this command in your terminal, your local code is sent to the VTEX IO cloud-native infrastructure and it is reflected in the development workspace you are currently working in.
 
