@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.73.0] - 2021-07-29
+
 ## [0.72.0] - 2021-07-22
 ### Added
 - Add the VTEX App Store link on [Submitting your app in the VTEX app store](https://github.com/vtex-apps/io-documentation/commit/50280babf4eb5ffa24a6acec3ea5c27b53e551c0).
