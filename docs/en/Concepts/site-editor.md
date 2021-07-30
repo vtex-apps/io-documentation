@@ -2,7 +2,7 @@
 title: Site Editor
 description: "Site Editor concept"
 date: "2021-05-31"
-tags: ["site-editor"]
+tags: ["site-editor"] 
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/site-editor.md"
 ---
