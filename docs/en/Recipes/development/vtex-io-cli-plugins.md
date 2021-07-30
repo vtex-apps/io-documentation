@@ -160,7 +160,7 @@ vtex add vtex.service-example@0.x
 
 <div align="right"> 🔼 <a href="#overview">Back</a></div>
 
-### autoupdate
+### Autoupdate
 
 Update the VTEX IO'S CLI.
 
