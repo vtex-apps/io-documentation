@@ -7,6 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/docs/en/Concepts/cms.md"
 ---
 
+# CMS
 CMS stands for Content Management System, which can be understood as a system that manages all the content consumed by one or several digital channels. 
 
 In the VTEX scenario, CMS is the module responsible for managing the pages that build up your store's website, giving you the autonomy to create, organize, edit, and define the entire structure of folders, files, and components to make up your site front as desired. 
