@@ -136,7 +136,7 @@ Check in the following a brief description of the main plugins of VTEX IO's CLI.
 
 Check in the following the help texts for each plugin of VTEX IO's CLI. 
 
-### add
+### Add
 Add app(s) to the manifest dependencies.
 
 #### Usage
