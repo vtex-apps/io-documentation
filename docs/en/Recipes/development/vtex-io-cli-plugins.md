@@ -4,7 +4,7 @@ description: "Any development in VTEX IO begins and ends with the Toolbelt, our 
 date: "2020-07-28"
 tags: ["toolbelt", "cli", "command-line-interface", "plugins", "reference"]
 version: "3.x"
-git: "https://github.com/vtex-apps/io-documentation/edit/Mariana-Caetano-patch-3/docs/en/Recipes/development/vtex-io-cli-plugins.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/vtex-io-cli-plugins.md"
 ---
 
 
