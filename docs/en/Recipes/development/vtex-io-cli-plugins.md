@@ -13,15 +13,13 @@ git: "https://github.com/vtex-apps/io-documentation/edit/Mariana-Caetano-patch-3
 VTEX IO's CLI has a plugin-based architecture, which means the commands are detached from the CLI code, 
 each command has its own repository in the format `cli-plugin-comand_name` and is hosted by [Github](https://github.com/) on VTEX org.
 
-Furthermore, you can also create and maintain a plugin and for that, check out the [CLI plugin template documentation](https://github.com/vtex/cli-plugin-template).
-
-In the following sections, see about:
+In the following sections, check out about:
 
 - [VTEX plugins settings](#vtex-plugins-settings).
 - An [overview](#overview) of the main plugins' commands of VTEX IO CLI.
 - A [detailed reference](#detailed-reference) for the main plugins' commands.
 
-> The following plugins are native to the VTEX IO'S CLI. Thus you do not need to install them:  `@vtex/cli-plugin-abtest`, `@vtex/cli-plugin-autoupdate`, `@vtex/cli-plugin-deploy`, `@vtex/cli-plugin-deps`, `@vtex/cli-plugin-edition`, `@vtex/cli-plugin-plugins`, `@vtex/cli-plugin-whoami`, `@vtex/cli-plugin-workspace`.
+> The following plugins are native to the VTEX IO'S CLI. Therefore, you do not need to install them:  `@vtex/cli-plugin-abtest`, `@vtex/cli-plugin-autoupdate`, `@vtex/cli-plugin-deploy`, `@vtex/cli-plugin-deps`, `@vtex/cli-plugin-edition`, `@vtex/cli-plugin-plugins`, `@vtex/cli-plugin-whoami`, `@vtex/cli-plugin-workspace`.
 
 
 ## VTEX plugins settings
