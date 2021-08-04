@@ -12,7 +12,7 @@ In the next section, we present you a step by step on how to overwrite a transla
 
 1. [Install](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-installing-an-app) the **GraphQL IDE app** by running the following in your terminal.
 
-```
+```sh
 vtex install vtex.admin-graphql-ide@3.x
 ```
 
