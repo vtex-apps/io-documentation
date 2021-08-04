@@ -4,16 +4,25 @@ description: "Any development in VTEX IO begins and ends with the Toolbelt, our 
 date: "2020-07-28"
 tags: ["toolbelt", "cli", "command-line-interface", "plugins", "reference"]
 version: "3.x"
-git: " "
+git: "https://github.com/vtex-apps/io-documentation/edit/Mariana-Caetano-patch-3/docs/en/Recipes/development/vtex-io-cli-plugins.md"
 ---
 
 
 # VTEX IO's CLI Plugins
 
-D️ifferent from the previous version, VTEX IO's CLI 3.x has a plugin-based architecture. With this improvement, the commands are detached from the CLI code, 
-each command will have his own repository in the format `cli-plugin-comand_name` and will be hosted by [Github](https://github.com/) on VTEX org.
+VTEX IO's CLI has a plugin-based architecture, which means the commands are detached from the CLI code, 
+each command has its own repository in the format `cli-plugin-comand_name` and is hosted by [Github](https://github.com/) on VTEX org.
 
-See the [CLI plugin template documentation](https://github.com/vtex/cli-plugin-template) and check how to create and mantain a plugin.
+Furthermore, you can also create and maintain a plugin and for that, check out the [CLI plugin template documentation](https://github.com/vtex/cli-plugin-template).
+
+In the following sections, see about:
+
+- [VTEX plugins settings](#vtex-plugins-settings).
+- An [overview](#overview) of the main plugins' commands of VTEX IO CLI.
+- A [detailed reference](#detailed-reference) for the main plugins' commands.
+
+> The following plugins are native to the VTEX IO'S CLI. Thus you do not need to install them:  `@vtex/cli-plugin-abtest`, `@vtex/cli-plugin-autoupdate`, `@vtex/cli-plugin-deploy`, `@vtex/cli-plugin-deps`, `@vtex/cli-plugin-edition`, `@vtex/cli-plugin-plugins`, `@vtex/cli-plugin-whoami`, `@vtex/cli-plugin-workspace`.
+
 
 ## VTEX plugins settings
 
@@ -93,9 +102,9 @@ See the [CLI plugin template documentation](https://github.com/vtex/cli-plugin-t
 
 ## Overview
 
-Check in the following a brief description of the main plugins of VTEX IO's CLI.
+Check in the following a brief description of the main plugins command of VTEX IO's CLI.
 
-|Plugin Name|Functionality|
+|Plugin command|Functionality|
 |------------|-------------|
 | [`vtex add`](#add) |Add app(s) to the manifest dependencies.|
 | [`vtex autoupdate`](#autoupdate) | Update the VTEX IO'S CLI.|
@@ -130,11 +139,10 @@ Check in the following a brief description of the main plugins of VTEX IO's CLI.
 | [`vtex workspace abtest start`](#workspace-abtest-start) |Starts a new A/B test on the current workspace.|
 | [`vtex workspace abtest status`](#workspace-abtest-status) |Displays the results of the active A/B tests.|
 
-> The following plugins are native to the VTEX IO'S CLI. Thus you do not need to install them:  `vtex autoupdate`, `vtex deploy`, `vtex workspace abtest finish`, `vtex workspace abtest start`, `vtex workspace abtest status`, `vtex deps diff`, `vtex deps list`, `vtex deps update`, `edition get`, `edition set`, `vtex plugins install`, `vtex plugins link`, `vtex plugins:list`, `vtex plugins source`, `vtex plugins unistall`, `vtex plugins:update`, `vtex whoami`, `vtex workspace delete`, `vtex workspace list`, `vtex workspace promote`, `vtex workspace reset`, `vtex workspace status`, `vtex workspace use`.
 
 ## Detailed reference
 
-Check in the following the help texts for each plugin of VTEX IO's CLI. 
+Check in the following the help texts for each plugin command of VTEX IO's CLI. 
 
 ### Add
 Add app(s) to the manifest dependencies.
