@@ -44,7 +44,7 @@ git clone https://github.com/vtex-apps/app-scripts-example
 >⚠️ Remember to replace the values between the curly brackets according to your scenario.
     
 9. Run `cd app-scripts-example` to go to the local app directory.
-10. Run `vtex link` to [link](https://vtex.io/docs/recipes/development/linking-an-app/) your new app to your development workspace.
+10. Run `vtex link` to [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) your new app to your development workspace.
 11. Check the pages for which you implemented your scripts. 
 12. Once you're happy with the changes, update your *Scripts app* `docs/README.md` file as instructed in [Documenting your app](#documenting-your-app). Therefore, follow our documentation on [making your new app version publicly available](https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available/) to run your app on master. 
 
