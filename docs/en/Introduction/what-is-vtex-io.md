@@ -12,7 +12,7 @@ The VTEX IO platform is battle-tested and **scales automatically** to meet your 
 
 Forget the servers, focus on your sales: our elastic back-end allows you to maintain up-time throughout traffic surges without having to pre-scale or manually prepare.
 
-With nothing to install locally and a command-line application, developers enjoy a unprecedented fast setup time and become productive in record time. 
+With nothing to install locally and a command-line application, developers enjoy an unprecedented fast setup time and become productive in record time.
 
 All local changes to code are immediately synced to our cloud development environment and your software is instantly redeployed. "*Works on my machine*" just became a thing of the past. 
 
@@ -32,6 +32,4 @@ Leveraging from the VTEX IO platform, the **VTEX IO Store Framework solution del
 
 It provides you with high quality, customizable React [store blocks](https://vtex.io/docs/components/all) so that you can build (in the fastest possible go-to-market time) comprehensive shopping experiences that never get old.
 
- ---
- 
-Now that you've understood what VTEX IO and VTEX IO Store Framework are, dig deeper: check out the answers to the most frequently asked questions about the platform [here](https://vtex.io/docs/introduction/frequently-asked-questions).
+> Now that you've understood what VTEX IO and VTEX IO Store Framework are, dig deeper: check out the answers to the most frequently asked questions about the platform [here](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-frequently-asked-questions).

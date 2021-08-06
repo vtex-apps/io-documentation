@@ -43,7 +43,7 @@ _For example:_
 
 ```json
 "list-context.image-list#demo": {
-    "child": ["slider-layout#demo-images"],
+    "children": ["slider-layout#demo-images"],
     "props": {
       "height": 650,
       "images": [
@@ -60,9 +60,7 @@ _For example:_
   },
 ```
 
-<div class="alert alert-warning">  
-Bear in mind that <strong>list blocks do not render anything in your store</strong>, they simply hold content that can be edited using the Site Editor and pass it down to their child blocks.
-</div>
+> ⚠️ *Bear in mind that <strong>list blocks do not render anything in your store</strong>, they simply hold content that can be edited using the Site Editor and pass it down to their child blocks.*
 
 4. Now that you've specified which data (in this case, which images) will be displayed in your slider using a `list` block, you need to configure the [slider properties](https://vtex.io/docs/app/vtex.slider-layout) themselves, meaning those of the `slider-layout`. 
 
@@ -70,7 +68,7 @@ _For example:_
 
 ```json
   "list-context.image-list#demo": {
-    "child": ["slider-layout#demo-images"],
+    "children": ["slider-layout#demo-images"],
     "props": {
       "height": 650,
       "images": [

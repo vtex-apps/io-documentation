@@ -37,9 +37,7 @@ In the step by step below, we will guide you on how to **create new CSS Handle w
 
 To start the process of code contribution, you firstly need to [fork the app repository]((https://help.github.com/en/github/getting-started-with-github/fork-a-repo)) in which you desire to add new CSS Handles and clone your fork to a local directory.
 
-<div class="alert alert-warning">
-The forked app must be the one that provides the theme block wrapping the HTML element in which you want to add new Handles to.
-</div>
+>⚠️ The forked app must be the one that provides the theme block wrapping the HTML element in which you want to add new Handles to.
 
 2. In your terminal, clone the code of the forked app to your local files using `git clone` + the URL of the desired repository;
 3. Then, using any code editor, open the app's code;
@@ -144,14 +142,42 @@ Following our example, we would have something like:
 ```html
 <div class="vtex-foobar-1-x-headline ph0 mr2">
 ```
-### Step 4 - Committing your changes
+
+### Step 4 - Adding modifiers
+
+It's also possible to apply modifiers to a specific CSS Handle.
+
+Handle modifiers work as identifiers. They are responsible for overriding the HTML element style according to the behavior assumed by them on the interface, according to user interaction. 
+
+Let's suppose you have a handle called `handles.slide` for each slide of a slider and you want to customize the current visible slide via CSS. For this purpose, you should add a modifier to `handles.slide`, allowing the customization according to the user navigation.
+
+1. Import the `applyModifiers` method:
+
+`import {useCssHandles, applyModifiers} from 'vtex.css-handles'`
+
+2. Instead of directly passing the handle, pass it through the `applyModifiers` method:
+
+```diff
+-<div class={{`${handles.slide}`}}">...</div>
++<div class={{`${applyModifiers(handles.slide, isCurrentSlide ? 'active' : undefined}`}}">...</div>
+```
+
+Which, for a hypothetical slider with three slides and the first one being focused, would result in:
+
+```html
+<div class="vtex-foobar-1-x-slide vtex-foobar-1-x-slide--active">...</div>
+<div class="vtex-foobar-1-x-slide">...</div>
+<div class="vtex-foobar-1-x-slide">...</div>
+```
+
+### Step 5 - Committing your changes
 
 If the new class is being properly rendered, it means that everything is ready for you to create a new CSS Handle.
 
 1. Using your code editor, commit your changes to a new branch;
 2. Push your commit so that your changes are sent to the server and included in the history of the app you are developing.
   
-### Step 5 - Updating the docs and opening the Pull Request
+### Step 6 - Updating the docs and opening the Pull Request
 
 1. Access then the app's forked repository and switch to the branch in which you committed your changes in the previous step;
 2. Open the `CHANGELOG.md` file;

@@ -4,7 +4,7 @@ description: "Learn how to configure the SKU Selector to display a custom image,
 date: "11/11/2019"
 tags: ["custom-images", "sku-selector", "image"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/configuring-custom-images-for-the-sku-selector.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/configuring-custom-images-for-the-sku-selector.md"
 ---
 
 # Configuring custom images for the SKU Selector
@@ -59,12 +59,8 @@ The way out of this scenario is to **hide the custom image** that's linked to th
 },
 ```
 
-<div class="alert alert-info">
-Remember to replace the value inserted in the brackets with real values, according to your SKU label.
-</div>
+> ⚠️ *Remember to replace the value inserted in the brackets with real values, according to your SKU label.*
 
 Consequently, you'll be able to configure a customized image exclusively for your SKU selector component, without it affecting your store's layout or that of the SKU images displayed to users.
 
-<div class="alert alert-warning">
-For this configuration to properly work, <strong>all SKU custom images must have the same label value</strong> (which must be the only value given between brackets). Otherwise, even by following the steps above, the SKU selector will continue to render the default images.
-</div>
+> ⚠️ *For this configuration to properly work, **all SKU custom images must have the same label value** (which must be the only value given between brackets). Otherwise, even by following the steps above, the SKU selector will continue to render the default images.*

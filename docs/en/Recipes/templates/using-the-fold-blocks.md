@@ -62,15 +62,11 @@ This configuration by device is very useful, since components are viewed differe
 
 In the example above, both the Carousel and the Shelf will be displayed with the first meaningful paint on desktop mode. However, for mobile users, only the carousel will be loaded first.
 
-<div class="alert alert-warning">
-Google will not be able to track content positioned under the Fold block for SEO purposes, since the components are only loaded with user scrolling. Therefore, ensure you add all the SEO-relevant information above the fold block when applying this improvement.
-</div>
+>⚠️ Google will not be able to track content positioned under the Fold block for SEO purposes, since the components are only loaded with user scrolling. Therefore, ensure you add all the SEO-relevant information above the fold block when applying this improvement.
 
 ### Adding the `__fold__.experimentalLazyAssets` block
 
-<div class="alert alert-info">
-We recommend that you add the <code>__fold__.experimentalLazyAssets</code> block to your store's home page (<code>store.home</code> theme template) for better results.
-</div>
+>ℹ️ We recommend that you add the `__fold__.experimentalLazyAssets` block to your store's home page (`store.home` theme template) for better results.
 
 In the template's block list, add the `__fold__.experimentalLazyAssets` above the blocks whose loading will be static until the user's first interaction. For example:
 
@@ -89,10 +85,6 @@ In the template's block list, add the `__fold__.experimentalLazyAssets` above th
 },
 ```
 
-<div class="alert alert-warning">
-Make sure that it is added below blocks whose components are interactive, such as the Carousel. That's because the static loading, provided by the <code>__fold__.experimentalLazyAssets</code> block, can be detrimental to the proper functioning of these interactive components, negatively impacting user navigation. 
-</div>
+>⚠️Make sure that it is added below blocks whose components are interactive, such as the Carousel. That's because the static loading, provided by the `__fold__.experimentalLazyAssets` block, can be detrimental to the proper functioning of these interactive components, negatively impacting user navigation. 
 
-<div class="alert alert-info">
-You do not need to declare and configure both blocks in your theme code. Adding the <code>__fold__</code> and the <code>__fold__.experimentalLazyAssets</code> in the template's block list is enough for improving your website's performance. 
-</div>
+>ℹ️ You do not need to declare and configure both blocks in your theme code. Adding the `__fold__` and the `__fold__.experimentalLazyAssets` in the template's block list is enough for improving your website's performance. 

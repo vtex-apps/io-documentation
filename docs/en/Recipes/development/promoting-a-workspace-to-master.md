@@ -1,30 +1,50 @@
 ---
 title: Promoting a workspace to Master
-description: "Learn in this recipe how to promote a production workspace to master and make your new configurations finally available to the end user."
+description: "Learn how to promote a production workspace to master and make your new configurations available to end-users."
 date: "29/08/2019"
 tags: ["production", "promoting", "promote", "workspace", "master", "production-mode"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store/promoting-a-workspace-to-master.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/promoting-a-workspace-to-master.md"
 ---
 
 # Promoting a workspace to Master
 
-Promoting a workspace to Master means making any changes performed in it available to the end user, in other words, making them publicly available.
+Promoting a workspace to Master marks the final step to make an app publicly available to end-users.
 
-Only a [Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace) can be promoted to Master. Developer workspaces only must be used for code development. 
+After you launch your app as a stable version and thoroughly test it in a particular [Production workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace), you can promote this workspace to Master.
+
+>⚠️ Whenever you promote a workspace to Master, all workspaces of the logged account are updated with your changes.
+
+![Promoting a Production workspace to Master](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/promoting-a-workspace-to-master.gif?raw=true)
+
+Once promoted to Master, you won't be able to perform new code changes in that workspace. Alternatively, you will need to develop your code in a [Development workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/) and reproduce it in a new Production workspace, so you can test your changes with user traffic and make your new changes publicly available.
+
+>ℹ️ Notice that you cannot make changes directly to the Master workspace nor promote a Development workspace to Master.
 
 ## Step by step
 
-1. Make sure you are [logged into](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference) an account and using the desired Production workspace to be promoted;
-2. Run the following command:
+Take the following steps to promote a Production workspace to Master. Remember to replace the values between curly braces according to your scenario.
 
-`vtex workspace promote`
+1. Log in to your VTEX account.
 
-<div class="alert alert-warning">
-<strong>You can not make changes to a Master workspace</strong> because it corresponds to the version that is available to the end user. Instead, work on the new code in a Development workspace, reproduce it in a Production workspace and then promote it. 
-</div>
+    ```shell
+    $ vtex login {accountName}
+    ```
 
+2. Change to the Production workspace to be promoted.
 
-<div class="alert alert-info">
-Promoting a Master workspace is one of the steps to <b>making your code's new version public</b>, meaning that it will become available to your end users. For more details on the next steps and to better understand the full flow, access the recipe on <a href="https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available">Making your new app version publicly available</a>.
-</div>
+    ```shell
+    $ vtex use {workspaceName}
+    ```
+
+3. Promote the workspace in use.
+
+    ```shell
+    $ vtex workspace promote
+    ```
+
+>⚠️ When promoting a new version of the [store theme app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-3-settingyourstoretheme) to Master, first make sure to perform all the necessary changes in the store content through the Site Editor or your store theme code.
+
+---
+
+💡 Promoting a Master workspace is one of the steps to [making your new app version publicly available to end-users.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available)

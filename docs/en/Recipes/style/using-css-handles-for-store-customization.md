@@ -23,19 +23,23 @@ At the end of the day, CSS Handles are nothing more than your **store's layout b
 
 ![css-handles-inspect](https://user-images.githubusercontent.com/5691711/70256857-ffdd8780-1767-11ea-936d-a98cbfc924c1.png)
 
+>⚠️ Before proceeding to the third step, check the CSS Handles table in the documentation of the app/block responsible for rendering the HTML element. It will therefore be possible to confirm whether the inspected Handle is valid and mainly if the customization requires another add-on to function, such as the HTML element's attribute.
+
+>⚠️ If upon checking the CSS Handles table, you notice that the desired Handle needs to use the attribute of the HTML element that will be customized, inspect the page again - traditionally this time, by using your browser and not the `?__inspect` functionality. Upon inspecting the page, look for the desired HTML element and copy the attribute linked to it that will be used in the upcoming customization. 
+
 3. Open the Store Theme code using the code editor of your preference. Then, create a file inside the css folder named after the text displayed below the desired handle. Following the example above, we would have `vtex.menu.css`.
 
 4. In the new file, use one of the CSS handles listed and customize its properties. For example:
 
 ```css
-/* vtex.menu.css */
-
 .menuItem {  
     background: rgba(0, 0, 0, 0.2);
     margin: 5px;
     border-radius: 5px;
 }
 ```
+
+>ℹ️ Remember: if the Handle requests an add-on, such as the HTML element's attribute or a Handle modifier, add it next to the Handle's name, following this format: `{cssHandleName}--{addon)`.
 
 Once you app is linked and the changes duly saved, the new customization should immediately be reflected onto your workspace.  
 
@@ -70,9 +74,7 @@ After that, you can use the class `.menuItem--header` to target specifically the
 
 ![specific menu items with css handles applied using blockClass](https://user-images.githubusercontent.com/5691711/70259424-e985fa80-176c-11ea-93e7-5c72770804f6.png)
 
-<div class="alert alert-info">  
-Our team is constantly working on developing CSS Handles for every possible store component. If however your are unable to find a CSS Handle for a component you wish to customize, share this scenario with us at <a href="https://github.com/vtex-apps/store-discussion">Store Discussion</a>.  
-</div>
+>ℹ️  Our team is constantly working on developing CSS Handles for every possible store component. If however your are unable to find a CSS Handle for a component you wish to customize, share this scenario with us at <a href="https://github.com/vtex-apps/store-discussion">Store Discussion</a>.  
 
 ## Best practices
 
@@ -83,18 +85,16 @@ However, it's common to come across store scenarios whose customization uses CSS
 This customization practice by HTML hierarchy was mostly deprecated. It means that **only** the CSS Selectors listed below will continue to be allowed for your store customization:
 
 - Class selectors (e.g. `.foo`)
-- Pseudo-selectors `:hover`, `:visited`, `:active`, `:disabled`, `:focus`, `:local`, and `:target`
+- Pseudo-selectors `:hover`, `:visited`, `:active`, `:disabled`, `:focus`, `:local`, `:empty`, and `:target`
 - `:not()`
 - `:first-child` and `:last-child`
-- `:nth-child(even)` and `:nth-child(odd)`
+- `:nth-child(even)`, `:nth-child(odd)`, and `:nth-child(2n)` (or any other step like `4n`, `5n`, etc)
 - All pseudo-elements, such as  `::before`, `::after` and `::placeholder`
 - Space combinator (e.g. `.foo .bar`)
 - `[data-...]`
 - `:global(vtex-{AppName}-{AppVersion}-{ComponentName})` for selection of elements that come from different apps
 
-**Any CSS Selectors not on this list, such as** `:nth-child(n)`**,** `foo > bar` **and** `[alt="bar"]`**, will no longer be accepted by Toolbelt during the [linking](https://vtex.io/docs/recipes/store/linking-an-app) of the store's theme with its local files.**
+**Any CSS Selectors not on this list, such as** `:nth-child(2)`**,** `foo > bar` **and** `[alt="bar"]`**, it's not accepted by Toolbelt during the [linking](https://vtex.io/docs/recipes/store/linking-an-app) of the store's theme with its local files.**
 
-<div class="alert alert-warning">  
-Bear in mind that any customization that uses CSS Selectors is dependent on a HTML structure that, when changed, can break the retailer's desired customization.<strong> Always opt to use CSS Handles</strong>. 
-</div>
+>⚠️ Bear in mind that any customization that uses CSS Selectors is dependent on a HTML structure that, when changed, can break the retailer's desired customization.<strong> Always opt to use CSS Handles</strong>.
 

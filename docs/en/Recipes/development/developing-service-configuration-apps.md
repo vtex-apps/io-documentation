@@ -40,9 +40,45 @@ git clone https://github.com/vtex-apps/service-example.git
 
 3. Once successfully cloned, go to the local app directory. Use the `cd service-example` command;
 4. Open the app using your code editor;
-5. In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
+5. Now, to declare that your app can receive configurations through requests, check the sections "If your app has a node service" or "If you are developing a GraphQL app", according to your scenario.
+6. In your app's root directory, edit the `manifest.json` file by adding the `configuration` Builder to the `builders` list and update the app's `name` to one of your choosing. For example:
+
+``` diff
+ {
+   "name": "vtex.most-amazing-service-ever",
+   "version": "0.0.0",
+   "builders": {
+     "node": "4.x",
++    "configuration": "0.x"
+   }
+ }
+```
+
+7. Create a `configuration` folder in your app's root directory, and, then, a `schema.json` file inside it. This file will hold information about the settings structure that the service app is going to accept from other apps on the platform.
+8.  In the `configuration/schema.json` file, create a JSON Schema, according to your scenario. For example:
 
 ```json
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "number" },
+    "name": { "type": "string" }
+  }
+}
+```
+
+The JSON Schema will be used to identify new configurations coming from apps. It will also define the expected format of a new configuration. 
+
+In the example above, the accepted configuration is an object with two keys: `id` and `name`, where the first is a number, and the second, a string.
+
+9. Save your changes and then [publish your new service app](https://vtex.io/docs/recipes/development/publishing-an-app/).
+
+
+#### If your app has a Node Service
+
+In the `node/service.json` file, add `"settingsType": "workspace"` to the app's path to define which routes will be able to receive configurations through requests. You should end up with something similar to the example below:
+
+``` json
 "routes": {
   "status": {
     "path": "/_v/status/:code",
@@ -55,7 +91,7 @@ git clone https://github.com/vtex-apps/service-example.git
 
 It is also possible to **define your configurations through event listening**. For this scenario, you should add in the  `node/service.json` file something similar to the example below, replacing the values according to your needs: 
 
-```json
+``` json
 "events": {
   "eventHandler": {
     "sender": "appEmittingTheEvent",
@@ -64,46 +100,39 @@ It is also possible to **define your configurations through event listening**. F
   },
   ...
 }
+```
 
-6. In the `manifest.json` file, add the `configuration` Builder to the `builders` list and update the app's name to one of your choosing. For example:
+#### If you are developing a GraphQL app
+
+If you are developing a GraphQL app, you may need to add a directive to all of the queries that can receive configurations.
+
+A [GraphQL Directive](https://graphql.org/learn/queries/#directives) is a way of changing how the query will be performed. When you add the `settings` directive, the system knows it must search for configurations for that service. Under the hood, this directive is including one extra step to the query, which is responsible for finding all the configurations and adding them to the context.
+
+Take our [graphql-example](https://github.com/vtex-apps/graphql-example) app as an example. In this app's root directory, you'll see the following file `grapqhl/schema.graphql`. Now, if you open it and add the `@settings` directive to the query `book`, you'll have something like:
 
 ``` diff
- "name": "most-amazing-service-ever",
- "version": "0.0.0",
- "builders": {
-   "node": "4.x",
-+  "configuration": "0.x",
-```
-
-7. Create a `schema.json` file in the `configuration` folder. You will need this `configuration/schema.json` file to define the settings structure that the service app is going to accept from other apps on the platform.
-8. Once the file is created, create a JSON Schema in that file, according to your scenario. For example:
-
-```json
-{
- "type": "object",
- "properties": {
-  "id": { "type": "number" },
-  "name": { "type": "string" }
- }
+type Query {
+-  book(id: ID!): Book
++  book(id: ID!): Book @settings(settingsType: "workspace")
 }
+
++@settings(settingsType: "workspace")
 ```
-
-The JSON Schema will be used to identify new configurations coming from apps. It will also define the expected format of a new configuration. 
-
-In the example above, the accepted configuration is an object with two keys: `id` and `name`, where the first is a number, and the second, a string.
-
-9. Save your changes and then [publish your new service app](https://vtex.io/docs/recipes/development/publishing-an-app/).
 
 ### Step 2 - Linking your app configurations to the service app
 
 Once your service app is deployed, it is ready to receive configurations from others. 
 
-1. In your VTEX IO app, add the recently created service app as a new builder. For example:
+1. In your VTEX IO configuration app, add the recently created service app as a new builder. For example:
 
 ```diff
- "builders": {
-+  "vtex.most-amazing-service-ever": "0.x",
- },
+ {
+   "name": "vtex.amazing-configuration",
+   "version": "0.0.0",
+   "builders": {
++    "vtex.most-amazing-service-ever": "0.x",
+   }
+ }
 ```
 
 Notice that the name of the builder is exactly the same as that of the service you want your app to configure. The version also needs to match the desired service app version.
@@ -128,9 +157,10 @@ As previously mentioned, the service configurations originate from other platfor
 
 To access all configurations sent to the service app, use the following command:
 
-```
+```js
 const settings = ctx.vtex.settings
 ```
+
 The `ctx` can be either a `EventContext` or a `ServiceContext`.
 
 The structure of the received configurations list is similar to the example below: 
@@ -138,15 +168,29 @@ The structure of the received configurations list is similar to the example belo
 ```json
 [
   {
-    "vtex.app-test": {
+    "vtex.amazing-configuration": {
       "name":"little foot",
       "id":1
     },
-    "declarer": "vtex.app-test@0.0.7+build1580823094"
+    "declarer": "vtex.amazing-configuration@0.0.0+build1580823094"
   }
 ]
 ```
 
 We're looking at an array where each object is a configuration originating from a different app - since you can have multiple apps configuring the same service.
 
-In each array element, you have an object with two keys: the name of the app that is configuring the service (`vtex.app-test`, in the example above) and the `declarer`. The first contains the settings itself, according to the structure defined in the service app's JSON Schema. The second corresponds to the full name of the app that carries such configurations.
+In each array element, you have an object with two keys: the name of the app that is configuring the service (`vtex.amazing-configuration`, in the example above) and the `declarer`. The first contains the settings itself, according to the structure defined in the service app's JSON Schema. The second corresponds to the full name of the app that carries such configurations.
+
+## Troubleshooting
+
+If you are developing a configuration app and the service that your app is configuring is not installed or linked in the same workspace you're working at, you may run into some errors.
+
+That happens because, when creating a new configuration app, the configuration builder first looks for the schema of that configuration in all the apps installed in your current workspace. Consequently, if the configuration builder cannot find this specific configuration, linking your app may fail.
+
+Hence, to avoid errors, remember to always have the service you're configuring linked or installed in the same workspace you're developing your configuration app.
+
+Also, if you want to publish your configuration app, but doesn't want to have your service installed in the `master` workspace, you can link or install the service in an alternative branch and, then, when you're ready to publish it, you can use the `-w` flag, as in:
+
+```
+vtex publish -w <alternative-branch-name>
+```
