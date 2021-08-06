@@ -1,20 +1,21 @@
 ---
-title: Toolbelt
-description: "Toolbelt concept"
+title: VTEX IO CLI
+description: "VTEX IO CLI concept"
 date: "2020-04-09"
 tags: ["toolbelt", "cli"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Concepts/toolbelt.md"
 ---
 
-# Toolbelt
+# VTEX IO CLI
 
-VTEX Toolbelt is a **command-line interface** that gives you access to every feature of the VTEX platform.
+VTEX IO CLI is a **command-line interface** that gives you access to every feature of the VTEX platform.
 
-With it you can:
-- List, install or uninstall **apps** that are available in your account;
-- List, create, promote or remove [**workspaces**](https://vtex.io/docs/concepts/workspaces/);
-- Develop new apps in [**link mode**](https://vtex.io/docs/recipes/development/linking-an-app/), using automatic synchronization;
-- [**Release**](https://vtex.io/docs/recipes/development/releasing-a-new-app-version/), [**publish**](https://vtex.io/docs/recipes/development/publishing-an-app/) and **deploy** new app versions.
+You can use the VTEX IO CLI to:
 
-In order to install it and understand more about the command reference, access our article on [**VTEX IO CLI installment and command reference**](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference)
+- List, install or uninstall apps available in your account.
+- List, create, promote or remove [**workspaces**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace).
+- Develop new apps in [**link mode**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app), using automatic synchronization.
+- [**Release**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-releasing-a-new-app-version), [**publish**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-publishing-an-app) and **deploy** new app versions.
+
+To install it and learn more about its functionalities, check the [**VTEX IO CLI**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference) reference section.

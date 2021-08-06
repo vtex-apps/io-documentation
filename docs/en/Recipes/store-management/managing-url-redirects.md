@@ -1,72 +1,95 @@
 ---
 title: Managing URL Redirects
-description: "VTEX IO offers a fast and easy way to add, remove and manage your store's URL redirects using Toolbelt, our CLI! Check out now the step by step."
+description: "Create, delete and verify your store's URL redirects through the VTEX IO CLI."
 date: "2020-04-08"
 tags: ["adding", "removing", "verifying", "managing", "url", "redirect"]
 version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs/docs/en/Recipes/store-management/managing-url-redirects.md"
 ---
 
-# Managing URL Redirects
+# Managing URL redirects
   
-The **URL redirect** is very advantageous when you want a given web page's accesses to be redirected to another of your choosing. 
+URL redirect is a technique to forward website visitors and search engines from one URL to another. Redirects might be useful when you need to move content to a new URL, remove an old product page, or forward users from a specific region to a custom page. 
 
-You may want to do this for any number of reasons, such as a change to the URL path or for users from a specific region to have access to a custom web page.
+Implementing the appropriate redirects can improve user experience by preventing visitors from hitting a 404 error page. 
 
-No matter the reason: it's likely that your website has already, is currently or will require a redirect from one URL to another.
-
-Therefore, VTEX IO offers a fast and easy way to add, remove and manage your store's URL path redirects using Toolbelt, our CLI. Check it out:
+Check the following section to learn how to [create](#creating-url-redirects), [remove](#deleting-url-redirects) and [verify](#verifying-url-redirects) your store's URL redirects.
   
 ## Step by step
 
-### Adding redirects
+### Creating URL redirects
 
-1. Open a `.csv` file of your choosing. You can use Excel or Google sheets, for example;
+1. Follow our [CSV file template](#csv-file-template) and create a new `.csv` file with the redirects you want to create. You can use Excel or Google sheets, for example.
+2. Save the file under a name of your choice.
+4. Using the terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference), log in to your VTEX account.
+5. Import redirects to your account by running the following command:
 
-<div class="alert alert-warning">
-The file must be a <code>.csv</code> type file. Otherwise, the redirects upload will not work.
-</div>
+```
+vtex redirects import {CSVpath}
+```
 
-2. Once opened, create four columns in those files with the following values: `from`, `to`, `type` and `endDate`. For example:
+>⚠️ Replace `{CSVpath}` with the path to your `.csv` file.
 
-![csv-file-url-redirect](https://user-images.githubusercontent.com/52087100/78804703-dabb8880-7996-11ea-9fa6-2acd8766f67d.png)
+Once your file is processed, the redirects will take effect. Notice that this might take a while.
+
+### Deleting URL redirects
+
+1. Follow our [CSV file template](#csv-file-template) and create a new `.csv` file with the redirects you want to delete. You can use Excel or Google sheets, for example.
+2. Save the file under a name of your choice.
+3. Using the terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log in to your VTEX account.
+4. Delete redirects from your account by running the following command:
+
+```
+vtex redirects delete {CSVpath}
+```
+
+>⚠️ Replace `{CSVpath}` with the path to your `.csv` file.
+
+### Verifying URL redirects
+
+1. Using the terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log in to your VTEX account.
+2. Retrieve the full list of your store's redirects into a `.csv` file by running the following command.
+
+```
+vtex redirects export {fileName}.csv
+```
+
+>⚠️ Replace `{fileName}` with any name of your choice.
+
+Once you run this command, a file named `{fileName}.csv` containing all the redirects of your store will be created in your current directory.
+
+Check the [CSV file template](#csv-file-template) to understand the meaning of each field of the `.csv` file generated.
+
+## CSV file template
+
+To create or delete URL redirects in your store, you must create a `.csv` file as in the following example.
+
+![csv-file-url-redirect](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/managing-URL-redirects-1.png?raw=true)
+
+Notice that the file must contain a row with four columns, and the following values: `from`, `to`, `type` and `endDate`.
+
+>⚠️ You must not modify this row. Otherwise, you won't be able to create or delete redirects.
+
+Under the first row of your `.csv` file, you must enter the `from`, `to`, `type`, and `endDate` values corresponding to the redirects you want to create or delete, as in the following example:
+
+![urls-redirect-csv-file](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/store-management/managing-URL-redirects-2.png?raw=true)
+
+Check in the following the meaning of each one of these fields:
 
 | Property name | Description | Example |
 |--|--|--|
-| `from` | Original path, the path you want to create a redirect *from* | `/blouse/p` |
-| `to` | New path or URL the one users will be redirected *to* | `/blouse/p?skuId=2000549` |
-| `type` | The type of the redirect (`TEMPORARY` or `PERMANENT`) | `TEMPORARY` |
-| `endDate` | Date, on the format `mm/dd/yyyy` at which the redirect will expire. Notice that if the redirect is permanent, no value for `endDate` is required. | `5/20/2020` |
+| `from` | Original path. | `/blouse/p` |
+| `to` | Relative path or full URL to which you want to redirect your visitors. | `/blouse/p?skuId=2000549` |
+| `type` | Redirect type. `TEMPORARY` or `PERMANENT` | `TEMPORARY` |
+| `endDate` | (Only for `TEMPORARY` redirects.) Expiration date of the redirect on the format `mm/dd/yyyy`.| `5/20/2020` |
 
-<div class="alert alert-info">
-<strong>Only</strong> the <code>to</code> column accepts domains, such as <code>myotherstore.com</code> or <code>mystore.myvtex.com</code>. You should not use them in the <code>from</code> column. 
-</div>
+Keep in mind that:
 
-<div class="alert alert-warning">
-<code>TEMPORARY</code> type redirects will receive the <code>302</code> status code, while <code>PERMANENT</code> type ones will receive the <code>301</code> status code.
-</div>
+- The `from` column can only receive relative paths.
+- The `to` column can receive either relative paths (e.g., `/blouse/p?skuId=200`) or a full URL (e.g., `https://myotherstore.com`).
+- `TEMPORARY` redirects receive the `302` status code, while `PERMANENT` redirects receive the `301` status code.
+- The `endDate` must be left empty if the redirect is `PERMANENT`.
 
-3. Fill in the cells under each column with the values desired for your store. Remember that each redirect's data must be entered on different lines, as shown in the example below: 
-
-![urls-redirect-csv-file](https://user-images.githubusercontent.com/18706156/78902791-a3111700-7a50-11ea-8089-c4fe094a51fb.png)
-
-4. Save and name the document as desired;
-5. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into your VTEX account;
-6. Once logged in, run the `vtex redirects import {fileName}.csv`, replacing `{fileName}` with the name of the file that you've just saved.
-
-After the sixth step, Toolbelt will receive the file, validate it, and save it. After that, the redirects will take effect.
-
-### Removing redirects
-
-1. Using your terminal and [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log into your VTEX account;
-2. Once logged in, run the `vtex redirects delete {path}`, replacing`{path}` with the URL path that will have its redirect removed.
-
-<div class="alert alert-warning">
-The path that is sent when running <code>vtex redirects delete {path}</code> will have its redirect removed, so it must be one of paths from the `from` column of the <code>.csv</code> type file.
-</div>
-
-### Verifying redirects
-
-To check the site redirects that are saved on the platform's data bank, simply log into your VTEX account and run `vtex redirects export {fileName}.csv` , replacing `{fileName}` with the name of the `csv` file holding the site redirects. 
-
-This will tell Toolbelt to return the full list of saved redirects to your local files.
+<div style="text-align: right"><a href="#creating-url-redirects">Creating URL redirects 🔼</a></div>
+<div style="text-align: right"><a href="#deleting-url-redirects">Removing URL redirects 🔼</a></div>
+<div style="text-align: right"><a href="#verifying-url-redirects">Verifying URL redirects 🔼</a></div>

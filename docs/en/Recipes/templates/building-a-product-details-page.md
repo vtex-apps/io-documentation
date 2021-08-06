@@ -4,14 +4,12 @@ description: "Learn how simple can be to build and custom a Product Details Page
 date: "2019-08-29"
 tags: ["pdp", "product", "product-page", "product-details-page"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/building-a-product-details-page.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/building-a-product-details-page.md"
 ---
 
 # Building a Product Details Page
 
-<div class="alert alert-warning">
-For this recipe, knowledge of how the flex-layout works is required. If you have any doubts regarding this, we strongly recommend you access this <a href="https://vtex.io/docs/recipes/layout/using-flex-layout">documentation</a>.
-</div>
+> ⚠️ *For this recipe, knowledge of how the flex-layout works is required. If you have any doubts regarding this, we strongly recommend you access this [documentation](https://vtex.io/docs/recipes/templates/using-flex-layout).*
 
 ### Introduction
 
@@ -50,9 +48,7 @@ The `store.product` accepts all blocks allowed by the `store` and `flex-layout` 
 "product-teaser.product"
 ```
 
-<div class="alert alert-info">
-You can always check out the full and updated list <a href="https://github.com/vtex-apps/store/blob/master/store/interfaces.json#L49">here</a>.
-</div>
+> ℹ *You can always check out the full and updated list [here](https://github.com/vtex-apps/store/blob/master/store/interfaces.json#L49).*
 
 ## Practical example
 

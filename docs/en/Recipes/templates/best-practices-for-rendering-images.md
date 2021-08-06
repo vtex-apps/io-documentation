@@ -7,7 +7,7 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/templates/best-practices-for-rendering-images.md"
 ---
 
-# Best practices for rendering images
+# Rendering images
 
 When setting up your store's theme, you'll often want to use images for the brand's visual identity.
 
@@ -25,9 +25,7 @@ Declaring the URLs of the desired images directly in the theme's code in the `bl
   
 The Assets Builder, along with the admin's Site Editor, ensures that uploaded images are cropped to size when rendered in the UI, making their presentation consistent and uniform to end users. 
 
-<div class="alert alert-warning">
-Avoid using images whose dimensions are large since Site Editor may not be able to crop it. 
-</div>
+>⚠️ Avoid using images whose dimensions are large since Site Editor may not be able to crop it. 
 
 ## Choosing the most adequate block
 
@@ -51,9 +49,7 @@ When we talk about product images being rendered in the Product Summary componen
 
 These props define image dimensions and enable you to let **Product Summary images be of identical size** when rendered (even if each image was originally submitted with a different size in the admin's Catalog).
 
-<div class="alert alert-info">
-You do not have to use these 4 props at the same time in your Product Summary Image block. Each one of them has its own functionality and can be used independently. 
-</div>
+>ℹ️ You do not have to use these 4 props at the same time in your Product Summary Image block. Each one of them has its own functionality and can be used independently. 
 
 This in turn allows your store's Shelf, for example, to have image consistency across all products being displayed, differently from the Shelf example below: 
 

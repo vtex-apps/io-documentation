@@ -4,7 +4,7 @@ description: "Learn how to display a 100% native form component which is integra
 date: "2020-04-09"
 tags: ["form", "master-data", "store-form", "native"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-1/docs/en/Recipes/templates/creating-a-native-form-for-your-store-users.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/creating-a-native-form-for-your-store-users.md"
 ---
 
 # Creating a native form for your store users
@@ -43,7 +43,7 @@ To that end, we will use the admin's Master Data legacy interface:
 4. In the response, look for the schema named `mdv1`. This schema is automatically created based on the Master Data v1 existing fields. Find the fields added in step 2 and copy the structures in which these are displayed to the `mdv1` schema. This will help you in the next step when you'll create another JSON Schema for the form including those fields as properties;
 5. Send a request to Master Data's [`Save Schema by name`](https://developers.vtex.com/reference/schemas#saveschemabyname) API, copying the following example in the request's body and using it as a default when making any required changes to the properties (according to your store’s scenario):
   
-```JSON
+```json
 {
   "title": "Person",
   "type": "object",
@@ -113,28 +113,25 @@ To that end, we will use the admin's Master Data legacy interface:
     "firstName",
     "lastName",
     "agreement"
-  ]
-  {
-    "v-security": {
-      "publicWrite": [ "publicForWrite" ],
-      "publicJsonSchema": true
-    }
+  ],
+  "v-security": {
+    "publicJsonSchema": true,
+    "allowGetAll": false,
+    "publicRead": [ "fieldExemple" ],
+    "publicWrite": [ "fieldExemple" ],
+    "publicFilter": [ "fieldExemple" ]
   }
 }
 ```
 
-<div class="alert alert-info">
-Bear in mind that the schema's language will define the form's default language as well.
-</div>
+>ℹ️ Bear in mind that the schema's language will define the form's default language as well.
 
 When configuring the API to create the JSON Schema, remember to:
 
 - Replace the `data_entity_name` value with the Master Data's Data Entity name in which you want to save the user data fetched from the form;
 - Replace the `schema_name` value with a name of your choosing. The value defined will be the form's JSON Schema name.
 
-<div class="alert alert-info">
-If you have difficulty in setting up the JSON Schema properties based on Master Data fields, remember to use the schema structure for Master Data's fields copied in step 4.
-</div>
+>ℹ️ If you have difficulty in setting up the JSON Schema properties based on Master Data fields, remember to use the schema structure for Master Data's fields copied in step 4.
 
 Once the API was executed successfully, the JSON Schema is ready and you can already create the form in your store's theme.
 
@@ -142,7 +139,7 @@ Once the API was executed successfully, the JSON Schema is ready and you can alr
 
 When using Master Data v2, you will not need to previously create any field. Simply send a request to the Master Data [`Save Schema by name`](https://developers.vtex.com/reference/schemas#saveschemabyname) API, copying the following example in the request's body and using it as a default when making any required changes to the properties (according to your store’s scenario):
 
-```JSON
+```json
 {
   "title": "Person",
   "type": "object",
@@ -212,19 +209,18 @@ When using Master Data v2, you will not need to previously create any field. Sim
     "firstName",
     "lastName",
     "agreement"
-  ]
-  {
-    "v-security": {
-      "publicWrite": [ "publicForWrite" ],
-      "publicJsonSchema": true
-    }
+  ],
+  "v-security": {
+    "publicJsonSchema": true,
+    "allowGetAll": false,
+    "publicRead": [ "fieldExample" ],
+    "publicWrite": [ "fieldExample" ],
+    "publicFilter": [ "fieldExample" ]
   }
 }
 ```
 
-<div class="alert alert-info">
-Bear in mind that the schema's language will define the form default language as well.
-</div>
+>ℹ️ Bear in mind that the schema's language will define the form default language as well.
 
 When configuring the API to create the JSON Schema, remember to:
 
@@ -232,9 +228,7 @@ When configuring the API to create the JSON Schema, remember to:
 - Replace the `schema_name` value with a name of your choosing. The value defined will be the form's JSON Schema name.
 Once the API was executed successfully, the JSON Schema is ready and you can already create the form in your store's theme.
 
-<div class="alert alert-info">
-Notice that Master Data v2 doesn't have an interface yet, so all actions regarding the user form must be done through <a href="[https://developers.vtex.com/reference/master-data-api-v2-overview](https://developers.vtex.com/reference/master-data-api-v2-overview)">APIs</a>.
-</div>
+>ℹ️ Notice that Master Data v2 doesn't have an interface yet, so all actions regarding the user form must be done through <a href="https://developers.vtex.com/reference/master-data-api-v2-overview">APIs</a>.
 
 ### Step 2 - Configure the Store Form app
 

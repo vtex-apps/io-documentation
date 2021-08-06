@@ -4,7 +4,7 @@ description: "Learn how to configure the Header and Footer blocks according to y
 date: "02/08/2020"
 tags: ["header", "footer", "template", "customize"]
 version: "0.x"
-git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/layout/customizing-the-header-and-footer-blocks-by-page.md"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/templates/customizing-the-header-and-footer-blocks-by-page.md"
 ---
 
 # Customizing the Header and Footer blocks by page
@@ -23,9 +23,7 @@ All of the above and more may be easily customized in the Header and Footer bloc
 
 In the desired template, declare the code given as example below to overwrite the Header and Footer automatic duplication.  
 
-<div class="alert alert-info">
-Remember to replace the <code>{headerBlock}</code> and <code>{footerBlock}</code> values with real block names. Also, replace the <code>{templateName}</code> value with a valid theme template, such as <code>product</code>, <code>search#category</code> and <code>custom</code>. 
-</div>
+> ℹ *Remember to replace the `{headerBlock}` and `{footerBlock}` values with real block names. Also, replace the `{templateName}` value with a valid theme template, such as `product`, `search#category` and `custom`.*
 
 
 ```json

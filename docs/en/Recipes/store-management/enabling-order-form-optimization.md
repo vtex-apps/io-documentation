@@ -22,9 +22,7 @@ This comes with a performance cost since it means every store is now fetching **
 
 To avoid this unnecessary overhead, it is possible to disable the legacy `OrderFormProvider` and allow your store to only use the newer one. Enabling this should result in a smoother navigation experience for your users.
 
-<div class="alert alert-warning">  
-This setting must be enabled with <b>caution,</b> since it may cause harm to your store if any of its blocks still need the legacy <code>orderFormProvider</code> to properly function. In case your store already uses the <code>minicart.v2</code> and the <code>add-to-cart-button</code> blocks, and there are no custom blocks that depend on the legacy provider, there should be no issues regarding the optimization.
-</div>
+>⚠️ This setting must be enabled with <b>caution,</b> since it may cause harm to your store if any of its blocks still need the legacy `orderFormProvider` to properly function. In case your store already uses the `minicart.v2` and the `add-to-cart-button` blocks, and there are no custom blocks that depend on the legacy provider, there should be no issues regarding the optimization.
 
 Find out how to enable the Order Form optimization in the steps below.
 
