@@ -100,7 +100,7 @@ In the following sections, check out about:
 
 ## Overview
 
-Check in the following a brief description of the main plugins command of VTEX IO's CLI.
+Check in the following a brief description of the main plugins' command of VTEX IO's CLI.
 
 |Plugin command|Functionality|
 |------------|-------------|
