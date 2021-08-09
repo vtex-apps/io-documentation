@@ -10,8 +10,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # VTEX IO's CLI Plugins
 
-VTEX IO's CLI has a plugin-based architecture, which means the commands are detached from the CLI code, 
-each command has its own repository in the format `cli-plugin-comand_name` and is hosted by [Github](https://github.com/) on VTEX org.
+VTEX IO's CLI has a plugin-based architecture, which means the commands are detached from the CLI code and you can install or uninstall them according to your necessity.
 
 In the following sections, check out about:
 
@@ -62,8 +61,7 @@ In the following sections, check out about:
   vtex plugins install plugin_name
   ```
 
-  > in `plugin_name` insert, the name of the plugin you want to install, which has two types of format: **VTEX** and **third parties** plugins. For VTEX commands, only use the command name from `plugins source`, i.e., `vtex plugins install infra`. 
-  That way, the CLI will look for `@vtex/cli-plugin-infra` in `NPM` registry. For third parties plugins, you type `@org/plugin_name`.
+  > in `plugin_name` insert, the name of the plugin you want to install, i.e., `vtex plugins install infra`. 
 
 
   ![install-plugin](https://user-images.githubusercontent.com/67270558/127199329-914dcea3-4068-4e4f-ba89-7a2f1d43b2ad.png)
@@ -92,8 +90,7 @@ In the following sections, check out about:
   ```sh
   vtex plugins delete plugin_name
   ```
-  > in `plugin_name` insert, the name of the plugin you want to install, which has two types of format: **VTEX** and **third parties** plugins. For VTEX commands, only use the command name from `plugins source`, i.e., `vtex plugins install infra`. 
-  That way, the CLI will look for `@vtex/cli-plugin-infra` in `NPM` registry. For third parties plugins, you type `@org/plugin_name`.
+  > in `plugin_name` insert, the name of the plugin you want to install, i.e., `vtex plugins install infra`. 
   <br>
 </details>
 
