@@ -45,7 +45,7 @@ $ /bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/instal
 
 For Linux, you will use the standalone install, a tarball with a binary that contains its own node.js binary.
 
->ℹ️ Before the installation, check if you have the command line tool and library, [curl](https://curl.se/).
+>ℹ️ Before the installation, check if you have the command-line tool and library, [curl](https://curl.se/).
 
 Open your command line and run the following command to **VTEX IO'S CLI**:
 
@@ -70,7 +70,8 @@ For Windows you can install it through `standalone.exe` or [Chocolatey](https://
 https://vtex.io/vtexcli/install/win-x64
 ```
 
-2. Once downloaded, open the VTEX Setup and follow the instructions to complete the installation.
+2. Once downloaded, got to the folder where the VTEX Setup was downloaded and open it on your machine.
+3. To finish the installation process, follow the instructions described on it.
 
 * **Chocolatey**
 1. Download and install **Chocolatey** as described on this [link](https://chocolatey.org/install).
@@ -164,10 +165,10 @@ vtex
 
 ### Troubleshooting
 
-After verifying the installation, if you see an error saying that the command or program could not be found, take the following steps according to your operating system.
+After verifying the installation, if you see an error saying that the module `vtex` could not be found, you will need to create a `symlink` (file that contains a reference to another file or directory) from `VTEX_FOLDER/node_modules/vtex` to `VTEX_FOLDER/`. take the following steps according to your operating system, to solve this problem.
 
->ℹ️ This error is related to commands that are plugins. Plugins are detached from Tooolbelt base code but still need some functions of it, so that, a require `vtex` is made.
-When the `plugin` is installed inside `toolbelt` the required made will search for the `vtex package` inside `/node_modules/vtex`, but this package does not exist, since he will use his own functions. To solve this problem, you will need to create a `symlink` from `VTEX_FOLDER/node_modules/vtex` to `VTEX_FOLDER/`.
+>ℹ️ This error is related to commands that are [plugins](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins). Plugins are detached from Tooolbelt base code but still need some functions of it, so that, a request VTEX is made.
+When the plugin is installed inside the toolbelt the request made searches for the `vtex package` inside `/node_modules/vtex`, but this package does not exist, since it uses his own functions.
 
 
 
