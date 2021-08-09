@@ -165,7 +165,9 @@ vtex
 
 ### Troubleshooting
 
-After verifying the installation, if you see an error saying that the module `vtex` could not be found, you will need to create a `symlink` (file that contains a reference to another file or directory) from `VTEX_FOLDER/node_modules/vtex` to `VTEX_FOLDER/`. take the following steps according to your operating system, to solve this problem.
+After verifying the installation, if you see an error saying that the `vtex` module  could not be found, you will need to create a `symlink` from `VTEX_FOLDER/node_modules/vtex` to `VTEX_FOLDER/`. take the following steps according to your operating system, to solve this problem.
+
+> `symlink`, also known as a symbolic link, is a file that contains a reference to another file or directory.
 
 >ℹ️ This error is related to commands that are [plugins](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins). Plugins are detached from Tooolbelt base code but still need some functions of it, so that, a request VTEX is made.
 When the plugin is installed inside the toolbelt the request made searches for the `vtex package` inside `/node_modules/vtex`, but this package does not exist, since it uses his own functions.
@@ -176,12 +178,13 @@ When the plugin is installed inside the toolbelt the request made searches f
   <summary><span class="fa fa-apple">&nbsp;</span> MacOS</summary>
 <br>
 
-In your command line, run the following:
+1. In your command line, run the following:
 
 ```sh
 ln -s /usr/local/Cellar/vtex/2.119.2/libexec /usr/local/Cellar/vtex/2.119.2/libexec/node_modules/vtex
 ```
-
+2. After running the command, a `symlink` should be created to solve the dependencies' issues.
+3. To confirm that the installation occurred as expected, run `vtex` to check all default commands available in VTEX IO's CLI.
 <br>
 </details>
 
@@ -189,11 +192,13 @@ ln -s /usr/local/Cellar/vtex/2.119.2/libexec /usr/local/Cellar/vtex/2.119.2/libe
 <summary><span class="fa fa-linux">&nbsp;</span>Linux</summary>
 <br>
 
-In your command line, run the following:
+1. In your command line, run the following:
 
 ```sh
 ln -s /usr/local/lib/vtex /usr/local/lib/vtex/node_modules/vtex
 ```
+2. After running the command, a `symlink` should be created to solve the dependencies' issues.
+3. To confirm that the installation occurred as expected, run `vtex` to check all default commands available in VTEX IO's CLI.
 
 <br>
 </details>
@@ -204,19 +209,20 @@ ln -s /usr/local/lib/vtex /usr/local/lib/vtex/node_modules/vtex
 
 * Chocolatey
 
-In your command line, run the following:
+1. In your command line, run the following:
 
 ```sh
 New-Item -ItemType SymbolicLink -Path 'C:\Program Files\vtex\client\node_modules\vtex' -Target 'C:\Program Files\vtex\client'
 ```
- 
+2. After running the command, a `symlink` should be created to solve the dependencies' issues.
+3. To confirm that the installation occurred as expected, run `vtex` to check all default commands available in VTEX IO's CLI. 
 
 <br>
 </details>
 
 #### NPM
 
-After verifying the installation, if you see an error saying that the command or program couldn't be found, take the following steps according to your operating system.
+After verifying the installation, if you see an error saying that the command or program could not be found, take the following steps according to your operating system.
 
 >ℹ️ Notice that this error is related to the Yarn installation, meaning that the `yarn global add` command did not add Yarn binaries to a directory known by your terminal as `PATH`. Hence, by not adding the Yarn binaries to terminal `PATH`, Yarn and its programs can't be found, resulting in an error when running VTEX IO's CLI.
 
