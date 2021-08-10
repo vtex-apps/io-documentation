@@ -61,7 +61,7 @@ In the following sections, check out about:
   vtex plugins install plugin_name
   ```
 
-  > in `plugin_name` insert, the name of the plugin you want to install, i.e., `vtex plugins install infra`. 
+  > in `plugin_name` insert, the name of the plugin you want to install, which you can use the command name from `plugins source`, i.e., `vtex plugins install infra` or as the name in `NPM` registry, i.e., `vtex plugins install @vtex/cli-plugin-lighthouse`. For third parties plugins, you type `@org/plugin_name`.
 
 
   ![install-plugin](https://user-images.githubusercontent.com/67270558/127199329-914dcea3-4068-4e4f-ba89-7a2f1d43b2ad.png)
