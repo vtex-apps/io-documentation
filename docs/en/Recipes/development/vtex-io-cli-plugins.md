@@ -32,7 +32,7 @@ In the following sections, check out about:
   ```sh
   vtex plugins source
   ```
-  ![cli plugins](https://user-images.githubusercontent.com/67270558/127198123-7c5777f3-0ab2-4c2e-b5a5-188665951646.png)
+  ![vtex-plguins-source](https://user-images.githubusercontent.com/67270558/128904063-a2eed281-eae6-44b0-b68d-696fd33e1449.png)
 
   > ℹ️ If you already have downloaded a plugin, it will be highlighted in green.
 
@@ -61,8 +61,7 @@ In the following sections, check out about:
   vtex plugins install plugin_name
   ```
 
-  > in `plugin_name` insert, the name of the plugin you want to install, which you can use the command name from `plugins source`, i.e., `vtex plugins install infra` or as the name in `NPM` registry, i.e., `vtex plugins install @vtex/cli-plugin-lighthouse`. For third parties plugins, you type `@org/plugin_name`.
-
+  > in `plugin_name` insert, the name of the plugin you want to install, you can use the command name from `plugins source`, i.e., `vtex plugins install lighthouse` or as the name in NPM registry, i.e., `vtex plugins install @vtex/cli-plugin-lighthouse`.
 
   ![install-plugin](https://user-images.githubusercontent.com/67270558/127199329-914dcea3-4068-4e4f-ba89-7a2f1d43b2ad.png)
 
@@ -90,7 +89,7 @@ In the following sections, check out about:
   ```sh
   vtex plugins delete plugin_name
   ```
-  > in `plugin_name` insert, the name of the plugin you want to install, i.e., `vtex plugins install infra`. 
+  > in `plugin_name` insert, the name of the plugin you want to install, you can use the command name from `plugins source`, i.e., `vtex plugins install lighthouse` or as the name in NPM registry, i.e., `vtex plugins install @vtex/cli-plugin-lighthouse`.
   <br>
 </details>
 
