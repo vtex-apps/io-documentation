@@ -81,11 +81,15 @@ $ vtex install {appvendor}.{appname}@{appversion}
 
 >⚠️ Replace the value between curly braces according to your scenario.
 
-If you try to install an app that has [Billing Options](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options), you first need to agree to the app's terms and conditions.
+If you try to install an app that has [Billing Options](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options), you first need to access the [VTEX App Store](https://apps.vtex.com/) and agree to the app's terms and conditions.
 
-![Billing Options](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/vtex-io-cli-usage-5.svg?raw=true)
+![Billing Options](https://github.com/vtex-apps/io-documentation/blob/992891f577e7c63accd26e890e88d2ebf8226eaf/docs/en/Recipes/development/Media/vtex-install-app.svg)
 
-If you agree to the Terms of Service and Charge, press `Y` and `enter` to continue with the installation. Notice that some apps are free and others will have specific methods of charging.
+1. If you press `Y`, the app's page you intend to install from the VTEX App Store will open in your browser. 
+2. To continue with the installation, click on `GET APP` > `CONFIRM` to log in to your VTEX store.
+3. Read and agree to the app's terms and conditions
+
+>ℹ️ Notice that some apps are free and others will have specific methods of charging.
 
 ## Starting a new project
 
