@@ -95,7 +95,7 @@ This will create the JSON Schema, which the Availability Subscriber block will u
 
 ### Step 3 - Configure the Availability Subscriber block
 
-Lastly, it's time to configure the Availability Subscriber block to make your store render the native Store Framework component for an availability form. 
+Lastly, it is time to configure the Availability Subscriber block to make your store render the native Store Framework component for an availability form. 
 
 Access the  [Availability Subscriber app documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-availabilitysubscriber)  and follow the step-by-step to complete its configuration.
 
