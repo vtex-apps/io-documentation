@@ -114,6 +114,34 @@ To better understand the full process of overwriting an app message translation,
 
 ![AppMessageTranslation](https://user-images.githubusercontent.com/60782333/85605881-fbf05480-b628-11ea-8ea9-1dbf364f07fd.gif)
 
+### VTEX Intelligent Search context
+Use the following example as a guide if you aim to translate text messages exported from the [VTEX Intelligent Search](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search).
+
+```json
+{
+  "saveArgs": {
+    "to": "en-GB",
+    "messages": [
+      {
+        "srcLang": "it-IT",
+        "srcMessage": "Category 1",
+        "context": "intelligentSearchFacets",
+        "targetMessage": "Category"
+      }
+    ]
+  }
+}
+```
+
+**These variables are flexible and must fit your store's given scenario**. The variables for the store catalog translations are as follows:
+
+- `to`: target translation locale.
+- `messages`: a list of the messages you want to translate, containing the following parameters:
+    - `srcLang`: store's locale default.
+    - `srcMessage`: source message string.
+    - `context`: `intelligentSearchFacets`, which defines the context of the VTEX Intelligent Search.
+    - `targetMessage`: translated message string.
+
 ## Checking your changes
 
 If you have already performed the desired mutations, you can check your changes through a query in the GraphQL IDE, **according to your store's desired scenario** (*catalog* or *app* messages translations).
