@@ -87,7 +87,7 @@ choco install vtex
 
 ## Installing VTEX IO's CLI by NPM
 
-The CLI is built with Node.js and is installable via `npm`. We recommend using one of the other installation methods from the previous section, according to your operating system. If you use any of the other installation methods, the proper version of Node.js is already included, and it does not conflict with any other version on your system.
+The CLI is built with Node.js and is installable via `npm`. However, according to your operating system, we recommend using the other installation methods from the previous section. If you use any of the others installation methods, the proper version of Node.js is already included, and it does not conflict with any other version on your system.
 
 >ℹ️ Notice that, to install VTEX IO's CLI, you need to ensure that [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) are installed on your machine.
 <details>
