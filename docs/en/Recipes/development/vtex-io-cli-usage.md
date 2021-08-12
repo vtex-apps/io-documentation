@@ -85,7 +85,7 @@ If you try to install an app that has [Billing Options](https://developers.vtex.
 
 ![Billing Options](https://github.com/vtex-apps/io-documentation/blob/992891f577e7c63accd26e890e88d2ebf8226eaf/docs/en/Recipes/development/Media/vtex-install-app.svg)
 
-1. If you press `Y`, the app's page you intend to install from the VTEX App Store will open in your browser. 
+1. If you type `Y`, the app's page you intend to install from the VTEX App Store will open in your browser. 
 2. To continue with the installation, click on `GET APP` > `CONFIRM` to log in to your VTEX store.
 3. Read and agree to the app's terms and conditions
 
