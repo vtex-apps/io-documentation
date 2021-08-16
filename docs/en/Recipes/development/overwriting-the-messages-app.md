@@ -137,8 +137,19 @@ Use the following example as a guide if you aim to translate text messages expor
 
 - `to`: target translation locale.
 - `messages`: a list of the messages you want to translate, containing the following parameters:
-    - `srcLang`: store's locale default.
-    - `srcMessage`: source message string.
+    - `srcLang`: store's locale default. In the VTEX Intelligent Search context, this variable must be the store's binding default.
+    - `srcMessage`: source message string. Check the table below to the possible values of this variable.
+      |Value|Definition|
+      |--|--|
+      |`Category 1`|Department|
+      |`Category 2`|Category|
+      |`Category 3`|Subcategory|
+      |`Price`|Price|
+      |`Promotion`|Promotion|
+      |`New Release`|New Release|
+      |`Location`|Location|
+      |`Brand`|Brand|
+
     - `context`: `intelligentSearchFacets`, which defines the context of the VTEX Intelligent Search.
     - `targetMessage`: translated message string.
 
