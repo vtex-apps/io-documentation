@@ -111,6 +111,7 @@ Repeat the instructions above, now changing the event name for each of the follo
 - `email`
 - `orderPlaced`
 - `payment`
+- `productClick`
 - `productDetail`
 - `productImpression`
 - `promotionClick`
