@@ -18,7 +18,7 @@ In the following sections, check out about:
 - An [overview](#overview) of the main plugins' commands of VTEX IO CLI.
 - A [detailed reference](#detailed-reference) for the main plugins' commands.
 
-> The following plugins are native to the VTEX IO'S CLI. Therefore, you do not need to install them:  `@vtex/cli-plugin-abtest`, `@vtex/cli-plugin-autoupdate`, `@vtex/cli-plugin-deploy`, `@vtex/cli-plugin-deps`, `@vtex/cli-plugin-edition`, `@vtex/cli-plugin-plugins`, `@vtex/cli-plugin-whoami`, `@vtex/cli-plugin-workspace`.
+> The following plugins are native to the VTEX IO'S CLI. Therefore, you do not need to install them:  `@vtex/cli-plugin-abtest`, `@vtex/cli-plugin-autoupdate`, `@vtex/cli-plugin-deploy`, `@vtex/cli-plugin-deps`, `@vtex/cli-plugin-edition`, `@vtex/cli-plugin-plugins`, `@vtex/cli-plugin-whoami`, `@vtex/cli-plugin-workspace`. In [command reference]() you can check out more details about their commands.
 
 
 ## VTEX plugins settings
@@ -101,7 +101,6 @@ Check in the following a brief description of the main plugins' command of VTEX 
 |Plugin command|Functionality|
 |------------|-------------|
 | [`vtex add`](#add) |Add app(s) to the manifest dependencies.|
-| [`vtex autoupdate`](#autoupdate) | Update the VTEX IO'S CLI.|
 | [`vtex congif get`](#config-get) |Gets the current value for the requested configuration.|
 | [`vtex congif reset`](#config-reset) |Reset the requested configuration to the default value.|
 | [`vtex congif set`](#config-set) |Sets the current value for the given configuration.|
@@ -129,9 +128,6 @@ Check in the following a brief description of the main plugins' command of VTEX 
 | [`vtex test e2e`](#test-e2e) |Runs E2E integration tests for the app in the current directory.|
 | [`vtex test unit`](#test-unit) |Runs unit tests for the app in the current directory.|
 | [`vtex url`](#url) |Prints base URL for the current account and workspace.|
-| [`vtex workspace abtest finish`](#workspace-abtest-finish) |Stops all A/B tests from running on the current account.|
-| [`vtex workspace abtest start`](#workspace-abtest-start) |Starts a new A/B test on the current workspace.|
-| [`vtex workspace abtest status`](#workspace-abtest-status) |Displays the results of the active A/B tests.|
 
 
 ## Detailed reference
@@ -842,35 +838,4 @@ Prints base URL for current account, workspace and environment.
 
 <div align="right"> 🔼 <a href="#overview">Back</a></div>
 
-### Workspace abtest finish
-Stop all AB testing in current account.
 
-#### Usage
-
-```shell
-  $ vtex workspace abtest finish
-```
-
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
-
-### Workspace abtest start
-Start AB testing with current workspace.
-
-#### Usage
-
-```shell
-  $ vtex workspace abtest start
-```
-
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
-
-### Workspace abtest status
-Display currently running AB tests results.
-
-#### Usage
-
-```shell
-  $ vtex workspace abtest status
-```
-
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
