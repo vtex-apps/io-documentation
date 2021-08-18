@@ -15,6 +15,7 @@ Check in the following a brief description of the main commands of VTEX IO's CLI
 
 |Command Name|Functionality|
 |------------|-------------|
+| [`autoupdate`](#autoupdate) |	Update the VTEX IO'S CLI.|
 | [`browse`](#browse) |Opens the URL relative to your current workspace and account in a new browser window.|
 | [`deploy`](#deploy) | Publishes an app as a stable version. Only works for apps previously published as a release candidate version.|
 | [`deprecate`](#deprecate) |Deprecates the specified app, uninstalling and downgrading it to the latest stable version in every VTEX account.|
@@ -40,6 +41,9 @@ Check in the following a brief description of the main commands of VTEX IO's CLI
 | [`unlink`](#unlink) |Unlinks an app from the current workspace.|
 | [`update`](#update) |Updates all installed apps to the latest (minor or patch) version. Does not upgrade to another major version.|
 | [`whoami`](#whoami) |Prints the current account, workspace, environment, and login details.|
+| [`workspace abtest finish`](#workspace-abtest-finish) |Stops all A/B tests from running on the current account.|
+| [`workspace abtest start`](#workspace-abtest-start) |Starts a new A/B test on the current workspace.|
+| [`workspace abtest status`](#workspace-abtest-status) |Displays the results of the active A/B tests.|
 | [`workspace delete`](#workspace-delete) |Deletes one or many workspaces from the current account.|
 | [`workspace list`](#workspace-list) |Lists all workspaces of the current account.|
 | [`workspace promote`](#workspace-promote)|Promotes the current workspace to master. Only works for production workspaces|
@@ -47,9 +51,30 @@ Check in the following a brief description of the main commands of VTEX IO's CLI
 | [`workspace status`](#workspace-status) |Displays information about the specified workspace.|
 | [`workspace use`](#workspace-use) |Creates and switches to a new workspace or simply switches to an existing one.|
 
+
 ## Detailed reference
 
 Check in the following the help texts for each command of VTEX IO's CLI. You can also access this information in your terminal by adding `--help` or `-h` after the command name.
+
+### Autoupdate
+
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-autoupdate`. See more details about plugins on [VTEX IO's CLI plugins]().
+
+Update the VTEX IO'S CLI.
+
+#### Usage
+
+```shell
+  $ vtex autoupdate [CHANNEL]
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**CHANNEL** (optional)|.|
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### browse
 
@@ -84,6 +109,8 @@ Opens the URL relative to your current workspace and account in a new browser wi
 
 
 ### deploy
+
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-deploy`. See more details about plugins on [VTEX IO's CLI plugins]().
 
 Publishes an app as a stable version. Only works for apps previously published as a release candidate version [see vtex publish --help].
 
@@ -149,6 +176,8 @@ Deprecates the specified app, uninstalling and downgrading it to the latest stab
 
 ### deps diff
 
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. See more details about plugins on [VTEX IO's CLI plugins]().
+
 Displays the differences between the dependencies of two distinct workspaces. If a single parameter is passed, the specified workspace's dependencies are compared with the master's. If no parameter is passed, the diff is made between the current workspace and master.
 
 #### Usage
@@ -173,6 +202,8 @@ Displays the differences between the dependencies of two distinct workspaces. If
 <div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### deps list
+
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. See more details about plugins on [VTEX IO's CLI plugins]().
 
 Displays the complete dependency tree of the current workspace.
 
@@ -207,6 +238,8 @@ Displays the complete dependency tree of the current workspace.
 
 ### deps update
 
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. See more details about plugins on [VTEX IO's CLI plugins]().
+
 Updates a dependency of the current workspace. If not specified which dependency, it updates all of them.
 
 #### Usage
@@ -233,6 +266,8 @@ Updates a dependency of the current workspace. If not specified which dependency
 
 ### edition get
 
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-edition`. See more details about plugins on [VTEX IO's CLI plugins]().
+
 Displays the Edition App version installed on the current account.
 
 #### Usage
@@ -250,6 +285,8 @@ Displays the Edition App version installed on the current account.
 <div align="right"> 🔼 <a href="#overview">Back</a></div>
 
 ### edition set
+
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-edition`. See more details about plugins on [VTEX IO's CLI plugins]().
 
 Sets the Edition App version for the current account.
 
@@ -697,6 +734,8 @@ Updates all installed apps to the latest (minor or patch) version. Does not upgr
 
 ### whoami
 
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-whoami`. See more details about plugins on [VTEX IO's CLI plugins]().
+
 Prints the current account, workspace, environment, and login details.
 
 #### Usage
@@ -709,6 +748,48 @@ Prints the current account, workspace, environment, and login details.
 
 ```shell
   vtex whoami
+```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
+### Workspace abtest finish
+
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. See more details about plugins on [VTEX IO's CLI plugins]().
+
+Stop all AB testing in current account.
+
+#### Usage
+
+```shell
+  $ vtex workspace abtest finish
+```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
+### Workspace abtest start
+
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. See more details about plugins on [VTEX IO's CLI plugins]().
+
+Start AB testing with current workspace.
+
+#### Usage
+
+```shell
+  $ vtex workspace abtest start
+```
+
+<div align="right"> 🔼 <a href="#overview">Back</a></div>
+
+### Workspace abtest status
+
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. See more details about plugins on [VTEX IO's CLI plugins]().
+
+Display currently running AB tests results.
+
+#### Usage
+
+```shell
+  $ vtex workspace abtest status
 ```
 
 <div align="right"> 🔼 <a href="#overview">Back</a></div>
@@ -895,5 +976,5 @@ Creates and switches to a new workspace or simply switches to an existing one.
 
 
   > ℹ️ VTEX IO's CLI 3.x now has a plugin-based architecture and the following commands from the previous version were detached from the CLI and transformed into plugins:
-  `@vtex/cli-plugin-add`, `@vtex/cli-plugin-autoupdate`, `@vtex/cli-plugin-config`, `@vtex/cli-plugin-debug`, `@vtex/cli-plugin-infra`, `@vtex/cli-plugin-lighthouse`, `@vtex/cli-plugin-logs`, `@vtex/cli-plugin-submit`, `@vtex/cli-plugin-support`, `@vtex/cli-plugin-test`, `@vtex/cli-plugin-url`, `@vtex/cli-plugin-abtest`.
+  `@vtex/cli-plugin-add`, `@vtex/cli-plugin-autoupdate`, `@vtex/cli-plugin-config`, `@vtex/cli-plugin-debug`, `@vtex/cli-plugin-infra`, `@vtex/cli-plugin-lighthouse`, `@vtex/cli-plugin-logs`, `@vtex/cli-plugin-redirects`, `@vtex/cli-plugin-settings`, `@vtex/cli-plugin-submit`, `@vtex/cli-plugin-support`, `@vtex/cli-plugin-test`, `@vtex/cli-plugin-url`.
     To Learn more about, check out [VTEX IO's CLI plugins]().
