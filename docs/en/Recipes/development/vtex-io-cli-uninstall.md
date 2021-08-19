@@ -2,6 +2,8 @@
 
 According to your operating system, you can uninstall VTEX IO's CLI, and for that to happen, run the following on your command line.
 
+>⚠️ *This will also remove all [plugins](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) from your system.*
+
 <details>
   <summary><span class="fa fa-apple">&nbsp;</span>MacOS</summary>
   <br>
