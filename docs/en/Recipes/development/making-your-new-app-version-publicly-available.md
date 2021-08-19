@@ -84,6 +84,8 @@ vtex use {{WorkspaceName}} --production
 
 To perform tests, you must install the candidate version by indicating to the Toolbelt the new app's exact version.
 
+>⚠️ *Changing to a new store theme major could lead to undesired consequences, such as losing the admin's page template settings. For more details on how to handle this situation, access [Migrating CMS settings after a theme major update](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-cms-settings-after-major-update).*
+
 1. Make sure you still are logged into the desired account and using the Production workspace previously created. 
 2. Run the following command:
 
