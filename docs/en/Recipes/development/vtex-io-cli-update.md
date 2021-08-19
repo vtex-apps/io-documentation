@@ -1,6 +1,6 @@
 # Updating VTEX IO's CLI
 
-According to your operating system, run the following on your command line to update VTEX IO’s CLI or how to handle a deprecated version of it on your machine.
+According to your operating system, run the following on your command line to update VTEX IO’s CLI in cases the installed version is outdated or deprecated on your machine.
 
 <details>
   <summary><span class="fa fa-apple">&nbsp;</span>MacOS</summary>
