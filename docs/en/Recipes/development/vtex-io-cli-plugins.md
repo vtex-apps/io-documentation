@@ -10,9 +10,9 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # VTEX IO's CLI Plugins
 
-VTEX IO's CLI has a plugin-based architecture, which means the commands are detached from the CLI code and you can install or uninstall them according to your necessity.
+VTEX IO CLI 3.x has a plug-in architecture that makes it more flexible and extensible to inject new commands and functionalities.
 
-In the following sections, check out about:
+In the following sections, how to achieve a more comprehensive experience by going beyond VTEX IO's CLI default commands and adding specific plugins.
 
 - [VTEX plugins settings](#vtex-plugins-settings).
 - An [overview](#overview) of the main plugins' commands of VTEX IO CLI.
@@ -100,34 +100,34 @@ Check in the following a brief description of the main plugins' command of VTEX 
 
 |Plugin command|Functionality|
 |------------|-------------|
-| [`vtex add`](#add) |Add app(s) to the manifest dependencies.|
-| [`vtex congif get`](#config-get) |Gets the current value for the requested configuration.|
-| [`vtex congif reset`](#config-reset) |Reset the requested configuration to the default value.|
-| [`vtex congif set`](#config-set) |Sets the current value for the given configuration.|
-| [`vtex debug dotnet`](#debug-donet) | Debug .NET applications (IDEs only).| 
-| [`vtex infra install`](#infra-install) |Installs an infra service.|
-| [`vtex infra list`](#infra-list) |Lists installed infra services.|
-| [`vtex infra update`](#infra-update) |Updates all installed infra services.|
-| [`vtex lighthouse audit`](#lighthouse-audit) |Runs a Lighthouse audit over the specified URL.|
-| [`vtex lighthouse show`](#lighthouse-show) |Shows a previous audit report, filtering by app and/or URL.|
-| [`vtex logs`](#logs) |Shows logs of an app (only apps in production).|
-| [`vtex plugins install`](#plugins-install) |Installs a plugin into the CLI.|
-| [`vtex plugins link`](#plugins-link) |Links a plugin into the CLI for development.|
-| [`vtex plugins:list`](#plugins-list) |Lists all plugins installed on your machine.|
-| [`vtex plugins source`](#plugins-source) |Lists all plugins supported by VTEX.|
-| [`vtex plugins uninstall`](#plugins-uninstall) |Removes a plugin from the CLI.|
-| [`vtex plugins:update`](#plugins-update) |Updates all plugins installed on your machine.|
-| [`vtex redirects delete`](#redirects-delete) |Deletes redirects from the current account and workspace.|
-| [`vtex redirects export`](#redirects-export) |Exports all redirects defined in the current account and workspace to a CSV file.|
-| [`vtex redirects import`](#redirects-import) |Imports redirects from a CSV file to the current account and workspace.|
-| [`vtex settings get`](#settings-get) |Prints the settings of the specified app.|
-| [`vtex settings set`](#settings-set) |Sets value to the specified setting of an app.|
-| [`vtex settings unset`](#settings-unset) |Disables the specified setting of an app.|
-| [`vtex submit`](#submit) |Submits the current app, or an specified one, to validation from VTEX App Store team.|
-| [`vtex support`](#support) |Logs in as support to another VTEX account.|
-| [`vtex test e2e`](#test-e2e) |Runs E2E integration tests for the app in the current directory.|
-| [`vtex test unit`](#test-unit) |Runs unit tests for the app in the current directory.|
-| [`vtex url`](#url) |Prints base URL for the current account and workspace.|
+| [`add`](#add) |Add app(s) to the manifest dependencies.|
+| [`congif get`](#config-get) |Gets the current value for the requested configuration.|
+| [`congif reset`](#config-reset) |Reset the requested configuration to the default value.|
+| [`congif set`](#config-set) |Sets the current value for the given configuration.|
+| [`debug dotnet`](#debug-donet) | Debug .NET applications (IDEs only).| 
+| [`infra install`](#infra-install) |Installs an infra service.|
+| [`infra list`](#infra-list) |Lists installed infra services.|
+| [`infra update`](#infra-update) |Updates all installed infra services.|
+| [`lighthouse audit`](#lighthouse-audit) |Runs a Lighthouse audit over the specified URL.|
+| [`lighthouse show`](#lighthouse-show) |Shows a previous audit report, filtering by app and/or URL.|
+| [`logs`](#logs) |Shows logs of an app (only apps in production).|
+| [`plugins install`](#plugins-install) |Installs a plugin into the CLI.|
+| [`plugins link`](#plugins-link) |Links a plugin into the CLI for development.|
+| [`plugins:list`](#plugins-list) |Lists all plugins installed on your machine.|
+| [`plugins source`](#plugins-source) |Lists all plugins supported by VTEX.|
+| [`plugins uninstall`](#plugins-uninstall) |Removes a plugin from the CLI.|
+| [`plugins:update`](#plugins-update) |Updates all plugins installed on your machine.|
+| [`redirects delete`](#redirects-delete) |Deletes redirects from the current account and workspace.|
+| [`redirects export`](#redirects-export) |Exports all redirects defined in the current account and workspace to a CSV file.|
+| [`redirects import`](#redirects-import) |Imports redirects from a CSV file to the current account and workspace.|
+| [`settings get`](#settings-get) |Prints the settings of the specified app.|
+| [`settings set`](#settings-set) |Sets value to the specified setting of an app.|
+| [`settings unset`](#settings-unset) |Disables the specified setting of an app.|
+| [`submit`](#submit) |Submits the current app, or an specified one, to validation from VTEX App Store team.|
+| [`support`](#support) |Logs in as support to another VTEX account.|
+| [`test e2e`](#test-e2e) |Runs E2E integration tests for the app in the current directory.|
+| [`test unit`](#test-unit) |Runs unit tests for the app in the current directory.|
+| [`url`](#url) |Prints base URL for the current account and workspace.|
 
 
 ## Detailed reference
