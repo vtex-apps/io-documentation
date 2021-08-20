@@ -337,3 +337,92 @@ In which:
 
 > ⚠️ *Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.*
 
+### Registering the use of metrics defined in billingOptions
+
+If the app's `billingOptions` has one or more items that are charged according to a metric value, the app itself must register and update the metric values over time. Not registering the metric values or updating them correctly means the app's users will not be charged the right value.
+
+VTEX App Store provides the APIs and the infrastructure to register and keep the app's metric data. However, the app is responsible to guarantee that these values are correctly updated over time.
+
+
+To explain how to register these metric values, we will use the SMS Sender app as an example. If your app does not have any metric item, there's no need to register.
+
+**SMS Sender `billingOptions` example** (*manifest.json*)
+
+This app has an item that is charged according to a metric value. That metric charges `BRL 0.07` (defined in `multiplier`) for *each* metric used:
+
+```json
+{
+  ...
+  "billingOptions": {
+    ...
+    "plans": [
+      {
+        ...
+        "price": {
+          "metrics": [
+            {
+              "id": "smsSent",
+              "ranges": [
+                {
+                  "exclusiveFrom": 0,
+                  "multiplier": 0.07
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  ...
+}
+```
+
+### Registering metric data
+
+The app's metric values consumption must be registered in order to users be charged correctly.
+
+1. Create a client for the `billing` app or complement it with the `saveBillingMetric` method:
+
+```ts
+import {AppClient, IOContext, InstanceOptions} from '@vtex/api'
+
+const routes = {
+  billingMetrics: `/_v/billing-metrics`,
+}
+
+export class BillingApp extends AppClient {
+  public constructor(ioContext: IOContext, opts?: InstanceOptions) {
+    super('vtex.billing@0.x', ioContext, opts)
+  }
+
+  public saveBillingMetric = (billingMetric: {
+    metric_id: string
+    value: number
+  }) =>
+    this.http.post(routes.billingMetrics, billingMetric, {
+      metric: 'save-billing-metric',
+    })
+}
+```
+
+2. Call the `saveBillingMetric` method whenever you need to add (it is accumulative) a new quantity in the metric value:
+
+```ts
+async function saveSMSBillingMetric(
+  {clients: {billingApp}, vtex: {logger}}: ServiceContext<Clients>,
+  res: SMSInfo,
+) {
+  try {
+    await billingApp.saveBillingMetric({
+      metric_id: 'smsSent', // metric_id is defined in the app's billingOptions
+      value: 1, // value is a whole/integer number that you want to register. This is accumulative.
+    })
+  } catch (e) {
+    // That was an error trying to save the metric value
+  }
+}
+```
+After the steps above, you are all set. Now VTEX App Store will use all the saved billing metrics, registered by the method `saveBillingMetric`, according to each month to charge the app's users. It is not necessary to inform the date associated with each metric record because it will be used is implicitly defined. 
+
+Each time a metric is saved, it is also recorded the date for each registry, and by the end of the month/cycle, it is known what metrics will be charged within a given date interval.
