@@ -103,4 +103,6 @@ Valid example of the object:
   "multiplier": 0.08
 }]
 ```
- 
+
+Setting your app's billing model is a necessary step to distribute your app in the VTEX ecosystem. Without them, the visibility of your app is restricted to the account where it was published. Learn how to configure the `billingOptions` field, according to the desired context, in [Setting your app's billing model](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-your-apps-billing-model). 
+
