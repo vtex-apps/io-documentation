@@ -124,7 +124,7 @@ After verifying the installation, if you see an error saying that the command or
 2. Copy it to your clipboard. This path now must be added to the Windows Environment Variable Path;
 3. Click on the Windows button and search for environment. Then, click on `Edit the system environment variables`.
 4. In the `System Properties` dialog, click on the `Environment Variables...` button.
-5. In `User Variables`, select `Path` and then click on the `Edit...` button.
+5. In `System Variables`, select `Path` and then click on the `Edit...` button.
 6. Click on the `New` button to add a new path to the search.
 7. Paste the yarn global binary path copied in Step 2 and click `OK` when prompted. This will save your changes.
 8. Log in and log out of the terminal for the changes to take effect.
