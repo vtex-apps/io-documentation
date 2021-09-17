@@ -1,6 +1,6 @@
 ## Uninstalling VTEX IO's CLI
 
-According to your operating system, you can uninstall VTEX IO's CLI, and for that to happen, run the following on your command line.
+To uninstall VTEX IO's CLI from your system, run the command relative to your operating system or package manager.
 
 >⚠️ *This will also remove all [plugins](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) from your system.*
 
@@ -9,9 +9,10 @@ According to your operating system, you can uninstall VTEX IO's CLI, and for tha
   <br>
   
 - Brew
-  ```sh
-   brew uninstall vtex
-  ```
+
+```sh
+brew uninstall vtex
+```
   
 <br>
 </details>
@@ -20,13 +21,13 @@ According to your operating system, you can uninstall VTEX IO's CLI, and for tha
   <summary><span class="fa fa-linux">&nbsp;</span>Linux</summary>
 <br>
 
-  - Standalone
+- Standalone
 
-     ```sh
-      curl -L https://vtex.io/vtexcli/uninstall | sh
-     ```
+```sh
+curl -L https://vtex.io/vtexcli/uninstall | sh
+```
  
-   > The standalone is a tarball with a binary that contains its own node.js binary.
+>ℹ️ The standalone is a tarball with a binary that contains its own node.js binary.
 <br>
 </details>
 
@@ -40,9 +41,9 @@ According to your operating system, you can uninstall VTEX IO's CLI, and for tha
 
 - Chocolatey
 
-  ```sh
-    choco uninstall vtex
-  ```
+```sh
+choco uninstall vtex
+```
 
 
 <br>

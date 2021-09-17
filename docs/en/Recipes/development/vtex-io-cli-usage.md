@@ -17,7 +17,7 @@ Start using the VTEX IO CLI by running the following command to access a summary
 $ vtex help
 ```
 
-![VTEX command](https://github.com/vtex-apps/io-documentation/blob/d4abdc7fcaa6908f4971c42b4248d746187dd92c/docs/en/Recipes/development/Media/vtex-help-command.svg)
+![VTEX command](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-help-command.png)
 
 >ℹ️ Check the [Command Reference](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-command-reference) for more details.
 
@@ -37,7 +37,7 @@ Once you log in, the web page will display the following message: *“You may no
 
 Now, when you go back to the computer terminal, you'll have access to a development environment for this VTEX account. You'll see some basic information about your account as in the following.
 
-![Login Screen](https://github.com/vtex-apps/io-documentation/blob/94b4c1e08ce863a33a57ca2d2222f22c6e7798f6/docs/en/Recipes/development/Media/vtex-login-command.svg)
+![Login Screen](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-login-command.png)
 
 >ℹ️ If you later decide to work on another account, run `vtex switch {account-name}`, specifying the account name you want to switch to.
 
@@ -55,11 +55,11 @@ $ vtex use {workspace-name}
 
 Notice that if a workspace with the chosen name already exists, you'll be taken to it.
 
-![Change Workspace](https://github.com/vtex-apps/io-documentation/blob/89939dc1b5bbdf9f11378de719a8689ee40e65d0/docs/en/Recipes/development/Media/vtex-use-command-one.svg)
+![Change Workspace](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-use-command-one.png)
 
 Otherwise, you'll be asked if you want to create it.
 
-![New Workspace](https://github.com/vtex-apps/io-documentation/blob/89939dc1b5bbdf9f11378de719a8689ee40e65d0/docs/en/Recipes/development/Media/vtex-use-two.svg)
+![New Workspace](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-use-two.png)
 
 From now on, every operation performed will happen in the specified workspace.
 
@@ -83,7 +83,7 @@ $ vtex install {appvendor}.{appname}@{appversion}
 
 If you try to install an app that has [Billing Options](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options), you first need to access the [VTEX App Store](https://apps.vtex.com/) and agree to the app's terms and conditions.
 
-![Billing Options](https://github.com/vtex-apps/io-documentation/blob/992891f577e7c63accd26e890e88d2ebf8226eaf/docs/en/Recipes/development/Media/vtex-install-app.svg)
+![Billing Options](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-install-app.png)
 
 1. If you type `Y`, the app's page you intend to install from the VTEX App Store will open in your browser. 
 2. To continue with the installation, click on `GET APP` > `CONFIRM` to log in to your VTEX store.
@@ -99,7 +99,7 @@ Start a new project from pre-defined templates by running the following command.
 $ vtex init
 ```
 
-![Init command](https://github.com/vtex-apps/io-documentation/blob/f1ea977a93c91abcb82645bb7ea1a53e13046df6/docs/en/Recipes/development/Media/vtex-init-command.svg)
+![Init command](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-init-command.png)
 
 For example, to start developing a store theme app, choose the `store` option. This will clone the [Store Theme](https://github.com/vtex-apps/store) boilerplate app into your local files.
 
@@ -111,7 +111,7 @@ Change to the directory of the app you're developing and run the following comma
 $ vtex link
 ```
 
-![Link Command](https://github.com/vtex-apps/io-documentation/blob/f1ea977a93c91abcb82645bb7ea1a53e13046df6/docs/en/Recipes/development/Media/vtex-link-command.svg)
+![Link Command](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-link-command.png)
 
 VTEX IO's CLI will monitor your files and provide an URL related to that workspace. You'll be able to access it through `https://{workspace}--{account}.myvtex.com`, by replacing the value between curly braces with the name of the workspace previously created and your VTEX account. For example, `https://marianacaetano--appliancetheme.myvtex.com`.
 
@@ -151,4 +151,4 @@ Use the `--help` flag as in the following to learn more about a specific command
 vtex [COMMAND] --help
 ```
 
-![Help Command](https://github.com/vtex-apps/io-documentation/blob/f1ea977a93c91abcb82645bb7ea1a53e13046df6/docs/en/Recipes/development/Media/vtex-browse-help-command.svg)
+![Help Command](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-browse-help-command.png)

@@ -1,22 +1,20 @@
 # Updating VTEX IO's CLI
 
-According to your operating system, run the following on your command line to update VTEX IO’s CLI in cases the installed version is outdated or deprecated on your machine.
+If the VTEX IO’s CLI version installed on your machine is outdated or deprecated, run the command relative to your operating system to update it.
 
 <details>
   <summary><span class="fa fa-apple">&nbsp;</span>MacOS</summary>
   <br>
   
 - Brew
-  - Update
-  ```sh
-   brew upgrade vtex
-  ```
-  
-  - Deprecated
-  ```sh
-   brew unlink vtex
-   brew install vtex/vtex
-  ```
+
+```sh Outdated
+brew upgrade vtex
+```
+```sh Deprecated
+brew unlink vtex
+brew install vtex/vtex
+```
 
 <br>
 </details>
@@ -25,18 +23,17 @@ According to your operating system, run the following on your command line to up
   <summary><span class="fa fa-linux">&nbsp;</span>Linux</summary>
 <br>
 
-  - Standalone
+- Standalone
   
-    - Update
-     ```sh
-      vtex autoupdate
-      ```
-  
-    - Deprecated
-     ```sh
-     vtex autoupdate
-     ```
-   > The standalone update is a tarball with a binary that contains its own node.js binary.
+```sh Outdated
+vtex autoupdate
+```  
+```sh Deprecated
+vtex autoupdate
+```
+
+>ℹ️ The standalone update is a tarball with a binary that contains its own node.js binary.
+
 <br>
 </details>
 
@@ -46,16 +43,16 @@ According to your operating system, run the following on your command line to up
 
 - Standalone.exe
 
-  ```sh
-  vtex autoupdate
-  ```
+```sh
+vtex autoupdate
+```
 
 - Chocolatey
 
-  ```sh
-  choco uninstall vtex
-  choco install vtex
-  ```
+```sh
+choco uninstall vtex
+choco install vtex
+```
 
 
 <br>
@@ -63,8 +60,8 @@ According to your operating system, run the following on your command line to up
 
 ## Updating VTEX IO's CLI via NPM
  
- If you have [installed VTEX IO's CLI via NPM](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-install), to update or handle a deprecated version of it on your machine run the following in your command line:
+If you have [installed VTEX IO's CLI via NPM](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-install), run the following command to update or handle a deprecated version:
  
- ```sh
-  yarn global add vtex
- ```
+```sh
+yarn global add vtex
+```

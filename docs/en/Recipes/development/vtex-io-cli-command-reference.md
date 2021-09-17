@@ -9,13 +9,21 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Command reference
 
-## Overview
+This documentation is a reference for:
 
-Check in the following a brief description of the main commands of VTEX IO's CLI.
+- [VTEX IO CLI default commands](#default-commands)
+- [VTEX plugins commands](#plugins)
+
+>⚠️  VTEX IO's CLI 3.x now has a plugin-based architecture. Hence, some commands from the previous versions of VTEX IO's CLI are now available as plugins. They are: `add`, `autoupdate`, `config`, `debug`, `infra`, `lighthouse`, `logs`, `redirects`, `settings`, `submit`, `support`, `test`, `url`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
+
+## Default commands
+
+Check in the following a brief description of the default commands of VTEX IO's CLI. For a detailed description of each command, click on its respective name. You can also access this information in your terminal by adding `--help` or `-h` after the command name.
+
 
 |Command Name|Functionality|
 |------------|-------------|
-| [`autoupdate`](#autoupdate) |	Update the VTEX IO'S CLI.|
+| [`autoupdate`](#autoupdate) |	Automatically updates VTEX IO's CLI.|
 | [`browse`](#browse) |Opens the URL relative to your current workspace and account in a new browser window.|
 | [`deploy`](#deploy) | Publishes an app as a stable version. Only works for apps previously published as a release candidate version.|
 | [`deprecate`](#deprecate) |Deprecates the specified app, uninstalling and downgrading it to the latest stable version in every VTEX account.|
@@ -51,16 +59,13 @@ Check in the following a brief description of the main commands of VTEX IO's CLI
 | [`workspace status`](#workspace-status) |Displays information about the specified workspace.|
 | [`workspace use`](#workspace-use) |Creates and switches to a new workspace or simply switches to an existing one.|
 
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
-## Detailed reference
+### autoupdate
 
-Check in the following the help texts for each command of VTEX IO's CLI. You can also access this information in your terminal by adding `--help` or `-h` after the command name.
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-autoupdate`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
-### Autoupdate
-
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-autoupdate`. See more details about plugins on [VTEX IO's CLI plugins]().
-
-Update the VTEX IO'S CLI.
+Automatically updates VTEX IO's CLI.
 
 #### Usage
 
@@ -74,7 +79,7 @@ Update the VTEX IO'S CLI.
 |--------|-----------|
 |**CHANNEL** (optional)|.|
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### browse
 
@@ -105,12 +110,12 @@ Opens the URL relative to your current workspace and account in a new browser wi
   vtex browse admin
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 
 ### deploy
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-deploy`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-deploy`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
 Publishes an app as a stable version. Only works for apps previously published as a release candidate version [see vtex publish --help].
 
@@ -140,7 +145,7 @@ Publishes an app as a stable version. Only works for apps previously published a
   vtex deploy vtex.service-example@0.0.1
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### deprecate
 
@@ -172,11 +177,11 @@ Deprecates the specified app, uninstalling and downgrading it to the latest stab
   vtex deprecate vtex.service-example@0.0.1
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### deps diff
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
 Displays the differences between the dependencies of two distinct workspaces. If a single parameter is passed, the specified workspace's dependencies are compared with the master's. If no parameter is passed, the diff is made between the current workspace and master.
 
@@ -199,11 +204,11 @@ Displays the differences between the dependencies of two distinct workspaces. If
   vtex deps diff workspace1 workspace2
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### deps list
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
 Displays the complete dependency tree of the current workspace.
 
@@ -234,11 +239,11 @@ Displays the complete dependency tree of the current workspace.
   vtex deps ls
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### deps update
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-deps`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
 Updates a dependency of the current workspace. If not specified which dependency, it updates all of them.
 
@@ -262,11 +267,11 @@ Updates a dependency of the current workspace. If not specified which dependency
   vtex deps update vtex.service-example@0.0.1
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### edition get
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-edition`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-edition`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
 Displays the Edition App version installed on the current account.
 
@@ -282,11 +287,11 @@ Displays the Edition App version installed on the current account.
   vtex edition get
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### edition set
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-edition`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-edition`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
 Sets the Edition App version for the current account.
 
@@ -308,7 +313,7 @@ Sets the Edition App version for the current account.
   vtex edition set editionName
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### help
 
@@ -332,7 +337,7 @@ Displays help for VTEX CLI commands.
 |-------|-----|-----------|
 |**--all**|-|Displays all commands available in the CLI.|
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### init
 
@@ -350,7 +355,7 @@ Copies starting files and folders from VTEX boilerplates into your local directo
   vtex init
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### install
 
@@ -383,7 +388,7 @@ Installs an app on the current workspace. If not specified which one, it default
   vtex install vtex.service-example@0.0.1
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### link
 
@@ -412,7 +417,7 @@ Syncs the app in the current directory with the development workspace in use.
   vtex link -a youraccount -w yourworkspace
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### list
 
@@ -438,7 +443,7 @@ Lists the apps installed on the current workspace and account.
   vtex ls
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### local token
 
@@ -456,7 +461,7 @@ Prints the user's auth token and copies it to the clipboard.
   vtex local token
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### login
 
@@ -487,7 +492,7 @@ Logs in to a VTEX account.
   vtex login storecomponents
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### logout
 
@@ -505,7 +510,7 @@ Logs out of the current VTEX account.
   vtex logout
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### publish
 
@@ -533,7 +538,7 @@ Publishes the app in the current directory as a release candidate version.
   vtex publish
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### release 
 
@@ -562,7 +567,7 @@ Publishes the app in the current directory as a release candidate version.
   vtex release pre
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### setup
 
@@ -584,7 +589,7 @@ Sets up typings and tools for the current development environment.
 |**--tsconfig**|-|Sets up React and Node TSconfig, if applicable.|
 |**--typings**|-|Sets up GraphQL and React typings.|
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### switch
 
@@ -614,7 +619,7 @@ Switches to another VTEX account.
   vtex switch storecomponents
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### undeprecate
 
@@ -645,7 +650,7 @@ Reestablishes a deprecated version of an app as a stable version.
   vtex undeprecate vtex.service-example@0.0.1
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### uninstall
 
@@ -678,7 +683,7 @@ Uninstalls an app from the current workspace. If not specified which app to unin
   vtex uninstall vtex.service-example@0.x
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### unlink
 
@@ -712,7 +717,7 @@ appname Name of the app to unlink.
   vtex unlink vtex.service-example@0.x
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### update
 
@@ -730,11 +735,11 @@ Updates all installed apps to the latest (minor or patch) version. Does not upgr
   vtex update
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### whoami
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-whoami`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-whoami`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
 Prints the current account, workspace, environment, and login details.
 
@@ -750,13 +755,13 @@ Prints the current account, workspace, environment, and login details.
   vtex whoami
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
-### Workspace abtest finish
+### workspace abtest finish
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
-Stop all AB testing in current account.
+Stops all A/B tests from running on the current account.
 
 #### Usage
 
@@ -764,13 +769,13 @@ Stop all AB testing in current account.
   $ vtex workspace abtest finish
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
-### Workspace abtest start
+### workspace abtest start
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
-Start AB testing with current workspace.
+Starts a new A/B test on the current workspace.
 
 #### Usage
 
@@ -778,13 +783,13 @@ Start AB testing with current workspace.
   $ vtex workspace abtest start
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
-### Workspace abtest status
+### workspace abtest status
 
->ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. See more details about plugins on [VTEX IO's CLI plugins]().
+>ℹ️ This command refers to the plugin `@vtex/cli-plugin-abtest.`. Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
 
-Display currently running AB tests results.
+Displays the results of the active A/B tests.
 
 #### Usage
 
@@ -792,7 +797,7 @@ Display currently running AB tests results.
   $ vtex workspace abtest status
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### workspace delete
 
@@ -825,7 +830,7 @@ Deletes one or many workspaces from the current account.
   vtex workspace delete workspaceName1 workspaceName2
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### workspace list
 
@@ -851,7 +856,7 @@ Lists all workspaces of the current account.
   vtex workspace ls
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### workspace promote
 
@@ -877,7 +882,7 @@ Promotes the current workspace to master. Only works for production workspaces.
   vtex promote
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### workspace reset
 
@@ -909,7 +914,7 @@ Cleans all configurations of the specified workspace and recreates it with the c
   vtex workspace reset workspaceName
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### workspace status
 
@@ -934,7 +939,7 @@ Displays information about the specified workspace.
   vtex workspace status
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 ### workspace use
 
@@ -972,9 +977,789 @@ Creates and switches to a new workspace or simply switches to an existing one.
   vtex use workspaceName
 ```
 
-<div align="right"> 🔼 <a href="#overview">Back</a></div>
+<div align="right"> 🔼 <a href="#default-commands">Back</a></div>
 
 
-  > ℹ️ VTEX IO's CLI 3.x now has a plugin-based architecture and the following commands from the previous version were detached from the CLI and transformed into plugins:
-  `@vtex/cli-plugin-add`, `@vtex/cli-plugin-autoupdate`, `@vtex/cli-plugin-config`, `@vtex/cli-plugin-debug`, `@vtex/cli-plugin-infra`, `@vtex/cli-plugin-lighthouse`, `@vtex/cli-plugin-logs`, `@vtex/cli-plugin-redirects`, `@vtex/cli-plugin-settings`, `@vtex/cli-plugin-submit`, `@vtex/cli-plugin-support`, `@vtex/cli-plugin-test`, `@vtex/cli-plugin-url`.
-    To Learn more about, check out [VTEX IO's CLI plugins]().
+ ## Plugins
+
+Check in the following a brief description of the commands available by VTEX plugins. For a detailed description of each command, click on its respective name. After installing the corresponding plugin, you can also access this information in your terminal by adding `--help` or `-h` after the command name.
+
+
+>ℹ️ Follow this link [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) to learn more about VTEX IO's CLI plugins.
+
+|Plugin command|Functionality|
+|------------|-------------|
+| [`add`](#add) |Adds the specified app(s) to the manifest's dependencies.|
+|[`config get`](#-config-get)|Prints the value of the requested configuration key.|
+|[`config reset`](#-config-reset)|Resets the specified configuration to its default value.|
+|[`config set`](#-config-set)|Sets the value of a configuration key.|
+| [`debug dotnet`](#debug-donet) | Debugs .NET applications (IDEs only).| 
+| [`infra install`](#infra-install) |Installs an infra service.|
+| [`infra list`](#infra-list) |Lists installed infra services.|
+| [`infra update`](#infra-update) |Updates all installed infra services.|
+| [`lighthouse audit`](#lighthouse-audit) |Runs a Lighthouse audit over the specified URL.|
+| [`lighthouse show`](#lighthouse-show) |Shows a previous audit report, filtering by app and/or URL.|
+| [`logs`](#logs) |Shows logs of an app (only apps in production).|
+| [`plugins install`](#plugins-install) |Installs a plugin into the CLI.|
+| [`plugins link`](#plugins-link) |Links a plugin into the CLI for development.|
+| [`plugins:list`](#plugins-list) |Lists all plugins installed on your machine.|
+| [`plugins source`](#plugins-source) |Lists all plugins supported by VTEX.|
+| [`plugins uninstall`](#plugins-uninstall) |Removes a plugin from the CLI.|
+| [`plugins:update`](#plugins-update) |Updates all plugins installed on your machine.|
+| [`redirects delete`](#redirects-delete) |Deletes redirects from the current account and workspace.|
+| [`redirects export`](#redirects-export) |Exports all redirects defined in the current account and workspace to a CSV file.|
+| [`redirects import`](#redirects-import) |Imports redirects from a CSV file to the current account and workspace.|
+| [`settings get`](#settings-get) |Prints the settings of the specified app.|
+| [`settings set`](#settings-set) |Sets value to the specified setting of an app.|
+| [`settings unset`](#settings-unset) |Disables the specified setting of an app.|
+| [`submit`](#submit) |Submits the current app, or an specified one, to validation from VTEX App Store team.|
+| [`support`](#support) |Logs in as support to another VTEX account.|
+| [`test e2e`](#test-e2e) |Runs E2E integration tests for the app in the current directory.|
+| [`test unit`](#test-unit) |Runs unit tests for the app in the current directory.|
+| [`url`](#url) |Prints base URL for the current account and workspace.|
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+
+### add
+
+Adds the specified app(s) to the manifest's dependencies.
+
+#### Usage
+  
+```shell
+$ vtex add APPID [ITHAPPID]
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**APPID**|Name and version (`{vendor}.{appname}@{x.x.x}`) of the dependency to include in the manifest.json file.|
+|**ITHAPPID** (optional)|Names and versions (`{vendor}.{appname}@{x.x.x}`) of the multiple dependencies to include in the manifest.json file.|
+
+#### Example
+
+```shell
+vtex add vtex.service-example@0.x
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### autoupdate
+
+Automatically updates VTEX IO's CLI.
+
+#### Usage
+
+```shell
+  $ vtex autoupdate [CHANNEL]
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**CHANNEL** (optional)|.|
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+
+### config get
+
+Prints the value of the requested configuration key.
+
+#### Usage
+  
+```shell
+$ vtex config get CONFIGNAME
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**CONFIGNAME**|Configuration to retrieve the value from.|
+
+
+#### Example
+
+```shell
+ vtex config get env
+ vtex config get cluster
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### config reset
+
+Resets the specified configuration to its default value.
+
+#### Usage
+  
+```shell
+$ vtex config reset CONFIGNAME
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**CONFIGNAME**|Name of the configuration to reset.|
+
+
+#### Example
+
+```shell
+ vtex config reset env
+ vtex config reset cluster
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### config set
+
+Sets the value of a configuration key.
+
+#### Usage
+  
+```shell
+$ vtex config set CONFIGNAME VALUE
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**CONFIGNAME**|Name of the configuration.|
+|**VALUE**|New value of the specified configuration.|
+
+
+#### Example
+
+```shell
+  vtex config set env envValue
+  vtex config set cluster clusterValue
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### debug donet
+
+Debugs .NET applications (IDEs only).
+
+#### Usage
+
+```shell
+  $ vtex debug dotnet DEBUGINST
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**DEBUGINST**|Name of the .NET application to debug.|
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### infra install
+
+Installs an infra service.
+
+#### Usage
+
+```shell
+  $ vtex infra install SERVICEID
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**SERVICEID**|Name and version of the service (`{vendor}.{servicename}@{x.x.x}`) to install.|
+
+#### Examples
+
+```shell
+  vtex infra install infra-service
+  vtex infra install infra-service@0.0.1
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### infra list
+
+Lists installed infra services.
+
+#### Usage
+
+```shell
+  $ vtex infra list [NAME]
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**NAME** (optional)|Service name.|
+
+#### Options
+
+|Option|Alias|Description|
+|-------|-----|-----------|
+|**--available**|-a|Lists services that are available to install.|
+|**--filter=filter**|-f|Lists services that contain the specified word.|
+  
+#### Aliases
+
+```shell
+  $ vtex infra ls
+```
+
+#### Examples
+
+```shell
+  vtex infra list
+  vtex infra ls
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### infra update
+
+Updates all installed infra services.
+
+#### Usage
+
+```shell
+  $ vtex infra update
+```
+
+#### Example
+
+```shell
+  vtex infra update
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### lighthouse audit
+
+Runs a Lighthouse audit over the specified URL.
+
+#### Usage
+
+```shell
+  $ vtex lighthouse audit URL
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**URL**|URL to audit.|
+
+#### Options
+
+|Option|Alias|Description|
+|------|-----|-----------|
+|**--json**|-j|Returns the report as a json on stdout.|
+
+#### Aliases
+
+```shell
+  $ vtex lh audit
+```
+
+#### Examples
+
+```shell
+  vtex lighthouse audit my.url.com
+  vtex lh audit my.url.com
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### lighthouse show
+
+Shows a previous audit report, filtering by app and/or URL.
+
+#### Usage
+
+```shell
+  $ vtex lighthouse show
+```
+
+#### Options
+
+|Option|Alias|Description|
+|-------|-----|-----------|
+|**--app=app**|-a|Filters by app name.|
+|**--url=url**|-u|Filters by URL.|
+  
+#### Aliases
+
+```shell
+  $ vtex lh show
+```
+
+#### Examples
+
+```shell
+  vtex lighthouse show --app=vtex.awesome-app
+  vtex lighthouse show -u https://awesome.store.com
+  vtex lighthouse show -a vtex.awesome-app --url=https://awesome.store.com
+  vtex lh show --app=vtex.awesome-app
+  vtex lh show -u https://awesome.store.com
+  vtex lh show -a vtex.awesome-app --url=https://awesome.store.com
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### logs
+
+Shows logs of an app. (Only apps in production.)
+
+#### Usage
+
+```shell
+  $ vtex logs [APP]
+```
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**APP** (optional)|Name of the app to show logs.|
+
+#### Options
+
+|Option|Alias|Description|
+|-------|-----|-----------|
+|**--all**|-a|Shows logs of every app installed on the current account.|
+|**--past**|-p|Shows previous logs of the specified app.|
+  
+#### Examples
+
+```shell
+  vtex logs
+  vtex logs appName
+  vtex logs --all
+  vtex logs appName --past
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### plugins install
+Installs a plugin into the CLI.
+
+#### Usage
+
+```shell
+  $ vtex plugins install PLUGIN
+```
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+| **PLUGIN** | Plugin to install.|
+
+#### Options
+
+|Option|Alias|Description|
+|-------|-----|-----------|
+|**--force**| -f| Refetches all packages, even the ones that were previously installed.|
+  
+#### Aliases
+
+```shell
+  $ vtex plugins:add
+```
+
+#### Examples
+
+```shell
+  vtex plugins install lighthouse
+  vtex plugins install https://github.com/vtex/cli-plugin-someplugin
+  vtex plugins install @vtex/cli-plugin-someplugin
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### plugins link
+
+Links a plugin into the CLI for development.
+
+#### Usage
+
+```shell
+  $ vtex plugins link PLUGIN
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**PATH [default: .]** |Plugin path.|
+
+#### Examples
+
+```shell
+   vtex plugins link myplugin
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### plugins list
+
+Lists all plugins installed on your machine.
+
+#### Usage
+
+```shell
+  $ vtex plugins:list
+```
+
+#### Options
+
+|Option|Description|
+|-------|-----------|
+|**--core**| Shows core plugins.|
+
+#### Examples
+
+```shell
+  vtex plugins list
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### plugins source
+
+Lists all plugins supported by VTEX.
+
+#### Usage
+
+```shell
+  $ vtex plugins source PLUGIN
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+| **PLUGIN** | Plugin name.|
+|**PATH [default: .]** |Plugin path.|
+
+#### Examples
+
+```shell
+  vtex plugins source myplugin
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### plugins uninstall
+Removes a plugin from the CLI.
+
+#### Usage
+
+```shell
+  $ vtex plugins uninstall PLUGIN
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+| **PLUGIN** | Plugin to uninstall.|
+
+#### Aliases
+
+```shell
+  $ vtex plugins unlink
+  $ vtex plugins remove
+```
+
+#### Examples
+
+
+```shell
+vtex plugins uninstall lighthouse
+vtex plugins remove lighthouse
+vtex plugins unlink lighthouse
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### plugins update
+
+Updates all plugins installed on your machine.
+
+#### Usage
+
+```shell
+  $ vtex plugins update
+```
+
+### redirects delete
+
+Deletes redirects from the current account and workspace.
+
+#### Usage
+
+```shell
+  $ vtex redirects delete CSVPATH
+```
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**CSVPATH**|CSV file containing the URL paths to be deleted.|
+
+#### Example
+
+```shell
+  vtex redirects delete csvPath
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### redirects export
+
+Exports all redirects defined in the current account and workspace to a CSV file.
+
+#### Usage
+
+```shell
+  $ vtex redirects export CSVPATH
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**CSVPATH**|Name of the CSV file.|
+
+#### Example
+
+```shell
+  vtex redirects export csvPath
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### redirects import
+
+Imports redirects from a CSV file to the current account and workspace.
+
+#### Usage
+
+```shell
+  $ vtex redirects import CSVPATH
+```
+
+#### Options
+
+|Option|Alias|Description|
+|-------|-----|-----------|
+|**--reset**|-r|Removes all redirects previously defined.|
+  
+#### Example
+
+```shell
+  vtex redirects import csvPath
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### settings get
+
+Prints the settings of the specified app.
+
+#### Usage
+
+```shell
+  $ vtex settings get APPNAME [FIELD]
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**APNAME**| Name of the app to check the available settings.|
+|**FIELD** (optional)|Name of the setting.|
+
+#### Aliases
+
+```shell
+  $ vtex settings
+```
+
+#### Example
+
+```shell
+  vtex settings get vtex.service-example
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### settings set
+
+Sets value to the specified setting of an app.
+
+#### Usage
+
+```shell
+  $ vtex settings set APPNAME FIELD VALUE 
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**APPNAME** |Name of the app.|
+|**FIELD**|Name of the setting.|
+|**VALUE**|Value of the setting.|
+
+#### Example
+
+```shell
+  vtex settings set vtex.store enableCriticalCSS true
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+
+### settings unset
+
+Disables the specified setting of an app.
+
+#### Usage
+
+```shell
+  $ vtex settings unset APPNAME FIELD
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**APPNAME**|Name of the app.|
+|**FIELD**|Name of the setting.|
+
+#### Example
+
+```shell
+  vtex settings unset vtex.service-example fieldName
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### submit
+Submits the current app, or an specified one, to validation from VTEX App Store team.
+
+#### Usage
+
+```shell
+  $ vtex submit [APPID]
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**APPID** (optional)|Name of the app to be validated.|
+
+#### Examples
+
+```shell
+  vtex submit
+  vtex submit myvendor.myapp@1.2.3
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### support
+
+Logs in as support to another VTEX account.
+
+#### Usage
+
+```shell
+  $ vtex support ACCOUNT
+```
+
+#### Arguments
+
+|Argument|Description|
+|--------|-----------|
+|**ACCOUNT**|Name of the account to give support.|
+
+#### Example
+
+```shell
+  vtex support storecomponents
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### test e2e
+
+
+Runs E2E integration tests for the app in the current directory.
+
+
+#### Usage
+
+
+```shell
+  $ vtex test e2e
+```
+
+
+#### Options
+
+
+|Option|Alias|Description|
+|-------|-----|-----------|
+|**--report=report**|-r|Displays the results and state of the specified test ID.|
+|**--token**|-t|(Not recommended.) Sends your personal authorization token to your testing session, making it available during the tests. It can be dangerous since it exposes your token via the 'authToken' environment variable.|
+|**--workspace**|-w|Runs tests for the apps installed on the specified workspace.|
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### test unit
+
+Runs unit tests for the app in the current directory.
+
+#### Usage
+
+```shell
+  $ vtex test unit
+```
+
+#### Options
+
+|Option|Alias|Description|
+|-------|-----|-----------|
+|**--unsafe**|-u|Ignores Typescript errors|
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+
+### url
+Prints base URL for current account, workspace and environment.
+
+#### Usage
+
+```shell
+  $ vtex url
+```
+
+#### Example
+
+```shell
+  vtex url
+```
+
+<div align="right"> 🔼 <a href="#plugins">Back</a></div>
+

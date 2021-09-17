@@ -28,12 +28,11 @@ $ /bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/instal
 
 4. In your terminal, paste the **Homebrew** command and hit `Return` (Enter).
 
-5. After the Homebrew installation is finished, run the command `brew tap vtex/vtex`.
-
-6. Now, **install VTEX IO'S CLI** by running.
+5. Now, **install VTEX IO'S CLI** by running the following command:
 
 ```sh
- brew install vtex
+brew tap vtex/vtex
+brew install vtex
 ```
 
 <br>
@@ -47,7 +46,7 @@ For Linux, you will use the standalone install, a tarball with a binary that con
 
 >ℹ️ Before the installation, check if you have the command-line tool and library, [curl](https://curl.se/).
 
-Open your command line and run the following command to **VTEX IO'S CLI**:
+Open your command line and run the following command to install **VTEX IO'S CLI**:
 
 ```sh
 curl -L https://vtex.io/vtexcli/install | sh
@@ -72,8 +71,8 @@ For Windows you can install it via Windows installer or [Chocolatey](https://cho
 2. To finish the installation process, follow the instructions described on it.
 
 * **Chocolatey**
-1. Download and install **Chocolatey** as described on this [link](https://chocolatey.org/install).
-2. Once Chocolatey is set up, run the following command from the command line:
+1. Download and install **Chocolatey** as described on this [document](https://chocolatey.org/install).
+2. Once Chocolatey is set up, run the following command:
 
 ```sh
 choco install vtex
@@ -85,11 +84,13 @@ choco install vtex
 
 ## Installing VTEX IO's CLI by NPM
 
-The CLI is built with [Node.js](https://nodejs.org/en/) and is installable via [`npm`](https://www.npmjs.com/package/vtex). This method is recommended only for environments in which auto-updating VTEX IO's CLI is not ideal.
+Since VTEX IO's CLI is built with [Node.js](https://nodejs.org/en/), you can manually install it via [npm](https://www.npmjs.com/package/vtex). This method is recommended only for environments in which auto-updating VTEX IO's CLI is not ideal.
 
->⚠️ *We strongly recommended that you use an alternative installation method from the previous section, [Installing VTEX IO's CLI](#installing-vtex-ios-cli). Since the proper version of Node.js is already included in the other methods and it does not conflict with any other version on your system.*
+>⚠️ ***We strongly recommended that you use an alternative installation method.***
+> *If you opt for installing VTEX IO's CLI using npm, keep in mind that VTEX IO's CLI won't be automatically updated, and the Node version on your machine might conflict with the one used by the CLI developers. Notice that if you opt for any other installation method, VTEX IO's CLI will always be up-to-date, and you will avoid installation issues.*
 
->ℹ️ Notice that, to install VTEX IO's CLI, you need to ensure that [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) are installed on your machine.
+>ℹ️  Before the installation, check if you have [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) installed on your machine.
+
 <details>
   <summary><span class="fa fa-apple">&nbsp;</span>MacOS</summary>
   <br>
@@ -107,15 +108,23 @@ $ /bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/instal
 
 4. In your terminal, paste the **Homebrew** command and hit `Return` (Enter).
 
-5. After the Homebrew installation is finished, run the command `brew install node`.
+5. After the Homebrew installation is finished, run the following command:
 
-6. Now, **install Yarn** by running `brew install yarn`.
+  ```sh
+  brew install node
+  ```
+
+6. Now, **install Yarn** by running 
+  
+  ```sh
+  brew install yarn
+  ```
 
 7. And finally, install **VTEX IO's CLI** by running:
 
-```sh
-$ yarn global add vtex
-```
+  ```sh
+  yarn global add vtex
+  ```
 
 
 
@@ -126,9 +135,14 @@ $ yarn global add vtex
   <summary><span class="fa fa-linux">&nbsp;</span>Linux</summary>
 <br>
 
-1. Install **Node.js** using the following command: `sudo apt install nodejs`.
-2. Install **Yarn** following the [Yarn installation](https://classic.yarnpkg.com/en/docs/install#gentoo-stable) for Linux.
-3. Open your command line and run the following command.
+1. Install **Node.js** by running the following command: 
+   
+  ```sh
+  sudo apt install nodejs
+  ```
+
+2. Install **Yarn** by following the [Yarn installation](https://classic.yarnpkg.com/en/docs/install#gentoo-stable) for Linux.
+3. Install VTEX IO's CLI by running the following command:
 
 ```sh
 $ sudo yarn global add vtex
@@ -142,8 +156,8 @@ $ sudo yarn global add vtex
   <summary><span class="fa fa-windows">&nbsp;</span>Windows</summary>
 <br>
 
-1. Download and install **Node.js** as described on this [link](https://nodejs.org/pt-br/download/).
-2. Download and install **Yarn** as described on this [link](https://classic.yarnpkg.com/en/docs/getting-started).
+1. Download and install **Node.js** as described on this [document](https://nodejs.org/pt-br/download/).
+2. Download and install **Yarn** as described on this [document](https://classic.yarnpkg.com/en/docs/getting-started).
 3. Open the CMD by pressing the Windows key and typing `cmd`.
 4. Install VTEX IO's CLI by running the following command.
 
@@ -162,6 +176,8 @@ To confirm that the installation occurred as expected, run the following command
 ```sh
 vtex
 ```
+
+![vtex](https://raw.githubusercontent.com/vtex-apps/io-documentation/master/docs/en/Recipes/development/Media/vtex-command.png)
 
 ### Troubleshooting
 
