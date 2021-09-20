@@ -8,10 +8,10 @@ If the VTEX IO’s CLI version installed on your machine is outdated or deprecat
   
 - Brew
 
-```sh Outdated
+```sh Update
 brew upgrade vtex
 ```
-```sh Deprecated
+```sh Reinstall
 brew unlink vtex
 brew install vtex/vtex
 ```
@@ -25,12 +25,9 @@ brew install vtex/vtex
 
 - Standalone
   
-```sh Outdated
+```sh 
 vtex autoupdate
 ```  
-```sh Deprecated
-vtex autoupdate
-```
 
 >ℹ️ The standalone update is a tarball with a binary that contains its own node.js binary.
 
@@ -46,14 +43,6 @@ vtex autoupdate
 ```sh
 vtex autoupdate
 ```
-
-- Chocolatey
-
-```sh
-choco uninstall vtex
-choco install vtex
-```
-
 
 <br>
 </details>

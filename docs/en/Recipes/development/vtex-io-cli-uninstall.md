@@ -39,13 +39,6 @@ curl -L https://vtex.io/vtexcli/uninstall | sh
   
   Follow the [Window's uninstall tutorial](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-10-4b55f974-2cc6-2d2b-d092-5905080eaf98) to remove the VTEX IO's CLI from your programs list.
 
-- Chocolatey
-
-```sh
-choco uninstall vtex
-```
-
-
 <br>
 </details>
 

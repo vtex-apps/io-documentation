@@ -60,24 +60,18 @@ curl -L https://vtex.io/vtexcli/install | sh
   <summary><span class="fa fa-windows">&nbsp;</span>Windows</summary>
 <br>
 
-For Windows you can install it via Windows installer or [Chocolatey](https://chocolatey.org/).
+1. Download the appropriate installer for your Windows.
 
-* **Installer for Windows**
+**Installer for Windows**
 
-  <a href="https://vtex.io/vtexcli/install/win-x64" style="text-decoration:none;"
-        class="vtex-landing-button vtex-header-hero-y-margin rebel_pink_background">VTEX Setup</a>
+<a href="https://vtex.io/vtexcli/install/win-x64" style="text-decoration:none;"
+        class="vtex-landing-button vtex-header-hero-y-margin rebel_pink_background">64-bit installer</a>
+<br>
+<a href="https://vtex.io/vtexcli/install/win-x32" style="text-decoration:none;"
+          class="vtex-landing-button vtex-header-hero-y-margin rebel_pink_background">32-bit installer</a>
+<br>      
 
-1. Once downloaded, got to the folder where the VTEX Setup was downloaded and open it on your machine.
-2. To finish the installation process, follow the instructions described on it.
-
-* **Chocolatey**
-1. Download and install **Chocolatey** as described on this [document](https://chocolatey.org/install).
-2. Once Chocolatey is set up, run the following command:
-
-```sh
-choco install vtex
-```
-
+2. Open the downloaded file and follow the instructions to finish the installation process.
 
 <br>
 </details>
@@ -223,17 +217,5 @@ In case the problem persists, check the following directions.
   <br>
   </details>
   <br>
-  <details style="padding-left:30px">
-    <summary><span class="fa fa-windows">&nbsp;</span>Windows</summary>
-  <br>
-
-  *Chocolatey*
-
-  ```
-  New-Item -ItemType SymbolicLink -Path 'C:\Program Files\vtex\client\node_modules\vtex' -Target 'C:\Program Files\vtex\client'    
-  ```
-
-  <br>
-</details>
   
 If the error persists, don't hesitate to [open a support ticket.](https://help-tickets.vtex.com/smartlink/sso/login/zendesk)
