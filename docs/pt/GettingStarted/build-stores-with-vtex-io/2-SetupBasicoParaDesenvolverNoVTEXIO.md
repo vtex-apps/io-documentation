@@ -1,53 +1,62 @@
-# *Setup* básico para desenvolver no VTEX IO
+# _Setup_ básico para desenvolver no VTEX IO
 
-Todo desenvolvimento no VTEX IO começa com o [**Toolbelt**](*link*), nossa CLI (Command Line Interface) que permite fazer login, desenvolver novas [apps](*link*) e gerenciar as já instaladas.
+Todo desenvolvimento no VTEX IO começa com o [**Toolbelt**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-toolbelt), nossa CLI (_Command Line Interface_) que permite fazer _login_, desenvolver novas [apps](https://vtex.io/docs/getting-started/desenvolva-componentes-usando-vtex-io-e-react/3/) e gerenciar as já instaladas.
 
-## VTEX IO Toolbelt
+**O Toolbelt funciona como uma ponte de comunicação entre a sua conta VTEX e a plataforma de desenvolvimento VTEX IO.** Através dele, você será capaz de fazer _login_ em sua conta VTEX, gerenciar [_workspaces_](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) e desenvolver novos apps.
 
-Para instalar a CLI do VTEX IO, você precisa garantir que o seu computador tenha o [Node.js](https://nodejs.org/) e o [Yarn](https://yarnpkg.com/) instalados.
 
-Em seguida, digite `yarn global add vtex` no terminal do seu computador.
+## Instalando o VTEX IO Toolbelt
+
+Para instalar a CLI do VTEX IO, é necessário que o seu computador tenha o [Node.js](https://nodejs.org/) e o [Yarn](https://yarnpkg.com/) corretamente instalados.
+
+Em seguida, execute no terminal do computador:
 
 ```
 $ yarn global add vtex
 ```
 
->ℹ️ *Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.*
+>ℹ️ **Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.**
 
-## Login
+## _Login_
 
-Com a CLI do VTEX IO instalada, use o comando `vtex login para entrar na sua conta VTEX:
+Com a [CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference) do VTEX IO instalada, use o comando abaixo para acessar sua conta VTEX:
 
 ```
 $ vtex login {ContaVTEX}
 ```
 
-Isso abrirá uma janela do seu navegador que solicitará suas credenciais.
+Depois de executar o comando, abrirá uma janela do seu navegador solicitando suas credenciais VTEX.
 
-Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descobrir qual conta e *workspace* estão sendo usados pelo terminal.
+>ℹ️ O valor em chaves **({conta})** deve ser substituído pelo nome da conta VTEX na qual você está trabalhando.
 
-![]("https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png"
+Quando estiver *logado*, você pode usar o comando `vtex whoami` para confirmar a conta e *workspace* utilizados pelo terminal.
+
+![exemplo terminal logado](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
   
-## Criando seu próprio *workspace*
+## Criando um *workspace*
 
-Ao usar o VTEX IO, toda interação com uma conta acontece em um [***workspace***](*link*).
+Qualquer desenvolvimento utilizando o VTEX IO, acontece através de um [***workspace***](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace).
 
-Ao fazer *login* em uma loja, você está automaticamente no *workspace* master dela, ou seja, na versão disponível para o usuário final. Por isso, lembre-se que sempre que você quiser testar uma nova configuração, o seu próprio *workspace* de desenvolvimento deve ser criado usando o comando `vtex use`.
+Ao fazer *login* em uma conta VTEX, você está automaticamente no *workspace* Master, ou seja, na versão disponível para o usuário final. 
+
+Então, quando for testar uma nova configuração, [crie um *workspace* de desenvolvimento](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace) para começar sua aplicação.
+
+Utilizando o terminal, execute o comando
 
 ```
 $ vtex use {nomeexemplo}
 ```
 
-Isso muda o seu Toolbelt para um *workspace* chamado `nomeexemplo` e o cria se ele não existir.
+Isso muda a sua conta para um *workspace* chamado `nomeexemplo`. Substitua o valor de acordo com o nome desejado.
 
 ![vtex-use-nomeexemplo](https://user-images.githubusercontent.com/52087100/61886135-7ffc0280-aed5-11e9-983f-4a76615d0574.png)
 
->⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no `workspace` definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt `vtex use master`, por exemplo.*
+>⚠️ **O `vtex use` faz com que todas as suas operações passem a ocorrer no _workspace_ definido no comando. Isso significa que é possível alternar suas operações para master executando no Toolbelt `vtex use master`, por exemplo.**
 
-Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na sua loja acessando:
+Com o *workspace* de desenvolvimento criado, você pode navegar na sua loja executando:
 
 `https://{{nomeexemplo}}-{{accountname}}.myvtex.com`
 
-Onde `workspace` é o *workspace* que você acabou de criar (como `nomeexemplo`) e `conta` é o nome da conta em que você está trabalhando.
+Onde o valor `workspace` é o *workspace* que você acabou de criar (como `nomeexemplo`) e o valor `conta` é o nome da conta em que você está trabalhando.
 
-Pronto! Agora você já pode desenvolver sua loja no VTEX IO.
+Pronto! Agora você pode desenvolver utilizando React e VTEX IO.
