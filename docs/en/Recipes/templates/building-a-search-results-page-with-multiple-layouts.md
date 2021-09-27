@@ -9,14 +9,14 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Building a search results page with multiple layouts 
 
-> ⚠️ *To obtain successful results with this recipe, it is strongly recommended to understand previously how the [Flex Layout](https://vtex.io/docs/components/all/vtex.flex-layout@0.15.2/) and the [Search Result](https://vtex.io/docs/components/all/vtex.search-result/) apps work. We also advise you to go through the [Building a Horizontal Product Summary recipe](https://vtex.io/docs/recipes/templates/building-a-horizontal-product-summary/) to achieve similar results on your search results page.*
-
 Your results presentation on the search results page doesn't need to be always the same for your users: thanks to enhancements in the Search Result app, you can provide them a more **customized experience** to navigate between the fetched products. 
 
 ![multiple-layouts](https://user-images.githubusercontent.com/52087100/104608825-1e979880-5661-11eb-9088-d337680bbb5a.png)
 *Notice that the search results page above works two different layouts: `grid` and `list`.*
 
 The flexibility to offer multiple layouts, which can help the sales taxes by enhancing the shopping experience, is at hands! Check out the step-by-step section below.
+
+> ⚠️ *To obtain successful results with this recipe, it is strongly recommended to understand previously how the [Flex Layout](https://vtex.io/docs/components/all/vtex.flex-layout@0.15.2/) and the [Search Result](https://vtex.io/docs/components/all/vtex.search-result/) apps work. We also advise you to go through the [Building a Horizontal Product Summary recipe](https://vtex.io/docs/recipes/templates/building-a-horizontal-product-summary/) to achieve similar results on your search results page.*
 
 ## Step by step
 
@@ -50,9 +50,14 @@ The flexibility to offer multiple layouts, which can help the sales taxes by enh
 
 Notice that all of the `layouts`'s three properties are mandatory and must be provided for each layout.
 
-- `name`: specifies the search result layout. It can be `grid` or `list`. 
-- `component`: defines the parent block responsible for defining the layout's components. For the `grid` layout, we define the component `GridSummary` that will then be used to... . For the `list` layout, we define the `ListSummary` ...
-- `itemsPerRow`: controls how many items per row will be displayed by each layout. You can use meadia queries to define.., such as `min-width` and `max-width` or you can use..., such as `desktop`, `tablet`, `phone`. For example:
+| Property | Description |
+| -------------- | ----------------------------------------------- |
+|`name`|specifies the search result layout. It can be `grid` or `list`.|
+|`component`|Defines the parent block responsible for defining the layout's components. For the `grid` layout, we define the component `GridSummary` that will then present items vertically and horizontally from each other. For the `list` layout, we define the `ListSummary` to show a list of items below one another.|
+|`itemsPerRow`| controls how many items per row will be displayed by each layout. You can use media queries to define the layouts' widths properties for desktop, tablet, and phone, such as `min-width` and `max-width`, or you can use the layouts' name, such as `desktop`, `tablet` and `phone`.|
+
+
+Choosing to use the layouts' name, such as `desktop`, `tablet` and `phone`, in `itemsPerRow`, you should declare them as the example below:
 
 ```json
 {
@@ -65,10 +70,13 @@ Notice that all of the `layouts`'s three properties are mandatory and must be pr
 }
 ```
 
-Once we define the `list` and `grid` layouts, we have to have to define which blocks we... in the code to build the desired pages:
+Once you define the `list` and `grid` layouts, declare which blocks you should use in the code to build the desired pages:
 
-- `ListSummary`:  `product-summary.shelf#listLayout` block
-- `GridSummary`: `product-summary.shelf` block
+| Component | Block |
+| -------------- | ----------------------------------------------- |
+| `ListSummary`  |  `product-summary.shelf#listLayout` block       |
+|  `GridSummary` |  `product-summary.shelf` block                  |
+
 
 3. Define the default layout i.e. which layout will be first presented to your users using the `defaultGalleryLayout` prop, from the `search-result-layout.mobile` and `search-result-layout.desktop` blocks:
 
