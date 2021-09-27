@@ -8,9 +8,6 @@ Para instalar a CLI do VTEX IO, você precisa garantir que o seu computador tenh
 
 Em seguida, digite `yarn global add vtex` no terminal do seu computador.
 
-```
-$ yarn global add vtex
-```
 
 >ℹ️ *Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.*
 
@@ -44,9 +41,8 @@ Isso muda o seu Toolbelt para um *workspace* chamado `nomeexemplo` e o cria se e
 
 >⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no `workspace` definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt `vtex use master`, por exemplo.*
 
-Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na sua loja acessando:
+Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na sua loja.
 
-`https://{{nomeexemplo}}-{{accountname}}.myvtex.com`
 
 Onde `workspace` é o *workspace* que você acabou de criar (como `nomeexemplo`) e `conta` é o nome da conta em que você está trabalhando.
 
