@@ -21,7 +21,7 @@ The flexibility to offer multiple layouts, which can help the sales taxes by enh
 ## Step by step
 
 1. Implement the Search Result app in your Store Theme according to the instructions in the [documentation](https://vtex.io/docs/components/all/vtex.search-result/). 
-2. When declaring the `gallery` block responsible for structuring the page layout, use its `layouts` prop to define the desired layouts for the search results page. For example:
+2. Declare the `gallery` block responsible for structuring the page layout, use its `layouts` prop to define the desired layouts for the search results page. For example:
 
 ```json
 "gallery": {
@@ -31,10 +31,9 @@ The flexibility to offer multiple layouts, which can help the sales taxes by enh
         "name": "grid",
         "component": "GridSummary",
         "itemsPerRow": {
-          "(min-width:1300px)": 4,
-          "desktop": 3,
-          "tablet": 3,
-          "phone": 2
+          "(min-width:1008px)":4,
+          "(min-width:623px) and (max-width:1007px)":3,
+          "(max-width:622px)":2
         }
       },
       {
@@ -49,9 +48,27 @@ The flexibility to offer multiple layouts, which can help the sales taxes by enh
 }
 ```
 
-> ℹ️ *According to the code above, the search results page will count on two different layouts, namely `grid` and `list`. The `component` prop is defining the name of the `gallery`'s prop that, in turn, will declare the parent block responsible for defining the layout's components. Both of them (`product-summary.shelf#listLayout` and `product-summary.shelf` blocks) should be declared by you in the code to build the desired pages. Finally, the `itemsPerRow` prop controls how many items per row should be displayed by each layout.* 
+Notice that all of the `layouts`'s three properties are mandatory and must be provided for each layout.
 
-> ⚠️ *All of the `layouts`'s three properties - `name`, `component`, and `itemsPerRow` - are mandatory and must be provided for each layout.*
+- `name`: specifies the search result layout. It can be `grid` or `list`. 
+- `component`: defines the parent block responsible for defining the layout's components. For the `grid` layout, we define the component `GridSummary` that will then be used to... . For the `list` layout, we define the `ListSummary` ...
+- `itemsPerRow`: controls how many items per row will be displayed by each layout. You can use meadia queries to define.., such as `min-width` and `max-width` or you can use..., such as `desktop`, `tablet`, `phone`. For example:
+
+```json
+{
+  "component":"GridSummary",
+  "itemsPerRow":{
+    "desktop":4,
+    "tablet":3,
+    "phone":2
+   }
+}
+```
+
+Once we define the `list` and `grid` layouts, we have to have to define which blocks we... in the code to build the desired pages:
+
+- `ListSummary`:  `product-summary.shelf#listLayout` block
+- `GridSummary`: `product-summary.shelf` block
 
 3. Define the default layout i.e. which layout will be first presented to your users using the `defaultGalleryLayout` prop, from the `search-result-layout.mobile` and `search-result-layout.desktop` blocks:
 
