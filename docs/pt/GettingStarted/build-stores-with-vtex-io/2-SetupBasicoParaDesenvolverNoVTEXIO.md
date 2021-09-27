@@ -16,7 +16,7 @@ $ yarn global add vtex
 
 ## Login
 
-Com a CLI do VTEX IO instalada, use o comando `vtex login para entrar na sua conta VTEX:
+Com a CLI do VTEX IO instalada, use o comando `vtex login` para entrar na sua conta VTEX:
 
 ```
 $ vtex login {ContaVTEX}
@@ -46,7 +46,7 @@ Isso muda o seu Toolbelt para um *workspace* chamado `nomeexemplo` e o cria se e
 
 Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na sua loja acessando:
 
-`https://{{nomeexemplo}}-{{accountname}}.myvtex.com`
+[myvtex](https://{{nomeexemplo}}-{{accountname}}.myvtex.com)
 
 Onde `workspace` é o *workspace* que você acabou de criar (como `nomeexemplo`) e `conta` é o nome da conta em que você está trabalhando.
 
