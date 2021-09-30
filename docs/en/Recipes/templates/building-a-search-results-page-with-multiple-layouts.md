@@ -16,7 +16,7 @@ Your results presentation on the search results page doesn't need to be always t
 
 The flexibility to offer multiple layouts, which can help the sales taxes by enhancing the shopping experience, is at hands! Check out the step-by-step section below.
 
-> ⚠️ *To obtain successful results with this recipe, it is strongly recommended to understand previously how the [Flex Layout](https://vtex.io/docs/components/all/vtex.flex-layout@0.15.2/) and the [Search Result](https://vtex.io/docs/components/all/vtex.search-result/) apps work. We also advise you to go through the [Building a Horizontal Product Summary recipe](https://vtex.io/docs/recipes/templates/building-a-horizontal-product-summary/) to achieve similar results on your search results page.*
+> ⚠️ *To obtain successful results with this recipe, it is strongly recommended to understand previously how the [Flex Layout](https://developers.vtex.com/vtex-developer-docs/docs/vtex-flex-layout) and the [Search Result](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result) apps work. We also advise you to go through the [Building a Horizontal Product Summary recipe](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-building-a-horizontal-product-summary) to achieve similar results on your search results page.*
 
 ## Step by step
 
