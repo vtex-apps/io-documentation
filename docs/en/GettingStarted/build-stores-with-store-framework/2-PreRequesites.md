@@ -2,8 +2,8 @@
 
 Now that you have completed the VTEX IO basic setup, it is time to:
 
-- [1. Set the correct Edition app in your account.](#setting-your-accounts-edition-app)
-- [2. Implement the VTEX Intelligent Search.](#implementing-the-vtex-intelligent-search)
+- [1. Set your account's Edition app.](#step-1---setting-your-accounts-edition-app)
+- [2. Implement the VTEX Intelligent Search.](#step-2---implementing-the-vtex-intelligent-search)
 
 By meeting these two prerequisites, your store is apt to use the VTEX Store Framework, free from any technical issues that could emerge due to flaws during the implementation steps.
 
