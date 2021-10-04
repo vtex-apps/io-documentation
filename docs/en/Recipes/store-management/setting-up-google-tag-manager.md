@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 [Google Tag Manager](https://tagmanager.google.com/) is a **JavaScript and HTML tag management system** provided by Google for tracking user browsing.
 
-Thanks to the [**VTEX IO Google Tag Manager Pixel App**](https://vtex.io/docs/components/pixel/vtex.google-tag-manager), you can avoid any contact with the store's source code when adding, editing or removing these website tags and easily provide user browsing tracking for Google Analytics as well.  
+With the [**VTEX IO Google Tag Manager Pixel App**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-google-tag-manager), you can avoid any contact with the store's source code when adding, editing or removing these website tags and easily provide user browsing tracking for Google Analytics as well.  
 
 The VTEX IO Google Tag Manager native solution is compliant with Universal Analytics [Enhanced Ecommerce](https://developers.google.com/tag-manager/enhanced-ecommerce) events format and natively supports the following events emitted by our components:
 
