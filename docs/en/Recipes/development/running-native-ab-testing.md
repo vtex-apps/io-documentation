@@ -72,7 +72,7 @@ By agreeing to proceed with the test, you will need to answer the two following 
 
 ### Step 3 - Interpreting the test results
 
-Any time during the A/B test, you can run the following command to check the results live.
+Any time during the A/B test, you can run the following command to check the live results.
 
 ```
 vtex workspace abtest status
@@ -80,39 +80,39 @@ vtex workspace abtest status
  
 ![ab-testing-step5](https://user-images.githubusercontent.com/52087100/64129599-69c64980-cd93-11e9-85fd-575665fbf532.png)
 
->ℹ️ **The workspaces are not frozen and can continue to receive updates during the period in which they undergo A/B testing.** But keep in mind that the less changes are made to both workspaces, the more relevant your results will be, helping you come to the correct decision afterwards.
+>ℹ️ **The workspaces are not frozen and can continue to receive updates during the period in which they undergo A/B testing.** But keep in mind that the fewer changes are made to both workspaces, the more relevant your results will be, helping you come to the correct decision afterward.
 
-Before completing your A/B test, it's important to understand the comparative and the final results from both workspaces.
+Before completing your A/B test, it's important to understand both workspaces' comparative and final results.
 
 #### Comparative results
 
-- **Conversion** - Conversion rate percentage that each workspace displayed during the test;
-- **Expected Loss** - Expected conversion loss percentage for the store if the lower conversion rate workspace is chosen as winner (according to the **Conversion** results);
-- **N. of Sessions** - Total number of sessions for each workspace since the beginning of the test;
+- **Conversion** - Conversion rate percentage that each workspace displayed during the test.
+- **Expected Loss** - Expected conversion loss percentage for the store if the lower conversion rate workspace is chosen as the winner (according to the **Conversion** results).
+- **N. of Sessions** - Total number of sessions for each workspace since the beginning of the test.
 - **N. of Sessions (last 24hrs)** - Number of sessions for each workspace during the test's last 24hrs.
 
 #### Final results
 
-- **Start Date** - Date and time for the beginning of the test;
-- **Running Time** - Test duration;
-- **Probability B beats A** - Probability, in percentage points, that the production workspace is better for your store than the current master workspace. This calculation is based on the number of sessions and number of sessions with completed sales. Notice: if this metrics result is greater than `10%`, the production workspace is ble to become the winner;
-- **Winner** - Workspace you chose as winner. 
+- **Start Date** - Date and time for the beginning of the test.
+- **Running Time** - Test duration.
+- **Probability B beats A** - Probability, in percentage points, that the production workspace is better for your store than the current master workspace. This calculation is based on the number of sessions and the number of sessions with completed sales. Notice: if the result of this metrics is greater than `10%`, the production workspace is able to become the winner.
+- **Winner** - Workspace you chose as the winner. 
 
->⚠️ The main results of the A/B test are aimed for scenarios where store traffic was automatically directed by the platform. While you can and should use A/B tests even if you manually direct the traffic, bear in mind that the numbers behind each result reflect an automatic segmentation according to each workspace experience.
+>⚠️ The main results of the A/B test are aimed at scenarios where the platform automatically directed store traffic. While you can and should use A/B tests even if you manually direct the traffic, bear in mind that the numbers behind each result reflect an automatic segmentation according to each workspace experience.
 
-**The best way to validate your A/B test workspace winner is to set, according to your store operation size, a maximum conversion loss value.**
+**The best way to validate your A/B test workspace winner is to set a maximum conversion loss value according to your store operation size.**
 
-For example: when starting your test, you can set `0,0001%` as the conversion loss maximum value. The decision to end the test and declare a winner will therefore be taken when either of the workspaces reaches an `Expect Loss` result greater than `0,0001%`.
+For example, you can set `0,0001%` as the conversion loss maximum value when starting your test. Then, the decision to end the test and declare a winner will be taken when either of the workspaces reaches an `Expect Loss` result greater than `0,0001%`.
 
 ### Step 4 - Finishing the A/B test
 
-If your test has already reached the time frame you've manually set for it or if you have already detected a winner during Step 3, run the following command in `master` to finish the test.
+If your test has already reached the time frame you've manually set for it, or if you have already detected a winner during Step 3, run the following command in Master to finish the test.
 
 ```
 vtex workspace abtest finish
 ```
 
->⚠️ If you have manually set a predefined time frame to run your A/B, it's important that you pay attention to the test during this entire period. Although the platform continues to automatically redistribute traffic according to how each workspace is behaving after the set time frame, overseeing the test is fundamental to its success.
+>⚠️ If you have manually set a predefined time frame to run your A/B test, it's important that you pay attention to the test during this entire period. Although the platform continues to automatically redistribute traffic according to how each workspace is behaving after the set time frame, overseeing the test is fundamental to its success.
 
 When running the command, a list of all workspaces being tested by the `vtex.ab-tester` app in Master will show up. Select the one which should end. For example:
 
