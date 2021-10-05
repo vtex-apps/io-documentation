@@ -36,7 +36,10 @@ vtex use {workspaceName} --production
 ```
 
 3. Perform the changes you want to test, such as installing a new app, in the production workspace you are working in.
-4. Change from the Production workspace you are working in to the Master one:
+
+>⚠️ If your store uses the [Checkout UI Custom](https://developers.vtex.com/vtex-developer-docs/docs/vtex-checkout-ui-custom-v0) app, you must first publish its configurations on your new production workspace. Otherwise, you might experience undesired consequences, such as losing the Checkout custom Javascript code and styles.
+
+5. Change from the Production workspace you are working in to the Master one:
 
 ```
 vtex use master
@@ -50,7 +53,11 @@ vtex install vtex.ab-tester
 
 >ℹ️ You can run `vtex ls` to make sure that you have successfully installed `vtex.ab-tester` in the `master` workspace.
 
-6. While still working in the master workspace, run `vtex workspace abtest start` to choose a production workspace from the list made available for you. The chosen workspace will be compared to the Master.
+6. While still working in the master workspace, run the following command to choose a production workspace from the list made available for you. The selected workspace will be compared to the Master.
+
+```
+vtex workspace abtest start
+```
   
 ![ab-testing-step4](https://user-images.githubusercontent.com/52087100/64129583-50bd9880-cd93-11e9-8b80-f1fe4cad943b.png)
 
