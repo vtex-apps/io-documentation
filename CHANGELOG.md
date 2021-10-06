@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Add:
+- Trigger `All Pages` to fire the tag Google Ads Conversion Tracking
+
 ## [0.85.13] - 2021-10-05
 
 ## [0.85.12] - 2021-10-04
