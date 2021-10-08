@@ -16,7 +16,7 @@ $ yarn global add vtex
 
 ## Login
 
-Com a CLI do VTEX IO instalada, use o comando `vtex login para entrar na sua conta VTEX:
+Com a CLI do VTEX IO instalada, use o comando vtex login para entrar na sua conta VTEX:
 
 ```
 $ vtex login {ContaVTEX}
@@ -26,7 +26,7 @@ Isso abrirá uma janela do seu navegador que solicitará suas credenciais.
 
 Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descobrir qual conta e *workspace* estão sendo usados pelo terminal.
 
-![]("https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png"
+[***Github***](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
   
 ## Criando seu próprio *workspace*
 
@@ -42,12 +42,12 @@ Isso muda o seu Toolbelt para um *workspace* chamado `nomeexemplo` e o cria se e
 
 ![vtex-use-nomeexemplo](https://user-images.githubusercontent.com/52087100/61886135-7ffc0280-aed5-11e9-983f-4a76615d0574.png)
 
->⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no `workspace` definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt `vtex use master`, por exemplo.*
+>⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no *workspace* definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt `vtex use master`, por exemplo.*
 
 Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na sua loja acessando:
 
-`https://{{nomeexemplo}}-{{accountname}}.myvtex.com`
+[**My Vtex**](https://{{nomeexemplo}}-{{accountname}}.myvtex.com) 
 
-Onde `workspace` é o *workspace* que você acabou de criar (como `nomeexemplo`) e `conta` é o nome da conta em que você está trabalhando.
+Onde `workspace` é o *workspace* que você acabou de criar como `nomeexemplo` e **conta** é o nome da conta em que você está trabalhando.
 
-Pronto! Agora você já pode desenvolver sua loja no VTEX IO.
+Pronto! Agora você já pode desenvolver sua loja no *VTEX IO*.
