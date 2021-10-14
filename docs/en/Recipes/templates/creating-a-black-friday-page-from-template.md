@@ -36,7 +36,7 @@ Download the template files available here: [black-friday-template-files 2021.zi
 
 3. Integrate the code you downloaded previously by copying and pasting the folders on the project's corresponding structure. 
 
-  >⚠️ If you are running "styles": "1.x", you must copy and paste the CSS code within its corresponding CSS files since this version doesn't allow subfolders for CSS.
+>⚠️ If you are running "styles": "1.x", you must copy and paste the CSS code within its corresponding CSS files since this version doesn't allow subfolders for CSS.
 
 4. Check the code comments within the `/store/blocks/custom-template-blackfriday-lp/custom-template-blackfriday-lp.jsonc` file and add your pre-existing shelves accordingly.
 
