@@ -28,13 +28,14 @@ Download the template files available here: [black-friday-template-files 2021.zi
 
   ```diff
   "builders": {
-  +	"assets": "0.x",
-    "styles": "2.x",
-    "store": "0.x",
-    "sitemap": "0.x",	
+  +  "assets": "0.x",
+     "styles": "2.x",
+     "store": "0.x",
+     "sitemap": "0.x"
+  }
   ```
 
-3. Integrate the code you downloaded previously by copying and pasting the folders on the project's corresponding structure. 
+3. Copy and paste the code you previously downloaded into the corresponding folders of your store theme project.
 
 >⚠️ If you are running "styles": "1.x", you must copy and paste the CSS code within its corresponding CSS files since this version doesn't allow subfolders for CSS.
 
