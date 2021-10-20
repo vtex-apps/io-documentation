@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 [Google Tag Manager](https://tagmanager.google.com/) is a **JavaScript and HTML tag management system** provided by Google for tracking user browsing.
 
-Thanks to the [**VTEX IO Google Tag Manager Pixel App**](https://vtex.io/docs/components/pixel/vtex.google-tag-manager), you can avoid any contact with the store's source code when adding, editing or removing these website tags and easily provide user browsing tracking for Google Analytics as well.  
+With the [**VTEX IO Google Tag Manager Pixel App**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-google-tag-manager), you can avoid any contact with the store's source code when adding, editing or removing these website tags and easily provide user browsing tracking for Google Analytics as well.  
 
 The VTEX IO Google Tag Manager native solution is compliant with Universal Analytics [Enhanced Ecommerce](https://developers.google.com/tag-manager/enhanced-ecommerce) events format and natively supports the following events emitted by our components:
 
@@ -83,7 +83,7 @@ For this, click on **Fields to Set**, and then add the field `userId` with its d
 
 |  Field name     |                 Value                    |   
 |-----------------|------------------------------------------| 
-|  `campaingName`   | {Data Layer Variable - campaignName}   |
+|  `campaignName`   | {Data Layer Variable - campaignName}   |
 |  `campaignMedium` | {Data Layer Variable - campaignMedium} |
 |  `campaignSource` | {Data Layer Variable - campaignSource} |
 
@@ -111,6 +111,7 @@ Repeat the instructions above, now changing the event name for each of the follo
 - `email`
 - `orderPlaced`
 - `payment`
+- `productClick`
 - `productDetail`
 - `productImpression`
 - `promotionClick`
@@ -202,4 +203,5 @@ To create a tag, click on **Tags** in the left menu and then on **New**:
   
 >⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
-5. Save the new tag as **Google Ads Conversion Tracking**.
+5. In the **Triggering** box, choose the `All Pages` trigger;
+6. Save the new tag as **Google Ads Conversion Tracking**.

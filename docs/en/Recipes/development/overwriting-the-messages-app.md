@@ -10,7 +10,11 @@ In the next section, we present you a step by step on how to overwrite a transla
 
 ## Step by step
 
-1. [Install](https://vtex.io/docs/recipes/store/installing-an-app) the `vtex.admin-graphql-ide@3.x` app using your terminal.
+1. [Install](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-installing-an-app) the **GraphQL IDE app** by running the following in your terminal.
+
+```
+vtex install vtex.admin-graphql-ide@3.x
+```
 
 2. Access the **GraphQL admin IDE** section of the desired account. You may find it in the admin's side-bar menu:
 
@@ -109,6 +113,45 @@ Use the following example as a guide if you aim to translate text messages expor
 To better understand the full process of overwriting an app message translation, check the following gif:
 
 ![AppMessageTranslation](https://user-images.githubusercontent.com/60782333/85605881-fbf05480-b628-11ea-8ea9-1dbf364f07fd.gif)
+
+### VTEX Intelligent Search context
+Use the following example as a guide if you aim to translate text messages exported from the [VTEX Intelligent Search](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search).
+
+```json
+{
+  "saveArgs": {
+    "to": "en-GB",
+    "messages": [
+      {
+        "srcLang": "it-IT",
+        "srcMessage": "Category 1",
+        "context": "intelligentSearchFacets",
+        "targetMessage": "Category"
+      }
+    ]
+  }
+}
+```
+
+**These variables are flexible and must fit your store's given scenario**. The variables for the store catalog translations are as follows:
+
+- `to`: target translation locale.
+- `messages`: a list of the messages you want to translate, containing the following parameters:
+    - `srcLang`: store's locale default. In the VTEX Intelligent Search context, this variable must be the store's binding default. 
+    - `srcMessage`: source message string. Check the table below to the possible values of this variable.
+      |Value|Definition|
+      |--|--|
+      |`Category 1`|Department|
+      |`Category 2`|Category|
+      |`Category 3`|Subcategory|
+      |`Price`|Price|
+      |`Promotion`|Promotion|
+      |`New Release`|New Release|
+      |`Location`|Location|
+      |`Brand`|Brand|
+
+    - `context`: `intelligentSearchFacets`, which defines the context of the VTEX Intelligent Search.
+    - `targetMessage`: translated message string.
 
 ## Checking your changes
 

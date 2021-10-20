@@ -2,7 +2,7 @@
 
 A route maps a URL pattern and an HTTP request method to an action. It's, therefore, a way of setting the application expected behavior for client requests to specific endpoints.
 
-In VTEX IO, however, you don't need to worry about routing and HTTP request methods, since this is handled by the [Rewriter app]() or by the VTEX IO native builder called [Store](https://github.com/vtex-apps/store), depending on the route type.
+In VTEX IO, however, you don't need to worry about routing and HTTP request methods, since this is handled by the [Rewriter app](https://developers.vtex.com/vtex-developer-docs/docs/rewriter) or by the VTEX IO native builder called [Store](https://github.com/vtex-apps/store), depending on the route type.
 
 Therefore, all you need to know is how to create and manage route paths and page templates.
 

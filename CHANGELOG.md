@@ -7,16 +7,121 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.85.18] - 2021-10-14
+
+## [0.85.17] - 2021-10-14
+
+## [0.85.16] - 2021-10-14
+
+## [0.85.15] - 2021-10-14
+
+## [0.85.14] - 2021-10-06
+
+### Add:
+- Trigger `All Pages` to fire the tag Google Ads Conversion Tracking
+
+## [0.85.13] - 2021-10-05
+
+## [0.85.12] - 2021-10-04
+
+## [0.85.11] - 2021-10-04
+
+## [0.85.10] - 2021-10-04
+
+## [0.85.9] - 2021-10-04
+
+## [0.85.8] - 2021-10-04
+
+## [0.85.7] - 2021-10-04
+
+## [0.85.6] - 2021-10-04
+
+## [0.85.5] - 2021-09-30
+
+## [0.85.4] - 2021-09-30
+
+## [0.85.3] - 2021-09-30
+
+## [0.85.2] - 2021-09-10
+
+## [0.85.1] - 2021-09-01
+
+## [0.85.0] - 2021-08-20
+
+## [0.84.0] - 2021-08-20
+
+## [0.83.0] - 2021-08-19
+
+## [0.82.0] - 2021-08-18
+
+## [0.81.1] - 2021-08-16
+
+## [0.81.0] - 2021-08-12
+
+## [0.80.1] - 2021-08-11
+
+## [0.80.0] - 2021-08-11
+
+## [0.79.0] - 2021-08-05
+
+## [0.78.0] - 2021-08-05
+
+## [0.77.0] - 2021-07-30
+
+## [0.76.0] - 2021-07-30
+
+## [0.75.0] - 2021-07-30
+
+## [0.74.0] - 2021-07-30
+
+## [0.73.0] - 2021-07-29
+
+## [0.72.0] - 2021-07-22
+### Added
+- Add the VTEX App Store link on [Submitting your app in the VTEX app store](https://github.com/vtex-apps/io-documentation/commit/50280babf4eb5ffa24a6acec3ea5c27b53e551c0).
+
+## [0.71.3] - 2021-07-22
+### Added
+- Links on [Homologation requirements for VTEX App Store](https://github.com/vtex-apps/io-documentation/commit/7728eec216ac85da9a9b2eb993887ba8b094e0c6)
+- Links on [Business guidelines VTEX App Store](https://github.com/vtex-apps/io-documentation/commit/0acbd54099cc90b0bc07175f25e5c8c0d98ba26e)
+## [0.71.2] - 2021-07-22
+
+## [0.71.1] - 2021-07-22
+### Fixed
+- fix: campaignName typo on Setting up GTM: https://github.com/vtex-apps/io-documentation/commit/7d4e0265a2f7b295fef8a4d4778ade90eb361dcc
+## [0.71.0] - 2021-07-22
+### Added
+- [Service level doc](https://github.com/vtex-apps/io-documentation/pull/943/commits/26d631b451a36e89eaa14b3ebfae776e23e5374b), [Design guidelines doc](https://github.com/vtex-apps/io-documentation/pull/943/commits/1fe55e7815a1e3e010ee6c2b82ad8dad0b633482), and [Engineering guidelines doc](https://github.com/vtex-apps/io-documentation/pull/943/commits/0f369ff4621a9f7c5e4bfa020e13a98de143a012).
+### Fixed
+- [Documentation title](https://github.com/vtex-apps/io-documentation/commit/e26b1237326238e87fc1b500ac74275a97d3cfca).
+
+## [0.70.0] - 2021-07-21
+### Added
+- [Business guidelines App monetization](https://github.com/vtex-apps/io-documentation/commit/b5c0c189bc44c5f8689686abdb49814c6c46a9d4)
+- [Business guidelines VTEX App Store](https://github.com/vtex-apps/io-documentation/commit/91057f7ce242a469f6493f3b0fc5cb7bb1baae3e)
+
+## [0.69.0] - 2021-07-21
+### Added
+- [Homologation Requirements for VTEX App Store](https://github.com/vtex-apps/io-documentation/commit/ac8b2d7caa3942aa5cb059556c3810741702a060)
+## [0.68.0] - 2021-07-20
+### Fixed
+- VTEX App Store [Link](https://github.com/vtex-apps/io-documentation/commit/1f74122f8e4ccea40b99d06e2c95dae92f09f16c).
+## [0.67.0] - 2021-07-20
+
 ## [0.66.0] - 2021-07-08
 
 ## [0.65.0] - 2021-06-17
-
+### Added
+- Documentatio: [Using several service workers in your store](https://github.com/vtex-apps/io-documentation/commit/84c7aaa5bd05e79014d4a0c00a199d2e06214974).
 ## [0.64.21] - 2021-05-26
-
+### Fixed
+- [Edition App version](https://github.com/vtex-apps/io-documentation/commit/1623698afce864d9fef8614456cfa58723ede6a3).
 ## [0.64.20] - 2021-05-24
-
+### Removed 
+- b2b flag: https://github.com/vtex-apps/io-documentation/commit/fca73f329387097f2436f2cbd0ad23509f8f6128
 ## [0.64.19] - 2021-05-18
-
+### Fixed
+- Sponsor account and VTEX IO'S CLI [links](https://github.com/vtex-apps/io-documentation/commit/43d500a88754f802dc72984c3268ca5426c393c3).
 ## [0.64.18] - 2021-05-18
 
 ## [0.64.17] - 2021-05-18
