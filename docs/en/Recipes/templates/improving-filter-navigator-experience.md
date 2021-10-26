@@ -20,7 +20,7 @@ Here is a quick summary of the changes that will be made:
 - Add a show more/less button to the filter options list
 - Add a "clear all" button to each filter options list
 
-All props mentioned here are documented on [documentation page](https://vtex.io/docs/components/all/vtex.search-result). You will be able to check both the description and the possible values ​​of each prop.
+All props mentioned here are documented on [documentation page](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result). You will be able to check both the description and the possible values ​​of each prop.
 
 ## Step by step
 

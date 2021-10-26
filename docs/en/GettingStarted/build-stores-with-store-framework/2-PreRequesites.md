@@ -9,9 +9,9 @@ By meeting these two prerequisites, your store is apt to use the VTEX Store Fram
 
 ## Step 1 - Setting your account's Edition app 
 
-An [Edition app](https://vtex.io/docs/concepts/edition-app/) is a mandatory app that exports a bundle of settings and basic configurations to the VTEX account in which it is installed.
+An [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app/) is a mandatory app that exports a bundle of settings and basic configurations to the VTEX account in which it is installed.
 
-By default, every VTEX store comes with the Edition app for building storefronts with [VTEX Legacy CMS](https://help.vtex.com/tutorial/what-is-cms--EmO8u2WBj2W4MUQCS8262) installed. To use the [VTEX Store Framework](https://vtex.io/docs/introduction/what-is-vtex-store-framework/) instead, get in touch with our [Customer Care team](https://support.vtex.com/hc/pt-br/signin?return_to=https%3A%2F%2Fsupport.vtex.com%2Fhc%2Fpt-br%2Frequests) and request the installation of the `vtex.edition-store@3.x` app in your VTEX account. 
+By default, every VTEX store comes with the Edition app for building storefronts with [VTEX Legacy CMS](https://help.vtex.com/tutorial/what-is-cms--EmO8u2WBj2W4MUQCS8262) installed. To use the [VTEX Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework) instead, get in touch with our [Customer Care team](https://support.vtex.com/hc/pt-br/signin?return_to=https%3A%2F%2Fsupport.vtex.com%2Fhc%2Fpt-br%2Frequests) and request the installation of the `vtex.edition-store@3.x` app in your VTEX account. 
 
 >⚠️ Whether you are a new VTEX account or a former account using [VTEX Legacy CMS](https://help.vtex.com/tutorial/what-is-cms--EmO8u2WBj2W4MUQCS8262), installing the `vtex.edition-store@3.x` Edition app is necessary to implement the Store Framework solution successfully.
 
@@ -35,7 +35,7 @@ The solution is an alternative to the platform's old native search engine and re
 vtex login {account}
 ```
 
->⚠️ *️Replace the value between curly braces according to your scenario.*
+>⚠️ Replace the value between curly braces according to your scenario.
 
 2. Once logged in, run the following command to list the apps already installed on your account:
 

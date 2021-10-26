@@ -12,7 +12,7 @@ The step-by-step below will guide you through the necessary configuration to ena
 
 1. Access the the app’s `manifest.json` file.
 2. Change the  `vendor` field value  (`vtex`) to the name of the VTEX account in which you are working so that you'll be able to correctly publish the app later on.
-3. Change the `name` and `title` field values with the name you wish to give your app. You can check the app-naming best practices [here](https://vtex.io/docs/recipes/development/filling-the-application-form-for-development/#guidelines).
+3. Change the `name` and `title` field values with the name you wish to give your app. You can check the app-naming best practices [here](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-filling-the-application-form-for-development/#guidelines).
 4. Create a new field called `settingsSchema` and declare in it a JSON Schema to receive the needed user identifications. For example:
 
 ```json
@@ -69,5 +69,5 @@ If needed, you can also add more than one app user identification in the `proper
 
 In the example above, we added a new app user identification called `popupLayout`. 
 
-> ℹ️ *Do not forget to learn more about [JSON Schema](http://json-schema.org/understanding-json-schema/) before building your app's `settingSchema` field.* 
+>ℹ️ Do not forget to learn more about [JSON Schema](http://json-schema.org/understanding-json-schema/) before building your app's `settingSchema` field.
 

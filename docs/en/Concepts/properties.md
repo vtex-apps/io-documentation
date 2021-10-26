@@ -13,7 +13,7 @@ In the example above, `name` and `height` are the object's keys whose values are
 
 The `key + value` set constitutes what we call the property (or *prop*) of the JSON, being responsible for qualifying it by setting its essential characteristics.
 
-> ℹ️ *The key and value can also be called, respectively, property name and property value.*
+>ℹ️ The key and value can also be called, respectively, property name and property value.
 
 In the blocks context, the properties (`props`) end up acting on the **definition of the performance and visual identity of the component rendered in the interface** - the more props a block has, the more flexible its configuration is for the end user.
 
@@ -28,4 +28,4 @@ The list of properties a JSON accepts are separated by comma (`,`), and the valu
 There are two other types also used by the Store Framework blocks properties:
 
 - `enum` - A prop of the `enum` type has its value between quotation marks and predefined by the React component to which the correspondent block.
-- `block` - A prop of the type `block` has its value quotes, being it the name of a block and its app's version. This property will be responsible for rendering the block as its value. E.g.: `icon-cart` (from the [Store Icons](https://vtex.io/docs/components/all/vtex.store-icons) app).
+- `block` - A prop of the type `block` has its value quotes, being it the name of a block and its app's version. This property will be responsible for rendering the block as its value. E.g.: `icon-cart` (from the [Store Icons](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-icons) app).

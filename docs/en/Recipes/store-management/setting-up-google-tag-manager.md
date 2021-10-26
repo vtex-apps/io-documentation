@@ -24,7 +24,7 @@ The VTEX IO Google Tag Manager native solution is compliant with Universal Analy
 - Checkout;
 - Purchase.
 
->ℹ️ In order to set the tracking of these events in Google Analytics, learn how to <a href="https://vtex.io/docs/recipes/store-management/setting-up-google-analytics-search-tracking/">set up Google Analytics search tracking</a> in your VTEX IO store.
+>ℹ️ In order to set the tracking of these events in Google Analytics, learn how to <a href="https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-up-google-analytics-search-tracking/">set up Google Analytics search tracking</a> in your VTEX IO store.
 
 In order to set up Google Tag Manager in your store, you first must set up all necessary **variables**, **triggers** and **tags**. 
 
@@ -32,7 +32,7 @@ These GTM components will work together to measure your store's data, allowing y
 
 >ℹ️ If you are not familiar with the GTM components, we strongly recommend you to access the <a href="https://support.google.com/tagmanager/answer/6103657?hl=en">Google Tag Manager documentation</a> before starting your setup.
 
-Follow the steps below to create all necessary GTM components for your store. Begin by installing the [Google Tag Manager Pixel App](https://vtex.io/docs/components/pixel/vtex.google-tag-manager) and opening your Google Tag Manager account dashboard at [tagmanager.google.com](https://tagmanager.google.com/).
+Follow the steps below to create all necessary GTM components for your store. Begin by installing the [Google Tag Manager Pixel App](https://developers.vtex.com/vtex-developer-docs/docs/vtex-google-tag-manager) and opening your Google Tag Manager account dashboard at [tagmanager.google.com](https://tagmanager.google.com/).
 
 ## Step by step
 

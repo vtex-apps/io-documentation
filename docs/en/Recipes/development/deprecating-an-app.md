@@ -32,13 +32,13 @@ For this scenario, check the following step by step.
 
 ## Step by Step
 
-Using the [Toolbelt](https://vtex.io/docs/concepts/toolbelt/) and the terminal, log in to the account correspondent to the `vendor` of the app going to be deprecated and run the following command:
+Using the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference) and the terminal, log in to the account correspondent to the `vendor` of the app going to be deprecated and run the following command:
 
 ```
 vtex deprecate {appvendor}.{appname}@{appversion}
 ```
 
-> ⚠️ *Remember to replace the value in the curly brackets according to your scenario.*
+>⚠️ Remember to replace the value in the curly brackets according to your scenario.
 
 Once the deprecation is completed, it might take some time, but *eventually*, the deprecated app will be uninstalled and downgraded to its latest stable version in every VTEX account.
 

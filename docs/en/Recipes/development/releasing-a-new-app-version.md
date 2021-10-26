@@ -18,11 +18,11 @@ By the end of this step by step, you will:
 - create a release commit and a release tag.
 - send the performed changes to the app's repository.
 
-Notice that releasing a new app version will not create this new version in our infrastructure. That is, the app will not be publicly available yet for installing in other accounts and workspaces, neither will the new version be automatically upgraded on accounts that have this app's major installed. To do so, you need to release the app version and then [**publish**](https://vtex.io/docs/recipes/development/publishing-an-app) it.
+Notice that releasing a new app version will not create this new version in our infrastructure. That is, the app will not be publicly available yet for installing in other accounts and workspaces, neither will the new version be automatically upgraded on accounts that have this app's major installed. To do so, you need to release the app version and then [**publish**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-publishing-an-app) it.
 
 ## Step by step
 
-1. Using your terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference), log into the account responsible for the release of the new app version. Make sure the app’s `vendor` is equal to the logged account.
+1. Using your terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installment-and-command-reference#command-reference), log into the account responsible for the release of the new app version. Make sure the app’s `vendor` is equal to the logged account.
 2. Access the app's local directory.
 3. Run one of the following commands, according to your app's needs:
 

@@ -6,7 +6,7 @@ According to the framework logic, a component can be a crossroad for several dif
 
 What defines how a parent block should declare its children in your Store Theme app is the `composition` property: whenever a new block is about to be developed for the framework, it gets a composition definition in the `interfaces.json` file that can either be `blocks`, `children`, or `slots`.
 
-> ℹ️ ***We strongly recommend you to use `slots` composition whenever possible due to its greater flexibility!***
+> ℹ️ **We strongly recommend you to use `slots` composition whenever possible due to its greater flexibility!**
 
 ## Blocks
 
@@ -23,7 +23,7 @@ Once you define that a block composition is `blocks`, you are also defining in p
 
 In addition to that, the children will have an specific, fixed and preordained (according to the React component nature) position on the UI, regardless of its code positioning in the theme.
 
-> ⚠️ *Notice that the `composition` property does not define the position on the UI for the block in which it is defined, but rather to its children!*
+>⚠️ Notice that the `composition` property does not define the position on the UI for the block in which it is defined, but rather to its children!
 
 ## Children
 
@@ -51,7 +51,7 @@ Notice that in the example above, `product-summary.shelf` requires other blocks 
 
 In this scenario, keep in mind that the blocks ordering matters. The `product-summary-name` will be rendered first, followed by the `product-summary-description` and so on.
 
-> ⚠️ *Notice that the `composition` property does not define the position on the UI for the block in which it is defined, but rather to its children.*
+>⚠️ Notice that the `composition` property does not define the position on the UI for the block in which it is defined, but rather to its children.
 
 ## Slots
 
@@ -73,7 +73,7 @@ The `slots` composition, in turn, allows you to declare child blocks using regul
 ```
 *The `icon-caret#point-up` has `slots` composition, thereby it is declared as a prop in the `hello-world` block. Notice that the prop name can be any of your choosing and is usually defined by the block in which it is declared.*
 
-Check out the complete documentation for slots [here](https://vtex.io/docs/concepts/slots/)!
+Check out the complete documentation for slots [here](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-slots/)!
  
  
  

@@ -28,9 +28,9 @@ In case you aim to develop a Custom Storefront App, do not worry about prerequis
 
 If you've met all the necessary conditions to be part of the small group of VTEX IO developers regarding Admin, back-end, pixel and mobile apps, fill in and submit the  [Application form](https://forms.gle/f7bYdTA7tfdfB5tt7) with your project's details to let us know about your interest in order to understand your scenario and provide all the necessary permissions. 
 
-Don't forget to give a good read to the documentation on [filling the Application form for development](https://vtex.io/docs/recipes/development/filling-the-application-form-for-development/).
+Don't forget to give a good read to the documentation on [filling the Application form for development](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-filling-the-application-form-for-development/).
 
-> ℹ️ *Only submit the Application form when developing Admin, back-end, pixel, or mobile apps. Storefront app development no longer requires VTEX authorization i.e., the form submission.*
+>ℹ️ Only submit the Application form when developing Admin, back-end, pixel, or mobile apps. Storefront app development no longer requires VTEX authorization i.e., the form submission.
 
 ### How much does it cost?
 
@@ -78,6 +78,6 @@ In addition, you can benefit from our documentation and always be up-to-date wit
 
 ### I want to use Store Framework. What do I need to do?
 
-Welcome aboard, then! Simply access our getting started material on how to [build a store using Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1).  
+Welcome aboard, then! Simply access our getting started material on how to [build a store using Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3).  
 
-> ℹ️ ***You haven't found the answer you were looking for?** No worries! These are just the frequently asked question on VTEX IO and VTEX IO Store Framework, not all the questions on everything... so, we are here for you: [get in touch with VTEX's support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) and send us any questions you may have on the platform.*
+>ℹ️ **You haven't found the answer you were looking for?** No worries! These are just the frequently asked question on VTEX IO and VTEX IO Store Framework, not all the questions on everything... so, we are here for you: [get in touch with VTEX's support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) and send us any questions you may have on the platform.

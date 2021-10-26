@@ -29,5 +29,3 @@ In addition, the first response time must be a maximum of eight business hours i
 Provide official documentation to support future users in implementing and understanding the application. 
 
 This documentation should include all the technical and commercial requirements for the application's operation, installation and configuration, the frequently asked questions (FAQ) among users who have installed it, etc.
-
-> ℹ️ Leverage the [VTEX app documentation template](https://github.com/vtex-apps/react-app-template) and the instructions in the article [How documentation works in VTEX IO](https://vtex.io/docs/app/vtex.io-documentation@0.70.0/) to write high-quality documentation for your application.

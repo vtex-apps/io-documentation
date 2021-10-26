@@ -1,8 +1,8 @@
 ---
 title: VTEX IO CLI Plugins
-description: "Any development in VTEX IO begins and ends with the Toolbelt, our CLI (Command Line Interface). Learn all the necessary plugins to develop in the platform."
+description: "Any development in VTEX IO begins and ends with the VTEX IO CLI, our CLI (Command Line Interface). Learn all the necessary plugins to develop in the platform."
 date: "2020-07-28"
-tags: ["toolbelt", "cli", "command-line-interface", "plugins", "reference"]
+tags: ["VTEX IO CLI", "cli", "command-line-interface", "plugins", "reference"]
 version: "3.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/vtex-io-cli-plugins.md"
 ---

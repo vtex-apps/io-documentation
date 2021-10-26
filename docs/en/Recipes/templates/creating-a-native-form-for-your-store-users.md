@@ -234,6 +234,6 @@ Once the API was executed successfully, the JSON Schema is ready and you can alr
 
 Lastly, it's time to configure the Store Form app and the blocks it exports in order to make your store render the native Store Framework form component.
 
-Access the [Store Form app documentation](https://vtex.io/docs/components/content-blocks/vtex.store-form@0.3.4/) and follow the step-by-step to complete its configuration.
+Access the [Store Form app documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-form) and follow the step-by-step to complete its configuration.
 
 Once the form is configured in your store's theme, users will be able to share their information using the component. And the best part is that your store will be able to receive this information and automatically save it in Master Data.

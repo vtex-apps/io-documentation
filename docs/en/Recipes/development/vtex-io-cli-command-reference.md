@@ -1,8 +1,8 @@
 ---
 title: VTEX IO CLI command reference
-description: "Any development in VTEX IO begins and ends with the Toolbelt, our CLI (Command Line Interface). Learn all the necessary commands to develop in the platform."
+description: "Any development in VTEX IO begins and ends with the VTEX IO CLI, our CLI (Command Line Interface). Learn all the necessary commands to develop in the platform."
 date: "2020-04-04"
-tags: ["toolbelt", "cli", "command-line-interface", "commands", "reference"]
+tags: ["VTEX IO CLI", "cli", "command-line-interface", "commands", "reference"]
 version: "3.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/vtex-io-cli-command-reference.md"
 ---

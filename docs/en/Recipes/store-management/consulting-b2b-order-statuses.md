@@ -19,11 +19,11 @@ For more information on how to set up the *B2B Orders* app and its related exter
 
 ## Step by step
 
-1. Using the terminal and the [Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/), [install](https://vtex.io/docs/recipes/store/installing-an-app/) the *B2B Orders* app in the desired workspace by running `vtex install vtex.omnichannel-order-status`.
+1. Using the terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference/), [install](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-installing-an-app/) the *B2B Orders* app in the desired workspace by running `vtex install vtex.omnichannel-order-status`.
 
 2. In your browser, access your account's admin as in `https://{workspace}--{account}.myvtex.com/admin`.
 
->⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
+>⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
 3. Under `Account Settings`, go to `Apps > My apps`. Look for the *B2B Orders* app and install it.
 4. Click on `Settings` to set up the necessary information for communicating with the desired service. That is:
@@ -34,7 +34,7 @@ For more information on how to set up the *B2B Orders* app and its related exter
 
 ![b2b-orders](https://user-images.githubusercontent.com/60782333/99416894-17aa0f00-28d8-11eb-8414-28ded9fc2d1e.png)
 
->⚠️ *So that the *B2B Orders* app can properly work, your ERP API must have different endpoints for each of the following scenarios: search orders, search order details, and search order documents. To learn more about it, check the [ERP API requirements](#erp-api-requirements) section.*
+>⚠️ So that the *B2B Orders* app can properly work, your ERP API must have different endpoints for each of the following scenarios: search orders, search order details, and search order documents. To learn more about it, check the [ERP API requirements](#erp-api-requirements) section.
 
 5. Save your changes.
 
@@ -52,7 +52,7 @@ This pattern implies that your company's ERP API has different endpoints for eac
 - [Search order details](#search-order-details).
 - [[OPTIONAL] Search order documents](#search-order-documents).
 
->⚠️ *For specific needs, not satisfied by the scenarios presented, you might need to customize the B2B Orders app.*
+>⚠️ For specific needs, not satisfied by the scenarios presented, you might need to customize the B2B Orders app.
 
 In the following, we present the possible requests and response format for each one of the ERP API's related endpoints.
 

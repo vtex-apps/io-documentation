@@ -24,7 +24,7 @@ If you developed a new app version and are comfortable with the changes you perf
 
 ## Step by step
 
-Before you begin, open the terminal and use the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference#command-reference) to log in to the account responsible for promoting the new app version, i.e., **the account specified as the app's vendor in the [Manifest](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest) file.** During all the following steps, make sure you're logged into this account.
+Before you begin, open the terminal and use the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installment-and-command-reference#command-reference) to log in to the account responsible for promoting the new app version, i.e., **the account specified as the app's vendor in the [Manifest](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest) file.** During all the following steps, make sure you're logged into this account.
 
 ### Step 1 - Releasing a new app version
 
@@ -41,7 +41,7 @@ If you’re sure about all the changes that you performed in your development wo
 - `vtex release minor beta` - To release a **minor** beta version.
 - `vtex release patch beta` - To release a **patch** beta version.
 
->⚠️ *Replace the values between the curly brackets according to your scenario.*
+>⚠️ Replace the values between the curly brackets according to your scenario.
 
 By performing any of these actions, you will:
 
@@ -50,7 +50,7 @@ By performing any of these actions, you will:
 - Create a release commit and a release tag.
 - Send the performed changes to the app's repository.
 
->ℹ️ *Notice that releasing a new app version doesn't mean saving this new version in our infrastructure. Consequently, the app will not be publicly available for installing in other accounts and workspaces yet, neither will the new version be automatically upgraded on accounts that have this major installed. To do so, you'll need to publish this app version.*
+>ℹ️ Notice that releasing a new app version doesn't mean saving this new version in our infrastructure. Consequently, the app will not be publicly available for installing in other accounts and workspaces yet, neither will the new version be automatically upgraded on accounts that have this major installed. To do so, you'll need to publish this app version.
 
 ### Step 2 - Publishing the new app version
 
@@ -82,7 +82,7 @@ vtex install {appvendor}.{appname}@{appversion}
 
 Notice that, from this point onwards, you cannot link any app or make changes to your app code. Hence, if you need to perform any changes in your app, you must retreat and work on it in a development workspace.
 
->⚠️ *If you are developing a new store theme major, follow the steps in the [Migrating CMS settings after a theme major update](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-cms-settings-after-major-update) documentation before proceeding any further, since this could lead to undesired consequences, such as losing the admin's page template settings.*
+>⚠️ If you are developing a new store theme major, follow the steps in the [Migrating CMS settings after a theme major update](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-cms-settings-after-major-update) documentation before proceeding any further, since this could lead to undesired consequences, such as losing the admin's page template settings.
 
 ### Step 4 - Validating the candidate version
 
@@ -110,6 +110,6 @@ Once you are sure of your changes, it's time to make them publicly available to 
 vtex workspace promote
 ```
 
->ℹ️ *You can not perform code changes in an app when using the `master` workspace because it corresponds to the version available to the end-user. Hence, if you want to perform any changes in the app code, you must retreat and work on the new code in a development workspace, then reproduce it in a Production workspace and promote it.*
+>ℹ️ You can not perform code changes in an app when using the `master` workspace because it corresponds to the version available to the end-user. Hence, if you want to perform any changes in the app code, you must retreat and work on the new code in a development workspace, then reproduce it in a Production workspace and promote it.
 
 **That's all!** Upon completing all the steps, your app’s new version will have been released, published, tested, validated, and will finally be made public for all your end-users!

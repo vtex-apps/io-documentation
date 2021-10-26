@@ -25,7 +25,7 @@ These features are presented and explained in the [Enabling store settings](#ena
 
 Furthermore, additional actions, presented in the [Manual optimizations](#manual-optimizations) section, can be taken.
 
->⚠️ *For implementation details, check our documentation on [how to safely enable performance settings in your store.](https://vtex.io/docs/recipes/store-management/safely-enabling-performance-settings)*
+>⚠️ For implementation details, check our documentation on [how to safely enable performance settings in your store.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-safely-enabling-performance-settings)
 
 Once adopted, such practices can lead to an improvement of up to 80% in SEO and over 50% in page loading time. This data can be identified in the main website performance analysis tools, such as [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) and [Google Analytics](https://support.google.com/analytics/answer/1205784?hl=en).
 
@@ -41,7 +41,7 @@ However, currently, all stores using VTEX IO Store Framework have two `OrderForm
 
 As a result, we recommend that stores already using the new `minicart.v2` and `add-to-cart-button` blocks (instead of the `minicart` and `buy-button`, respectively) set aside the `OrderFormProvider` legacy. This way, consuming a single provider, you'll notice improvements in your store performance.
 
->ℹ️ *More details on how to perform this optimization can be found in the documentation on [Enabling OrderForm optimization](https://vtex.io/docs/recipes/store-management/enabling-order-form-optimization/).*
+>ℹ️ More details on how to perform this optimization can be found in the documentation on [Enabling OrderForm optimization](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-enabling-order-form-optimization/).
 
 ### Deactivating the VTEX IO native service worker
 
@@ -49,7 +49,7 @@ The VTEX IO platform provides a native service worker to every store using the S
 
 Hence, you can choose to deactivate the native service worker provided by VTEX IO in order to successfully use a third-party solution in your store.
 
->ℹ️ *For more information, check our documentation on [Deactivating the VTEX IO native service worker](https://vtex.io/docs/recipes/store-management/deactivating-the-vtex-io-native-service-worker/).*
+>ℹ️ For more information, check our documentation on [Deactivating the VTEX IO native service worker](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-deactivating-the-vtex-io-native-service-worker/).
 
 ### Optimizing critical CSS
 
@@ -63,7 +63,7 @@ However, by default, the browser starts rendering a web page only after it has f
 
 Fortunately, VTEX IO offers the possibility of enabling critical CSS optimization in home pages. This feature provides the browser a way to find the *minimum blocks of CSS code* needed to first display the critical content of the page. Meanwhile, the remainder CSS code is loaded asynchronously.
 
->⚠️ *Keep in mind that by enabling this option, you might notice style inconsistencies in your store's layout. Hence, test it with caution before enabling it on a production workspace. Also, if you notice any kind of side-effect on your store's website, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!*
+>⚠️ Keep in mind that by enabling this option, you might notice style inconsistencies in your store's layout. Hence, test it with caution before enabling it on a production workspace. Also, if you notice any kind of side-effect on your store's website, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!
 
 ### Improving download speed with CSS concatenation
 
@@ -90,7 +90,7 @@ Therefore, to avoid your store website's total blocking time to be compromised, 
 
 This way, long tasks will be prevented and you'll advantage of a faster store.
 
->⚠️ *Keep in mind that, by enabling this option, some apps might not work as expected. Hence, test it with caution, and analyze the effects on different pages of your website before enabling it on a production workspace. Also, if you notice any kind of side-effect on your store's website, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!*
+>⚠️ Keep in mind that, by enabling this option, some apps might not work as expected. Hence, test it with caution, and analyze the effects on different pages of your website before enabling it on a production workspace. Also, if you notice any kind of side-effect on your store's website, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!
 
 ### Lazy rendering submenu items
 
@@ -98,7 +98,7 @@ By enabling this option, menus containing submenus will take advantage of automa
 
 Therefore, `submenu`s will be loaded only in case the user interacts with its parent menu (in which the prop was configured).
 
->⚠️ *Google will not be able to track the hidden submenu items for SEO purposes, since their contents only will be loaded with user interaction. Therefore, ensure your SEO strategy is already covered by the store's sitemap or by the store's first meaningfully painted content.*
+>⚠️ Google will not be able to track the hidden submenu items for SEO purposes, since their contents only will be loaded with user interaction. Therefore, ensure your SEO strategy is already covered by the store's sitemap or by the store's first meaningfully painted content.
 
 ### Lazy rendering search results and facets
 
@@ -106,7 +106,7 @@ By enabling this option, scrollable facets box and search result pages will be l
 
 This way, content contained inside the user's viewport will be initially loaded for rendering. On the other hand, content outside the user viewport will be loaded only during scrolling. 
 
->⚠️ *Keep in mind that, by enabling this option, you might notice unexpected behaviors, such as gaps while scrolling. Hence, if you experience any kind of side-effect in your website pages, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!*
+>⚠️ Keep in mind that, by enabling this option, you might notice unexpected behaviors, such as gaps while scrolling. Hence, if you experience any kind of side-effect in your website pages, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!
 
 ### Partially fetching facets 
 
@@ -116,7 +116,7 @@ Once this option is enabled, users on the search results page will see a maximum
 
 Instead, a `Show more` button will be displayed below the rendered facets, allowing users to fetch the remaining ones.
 
->ℹ️ *Remember: we call Facets the filter's value. For example: `Color` is a filter whose value, `Blue`, is its Facet.*
+>ℹ️ Remember: we call Facets the filter's value. For example: `Color` is a filter whose value, `Blue`, is its Facet.
 
 ## Manual optimizations
 
@@ -130,9 +130,9 @@ This way, only the first visible blocks will be loaded, and the ones "below the 
 
 In addition, use the `__fold__.experimentalLazyAssets` block to indicate which of your theme's blocks must be loaded statically until the first user interface interaction with it.
 
->ℹ️ *Follow this [link](https://vtex.io/docs/recipes/templates/using-the-fold-blocks/) to learn more about Fold blocks.*
+>ℹ️ Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-the-fold-blocks/) to learn more about Fold blocks.
 
->⚠️ *If any of these blocks cause any kind of side-effect in your website pages, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!*
+>⚠️ If any of these blocks cause any kind of side-effect in your website pages, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) and let us know!
 
 ### Reducing the number of menu blocks
 
@@ -148,13 +148,13 @@ Notice that, previously, every `menu-item` was configured as a children/block. W
 
 This way, the number of blocks is reduced from 3 to 1. 
 
->ℹ️ *Check out how to apply both configurations in the [Menu's documentation](https://vtex.io/docs/components/all/vtex.menu@2.24.1/).*
+>ℹ️ Check out how to apply both configurations in the [Menu's documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-menu).
 
 ### Adjusting image sizes
 
-The size of the displayed images in your store's website can directly impact overall performance. Thus, to optimize your website's image rendering, we recommend that you adopt the practices detailed on [Best practices for rendering images](https://vtex.io/docs/recipes/templates/best-practices-for-rendering-images/), with regards to the media type used in your theme.
+The size of the displayed images in your store's website can directly impact overall performance. Thus, to optimize your website's image rendering, we recommend that you adopt the practices detailed on [Best practices for rendering images](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-rendering-images/), with regards to the media type used in your theme.
 
->ℹ️ *Follow this [link](https://vtex.io/docs/recipes/templates/best-practices-for-rendering-images/) to learn more about the best practices for rendering images.*
+>ℹ️ Follow this [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-rendering-images/) to learn more about the best practices for rendering images.
 
 ### Improving search results
 
@@ -166,7 +166,7 @@ These props are responsible for controlling the SKUs returned for each product i
 
 We recommend that you only allow the first available SKU to be returned for each product (using the `FIRST_AVAILABLE` value in the `skusFilter` prop) and that use cache to display the search data (using the `skip` value in the `simulationBehavior` prop).
 
->ℹ️ *Find out more about how to properly configure the above by going through our [Search Results app documentation](https://www.vtex.io/docs/components/all/vtex.search-result/).*
+>ℹ️ Find out more about how to properly configure the above by going through our [Search Results app documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result).
 
 ### Lazy loading images and products data in a slider
 
@@ -176,4 +176,4 @@ That's because the Slider Layout natively performs a lazy load of the images or 
 
 However, always keep in mind that the more products your Shelf or the more images your Carousel contains, the bigger the impact on your website's performance.
 
->ℹ️ *You can find more details on how to use the Slider Layout when configuring these two blocks by accessing the [Shelf documentation](https://vtex.io/docs/components/all/vtex.shelf/) and the recipe on [Building a Carousel using Slider Layout](https://vtex.io/docs/recipes/templates/building-a-carousel-using-slider-layout/).*
+>ℹ️ You can find more details on how to use the Slider Layout when configuring these two blocks by accessing the [Shelf documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-shelf/) and the recipe on [Building a Carousel using Slider Layout](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-building-a-carousel-using-slider-layout/).

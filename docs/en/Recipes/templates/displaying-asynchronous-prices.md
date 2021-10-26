@@ -15,7 +15,7 @@ This is due to the fact that fetching the newest prices in your store database r
 
 A favorable way out is to set your store to fetch product prices on the client-side, promoting a decrease of response time in your pages in order to display the *asynchronous prices*.
 
-> ℹ️ ***Asynchronous prices do not mean outdated**. They are product prices stored in the browser cache according to the user navigation. If your store does not routinely update product prices, it is strongly recommended to display asynchronous prices instead.*   
+> ℹ️ **Asynchronous prices do not mean outdated**. They are product prices stored in the browser cache according to the user navigation. If your store does not routinely update product prices, it is strongly recommended to display asynchronous prices instead. 
 
 ![priceasync](https://user-images.githubusercontent.com/40380674/96735041-85265680-1391-11eb-80e9-2eb35607fd72.gif)
 
@@ -23,7 +23,7 @@ Learn below how to set your store up to decrease page response time with asynchr
 
 ## Step by step
 
-1. Ensure that your store is not fetching the price data on the server-side by setting the `simulationBehavior` prop (from the [Search Result](https://vtex.io/docs/components/all/vtex.search-result/) app) to `skip`:
+1. Ensure that your store is not fetching the price data on the server-side by setting the `simulationBehavior` prop (from the [Search Result](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result/) app) to `skip`:
 
 ```diff
 "store.search": {
@@ -38,7 +38,7 @@ Learn below how to set your store up to decrease page response time with asynchr
 },
 ```
 
-2. Ensure that the [Product Summary](https://vtex.io/docs/components/all/vtex.product-summary/) and the [Product Price](https://vtex.io/docs/components/all/vtex.product-price/) apps are listed as dependencies in your theme's `manifest.json` file:
+2. Ensure that the [Product Summary](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary/) and the [Product Price](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-price/) apps are listed as dependencies in your theme's `manifest.json` file:
 
 ```json
 "dependencies": {
@@ -47,7 +47,7 @@ Learn below how to set your store up to decrease page response time with asynchr
 }  
 ```
 
-3. Add the `priceBehavior` prop to your [`product-summary.shelf`](https://vtex.io/docs/components/all/vtex.product-summary/product-summary-shelf/) block and set its value to `async`:
+3. Add the `priceBehavior` prop to your [`product-summary.shelf`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary/product-summary-shelf/) block and set its value to `async`:
 
 ```diff
 "product-summary.shelf": {
@@ -64,7 +64,7 @@ Learn below how to set your store up to decrease page response time with asynchr
 }
 ```
 
-4. Wrap the all price blocks under the `product-price-suspense` block (from the [Product Prices app](https://vtex.io/docs/components/all/vtex.product-price/)):
+4. Wrap the all price blocks under the `product-price-suspense` block (from the [Product Prices app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-price/)):
 
 ```diff
 {
