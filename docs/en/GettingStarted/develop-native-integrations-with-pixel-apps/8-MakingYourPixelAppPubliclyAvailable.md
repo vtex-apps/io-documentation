@@ -55,7 +55,7 @@ Using your terminal, access the app directory and run the following command:
 $ vtex publish
 ``` 
 
-The command will make your app a ***release candidate version***, thereby enabling it to be installed via Toobelt for testing purposes.
+The command will make your app a ***release candidate version***, thereby enabling it to be installed via VTEX IO CLI for testing purposes.
 
 >ℹ️ You must always be logged into the desired VTEX account for publishing the app. Make sure the app's `vendor` is the same as the account you're working on.
 
