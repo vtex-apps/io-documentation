@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Configuring an Edition App
 
-The hierarchical relationship between a [Sponsor Account](https://vtex.io/docs/concepts/sponsor-account/) and its children, established by an [Edition app](https://vtex.io/docs/concepts/edition-app/), creates uniformity throughout an account family.
+The hierarchical relationship between a [Sponsor Account](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-sponsor-account/) and its children, established by an [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app/), creates uniformity throughout an account family.
 
 Hence, it can be advantageous for **complex account families** under the same brand or holding to have its own Edition App.
 
@@ -19,7 +19,7 @@ Once you [enable the Sponsor Account behavior](https://developers.vtex.com/vtex-
 
 ### Step 1 - Creating an Edition app
 
-1. Using your terminal and [VTEX IO's CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-toolbelt), log in to your Sponsor Account.
+1. Using your terminal and [VTEX IO's CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-VTEX IO CLI), log in to your Sponsor Account.
 2. Run the `vtex init` command.
 3. Choose the `edition app` option. This will create a boilerplate repository in your local files.
 4. Navigate to the `edition-app` folder and open the `manifest.json` file. It should look something like this:
@@ -81,8 +81,8 @@ After setting up the initial configurations needed to develop your own Edition A
 ```
 Only the `defaultMajor` (or previously `major`) is obligatory, and all the others can be omited if they don't need to be configured.
    * `defaultMajor` or `major` fields determines the major of the app that will be installed by default, when the edition is set in some account.
-   * `allowedMajors` allows specifying alternative majors that can be used by any account using the edition. Those majors can be used by manually installing the alternate version of the app using toolbelt (`vtex install`). If this field is omited or empty, it means that only the default major is allowed and it cannot be changed.
-   * `allowsUninstall` serves to allow users to uninstall the app from the edition as well, to be done manually using toolbelt (`vtex uninstall`). If omited will default to `false`, i.e. that the app cannot be uninstalled by the account.
+   * `allowedMajors` allows specifying alternative majors that can be used by any account using the edition. Those majors can be used by manually installing the alternate version of the app using VTEX IO CLI (`vtex install`). If this field is omited or empty, it means that only the default major is allowed and it cannot be changed.
+   * `allowsUninstall` serves to allow users to uninstall the app from the edition as well, to be done manually using VTEX IO CLI (`vtex uninstall`). If omited will default to `false`, i.e. that the app cannot be uninstalled by the account.
    * `settings` specifies the initial app settings to be set when the app is installed in the account via the edition. If omited, which is the recommended for most of the cases, no setting changes are made when installing the app.
 
 > ⚠️ Be aware that an Edition App can only contain apps exclusively developed by the same `vendor` responsible for its release.

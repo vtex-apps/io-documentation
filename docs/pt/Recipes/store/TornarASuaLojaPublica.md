@@ -31,7 +31,7 @@ Você deve estar logado na conta em que deseja que a nova versão seja publicada
 
 Se a sua app **não** possuir `billingOptions`, ela poderá ser instalada através da seção de Apps, dentro do admin, por usuários com acesso à conta em que ela foi registrada.
 
-Caso contrário, a app estará disponível para instalação através do Toolbelt, independentemente do modelo de cobrança especificado. [Clique aqui](http://help.vtex.com/pt/tutorial/modelos-de-cobranca-de-apps) para mais informações sobre modelos de cobrança de apps.
+Caso contrário, a app estará disponível para instalação através do VTEX IO CLI, independentemente do modelo de cobrança especificado. [Clique aqui](http://help.vtex.com/pt/tutorial/modelos-de-cobranca-de-apps) para mais informações sobre modelos de cobrança de apps.
 
 ## Modo de produção
  

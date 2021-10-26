@@ -94,7 +94,7 @@ This customization practice by HTML hierarchy was mostly deprecated. It means th
 - `[data-...]`
 - `:global(vtex-{AppName}-{AppVersion}-{ComponentName})` for selection of elements that come from different apps
 
-**Any CSS Selectors not on this list, such as** `:nth-child(2)`**,** `foo > bar` **and** `[alt="bar"]`**, it's not accepted by Toolbelt during the [linking](https://vtex.io/docs/recipes/store/linking-an-app) of the store's theme with its local files.**
+**Any CSS Selectors not on this list, such as** `:nth-child(2)`**,** `foo > bar` **and** `[alt="bar"]`**, it's not accepted by VTEX IO CLI during the [linking](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) of the store's theme with its local files.**
 
 >⚠️ Bear in mind that any customization that uses CSS Selectors is dependent on a HTML structure that, when changed, can break the retailer's desired customization.<strong> Always opt to use CSS Handles</strong>.
 

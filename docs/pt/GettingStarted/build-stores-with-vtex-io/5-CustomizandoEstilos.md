@@ -114,4 +114,4 @@ Depois de salvar as alterações feitas, você poderá visualizar o Infocard com
 As substituições de CSS só podem ser alteradas manualmente por código enquanto as customizações feitas pelo arquivo <code>style.json</code> podem ser facilmente editadas através da seção de Storefront do admin. Por isso, ao customizar o estilo do seu tema, é recomendável evitar fazer grandes customizações que necessitem de substituição de CSS.
 </div>
 
-Ao longo deste tutorial, você entendeu o que é **Store Framework**, **Toolbelt** e **Store Theme**, além de aprender como estruturar as páginas da sua loja configurando ***templates*** e customizando **estilos**. Para continuar aprendendo sobre o VTEX IO, não se esqueça de acessar o restante da nossa [documentação](*link*).
+Ao longo deste tutorial, você entendeu o que é **Store Framework**, **VTEX IO CLI** e **Store Theme**, além de aprender como estruturar as páginas da sua loja configurando ***templates*** e customizando **estilos**. Para continuar aprendendo sobre o VTEX IO, não se esqueça de acessar o restante da nossa [documentação](*link*).

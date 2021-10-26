@@ -29,7 +29,7 @@ If your decide for your app to be public, you must also define if its users shou
 
 For both scenarios, you will need to understand how to structure the `billingOptions` field and use its properties. Before executing the instructions according to the desired scenario, take a closer look at the [`billingOptions` documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options).
 
-> ℹ️ *The data related to the accounts that have installed your app and the contracts generated for each one are stored under VTEX domain. If you are interested, [contact the VTEX support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) to know more.*
+>ℹ️ The data related to the accounts that have installed your app and the contracts generated for each one are stored under VTEX domain. If you are interested, [contact the VTEX support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) to know more.
 
 ### Making my app free of charge
 
@@ -48,8 +48,8 @@ For both scenarios, you will need to understand how to structure the `billingOpt
 
 According to the specified countries, your app can be installed in any VTEX account by any admin user of it.
 
-> ℹ️ *The `*` value stands for all countries.*
-
+>ℹ️ The `*` value stands for all countries.
+> 
 ### Charging my app
 
  When you decide to charge for your app, you will need to add more properties to the `billingOptions` field to set the desired **billing template**. 
@@ -90,7 +90,7 @@ For example:
     }
 ```
 
-> ℹ️ *This billing model only allows a single subscription plan to be created for the app.*
+>ℹ️ This billing model only allows a single subscription plan to be created for the app.
 
 #### Fixed subscription + variable rate
 
@@ -103,7 +103,7 @@ For example:
 7. Establish a subscription plan for your app with the `plan` property and its child properties: `id` (establishing a plan identifier), `currency` (choosing the currency code to be applied according to the ISO), `price`, `metrics`, and `subscription` (all three of them defining the subscription price). 
 8. In the `metrics` array, establish your metric's `id` and also the use range of the app to apply the metric for the extra charge (`ranges`).
 
-> ℹ️ *Note: by using this billing model, you can set one or more metrics (`metrics`) to calculate the variable rate as you want.*
+>ℹ️ Note: by using this billing model, you can set one or more metrics (`metrics`) to calculate the variable rate as you want.
 
 Example of an app with only one metric:
 
@@ -218,7 +218,7 @@ In which:
 - `metricId` - ID of the metric you want to add to the platform. The identifier must be the same set in the `billingOptions` field.
 - `metricAmount` - Use of metrics for billing. For example: if my metric consists of charging for each SMS sent, the `metricAmount` should be equal to 1.
 
-> ⚠️ *Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.*
+>⚠️ Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.
 
 #### Variable subscription + variable rate 
 
@@ -232,7 +232,7 @@ In which:
 8. In the `metrics` array, establish your metric's `id` and also the use range of the app to apply the metric for the extra charge (`ranges`).
 9. Declare a new array for the `plans` property, using its sub-properties to set up what the new subscription plan will be.
 
-> ℹ️ *The metrics stated in step 6 refer to the subscription plan created in the previous step (5). Since we want the subscription value to be variable, that is, change according to the use of the app, we need to create another array for `plans`, indicating new `id`, `currency` and `price`.*
+>ℹ️ The metrics stated in step 6 refer to the subscription plan created in the previous step (5). Since we want the subscription value to be variable, that is, change according to the use of the app, we need to create another array for `plans`, indicating new `id`, `currency` and `price`.
 
 10. Repeat step 6 for the new plan: define the `metrics` property array according to the required charge for app usage.
 
@@ -312,7 +312,7 @@ For example:
   }
 ```
 
-> ℹ️ *Note that this billing model works the same as the previous one (Fixed Subscription + Variable Rate), stating one or more metrics to define the value of the additional variable rate. The difference is that, in this case, we want the subscription to be variable as well, change according to the use of the app. To do this, we add an array of the `plans` property.*
+>ℹ️ Note that this billing model works the same as the previous one (Fixed Subscription + Variable Rate), stating one or more metrics to define the value of the additional variable rate. The difference is that, in this case, we want the subscription to be variable as well, change according to the use of the app. To do this, we add an array of the `plans` property.
 
 Notice that the `metrics` property is key to this model. It is responsible for defining, within its array, how the additional variable rate will be calculated for the subscription plan to which it is linked (`plans`). 
 
@@ -335,7 +335,7 @@ In which:
 - `metricId` - ID of the metric you want to add to the platform. The identifier must be the same set in the `billingOptions` field.
 - `metricAmount` - Use of metrics for billing. For example: if my metric consists of charging for each SMS sent, the `metricAmount` should be equal to 1.
 
-> ⚠️ *Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.*
+>⚠️ Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.
 
 ### Registering the use of metrics defined in billingOptions
 

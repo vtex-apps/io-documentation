@@ -8,7 +8,7 @@ This makes the store creation process easier, allowing for a front-end developme
 
 ## Delivering the foundation needed for any storefront structure
 
-Based on [the VTEX IO development platform](https://vtex.io/docs/introduction/what-is-vtex-io) and [React](https://reactjs.org/) technology, VTEX Store Framework is responsible for building the storefront, providing native e-commerce components, all written in JSON. 
+Based on [the VTEX IO development platform](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-io) and [React](https://reactjs.org/) technology, VTEX Store Framework is responsible for building the storefront, providing native e-commerce components, all written in JSON. 
 
 Our components allow you to:
 
@@ -22,6 +22,6 @@ Our components allow you to:
 
 *And much more!* 
 
-Now that you've understood what VTEX Store Framework is, dig deeper: check out the answers to the most [frequently asked questions](https://vtex.io/docs/introduction/frequently-asked-questions/#vtex-io-store-framework) and some of our [components](https://vtex.io/docs/apps/all/).
+Now that you've understood what VTEX Store Framework is, dig deeper: check out the answers to the most [frequently asked questions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-frequently-asked-questions) and some of our [components](https://developers.vtex.com/vtex-developer-docs/docs/overview-5/).
 
-If you already know that you want to build your storefront using our components, don't waste any time by accessing our content track on how to [build a store using Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/) 
+If you already know that you want to build your storefront using our components, don't waste any time by accessing our content track on how to [build a store using Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3) 

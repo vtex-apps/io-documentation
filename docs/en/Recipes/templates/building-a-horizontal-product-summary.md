@@ -9,11 +9,11 @@ git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/
 
 # Building a horizontal Product Summary
 
-The [Product Summary](https://vtex.io/docs/components/content-blocks/vtex.product-summary/) is a VTEX native app responsible for displaying important product data in your store's components, such as the Shelf and the Minicart.
+The [Product Summary](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary) is a VTEX native app responsible for displaying important product data in your store's components, such as the Shelf and the Minicart.
 
 ![product-summary-vertical](https://user-images.githubusercontent.com/52087100/102239663-dbb59a00-3ed5-11eb-882f-48672d6f1325.png)
 
-Thanks to the [Flex Layout app](https://vtex.io/docs/components/layout-blocks/vtex.flex-layout/), it is possible to customize the default presentation showed above and thereby display the Product Summary blocks in a **horizontal alignment** to your users:
+Thanks to the [Flex Layout app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-flex-layout), it is possible to customize the default presentation showed above and thereby display the Product Summary blocks in a **horizontal alignment** to your users:
  
 ![horizontal-product-summary](https://user-images.githubusercontent.com/52087100/102240101-436be500-3ed6-11eb-84a1-0c957cf4f4d6.png)
 
@@ -21,7 +21,7 @@ Learn in the instructions below how to use the powerful combination between the 
 
 ## Step by step
 
-> ℹ️ *This recipe requires previous understanding of the [Flex Layout app](https://vtex.io/docs/components/layout-blocks/vtex.flex-layout/). It is strongly advised that you read the app documentation before performing the steps below!* 
+>ℹ️ This recipe requires previous understanding of the [Flex Layout app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-flex-layout). It is strongly advised that you read the app documentation before performing the steps below!
 
 1. Make sure the Flex Layout app has been declared as a theme's dependency in the `manifest.json` file:
 
@@ -39,9 +39,9 @@ Learn in the instructions below how to use the powerful combination between the 
 },
 ```
 
-> ℹ️ *The `flex-layout.row` block allows its children to be displayed side by side on the UI.*
+>ℹ️ The `flex-layout.row` block allows its children to be displayed side by side on the UI.
 
-> ⚠️ *Notice that the block naming always depends on your store scenario. In the example above, `#product-summary-mobile` is only being used for identification purposes.*
+>⚠️ Notice that the block naming always depends on your store scenario. In the example above, `#product-summary-mobile` is only being used for identification purposes.
 
 3. Add the `flex-layout.col` blocks as children of the `flex-layout.row` block to define the desired disposition of elements on the screen - the first `flex-layout.col`'s children will be displayed on the left side of the horizontal Product Summary, whereas the second will be on the right side:
 
@@ -54,7 +54,7 @@ Learn in the instructions below how to use the powerful combination between the 
 },
 ```
 
-4. Add the [`product-summary-image` block](https://vtex.io/docs/components/content-blocks/vtex.product-summary/product-summary-image) to the `flex-layout.col#product-image`'s children list and then declare it as desired: 
+4. Add the [`product-summary-image` block](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryimage) to the `flex-layout.col#product-image`'s children list and then declare it as desired: 
 
 ```json
 "flex-layout.col#product-image": {
@@ -112,4 +112,4 @@ Learn in the instructions below how to use the powerful combination between the 
 }
 ```
 
-6. [Deploy your changes](https://vtex.io/docs/recipes/store-management/making-your-theme-content-public/).
+6. [Deploy your changes](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-theme-content-public/).

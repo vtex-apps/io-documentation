@@ -38,7 +38,7 @@ If the form was correctly filled out and the team agrees that the application is
 
 This contract, provided by the VTEX team to you, will grant VTEX distribution rights over the app. In addition, it is going to sign your account up to the VTEX **Network Partner Program** if you are not already a member.
 
->ℹ️ *The [Network Partner Program](https://network.vtex.com/terms_of_use) provides access to a VTEX account, allowing you to test and develop new apps and have access to tech support from the VTEX partner team.*
+>ℹ️ The [Network Partner Program](https://network.vtex.com/terms_of_use) provides access to a VTEX account, allowing you to test and develop new apps and have access to tech support from the VTEX partner team.
 
 ### Step 3 - Registering as a VTEX App Store seller
 
@@ -69,18 +69,18 @@ To submit and publish your app on VTEX App Store, you must follow our business, 
 Once you've configured the app assets, it is time to submit the app's data for evaluation by the app store development team. First of all, you'll need to meet the following prerequisites:
 
 - Have a [**GitHub**](https://github.com/) account (since your project evaluation during the homologation process is made through Pull Requests).
-- [Publish your app on the VTEX IO development platform](https://vtex.io/docs/recipes/development/publishing-an-app/). Remember to publish the app in the VTEX account in which you are working and in a [workspace](https://vtex.io/docs/concepts/workspace/) that can be tested by the team.
+- [Publish your app on the VTEX IO development platform](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-publishing-an-app/). Remember to publish the app in the VTEX account in which you are working and in a [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace/) that can be tested by the team.
 - [Deploy your app on the VTEX IO development platform](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available#step-6---deploying-the-app-stable-version).
 
 With the first two prerequisites met, you're ready to send you app through to VTEX's homologation process:
 
-1. Using your CLI, [log into the VTEX account](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/#command-reference) in which the app was published.
+1. Using your CLI, [log into the VTEX account](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference/#command-reference) in which the app was published.
 2. Access the folder containing your app.
 3. Run `vtex submit`. You can also specify which version your want to submit by running `vtex submit {vendor}.{name}@{version}`.
 
 After step 3, a GitHub repository will be automatically created and a Pull Request link will be displayed on your CLI.
 
->ℹ️ *You'll be added to the repository with your GitHub handle and will have read-only permissions to be able to follow your app's review process. Comments can be followed in the same repository and after performing adjustments, any new app version can be submitted following the step 2 above, thereby creating a new `branch` containing the new version in the same repository.*
+>ℹ️ You'll be added to the repository with your GitHub handle and will have read-only permissions to be able to follow your app's review process. Comments can be followed in the same repository and after performing adjustments, any new app version can be submitted following the step 2 above, thereby creating a new `branch` containing the new version in the same repository.
 
 ![submitting-github-terminal](https://user-images.githubusercontent.com/52087100/92964915-483e7a00-f44b-11ea-8bbf-f8f4e8c4da32.png)
 

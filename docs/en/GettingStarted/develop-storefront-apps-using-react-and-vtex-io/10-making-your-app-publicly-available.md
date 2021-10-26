@@ -15,11 +15,11 @@ The choice between private or public has to be made before the app is launched.
 
 The reason is that depending on the chosen type, some settings have to be configured in the app's `manifest.json` file before it is distributed. After all, the settings in the `manifest` define who will be able to use the component and whether it will be free or not. 
 
-To learn how to configure your app's `manifest.json` file properly, access the documentation about [Billing Options](https://vtex.io/docs/concepts/billing-options/) and follow the instructions that fit the desired scenario for your project. 
+To learn how to configure your app's `manifest.json` file properly, access the documentation about [Billing Options](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options/) and follow the instructions that fit the desired scenario for your project. 
 
 After following those detailed steps, your app will be ready to be correctly distributed! 
 
-Remember that [*linking*](https://vtex.io/docs/recipes/store/linking-an-app) the app you are working on will not be enough: you will also need to launch, publish, and install it in a production workspace for testing and, finally, validate it for *deploy*, as we will see below.
+Remember that [*linking*](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) the app you are working on will not be enough: you will also need to launch, publish, and install it in a production workspace for testing and, finally, validate it for *deploy*, as we will see below.
 
 ## Launching a new version
 
@@ -85,7 +85,7 @@ vtex install {appVendor}.{apNname}@{appVersion}
 
 It is time to validate your *release candidate version*!
 
-We recommend that you first run a [native A/B test](https://vtex.io/docs/recipes/store/running-native-ab-testing) between the new production workspace and your store's Master workspace to test the stability of the app. 
+We recommend that you first run a [native A/B test](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-running-native-ab-testing) between the new production workspace and your store's Master workspace to test the stability of the app. 
 
 >⚠️ If you are working with a beta version and all your settings have already been properly tested, we recommend that you return to the second step of this article to launch the app's non-beta version and then follow the walkthrough again.
 
@@ -120,7 +120,7 @@ Whether you incorporate the new component into your VTEX store theme or not, you
 
 The [VTEX App Store](https://extensions.vtex.com/) is a *marketplace* for *plug&play* solutions and can be used by any interested VTEX account that wants to make available its solutions to other accounts in the ecosystem. 
 
-To make your app available, check the documentation for [Submitting an app in the VTEX App Store](https://vtex.io/docs/recipes/development/submitting-your-app-in-the-vtex-app-store/ ).
+To make your app available, check the documentation for [Submitting an app in the VTEX App Store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-submitting-your-app-in-the-vtex-app-store/ ).
 
 ---
 
@@ -128,4 +128,4 @@ To make your app available, check the documentation for [Submitting an app in th
 
 During this article series, you learned all the necessary steps to develop a front-end app from scratch using React, GraphQL, CSS, and the VTEX IO development platform. 
 
-To understand more about the platform's development possibilities, do not forget to access the rest of our [documentation](https://vtex.io/docs/home/)!
+To understand more about the platform's development possibilities, do not forget to access the rest of our [documentation](https://developers.vtex.com/vtex-developer-docs/docs)!

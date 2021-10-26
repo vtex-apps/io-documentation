@@ -36,7 +36,7 @@ Once your file is processed, the redirects will take effect. Notice that this mi
 
 1. Follow our [CSV file template](#csv-file-template) and create a new `.csv` file with the redirects you want to delete. You can use Excel or Google sheets, for example.
 2. Save the file under a name of your choice.
-3. Using the terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log in to your VTEX account.
+3. Using the terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installment-and-command-reference), log in to your VTEX account.
 4. Delete redirects from your account by running the following command:
 
 ```
@@ -47,7 +47,7 @@ vtex redirects delete {CSVpath}
 
 ### Verifying URL redirects
 
-1. Using the terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference), log in to your VTEX account.
+1. Using the terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installment-and-command-reference), log in to your VTEX account.
 2. Retrieve the full list of your store's redirects into a `.csv` file by running the following command.
 
 ```

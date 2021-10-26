@@ -16,7 +16,7 @@ Considering this case, in the following step by step, we'll teach you how to ove
 
 Follow this step by step if you aim to translate text messages exported from an app (declared in the app's `messages` folder).
 
-1. [Install](https://vtex.io/docs/recipes/store/installing-an-app) the `vtex.admin-graphql-ide@3.x` app using your terminal.
+1. [Install](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-installing-an-app) the `vtex.admin-graphql-ide@3.x` app using your terminal.
 
 2. Access the **GraphQL admin IDE** section of the desired account. You may find it in the admin's side-bar menu:
 

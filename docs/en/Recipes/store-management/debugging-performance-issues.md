@@ -8,13 +8,13 @@ Keeping an eye on how your store's website performs is essential for delivering 
 
 With that in mind, the following [section](#step-by-step) intends to guide you when debugging performance issues, aiming for high scores in Lighthouse audits.
 
->⚠️ *The practices presented in this doc are intended to guide you when debugging your store's performance, they do not provide definitive solutions. For information on how to improve performance, [folow this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance).*
+>⚠️ The practices presented in this doc are intended to guide you when debugging your store's performance, they do not provide definitive solutions. For information on how to improve performance, [folow this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance).
 
 # Step by step
 
 Before proceeding any further, we recommend that you run [Lighthouse](https://developers.google.com/speed/pagespeed/insights/) using the following URL pattern `https://{account}.myvtex.com/?workspace={workspace}`, given the production workspace you're currently working, and take note of your store's performance. You can also analyze the store in production. In this case, please consider the URL available to end-users. 
 
->⚠️ ***Keep in mind:** you must always use the `?workspace={workspace}` query string to analyze performance in a production workspace. Using the standard URL pattern `https://{workspace}--{account}.myvtex.com/` won't show the performance score of your store in the specified workspace.*
+>⚠️ **Keep in mind:** you must always use the `?workspace={workspace}` query string to analyze performance in a production workspace. Using the standard URL pattern `https://{workspace}--{account}.myvtex.com/` won't show the performance score of your store in the specified workspace.
 
 Also, when running Lighthouse, consider analyzing pages from different contexts separately. For example, run specific audits for the Home, Search, Category, and Product pages.
 
@@ -32,7 +32,7 @@ In light of that, you may want to see how your web page looks and behaves when J
 
 Adopting this practice will help you implement progressive improvements. That is, guaranteeing your server-side rendering (SSR) HTML is functional and free of bugs so you can improve your website's capabilities through JavaScript.
 
->ℹ️ *If applicable, check Google's documentation on [how to disable javascript in Google Chrome](https://developers.google.com/web/tools/chrome-devtools/javascript/disable).*
+>ℹ️ If applicable, check Google's documentation on [how to disable javascript in Google Chrome](https://developers.google.com/web/tools/chrome-devtools/javascript/disable).
 
 When performing this test, your store will probably not function the same way as planned. However, its core functionalities may work as expected. Take the following subsections as a reference:
 
@@ -48,19 +48,19 @@ When performing this test, your store will probably not function the same way as
 - Animations and interactive menus do not work.
 - The below-the-fold content does not render.
 
->ℹ️ *Before Google crawlers incorporated and improved the indexing of JavaScript content and links capability, SEO used to be a common concern for websites based on JavaScript. Even though this issue has been addressed, be aware that other search engines might not have this feature yet.*
+>ℹ️ Before Google crawlers incorporated and improved the indexing of JavaScript content and links capability, SEO used to be a common concern for websites based on JavaScript. Even though this issue has been addressed, be aware that other search engines might not have this feature yet.
 
 ## Step 2: Checking the effect of third-party apps
 
 One of the first actions to debug performance issues is to test the desired page without [Pixel apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-pixel-app).
 
->ℹ️ *Pixel apps are applications that integrate a third-party solution into your store's website.*
+>ℹ️ Pixel apps are applications that integrate a third-party solution into your store's website.
 
 Checking how your store pages perform without third-party apps might help detect if the problem comes from there.
 
 For that, you must run Lighthouse again, including the `__disablePixels` and `v` query strings in the URL, as in the following: `https://www.{account}.com.br/?workspace={workspace}&__disablePixels&v={randomvalue}`.
 
->⚠️ *Notice that the random value added to the query string `v` is used to avoid cache. Remember to replace the values between the curly brackets according to your scenario.*
+>⚠️ Notice that the random value added to the query string `v` is used to avoid cache. Remember to replace the values between the curly brackets according to your scenario.
 
 
 Take the following example:
@@ -71,7 +71,7 @@ Take the following example:
 
 If you are building a custom React component, you can get a glimpse of your app's performance by analyzing its bundle size.
 
->ℹ️ *The app’s bundle size indicates the size of the JavaScript files needed to load your app.*
+>ℹ️ The app’s bundle size indicates the size of the JavaScript files needed to load your app.
 
 Large bundle sizes imply a longer loading time. If it is too slow, it may harm performance and, consequently, the user experience.
 
@@ -81,7 +81,7 @@ For analyzing you app's bundle, you can access the following paths:
 
 - In production: `https://{workspace}--{account}.myvtex.com/_v/public/assets/v1/published/{app}@{version}/public/react/[prod|dev]Report.html`
 
-> ⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
+>⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
 Here is an example of the result:
 
@@ -103,9 +103,9 @@ Use [SpeedCurve](https://speedcurve.com/) or any other tool of your preference t
 
 To help you guarantee the success of your brand's online presence, we provide a series of performance settings, which can be enabled at your stores's admin, under *Store Setup > CMS > Store > Advanced*.
 
->ℹ️ *Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance) to learn about the currently available performance settings.*
+>ℹ️ Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance) to learn about the currently available performance settings.
 
->ℹ️ *Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-safely-enabling-performance-settings) to learn how to safely enable performance settings.*
+>ℹ️ Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-safely-enabling-performance-settings) to learn how to safely enable performance settings.
 
 We recommend that you gradually enable the available features and measure their impact using Lighthouse and other tools.
 
@@ -128,15 +128,15 @@ Hence, after enabling the critical CSS optimization, check if your pages are bei
 
 With the performance features enabled, as proposed in Step 5, reproduce your scores in the [Lighthouse Scoring Calculator](https://googlechrome.github.io/lighthouse/scorecalc/#version=6) to identify which metrics have the greatest potential for improvement.
 
->ℹ️ *[Lighthouse Scoring Calculator](https://googlechrome.github.io/lighthouse/scorecalc/#version=6) is a tool created by Google that allows you to play with Lighthouse performance metrics and define the thresholds you should aim for to achieve the desired Performance Score.*
+>ℹ️ [Lighthouse Scoring Calculator](https://googlechrome.github.io/lighthouse/scorecalc/#version=6) is a tool created by Google that allows you to play with Lighthouse performance metrics and define the thresholds you should aim for to achieve the desired Performance Score.
 
 1. If the [Total Blocking Time (TBT)](https://web.dev/tbt/) is too long, use the browser's performance tab and [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) (if applicable) to identify components running JavaScript for long periods and, consequently, blocking the main thread and impeding the browser to respond to other requests. To improve the implementation of these components, consider breaking tasks into smaller ones so that they do not block the main thread for more than 50ms.
 
->ℹ️ *[React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) is a Chrome DevTools extension for the open-source React JavaScript library.*
+>ℹ️ [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) is a Chrome DevTools extension for the open-source React JavaScript library.
 
 2. If [First Contentful Paint (FCP)](https://web.dev/fcp/) is high, consider prioritizing the above-the-fold content by bringing, at first, only the necessary assets to render that part of the page. 
 3. If [Largest Contentful Paint (LCP)](https://web.dev/lcp/) is high, consider centering most of the page content on one or fewer elements, such as a banner, and having that part rendered with priority (e.g., loading the main image first).
 
->ℹ️ *Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-getting-started-with-lighthouse) to learn more about Lighthouse metrics.*
+>ℹ️ Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-getting-started-with-lighthouse) to learn more about Lighthouse metrics.
 
->ℹ️ *Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-tracking-changes-in-lighthouse-performance-score) to learn more about how to track changes in Lighthouse performance scores using the Lighhouse Scoring Calculator.*
+>ℹ️ Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-tracking-changes-in-lighthouse-performance-score) to learn more about how to track changes in Lighthouse performance scores using the Lighhouse Scoring Calculator.

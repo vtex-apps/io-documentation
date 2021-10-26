@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 ## Introduction
 
-By default, the [SKU selector](https://vtex.io/docs/app/vtex.store-components/sku-selector) component uses **miniatures of SKU images** when rendered.
+By default, the [SKU selector](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-skuselector) component uses **miniatures of SKU images** when rendered.
 
 ![sku-selector-images](https://user-images.githubusercontent.com/52087100/68624704-30f2d100-04b6-11ea-852b-df2dd140a09c.png)
 
@@ -59,8 +59,8 @@ The way out of this scenario is to **hide the custom image** that's linked to th
 },
 ```
 
-> ⚠️ *Remember to replace the value inserted in the brackets with real values, according to your SKU label.*
+>⚠️ Remember to replace the value inserted in the brackets with real values, according to your SKU label.
 
 Consequently, you'll be able to configure a customized image exclusively for your SKU selector component, without it affecting your store's layout or that of the SKU images displayed to users.
 
-> ⚠️ *For this configuration to properly work, **all SKU custom images must have the same label value** (which must be the only value given between brackets). Otherwise, even by following the steps above, the SKU selector will continue to render the default images.*
+>⚠️ For this configuration to properly work, **all SKU custom images must have the same label value** (which must be the only value given between brackets). Otherwise, even by following the steps above, the SKU selector will continue to render the default images.

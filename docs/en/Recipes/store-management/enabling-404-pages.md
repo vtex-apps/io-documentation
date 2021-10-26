@@ -36,7 +36,7 @@ Once your changes are duly saved, your store is ready to display 404 pages whene
 
 You can customize 404 pages using blocks in your store's theme following the step by step below:
 
-1. In your terminal, [create a development workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/).
+1. In your terminal, [create a development workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace/).
 2. Then, open your store's theme in it using your preferred code editor.
 3. In the theme's product or search template (`store.product` or `store.search`) you can declare, respectively, the block `store.not-found#product` or `store.not-found#search`  and have it contain another Rich Text block. 
 
@@ -62,4 +62,4 @@ Find below an example of a `store.not-found#product` in a product template:
 
 ![not-found-block](https://user-images.githubusercontent.com/52087100/76447318-4108b780-63a7-11ea-9b03-77413e0e4855.png)
 
-5. If you're happy with all configurations done in your Development workspace, it is time do [make your new theme version publicly available](https://vtex.io/docs/recipes/store-management/making-your-theme-content-public/). 
+5. If you're happy with all configurations done in your Development workspace, it is time do [make your new theme version publicly available](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-theme-content-public/). 

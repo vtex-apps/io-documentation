@@ -1,8 +1,8 @@
 ---
 title: Installing VTEX IO's CLI
-description: "Any development in VTEX IO begins and ends with the Toolbelt, our CLI (Command Line Interface). Learn now how to install it in your terminal."
+description: "Any development in VTEX IO begins and ends with the VTEX IO CLI, our CLI (Command Line Interface). Learn now how to install it in your terminal."
 date: "2021-07-15"
-tags: ["toolbelt", "cli", "command-line-interface", "install", "installation"]
+tags: ["VTEX IO CLI", "cli", "command-line-interface", "install", "installation"]
 version: "3.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/vtex-io-cli-install.md"
 ---
@@ -150,7 +150,7 @@ vtex
 
 ### Troubleshooting
 
-If VTEX IO's CLI is not behaving as expected, run `vtex --version` to make sure you're using the [latest version](https://github.com/vtex/toolbelt/blob/3.x/CHANGELOG.md) available. If not, consider [updating](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-update) it.
+If VTEX IO's CLI is not behaving as expected, run `vtex --version` to make sure you're using the [latest version](https://github.com/vtex/VTEX IO CLI/blob/3.x/CHANGELOG.md) available. If not, consider [updating](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-update) it.
 
 If the problem persists, check the following instructions.
 
