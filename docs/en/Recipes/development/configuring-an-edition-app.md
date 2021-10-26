@@ -19,7 +19,7 @@ Once you [enable the Sponsor Account behavior](https://developers.vtex.com/vtex-
 
 ### Step 1 - Creating an Edition app
 
-1. Using your terminal and [VTEX IO's CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-VTEX IO CLI), log in to your Sponsor Account.
+1. Using your terminal and [VTEX IO's CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference), log in to your Sponsor Account.
 2. Run the `vtex init` command.
 3. Choose the `edition app` option. This will create a boilerplate repository in your local files.
 4. Navigate to the `edition-app` folder and open the `manifest.json` file. It should look something like this:
@@ -85,7 +85,7 @@ Only the `defaultMajor` (or previously `major`) is obligatory, and all the other
    * `allowsUninstall` serves to allow users to uninstall the app from the edition as well, to be done manually using VTEX IO CLI (`vtex uninstall`). If omited will default to `false`, i.e. that the app cannot be uninstalled by the account.
    * `settings` specifies the initial app settings to be set when the app is installed in the account via the edition. If omited, which is the recommended for most of the cases, no setting changes are made when installing the app.
 
-> ⚠️ Be aware that an Edition App can only contain apps exclusively developed by the same `vendor` responsible for its release.
+>⚠️ Be aware that an Edition App can only contain apps exclusively developed by the same `vendor` responsible for its release.
 
 If any conflict arises from declaring divergent app versions, the priority is always given to the parent Edition. That means it's impossible to change any inherited app or configuration - only extend them.
 
