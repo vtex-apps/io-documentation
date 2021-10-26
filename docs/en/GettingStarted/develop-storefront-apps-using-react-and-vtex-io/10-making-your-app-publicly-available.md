@@ -55,7 +55,7 @@ That means now you have to publish the app on the platform! Using your terminal,
 vtex publish
 ``` 
 
-The command will transform your app into a ***release candidate version***, making it available to be installed with Toobelt for testing.
+The command will transform your app into a ***release candidate version***, making it available to be installed for testing with VTEX IO CLI.
 
 >⚠️ You have to always be logged in to the desired VTEX account for publishing the app. Make sure the app's `vendor` is the same as the account you are working on.
 
