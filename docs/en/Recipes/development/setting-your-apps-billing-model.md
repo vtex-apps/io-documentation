@@ -49,7 +49,7 @@ For both scenarios, you will need to understand how to structure the `billingOpt
 According to the specified countries, your app can be installed in any VTEX account by any admin user of it.
 
 >ℹ️ The `*` value stands for all countries.
-> 
+
 ### Charging my app
 
  When you decide to charge for your app, you will need to add more properties to the `billingOptions` field to set the desired **billing template**. 
