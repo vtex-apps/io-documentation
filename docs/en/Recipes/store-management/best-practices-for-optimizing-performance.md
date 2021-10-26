@@ -148,7 +148,7 @@ Notice that, previously, every `menu-item` was configured as a children/block. W
 
 This way, the number of blocks is reduced from 3 to 1. 
 
->ℹ️ Check out how to apply both configurations in the [Menu's documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-menu@2.24.1/).
+>ℹ️ Check out how to apply both configurations in the [Menu's documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-menu).
 
 ### Adjusting image sizes
 
@@ -166,7 +166,7 @@ These props are responsible for controlling the SKUs returned for each product i
 
 We recommend that you only allow the first available SKU to be returned for each product (using the `FIRST_AVAILABLE` value in the `skusFilter` prop) and that use cache to display the search data (using the `skip` value in the `simulationBehavior` prop).
 
->ℹ️ Find out more about how to properly configure the above by going through our [Search Results app documentation](https://www.vtex.io/docs/components/all/vtex.search-result/).
+>ℹ️ Find out more about how to properly configure the above by going through our [Search Results app documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result).
 
 ### Lazy loading images and products data in a slider
 
