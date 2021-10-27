@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.85.23] - 2021-10-27
+
 ### Added
 - New documentation on how to migrate Google Tag Manager app from major 2.x to major 3.x.
 
