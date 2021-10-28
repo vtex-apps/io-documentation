@@ -1,4 +1,4 @@
-# Listening to store events
+# 5. Listening to store events
 
 In some cases, the service provided by the third party solution depends on store Events to properly work.
 
