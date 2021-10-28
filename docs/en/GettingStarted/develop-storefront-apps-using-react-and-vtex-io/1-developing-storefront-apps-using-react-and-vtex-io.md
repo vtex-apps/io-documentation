@@ -18,6 +18,6 @@ However, considering some particular business scenarios, you may feel the need f
 
 The components you develop can be used in your store's theme or be made available to other stores interested in the same solution through the admin and [VTEX App Store](https://apps.vtex.com/).
 
->ℹ️ **Info**
+> ℹ️ **Info**
 >
->Custom apps are the liability of whoever developed and implemented them, meaning the [app's vendor](https://developers.vtex.com/vtex-developer-docs/docs/manifest#vendor). VTEX shall bear no responsibility for any of these apps nor provide support for their users.
+> Custom apps are the liability of whoever developed and implemented them, meaning the [app's vendor](https://developers.vtex.com/vtex-developer-docs/docs/manifest#vendor). VTEX shall bear no responsibility for any of these apps nor provide support for their users.
