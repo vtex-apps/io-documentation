@@ -1,4 +1,4 @@
-# Making your app publicly available
+# 9. Making your app publicly available
 
 Once you have completed all the previous steps and are comfortable with the setup, it is time to learn how to make your app publicly available, **allowing other users to use your app too**. 
 
