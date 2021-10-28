@@ -1,4 +1,4 @@
-# Basic setup to develop in VTEX IO
+# Setting up your development environment
 
 Any development in the VTEX IO platform begins and ends with the **VTEX IO CLI**. 
 
@@ -57,5 +57,3 @@ Having created your own development workspace in VTEX IO, you can now go to your
 >ℹ️ You can run `vtex browse` in your terminal to automatically open your browser using the workspace and account in which you are working.
 
 Done! Your VTEX account is now connected to the VTEX IO platform and you are technically ready to start developing your Pixel app!
-
-
