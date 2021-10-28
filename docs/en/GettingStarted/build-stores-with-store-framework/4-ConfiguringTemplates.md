@@ -1,4 +1,4 @@
-# Configuring templates
+# 4. Configuring templates
 
 **We call a template your website's page structure.** 
 
