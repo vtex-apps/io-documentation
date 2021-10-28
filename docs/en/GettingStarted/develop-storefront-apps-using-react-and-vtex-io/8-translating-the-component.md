@@ -1,4 +1,4 @@
-# Translating the component
+# 7. Translating the component
  
 Before thinking about brand globalization, it is very important to first look into **content internationalization on your website**.
  
