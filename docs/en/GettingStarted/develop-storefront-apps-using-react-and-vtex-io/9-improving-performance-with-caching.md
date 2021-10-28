@@ -1,4 +1,4 @@
-# Improving performance with caching
+# 8. Improving performance with caching
  
 Repeated searches for similar data can become an expensive and frustrating investment as they require a high number of responses from the server to deliver the requested information. 
  

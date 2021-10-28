@@ -1,4 +1,4 @@
-# Setting up your development environment
+# 1. Setting up your development environment
 
 You may not realize it, but once you've implemented [**VTEX Store Framework**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework) in your store, you'll be developing in [VTEX IO](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-io/) on a certain scale.
 

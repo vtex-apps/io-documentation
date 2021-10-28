@@ -1,4 +1,4 @@
-# Prerequisites
+# 2. Configuring your account
 
 Now that you have completed the VTEX IO basic setup, it is time to:
 

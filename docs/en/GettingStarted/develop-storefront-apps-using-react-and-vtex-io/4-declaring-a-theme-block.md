@@ -1,4 +1,4 @@
-# Declaring a Theme Block
+# 3. Declaring a Theme Block
 
 With the app template already copied, we will now create a **new theme block**. 
 

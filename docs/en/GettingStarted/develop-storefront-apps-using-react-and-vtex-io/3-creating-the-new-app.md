@@ -1,4 +1,4 @@
-# Creating the new app
+# 2. Creating the new app
 
 To start developing your app optimally, you need to:
 

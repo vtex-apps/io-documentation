@@ -1,4 +1,4 @@
-# Configuring your app settings
+# 3. Configuring your app settings
 
 When creating a native integration with a third party solution, it is essential to **link** it with the VTEX account for which you’re doing the integration. Without this link, you won't be able to transfer data between the store and the solution, rendering your Pixel app useless.
 

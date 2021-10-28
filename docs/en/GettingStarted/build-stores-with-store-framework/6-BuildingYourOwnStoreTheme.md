@@ -1,4 +1,4 @@
-# Building your own store theme
+# 6. Building your own store theme
 
 Throughout this track, you understood what *workspace*, *VTEX IO CLI*, *Store Theme* and *blocks* are, in addition to learning how to customize your store’s pages by configuring *templates* and defining *styles*. 
 

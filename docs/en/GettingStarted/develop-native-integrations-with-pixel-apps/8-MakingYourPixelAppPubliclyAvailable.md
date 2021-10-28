@@ -1,4 +1,4 @@
-# Making your Pixel app publicly available
+# 7. Making your Pixel app publicly available
 
 Up until now, your Pixel app is being developed in your local files, meaning it is only connected to the VTEX IO platform through your development workspace.
 

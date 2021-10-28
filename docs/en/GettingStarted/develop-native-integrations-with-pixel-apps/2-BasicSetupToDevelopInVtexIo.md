@@ -1,4 +1,4 @@
-# Setting up your development environment
+# 1. Setting up your development environment
 
 Any development in the VTEX IO platform begins and ends with the **VTEX IO CLI**. 
 
