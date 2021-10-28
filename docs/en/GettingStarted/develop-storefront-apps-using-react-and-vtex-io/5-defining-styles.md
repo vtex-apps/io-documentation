@@ -1,4 +1,4 @@
-# Defining styles
+# 4. Defining styles
 
 After defining your theme's block, it is time to think about the style you want for it, defining colors, typography, among other elements that establish the visual identity of the app when it is rendered. 
 
