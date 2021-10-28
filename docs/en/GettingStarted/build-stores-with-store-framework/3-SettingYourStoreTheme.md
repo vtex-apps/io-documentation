@@ -1,4 +1,4 @@
-# Setting your store's theme
+# 3. Setting your store's theme
 
 A store theme is every front end related to your website, from UI components to any applied customization.
 
