@@ -1,4 +1,4 @@
-# Structuring documentation
+# 5. Structuring documentation
 
 Now that you have created a component and defined its style, it is time to generate the documentation for the new app!
 
