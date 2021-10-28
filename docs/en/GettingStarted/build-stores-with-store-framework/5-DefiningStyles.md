@@ -1,4 +1,4 @@
-# Defining styles
+# 5. Defining styles
 
 Your website’s **visual style** is a fundamental resource to building your **store’s identity**. 
 
