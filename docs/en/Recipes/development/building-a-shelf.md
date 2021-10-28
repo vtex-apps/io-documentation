@@ -19,7 +19,9 @@ By installing the [Shelf app](https://developers.vtex.com/vtex-developer-docs/do
 
 Aiming to display a flexible product list in your home page, the traditional shelf component as we know is now configured using the [Product Summary List](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarylist), the [Product Summary Shelf](https://vtex.io/docs/components/all/vtex.product-summary/) and the [Slider Layout](https://vtex.io/docs/components/all/vtex.slider-layout/) blocks.
 
-:information_source: Since this 3 blocks come from the [**Product Summary**](https://github.com/vtex-apps/product-summary) and the [**Slider-Layout**](https://github.com/vtex-apps/slider-layout) app, it is strongly recommended to check out each documentation in order to understand how the blocks work as well as the props available to set their behavior and consequently the Shelf behavior. 
+>ℹ️ Info
+> 
+> Since these three blocks come from the [**Product Summary**](https://github.com/vtex-apps/product-summary) and the [**Slider-Layout**](https://github.com/vtex-apps/slider-layout) app, it is strongly recommended to check out each documentation in order to understand how the blocks work as well as the props available to set their behavior and consequently the Shelf behavior. 
 
 Check out the instructions below for how it can be done.
 
