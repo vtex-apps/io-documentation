@@ -1,4 +1,4 @@
-# Setting up your development environment
+# 1. Setting up your development environment
 
 Any development in VTEX IO begins and ends with the [**VTEX IO CLI**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference). The VTEX IO CLI works as a communication gateway between your VTEX account and the VTEX IO development platform.
 
