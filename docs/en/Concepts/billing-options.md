@@ -12,7 +12,7 @@ Below you will find more details on the properties that comprise this field.
 
 | Property | Type | Description | Valid example | 
 | --------- | ----- | --------------- | ------- | 
-| `type`  | `enum` | Defines how the app is charged. Possible values are: `free` (app is free of charge), `billable` (app charges according to one of its plans) or `sponsored` (app is meant to be used only by a [Sponsor account](https://vtex.io/docs/concepts/sponsor-account/) and its children). | `free` | 
+| `type`  | `enum` | Defines how the app is charged. Possible values are: `free` (app is free of charge), `billable` (app charges according to one of its plans) or `sponsored` (app is meant to be used only by a [Sponsor account](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-sponsor-account) and its children). | `free` | 
 | `support` | `object` | Provides a support request channel between the app’s user and its vendor. To know more, check out the `support` object section below. | `undefined` | 
 | `availableCountries` | `array` | Defines the countries ID (ISO) where the app can be installed and where support is ensured by the vendor. | `["BRA", "USA", "GBR"]` or `["*"]` *(meaning that the app is available in any country)* | 
 | `plans` | `array` | **Optional property.** Defines (in an object array) a predefined subscription plan. To know more, check out the `plans` array section below. | `undefined` | 

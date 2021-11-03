@@ -2,9 +2,9 @@
 
 A Support app enables app developers to support users having trouble with an app functionality. It behaves as a **client support tool** and must be related to a regular app or service. 
 
-Once installed in a VTEX account, these apps empower pre-defined groups of users with specific [roles](https://vtex.io/docs/concepts/roles/) to securely log in, use, and perform a different set of actions related to that role.
+Once installed in a VTEX account, these apps empower pre-defined groups of users with specific [roles](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-roles/) to securely log in, use, and perform a different set of actions related to that role.
 
-Hence, if you're a developer, by publishing a support app with the adequate [policies](https://vtex.io/docs/concepts/policies/), you can give support to your app users through the [VTEX IO Toolbelt](https://vtex.io/docs/concepts/toolbelt/) and help them hand-in-hand on their own workspace.
+Hence, if you're a developer, by publishing a support app with the adequate [policies](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-policies/), you can give support to your app users through the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference) and help them hand-in-hand on their own workspace.
 
 A Support app may always include a `support.json` file, designating the accesses a role will have in the VTEX account that installed the main app.
 

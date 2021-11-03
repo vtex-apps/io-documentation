@@ -27,9 +27,9 @@ To associate the assets of a [custom landing page](https://developers.vtex.com/v
 
 1. The URL recognizes any param named `{entity}_id` as a *content type* (e.g., `${entity}`).
 
->⚠️ *Notice that, for the URL definition, adding the name of the content type is not enough. You must also attach `_id` in the sequence.*
+>⚠️ Notice that, for the URL definition, adding the name of the content type is not enough. You must also attach `_id` in the sequence.
 
->⚠️ *If you create a URL such as `/foo/:bar`, the content will be tied to that URL since there's no param capable of being interpreted as a content type. Thus, if, for example, you access *Store Setup > CMS > Site Editor* and update the content for `/foo/skywalker`, the content related to any page matching `/foo/:bar` will be updated as well.*
+>⚠️ If you create a URL such as `/foo/:bar`, the content will be tied to that URL since there's no param capable of being interpreted as a content type. Thus, if, for example, you access *Store Setup > CMS > Site Editor* and update the content for `/foo/skywalker`, the content related to any page matching `/foo/:bar` will be updated as well.
 
 2. The page URL can have only one parameter containing a content type.
 3. The page URL can have only one parameter ending with `_id`.

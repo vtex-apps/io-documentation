@@ -1,4 +1,4 @@
-# Defining styles
+# 4. Defining styles
 
 After defining your theme's block, it is time to think about the style you want for it, defining colors, typography, among other elements that establish the visual identity of the app when it is rendered. 
 
@@ -85,7 +85,7 @@ export default function MyButton() {
 
 >ℹ️ Remember that the name of the created classes will depend on the *import* model you made (step 3 or step 4 in this section). 
 
-6. Save the changes you made and [link](https://vtex.io/docs/recipes/development/linking-an-app/) your app. 
+6. Save the changes you made and [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app/) your app. 
 
 When rendered and inspected, the component will now have the following HTML structure if you chose to follow the *import* model shown in step 3:
 

@@ -41,7 +41,7 @@ $ vtex init
 
 3. Select the `service-worker-example` option and confirm that you want to download the app to the destination you just chose:
 
-![service-worker-toolbelt](https://user-images.githubusercontent.com/52087100/122475839-a03a7c00-cf9b-11eb-8619-53db3503f2cb.png)
+![service-worker-VTEX IO CLI](https://user-images.githubusercontent.com/52087100/122475839-a03a7c00-cf9b-11eb-8619-53db3503f2cb.png)
 
 <div class="alert alert-info">
 Once you select the <code>service-worker-example</code> option, the CLI will ask you for important information about the app, such as a value for the vendor, name, title, and description. With the exception of vendor, press enter to keep each field's predefined values.

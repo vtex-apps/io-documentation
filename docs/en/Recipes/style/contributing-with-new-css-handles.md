@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs/docs/en/Recipe
 
 # Contributing with new CSS Handles
   
-A CSS Handle is a **CSS class that maps out an HTML element**. Therefore, it can be used to [customize any of the store blocks](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization) by simply using CSS classes in the store theme's code.
+A CSS Handle is a **CSS class that maps out an HTML element**. Therefore, it can be used to [customize any of the store blocks](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-css-handles-for-store-customization) by simply using CSS classes in the store theme's code.
 
 At the end of the day, they are nothing more than the store's layout building assistants. The more HTML elements with CSS Handles you have at your disposal, the better!
 
@@ -101,7 +101,7 @@ const handles = useCssHandles(CSS_HANDLES)
 ```
   
 4. Save your changes;
-5. Using your terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference/), log in to a VTEX account and use a Development workspace to [link](https://vtex.io/docs/recipes/development/linking-an-app) the app you are working on;
+5. Using your terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installment-and-command-reference/), log in to a VTEX account and use a Development workspace to [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) the app you are working on;
 6. Access the account's website through the developer workspace (`{workspaceName}--{accountName}.myvtex.com`) and inpect it to verify if the new class is really being properly rendered, making the HTML element targetable.
 
 Following our example, we would have something like:
@@ -134,7 +134,7 @@ import styles from '../searchResult.css'
 ```
 
 4. Save your changes;
-5. Using your terminal and the [VTEX IO CLI](https://vtex.io/docs/recipes/development/vtex-io-cli-installment-and-command-reference/), log in to a VTEX account and use a Development workspace to [link](https://vtex.io/docs/recipes/development/linking-an-app) the app you are working on;
+5. Using your terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installment-and-command-reference/), log in to a VTEX account and use a Development workspace to [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) the app you are working on;
 6. Access the account's website through the developer workspace (`{workspaceName}--{accountName}.myvtex.com`) and inpect it to verify if the new class is really being properly rendered, making the HTML element targetable.
 
 Following our example, we would have something like:

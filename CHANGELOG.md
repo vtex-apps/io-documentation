@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.86.5] - 2021-11-03
+
+### Added 
+- Curly brackets on the GTM variables.
+
+## [0.86.4] - 2021-10-28
+
+## [0.86.3] - 2021-10-28
+
+## [0.86.2] - 2021-10-28
+
+## [0.86.1] - 2021-10-28
+
+## [0.86.0] - 2021-10-27
+
+## [0.85.23] - 2021-10-27
+
+### Added
+- New documentation on how to migrate Google Tag Manager app from major 2.x to major 3.x.
+
+## [0.85.22] - 2021-10-26
+
+## [0.85.21] - 2021-10-26
+
+## [0.85.20] - 2021-10-20
+
+## [0.85.19] - 2021-10-20
+
 ## [0.85.18] - 2021-10-14
 
 ## [0.85.17] - 2021-10-14

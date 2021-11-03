@@ -1,4 +1,4 @@
-# Creating the new app
+# 2. Creating the new app
 
 To start developing your app optimally, you need to:
 
@@ -26,7 +26,7 @@ Having the app's code open in your code editor, let us analyze the `manifest.jso
 - `version` - App's current version. For versioning, VTEX IO uses [Semantic Versioning 2.0.0](https://semver.org/). 
 - `title` - App's distribution name. This name will be displayed on the `Apps` section in the admin and, also, on the VTEX App Store.
 - `description` - Brief description of the app's functionality. 
-- `builders` - List of [Builders](https://vtex.io/docs/concepts/builders/) that facilitate the app's development, abstracting service configurations. 
+- `builders` - List of [Builders](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-builders/) that facilitate the app's development, abstracting service configurations. 
 - `dependencies` - List of apps that the app you are developing depends on for proper functioning. 
 
 At the beginning of the process, it is very important to incorporate the new app's basic information in the `manifest.json` file in order to make it your own instead of it staying another example version provided by VTEX. To do that:

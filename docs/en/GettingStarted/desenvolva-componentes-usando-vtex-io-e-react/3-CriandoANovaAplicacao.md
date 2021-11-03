@@ -26,7 +26,7 @@ Com o código da aplicação aberto no seu editor de código, vamos analisar o a
 - `version` - Versão atual do app. Para versionamento, o VTEX IO utiliza o [Semantic Versioning 2.0.0](https://semver.org/). 
 - `title` - Nome de distribuição do app. Esse nome será usado para mostrá-lo na seção `Apps` do admin e também na VTEX App Store.
 - `description` - Breve descrição da funcionalidade do app. 
-- `builders` - Listagem dos [Builders](https://vtex.io/docs/concepts/builders/) que facilitam o desenvolvimento do app, abstraindo configurações de serviços. 
+- `builders` - Listagem dos [Builders](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-builders/) que facilitam o desenvolvimento do app, abstraindo configurações de serviços. 
 - `dependencies` - Listagem de apps dos quais o app que você está desenvolvendo é dependente para funcionar corretamente. 
 
 Neste primeiro momento, é fundamental que essas informações básicas do novo app sejam alteradas no arquivo `manifest.json` para que ele se torne devidamente seu e não mais uma versão exemplo disponibilizada pela VTEX. Para isso:

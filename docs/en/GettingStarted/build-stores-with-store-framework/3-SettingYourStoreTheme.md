@@ -1,4 +1,4 @@
-# Setting your store's theme
+# 3. Setting your store's theme
 
 A store theme is every front end related to your website, from UI components to any applied customization.
 
@@ -13,7 +13,7 @@ The Store Theme app will define your store's theme by:
   
 >⚠️Before installing the Store Theme app, make sure your VTEX account has the Store Edition app installed, as recommended in this track's second step. Otherwise, you won't be able to successfully implement the VTEX Store Framework.
 
-VTEX IO Toolbelt offers the `vtex init` command which can quickly copy the Store Theme app repository to your computer, where it may be configured and fine-tuned according to your business needs.
+The VTEX IO CLI offers the `vtex init` command which can quickly copy the Store Theme app repository to your computer, where it may be configured and fine-tuned according to your business needs.
 
 1. Using your terminal, navigate to an already existing local files directory where you want Store Theme to be copied to:
 
@@ -31,15 +31,15 @@ $ vtex init
 
 3. Select the `store` option and confirm that you want to download the theme folder to the destination you just chose:
 
-![toolbelt-store-theme-selection](https://user-images.githubusercontent.com/67270558/125138057-50eff300-e0e4-11eb-801e-607f1954244f.png)
+![VTEX IO CLI-store-theme-selection](https://user-images.githubusercontent.com/67270558/125138057-50eff300-e0e4-11eb-801e-607f1954244f.png)
 
->ℹ️ Once you select the `store` option, Toolbelt will ask you if you want to continue to create the new folder, by typing `y` it will clone a `minimum-boilerplate-theme` to your folder.
+>ℹ️ Once you select the `store` option, VTEX IO CLI will ask you if you want to continue to create the new folder, by typing `y` it will clone a `minimum-boilerplate-theme` to your folder.
 
 4. On the `manifest.json` file, replace the predefined `vendor` value with the account name of the store that you are developing so that you'll be able to correctly publish its theme app later on. 
 
 ## Step 2 - Understanding the Store Theme's structure
 
-Once you select the `store` option, Toolbelt will create a copy of the Store Theme app in your local files, allowing you to work on it as you please.
+Once you select the `store` option, VTEX IO CLI will create a copy of the Store Theme app in your local files, allowing you to work on it as you please.
 
 Open the newly created Store Theme folder in your local files using any code editor, such as Visual Studio Code. You can also use your terminal directly to achieve the same result:
 
@@ -51,7 +51,7 @@ To better understand the app's structure, let's have a closer look at its files 
 
 ![Repository tree](https://user-images.githubusercontent.com/52087100/61887339-ce120580-aed7-11e9-8c7b-eb55d12def2b.png)
 
-- **`manifest.json`** - App's main file. It stores important metadata, such as the app's _vendor_, name, version, [dependencies](https://vtex.io/docs/concepts/dependencies/) and builders(https://vtex.io/docs/concepts/builders/).
+- **`manifest.json`** - App's main file. It stores important metadata, such as the app's _vendor_, name, version, [dependencies](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-dependencies/) and builders(https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-builders/).
 - **`store`** - Folder responsible for defining the store's templates. It's where you configure each page's components and properties. 
 - **`styles`**: folder responsible for setting the store's visual theme. It's where you configure colors, typography and anything related to the store's style. 
 

@@ -60,7 +60,7 @@ The way out of this scenario is to **hide the custom image** that's linked to th
 },
 ```
 
-> ⚠️ *Remember to replace the value inserted in the brackets with real values, according to your SKU label.*
+>⚠️ Remember to replace the value inserted in the brackets with real values, according to your SKU label.
 
 Consequently, you'll be able to configure a customized image exclusively for your SKU selector component, without it affecting your store's layout or that of the SKU images displayed to users.
 

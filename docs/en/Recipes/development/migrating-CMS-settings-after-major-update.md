@@ -25,4 +25,4 @@ mutation{
 ```
 
 8. Open the workspace and validate content, routes, pages, and redirects.
-9. If everything goes as expected, [promote your workspace to master](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master/).
+9. If everything goes as expected, [promote your workspace to master](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-promoting-a-workspace-to-master/).

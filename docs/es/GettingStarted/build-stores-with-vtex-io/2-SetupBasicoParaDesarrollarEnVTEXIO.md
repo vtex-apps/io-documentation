@@ -1,8 +1,8 @@
 # *Setup* básico para desarrollar en VTEX IO
  
-Todo desarrollo en VTEX IO comienza con [**Toolbelt**](*link*), nuestra CLI (Command Line Interface) que permite iniciar sesión, desarrollar nuevos [apps](*link*) y gestionar los ya instalados.
+Todo desarrollo en VTEX IO comienza con [**VTEX IO CLI**](*link*), nuestra CLI (Command Line Interface) que permite iniciar sesión, desarrollar nuevos [apps](*link*) y gestionar los ya instalados.
 
-## VTEX IO Toolbelt
+## VTEX IO CLI
 
 Para instalar la CLI de VTEX IO, debe asegurarse de que su computadora tenga [Node.js](https://nodejs.org/) e [Yarn](https://yarnpkg.com/) instalados.
 
@@ -28,7 +28,7 @@ Esto abrirá una ventana de su navegador que solicitará sus credenciales.
 
 Una vez que haya iniciado sesión, puede usar el comando `vtex whoami` para averiguar cuál cuenta y *workspace* están siendo utilizados por el terminal.
 
-<img width="876" alt="toolbelt-whoami" src="https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png">
+<img width="876" alt="VTEX IO CLI-whoami" src="https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png">
 
 ## Creando su propio *workspace*
 
@@ -40,12 +40,12 @@ Cuando inicia sesión en una tienda, está automáticamente en el *workspace* ma
 $ vtex use {nombreejemplo}
 ```
 
-Esto cambia su Toolbelt a un *workspace* llamado `nombreejemplo` y lo crea si este no existe.
+Esto cambia su VTEX IO CLI a un *workspace* llamado `nombreejemplo` y lo crea si este no existe.
 
 <img width="436" alt="workspace-nombreejemplo ES" src="https://user-images.githubusercontent.com/52087100/63979676-d1c51900-ca8f-11e9-826b-43293439e630.png">
 
 <div class="alert alert-warning">
-<code>vtex use</code> hace que todas sus operaciones se produzcan en el <i>workspace</i> definido en el comando. Esto significa que es posible alternar sus operaciones para master apenas ejecutando en Toolbelt <code>vtex use master</code>, por ejemplo.
+<code>vtex use</code> hace que todas sus operaciones se produzcan en el <i>workspace</i> definido en el comando. Esto significa que es posible alternar sus operaciones para master apenas ejecutando en VTEX IO CLI <code>vtex use master</code>, por ejemplo.
 </div>
 
 Con su propio *workspace* de desarrollo creado, puede navegar en su tienda accediendo a: 

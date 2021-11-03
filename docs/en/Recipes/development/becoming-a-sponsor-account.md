@@ -20,7 +20,7 @@ To be eligible to become a Sponsor account, make sure the respective account has
 - Access to multiple accounts hierarchically related to each other. For example, the main VTEX account of a holding or the account of a brand with many sub-brands.
 - An Edition App published by `vtex` installed on your account (`vtex.edition-business@0.x` or `vtex.edition-store@2.x`)
 
-> ⚠️ *You can check the Edition App installed on your account by running `vtex edition get` in your terminal. If you see the following error `Message: Edition not set`, [open a support ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) requesting the installation of either the `vtex.edition-business@0.x` or `vtex.edition-store@2.x`. See [Edition App](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for more information.*
+>⚠️ You can check the Edition App installed on your account by running `vtex edition get` in your terminal. If you see the following error `Message: Edition not set`, [open a support ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) requesting the installation of either the `vtex.edition-business@0.x` or `vtex.edition-store@2.x`. See [Edition App](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for more information.*
 
 ## Step by step
 

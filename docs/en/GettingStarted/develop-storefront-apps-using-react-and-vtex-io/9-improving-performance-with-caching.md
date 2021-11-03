@@ -1,10 +1,10 @@
-# Improving performance with caching
+# 8. Improving performance with caching
  
 Repeated searches for similar data can become an expensive and frustrating investment as they require a high number of responses from the server to deliver the requested information. 
  
 That is why the **ability to use *cache* and reuse data previously obtained on the server can be a critical point for optimizing your front app's performance and, consequently, your website**.
  
-The VTEX IO development platform already applies advanced *cache* techniques to the [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/) using the Apollo *cache* as a search and data management solution capable of interacting with VTEX's GraphQL services.
+The VTEX IO development platform already applies advanced *cache* techniques to the [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3) using the Apollo *cache* as a search and data management solution capable of interacting with VTEX's GraphQL services.
  
 We highly recommended using the [Apollo solution](https://www.apollographql.com/docs/react/caching/cache-configuration/) in your app and, that way, define your own *cache* strategies that mold to the business scenario that applies to your store. 
  

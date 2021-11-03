@@ -4,7 +4,7 @@ Buscas repetida por dados semelhantes podem se tornar um investimento caro e fru
 
 Por isso, a **habilidade de usar *cache* e reutilizar dados já previamente obtidos no servidor pode ser um ponto crítico para a otimização da performance da sua aplicação de front e, consequentemente, do seu website**. 
 
-A plataforma de desenvolvimento VTEX IO já aplica técnicas avançadas de *cache* no [Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/), usando o *cache* Apollo como solução de busca e gerenciamento de dados capaz de interagir com os serviços GraphQL da VTEX. 
+A plataforma de desenvolvimento VTEX IO já aplica técnicas avançadas de *cache* no [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3), usando o *cache* Apollo como solução de busca e gerenciamento de dados capaz de interagir com os serviços GraphQL da VTEX. 
 
 É altamente recomendável que você use a [solução Apollo](https://www.apollographql.com/docs/react/caching/cache-configuration/) na sua aplicação e assim defina estratégias próprias de *cache* de acordo com o cenário de negócio da sua loja.  
 

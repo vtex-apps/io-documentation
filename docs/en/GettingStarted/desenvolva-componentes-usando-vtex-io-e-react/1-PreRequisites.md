@@ -1,6 +1,6 @@
 # Desenvolva componentes usando VTEX IO e React
 
-Por meio de blocos React customizáveis e de alta qualidade, o [VTEX Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/) fornece a estrutura necessária para a construção do *front* do seu website, possibilitando experiências de compras abrangentes que nunca envelhecem.
+Por meio de blocos React customizáveis e de alta qualidade, o [VTEX Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3) fornece a estrutura necessária para a construção do *front* do seu website, possibilitando experiências de compras abrangentes que nunca envelhecem.
 
 Contudo, é possível que você sinta a necessidade de desenvolver novos componentes capazes de solucionar problemas de *front* mais específicos, ainda não atendidos pelos nossos nativos.
 

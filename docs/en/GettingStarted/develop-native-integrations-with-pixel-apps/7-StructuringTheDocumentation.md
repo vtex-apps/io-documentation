@@ -1,4 +1,4 @@
-# Structuring the documentation
+# 6. Structuring the documentation
 
 Now that your Pixel app is defined, it is time to create its **documentation**! 
 
@@ -11,4 +11,4 @@ Knowing this, the VTEX IO team provides a documentation **template** to help you
 
 In the `README.md` file, you will find several recommendations to your documentation. Read them carefully and make the updates according to your scenario.  
 
-> ℹ️ *Keep in mind that documentation is a ongoing process: update your app's `README.md` file whenever a new release impacts the user experience*. 
+>ℹ️ Keep in mind that documentation is a ongoing process: update your app's `README.md` file whenever a new release impacts the user experience. 

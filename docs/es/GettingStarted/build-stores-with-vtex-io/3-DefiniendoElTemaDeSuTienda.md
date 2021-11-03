@@ -8,7 +8,7 @@ El [**Store Theme**](*link*) es un tema estándar aplicable para todas las tiend
 
 Esto significa que el Store Theme es un tema estándar responsable de definir la apariencia básica del *front* de su tienda.
 
-El Toolbelt de VTEX IO ofrece un comando `vtex init` que puede copiar rápidamente el Store Theme en su computadora para que pueda configurarlo y personalizarlo de acuerdo con las necesidades de su negocio.
+El VTEX IO CLI de VTEX IO ofrece un comando `vtex init` que puede copiar rápidamente el Store Theme en su computadora para que pueda configurarlo y personalizarlo de acuerdo con las necesidades de su negocio.
 
 >Tenga en cuenta que debe instalar las siguientes aplicaciones con los siguientes comandos: 
 
@@ -36,14 +36,14 @@ Luego, usted recibirá informaciones importantes sobre el Store Theme, como *ven
 Reemplace el valor predeterminado de <i>vendor</i> con el nombre de la cuenta de la tienda en que está desarrollando para que posteriormente pueda publicar correctamente el tema en esta.
 </div>
 
-<img width="942" alt="toolbelt-store-theme-selection " src="https://user-images.githubusercontent.com/52087100/61887063-3d3b2a00-aed7-11e9-92b8-653c4972a218.png">
+<img width="942" alt="VTEX IO CLI-store-theme-selection " src="https://user-images.githubusercontent.com/52087100/61887063-3d3b2a00-aed7-11e9-92b8-653c4972a218.png">
 
 ## *Linkeando* su código local a VTEX IO
 
 Ahora que el Store Theme se ha copiado en sus archivos locales, debe ejecutar el comando `cd store-theme` en su terminal. Luego, ejecute `vtex link` para ver que se compile y publique el tema en la cuenta y el *workspace* que acaba de crear.
 
 <div class="alert alert-warning">
- Ejecute <code>vtex whoami</code> para asegurarse de estar en la cuenta correcta y en un <i>workspace</i> de desarrollo. De lo contrario, el Toolbelt no aceptará el link directo con el master.
+ Ejecute <code>vtex whoami</code> para asegurarse de estar en la cuenta correcta y en un <i>workspace</i> de desarrollo. De lo contrario, el VTEX IO CLI no aceptará el link directo con el master.
 </div>
 
 ```
@@ -54,7 +54,7 @@ $ cd store-theme
  $ vtex link
 ```
 
-<img width="910" alt="toolbelt-vtex-link" src="https://user-images.githubusercontent.com/52087100/61887229-9dca6700-aed7-11e9-9934-030a153b75b6.png">
+<img width="910" alt="VTEX IO CLI-vtex-link" src="https://user-images.githubusercontent.com/52087100/61887229-9dca6700-aed7-11e9-9934-030a153b75b6.png">
   
 Al *linkear* el Store Theme, los archivos locales de su computadora se sincronizan con la plataforma VTEX IO. Esto significa que cualquier alteración que realice localmente en el código será enviada y reflejada en su <i>workspace</i>.
 

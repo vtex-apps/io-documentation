@@ -30,6 +30,6 @@ Work with familiar and highly productive technologies like TypeScript, React, Gr
 
 Leveraging from the VTEX IO platform, the **VTEX IO Store Framework solution delivers the needed foundations for any storefront structure**. 
 
-It provides you with high quality, customizable React [store blocks](https://vtex.io/docs/components/all) so that you can build (in the fastest possible go-to-market time) comprehensive shopping experiences that never get old.
+It provides you with high quality, customizable React [store blocks](https://developers.vtex.com/vtex-developer-docs/docs/overview-5) so that you can build (in the fastest possible go-to-market time) comprehensive shopping experiences that never get old.
 
 > Now that you've understood what VTEX IO and VTEX IO Store Framework are, dig deeper: check out the answers to the most frequently asked questions about the platform [here](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-frequently-asked-questions).

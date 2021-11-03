@@ -45,9 +45,9 @@ Notice that, for providing a fast response, caching is enabled by default. Howev
 
 ![major](https://user-images.githubusercontent.com/60782333/102230433-9ee4a580-3ecb-11eb-8926-6b5c44750123.png)
 
-Run `vtex ls` to check which apps are included on the [Edition App](https://vtex.io/docs/concepts/edition-app/) installed on your account. If you see the app you're trying to install with another major, you might have an issue with the Edition App installed on your account.
+Run `vtex ls` to check which apps are included on the [Edition App](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app/) installed on your account. If you see the app you're trying to install with another major, you might have an issue with the Edition App installed on your account.
 
-In this case, consider [opening a support ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to change the Edition App installed on an account. First, go to the [Edition App](https://vtex.io/docs/concepts/edition-app/) doc to learn more about the available Edition Apps.
+In this case, consider [opening a support ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to change the Edition App installed on an account. First, go to the [Edition App](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app/) doc to learn more about the available Edition Apps.
 </details>
 
 ## I can't create a new workspace

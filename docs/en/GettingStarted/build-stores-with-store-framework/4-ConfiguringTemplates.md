@@ -1,4 +1,4 @@
-# Configuring templates
+# 4. Configuring templates
 
 **We call a template your website's page structure.** 
 
@@ -26,7 +26,7 @@ As we have previously seen, the folder responsible for organizing your store’s
 
 In it, you can declare all your blocks in the `blocks.jsonc` file or create as many `blocks.jsonc` files and folders as you want. You can also declare blocks using the `blocks` subfolder. The only difference between the two folders is that `jsonc` files allow you to comment in the code.
 
-As previously mentioned, blocks are pieces of code exported by VTEX Store Framework apps. This means that whenever a block is used in your theme, the app behind it must be declared in your Store Theme [dependencies](https://vtex.io/docs/concepts/dependencies/) list.
+As previously mentioned, blocks are pieces of code exported by VTEX Store Framework apps. This means that whenever a block is used in your theme, the app behind it must be declared in your Store Theme [dependencies](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-dependencies/) list.
  
 Have a look at the `manifest.json` file from the Store Theme app. You'll come across an object called `dependencies` which contains the names of several apps and their respective versions. These apps are already listed, since the default Store Theme code already declared templates which in turn use blocks that these apps export.
 
@@ -200,7 +200,7 @@ This block is responsible for rendering a component that displays markdown texts
 
 As we can see, the `rich-text#block` block is using two props: `text` and `blockClass`. These are responsible for defining which text the component will display and for defining an ID that will be used for its customization - as we will see in the next step of this track.
 
-You can now take a look at the [documentation](https://vtex.io/docs/components/all/vtex.rich-text) of the app behind the block (also called Rich Text) and check the available props table in the Configuration section. 
+You can now take a look at the [documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text) of the app behind the block (also called Rich Text) and check the available props table in the Configuration section. 
 
 When looking at the documentation, you'll notice that the exported block's name is merely `rich-text`, however Store Theme uses `rich-text#block`. This is due to the fact that we can use a `#` after the block's official name to easily identify when inserting it in our theme's code, thereby better organizing the theme itself.
 

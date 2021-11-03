@@ -23,7 +23,7 @@ Finally, you may want to remove your landing page from the *default binding*. Fo
 
 ## Step by step
 
-> ⚠️ *Before proceeding any further with this step by step, [check your account's `binding` ids](https://developers.vtex.com/docs/checking-your-stores-binding-id) and keep the returned data with you. This information will be crucial for successfully performing the following steps.*
+>⚠️ Before proceeding any further with this step by step, [check your account's `binding` ids](https://developers.vtex.com/docs/checking-your-stores-binding-id) and keep the returned data with you. This information will be crucial for successfully performing the following steps.
 
 ### Linking a landing page to a binding
 
@@ -53,7 +53,7 @@ Finally, you may want to remove your landing page from the *default binding*. Fo
 }
 ```
 
-> ⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
+>⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
 5. Save the returned data.
 6. Erase the previous query and fill in the main text box with the following mutation command.
@@ -114,7 +114,7 @@ mutation deleteInternal($args:RouteLocator){
 }
 ```
 
-> ⚠️ *Remember to replace the values between the curly brackets according to your scenario.*
+>⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
 4. Click on *Query Variables* at the bottom of the page and, according to your scenario, fill in the *Query Variables* section as in the following:
 
