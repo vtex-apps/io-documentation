@@ -9,8 +9,6 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Configuring custom images for the SKU Selector
 
-## Introduction
-
 By default, the [SKU selector](https://vtex.io/docs/app/vtex.store-components/sku-selector) component uses **thumbnail images of SKU** when rendered.
 
 ![sku-selector-images](https://user-images.githubusercontent.com/52087100/68624704-30f2d100-04b6-11ea-852b-df2dd140a09c.png)
@@ -76,9 +74,6 @@ Follow the next step-by-step on how to configure the SKU color variations.
 1. Access your store's Admin.
 2. Go to **Catalog** > **Categories**.
 3. Choose the desired categorie and in `ACTIONS` click on **Field(SKU)**
-
-![field-sku](https://user-images.githubusercontent.com/67270558/137759078-87993cd2-28aa-4dd5-8e48-c6953af54ac7.gif)
-
 4. In **Field** click in the group's `Edit` and in the fields **Name** and **Text** complete with a color variation name which you can check the values in the [SKU Selector component](https://github.com/vtex-apps/store-components/blob/e130859a02e5c5d5e9deb9494bde9cfb6a0babc2/react/components/SKUSelector/utils/index.ts#L50-L72). For example:
 
 ![color-name](https://user-images.githubusercontent.com/67270558/137756255-4eee1339-e51f-4861-a7fa-72b1f684ed7c.png)
