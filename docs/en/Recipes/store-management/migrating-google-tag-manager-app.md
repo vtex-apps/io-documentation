@@ -4,6 +4,27 @@ Version 3.x of VTEX’s Google Tag Manager (GTM) app, tracks the entire user’s
 
 Follow the steps below to update the GTM container and fetch the data from the `ecommerceV2` variable.
 
+## Product schema changes
+
+To make the product information consistent across all store areas and help capture the entire user's journey on the store, we have included new properties and rearranged a few of them to the new schema used to represent the events.
+
+- Properties of the new schema:
+
+> 🆕 - New property | 🔁 - Renewed property | ⏸ - Unchanged property
+
+| Prop name     | Description   |
+| ------------- | ------------- | 
+| 🔁 `id`| Product ID - Previously SKU ID | 
+| 🔁 `variant`| SKU ID - Previously SKU Name|
+| 🔁 `name`| Product Name - Previously Product Name or SKU Name| 
+| ⏸ `quantity`| Product Quantity  |
+| ⏸ `price`| Product Price  |
+| ⏸ `category`| Product Brand  |
+| ⏸ `brand`| Product Quantity  |
+| 🆕 `dimension1`| Product Reference ID  |
+| 🆕 `dimension2`| SKU Reference ID   |
+| 🆕 `dimension3`| SKU Name (does not include the Product Name)  |
+
 ### Creating `ecommerceV2`
 
 1. Log in to your [GTM account](https://tagmanager.google.com) and click on the GTM container you want to work with.
