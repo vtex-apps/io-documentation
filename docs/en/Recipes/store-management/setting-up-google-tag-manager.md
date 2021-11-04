@@ -197,9 +197,9 @@ To create a tag, click on **Tags** in the left menu and then on **New**:
 2. Choose **Google Ads Conversion Tracking**;
 3. Fill in the fields `Conversion ID` and `Conversion Label` according to what is instructed by the Google Ads panel;
 4. Fill in the following fields with Data Layer variables:
-  - `Conversion Value`: {Data Layer Variable - transactionTotal}
-  - `Order ID`: {Data Layer Variable - transactionId}
-  - `Currency Code`: {Data Layer Variable - currency}
+  - `Conversion Value`: {{Data Layer Variable - transactionTotal}}
+  - `Order ID`: {{Data Layer Variable - transactionId}}
+  - `Currency Code`: {{Data Layer Variable - currency}}
   
 >⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
