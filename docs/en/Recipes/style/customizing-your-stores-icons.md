@@ -40,4 +40,4 @@ After [linking](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-doc
 Check out each icon's ID by accessing the [Icon Pack list](https://github.com/vtex-apps/store-icons/blob/cbbb1b82bfca247a811d146b1e2cafb642db1928/docs/ICONPACK.md). 
 
 >⚠️ If you've linked your code and haven't seen your changes, it may be because your `Styles builder` is not up-to-date with this functionality. Make sure your store has it installed at version <bold>1.8.1</bold> or higher. 
->⚠️  A workspace can only have a single app that contains iconpack customization. 
+>⚠️  A workspace can have only a single app installed that contains the iconpack customization. 
