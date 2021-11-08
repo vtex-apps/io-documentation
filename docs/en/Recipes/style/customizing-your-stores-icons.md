@@ -23,6 +23,8 @@ Although these can satisfy your store’s needs, you may want to override and cu
 
 >⚠️ The maximum size allowed for icons is `20x20`.
 
+>⚠️  A [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) can **only** have a single app installed that contains the `iconpack` customization. 
+
 This is how your `styles/` folder structure should look like after you've accomplished that: 
 
 ![iconpack-folder](https://user-images.githubusercontent.com/52087100/64298990-d2592600-cf4d-11e9-994c-eaefd317f9ef.png)
