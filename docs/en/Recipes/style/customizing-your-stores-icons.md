@@ -23,6 +23,8 @@ Although these can satisfy your store’s needs, you may want to override and cu
 
 >⚠️ The maximum size allowed for icons is `20x20`.
 
+>⚠️  A [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) can **only** have a single app installed that contains the `iconpack` customization. 
+
 This is how your `styles/` folder structure should look like after you've accomplished that: 
 
 ![iconpack-folder](https://user-images.githubusercontent.com/52087100/64298990-d2592600-cf4d-11e9-994c-eaefd317f9ef.png)
@@ -32,8 +34,6 @@ The `iconpack.svg` file will implement [SVG frament identifiers](https://css-tri
 For instance, let's customize the cart icon (`hpa-cart`) changing only its `g` content: 
 
 ![image](https://user-images.githubusercontent.com/18701182/61139096-0dcffa80-a49f-11e9-8ff9-4c4f805a2738.png) 
-
->⚠️  A [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) can **only** have a single app installed that contains the `iconpack` customization. 
 
 After [linking](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) your app, you should see the changes in the browser:
 
