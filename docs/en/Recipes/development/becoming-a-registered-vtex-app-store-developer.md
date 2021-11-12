@@ -47,6 +47,6 @@ After submitting the request to be a seller, you can check its `status` until ou
 
 ## Next Steps
 
-- [Submitting your app to the VTEX app store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-submitting-your-app-in-the-vtex-app-store)
+- [Submitting your app to the VTEX App Store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-submitting-your-app-in-the-vtex-app-store)
 
 
