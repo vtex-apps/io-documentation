@@ -1,5 +1,5 @@
 ---
-title: Submitting your app in the VTEX app store
+title: Submitting your app to the VTEX app store
 description: "Learn how to submit your project to the VTEX App Store, the VTEX marketplace for plug-and-play solutions."
 date: "2020-09-11"
 tags: ["app-store", "app", "development", "publish"]
@@ -7,64 +7,25 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/submitting-your-app-in-the-vtex-app-store.md"
 ---
 
-#  Submitting your app in the VTEX app store
+#  Submitting your app to the VTEX App Store
 
-The [**VTEX App Store**](https://apps.vtex.com/) is a marketplace for VTEX IO plug-and-play solutions. It can be used by any VTEX partners willing to **share their solutions** with other VTEX users so they can also **leverage their business**. 
-
-As expected from something carrying the VTEX brand, the app store has a structured homologation process that makes developed apps available to the entire ecosystem.
+To share your solutions in the VTEX App Store, you must follow our homologation process:
  
-The process comprises the following steps, along with required actions for each.
+1. Check out our business, design and engineering guidelines.
+2. Send the app's data for validation.
+3. Wait for the App homologation.
+
+## Before you start
+
+Before submitting your app to the VTEX App Store, you must be a registered VTEX App Store developer. For more information, check [this guide.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-becoming-a-registered-vtex-app-store-developer)
 
 ##  Step by step
 
-Adding an app to the VTEX app store is based on four main steps:
-
-1. Express your interest to our team
-2. Sign our commercial agreement
-3. Register as a VTEX App Store seller
-4. Check out our business, design and engineering guidelines 
-5. Send the app's data for validation
-6. Wait for the App homologation
-
-###  Step 1 - Expressing your interest
-
-Fill out the [Application form](https://forms.gle/wpkXMxgSfCXwMPbs8) to **share your interest** in publishing your application or integration on the VTEX App Store.
-
-The form will help our team to understand the best approach and prioritize the publication demands.
-
-###  Step 2 - Signing our commercial agreement
-
-If the form was correctly filled out and the team agrees that the application is suitable for the VTEX App Store, the next step is to sign a commercial agreement with VTEX.
-
-This contract, provided by the VTEX team to you, will grant VTEX distribution rights over the app. In addition, it is going to sign your account up to the VTEX **Network Partner Program** if you are not already a member.
-
->ℹ️ The [Network Partner Program](https://network.vtex.com/terms_of_use) provides access to a VTEX account, allowing you to test and develop new apps and have access to tech support from the VTEX partner team.
-
-### Step 3 - Registering as a VTEX App Store seller
-
-The App Store is a **Marketplace**. Therefore, partners looking to distribute their apps should register as a  **seller** there. 
-
-This [structure](https://help.vtex.com/tutorial/configuring-the-marketplace-between-vtex-stores--tutorials_6520) (seller - marketplace) configuration is done through the `vtex.app-store-seller` app.
-
-Follow the steps below to register as a new seller on VTEX App Store:
-
-1. Logged into the VTEX account in which you are working, run `vtex install vtex.app-store-seller` in your terminal.
-2. Access the admin of the VTEX account in which you're working. 
-3. In `Other`, access `Seller setup` and fill out the required fields.
-4. Select the sales channel you intend to use to connect to the App Store.
-5. Choose an affiliate ID, made up of 3 consonants:
-
-![submitting-seller-1](https://user-images.githubusercontent.com/52087100/92964918-48d71080-f44b-11ea-8929-b744915e3fb0.png)
-
-![submitting-seller-2](https://user-images.githubusercontent.com/52087100/92964922-4a083d80-f44b-11ea-886d-39eac7a3cee0.png)
-
-After submitting the request to be a seller, you can check its `status` until our team approves it. This approval is required in order to complete the next steps and be able to successfully publish your app on the VTEX App Store.
-
-### Step 4 - Checking out our business, design and engineering guidelines
+### Step 1 - Checking out our business, design and engineering guidelines
 
 To submit and publish your app on VTEX App Store, you must follow our business, design and engineering guidelines. These guidelines guarantee the standard of quality, viability and usability of all apps made available to our tenants through the VTEX App Store, so it is important that you are aware of them before submitting your extension for the homologation process. You can check in [Business guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-vtex-app-store), [Design guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-design-guidelines), [Engineering guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-engineering-guidelines).
 
-### Step 5 - Sending the app data for validation
+### Step 2 - Sending the app data for validation
 
 Once you've configured the app assets, it is time to submit the app's data for evaluation by the app store development team. First of all, you'll need to meet the following prerequisites:
 
@@ -88,7 +49,7 @@ When a branch has the adjustments it needs, you should open a _Pull Request_ to 
 
 ![submitting-github-pr](https://user-images.githubusercontent.com/52087100/92964912-470d4d00-f44b-11ea-8c2b-e09a13093da6.png)
 
-###  Step 6 - Waiting for the app homologation
+###  Step 3 - Waiting for the app homologation
 
 Once the app data has been sent in the PR, our product team will validate it in order to approve and merge it.
 
