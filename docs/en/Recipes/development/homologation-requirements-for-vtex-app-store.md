@@ -11,8 +11,11 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 Before submitting your app to the homologation process and [making it available in the App Store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-10-making-your-app-publicly-available#submitting-your-app-to-the-vtex-app-store), you must ensure that your app complies with the following guidelines:
 
-* [Business guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-vtex-app-store)
-* [Design guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-design-guidelines)
-* [Engineering guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-engineering-guidelines)
+- **Business guidelines**
+  - [App monetization](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-app-monetization)
+  - [Self-service level](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-self-service-level)
+  - [Marketing assets](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-marketing-assets)
+- [**Design guidelines**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-design-guidelines)
+- [**Engineering guidelines**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-engineering-guidelines)
 
 These guidelines describe the business, design, and engineering requirements enforced by the VTEX App Store to guarantee the quality, viability, and usability of VTEX apps.
