@@ -44,3 +44,9 @@ Follow the steps below to register as a new seller on VTEX App Store:
 ![submitting-seller-2](https://user-images.githubusercontent.com/52087100/92964922-4a083d80-f44b-11ea-886d-39eac7a3cee0.png)
 
 After submitting the request to be a seller, you can check its `status` until our team approves it. This approval is required in order to complete the next steps and be able to successfully publish your app in the VTEX App Store.
+
+## Next Steps
+
+- [Submitting your app to the VTEX app store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-submitting-your-app-in-the-vtex-app-store)
+
+
