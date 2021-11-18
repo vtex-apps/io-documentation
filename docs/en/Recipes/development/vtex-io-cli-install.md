@@ -17,7 +17,11 @@ According to your operating system, take the respective steps to install VTEX IO
   
   
 <li><strong>Brew</strong></li>
-
+</br>
+  
+  > ⚠️ Warning
+  >
+  > For machines running on Apple M1 chip, before installing VTEX IO CLI, install [Rosetta](https://support.apple.com/en-us/HT211861) and enable the machine to use the command-line interface for a Mac with an Intel processor.  To install Rosetta, run the following in your terminal: `/usr/sbin/softwareupdate --install-rosetta --agree-to-license`.
   
   1. Install **Homebrew** by following the instructions on [**Homebrew website**](https://brew.sh/index).
 
