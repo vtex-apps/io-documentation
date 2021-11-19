@@ -14,7 +14,7 @@ According to your operating system, take the respective steps to install VTEX IO
 <details>
   <summary><span class="fa fa-apple">&nbsp;</span>MacOS</summary>
 <br>
-  
+
 - **Brew**
 
   > ⚠️ Warning
