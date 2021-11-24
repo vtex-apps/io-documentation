@@ -203,5 +203,5 @@ To create a tag, click on **Tags** in the left menu and then on **New**:
   
 >⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
-5. In the **Triggering** box, choose the `All Pages` trigger;
+5. In the **Triggering** box, select the `Custom Event - orderPlaced` trigger;
 6. Save the new tag as **Google Ads Conversion Tracking**.
