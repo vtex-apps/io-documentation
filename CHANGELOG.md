@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+- Triggering box choice in Google Ads Conversion Tracking section: from `All Pages` to `Custom Event - orderPlaced trigger`
+
 ## [0.86.14] - 2021-11-19
 
 ## [0.86.13] - 2021-11-18
