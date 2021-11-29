@@ -12,6 +12,8 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 In some situations, especially in B2B accounts, it is necessary to segment the products that will appear to the user based on information, such as email.
 See the example below. For each user entered, the search result is different.
 
+![Segmented Catalog B2B](https://user-images.githubusercontent.com/40380674/143891928-0865937e-c4f6-4a07-9448-0a723fce580b.gif)
+
 ## Setup
 Creating segmentation rules is easy and customizable. First of all, install the following apps in your test workspace.
 ```
