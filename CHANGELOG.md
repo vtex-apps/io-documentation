@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- `Segmenting search result` recipe.
+
 ## [0.86.29] - 2021-12-28
 
 ## [0.86.28] - 2021-12-23
