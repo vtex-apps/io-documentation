@@ -34,7 +34,7 @@ interface SearchSegmentInput {
     userEmail?: string
     // Whether the user is authenticated or not.
     isAuthenticated?: boolean
-    // Arrrao of selected facets (optionally you can control it by the session itself)
+    // Array of selected facets (optionally you can control it by the session itself)
     selectedFacets?: SelectedFacet[]
 }
 ```
