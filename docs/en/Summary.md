@@ -2,7 +2,7 @@
 
 - Introduction
 
-  - [What is VTEX IO](introduction/what-is-vtex-io)
+  - [What is VTEX IO](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-io)
   - [What is VTEX Store Framework](introduction/what-is-vtex-store-framework)
   - [FAQ](introduction/frequently-asked-questions)
 
@@ -22,16 +22,6 @@
     - [Listening to store events](getting-started/develop-native-integrations-with-pixel-apps/6)
     - [Structuring the documentation](getting-started/develop-native-integrations-with-pixel-apps/7)
     - [Making your Pixel app publicly available](getting-started/develop-native-integrations-with-pixel-apps/8)
-  - [Desenvolva componentes usando VTEX IO e React](getting-started/desenvolva-componentes-usando-vtex-io-e-react/1)
-    - [Configurações básicas para desenvolver no VTEX IO](getting-started/desenvolva-componentes-usando-vtex-io-e-react/2)
-    - [Criando a nova aplicação](getting-started/desenvolva-componentes-usando-vtex-io-e-react/3)
-    - [Declarando um bloco de tema](getting-started/desenvolva-componentes-usando-vtex-io-e-react/4)
-    - [Definindo estilos](getting-started/desenvolva-componentes-usando-vtex-io-e-react/5)
-    - [Consumindo dados](getting-started/desenvolva-componentes-usando-vtex-io-e-react/6)
-    - [Traduzindo o componente](getting-started/desenvolva-componentes-usando-vtex-io-e-react/7)
-    - [Estruturando a documentação](getting-started/desenvolva-componentes-usando-vtex-io-e-react/8)
-    - [Aperfeiçoando o desempenho com cache](getting-started/desenvolva-componentes-usando-vtex-io-e-react/9)
-    - [Tornando a sua aplicação publicamente disponível](getting-started/desenvolva-componentes-usando-vtex-io-e-react/10)
 
 - Concepts
 
