@@ -25,7 +25,7 @@ Without `billingOptions`, VTEX IO will understand that the app in question shoul
 
 ## Setting my app as public
 
-If your decide for your app to be public, you must also define if its users should be charged or not. 
+If you want to make your app publicly available, you must also define if the users of your app should be charged or not. 
 
 For both scenarios, you will need to understand how to structure the `billingOptions` field and use its properties. Before executing the instructions according to the desired scenario, take a closer look at the [`billingOptions` documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options).
 
