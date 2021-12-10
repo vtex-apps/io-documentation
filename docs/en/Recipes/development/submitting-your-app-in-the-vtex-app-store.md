@@ -37,11 +37,19 @@ With the first two prerequisites met, you're ready to send you app through to VT
 
 1. Using your CLI, [log into the VTEX account](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference/#command-reference) in which the app was published.
 2. Access the folder containing your app.
-3. Run `vtex submit`. You can also specify which version your want to submit by running `vtex submit {vendor}.{name}@{version}`.
+3. Run `vtex plugins add submit` plugin in the [VTEX CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference).
 
-After step 3, a GitHub repository will be automatically created and a Pull Request link will be displayed on your CLI.
+> ⚠️ Warning 
+> 
+> The `vtex plugins add submit` plugin will only work if the VTEX IO CLI is updated to version 3.x that has a plugin-based architecture. Check out the [Updating VTEX IO'S CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-update) and [Managing plugins documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-plugins) for more information.
 
->ℹ️ You'll be added to the repository with your GitHub handle and will have read-only permissions to be able to follow your app's review process. Comments can be followed in the same repository and after performing adjustments, any new app version can be submitted following the step 2 above, thereby creating a new `branch` containing the new version in the same repository.
+4. Then, run `vtex submit`. You can also specify which version your want to submit by running `vtex submit {vendor}.{name}@{version}`.
+
+After step 4 , a GitHub repository will be automatically created and a Pull Request link will be displayed on your CLI.
+
+>ℹ️ Info
+>
+> You'll be added to the repository with your GitHub handle and will have read-only permissions to be able to follow your app's review process. Comments can be followed in the same repository and after performing adjustments, any new app version can be submitted following the step 2 above, thereby creating a new `branch` containing the new version in the same repository.
 
 ![submitting-github-terminal](https://user-images.githubusercontent.com/52087100/92964915-483e7a00-f44b-11ea-8bbf-f8f4e8c4da32.png)
 
