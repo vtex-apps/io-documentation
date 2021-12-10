@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added:
+- The `vtex plugins add submit` step.
+
 ## [0.86.21] - 2021-12-08
 
 ## [0.86.20] - 2021-12-01
