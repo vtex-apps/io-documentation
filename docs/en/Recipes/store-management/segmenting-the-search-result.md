@@ -15,14 +15,7 @@ See the example below. For each user entered, the search result is different.
 ![Segmented Catalog B2B](https://user-images.githubusercontent.com/40380674/143891928-0865937e-c4f6-4a07-9448-0a723fce580b.gif)
 
 ## Setup
-Creating segmentation rules is easy and customizable. First of all, install the following apps in your test workspace.
-```
-vtex.search-session@0.x
-vtex.search-segment-graphql@0.x
-```
-The `vtex.search-session` is responsible for managing the user session, while the `vtex.search-segment-graphql` is where the GraphQL schema is declared.
-
-Now, clone the [`vtex.search-segment-resolver`](https://github.com/vtex-apps/search-segment-resolver) project. This project is just a boilerplate and you will edit it however you like. You just need to follow these steps:
+Creating segmentation rules is easy and customizable. First of all clone the [`vtex.search-segment-resolver`](https://github.com/vtex-apps/search-segment-resolver) project. This project is just a boilerplate and you will edit it however you like. You just need to follow these steps:
 
 1. Go to the `manifest.json` and change the `vendor` to your own account.
 
