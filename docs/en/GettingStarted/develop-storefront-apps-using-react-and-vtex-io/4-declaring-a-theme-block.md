@@ -1,4 +1,4 @@
-# 3. Declaring a Theme Block
+# 3. Declaring a theme block
 
 With the app template already copied, we will now create a **new theme block**. 
 
@@ -14,7 +14,7 @@ In the same way that an API uses parameters to define how the conversation with 
 
 **The interfaces, using their keys, define a block's behavior when implementing and rendering in a store theme**. 
 
-This means that, for each theme block exported by your app, you will need to define an [interface](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-interfaces/), linking the block to a React component of your choice.
+This means that, for each theme block exported by your app, you will need to define an [interface](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-interface), linking the block to a React component of your choice.
 
 The following table shows some possible keys that could be added to your block's interface, as well as their respective descriptions:
 
