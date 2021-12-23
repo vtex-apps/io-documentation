@@ -137,7 +137,7 @@ Once your service app is deployed, it is ready to receive configurations from ot
 
 Notice that the name of the builder is exactly the same as that of the service you want your app to configure. The version also needs to match the desired service app version.
 
-2. In your app code, create a new file in the `configuration.json` folder named after the desired Service App name. Following our example, we would have something similar to: `vtex.most-amazing-service-ever/configuration.json`.
+2.  In your app code, create a new file called `configuration.json` inside the folder named after the desired Service App. Following our example, we would have something similar to: `vtex.most-amazing-service-ever/configuration.json`.
 3. In the file you've just created, define which service configurations are expected according to the JSON schema structure previously defined in the Service App. For example:
 
 ```json
