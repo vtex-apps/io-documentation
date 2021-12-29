@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.86.31] - 2021-12-29
+
 ### Added
 -  `Rendering a badge on top of a product` recipe 
 
