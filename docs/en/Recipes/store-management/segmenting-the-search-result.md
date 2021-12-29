@@ -19,8 +19,10 @@ Take the following example in which different results for the same search are ob
 To create segmented search results, we'll create a new VTEX IO app from the [`vtex.search-segment-resolver`](https://github.com/vtex-apps/search-segment-resolver) boilerplate and customize it to establish our own segmentation rules.
 
 1. Clone the `vtex.search-segment-resolver` app into your machine:
+
   ```sh
   git clone https://github.com/vtex-apps/search-segment-resolver
+  ```
 
 2. Open the `search-segment-resolver` project in any code editor of your preference.
 3. Go to the `manifest.json` file and replace the `vendor` value with the name of your VTEX account.
@@ -39,6 +41,7 @@ export const queries = {
   },
 }
 ```
+
  Notice that the `searchSegment` function receives the `args` variable, which has the `SearchSegmentInput` type: 
  
  ```ts
@@ -50,6 +53,8 @@ interface SearchSegmentInput {
     // Array of selected facets (optionally you can control it by the session itself)
     selectedFacets?: SelectedFacet[]
 }
+```
+
 6. [Create a development workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace) and [link your app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) to test if your segmentation rules are working as expected.
 7. Once you finish your tests, follow all the necessary steps to [make your app publicly available](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available) before promoting it to master.
 
