@@ -9,43 +9,25 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Segmenting the search result
 
-In some situations, especially in B2B accounts, it is necessary to segment the products that will appear to the user based on information, such as email.
-See the example below. For each user entered, the search result is different.
+In some situations, especially in B2B accounts, you may want to present custom search results for each of your customers. To this end, this tutorial will guide you on how to segment the search result page of your store.
+
+Take the following example in which different results for the same search are obtained based on the customer's email.
 
 ![Segmented Catalog B2B](https://user-images.githubusercontent.com/40380674/143891928-0865937e-c4f6-4a07-9448-0a723fce580b.gif)
 
-## Setup
-Creating segmentation rules is easy and customizable. First of all clone the [`vtex.search-segment-resolver`](https://github.com/vtex-apps/search-segment-resolver) project. This project is just a boilerplate and you will edit it however you like. You just need to follow these steps:
+## Step by step
+To create segmented search results, we'll create a new VTEX IO app from the [`vtex.search-segment-resolver`](https://github.com/vtex-apps/search-segment-resolver) boilerplate and customize it to establish our own segmentation rules.
 
-1. Go to the `manifest.json` and change the `vendor` to your own account.
+1. Clone the `vtex.search-segment-resolver` app into your machine:
+  ```sh
+  git clone https://github.com/vtex-apps/search-segment-resolver
 
-2. Change the implementation of the `searchSegment` function on `node/resolvers/segmentSearch.ts` file. The `searchSegment` receives a variable called `args`, and has the following interface:
+2. Open the `search-segment-resolver` project in any code editor of your preference.
+3. Go to the `manifest.json` file and replace the `vendor` value with the name of your VTEX account.
+4. Go to the `node/resolvers` folder and open the `searchSegment.ts` file. 
 
-```ts
-interface SearchSegmentInput {
-    // User email
-    userEmail?: string
-    // Whether the user is authenticated or not.
-    isAuthenticated?: boolean
-    // Array of selected facets (optionally you can control it by the session itself)
-    selectedFacets?: SelectedFacet[]
-}
-```
-
-The `searchSegment` function output has the following interface:
-
-```json
-[
-    {
-        "key": "mykey",
-        "value": "myValue"
-    }
-]
-```
-
-It's just an array of facets. For example, if you want to segment the search by the category "shoes", the function needs to return `[{"key": "category-1", "value": "shoes"}]`.
-
-If you want to segment by email domain, for example, the function would be something like this:
+   >ℹ️ The `segmentSearch` function is responsible for providing a JSON array of facets. For example, if you want to segment the search by the `shoes` category, the `segmentSearch` functio returns `[{"key": "category-1", "value": "shoes"}]`.
+5. Replace the `searchSegment` definition with your own segmentation rules. Take the following example in which we segmented the search result to filter by the `123`collection for `vtex.com.br` emails and by the `456` collection otherwise:
 
 ```ts
 export const queries = {
@@ -57,9 +39,17 @@ export const queries = {
   },
 }
 ```
-In this example, if the email has the `vtex.com.br` domain it will filter by the collection `123`, otherwise, it will filter by `456`.
-
-3. Link your app to your test workspace. Make sure everything is working fine.
-
-4. Now you can release, deploy and install the app on your production workspace.
+ Notice that the `searchSegment` function receives the `args` variable, which has the `SearchSegmentInput` type: 
+ 
+ ```ts
+interface SearchSegmentInput {
+    // User email
+    userEmail?: string
+    // Whether the user is authenticated or not.
+    isAuthenticated?: boolean
+    // Array of selected facets (optionally you can control it by the session itself)
+    selectedFacets?: SelectedFacet[]
+}
+6. [Create a development workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace) and [link your app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app) to test if your segmentation rules are working as expected.
+7. Once you finish your tests, follow all the necessary steps to [make your app publicly available](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available) before promoting it to master.
 
