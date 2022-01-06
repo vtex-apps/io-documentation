@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Configuring custom images for the SKU Selector
 
-By default, the [SKU selector](https://vtex.io/docs/app/vtex.store-components/sku-selector) component uses **thumbnail images of SKU** when rendered.
+By default, the [SKU selector](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-skuselector) component uses **thumbnail images of SKU** when rendered.
 
 ![sku-selector-images](https://user-images.githubusercontent.com/52087100/68624704-30f2d100-04b6-11ea-852b-df2dd140a09c.png)
 

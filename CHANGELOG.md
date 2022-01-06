@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix SKU selector hyperlink in the doc "Configuring custom images for the SKU Selector"
+
 ## [0.86.31] - 2021-12-29
 
 ### Added
