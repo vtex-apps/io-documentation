@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.87.1] - 2022-01-17
+
 ### Added
 - Doc Customizing your store’s typography: A callout about referring the [Customizing your store’s typography doc in the Help Center](https://help.vtex.com/tutorial/personalizando-a-tipografia-da-sua-loja--2R0ByIjvJtuz99RK3OL5WP)
 
