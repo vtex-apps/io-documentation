@@ -13,6 +13,9 @@ In addition to being crucial for communicating with users, a store’s typograph
 
 Whether using the admin’s CMS or your store theme CSS files, Store Framework gives you the flexibility to customize your store’s typography according to your business needs. 
 
+> ⚠️
+> If you want to perform your store's typography customization in **the Admin's CMS**, refer to [Customizing your store’s typography documentation in the Help Center](https://help.vtex.com/tutorial/personalizando-a-tipografia-da-sua-loja--2R0ByIjvJtuz99RK3OL5WP).
+
 ## Before you start
 
 Bear in mind that for the customization to work, the **Styles builder of your store must be 2. x.** To successfully migrate to Styles Builder 2.x, you must update the version of the `styles` builder in the `manifest.json` file of your store theme app, as the example below:
@@ -58,25 +61,3 @@ In the following, check the [best practices of CSS handles](https://developers.v
 >⚠️ Warning
 >
 > The `font-faces.css` is a global file meaning its configurations are applied to all texts from the website. If you want to customize a component's typography independently, overriding the global configurations,you should declare the `font-faces.css` file still and refer the desired component font using the `font-family` property in the app's CSS overriding file. 
-
-### Using store's admin
-
-1. Access **Styles** in the desired account’s admin, in **CMS**.
-2. Select the More Options (three dots) menu for the store’s style whose typography will be edited.
-![customize-typo-image2 EN](https://user-images.githubusercontent.com/52087100/63810485-3602a400-c8fb-11e9-8077-41ab76c66ad2.png)
-3. Click on **Edit** and select **Typography**.
-![customize-typo-image3 EN](https://user-images.githubusercontent.com/52087100/63810513-431f9300-c8fb-11e9-9f37-9789fbd52776.png)
-
-In the **Font Family** section, you can add a font family of your choosing in order to use in your store’s theme. Simply click on **Add custom font** and upload the desired font’s file. 
-
-Remember to give a name for the font family recently uploaded by you, otherwise you won't be able to properly save your changes. 
-
->⚠️ Warning
->
-> The font family file must be uploaded in the following file extensions: `.ttf` or `.woff`. 
-
-After choosing the font family, you can apply it to your store’s text content. The **Type Token** option displays all your store’s text content that can be customized. In addition to each one’s font families, you can also customize other parameters, such as **Font Weight**, **Font Size**, capitalization (**Text Transform**) and spacing (**Letter Spacing**).
-
-For a better understanding of this feature and customization recommendations for each of your store’s text content, access the [VTEX Styleguide](https://styleguide.vtex.com/#/Styles?id=section-typography).
-
-4. After performing all desired customizations, save your changes. 
