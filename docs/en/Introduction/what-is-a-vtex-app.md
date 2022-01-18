@@ -51,6 +51,7 @@ A VTEX App can also be characterized as:
 
 ## Related resources
 
+- [VTEX App Store](https://apps.vtex.com/)
 - [Concepts](https://developers.vtex.com/vtex-developer-docs/docs/concepts): VTEX IO concepts.
 - Creating an app: Steps and tools you need to create your app. _Coming soon._
 - Preparing your app for distribution: Basic requirements to meet before submitting your app to the review process. _Coming soon._
