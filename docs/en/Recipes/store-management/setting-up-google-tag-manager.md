@@ -9,104 +9,152 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Setting up Google Tag Manager
 
-[Google Tag Manager](https://tagmanager.google.com/) is a **JavaScript and HTML tag management system** provided by Google for tracking user browsing.
+Once you have installed the [VTEX IO Google Tag Manager app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-google-tag-manager), set it up in your store by configuring all the necessary variables, triggers, and tags.
 
-With the [**VTEX IO Google Tag Manager Pixel App**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-google-tag-manager), you can avoid any contact with the store's source code when adding, editing or removing these website tags and easily provide user browsing tracking for Google Analytics as well.  
+> ⚠️ Warning
+>
+> If you are using the Google Tag Manager 2.x., **we strongly recommend migrating to the major 3.x.** Google Tag Manager 3.x tracks the entire user’s journey through the store, from viewing a product to purchasing it. Refer to [Migrating Google Tag Manager app from major 2.x to major 3.x](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-google-tag-manager-app) and follow the step-by-step.
 
-The VTEX IO Google Tag Manager native solution is compliant with Universal Analytics [Enhanced Ecommerce](https://developers.google.com/tag-manager/enhanced-ecommerce) events format and natively supports the following events emitted by our components:
 
-- Product Impression;
-- Product Click;
-- Product Detail Impression;
-- Add/Remove from Cart;
-- Promotion Impression;
-- Promotion Click;
-- Checkout;
+## Before you start
+
+**The VTEX IO GTM app is compliant with the Universal Analytics [Enhanced Ecommerce](https://developers.google.com/analytics/devguides/collection/ua/gtm/enhanced-ecommerce) events format**, meaning it supports the following events:
+
+- Product Impression.
+- Product Click.
+- Product Detail Impression.
+- Add/Remove from Cart.
+- Promotion Impression.
+- Promotion Click.
+- Checkout.
 - Purchase.
 
->ℹ️ In order to set the tracking of these events in Google Analytics, learn how to <a href="https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-up-google-analytics-search-tracking/">set up Google Analytics search tracking</a> in your VTEX IO store.
+GTM components trigger these events, allowing you to measure your store's data through the Google Analytics dashboard. If you are not familiar with the GTM components, **we strongly recommend** checking the [Google Tag Manager documentation](https://support.google.com/tagmanager/answer/6103657?hl=en) before starting the setup.
 
-In order to set up Google Tag Manager in your store, you first must set up all necessary **variables**, **triggers** and **tags**. 
+> ℹ Info
+>
+> To track these events in Google Analytics, learn how to [set up Google Analytics search tracking](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-up-google-analytics-search-tracking) in your VTEX IO store.
 
-These GTM components will work together to measure your store's data, allowing you to properly manage user and website traffic in your Google Analytics dashboard. 
+Follow the steps below to create all necessary GTM components for your store. 
 
->ℹ️ If you are not familiar with the GTM components, we strongly recommend you to access the <a href="https://support.google.com/tagmanager/answer/6103657?hl=en">Google Tag Manager documentation</a> before starting your setup.
+## Step-by-step
 
-Follow the steps below to create all necessary GTM components for your store. Begin by installing the [Google Tag Manager Pixel App](https://developers.vtex.com/vtex-developer-docs/docs/vtex-google-tag-manager) and opening your Google Tag Manager account dashboard at [tagmanager.google.com](https://tagmanager.google.com/).
+### Step 1 - Creating variables
 
-## Step by step
+To start, create the essential variables to work within GTM: **Data Layer** and **Google Analytics settings.**
 
-### Creating variables
+- **Data Layer variables:** store and deliver data from your website to the GTM. Data such as page title and URL, user ID, product ID, product price, etc. 
 
-To create a variable, click on **Variables** in the left menu and then on **New**:
+- **Google Analytics settings variables:** a template to set up Google Analytics tags in one place instead of performing changes in each tag. These variables track page views, events, and ecommerce transactions.
 
-![GTM-variables-menu](https://user-images.githubusercontent.com/52087100/64815325-ae17cd80-d57b-11e9-90fb-ff13e4026e72.png)
+1. Open the [Google Tag Manager dashboard](https://tagmanager.google.com).
+2. Click on **Variables.**
+3. In the **User-Defined Variables** box, click on **New.**
+
+![variables-overview](https://user-images.githubusercontent.com/67270558/150008763-d6fdfb43-3d1d-413c-bbf8-0f8159434eca.png)
 
 #### Data Layer Variables
 
-1. In the **User-Defined Variables** box, click on **New**;
-2. Click on the **Variable Configuration** box and select **Data Layer Variable**;
-3. Type `campaignMedium` in the `Data Layer Variable Name` field;
-4. Click on **Save** and save it as **Data Layer Variable - campaignMedium**.
+1. Click on the **Variable Configuration** box and select **Data Layer Variable.**
+2. Type `campaignMedium` in the `Data Layer Variable Name` field.
+3. Click on `Save` and save it as **Data Layer Variable - campaignMedium.**
 
-Repeat the instructions above, now changing the Data Layer Variable name for each of the following variables: 
+Repeat the instructions above, now changing the Data Layer Variable name for each of the following variables:
 
-- `campaignName`
-- `campaignSource`
-- `currency`
-- `transactionId`
-- `transactionTotal`
-- `userId`
+| Variable name | Value | Description |
+| --------------- | --------------- | --------------- |
+| Data Layer Variable - campaignName | `campaignName` | Specifies the campaign name. |
+| Data Layer Variable - campaignSource | `campaignSource` | Specifies the campaign origin. |
+| Data Layer Variable - currency | `currency` | Indicates the local currency for all transaction currency values. |
+| Data Layer Variable - transactionId |  `transactionId`  |  Indicates a unique transaction identifier. |
+| Data Layer Variable - transactionTotal |  `transactionTotal`  | Indicates the total value transaction. |
+| Data Layer Variable - userId | `userId` | Enables the association of one or more sessions with a unique and persistent ID for your store’s users. |
+| ecommerceV2 | `ecommerceV2`  |  Triggers events to track the entire user’s journey through the store, from viewing a product to purchasing it. **This variable is part of the major 3.x** of the GTM app. |
+
+There are two other variables, **The `originalLocation` and `originalReferrer`,** that you must create to **prevent GTM from making additional session identifiers every time a user navigates the website.** Learn how to create them in the following steps.
+
+##### **Creating the Original Location and Original Referrer variables**
+
+Creating the following variables is important to persist campaign data throughout a user session and avoid inconsistent campaign data to Google Analytics (GA).
+
+1. On the container page, click on **Variables.**
+2. In the **Built-In Variables** section, check if the `Page URL` and `Page Path` variables are enabled. Otherwise, click on Configure and select Page URL and Page Path to enable them.
+3. Go to the **User-Defined Variables** section and click on `New`. A side popup will open.
+4. Replace the `Untitled Variable` value with `Original Location`.
+5. Click on `Variable Configuration`.
+6. On **Page Variables**, click on `Data Layer Variable`.
+7. In the `Data Layer Variable Name` field, type `originalLocation´.
+8. Enable the `Set Default Value` option and fill in the `Default Value` field with the following value: `{{Page URL}}`.
+
+![gtm-variable-location](https://user-images.githubusercontent.com/67270558/139482165-21f93c6a-48e5-421a-8e06-c942bda01974.gif)
+
+9. Click on `Save`.
+
+Once you have saved the `originalLocation` variable, create the `originalReferrer` as described on the steps below:
+
+1. In the **User-Defined Variables** section, click on `New`. A side popup will open.
+2. Replace the `Untitled Variable`value with `Original Referrer`.
+3. Click on `Variable Configuration`.
+4. On **Page Variables**, click on `Data Layer Variable`.
+5. In the `Data Layer Variable Name` field, type `originalReferrer`.
+6. Enable the `Set Default Value` option and fill in the `Default Value` field with the following value: `{{Referrer}}`.
+
+![gtm-variable-referrer](https://user-images.githubusercontent.com/67270558/141315033-56e6e498-8c44-490d-a6dd-51f226dd6fc9.gif)
+
+   7. Click on `Save`.
 
 #### Google Analytics Variables
 
-- **Default:**
+You will create one variable for the storefront - default - and another for the store’s checkout.
 
-1. In the **User-Defined Variables** box, click on **New**;
-2. Click on the **Variable Configuration** box and select **Google Analytics Settings**; 
-3. Type in your Google Analytics **Tracking ID**;
-4. Click on **More Settings** and then on **Ecommerce**;
-5. Tick the **Enable Enhanced Ecommerce Features** and **Use data layer** boxes;
-6. **Save** your changes as **Google Analytics**.
+- **Default - For storefront:** tracks the page’s view.
+- **For store’s checkout:** tracks a user’s journey through the store, from viewing a product to purchasing it.
 
-If you intend to use the [User ID feature of Google Analytics](https://support.google.com/analytics/answer/3123662), you need to set a field using the `userId` variable previously created. 
+##### **Default - For storefront**
 
-For this, click on **Fields to Set**, and then add the field `userId` with its desired value.
+1. In the **User-Defined Variables** box, click on `New`.
+2. Click on the **Variable Configuration** box and select **Google Analytics Settings**.
+3. Type in your **Google Analytics Tracking ID**, `{{Analytics Tracking ID}}`.
+4. Click on **More Settings**, **Fields to Set** and click on `Add Field`.
+5. In **Field**, type `location` and in **Value** `{{Original Location}}`.
+6. Click again on `Add Field` and In **Field**, type `referrer` and in **Value** `{{Original Referrer}}`.
 
-- **For the store's checkout:**
+![img-example](https://user-images.githubusercontent.com/67270558/149200665-162c9354-ccba-4b20-bbcd-ec2339f10ba8.png)
 
-1. In the **User-Defined Variables** box, click on **New**;
-2. Click on the **Variable Configuration** box and select **Google Analytics Settings**;
-3. Type in your Google Analytics **Tracking ID**;
-4. Click on **More Settings** and then **Fields to Set**.
-5. **Add** then the following fields:
+ 7. Then, go to **Ecommerce**  and tick the `Enable Enhanced Ecommerce Features` and `Use data layer` boxes.
+8. Save your changes as **Google Analytics**.
 
-|  Field name     |                 Value                    |   
-|-----------------|------------------------------------------| 
-|  `campaignName`   | {{Data Layer Variable - campaignName}}   |
-|  `campaignMedium` | {{Data Layer Variable - campaignMedium}} |
-|  `campaignSource` | {{Data Layer Variable - campaignSource}} |
+If you intend to use the [User ID feature of Google Analytics](https://support.google.com/analytics/answer/3123662#zippy=%2Cneste-artigo), you need to set a field using the `userId` variable previously created. 
+To do this, click on Fields to set and add the `userId` field with its desired value.
 
->⚠️ Remember to replace the values between the curly brackets according to your scenario.
+##### **For the store's checkout**
 
-6. Then, click on **Ecommerce** and check the **Enable Enhanced Ecommerce Features** and **Use data layer** boxes;
-7. **Save** your changes as **Google Analytics - Checkout and Order Placed**.
+1. In the **User-Defined Variables** box, click on `New`.
+2. Click on the **Variable Configuration** box and select **Google Analytics Settings**.
+3. Type in your **Google Analytics Tracking ID**, `{{Analytics Tracking ID}}`.
+4. Click on **More Settings**, **Fields to Set** and click on `Add Field`.
+5. In **Field**, type `location` and in **Value** `{{Original Location}}`.
+6. Click again on `Add Field` and In **Field**, type `referrer` and in **Value** `{{Original Referrer}}`.
+7. Then, go to **Ecommerce**  and tick the `Enable Enhanced Ecommerce Features`.
+8. In `Read data from variable` select `{{ecommerceV2}}`.
+9. Save your changes as **Google Analytics - Checkout and Order Placed**.
 
-### Creating triggers
+> ⚠️ Warning
+>
+> If you have any Google Analytics tags using the Google Analytics Settings variables you have changed, apply the same changes above directly on the tags that need it.
 
-To create a trigger, click on **Trigger** in the left menu and then on **New**:
+### Step 2 - Creating triggers
+To create a trigger, click on Trigger in the left menu and then on New:
 
-![GTM-triggers-menu](https://user-images.githubusercontent.com/52087100/64815364-c7207e80-d57b-11e9-8d7a-5f2634c7bdb7.png)
+![trigger-overview](https://user-images.githubusercontent.com/67270558/149345629-4cccb301-b13d-4349-b772-584e75d63686.png)
 
-#### Custom Events
-
-1. Click on the **Trigger Configuration** box;
-2. Select **Custom Event**;
-3. Type `addToCart` in the `Event Name` field;
-4. Click on **Save** and save it as `Custom Event - addToCart`.
+#### **Custom Events**
+1. Click on the **Trigger Configuration** box.
+2. Select **Custom Event**.
+3. Type `addToCart` in the **Event Name** field;
+4. Click on `Save`and save it as **Custom Event - addToCart**.
 
 Repeat the instructions above, now changing the event name for each of the following event triggers:
-
 - `cart`
 - `email`
 - `orderPlaced`
@@ -121,87 +169,127 @@ Repeat the instructions above, now changing the event name for each of the follo
 - `shipping`
 - `pageView`
 
-### Creating Tags
+### Step 3 - Creating Tags
+To create a tag, click on Tags in the left menu and then on New:
 
-To create a tag, click on **Tags** in the left menu and then on **New**:
+![tag-overview](https://user-images.githubusercontent.com/67270558/149345261-e973654c-8ada-4e34-bdc9-d157fbf358ee.png)
 
-![GTM-tags-menu](https://user-images.githubusercontent.com/52087100/64815399-e28b8980-d57b-11e9-8913-1c0dc05f96a0.png)
+#### **Google Analytics - Checkout and Order Placed**
 
-#### Google Analytics - Checkout and Order Placed
-
-1. Click on the **Tag Configuration** box;
-2. Select **Google Analytics - Universal Analytics**;
-3. Choose **Event** from the `Track Type` field;
-4. Type in **Ecommerce** in the `Category` field;
-5. Type in **Event** in the `Action` field;
-6. In `Google Analytics Settings`, select **Google Analytics - Checkout**;
-7. In the **Triggering** box, choose the following triggers: 
-  - Custom Event - `cart`
-  - Custom Event - `email`
-  - Custom Event - `orderPlaced`
-  - Custom Event - `payment`
-  - Custom Event - `profile`
-  - Custom Event - `shipping`
-8. Save the new tag as **Google Analytics - Checkout and Order Placed**.
-
-#### Google Analytics - Enhanced Ecommerce - No Interaction
-
-1. Click on the **Tag Configuration** box;
-2. Select **Google Analytics - Universal Analytics**;
-3. Choose **Event** from the `Track Type` field;
-4. Type in **Ecommerce** in the `Category` field;
-5. Type in **Event** in the `Action` field;
-6. Select **True** in the `Non-Interaction Hit` field;
-7. In `Google Analytics Settings`, choose **Google Analytics**; 
+1. Click on the **Tag Configuration box.**
+2. Select **Google Analytics - Universal Analytics.**
+3. Choose **Event** from the **Track Type field.**
+4. Type in **Ecommerce** in the Category field.
+5. Type in **Event** in the Action field.
+6. In **Non-Interaction Hit**, select `True`
+7. In **Google Analytics Settings**, select `{{Google Analytics - Checkout and Order Placed}}`.
 8. In the **Triggering** box, choose the following triggers:
-  - Custom Event - `productDetail`
-  - Custom Event - `productImpression`
-  - Custom Event - `promoView`
+
+- `Custom Event - cart`
+- `Custom Event - email`
+- `Custom Event - orderPlaced`
+- `Custom Event - payment`
+- `Custom Event - profile`
+- `Custom Event - shipping`
+
+9. Save the new tag as **Google Analytics - Checkout and Order Placed**.
+
+#### **Google Analytics - Enhanced Ecommerce - No Interaction**
+
+1. Click on the **Tag Configuration** box.
+2. Select **Google Analytics - Universal Analytics**.
+3. Choose **Event** from the Track Type field.
+4. Type in **Ecommerce** in the Category field.
+5. Type in **Event** in the Action field.
+6. Select **True** in the Non-Interaction Hit field.
+7. In **Google Analytics Settings**, choose **Google Analytics**.
+8. In the **Triggering** box, choose the following triggers:
+
+- `Custom Event - productDetail`
+- `Custom Event - productImpression`
+- `Custom Event - promoView`
+
 9. Save the new tag as **Google Analytics - Enhanced Ecommerce - No Interaction**.
 
-#### Google Analytics - Enhanced Ecommerce - Yes Interaction
+#### **Google Analytics - Enhanced Ecommerce - Yes Interaction**
 
-1. Click on the **Tag Configuration** box;
-2. Select **Google Analytics - Universal Analytics**;
-3. Choose **Event** from the `Track Type` field;
-4. Type in **Ecommerce** in the `Category` field;
-5. Type in **Event** in the `Action` field;
-6. Select **False** in the `Non-Interaction Hit` field;
-7. Choose **Google Analytics** in the `Google Analytics Settings` field; 
-7. In the **Triggering** box, choose the following triggers:
-  - Custom Event - `addToCart`
-  - Custom Event - `removeFromCart`
-  - Custom Event - `productClick`
-  - Custom Event - `promotionClick`
+1. Click on the **Tag Configuration box**.
+2. Select **Google Analytics - Universal Analytics**.
+3. Choose **Event** from the Track Type field.
+4. Type in **Ecommerce** in the Category field.
+5. Type in **Event** in the Action field.
+6. Select **False** in the Non-Interaction Hit field.
+7. Choose **Google Analytics** in the Google Analytics Settings field.
+8. In the **Triggering box**, choose the following triggers:
+
+- `Custom Event - addToCart`
+- `Custom Event - removeFromCart`
+- `Custom Event - productClick`
+- `Custom Event - promotionClick`
+
 8. Save the new tag as **Google Analytics - Enhanced Ecommerce - Yes Interaction**.
 
-#### Google Analytics - Page View
+#### **Google Analytics - Page View**
 
-1. Click on the **Tag Configuration** box; 
-2. Select **Google Analytics - Universal Analytics**;
-3. Choose **Page View** from the `Track Type` field;
-4. In `Google Analytics Settings`, select **Google Analytics**;
-5. In the **Triggering** box, select the `Custom Event - pageView` trigger;
+1. Click on the **Tag Configuration** box;
+2. Select **Google Analytics - Universal Analytics**.
+3. Choose **Page View** from the Track Type field.
+4. In **Google Analytics Settings**, select **Google Analytics**.
+5. In the **Triggering** box, select the **Custom Event - pageView trigger**.
 6. Save the new tag as **Google Analytics - Page View**.
 
-#### Conversion Linker
+#### **Conversion Linker**
 
-1. Click on the **Tag Configuration** box;
-2. Select **Conversion Linker**;
-3. In the **Triggering** box, choose the `All Pages` trigger;
+1. Click on the **Tag Configuration** box.
+2. Select **Conversion Linker**.
+3. In the **Triggering** box, choose the **All Pages trigger.**
 4. Save the new tag as **Conversion Linker**.
 
-#### Google Ads Conversion Tracking
+#### **Google Ads Conversion Tracking**
 
-1. Click on the **Tag Configuration** box;
-2. Choose **Google Ads Conversion Tracking**;
-3. Fill in the fields `Conversion ID` and `Conversion Label` according to what is instructed by the Google Ads panel;
+1. Click on the **Tag Configuration** box.
+2. Choose **Google Ads Conversion Tracking**.
+3. Fill in the fields **Conversion ID** and **Conversion Label** according to what is instructed by the Google Ads panel.
 4. Fill in the following fields with Data Layer variables:
-  - `Conversion Value`: {{Data Layer Variable - transactionTotal}}
-  - `Order ID`: {{Data Layer Variable - transactionId}}
-  - `Currency Code`: {{Data Layer Variable - currency}}
-  
->⚠️ Remember to replace the values between the curly brackets according to your scenario.
 
-5. In the **Triggering** box, select the `Custom Event - orderPlaced` trigger;
+- Conversion Value: `{{Data Layer Variable - transactionTotal}}`
+- Order ID: `{{Data Layer Variable - transactionId}}`
+- Currency Code: `{{Data Layer Variable - currency}}`
+
+> ⚠️ Warning
+>
+> Remember to replace the values between the curly brackets according to your scenario.
+
+5. In the **Triggering** box, select the **Custom Event - orderPlaced trigger**.
 6. Save the new tag as **Google Ads Conversion Tracking**.
+
+### Step 4 - Publishing your changes
+
+Once you have set up the Google Analytics variables, triggers, and tags, follow Google's official guide [to submitting and publishing your store’s container](https://support.google.com/tagmanager/answer/6107163).
+
+### (Optional) Advanced configurations with Enhanced Ecommerce 
+
+To make the product information consistent across all store areas and help capture the entire user's journey on the store, [Google Tag Manager 3.x.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-google-tag-manager-app) includes Enhanced Ecommerce properties to the product data schema as events. These properties enable stores to provide additional information, such as product printing, promotion, and sales data.
+
+
+| Prop name | Description |
+| --------------- | --------------- |
+| id | Product ID - Previously SKU ID. |
+| variant | SKU ID - Previously SKU Name. The variant of the product, e.g., Rebel pink. |
+| name | Product Name - Previously Product Name or SKU Name.| 
+| quantity | Product quantity |
+| price | Product price. |
+| category | Product category, e.g., Apparel. |
+| brand	| Product brand. |
+| dimension1 | Product Reference ID. |
+| dimension2 | SKU Reference ID. |
+| dimension3 | SKU Name (does not include the Product Name). |
+
+The `dimension1`, `dimension2`, `dimension3` properties are custom dimensions that you can use to collect and analyze data that Google Analytics does not automatically create. 
+
+For more information about custom dimensions and Enhanced Ecommerce, refer to [Custom dimensions and metrics](https://support.google.com/analytics/answer/2709828?hl=en&ref_topic=2709827#configuration&zippy=%2Cin-this-article) and [Google Enhanced ecommerce official guide](https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-ecommerce#ecommerce-data) respectively.
+
+## Related resources
+- [Google Tag Manager app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-up-google-tag-manager) 
+- [Migrating Google Tag Manager app from major 2.x to major 3.x](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-google-tag-manager-app)
+- [Setting up Google Analytics search tracking](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-up-google-analytics-search-tracking)
