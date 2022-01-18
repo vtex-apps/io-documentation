@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+Doc: Setting up Google Tag Manager 
+- New sections: Before you Start, Advanced configurations with Enhanced Ecommerce and Related resources. 
+
+### Changed
+Doc: Setting up Google Tag Manager 
+- Step 1 - Creating variables
+- Screenshots
+
 ## [0.87.3] - 2022-01-18
 
 ## [0.87.2] - 2022-01-18
