@@ -46,7 +46,7 @@ At the beginning of the process, it is very important to incorporate the new app
 
 ```diff
 "dependencies": {
-+  "vtex.styleguide: 9.x"
++  "vtex.styleguide: "9.x"
 }
 ```
 
