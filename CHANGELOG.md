@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Depency `styleguide` version in *Creating the new app* documentation.
+
 ## [0.87.3] - 2022-01-18
 
 ## [0.87.2] - 2022-01-18
