@@ -198,7 +198,7 @@ Still in the `home.jsonc` file, use `ctrl+f` and look up for the `rich-text#ques
 
 This block is responsible for rendering a component that displays markdown texts to users. 
 
-As we can see, the `rich-text#block` block is using two props: `text` and `blockClass`. These are responsible for defining which text the component will display and for defining an ID that will be used for its customization - as we will see in the next step of this track.
+As we can see, the `rich-text#question` block is using two props: `text` and `blockClass`. These are responsible for defining which text the component will display and for defining an ID that will be used for its customization - as we will see in the next step of this track.
 
 You can now take a look at the [documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text) of the app behind the block (also called Rich Text) and check the available props table in the Configuration section. 
 
