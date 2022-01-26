@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.87.6] - 2022-01-26
 ### Fixed
 - Doc *Marketing Assets*: Fix the typo in the section *Messages.*
 ## [0.87.5] - 2022-01-21
