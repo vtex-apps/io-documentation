@@ -79,7 +79,7 @@ The base template for structuring this file is as follows:
     "Third feature",
     "Fourth feature"
   ],
-    "additionalinformation": "Additional information\\nYou can also write new lines here\\n\\n\\nIt should work just like the overview",
+    "additionalInformation": "Additional information\\nYou can also write new lines here\\n\\n\\nIt should work just like the overview",
   "video": "<https://www.youtube.com/embed/645ASYhJS-Q>",
   "websiteURL": "<https://www.website.com/en>",
   "support": {
