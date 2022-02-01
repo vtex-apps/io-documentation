@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.87.8] - 2022-02-01
+
 ## [0.87.7] - 2022-02-01
 ### Added
 - The Google Tag Manager installation guide.
