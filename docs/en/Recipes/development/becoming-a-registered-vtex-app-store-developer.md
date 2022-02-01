@@ -33,7 +33,7 @@ This [structure](https://help.vtex.com/tutorial/configuring-the-marketplace-betw
 
 Follow the steps below to register as a new seller on VTEX App Store:
 
-1. Logged into the VTEX account in which you are working, run `vtex install vtex.app-store-seller` in your terminal.
+1. Logged into the VTEX account in which you are working, run `vtex install vtex.app-store-seller@0.x` in your terminal.
 2. Access the admin of the VTEX account in which you're working. 
 3. In `Other`, access `Seller setup` and fill out the required fields.
 4. Select the sales channel you intend to use to connect to the App Store.
