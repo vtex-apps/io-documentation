@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Setting up Google Tag Manager
 
-Once you have installed the [VTEX IO Google Tag Manager app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-google-tag-manager), set it up in your store by configuring all the necessary variables, triggers, and tags.
+Once you have installed the [VTEX IO Google Tag Manager app](https://developers.vtex.com/vtex-developer-docs/docs/google-tag-manager), set it up in your store by configuring all the necessary variables, triggers, and tags.
 
 > ⚠️ Warning
 >
@@ -303,7 +303,7 @@ For more information about custom dimensions and Enhanced Ecommerce, refer to [C
 
 
 ## Related resources
-- [Google Tag Manager app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-up-google-tag-manager) 
+- [Google Tag Manager app](https://developers.vtex.com/vtex-developer-docs/docs/google-tag-manager) 
 - [Migrating Google Tag Manager app from major 2.x to major 3.x](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-google-tag-manager-app)
 - [Setting up Google Analytics search tracking](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-up-google-analytics-search-tracking)
 
