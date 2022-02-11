@@ -62,7 +62,7 @@ Check out the instructions below for how it can be done.
 ```json
 {
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#demo1"],
     "children": ["slider-layout#demo-products"]
 
   },
@@ -85,7 +85,7 @@ Check out the instructions below for how it can be done.
 ```json
 {
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#demo1"],
     "children": ["slider-layout#demo-products"]
 
   },
