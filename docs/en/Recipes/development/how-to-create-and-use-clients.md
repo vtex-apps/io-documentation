@@ -9,7 +9,9 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/e
 
 # Managing Clients
 
-## Prerequisites
+In this guide, you will learn how to create [clients]() and how to use them in your implementations. 
+
+## Before you start
 - Being familiar with the [concept of Clients](concepts/clients)
 
 So, what to do with *clients*? You **create them**, extending some base code. IO Node Services already ship with some **default clients**, mostly to our internal services, that you may use right away. Check them [here](https://github.com/vtex/node-vtex-api/blob/ccf4d8f8d3208007c4bfd558baf979df8d825af8/src/clients/IOClients.ts).
@@ -24,9 +26,9 @@ export const authorize = async (ctx: Context) {
 }
 ```
 
-## How to create clients and how do they look?
+## Creating clients
 
-The [`@vtex/api`](https://github.com/vtex/node-vtex-api/) SDK provides a structured way to create clients, and the first thing to do is **identify the type of communication you want to implement.** As of now, we support these out of the box:
+1. The [`@vtex/api`](https://github.com/vtex/node-vtex-api/) SDK provides a structured way to create clients, and the first thing to do is **identify the type of communication you want to implement.** As of now, we support these out of the box:
 
 | Type | Use case |
 |--|--|
@@ -36,9 +38,11 @@ The [`@vtex/api`](https://github.com/vtex/node-vtex-api/) SDK provides a structu
 | `JanusClient` | Communication with VTEX Core Commerce API's through Janus Router |
 | `InfraClient` | Communication with VTEX IO Infra services |
 
-> When using clients, don't forget to add the **appropriate policies** on your `manifest.json`. Incorrect policies may result in request blocking.
+> ⚠️
+> 
+> When using clients, do not forget to add the **appropriate policies** on your `manifest.json`. Incorrect policies may result in request blocking.
 
-After finding the *base* client you are looking for, you need to implement a **Typescript class that extends the type of this base client**. You may place them wherever you want, but we advise you to put them on `node/clients`.
+2. After finding the *base* client you are looking for, you need to implement a **Typescript class that extends the type of this base client**. You may place them wherever you want, but we advise you to put them on `node/clients`.
 
 Let's take a look on the anatomy of an *ExternalClient* to the *Github API*:
 
@@ -54,12 +58,16 @@ Let's take a look on the anatomy of an *ExternalClient* to the *Github API*:
 
 4 - There are a lot of other methods available, you can check them on [**HttpClient**].(https://github.com/vtex/node-vtex-api/blob/master/src/HttpClient/HttpClient.ts)
 
-> You're free to add data handling logic inside your client's methods (*i.e:* mapping fields, or filtering data), but be careful to not lose track of the client's responsabilities!
+> ⚠️
+> 
+> You're free to add data handling logic inside your client's methods (*i.e:* mapping fields, or filtering data), but be careful to not lose track of the client's responsabilities.
 
-## Ok, now what?
+## Using clients on implementations
 
 After you've learned how to create **great clients**, it's time to **ship them**, so you may **use it on your implementations**. It's easy as well!
 
+> ℹ️
+> 
 > If you want to jump to an example, check how the *StatusClient* is setup on [service-example](https://github.com/vtex-apps/service-example).
 
 **Let's suppose you've created the Github client** we've described above!
