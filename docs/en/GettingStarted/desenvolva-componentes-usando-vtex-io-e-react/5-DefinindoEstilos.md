@@ -94,7 +94,7 @@ export default function MyButton() {
 Lembre-se que o nome das classes criadas dependerão do modelo de <i>import</i> feito por você (passo 3 ou passo 4 desta seção). 
 </div>
 
-6. Salve as mudanças efetuadas e faça o [link](https://vtex.io/docs/recipes/development/linking-an-app/) do seu app. 
+6. Salve as mudanças efetuadas e faça o [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app/) do seu app. 
 
 Ao ser renderizado e inspecionado, o componente agora apresentará a seguinte estrutura HTML caso você tenha optado por seguir o modelo de *import* apresentado no passo 3:
 
@@ -216,5 +216,5 @@ Note que os CSS Handles gerados e armazenados no objeto seguem o padrão: <code>
 Depois de salvar suas alterações, seu app será capaz de não apenas de exportar um estilo predefinido de acordo com as classes CSS configuradas por você, mas também de exportar *CSS Handles*, fornecendo aos seus usuários maior flexibilidade de personalização.
 
 <div class="alert alert-info">
-Para obter mais detalhes sobre como os <i>CSS Handles</i> podem ser usados para definir estilos, acesse a documentação <a href="https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/">Using CSS Handles for store customization</a>.
+Para obter mais detalhes sobre como os <i>CSS Handles</i> podem ser usados para definir estilos, acesse a documentação <a href="https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-css-handles-for-store-customization/">Using CSS Handles for store customization</a>.
  </div>

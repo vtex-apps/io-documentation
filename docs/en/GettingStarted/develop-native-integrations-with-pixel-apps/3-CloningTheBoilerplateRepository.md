@@ -1,4 +1,4 @@
-# Cloning the boilerplate repository
+# 2. Cloning the boilerplate repository
 
 One of the main steps in your development journey to create a new Pixel app is to copy our boilerplate repository to your local environment and then make the first changes to its `manifest.json` file.
 

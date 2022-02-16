@@ -54,7 +54,7 @@ The expected answer is a JSON object containing all the redirects related to tha
 
 Open your account admin and go to *Store Setup > CMS > Pages > Redirects*. Then, save the desired URL redirects.
 
->ℹ️ For more information, check our doc on [managing URL redirects.](https://vtex.io/docs/recipes/store-management/managing-url-redirects/)
+>ℹ️ For more information, check our doc on [managing URL redirects.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-managing-url-redirects/)
 
 #### If the query returns the redirect path
 

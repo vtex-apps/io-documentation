@@ -4,7 +4,7 @@ Being aware of what happens inside an application is important for debugging. Th
 
 To this end, VTEX IO offers a logging service to facilitate the process of developing and debugging an application on the platform. 
 
-VTEX IO logging service collects information from the cloud infrastructure, where VTEX applications run, and provides the applications' logs through Toolbelt - our CLI. 
+VTEX IO logging service collects information from the cloud infrastructure, where VTEX applications run, and provides the applications' logs through VTEX IO CLI - our CLI. 
 
 The following step-by-step shows how to implement VTEX IO logging service in your applications and how to retrieve the logs these apps produce.
 
@@ -47,7 +47,7 @@ The Logging Service also supports the `warn`,  `error`, and `debug` methods, hav
 
 ## Retrieving application logs
 
-Every log written by a running application with our logger implementation is collected and stored for 7 days. Those logs can be retrieved by the [VTEX Toolbelt CLI](https://vtex.io/docs/concepts/toolbelt/).
+Every log written by a running application with our logger implementation is collected and stored for 7 days. Those logs can be retrieved by the [VTEX CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference).
 
 Using VTEX IO's CLI:
 1. Log in to your VTEX account;

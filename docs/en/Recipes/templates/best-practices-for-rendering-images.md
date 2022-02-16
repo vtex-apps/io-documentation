@@ -19,7 +19,7 @@ We have put together a best practices guide that should be followed in order to 
 
 ### Uploading images to your theme's code
   
-Images that are uploaded to your theme's code must always [**use the Assets Builder**](https://vtex.io/docs/recipes/development/using-the-assets-builder) or the admin's Site Editor.
+Images that are uploaded to your theme's code must always [**use the Assets Builder**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-the-assets-builder) or the admin's Site Editor.
 
 Declaring the URLs of the desired images directly in the theme's code in the `blocks.json` file will prevent the images from matching size when rendered, making the UI's image components deformed due to different dimensions.
   
@@ -37,11 +37,11 @@ Therefore, another best practice is to **understand the main functionality of ea
   
 The image blocks are:
 
-- [**Logo**](https://vtex.io/docs/components/all/vtex.store-components/logo) - Responsible for rendering your brand's logo. It should preferably be used in your store's Header or Footer. 
-- [**Infocard**](https://vtex.io/docs/components/all/vtex.store-components/infocard) - The Infocard block creates images in the UI which have links and buttons that direct the user's flow. Infocards are recommended in scenarios in which you want to render an image that's specifically tied to a redirect with Call to action buttons/links. 
-- [**Rich Text**](https://vtex.io/docs/components/all/vtex.rich-text@0.9.1/) - The Rich Texts blocks are meant to create markdown texts in your UI. It may be a block that seems simple, but it allows plenty of customization, such as passing an image URL to be rendered. The Rich Text is mainly recommended for building text communications that may need to have an image linked to them.
-- [**Product Summary Image**](https://vtex.io/docs/components/all/vtex.product-summary@2.53.3/product-summary-image/) - The Product Summary Image block is responsible for displaying the product image usually attached to other product summary informations, such as name and price. This block, exported by the Product Summary, must be displayed within other store components, such as the Shelf. 
-- [**Image**](https://vtex.io/docs/components/all/vtex.store-image@0.4.3/) - The Image block basically renders a image in your store's UI, without links/buttons/markdown texts/product info summary attached to it. It is responsible solely for rendering an image of your choosing in your store's theme. 
+- [**Logo**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components/logo) - Responsible for rendering your brand's logo. It should preferably be used in your store's Header or Footer. 
+- [**Infocard**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components/infocard) - The Infocard block creates images in the UI which have links and buttons that direct the user's flow. Infocards are recommended in scenarios in which you want to render an image that's specifically tied to a redirect with Call to action buttons/links. 
+- [**Rich Text**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text@0.9.1/) - The Rich Texts blocks are meant to create markdown texts in your UI. It may be a block that seems simple, but it allows plenty of customization, such as passing an image URL to be rendered. The Rich Text is mainly recommended for building text communications that may need to have an image linked to them.
+- [**Product Summary Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary@2.53.3/product-summary-image/) - The Product Summary Image block is responsible for displaying the product image usually attached to other product summary informations, such as name and price. This block, exported by the Product Summary, must be displayed within other store components, such as the Shelf. 
+- [**Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-image@0.4.3/) - The Image block basically renders a image in your store's UI, without links/buttons/markdown texts/product info summary attached to it. It is responsible solely for rendering an image of your choosing in your store's theme. 
 
 ### Product Summary Image block
 
@@ -55,4 +55,4 @@ This in turn allows your store's Shelf, for example, to have image consistency a
 
 ![beat-practices-images](https://user-images.githubusercontent.com/52087100/80645249-3bdbf680-8a41-11ea-8f63-8b96b20f7c4b.png)
 
-To implement these props in your theme, access the [**Product Summary Image**](https://vtex.io/docs/components/all/vtex.product-summary@2.53.3/product-summary-image/) block documentation.
+To implement these props in your theme, access the [**Product Summary Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary@2.53.3/product-summary-image/) block documentation.

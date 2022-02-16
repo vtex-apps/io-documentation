@@ -16,7 +16,7 @@ The VTEX IO platform currently works as a **closed beta solution**, only accessi
 - **Custom Pixel apps**
 - **Custom mobile Apps**
 
-> ℹ️ *Every VTEX account and partner can freely use the VTEX IO to develop custom storefront components, meaning that the platform works as an open beta solution when it comes to React projects. The Application form is therefore not needed for this scenario.*
+>ℹ️ Every VTEX account and partner can freely use the VTEX IO to develop custom storefront components, meaning that the platform works as an open beta solution when it comes to React projects. The Application form is therefore not needed for this scenario.
 
 To become part of this group, you need to first fill in the [**Application form**](https://docs.google.com/forms/d/e/1FAIpQLSfhuhFxvezMhPEoFlN9yFEkUifGQlGP4HmJQgx6GP32WZchBw/viewform) which is used by our product team to properly peruse your development project and grant you all the necessary permissions after your project has been approved.
 

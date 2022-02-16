@@ -107,7 +107,7 @@ The most recurrent use of VTEX IO apps as dependencies are for:
 - Using GraphQL or REST definitions declared in another app.
 - Implementing a GraphQL schema from another app.
 
->ℹ️ Follow this [link](https://vtex.io/docs/concepts/dependencies/) to learn more about Dependencies.
+>ℹ️ Follow this [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-dependencies/) to learn more about Dependencies.
 
 <div style="text-align: right"><a href="#manifest-fields-summary">Manifest fields summary</a> 🔼</div>
 
@@ -115,7 +115,7 @@ The most recurrent use of VTEX IO apps as dependencies are for:
 
 The list of other apps that the app relies on to properly work. However, unlike regular dependencies, peer dependencies are not automatically installed in an account. Hence, these are mostly used in cases an app relies on paid apps or a specific version of an app.
 
->ℹ️ Follow this [link](https://vtex.io/docs/concepts/peerdependencies/) to learn more about Peer Dependencies.
+>ℹ️ Follow this [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-peerdependencies/) to learn more about Peer Dependencies.
 
 <div style="text-align: right"><a href="#manifest-fields-summary">Manifest fields summary</a> 🔼</div>
 
@@ -123,7 +123,7 @@ The list of other apps that the app relies on to properly work. However, unlike 
 
 The list of policies, responsible for granting permissions to the app in case it needs access to external services or specific data from other sources, such as external APIs.
 
->ℹ️ Follow this [link](https://vtex.io/docs/concepts/policies/) to learn more about Policies.
+>ℹ️ Follow this [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-policies/) to learn more about Policies.
 
 <div style="text-align: right"><a href="#manifest-fields-summary">Manifest fields summary</a> 🔼</div>
 

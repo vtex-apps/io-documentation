@@ -17,7 +17,7 @@ After you launch your app as a stable version and thoroughly test it in a partic
 
 ![Promoting a Production workspace to Master](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/promoting-a-workspace-to-master.gif?raw=true)
 
-Once promoted to Master, you won't be able to perform new code changes in that workspace. Alternatively, you will need to develop your code in a [Development workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/) and reproduce it in a new Production workspace, so you can test your changes with user traffic and make your new changes publicly available.
+Once promoted to Master, you won't be able to perform new code changes in that workspace. Alternatively, you will need to develop your code in a [Development workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace/) and reproduce it in a new Production workspace, so you can test your changes with user traffic and make your new changes publicly available.
 
 >ℹ️ Notice that you cannot make changes directly to the Master workspace nor promote a Development workspace to Master.
 

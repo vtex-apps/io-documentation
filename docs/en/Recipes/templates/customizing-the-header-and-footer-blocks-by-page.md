@@ -53,7 +53,7 @@ The code above works in scenarios where the Header **and** Footer will be overwr
 
 The next step is to configure the previously declared blocks in accordance with what's desired for this template.
 
-If you want to apply new customizations to the blocks, simply follow the usual flow explained in the [Header](https://vtex.io/docs/components/all/vtex.store-header/) and [Footer](https://vtex.io/docs/components/all/vtex.store-footer/) documentation. For example:  
+If you want to apply new customizations to the blocks, simply follow the usual flow explained in the [Header](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-header/) and [Footer](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-footer/) documentation. For example:  
 
 ```json
 {

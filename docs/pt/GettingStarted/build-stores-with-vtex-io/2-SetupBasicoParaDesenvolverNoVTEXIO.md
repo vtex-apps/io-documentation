@@ -1,8 +1,8 @@
 # *Setup* básico para desenvolver no VTEX IO
 
-Todo desenvolvimento no VTEX IO começa com o [**Toolbelt**](*link*), nossa CLI (Command Line Interface) que permite fazer login, desenvolver novas [apps](*link*) e gerenciar as já instaladas.
+Todo desenvolvimento no VTEX IO começa com o [**VTEX IO CLI**](*link*), nossa CLI (Command Line Interface) que permite fazer login, desenvolver novas [apps](*link*) e gerenciar as já instaladas.
 
-## VTEX IO Toolbelt
+## VTEX IO CLI
 
 Para instalar a CLI do VTEX IO, você precisa garantir que o seu computador tenha o [Node.js](https://nodejs.org/) e o [Yarn](https://yarnpkg.com/) instalados.
 
@@ -12,7 +12,7 @@ Em seguida, digite `yarn global add vtex` no terminal do seu computador.
 $ yarn global add vtex
 ```
 
->ℹ️ *Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.*
+>ℹ️ Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.
 
 ## Login
 
@@ -38,11 +38,11 @@ Ao fazer *login* em uma loja, você está automaticamente no *workspace* master 
 $ vtex use {nomeexemplo}
 ```
 
-Isso muda o seu Toolbelt para um *workspace* chamado `nomeexemplo` e o cria se ele não existir.
+Isso muda o seu VTEX IO CLI para um *workspace* chamado `nomeexemplo` e o cria se ele não existir.
 
 ![vtex-use-nomeexemplo](https://user-images.githubusercontent.com/52087100/61886135-7ffc0280-aed5-11e9-983f-4a76615d0574.png)
 
->⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no `workspace` definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no Toolbelt `vtex use master`, por exemplo.*
+>⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no `workspace` definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no VTEX IO CLI `vtex use master`, por exemplo.*
 
 Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na sua loja acessando:
 

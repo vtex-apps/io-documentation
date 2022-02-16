@@ -15,11 +15,11 @@ The Messages app aggregates all the translation services in the VTEX platform, r
 
 When deciding which translation the store should display, the Messages app first processes translations defined via API requests at an account-level. Then, if there's no account-level translation, the Messages app goes through storefront app translations (defined within the `/messages` folder). Finally, if no custom translation is found, the Messages app falls back to the automatic translation service.
 
->ℹ️ *Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/storefront-content-internationalization) to learn how to overwrite storefront messages.*
+>ℹ️ Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/storefront-content-internationalization) to learn how to overwrite storefront messages.
 
->ℹ️ *Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/catalog-internationalization) to learn how to overwrite messages from the catalog.*
+>ℹ️ Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/catalog-internationalization) to learn how to overwrite messages from the catalog.
 
->ℹ️ *Follow [this link](https://vtex.io/docs/getting-started/desenvolva-componentes-usando-vtex-io-e-react/7/) to learn how to set translatable messages in your React component.*
+>ℹ️ Follow [this link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-1-developing-storefront-apps-using-react-and-vtex-io) to learn how to set translatable messages in your React component.
 
 To disable the Messages' automatic translation service, check the following section.
 

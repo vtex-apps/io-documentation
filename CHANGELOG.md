@@ -9,6 +9,203 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Documentation for Clients
 
+## [0.87.11] - 2022-02-11
+### Fixed
+
+- Doc: Building a Shelf - Fixed the block name on step 3 and 4
+
+## [0.87.10] - 2022-02-02
+
+## [0.87.9] - 2022-02-02
+### Changed
+- The Steps to create tags, triggers, and variables in GTM.
+
+## [0.87.8] - 2022-02-01
+
+## [0.87.7] - 2022-02-01
+### Added
+- The Google Tag Manager installation guide.
+
+## [0.87.6] - 2022-01-26
+### Fixed
+- Doc *Marketing Assets*: Fix the typo in the section *Messages.*
+## [0.87.5] - 2022-01-21
+### Fixed
+- Block typo in the _Configuring templates_ doc
+
+## [0.87.4] - 2022-01-20
+
+### Fixed
+- Depency `styleguide` version in *Creating the new app* documentation.
+
+## [0.87.3] - 2022-01-18
+
+## [0.87.2] - 2022-01-18
+
+## [0.87.1] - 2022-01-17
+
+### Added
+- Doc Customizing your store’s typography: A callout about referring the [Customizing your store’s typography doc in the Help Center](https://help.vtex.com/tutorial/personalizando-a-tipografia-da-sua-loja--2R0ByIjvJtuz99RK3OL5WP)
+
+### Changed
+- Doc Customizing your store’s typography: step on how to perform the changes using store's admin.
+
+## [0.87.0] - 2022-01-06
+
+## [0.87.0] - 2022-01-06
+
+### Fixed
+
+- Fix SKU selector hyperlink in the doc "Configuring custom images for the SKU Selector"
+
+## [0.86.31] - 2021-12-29
+
+### Added
+-  `Rendering a badge on top of a product` recipe 
+
+## [0.86.30] - 2021-12-29
+
+### Added
+- `Segmenting search result` recipe.
+
+## [0.86.29] - 2021-12-28
+
+## [0.86.28] - 2021-12-23
+
+## [0.86.27] - 2021-12-15
+
+## [0.86.26] - 2021-12-15
+
+## [0.86.25] - 2021-12-15
+
+## [0.86.24] - 2021-12-15
+
+## [0.86.23] - 2021-12-10
+
+
+### Added:
+- The `vtex plugins add submit` step.
+
+## [0.86.22] - 2021-12-10
+
+## [0.86.21] - 2021-12-08
+
+## [0.86.20] - 2021-12-01
+
+## [0.86.19] - 2021-12-01
+
+## [0.86.18] - 2021-12-01
+
+## [0.86.17] - 2021-12-01
+
+## [0.86.16] - 2021-11-30
+
+## [0.86.15] - 2021-11-24
+
+### Changed
+- Triggering box choice in Google Ads Conversion Tracking section: from `All Pages` to `Custom Event - orderPlaced trigger`
+
+## [0.86.14] - 2021-11-19
+
+## [0.86.13] - 2021-11-18
+
+## [0.86.12] - 2021-11-18
+
+## [0.86.11] - 2021-11-12
+
+## [0.86.10] - 2021-11-12
+
+## [0.86.9] - 2021-11-08
+
+## [0.86.8] - 2021-11-04
+
+## [0.86.7] - 2021-11-04
+
+## [0.86.6] - 2021-11-03
+
+## [0.86.5] - 2021-11-03
+
+### Added 
+- Curly brackets on the GTM variables.
+
+## [0.86.4] - 2021-10-28
+
+## [0.86.3] - 2021-10-28
+
+## [0.86.2] - 2021-10-28
+
+## [0.86.1] - 2021-10-28
+
+## [0.86.0] - 2021-10-27
+
+## [0.85.23] - 2021-10-27
+
+### Added
+- New documentation on how to migrate Google Tag Manager app from major 2.x to major 3.x.
+
+## [0.85.22] - 2021-10-26
+
+## [0.85.21] - 2021-10-26
+
+## [0.85.20] - 2021-10-20
+
+## [0.85.19] - 2021-10-20
+
+## [0.85.18] - 2021-10-14
+
+## [0.85.17] - 2021-10-14
+
+## [0.85.16] - 2021-10-14
+
+## [0.85.15] - 2021-10-14
+
+## [0.85.14] - 2021-10-06
+
+### Add:
+- Trigger `All Pages` to fire the tag Google Ads Conversion Tracking
+
+## [0.85.13] - 2021-10-05
+
+## [0.85.12] - 2021-10-04
+
+## [0.85.11] - 2021-10-04
+
+## [0.85.10] - 2021-10-04
+
+## [0.85.9] - 2021-10-04
+
+## [0.85.8] - 2021-10-04
+
+## [0.85.7] - 2021-10-04
+
+## [0.85.6] - 2021-10-04
+
+## [0.85.5] - 2021-09-30
+
+## [0.85.4] - 2021-09-30
+
+## [0.85.3] - 2021-09-30
+
+## [0.85.2] - 2021-09-10
+
+## [0.85.1] - 2021-09-01
+
+## [0.85.0] - 2021-08-20
+
+## [0.84.0] - 2021-08-20
+
+## [0.83.0] - 2021-08-19
+
+## [0.82.0] - 2021-08-18
+
+## [0.81.1] - 2021-08-16
+
+## [0.81.0] - 2021-08-12
+
+## [0.80.1] - 2021-08-11
+
+## [0.80.0] - 2021-08-11
+
 ## [0.79.0] - 2021-08-05
 
 ## [0.78.0] - 2021-08-05

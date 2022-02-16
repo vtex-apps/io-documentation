@@ -26,7 +26,7 @@ Indicate that an internal URL will be inserted in the banner, selecting the **Ex
 
 5. Click on **Save**.
 
-> ⚠️ *The `Banner target page` and `Params` fields were deprecated. Therefore, the filled in Internal URL data will be the only data taken into account when indicating the desired internal route.*
+> ⚠️ The `Banner target page` and `Params` fields were deprecated. Therefore, the filled in Internal URL data will be the only data taken into account when indicating the desired internal route.
 
 ## External URLs
 

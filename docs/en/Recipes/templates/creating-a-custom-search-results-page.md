@@ -9,15 +9,15 @@ git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/
 
 # Creating a custom search results page
 
-When [creating a brand new landing page](https://vtex.io/docs/recipes/templates/creating-a-new-custom-page/) for your store's website, you can decide to promote in it certain products to increase their sales or even user interactions, creating then a custom search results page. 
+When [creating a brand new landing page](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-new-custom-page/) for your store's website, you can decide to promote in it certain products to increase their sales or even user interactions, creating then a custom search results page. 
 
-Even though custom pages do not have the needed context to fetch search data, since they are build from scratch, the `search-result-layout.customQuery` block from the [Search Result app](https://vtex.io/docs/components/all/vtex.search-result/) is able to specify which query should be performed in order to get and render the desired search results for your users. 
+Even though custom pages do not have the needed context to fetch search data, since they are build from scratch, the `search-result-layout.customQuery` block from the [Search Result app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result/) is able to specify which query should be performed in order to get and render the desired search results for your users. 
 
 **Engage your users with specific products through an URL path!** Check out the instructions below: 
 
 ## Step by step
 
->⚠️ In order to build a custom search results page for your store, you must understand how a search results page is built and works in the first place. Access the  <a href="https://vtex.io/docs/components/all/vtex.search-result/">Search Result app documentation</a> and learn more about the blocks exported by this app, including the `search-result-layout.customQuery`. 
+>⚠️ In order to build a custom search results page for your store, you must understand how a search results page is built and works in the first place. Access the  <a href="https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result/">Search Result app documentation</a> and learn more about the blocks exported by this app, including the `search-result-layout.customQuery`. 
 
 1. Access your Store Theme app directory using whichever code editor you prefer. 
 2. In the `routes.json` file, define a new path called `store.custom#landing`, as shown below:
@@ -45,7 +45,7 @@ Even though custom pages do not have the needed context to fetch search data, si
 }
 ```
 
->ℹ️ You can learn how to use the `search-result-layout.customQuery` block in order to define how the search query data should be fetched accessing the <a href="https://vtex.io/docs/components/all/vtex.search-result/">3rd step of the Search Result app documentation</a>. 
+>ℹ️ You can learn how to use the `search-result-layout.customQuery` block in order to define how the search query data should be fetched accessing the <a href="https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result/">3rd step of the Search Result app documentation</a>. 
 
 6. Declare the blocks according to the search results custom page you wish to have. Below you can find an example of a custom search results template: 
 
@@ -125,11 +125,11 @@ Even though custom pages do not have the needed context to fetch search data, si
 ```
 
 7. Save the changes performed in your Store Theme app. 
-8. [Using your terminal](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/), log in to your VTEX Account and [create a new development workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/).
-9. Once logged into the desired account and workspace, [link](https://vtex.io/docs/recipes/development/linking-an-app/) your Store Theme app in order to see your new custom page live. 
+8. [Using your terminal](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference/), log in to your VTEX Account and [create a new development workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace/).
+9. Once logged into the desired account and workspace, [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app/) your Store Theme app in order to see your new custom page live. 
 10. Access your store's website using the following format: `{workspaceName}--{accountName}.myvtex.com/{pathName}`. You should see your new page live. 
 
-If you are happy with the changes to your store theme, make your new theme content public. Up until this point, only you could see it in your development workspace. Access our documentation on [**making your theme content publicly available**](https://vtex.io/docs/recipes/store-management/making-your-theme-content-public/) and follow the steps detailed there. 
+If you are happy with the changes to your store theme, make your new theme content public. Up until this point, only you could see it in your development workspace. Access our documentation on [**making your theme content publicly available**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-theme-content-public/) and follow the steps detailed there. 
 
 
 

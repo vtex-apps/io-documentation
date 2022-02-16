@@ -28,7 +28,7 @@ Para o funcionamento esperado do Messages, usaremos a biblioteca [`react-intl`](
 
 4. Salve as alterações feitas no código. 
 
-Pronto! Com todas as dependências do `react-intl` instaladas e o [builder](https://vtex.io/docs/concepts/builders/) de Messages configurado, podemos avançar para as próximas etapas.
+Pronto! Com todas as dependências do `react-intl` instaladas e o [builder](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-builders/) de Messages configurado, podemos avançar para as próximas etapas.
 
 ## Permitindo tradução automáticas
 
@@ -85,7 +85,7 @@ Ao criar um <code>id</code>, considere utilizar os prefixos <code>store/</code> 
 
 5. Salve todas as alterações feitas no código.
 
-Ao [*linkar*](https://vtex.io/docs/recipes/development/linking-an-app/) a sua app novamente e mudar o idioma da sua página, você perceberá que o texto `Hello World!` foi automaticamente traduzido na UI graças ao componente da biblioteca `react-intl` e ao Messages.
+Ao [*linkar*](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app/) a sua app novamente e mudar o idioma da sua página, você perceberá que o texto `Hello World!` foi automaticamente traduzido na UI graças ao componente da biblioteca `react-intl` e ao Messages.
 
 <div class="alert alert-info">
 Para testar esses efeitos na loja vinculada a sua conta VTEX, acesse <code>https://{workspaceName}-{accountName}.myvtex.com</code> e adicione a query string <code>cultureInfo</code> com o valor do idioma desejado. Para verificar, por exemplo, a sua página em português do Brasil, digite: <code>https://{workspaceName}-{accountName}.myvtex.com/?cultureInfo=pt-BR</code>, substituindo <code>{workspaceName}</code> e <code>{accountName}</code> pelo nome do workspace de desenvolvimento sendo usado e pelo nome da sua conta VTEX, respectivamente.
@@ -108,7 +108,7 @@ Nesta seção, ensinaremos como você deve sobrescrever as traduções automáti
 
 Ao vincular o mesmo `id` a outra tradução, você estará falando para o VTEX IO ignorar a tradução automática do Messages e considerar unicamente esta definida manualmente por você. 
 
-Faça o [*link*](https://vtex.io/docs/recipes/development/linking-an-app/) novamente da sua app e altere o idioma da página para português para conferir a tradução definida por você ser renderizada!
+Faça o [*link*](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app/) novamente da sua app e altere o idioma da página para português para conferir a tradução definida por você ser renderizada!
 
 ## Traduções avançadas
 

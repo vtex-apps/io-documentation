@@ -4,7 +4,7 @@ Com o modelo da aplicação já copiado, vamos agora criar um **novo bloco de te
 
 Antes de seguir para as instruções abaixo, é importante que você já conheça o VTEX Store Framework e entenda inteiramente o que é um bloco, tema de loja e template. 
 
-Caso você ainda não seja familiarizado com esses conceitos ou queira relembrar um pouco deste universo antes de começar as suas configurações, acesse a trilha [**Build stores with Store Framework**](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1/).
+Caso você ainda não seja familiarizado com esses conceitos ou queira relembrar um pouco deste universo antes de começar as suas configurações, acesse a trilha [**Build stores with Store Framework**](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3).
 
 ## Entendendo interfaces
 
@@ -14,7 +14,7 @@ Da mesma forma que uma API usa parâmetros para definir como será a conversa co
 
 **As interfaces, por meio das suas chaves, definem qual será o comportamento de um bloco quando implementado e renderizado em um tema de loja**. 
 
-Isso significa que, para cada bloco de tema exportado pela sua aplicação, você precisará definir uma [interface](https://vtex.io/docs/concepts/interfaces/), vinculando o bloco a um componente React de sua escolha.
+Isso significa que, para cada bloco de tema exportado pela sua aplicação, você precisará definir uma [interface](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-interfaces/), vinculando o bloco a um componente React de sua escolha.
 
 A tabela a seguir mostra algumas chaves possíveis de serem adicionadas à interface do seu bloco, bem como as suas respectivas descrições:
 
@@ -35,7 +35,7 @@ A única chave obrigatória a ser declarada na interface de um bloco é a `compo
  
 ## Declarando uma interface
 
-Declaramos a interface de um ou mais blocos no arquivo `interfaces.json` da aplicação, usado pelo [Store Builder](https://vtex.io/docs/concepts/builders/) para construir corretamente o *front-end* do seu website.
+Declaramos a interface de um ou mais blocos no arquivo `interfaces.json` da aplicação, usado pelo [Store Builder](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-builders/) para construir corretamente o *front-end* do seu website.
 
 Para este exemplo, vamos criar uma interface para um bloco básico chamado `hello-world` (baseado no componente React `HelloWorld`). 
 
@@ -103,7 +103,7 @@ Vamos implementar agora o novo bloco criado por você.
 
 Se a conta VTEX na qual você está trabalhando já possui a Store Theme do VTEX Store Framework instalada, siga a intrução abaixo a partir do passo 2. Caso a sua conta ainda não tenha a Store Theme app instalada, siga as instruções normalmente a partir do primeiro passo:
 
-1. Leia atentamente o [passo 3 da trilha Build stores with Store Framework](https://vtex.io/docs/getting-started/build-stores-with-store-framework/3/) e siga os passos detalhados no artigo. Ao final dele, você terá implementado o tema padrão do VTEX Store Framework e estará pronto para testar o seu novo bloco.
+1. Leia atentamente o [passo 3 da trilha Build stores with Store Framework](hhttps://developers.vtex.com/vtex-developer-docs/docs/getting-started-3) e siga os passos detalhados no artigo. Ao final dele, você terá implementado o tema padrão do VTEX Store Framework e estará pronto para testar o seu novo bloco.
 2. Abra a pasta da aplicação Store Theme nos seus arquivos locais usando o editor de código de sua escolha.
 3. No arquivo `manifest.json` da Store Theme, adicione a aplicação de front sendo desenvolvida por você como uma dependência em `dependencies`. Por exemplo:
 
@@ -132,7 +132,7 @@ Se a conta VTEX na qual você está trabalhando já possui a Store Theme do VTEX
 }
 ```
 
-5. Faça o [link](https://vtex.io/docs/recipes/development/linking-an-app/) do tema da loja com a plataforma VTEX IO para verificar os resultados:
+5. Faça o [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app/) do tema da loja com a plataforma VTEX IO para verificar os resultados:
 
 [![image](https://user-images.githubusercontent.com/18701182/78390827-9bb6bd00-75bb-11ea-837e-4cb5aaac9e32.png)](https://user-images.githubusercontent.com/18701182/78390827-9bb6bd00-75bb-11ea-837e-4cb5aaac9e32.png)
 

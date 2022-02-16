@@ -1,4 +1,4 @@
-# Defining styles
+# 5. Defining styles
 
 Your website’s **visual style** is a fundamental resource to building your **store’s identity**. 
 
@@ -54,7 +54,7 @@ Let's also imagine that instead of all text components, you now want just one to
 
 For such an advanced customization, you can overwrite the default style declared in `styles.json` using **CSS Handles**, along with the `blockClass` prop for the last given example. 
 
-If you are interested on applying advanced customization in your store's style, access the recipe on [**Using CSS Handles for store customization**](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization/) for more instructions.
+If you are interested on applying advanced customization in your store's style, access the recipe on [**Using CSS Handles for store customization**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-css-handles-for-store-customization/) for more instructions.
 
 
 

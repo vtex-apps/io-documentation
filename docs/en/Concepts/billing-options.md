@@ -1,23 +1,23 @@
 # Billing Options
 
-The `billingOption` field is part of an app’s `manifest.json` file, which is where all the app’s essential information is kept, such as its name and version. 
+The `billingOptions` field is part of the `manifest.json` file of an app and is used to define all the necessary metadata for distributing an app on the VTEX ecosystem. The `billingOptions` field allows you to charge for an app, make it public, and determine its pricing settings. 
 
-We use the `billingOptions` field to define an app’s distribution on the platform and structure its pricing data, allowing the application usage to be public and, in some scenarios, even charged. 
+Please notice that apps without `billingOptions` in the `manifest.json` file are **private**, meaning that they are only visible and available for installation in the account where they were published.
 
-Therefore, **structuring your app's `billingOption` field is a necessary step to distribute your application in the VTEX ecosystem**. An app without the `billingOptions` field in its `manifest.json` implies it is a **private** app and only visible and able to be installed in the account where it was published.
+>ℹ️ Setting your app's billing model is a necessary step to distribute your app on the VTEX ecosystem. Without the `billingOptions` definition, the visibility of your app is restricted to the account where it was published. Learn how to configure the `billingOptions` field in [Setting your app's billing model](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-your-apps-billing-model) according to your scenario.
 
-Below you will find more details on the properties that comprise this field.
+Refer to the following sections to find more details on the properties that comprise the `billingOptions` field.
 
 ## Properties
 
 | Property | Type | Description | Valid example | 
 | --------- | ----- | --------------- | ------- | 
-| `type`  | `enum` | Defines how the app is charged. Possible values are: `free` (app is free of charge), `billable` (app charges according to one of its plans) or `sponsored` (app is meant to be used only by a [Sponsor account](https://vtex.io/docs/concepts/sponsor-account/) and its children). | `free` | 
-| `support` | `object` | Provides a support request channel between the app’s user and its vendor. To know more, check out the `support` object section below. | `undefined` | 
+| `type`  | `enum` | Defines how the app is charged. Possible values are: `free` (app is free of charge), `billable` (app charges according to one of its plans) or `sponsored` (app is meant to be used only by a [Sponsor account](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-sponsor-account) and its children). | `free` | 
+| `support` | `object` | Provides a support request channel between the app’s user and its vendor. To know more, check out the [`support` object](#support-object) section below. | `undefined` | 
 | `availableCountries` | `array` | Defines the countries ID (ISO) where the app can be installed and where support is ensured by the vendor. | `["BRA", "USA", "GBR"]` or `["*"]` *(meaning that the app is available in any country)* | 
-| `plans` | `array` | **Optional property.** Defines (in an object array) a predefined subscription plan. To know more, check out the `plans` array section below. | `undefined` | 
+| `plans` | `array` | **Optional property.** Defines (in an object array) a predefined subscription plan. To know more, check out the [`plans` array](#plans-array) section below. | `undefined` | 
 
-- **`support` object:**
+### **`support` object:**
 
 | Property | Type | Description | Valid example | 
 | -------- | ------- | --------- | -------- | 
@@ -35,13 +35,13 @@ Valid example of the object:
 },
 ```
 
-- **`plans` array:**
+### **`plans` array:**
 
 | Property | Type | Description | Valid example | 
 | -------- | ------- | --------- | -------- | 
 | `id` | `string` | Unique plan identifier containing one or more letters or numbers from the english alphabet. | `BRAplan23`, `planShipping` | 
 | `currency` | `string` | A valid [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code to be used for the app’s subscription value. Currently, only `BRL` and `USD` are supported. | `BRL`, `USD` | 
-| `price` |  `object` | Contains subscription pricing values for the billable app. All values follow the same unit set in the `currency` prop. For more info, check out the `price` object section below. | `undefined` | 
+| `price` |  `object` | Contains subscription pricing values for the billable app. All values follow the same unit set in the `currency` prop. For more info, check out the [`price` object](#price-object) section below. | `undefined` | 
 
 Valid example of the object:
 
@@ -58,7 +58,7 @@ Valid example of the object:
 | Property | Type | Description | Valid example | 
 | -------- | ------- | --------- | -------- | 
 | `subscription` | `number` | The subscription’s *monthly* price. | `19.99` | 
-| `metrics` | `array` | Defines (in an object array) the criteria on which the variable fee will be based on, according to the app’s use. Only use this property if you also want to charge your app users according to the app usage (in addition to the subscription fee). To know more, check out the `metrics` object section below. | `undefined` | 
+| `metrics` | `array` | Defines (in an object array) the criteria on which the variable fee will be based on, according to the app’s use. Only use this property if you also want to charge your app users according to the app usage (in addition to the subscription fee). To know more, check out the [`metrics` array](#metrics-array) section below. | `undefined` | 
 
 Valid example of the object:
 
@@ -69,12 +69,12 @@ Valid example of the object:
 }
 ```
 
-- **`metrics` array:**
+### **`metrics` array:**
 
 | Property | Type | Description | Valid example | 
 | -------- | ------- | --------- | -------- | 
 | `id` | `string` | Unique metric identifier (across all metrics within the plan) containing one or more *letters* or *numbers* from the english alphabet. | `CreditMetric23` | 
-| `ranges` | `array` | Defines (in an object array) the range used to calculate the app’s use and the variable fee that users should be charged. To know more, check out the `ranges` object section below. | `undefined` | 
+| `ranges` | `array` | Defines (in an object array) the range used to calculate the app’s use and the variable fee that users should be charged. To know more, check out the [`ranges` array](#ranges-array) section below. | `undefined` | 
 | `customURL` | `string` | Reliable `URL` address containing information on how to get the metric value. | `mycredit.com/app/3/metric-value` | 
 
 Valid example of the object:
@@ -87,7 +87,7 @@ Valid example of the object:
 }
 ```
 
-- **`ranges` array:**
+### **`ranges` array:**
 
 | Property | Type | Description | Valid example | 
 | -------- | ------- | --------- | -------- | 
@@ -103,4 +103,3 @@ Valid example of the object:
   "multiplier": 0.08
 }]
 ```
- 

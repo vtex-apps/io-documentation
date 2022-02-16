@@ -12,7 +12,7 @@ The basic structure of a `robots.txt` file contains the following directives:
 
 You must adjust these directives according to your scenario.
 
->⚠️ This feature is available for stores using `vtex.edition-store@3.x` [Edition App](https://vtex.io/docs/concepts/edition-app/). To check which Edition App is installed on your account, run `vtex edition get`. If it's a different Edition, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the installation of the `vtex.edition-store@3.x` Edition App.
+>⚠️ This feature is available for stores using `vtex.edition-store@3.x` [Edition App](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app/). To check which Edition App is installed on your account, run `vtex edition get`. If it's a different Edition, please [open a ticket](https://help-tickets.vtex.com/smartlink/sso/login/zendesk) to the VTEX Support team asking for the installation of the `vtex.edition-store@3.x` Edition App.
 
 ## Step by Step
 
@@ -58,7 +58,7 @@ store-theme-robots
 
 5. Edit each file from the `sitemap/robots` folder with the desired content for each one of your `robots` files.
 
-6. Once everything is set up, use the terminal and the [VTEX IO Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/) to log in to the VTEX Account in which you are currently working in.
+6. Once everything is set up, use the terminal and the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference/) to log in to the VTEX Account in which you are currently working in.
 
 7. Run `vtex use {workspace}` to use a developer environment.
 
@@ -66,11 +66,11 @@ store-theme-robots
 
 8. Run `cd store-theme-robots` to go to the local app directory.
 
-9. Run `vtex link` to [link](https://vtex.io/docs/recipes/development/linking-an-app/) your new app to your development workspace.
+9. Run `vtex link` to [link](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-linking-an-app/) your new app to your development workspace.
 
 10. Check the `robots` file generated for each store by accessing `https://{workspace}--{account}.myvtex.com/{locale}/robots.txt` on your browser.
 
-11. Once you're happy with the changes, follow our documentation on [making your new app version publicly available](https://vtex.io/docs/recipes/development/making-your-new-app-version-publicly-available/) to run your app on master.
+11. Once you're happy with the changes, follow our documentation on [making your new app version publicly available](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available/) to run your app on master.
 
 Now, you are ready to check out your store's `robots` files by accessing `https://{account}.myvtex.com/{locale}/robots.txt` on your browser.
 

@@ -23,7 +23,7 @@ This is possible via the `catalog-graphql` app, which is the GraphQL interface o
 
 Follow this step by step if you aim to translate text messages from your store's catalog.
 
-1. [Install](https://vtex.io/docs/recipes/store/installing-an-app) the `vtex.admin-graphql-ide@3.x` app using your terminal.
+1. [Install](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-installing-an-app) the `vtex.admin-graphql-ide@3.x` app using your terminal.
 
 2. Access the **GraphQL admin IDE** section of the desired account. You will find it in the admin's side-bar menu:
 

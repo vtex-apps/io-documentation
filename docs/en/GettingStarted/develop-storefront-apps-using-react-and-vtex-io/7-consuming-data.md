@@ -1,4 +1,4 @@
-# Consuming data
+# 6. Consuming data
 
 Now you need to learn how this new component will talk with the *back-end* system, in other words, how it is going to **consume and insert data in the platform**. 
 

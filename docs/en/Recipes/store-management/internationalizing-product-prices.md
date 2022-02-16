@@ -15,7 +15,7 @@ It goes without saying that new international users must be able to understand e
 
 With regards to this last example, VTEX IO overcomes the hurdles of a store’s internationalization process and allows you to **set the currency code and number of decimal places in which your store's product prices will be displayed**.
 
-Through your store's [trade policies](https://help.vtex.com/tutorial/what-is-a-sales-policy--563tbcL0TYKEKeOY4IAgAE), you can effortlessly internationalize your product values.
+Through your store's [trade policies](https://help.vtex.com/tutorial/what-is-a-sales-policy--563tbcL0TYKEKeOY4IAgAE), you can set different currency codes for each locale.
 
 ## Step by step
 

@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Tracking changes in Lighthouse performance score
 
->ℹ️ *In this tutorial, we'll use [Lighthouse Scoring Calculator](https://googlechrome.github.io/lighthouse/scorecalc/#version=6), a tool created by Google that allows you to play with Lighthouse performance metrics and define which thresholds you should aim for to achieve the desired Performance Score.*
+>ℹ️ In this tutorial, we'll use [Lighthouse Scoring Calculator](https://googlechrome.github.io/lighthouse/scorecalc/#version=6), a tool created by Google that allows you to play with Lighthouse performance metrics and define which thresholds you should aim for to achieve the desired Performance Score.
 
 It's possible that a change you expected to cause a considerable increase in the *Performance Score* doesn't affect it at all. Conversely, a seemingly small change may affect the score significantly. The same applies in reverse for possible regressions in performance.
 
@@ -39,7 +39,7 @@ To better illustrate that, let's investigate the *Largest Contentful Paint (LCP)
 
 *LCP* has a weight of 25% on the *Performance Score*. Therefore, to affect the overall *Performance Score*, the *LCP* score must be at least 2, which would correspond to 1 point (rounding up 2*0.25=0,5) in the *Performance Score*.
 
->ℹ️ *When calculating the *Performance Score*, decimal values greater than 0.5 are rounded up to the next largest whole number.*
+>ℹ️ When calculating the *Performance Score*, decimal values greater than 0.5 are rounded up to the next largest whole number.
 
 With that in mind, suppose *LCP* went from 12s to 8s.
 
@@ -51,7 +51,7 @@ In this sense, to have an idea of when the *Metric Score* is too slow, we recomm
 
 ![maxvalue](https://user-images.githubusercontent.com/60782333/101213209-c8ded200-3658-11eb-8f6e-9f624a8bcf9e.png)
 
->ℹ️ *Notice that the metrics scores will be 0 for any value above the given limits.*
+>ℹ️ Notice that the metrics scores will be 0 for any value above the given limits.
 
 We also recommend being attentive to the following values:
 

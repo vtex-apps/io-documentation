@@ -21,7 +21,7 @@ It is quick and easy to provide a B2B environment for your IO store. Follow the 
 
 The key element that ensures the security of the displayed content is the **Challenge Trade Policy** block, responsible for checking if the store's user is allowed to browse the B2B environment.
 
-Check out the [Challenge Trade Policy documentation](https://vtex.io/docs/components/all/vtex.challenge-tp-condition/) to configure it correctly in your store and proceed to the next steps.
+Check out the [Challenge Trade Policy documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-challenge-tp-condition/) to configure it correctly in your store and proceed to the next steps.
 
 ### Step 2 - Defining the Condition Rule
 
