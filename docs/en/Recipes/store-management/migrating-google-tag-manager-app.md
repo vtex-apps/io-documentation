@@ -38,21 +38,25 @@ After executing the steps described, your Google Tag Manager container is ready 
 
 #### Product schema 
 
-To make the product information consistent across all store areas and help capture the entire user's journey on the store, the 3.x. major includes properties to the schema used to represent the events.
+To make the product information consistent across all store areas and help capture the entire user's journey on the store, [Google Tag Manager 3.x.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-google-tag-manager-app) includes Enhanced Ecommerce properties to the product data schema as events. These properties enable stores to provide additional information, such as product printing, promotion, and sales data.
 
 
-| Prop name     | Description   |
-| ------------- | ------------- | 
-| `id`| Product ID - Previously SKU ID | 
-| `variant`| SKU ID - Previously SKU Name|
-| `name`| Product Name - Previously Product Name or SKU Name| 
-| `quantity`| Product Quantity  |
-| `price`| Product Price  |
-| `category`| Product Brand  |
-| `brand`| Product Quantity  |
-| `dimension1`| Product Reference ID  |
-| `dimension2`| SKU Reference ID   |
-| `dimension3`| SKU Name (does not include the Product Name)  |
+| Prop name | Description |
+| --------------- | --------------- |
+| id | Product ID - Previously SKU ID. |
+| variant | SKU ID - Previously SKU Name. The variant of the product, e.g., Rebel pink. |
+| name | Product Name - Previously Product Name or SKU Name.| 
+| quantity | Product quantity |
+| price | Product price. |
+| category | Product category, e.g., Apparel. |
+| brand	| Product brand. |
+| dimension1 | Product Reference ID. |
+| dimension2 | SKU Reference ID. |
+| dimension3 | SKU Name (does not include the Product Name). |
+
+The `dimension1`, `dimension2`, `dimension3` properties are custom dimensions that you can use to collect and analyze data that Google Analytics does not automatically create. 
+
+For more information about custom dimensions and Enhanced Ecommerce, refer to [Custom dimensions and metrics](https://support.google.com/analytics/answer/2709828?hl=en&ref_topic=2709827#configuration&zippy=%2Cin-this-article) and [Google Enhanced ecommerce official guide](https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-ecommerce#ecommerce-data) respectively.
 
 
 ## Related Resources
