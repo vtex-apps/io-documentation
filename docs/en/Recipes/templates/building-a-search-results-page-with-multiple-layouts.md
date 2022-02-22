@@ -12,11 +12,13 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 Your results presentation on the search results page doesn't need to be always the same for your users: thanks to enhancements in the Search Result app, you can provide them a more **customized experience** to navigate between the fetched products. 
 
 ![multiple-layouts](https://user-images.githubusercontent.com/52087100/104608825-1e979880-5661-11eb-9088-d337680bbb5a.png)
-*Notice that the search results page above works two different layouts: `grid` and `list`.*
+*Notice that the search results page above works with two different layouts: `grid` and `list`.*
 
-The flexibility to offer multiple layouts, which can help the sales taxes by enhancing the shopping experience, is at hands! Check out the step-by-step section below.
+The flexibility to offer multiple layouts, which can help the sales tax rates by enhancing the shopping experience, is at hands! Check out the step-by-step section below.
 
->⚠️ To obtain successful results with this recipe, it is strongly recommended to understand previously how the [Flex Layout](https://developers.vtex.com/vtex-developer-docs/docs/vtex-flex-layout) and the [Search Result](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result) apps work. We also advise you to go through the [Building a Horizontal Product Summary recipe](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-building-a-horizontal-product-summary) to achieve similar results on your search results page.
+>⚠️ 
+>
+> To obtain successful results with this recipe, it is strongly recommended to understand previously how the [Flex Layout](https://developers.vtex.com/vtex-developer-docs/docs/vtex-flex-layout) and the [Search Result](https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result) apps work. We also advise you to go through the [Building a Horizontal Product Summary recipe](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-building-a-horizontal-product-summary) to achieve similar results on your search results page.
 
 ## Step by step
 

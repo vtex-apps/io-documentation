@@ -16,4 +16,4 @@ It is possible, however, that the integration you’re looking for is not curren
 
 > ℹ️ **Info**
 >
-> If you’re unsure whether to proceed with **developing a pixel app** or to **customize an HTML tag using Google Tag Manager**, keep in mind that the first option is always the most recommended. Developing an new app will enable a bold integration process with a third party solution, in addition to further evolving the Framework to help other users that may be interested in the same integration.
+> If you’re unsure whether to proceed with **developing a pixel app** or to **customize an HTML tag using Google Tag Manager**, keep in mind that the first option is always the most recommended. Developing a new app will enable a bold integration process with a third party solution, in addition to further evolving the Framework to help other users that may be interested in the same integration.
