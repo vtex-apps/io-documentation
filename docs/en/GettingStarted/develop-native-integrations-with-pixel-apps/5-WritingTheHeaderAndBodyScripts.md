@@ -14,7 +14,7 @@ If your Pixel app employs Javascript, then you’ll also need to add scripts to 
   var appId = "{{settings.gtmId}}";
 </script>
 
-<!-- Using directly in a HTML tag -->
+<!-- Using directly in an HTML tag -->
 <script src="//foobar.com?gtmId={{settings.gtmId}}"></script>
 ```
 
