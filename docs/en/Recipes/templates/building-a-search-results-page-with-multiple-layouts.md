@@ -14,7 +14,7 @@ Your results presentation on the search results page doesn't need to be always t
 ![multiple-layouts](https://user-images.githubusercontent.com/52087100/104608825-1e979880-5661-11eb-9088-d337680bbb5a.png)
 *Notice that the search results page above works with two different layouts: `grid` and `list`.*
 
-The flexibility to offer multiple layouts, which can help the sales taxes by enhancing the shopping experience, is at hands! Check out the step-by-step section below.
+The flexibility to offer multiple layouts, which can help the sales tax rates by enhancing the shopping experience, is at hands! Check out the step-by-step section below.
 
 >⚠️ 
 >
