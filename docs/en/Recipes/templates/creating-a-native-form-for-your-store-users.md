@@ -128,7 +128,7 @@ To that end, we will use the admin's Master Data legacy interface:
 
 When configuring the API to create the JSON Schema, remember to:
 
-- Replace the `data_entity_name` value with the Master Data's Data Entity name in which you want to save the user data fetched from the form;
+- Replace the `data_entity_name` value with the Master Data's Data Entity acronym in which you want to save the user data fetched from the form;
 - Replace the `schema_name` value with a name of your choosing. The value defined will be the form's JSON Schema name.
 
 >ℹ️ If you have difficulty in setting up the JSON Schema properties based on Master Data fields, remember to use the schema structure for Master Data's fields copied in step 4.
