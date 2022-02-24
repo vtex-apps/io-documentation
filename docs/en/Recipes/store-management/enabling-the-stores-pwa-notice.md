@@ -9,7 +9,9 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Enabling the store's PWA notice
 
-## Introduction 
+> ⚠️ Warning
+> 
+> You no longer need to use this documentation to activate your store's PWA notice. From now on follow the instructions available in [Enabling PWA push notifications in your store](https://help.vtex.com/en/tutorial/enabling-pwa-push-notifications-in-your-store--1be3ZPhbsgZSbE7h5H46pG). 
 
 All VTEX IO stores natively have a **PWA** at their disposal. A PWA is a sort of web app used to natively promote certain advantageous features to users, such as offline functionalities or a home screen icon.
 
