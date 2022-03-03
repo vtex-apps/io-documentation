@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.87.20] - 2022-03-03
+
 ## [0.87.19] - 2022-02-24
 ### Added
 - Warning callout in the PWA documentation
