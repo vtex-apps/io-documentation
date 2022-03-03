@@ -15,7 +15,9 @@ Although **VTEX does not grant any support for custom projects**, we have put to
 
 Find below the best practices regarding tooling, features, flexibility, scalability, performance, accessibility, internationalization, and styling, to be adopted when creating your storefront component.
 
->⚠️ Before applying the configurations stated below, it is highly recommended that you understand how VTEX IO, Store Framework and React work since the guidelines take into account previous knowledge. You can take a closer look at the [VTEX IO learning course](https://learn.vtex.com/) and the [React official documentation](https://reactjs.org/) for support.*
+>⚠️ 
+> 
+> Before applying the configurations stated below, it is highly recommended that you understand how VTEX IO, Store Framework and React work since the guidelines take into account previous knowledge. You can take a closer look at the [VTEX IO learning course](https://learn.vtex.com/) and the [React official documentation](https://reactjs.org/) for support.*
 
 ## Tooling
 
@@ -29,7 +31,9 @@ Use Typescript types as an ally in your development journey since they provide a
 
 `vtex setup --typings`   
 
->⚠️ The command above will install all Typescript types from the apps listed in the app's `dependencies` list in your project. Whenever you add a new dependency, the command must be executed again.
+>⚠️ 
+> 
+> The command above will install all Typescript types from the apps listed in the app's `dependencies` list in your project. Whenever you add a new dependency, the command must be executed again.
 
 ## Feature development
 
@@ -67,7 +71,9 @@ function Shelf({ title }: Props) {
 export default Shelf
 ```
 
->ℹ️ Notice how the Store Framework solution counts on specific apps for [integrations with 3rd solutions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-accessibe) and [layout structuring](https://developers.vtex.com/vtex-developer-docs/docs/vtex-condition-layout), besides having template components that play a particular role once rendered to the final users, such as the [Product Identifier app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-identifier). When developing your storefront component, keep in mind that segmentation is the key to a light code and successful component!
+> ℹ️ 
+> 
+> Notice how the Store Framework solution counts on specific apps for [integrations with 3rd solutions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-accessibe) and [layout structuring](https://developers.vtex.com/vtex-developer-docs/docs/vtex-condition-layout), besides having template components that play a particular role once rendered to the final users, such as the [Product Identifier app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-identifier). When developing your storefront component, keep in mind that segmentation is the key to a light code and successful component!
 
 ## Flexibility and scalability
 
@@ -81,7 +87,9 @@ Be careful not to only think about its appearance when fully rendered. It is imp
 - `Error` - When the component could not be rendered due to an error.
 - `Empty` - When the component could not fetch data and therefore is rendered with empty content.
 
->ℹ️ The Render Runtime is the VTEX app responsible for rendering the storefront. Check out the [app documentation](https://github.com/vtex-apps/render-runtime) and get to know some valuable variables to your project.
+> ℹ️ 
+> 
+> The Render Runtime is the VTEX app responsible for rendering the storefront. Check out the [app documentation](https://github.com/vtex-apps/render-runtime) and get to know some valuable variables to your project.
 
 Also, be careful with the usage of browser variables, such as `window` and `document`, since they only exist in the browser context and may harm your component display when opting for server-side rendering. 
 
@@ -103,7 +111,9 @@ However, they do not present great scalability considering that the component ev
 
 Boolean props, therefore, demand creating brand new props whenever unprecedented use cases are introduced to your component. 
 
->⚠️ Once the component is deployed, avoid managing its props (creating, removing, and/or updating them)! Managing props can be costly since it can directly impact the API's maintenance and therefore harm other developers working with it.
+>⚠️ 
+> 
+> Once the component is deployed, avoid managing its props (creating, removing, and/or updating them)! Managing props can be costly since it can directly impact the API's maintenance and therefore harm other developers working with it.
 
 With that in mind, replace boolean for enum props! The latter has a broader range, being more ready to keep up with your component's evolution and the several behaviors it may have. 
 
@@ -148,7 +158,9 @@ You can learn more about Slots [here](https://developers.vtex.com/vtex-developer
 
 ![best-practices-for-storefront-component-development-5](https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/Media/best-practices-for-storefront-component-development-5.png?raw=true)
 
->ℹ️ When not using Slots, prefer to use the `children` [composition](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-composition).
+> ℹ️ 
+> 
+> When not using Slots, prefer to use the `children` [composition](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-composition).
 
 ## Performance
 
@@ -162,7 +174,9 @@ Avoid using heavy npm libraries since they negatively impact the page's loading 
 
 Prefer light libraries to support your code and optimize its performance!  
 
->ℹ️ Check how your npm libraries can impact user browsing accessing [bundlephobia.com](https://bundlephobia.com/).
+> ℹ️ 
+> 
+> Check how your npm libraries can impact user browsing accessing [bundlephobia.com](https://bundlephobia.com/).
 
 ### Data sharing 
 
@@ -170,7 +184,9 @@ Use the React context to share data between components and avoid over-fetching a
 
 The Dispatcher and State patterns, as well as the useMemo feature, are powerful resources that can be made available by the context and used by your component. 
 
->ℹ️ Check out the article on [using React context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively) to understand deeper how the React context can work in your favor.
+> ℹ️ 
+> 
+> Check out the article on [using React context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively) to have an in-depth understanding of how the React context can work in your favor.
 
 ### Media upload
 
@@ -186,7 +202,9 @@ When declaring the block's [interface](https://developers.vtex.com/vtex-develope
 
 The [Footer](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-footer) is a good example of a Store Framework's native component that counts on this attribute to be rendered optimizing store performance!
 
->ℹ️ The default value for `Hydration` is `always`, meaning that the component will be loaded and rendered as expected, regardless of the user's view.
+> ℹ️ 
+> 
+> The default value for `Hydration` is `always`, meaning that the component will be loaded and rendered as expected, regardless of the user's view.
 
 ## Accessibility 
 
@@ -222,7 +240,9 @@ Check out the documentation on [Defining styles](https://developers.vtex.com/vte
 
 Another good styling tip is to be careful with the breakpoints on the screen according to devices. Remember to set the component style for every possible scenario on the interface!
 
->ℹ️ The [VTEX Styleguide](https://styleguide.vtex.com/) is a go-to document during your style customization. The guide is constantly updated by our team and provides useful guidelines in terms of design.
+> ℹ️ 
+> 
+> The [VTEX Styleguide](https://styleguide.vtex.com/) is a go-to document during your style customization. The guide is constantly updated by our team and provides useful guidelines in terms of design.
 
 ## Engagement
 
