@@ -16,7 +16,7 @@ Before making it available at the VTEX App Store, your app must go through our h
 ## Before you start
 
 
-1. Have developed your app. You can follow the [Developing an app guide]() for more information on this step. 
+1. Have developed your app. You can follow the [Developing an app guide](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-developing-an-app) for more information on this step. 
 
 
 2. Ensure you are a registered [VTEX App Store developer](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-becoming-a-registered-vtex-app-store-developer).
