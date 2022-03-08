@@ -22,16 +22,33 @@ Because development workspace do not have any level of user traffic, you should 
 vtex use {workspaceName}
 ```
 
->⚠️ Remember to replace the value in the curly brackets according to your store's scenario and needs.
+> ⚠️ 
+> 
+> Remember to replace the value in the curly brackets according to your store's scenario and needs.
 
-Once you are sure of the changes performed in the Development workspace, it is time to [create a Production workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-production-workspace) in order to test your changes with some user traffic.
+Once created, the Developer workspace has no expiration date, which means that settings will remain stored in it unless there is any conflict with the store's Master workspace configurations. 
 
-But be aware: **the Production workspace will not inherit the changes performed in the Development workspace**. All changes performed in the Development workspace will need to be replicated in the new Production workspace.
+In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working, since the account's workspaces work as a copy of the version available to the end-user. 
 
-Once created, the Developer workspace has no expiration date, which means that settings will remain stored in it unless there is any conflict with the configurations of the store’s Master workspace. 
+Stick to the list of workspaces created for your account. It is important to keep a shortlist for two reasons:
 
-In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working, since the account's workspaces work as a copy of the version available to the end user. 
+- Your organization.
 
->ℹ️ Stick to the list of workspaces created for your account. It is important to keep a short list, not only for your own organization but also to spare platform infrastructure resources. Currently, there is no service responsible for automatically deleting unused workspaces from an account. This means that you must manually delete workspaces that are no longer being used by running `vtex workspace delete {workspaceName}`.
+- Spare platform infrastructure resources. 
 
->ℹ️ Creating a Development workspace is one of the steps to making your code's new version public, meaning that it will become available to your end users. For more details on the next steps and to better understand the full flow, access the recipe on [making your new app version publicly available.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available)
+Currently, no service is responsible for automatically deleting unused workspaces from an account. This means that you must manually delete workspaces that are no longer being used by running `vtex workspace delete {workspaceName}`.
+
+> ⚠️
+> 
+> Be aware: once you **delete a workspace**, it is **not possible to restore it** and its content.
+
+## Next Step
+
+Once you are sure of the changes performed in the Development workspace, it is time to [create a Production workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-production-workspace) to test your changes with some user traffic.
+
+> ⚠️
+> 
+> **The Production workspace will not inherit the changes performed in the Development workspace**. All changes performed in the Development workspace will need to be replicated in the new Production workspace.
+
+
+Creating a Development workspace is one of the steps to making your code's new version public, meaning that it will become available to your end-users. For more details on the next steps and to better understand the complete flow, access the recipe on [making your new app version publicly available.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-new-app-version-publicly-available)
