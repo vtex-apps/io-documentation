@@ -30,9 +30,7 @@ vtex use {workspaceName} --production
 
 From this point onwards, **any changes to the code are prohibited in the Production workspace, and you can only install new apps in it**. This means that you are not able to link any app as well. If you want to change your code, work on it using a [Developer workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace/) and then copy all the performed changes to a Production one.
 
-Once created, the Production workspace has no expiration date, which means that settings will remain stored in it unless there is any conflict with the store's Master workspace configurations. 
-
-In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working, since the account's workspaces work as a copy of the version available to the end-user. 
+Once created, the Production workspace has no expiration date, which means that settings will remain stored in it unless there is any conflict with the store's Master workspace configurations. In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working, since the account's workspaces work as a copy of the version available to the end-user. 
 
 Stick to the list of workspaces created for your account. It is important to keep a shortlist for two reasons:
 
