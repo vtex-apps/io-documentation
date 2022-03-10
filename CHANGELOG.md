@@ -6,7 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-
+### Updated
+- *Creating a Production workspace* and *Creating a Development workspace* docs
 ## [0.87.22] - 2022-03-04
 
 ## [0.87.21] - 2022-03-04

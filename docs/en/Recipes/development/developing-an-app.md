@@ -198,7 +198,8 @@ If you are developing an app that will be distributed to the [VTEX App Store](ht
 - [Builders](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-builders)
 
 - [Dependencies](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-dependencies)
-Workspace
+
+- [Workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace/)
 
 ### Tutorials
 
