@@ -26,9 +26,7 @@ vtex use {workspaceName}
 > 
 > Remember to replace the value in the curly brackets according to your store's scenario and needs.
 
-Once created, the Developer workspace has no expiration date, which means that settings will remain stored in it unless there is any conflict with the store's Master workspace configurations. 
-
-In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working, since the account's workspaces work as a copy of the version available to the end-user. 
+Once created, the Developer workspace has no expiration date, which means that settings will remain stored in it unless there is any conflict with the store's Master workspace configurations. In these cases, **the Master settings will always prevail over the settings of the other account's workspaces**, including the Developer one in which you are working, since the account's workspaces work as a copy of the version available to the end-user. 
 
 Stick to the list of workspaces created for your account. It is important to keep a shortlist for two reasons:
 
