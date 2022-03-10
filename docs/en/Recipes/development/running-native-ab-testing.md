@@ -11,9 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/
   
 An A/B test compares two website versions to reveal which version is best for your business needs based on a single metric, such as the highest return rate.
 
-For example, suppose you want to update your store's landing page. To avoid any unpleasant surprises that may arise from this change, you should take this decision based on a quantitative metric that confirms the beneficial results of that update.
-
-You can handle this issue by running an A/B test using the VTEX IO native A/B testing solution or via the VTEX Admin using the [A/B Tester app](https://developers.vtex.com/vtex-developer-docs/docs/vtexarg-abtester).
+For example, you want to update your store's landing page and to confirm the beneficial results of the page update, you should confirm with a quantitative metric that shows the beneficial results of that update. You can handle this by running an A/B test using the VTEX IO native A/B testing solution or via the VTEX Admin using the [A/B Tester app](https://developers.vtex.com/vtex-developer-docs/docs/vtexarg-abtester).
 
 ![ab-testing](https://user-images.githubusercontent.com/52087100/64129197-21a62780-cd91-11e9-86f9-1ec8a3d2e2c8.png)
 
@@ -40,7 +38,8 @@ vtex install vtexarg.abtester
 ```
 5. Type `y` to confirm the installation.
 
-Once you have installed the app, it will display in your store Admin in the section **OTHER**, and you will be able to create A/B tests, compare results and finish the test. To manage these functions, please refer to the [A/B Tester documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtexarg-abtester#usage)
+Once you have installed the app, it will display in your store Admin in the section **OTHER**, and you will be able to create A/B tests, compare results and finish the test. To manage these functions, please refer to the [A/B Tester documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtexarg-abtester#usage).
+
 ## Running A/B tests via native solution
 ### Step 1 - Enabling A/B testing
 
@@ -90,7 +89,7 @@ vtex workspace abtest start
 
 > ℹ️ 
 > 
-> You can run more than one A/B test simultaneously in VTEX IO by independently comparing two or more workspaces with the master workspace. But be aware: if the traffic has been manually set, it will be divided equally between all the production workspaces currently being tested. For example, suppose you started an A/B test between WorkspaceA and Master, diverting 90% of traffic to the former and only 10% to the latter. If you then configure a new A/B test between WorkspaceB and Mater, WorkspaceA and WorkspaceB will only have 5% of the store's traffic each.
+> You can run more than one A/B test simultaneously in VTEX IO by independently comparing two or more workspaces with the master workspace. However, if the traffic has been manually set, it will be divided equally between all the production workspaces currently being tested. For example, you started an A/B test between WorkspaceA and Master, diverting 90% of traffic to the former and only 10% to the latter. If you then configure a new A/B test between WorkspaceB and Mater, WorkspaceA and WorkspaceB will only have 5% of the store's traffic each.
 
 ### Step 2 - Configuring the traffic and time
 
