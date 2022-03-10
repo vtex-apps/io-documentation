@@ -15,6 +15,10 @@ You need a Google account to use Google Tag Manager. If you already use Google p
 
 If you do not have an account for a Google product, create one at [Creating your Google account](https://accounts.google.com/signup/v2/webcreateaccount?service=analytics&continue=https%3A%2F%2Ftagmanager.google.com%2F&dsh=S1158101756%3A1642078409369040&biz=true&flowName=GlifWebSignIn&flowEntry=SignUp&nogm=true). 
 
+> ⚠️
+> 
+> If you install a new version of the Google Tag Manager (GTM) app, the VTEX environment deletes the previous GTM data stored. Therefore, if you already have a GTM version installed in your account, review the data that you have added before installing a new version of the app.
+
 ## Step-by-step
 
 1. Access your VTEX **Admin** and go to **Account settings > Apps > App Store**
