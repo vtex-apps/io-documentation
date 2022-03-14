@@ -22,6 +22,6 @@ Our components allow you to:
 
 *And much more!* 
 
-Now that you've understood what VTEX Store Framework is, dig deeper: check out the answers to the most [frequently asked questions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-frequently-asked-questions) and some of our [components](https://developers.vtex.com/vtex-developer-docs/docs/overview-5/).
+Now that you've understood what VTEX Store Framework is, dig deeper: check out the answers to the most [frequently asked questions](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-frequently-asked-questions) and some of our [components](https://developers.vtex.com/vtex-developer-docs/docs/store-framework-apps).
 
 If you already know that you want to build your storefront using our components, don't waste any time by accessing our content track on how to [build a store using Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3) 
