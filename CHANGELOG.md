@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Updated
+- `What is a VTEX App` and `Storefront apps` documentation.
+
 ## [0.87.25] - 2022-03-14
 
 ## [0.87.24] - 2022-03-10
