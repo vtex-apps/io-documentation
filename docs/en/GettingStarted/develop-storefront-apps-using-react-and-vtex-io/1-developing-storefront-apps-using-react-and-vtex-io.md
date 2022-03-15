@@ -16,7 +16,12 @@ Leveraging from the VTEX IO platform, the VTEX IO Store Framework solution deliv
 
 However, considering some particular business scenarios, you may feel the need for specific front-end solutions which are not covered yet by our native components. In this case, you can develop your own storefront apps with React and VTEX IO.
 
-The components you develop can be used in your store's theme or be made available to other stores interested in the same solution through the admin and [VTEX App Store](https://apps.vtex.com/).
+The components you develop can be used in your store's theme or be made available to other stores interested in the same solution through the admin and [VTEX App Store](https://apps.vtex.com/). During the development process, make sure to check the following guides:
+
+- [Developing custom storefront components - Best Practices](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-developing-custom-storefront-components)
+
+- [App Store Guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-homologation-requirements-for-vtex-app-store)
+
 
 > ℹ️ **Info**
 >
