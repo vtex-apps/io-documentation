@@ -16,7 +16,7 @@ $ yarn global add vtex
 
 ## Login
 
-Com a CLI do VTEX IO instalada, use o comando `vtex login para entrar na sua conta VTEX:
+Com a CLI do VTEX IO instalada, use o comando `vtex login` para entrar na sua conta VTEX:
 
 ```
 $ vtex login {ContaVTEX}
@@ -26,7 +26,7 @@ Isso abrirá uma janela do seu navegador que solicitará suas credenciais.
 
 Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descobrir qual conta e *workspace* estão sendo usados pelo terminal.
 
-![]("https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png"
+![](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
   
 ## Criando seu próprio *workspace*
 
