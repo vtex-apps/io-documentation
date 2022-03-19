@@ -30,7 +30,7 @@ Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descob
   
 ## Criando seu próprio *workspace*
 
-Ao usar o VTEX IO, toda interação com uma conta acontece em um [***workspace***](*link*).
+Ao usar o VTEX IO, toda interação com uma conta acontece em um ***workspace***.
 
 Ao fazer *login* em uma loja, você está automaticamente no *workspace* master dela, ou seja, na versão disponível para o usuário final. Por isso, lembre-se que sempre que você quiser testar uma nova configuração, o seu próprio *workspace* de desenvolvimento deve ser criado usando o comando `vtex use`.
 
