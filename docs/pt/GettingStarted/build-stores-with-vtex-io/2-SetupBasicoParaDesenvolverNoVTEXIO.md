@@ -4,9 +4,9 @@ Todo desenvolvimento no VTEX IO começa com o [**VTEX IO CLI**](*link*), nossa C
 
 ## VTEX IO CLI
 
-Para instalar a CLI do VTEX IO, você precisa garantir que o seu computador tenha o [Node.js](https://nodejs.org/) e o [Yarn](https://yarnpkg.com/) instalados.
+1. Para instalar a CLI do VTEX IO, você precisa garantir que o seu computador tenha o [Node.js](https://nodejs.org/) e o [Yarn](https://yarnpkg.com/) instalados.
 
-Em seguida, digite `yarn global add vtex` no terminal do seu computador.
+2. Em seguida, digite `yarn global add vtex` no terminal do seu computador.
 
 ```
 $ yarn global add vtex
@@ -14,19 +14,19 @@ $ yarn global add vtex
 
 >ℹ️ Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.
 
-## Login
+## Fazendo login
 
-Com a CLI do VTEX IO instalada, use o comando `vtex login para entrar na sua conta VTEX:
+1. Com a CLI do VTEX IO instalada, use o comando `vtex login para entrar na sua conta VTEX:
 
 ```
 $ vtex login {ContaVTEX}
 ```
 
-Isso abrirá uma janela do seu navegador que solicitará suas credenciais.
+2. Isso abrirá uma janela do seu navegador que solicitará suas credenciais.
 
-Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descobrir qual conta e *workspace* estão sendo usados pelo terminal.
+3. Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descobrir qual conta e *workspace* estão sendo usados pelo terminal.
 
-![]("https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png"
+![imagem exemplo](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
   
 ## Criando seu próprio *workspace*
 
