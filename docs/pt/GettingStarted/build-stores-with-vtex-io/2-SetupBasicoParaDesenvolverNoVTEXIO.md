@@ -12,7 +12,7 @@ Todo desenvolvimento no VTEX IO começa com o [**VTEX IO CLI**](*link*), nossa C
 $ yarn global add vtex
 ```
 
->ℹ️ Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.
+> ℹ️ Para confirmar que a instalação ocorreu normalmente, você pode executar o comando `vtex`. Ele deverá mostrar um texto de ajuda com todos os comandos disponíveis.
 
 ## Login
 
@@ -42,12 +42,12 @@ Isso muda o seu VTEX IO CLI para um workspace chamado `nomeexemplo` e o cria se 
 
 ![vtex-use-nomeexemplo](https://user-images.githubusercontent.com/52087100/61886135-7ffc0280-aed5-11e9-983f-4a76615d0574.png)
 
->⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no `workspace` definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no VTEX IO CLI `vtex use master`, por exemplo.*
+> ⚠️ *O `vtex use` faz com que todas as suas operações passem a ocorrer no `workspace` definido no comando. Isso significa que é possível alternar suas operações para master apenas executando no VTEX IO CLI `vtex use master`, por exemplo.*
 
 Com o seu próprio *workspace* de desenvolvimento criado, você pode navegar na sua loja acessando:
 
 `https://{{nomeexemplo}}-{{accountname}}.myvtex.com`
 
-Onde `workspace` é o workspace que você acabou de criar (como `nomeexemplo`) e `conta` é o nome da conta em que você está trabalhando.
+Onde `workspace` é o workspace que você acabou de criar (como `nomeexemplo`) e `accountname` é o nome da conta em que você está trabalhando.
 
 Pronto! Agora você já pode desenvolver sua loja no VTEX IO.
