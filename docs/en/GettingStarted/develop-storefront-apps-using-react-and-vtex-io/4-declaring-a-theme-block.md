@@ -1,10 +1,11 @@
 # 3. Declaring a theme block
 
-With the app template already copied, we will now create a **new theme block**. 
+With the app template already copied, we will now create a **new theme block**. Follow the instructions below to create the new theme block.
 
-Before proceeding to the instructions below, it is important that you are already familiar with VTEX Store Framework and fully understand what a block, store theme, and template are. 
+## Before you start
+1. It is important that you are already familiar with VTEX Store Framework and fully understand what a block, store theme, and template are. If you are not familiar with these concepts or want to refresh them a little before working with the settings, check [**Build stores with Store Framework**](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3).
 
-If you are not familiar with these concepts or want to refresh them a little before working with the settings, check [**Build stores with Store Framework**](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3).
+2. When creating a storefront component, follow the best practices regarding tooling, features, flexibility, scalability, performance, accessibility, internationalization, and styling, to be adopted when creating your storefront component. Check [**Developing custom storefront components**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-developing-custom-storefront-components) for more information.
 
 ## Understanding interfaces
 
@@ -53,7 +54,9 @@ const HelloWorld = () => <div>Hello, World!</div>
 export default HelloWorld
 ```
 
->ℹ️ Be sure to check out the [React solution documentation](https://reactjs.org/docs/getting-started.html) to better understand how components work.
+> ℹ️ 
+> 
+> Be sure to check out the [React solution](https://reactjs.org/docs/getting-started.html) and [Developing custom storefront components](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-developing-custom-storefront-components) documentation to better understand how components work.
 
 4. On the first level of your app's folders create a new folder called `store`.
 5. In the `store` folder, add a new file called `interfaces.json`.
@@ -75,7 +78,9 @@ In our basic example, we only use the `component` key to link the` hello-world` 
 
 After saving your code changes, your new block will be ready to be implemented by any user who installs your app.
 
->ℹ️ If the app under development exports more than one theme block for rendering the React component, all of these blocks' interfaces must also be declared in the <code> interfaces.json</code> file, according to the format indicated above.
+> ℹ️
+>  
+> If the app under development exports more than one theme block for rendering the React component, all of these blocks' interfaces must also be declared in the <code> interfaces.json</code> file, according to the format indicated above.
 
 ### Declaring different interfaces by breakpoint 
 
