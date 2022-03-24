@@ -124,5 +124,5 @@ The app documentation should include:
 
 ## Next
 
-- Coming soon: Documentation best practices 
+- Coming soon: Documentation best practices. 
 
