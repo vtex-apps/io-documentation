@@ -13,7 +13,6 @@ Before submitting your app to the homologation process and [making it available 
 
 - **Business guidelines**
   - [App monetization](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-app-monetization)
-  - [Self-service level](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-self-service-level)
   - [Marketing assets](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-marketing-assets)
 - [**Design guidelines**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-design-guidelines)
 - [**Engineering guidelines**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-engineering-guidelines)
