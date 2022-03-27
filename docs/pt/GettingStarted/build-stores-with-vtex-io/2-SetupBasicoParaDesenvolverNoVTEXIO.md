@@ -1,6 +1,7 @@
 # *Setup* básico para desenvolver no VTEX IO
 
-Todo desenvolvimento no VTEX IO começa com o [**VTEX IO CLI**](*link*), nossa CLI (Command Line Interface) que permite fazer login, desenvolver novas [apps](*link*) e gerenciar as já instaladas.
+Todo desenvolvimento no VTEX IO começa com o [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference
+), nossa CLI (Command Line Interface) que permite fazer login, desenvolver novas *apps*  e gerenciar as já instaladas.
 
 ## VTEX IO CLI
 
@@ -22,21 +23,24 @@ Com a CLI do VTEX IO instalada, use o comando `vtex login para entrar na sua con
 $ vtex login {ContaVTEX}
 ```
 
+
 Isso abrirá uma janela do seu navegador que solicitará suas credenciais.
 
 Quando já estiver *logado*, você pode usar o comando `vtex whoami` para descobrir qual conta e *workspace* estão sendo usados pelo terminal.
 
-![]("https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png"
+![COMANDO](https://user-images.githubusercontent.com/52087100/61886028-517e2780-aed5-11e9-9398-b6d2f3909a50.png)
   
 ## Criando seu próprio *workspace*
 
-Ao usar o VTEX IO, toda interação com uma conta acontece em um [***workspace***](*link*).
+Ao usar o VTEX IO, toda interação com uma conta acontece em um *workspace*.
 
-Ao fazer *login* em uma loja, você está automaticamente no *workspace* master dela, ou seja, na versão disponível para o usuário final. Por isso, lembre-se que sempre que você quiser testar uma nova configuração, o seu próprio *workspace* de desenvolvimento deve ser criado usando o comando `vtex use`.
+Ao fazer *login* em uma loja, você está automaticamente no *workspace* master dela, ou seja, na versão disponível para o usuário final.
+Por isso, lembre-se que sempre que você quiser testar uma nova configuração, o seu próprio *workspace* de desenvolvimento deve ser criado usando o comando `vtex use`.
 
 ```
 $ vtex use {nomeexemplo}
 ```
+
 
 Isso muda o seu VTEX IO CLI para um *workspace* chamado `nomeexemplo` e o cria se ele não existir.
 
