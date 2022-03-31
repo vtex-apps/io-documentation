@@ -1,5 +1,5 @@
 ---
-title: Using the Fold blocks
+title: Lazy loading components
 description: "Improve your website performance using these two Fold blocks."
 date: "2020-04-29"
 tags: ["performance", "fold", "experimentalLazyAssets", "blocks"]
@@ -7,21 +7,20 @@ version: "0.x"
 git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/en/Recipes/templates/using-the-fold-blocks.md"
 ---
 
-# Using the Fold blocks
+# Lazy loading components
 
-In the VTEX IO Store Framework, there are two key blocks responsible for improving your website's performance. 
+In the VTEX IO Store Framework, there are the `__fold__` and the `__fold.experimentalLazyAssets` blocks responsible for improving your website's performance. 
 
-The first one is the `__fold__` block, responsible for defining which interface components will be loaded first for rendering and which will be loaded together with the user's scrolling. 
+The `__fold__` block is responsible for defining which interface components will be loaded first for rendering and which will be loaded together with the user's scrolling. 
 
-The second, called `__fold.experimentalLazyAssets`, defines which components will be loaded statically until the first interaction with users. 
+The `__fold.experimentalLazyAssets`, an optional block, defines which components will be loaded statically until the first interaction with users. 
 
-Both are strategic, since **they directly impact the initial loading performance** of the page on which they are configured, improving your store's UX. 
+**They impact the initial loading performance** of the page on which they are configured, improving your storefront UX. 
 
-The good news is that these two block can and should be used together to ensure maximum impact in terms of website performance. Check out the step by step below.
+## Before you start
+The blocks `__fold__` and `__fold.experimentalLazyAssets` requires manual optimization of your store's page. However, there are features in the Admin that enable page performance. For further details, see the [Optimizing performance](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance#enabling-store-settings) guide.
 
-## Step by step
-
-### Adding the `__fold__` block
+## Adding the `__fold__` block
 
 Add the `__fold__` block to your theme's desired templates, such as `store.product` and `store.home`. For example:
 
@@ -64,9 +63,11 @@ In the example above, both the Carousel and the Shelf will be displayed with the
 
 >⚠️ Google will not be able to track content positioned under the Fold block for SEO purposes, since the components are only loaded with user scrolling. Therefore, ensure you add all the SEO-relevant information above the fold block when applying this improvement.
 
-### Adding the `__fold__.experimentalLazyAssets` block
+## Optional: Adding the `__fold__.experimentalLazyAssets` block
 
->ℹ️ We recommend that you add the `__fold__.experimentalLazyAssets` block to your store's home page (`store.home` theme template) for better results.
+> ⚠️
+> 
+>  The `__fold.experimentalLazyAssets` block is experimental, which means it may cause side-effects, such as failing to render an interactive component in the storefront, such as the Carousel, and should be used with caution. If you are working in scenarios that you need to [lazy load images and products data in a slider](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance#lazy-loading-images-and-products-data-in-a-slider) we recommend [building a carousel using Slider Layout](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-building-a-carousel-using-slider-layout).
 
 In the template's block list, add the `__fold__.experimentalLazyAssets` above the blocks whose loading will be static until the user's first interaction. For example:
 
@@ -84,6 +85,7 @@ In the template's block list, add the `__fold__.experimentalLazyAssets` above th
   ]
 },
 ```
+>ℹ️ We recommend that you add the `__fold__.experimentalLazyAssets` block to your store's home page (`store.home` theme template) for better results.
 
 >⚠️Make sure that it is added below blocks whose components are interactive, such as the Carousel. That's because the static loading, provided by the `__fold__.experimentalLazyAssets` block, can be detrimental to the proper functioning of these interactive components, negatively impacting user navigation. 
 
