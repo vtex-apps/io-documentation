@@ -63,7 +63,7 @@ vtex use {workspaceName} --production
 > 
 > If your store uses the [Checkout UI Custom](https://developers.vtex.com/vtex-developer-docs/docs/vtex-checkout-ui-custom-v0) app, you must first publish its configurations on your new production workspace. Otherwise, you might experience undesired consequences, such as losing the Checkout custom Javascript code and styles.
 
-4. Change from the Production workspace you are working into the Master one:
+4. Switch to the master workspace.
 
 ```
 vtex use master
