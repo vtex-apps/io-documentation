@@ -11,7 +11,9 @@ git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/
   
 An A/B test compares two website versions to reveal which version is best for your business needs based on a single metric, such as the highest return rate.
 
-For example, you want to update your store's landing page and to confirm the beneficial results of the page update, you should confirm with a quantitative metric that shows the beneficial results of that update. You can handle this by running an A/B test using the VTEX IO native A/B testing solution or via the VTEX Admin using the [A/B Tester app](https://developers.vtex.com/vtex-developer-docs/docs/vtexarg-abtester).
+For example, suppose you want to update your store's landing page. To confirm the beneficial results of your changes, you can run an A/B test and base your decisions on quantitative metrics.
+
+To execute an A/B test, you can use the VTEX IO CLI or the [A/B Tester Admin app](https://developers.vtex.com/vtex-developer-docs/docs/vtexarg-abtester). For more information, please refer to the following sections.
 
 ![ab-testing](https://user-images.githubusercontent.com/52087100/64129197-21a62780-cd91-11e9-86f9-1ec8a3d2e2c8.png)
 
