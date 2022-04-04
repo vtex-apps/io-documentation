@@ -98,7 +98,7 @@ By agreeing to proceed with the test, you will need to answer the two following 
 
 > ℹ️
 >
-> To avoid breaking your store and promote the changes from the new workspace in the safest way possible, we strongly recommend that you leave `90%` of traffic dedicated to the master workspace and the other 10% for the production workspace being tested.
+> To promote the changes from your production workspace in the safest way possible, we strongly recommend that you leave 90% of traffic dedicated to the master and the other 10% to the production workspace being tested.
 
 2. `What's the amount of time respecting the restriction?`. This amount of time refers to the time (in hours) during which the proportion of traffic specified in the previous question will be kept constant. After that, the test will start to have the traffic proportions updated by the A/B testing system. The system analyzes each workspace's performance and sends more traffic to the best-performing ones. You can either:
   - **Answer `0` to automatically proceed with the A/B test.** In this case, VTEX IO will automatically split your website traffic between workspaces, leaving 50% of your store's traffic with the master workspace while migrating the other 50% to the production workspace being tested. The platform will automatically balance traffic every 3 minutes according to the conversion rate that arises. This means that **the workspace with less conversion will progressively relay its traffic to the workspace with more conversion**. Notice that the test, although automatic, will not end by itself. It's important to evaluate and interpret the test status daily.
