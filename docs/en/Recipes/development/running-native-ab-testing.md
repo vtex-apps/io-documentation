@@ -17,7 +17,6 @@ To execute an A/B test, you can use the VTEX IO CLI or the [A/B Tester Admin app
 
 ![ab-testing](https://user-images.githubusercontent.com/52087100/64129197-21a62780-cd91-11e9-86f9-1ec8a3d2e2c8.png)
 
-Follow the sections below to learn how to install and execute an A/B test via our native solution or via the VTEX Admin.
 
 ## Running A/B tests via Admin
 The A/B Tester app allows you to run A/B tests via Admin. To use the app, first you need to install it in your account:
