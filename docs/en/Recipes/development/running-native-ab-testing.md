@@ -89,9 +89,6 @@ vtex workspace abtest start
 
 7. Select the production workspace you want to use for comparison with the master and agree to proceed.
 
-> ℹ️ 
-> 
-> You can run more than one A/B test simultaneously in VTEX IO by independently comparing two or more workspaces with the master workspace. However, if the traffic has been manually set, it will be divided equally between all the production workspaces currently being tested. For example, you started an A/B test between WorkspaceA and Master, diverting 90% of traffic to the former and only 10% to the latter. If you then configure a new A/B test between WorkspaceB and Mater, WorkspaceA and WorkspaceB will only have 5% of the store's traffic each.
 
 ### Step 2 - Configuring the traffic and time
 
