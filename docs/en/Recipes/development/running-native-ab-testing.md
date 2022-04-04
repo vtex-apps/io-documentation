@@ -41,7 +41,7 @@ vtex install vtexarg.abtester
 
 Once you have installed the app, it will display in your store Admin in the section **OTHER**, and you will be able to create A/B tests, compare results and finish the test. To manage these functions, please refer to the [A/B Tester documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtexarg-abtester#usage).
 
-## Running A/B tests via native solution
+## Running A/B tests via the VTEX IO CLI
 ### Step 1 - Enabling A/B testing
 
 1. Open the terminal and use the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference) to log in to the desired account:
