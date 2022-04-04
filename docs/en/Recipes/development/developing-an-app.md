@@ -179,7 +179,7 @@ If you are developing an app that will be distributed to the [VTEX App Store](ht
 
 - [Engineering Guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-engineering-guidelines) - The Engineering guidelines are your go-to guides to learn the coding standards to develop an app using the VTEX IO infrastructure, such as scalability, performance, security and data privacy.
 
-- [User Experience guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-design-guidelines) -  Learn how you can design an app to meet the VTEX App Store requirements.
+- [Design guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-design-guidelines) -  Learn how you can design an app to meet the VTEX App Store requirements.
 
 
 - Business Guidelines -  The Business Guidelines are divided in two: 
