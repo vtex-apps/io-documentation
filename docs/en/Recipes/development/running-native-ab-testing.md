@@ -79,7 +79,7 @@ vtex install vtex.ab-tester
 > 
 > You can run `vtex ls` to make sure that you have successfully installed `vtex.ab-tester` in the `master` workspace.
 
-6. While still working in the master workspace, run the following command to choose a production workspace from the list made available for you. The selected workspace will be compared to the Master’s.
+6. Run the following command in the master workspace.
 
 ```
 vtex workspace abtest start
