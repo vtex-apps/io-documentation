@@ -57,7 +57,7 @@ vtex login {accountName}
 vtex use {workspaceName} --production
 ```
 
-3. Perform the changes you want to test, such as installing a new app in the production workspace you are working in.
+3. Perform the changes you want to test in the production workspace you are using. For example, install or edit an app.
 
 >⚠️ 
 > 
