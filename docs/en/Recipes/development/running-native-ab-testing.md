@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/
 
 # Running A/B tests
   
-An A/B test compares two website versions to reveal which version is best for your business needs based on a single metric, such as the highest return rate.
+An A/B test compares traffic between two workspaces: the master and a production workspace, and reveals which version is best for your business needs.
 
 For example, suppose you want to update your store's landing page. To confirm the beneficial results of your changes, you can run an A/B test and base your decisions on quantitative metrics.
 
