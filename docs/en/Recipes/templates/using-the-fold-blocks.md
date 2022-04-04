@@ -18,7 +18,13 @@ The `__fold.experimentalLazyAssets`, an optional block, defines which components
 **They impact the initial loading performance** of the page on which they are configured, improving your storefront UX. 
 
 ## Before you start
+- **Optimizing performance**
+
 The blocks `__fold__` and `__fold.experimentalLazyAssets` requires manual optimization of your store's page. However, there are features in the Admin that enable page performance. For further details, see the [Optimizing performance](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance#enabling-store-settings) guide.
+
+- **Blocks configuration**
+
+You do not need to declare and configure both blocks in your theme code. Adding the `__fold__` and the `__fold__.experimentalLazyAssets` in the template's block list is enough for improving your website's performance.
 
 ## Adding the `__fold__` block
 
@@ -61,7 +67,9 @@ This configuration by device is very useful, since components are viewed differe
 
 In the example above, both the Carousel and the Shelf will be displayed with the first meaningful paint on desktop mode. However, for mobile users, only the carousel will be loaded first.
 
->⚠️ Google will not be able to track content positioned under the Fold block for SEO purposes, since the components are only loaded with user scrolling. Therefore, ensure you add all the SEO-relevant information above the fold block when applying this improvement.
+> ⚠️ 
+> 
+> Google will not be able to track content positioned under the Fold block for SEO purposes, since the components are only loaded with user scrolling. Therefore, ensure you add all the SEO-relevant information above the fold block when applying this improvement.
 
 ## Optional: Adding the `__fold__.experimentalLazyAssets` block
 
@@ -69,7 +77,7 @@ In the example above, both the Carousel and the Shelf will be displayed with the
 > 
 >  The `__fold.experimentalLazyAssets` block is experimental, which means it may cause side-effects, such as failing to render an interactive component in the storefront, such as the Carousel, and should be used with caution. If you are working in scenarios that you need to [lazy load images and products data in a slider](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-best-practices-for-optimizing-performance#lazy-loading-images-and-products-data-in-a-slider) we recommend [building a carousel using Slider Layout](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-building-a-carousel-using-slider-layout).
 
-In the template's block list, add the `__fold__.experimentalLazyAssets` above the blocks whose loading will be static until the user's first interaction. For example:
+In the template's block list, add the `__fold__.experimentalLazyAssets` above the blocks whose loading will be static until the user's first interaction. We recommend that you add the `__fold__.experimentalLazyAssets` block to your store's home page (`store.home` theme template) for better results. For example:
 
 ```diff
 "store.home": {
@@ -85,8 +93,7 @@ In the template's block list, add the `__fold__.experimentalLazyAssets` above th
   ]
 },
 ```
->ℹ️ We recommend that you add the `__fold__.experimentalLazyAssets` block to your store's home page (`store.home` theme template) for better results.
 
->⚠️Make sure that it is added below blocks whose components are interactive, such as the Carousel. That's because the static loading, provided by the `__fold__.experimentalLazyAssets` block, can be detrimental to the proper functioning of these interactive components, negatively impacting user navigation. 
-
->ℹ️ You do not need to declare and configure both blocks in your theme code. Adding the `__fold__` and the `__fold__.experimentalLazyAssets` in the template's block list is enough for improving your website's performance. 
+> ⚠️
+> 
+> Make sure that it is added below blocks whose components are interactive, such as the Carousel. That's because the static loading, provided by the `__fold__.experimentalLazyAssets` block, can be detrimental to the proper functioning of these interactive components, negatively impacting user navigation.  
