@@ -60,7 +60,7 @@ A VTEX App can also be characterized as:
 
 - [Best Practices](https://developers.vtex.com/vtex-developer-docs/docs/best-practices): Achieve better results by following VTEX developer's recommendations.
 
-- [App Store Guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-homologation-requirements-for-vtex-app-store): Ensure that your app complies with the Business, User Experience and Engineering guidelines.
+- [App Store Guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-homologation-requirements-for-vtex-app-store): Ensure that your app complies with the Business, Design and Engineering guidelines.
 
 - [Submitting your app to the VTEX App Store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-submitting-your-app-in-the-vtex-app-store): Submit your app to the VTEX App Store review process.
 
