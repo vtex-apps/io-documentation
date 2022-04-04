@@ -30,7 +30,7 @@ vtex use master
 vtex install vtex.ab-tester
 ```
 
-3. After running `vtex install vtex.ab-tester` the CLI will ask if you are sure to force this operation in the `master` workspace. Type `y` to confirm.
+3. Type `y` to confirm that you want to install the app in the `master` workspace. 
 
 4. Install the **A/B Tester Admin app** in the `master` workspace by running the following:
 
