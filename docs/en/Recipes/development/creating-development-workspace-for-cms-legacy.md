@@ -30,4 +30,4 @@ Once the `vtex.edition-store@3.x` Edition app is installed in the Development wo
 1. Make sure to configure the Store theme for the Development workspace you have created. Refer to the [Setting your store's theme](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-3-settingyourstoretheme) documentation for more details.
 
 
-2. After finishing setting your Store Theme, perform A/B testing between the Development workspace in IO and the Master workspace in the CMS legacy. Refer to the [Performing A/B testing between store versions in CMS and VTEX IO]() documentation.
+2. After finishing setting your Store Theme, perform A/B testing between the Development workspace in IO and the Master workspace in the CMS legacy. Refer to the [Performing A/B testing between store versions in CMS and VTEX IO](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-performing-ab-testing-between-store-versions-in-cms-and-vtex-io) guide.
