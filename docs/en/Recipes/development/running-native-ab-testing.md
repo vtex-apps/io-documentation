@@ -87,7 +87,7 @@ vtex workspace abtest start
   
 ![ab-testing-step4](https://user-images.githubusercontent.com/52087100/64129583-50bd9880-cd93-11e9-8b80-f1fe4cad943b.png)
 
-7. Select the production workspace where you've already performed all desired changes and then agree to proceed.
+7. Select the production workspace you want to use for comparison with the master and agree to proceed.
 
 > ℹ️ 
 > 
