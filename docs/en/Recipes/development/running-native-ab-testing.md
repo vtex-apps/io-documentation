@@ -142,7 +142,7 @@ Before completing your A/B test, it's important to understand both workspaces' c
 
 **The best way to validate your A/B test workspace winner is to set a maximum conversion loss value according to your store operation size.**
 
-For example, you can set `0,0001%` as the conversion loss maximum value when starting your test. Then, the decision to end the test and declare a winner will be taken when either workspace reaches an `Expect Loss` result greater than `0,0001%`.
+For example, you can set a maximum conversion loss of `0,0001%` when starting your test. Then, when either workspace achieves an `Expect Loss` result greater than `0,0001%`, you should end the test and declare a winner.
 
 ### Step 4 - Finishing the A/B test
 
