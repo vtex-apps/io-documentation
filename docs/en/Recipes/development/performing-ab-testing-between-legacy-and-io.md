@@ -1,10 +1,10 @@
-# Performing A/B testing between store versions in CMS and VTEX IO 
+# Performing A/B testing between store versions
 In this guide, you will learn how to perform A/B testing between store workspaces in CMS Legacy and VTEX IO to confirm which workspace has the highest conversion rate for your store.
 
 ## Before you start
 1. [Install the VTEX IO Command-line Interface (CLI)](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference). Through the CLI, you can log in to your VTEX account, manage workspaces and develop new apps.
 
-2. Ensure that you already have a Development workspace for your account. Otherwise, create and set up one following [Creating a Development workspace in IO for a CMS legacy store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace-in-io-for-a -cms-legacy-store) guide.
+2. Ensure that you already have a Development workspace for your account. Otherwise, create and set up one following [Creating a Development workspace in IO for a CMS legacy store](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-development-workspace-for-cms-legacy) guide.
 
 3. Ensure that your Development workspace has the `vtex.edition-store@3.x` Edition app installed. Run the `vtex edition get` in your terminal to verify the Edition App version installed on the current account. Otherwise, [Open a ticket to the VTEX support team](https://help-tickets.vtex.com/smartlink/sso/login/zendesk?_ga=2.222513819.1487123273.1647865109-1001456323.1619912759) requesting the installation of the `vtex.edition-store@3.x` Edition app in the new Development workspace.
 

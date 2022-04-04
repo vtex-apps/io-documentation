@@ -1,4 +1,4 @@
-# Creating a Development workspace in IO for a CMS legacy store
+# Creating a Development workspace for a CMS legacy store
 In this guide, you will learn how to create a Development workspace to start developing in an IO environment. 
 
 When working in a Development workspace, the public version of your store, that is, the one that is visible to end users, will stay stable utilizing the CMS Legacy until you are ready to transition to IO.
@@ -30,4 +30,4 @@ Once the `vtex.edition-store@3.x` Edition app is installed in the Development wo
 1. Make sure to configure the Store theme for the Development workspace you have created. Refer to the [Setting your store's theme](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-3-settingyourstoretheme) documentation for more details.
 
 
-2. After finishing setting your Store Theme, perform A/B testing between the Development workspace in IO and the Master workspace in the CMS legacy. Refer to the [Performing A/B testing between store versions in CMS and VTEX IO](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-performing-ab-testing-between-store-versions-in-cms-and-vtex-io) guide.
+2. After finishing setting your Store Theme, perform A/B testing between the Development workspace in IO and the Master workspace in the CMS legacy. Refer to the [Performing A/B testing between store versions in CMS and VTEX IO](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-performing-ab-testing-between-legacy-and-io) guide.
