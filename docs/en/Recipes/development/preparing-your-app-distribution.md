@@ -105,7 +105,7 @@ The Images folder is where you store the images of your app that are displayed i
 
 You can add mobile and desktop screenshots by saving them into sub-folders for each device. For example: `public/metadata/images/screenshots/mobile` and `public/metadata/images/screenshots/desktop`.
 
-Check out the images’ guidelines at the [Marketing Assets guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-marketing-assets) for more information.
+Check out the images’ guidelines at the [Marketing guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-marketing-assets) for more information.
 
 
 ### The `licenses` folder
@@ -164,7 +164,7 @@ See below the base template for structuring this file:
 
 The files in this folder must be available in English, Spanish, and Portuguese in the following paths: `public/metadata/messages/en-US.json`, `public/metadata/messages/es-AR.json` and `public/metadata/messages/pt-BR.json`, respectively.
 
-These fiels are important since they are the first point of contact that merchants have with your app and decide if the app is the right solution for their business. To learn how you can write good copies to each of these fields, please refer to ther [Marketing Assets Guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-marketing-assets#messages). 
+These fiels are important since they are the first point of contact that merchants have with your app and decide if the app is the right solution for their business. To learn how you can write good copies to each of these fields, please refer to ther [Marketing guidelines](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-business-guidelines-marketing-assets#messages). 
 
 ### Step 3 - Publishing and deploying your app on the VTEX IO development platform
 
