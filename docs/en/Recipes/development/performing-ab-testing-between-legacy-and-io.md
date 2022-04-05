@@ -16,34 +16,34 @@ In this guide, you will learn how to perform A/B testing between store workspace
 ```
 vtex login {account-name}
 ```
->  ℹ️        
+> ℹ️       
 > 
 > Remember to replace the value between the brackets for the VTEX account name you desire. For example: `vtex login account-name`.
 
 
-5. Access the Development workspace that you have created by running:
+2. Access the Development workspace that you have created by running:
 ```
 vtex use {workspace} 
 ```
->  ℹ️        
+> ℹ️      
 > 
 > Remember to replace the value between the brackets for the Development workspace you desire. For example: `vtex login test`.
 
-6. Run the `vtex use Master` command in your terminal to perform the steps below in the Master workspace. The Master workspace must be set to the `vtex.edition-business@0.x` [edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app).
+3. Run the `vtex use Master` command in your terminal to perform the steps below in the Master workspace. The Master workspace must be set to the `vtex.edition-business@0.x` [edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app).
 
-7. Install the `vtex.colossus-legacy-proxy@@1.8.9-hkignore` app. This is an essential step to avoid that you store in production break. 
+4. Install the `vtex.colossus-legacy-proxy@@1.8.9-hkignore` app. This is an essential step to avoid that you store in production break. 
 
 >⚠️ 
 > 
 > The app’s version must be `vtex.colossus-legacy-proxy@@1.8.9-hkignore`. If not, the store won’t respond to the request.
 
-8. [Open a ticket to the VTEX support team](https://help-tickets.vtex.com/smartlink/sso/login/zendesk?_ga=2.222513819.1487123273.1647865109-1001456323.1619912759) requesting the redirection of the production workspace to be rendered in VTEX IO
+5. [Open a ticket to the VTEX support team](https://help-tickets.vtex.com/smartlink/sso/login/zendesk?_ga=2.222513819.1487123273.1647865109-1001456323.1619912759) requesting the redirection of the production workspace to be rendered in VTEX IO
 
 >⚠️ 
 > 
 > If the store has a different storefront for mobile, inform this in the ticket to the VTEX support.
 
-9. Once the Production workspace is rendering in the VTEX IO, you can enable the A/B test between the workspaces described in the [Running native A/B tests](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-running-native-ab-testing) step-by-step.
+6. Once the Production workspace is rendering in the VTEX IO, you can enable the A/B test between the workspaces described in the [Running native A/B tests](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-running-native-ab-testing) step-by-step.
 
 ### Validating if the A/B test is running
 
