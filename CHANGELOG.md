@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.87.37] - 2022-04-05
+
 ## [0.87.36] - 2022-04-04
 ### Updated
 - The Running native A/B tests documentation
