@@ -1,4 +1,4 @@
-# Performing A/B testing between store versions
+# A/B testing Legacy and IO store versions
 In this guide, you will learn how to perform A/B testing between store workspaces in CMS Legacy and VTEX IO to confirm which workspace has the highest conversion rate for your store.
 
 ## Before you start

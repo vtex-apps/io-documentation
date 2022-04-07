@@ -1,4 +1,4 @@
-# Creating a Development workspace for a CMS legacy store
+# Creating a Development workspace for a Legacy CMS store
 In this guide, you will learn how to create a Development workspace to start developing in an IO environment. 
 
 When working in a Development workspace, the public version of your store, that is, the one that is visible to end users, will stay stable utilizing the CMS Legacy until you are ready to transition to IO.
