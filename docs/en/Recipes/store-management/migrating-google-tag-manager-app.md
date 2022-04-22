@@ -2,6 +2,27 @@
 
 Version 3.x of [VTEX’s Google Tag Manager (GTM) app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-google-tag-manager) tracks the entire user’s journey through the store, from viewing a product to purchasing it, via events triggered by the variable `ecommerceV2`. 
 
+New and rearranged properties were added to the product schema to represent on the events and to track the user's journey and keep product information consistent across all areas of the store.
+
+| GTM 3.x property | Type |
+| -------- | ------- | 
+| `id`  | Renewed property | 
+| `variant`  | Renewed property | 
+| `name`   | Renewed property | 
+| `quantity`  | Unchanged property | 
+| `price`  | Unchanged property| 
+| `category`  | Unchanged property | 
+| `brand`  | Unchanged property | 
+| `dimension1`  | New property | 
+| `dimension2`  | New property | 
+| `dimension3`  | New property | 
+
+> ℹ️
+> 
+> For more detail on these properties, go to the section [Product schema](#product-schema)
+
+
+
 Follow the steps below to update the GTM container and fetch the data from the `ecommerceV2` variable.
 
 ## Before you start
