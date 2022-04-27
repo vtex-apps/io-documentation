@@ -19,7 +19,7 @@ New and rearranged properties were added to the product schema to represent on t
 
 > ℹ️
 > 
-> For more detail on these properties, go to the section [Product schema](#product-schema)
+> For more details on these properties, go to the section [Product schema](#product-schema)
 
 
 
@@ -56,6 +56,18 @@ Create the store's checkout variable by following the step **For the store’s c
 
 
 After executing the steps described, your Google Tag Manager container is ready to support the GTM 3.x major. [Check your Google Analytics](https://support.google.com/analytics/answer/1009692?hl=en) to see the impact on the results.
+
+
+### Updating Google Tag Manager settings
+After installing the Google Tag Manager app 3.x major, you must update the app's settings to guarantee that previous data won't be be lost after the upgrade. To update the app's settings:
+
+1. Access the following link: `https://{myaccount}.myvtex.com/admin/apps/vtex.google-tag-manager@3.3.1/setup/`. Do not forget to change the value in brackets for your account name.
+2. In the field **Google Tag Manager**, type the GTM ID.
+> ℹ️ Info
+>  
+>  To find your store’s GTM ID, first, you need a container to the Tag Manager account. If you do not have one follow the [create a new account and container tutorial](https://support.google.com/tagmanager/answer/6103696?hl=en#install) and after find the GTM ID in The Container ID column of the container.
+
+3. Click on `SAVE`.
 
 #### Product schema 
 
