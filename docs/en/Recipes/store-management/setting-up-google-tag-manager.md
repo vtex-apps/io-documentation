@@ -61,7 +61,7 @@ To start, create the essential variables to work within GTM: **Data Layer** and 
 2. Type `campaignMedium` in the `Data Layer Variable Name` field.
 3. Click on `Save` and save it as **Data Layer Variable - currency**.
 
-Repeat the instructions above, now changing the data layer variable name to each of the following variables, unless the **Data Layer Variable - currency** already declared in the example above.
+Repeat the instructions above, now changing the data layer variable name to each of the following variables, unless the **Data Layer Variable - currency** already declared in the example above:
 
 | Variable name | Value | Description | Tags that will use it |
 | --------------- | --------------- | --------------- |  --------------- | 
