@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- Using partytown to improve store performance doc.
+
 ## [0.87.49] - 2022-05-02
 
 ## [0.87.48] - 2022-04-28
