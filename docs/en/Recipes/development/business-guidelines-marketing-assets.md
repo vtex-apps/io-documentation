@@ -9,13 +9,13 @@ git: " "
 ---
 # Marketing guidelines
 
-Once you have [developed your app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-developing-an-app), you have to prepare the App Page used to promote your app at the [VTEX App Store](https://apps.vtex.com/). The App Page is the first point of contact for retailers to learn more about your app and decide whether it is suitable for their business.
+Once you have [developed your app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-developing-an-app), you have to prepare the App Page used to promote your app at the [VTEX App Store](https://apps.vtex.com/). The App Page is the first point of contact for merchants to learn more about your app and decide whether it is suitable for their business.
 
 ![appstore-page-example](https://user-images.githubusercontent.com/67270558/153282275-98bab015-81e8-4858-8538-72c9fa33d17e.gif)
 
 Make sure to present your solutions professionally by adhering to the following principles:
 
-- Clearly describe your app’s purpose and how merchants can benefit from it.
+- Clearly describe your app’s value proposition, key benefits, and how merchants can benefit from it.
 - Choose a product name that indicates the purpose of the app.
 - Use high-quality images (icon and screenshots) and videos (if applicable).  
 
@@ -111,8 +111,8 @@ Licenses are written documents that contain the Terms and Conditions (T&C) of yo
 > The recommendations presented here are intended to serve as guidelines for the third-party developers and do not represent a legal recommendation. VTEX is not responsible for direct, indirect, moral, punitive damages, consequential damages or loss of profits arising from the use and/or compliance with these guidelines. Hiring legal advice is necessary and recommended for the final writing of terms and conditions for applications.
 
 
-## Messages
-The textual content of your App Page must highlight your app’s purpose and features in a clear and concise way so merchants can easily understand your app. 
+## Messaging
+The textual content of your App Page must highlight your app’s value proposition and features in a clear and concise way so merchants can easily understand what they can do and achieve with your app. 
 
 Remember, your App Page is your main marketing tool and touchpoint with merchants.
 
@@ -125,7 +125,7 @@ The name of an app is decisive for how merchants will find your app on the VTEX 
 
 - The app name must be a maximum of 26 characters.
 
-- Keep it concise and memorable. Ensure that it alludes to the experiences the app provides.
+- Keep it concise and descriptive. Ensure that it alludes to the experiences the app provides.
 
 <details>
     <summary><b>Show example</b></summary>
@@ -246,7 +246,7 @@ The name of an app is decisive for how merchants will find your app on the VTEX 
 
 ### Headline 
 
-The headline should describe the purpose of your app in a concise sentence.
+The headline should describe the value proposition of your app in a concise sentence.
 
 
 ![4-Headline](https://user-images.githubusercontent.com/67270558/157516505-f43a11ed-ac35-49f7-9b41-08f5099f34ba.png)
@@ -256,7 +256,7 @@ The headline should describe the purpose of your app in a concise sentence.
 
 - The headline must have a maximum of 120 characters.
 
-- Summarize your app’s primary purpose and benefits in a descriptive and concise way.
+- Capture your app's key value proposition in a consise way. 
 
 
 <details>
@@ -299,6 +299,10 @@ The headline should describe the purpose of your app in a concise sentence.
 </section>
 <br>
 </details> 
+
+- Consider using verbs that reference the actions the users will be able to do with your app and the benefit it will deliver
+    - `Integrate data` | `create wishlists` | `monitor performance`.
+    - `Increase revenue` | `deliver convenient experiences`.
 
 - Avoid repeating the application name. 
 
@@ -348,7 +352,11 @@ The overview is the description of the app and should be an engaging message tha
 <br>
 </details> 
 
-- Consider your audience and describe why your app is important to the merchant’s store. 
+- Make sure you are addessing for whom your app is, what need it solves and how uniquely do you solve it. 
+
+> ℹ️
+>  
+>  There are numerous value proposition frameworks that can be used as a reference in this task, such as the following: *Our [product] help(s) [audience] who wants to [jobs to be done] by [verb e.g. reducing, avoiding] + [a user pain or gain].* 
 
 
 <details>
