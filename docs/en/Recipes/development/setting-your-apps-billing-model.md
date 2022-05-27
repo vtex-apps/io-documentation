@@ -9,31 +9,40 @@ git: "https://github.com/vtex-apps/io-documentation/edit/master/docs/en/Recipes/
 
 # Setting your app's billing model
 
-Once your app has been developed and is ready to be deployed, it's time to think about its **distribution**. That's right: it's time to define who will be able to install your app, if its usage will be charged and, if so, how much it will cost for the interested accounts. 
+Once your app has been developed and is ready to go live, it's time to think about its distribution. In this step, you must define who will be allowed to install your app, whether your app will be paid or not, and how much it will cost if so.
 
-To better define these topics, you must first establish if your new app should be private or public on the VTEX IO platform. 
+When preparing your app for distribution, you must first establish if your new app will be private or public on the VTEX IO platform. 
+- **Private apps** can only be installed by their `vendor` account  (i.e., the account responsible for the app's development and maintenance). 
+- **Public apps** are available to all accounts of the VTEX IO ecosystem. These apps can be charged or not. 
 
-Private Apps can only be installed by the `vendor` account, meaning the account responsible for their development and maintenance. Public apps, on the other hand, are made available to the entire ecosystem of accounts that use the platform, and a fee may be charged or not. 
+## Setting the app as private
 
-## Setting my app as private
+Take the following steps to make your app private:
 
-We express our intention to make an app public by using the [`billingOptions` field](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options) in the app's `manifest.json` - file of the application responsible for saving all its metadata. 
+### Step by step
 
-If you want to make your app private, remove the `billingOptions` field properly from the app's `manifest.json` file if it already exists in it. 
+1. Open your project in any code editor of your preference.
+2. Open the `manifest.json` file and remove the `billingOptions` field.
 
-Without `billingOptions`, VTEX IO will understand that the app in question should not be made available to any account other than the one specified in the `vendor` field of `manifest.json`. 
+Without `billingOptions`, VTEX IO will understand that the app in question should not be made available to any account other than the one specified in the `vendor` field of the `manifest.json` file. 
 
-## Setting my app as public
+## Setting the app as public
 
-If you want to make your app publicly available, you must also define if the users of your app should be charged or not. 
+When making your app public available to the entire VTEX IO ecosystem, you must set up the `billingOptions` field in the app's [`manifest.json`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest) file. In this context, you will need to:
 
-For both scenarios, you will need to understand how to structure the `billingOptions` field and use its properties. Before executing the instructions according to the desired scenario, take a closer look at the [`billingOptions` documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options).
+- Define whether or not the app will be charged.
+- Register the use of metrics.
+- Register metric data.
 
->ℹ️ The data related to the accounts that have installed your app and the contracts generated for each one are stored under VTEX domain. If you are interested, [contact the VTEX support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) to know more.
+For more information, please refer to the [`billingOptions` documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options).
 
-### Making my app free of charge
+### Step by step
 
-1. Open your app code in your code editor.
+#### Step 1 - Setting the app's pricing
+
+##### Setting the app as free
+
+1. Open your app in any code editor of your preference.
 2. Open the `manifest.json` file.
 3. Add the `billingOptions` field to your app's `manifest.json` file with the `type` property set as `free`.
 4. Provide a support channel for the app users, using the `support` property.
@@ -50,7 +59,7 @@ According to the specified countries, your app can be installed in any VTEX acco
 
 >ℹ️ The `*` value stands for all countries.
 
-### Charging my app
+##### Setting the app as charged
 
  When you decide to charge for your app, you will need to add more properties to the `billingOptions` field to set the desired **billing template**. 
   
@@ -60,7 +69,7 @@ There are three possible billing templates on the VTEX IO platform:
 - **Fixed Subscription + Variable Rate** - Charges a fixed monthly amount and a variable rate according to the use of the app.
 - **Variable Subscription + Variable Rate** - Charges a different amount per month according to the use of the app, in addition to a variable rate also defined according to its use.
 
-#### Fixed Subscription
+###### Fixed Subscription
 
 1. Open your app code in your code editor.
 2. Open the `manifest.json` file.
@@ -92,7 +101,7 @@ For example:
 
 >ℹ️ This billing model only allows a single subscription plan to be created for the app.
 
-#### Fixed subscription + variable rate
+###### Fixed subscription + variable rate
 
 1. Open your app code in your code editor.
 2. Open the `manifest.json` file.
@@ -220,7 +229,7 @@ In which:
 
 >⚠️ Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.
 
-#### Variable subscription + variable rate 
+###### Variable subscription + variable rate 
 
 1. Open your app code in your code editor.
 2. Open the `manifest.json` file.
@@ -337,7 +346,7 @@ In which:
 
 >⚠️ Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.
 
-### Registering the use of metrics defined in billingOptions
+#### Step 2 - Registering the use of metrics
 
 If the app's `billingOptions` has one or more items that are charged according to a metric value, the app itself must register and update the metric values over time. Not registering the metric values or updating them correctly means the app's users will not be charged the right value.
 
@@ -378,7 +387,7 @@ This app has an item that is charged according to a metric value. That metric ch
 }
 ```
 
-### Registering metric data
+#### Step 3 - Registering metric data
 
 The app's metric values consumption must be registered in order to users be charged correctly.
 
@@ -426,3 +435,5 @@ async function saveSMSBillingMetric(
 After the steps above, you are all set. Now VTEX App Store will use all the saved billing metrics, registered by the method `saveBillingMetric`, according to each month to charge the app's users. It is not necessary to inform the date associated with each metric record because it will be used is implicitly defined. 
 
 Each time a metric is saved, it is also recorded the date for each registry, and by the end of the month/cycle, it is known what metrics will be charged within a given date interval.
+
+>ℹ️ You can [contact the VTEX support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) to get more information about the contracts and accounts that have installed your app.
