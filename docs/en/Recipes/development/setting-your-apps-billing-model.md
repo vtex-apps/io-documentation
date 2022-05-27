@@ -30,11 +30,12 @@ Without `billingOptions`, VTEX IO will understand that the app in question shoul
 
 When making your app public available to the entire VTEX IO ecosystem, you must set up the `billingOptions` field in the app's [`manifest.json`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest) file. In this context, you will need to:
 
-- Define whether or not the app will be charged.
-- Register the use of metrics _(Only for apps with a variable pricing strategy)_.
-- Register the `metrics` data _(Only for apps with a variable pricing strategy)_.
+- [Define whether or not the app will be charged.](#step-1---setting-the-apps-pricing-strategy)
+- [Register the `metrics` data](#step-3---registering-the-metrics-data)_(Only for apps with a variable pricing strategy)_.
 
 For more information, please refer to the [`billingOptions` documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options).
+
+>ℹ️ You can [contact the VTEX support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) to get more information about the contracts and accounts that have installed your app.
 
 ### Step 1 - Setting the app's pricing strategy
 
@@ -82,8 +83,8 @@ A public app can be charged or not. Take the following steps according to your s
 
 7. Now, choose one of the following billing options and follow the procedures corresponding to your selection.
   - [**Fixed subscription**](#fixed-subscription) - Charges a fixed subscription price per month. This billing model only allows a single subscription plan to be created for the app.
-  - [**Fixed subscription + Variable rate**](#fixed-subscription--variable-rate) - Charges a fixed subscription price plus a variable charge based on the app's usage.
-  - [**Variable subscription + Variable rate**](#variable-subscription--variable-rate) - Charges a variable subscription price plus a variable rate based on the app's usage.
+  - [**Fixed subscription + Variable rate**](#fixed-subscription--variable-rate) - Charges a fixed subscription price plus a variable charge based on the app's usage. Apps with a variable rate are charged according to a metric value.
+  - [**Variable subscription + Variable rate**](#variable-subscription--variable-rate) - Charges a variable subscription price plus a variable rate based on the app's usage. Apps with a variable rate are charged according to a metric value.
 
 ##### Fixed subscription
 
@@ -160,9 +161,9 @@ For example:
 
 From the previous example, we have:
 
-- Each SMS costs `US$ 0.07` when more than `0` (`exclusiveFrom: 0`) SMSs _and_ less than or equal to `2000` (`inclusiveTo: 2000`) SMSs have already been sent.
-- Each SMS costs `US$ 0.06` when more than `2000` (`exclusiveFrom: 2000`) _and_ less than or equal to `4000` (`inclusiveTo: 4000`) SMSs have already been sent.
-- Each SMS costs `US$ 0.05` when more than `4000` (`exclusiveFrom: 4000`) SMSs have already been sent.
+- Each SMS costs `US$ 0.07` (`multiplier`) when more than `0` (`exclusiveFrom: 0`) SMSs _and_ less than or equal to `2000` (`inclusiveTo: 2000`) SMSs have already been sent.
+- Each SMS costs `US$ 0.06` (`multiplier`) when more than `2000` (`exclusiveFrom: 2000`) _and_ less than or equal to `4000` (`inclusiveTo: 4000`) SMSs have already been sent.
+- Each SMS costs `US$ 0.05` (`multiplier`) when more than `4000` (`exclusiveFrom: 4000`) SMSs have already been sent.
 
 Therefore, the extra variable rate would be charged as follows:
 
@@ -215,23 +216,8 @@ Therefore, the extra variable rate would be charged as follows:
       }]
     }  
 ```
+  
 </details>
-
-2. Create the `policies` field in the app's `manifest.json` file and add the `vtex.billing:save-metrics` as its child.
-3. Make a POST request to `https://app.io.vtex.com/vtex.billing/v0/{account}/{workspace}/_v/billing-metrics` with the following body:
-
-```
-{
- metric_id: {metricId},
- value: {metricAmount},
-}
-```
-
-Remember to remove the curly brackets from the endpoint and body replacing them with real values according to your own scenario.
-- `account` - VTEX account responsible for the app development and maintenance.
-- `Workspace` - Workspace being used for the app development.
-- `metricId` - ID of the metric specified in the `billingOptions` field.
-- `metricAmount` - Use of metrics for billing. For example: if your metric consists of charging for each SMS sent, the `metricAmount` should be equal to 1.
 
 ##### Variable subscription + variable rate 
 
@@ -320,9 +306,13 @@ Remember to remove the curly brackets from the endpoint and body replacing them 
 ```
 
 </details>
-  
-3. Create the `policies` field in the app's `manifest.json` file and add the `vtex.billing:save-metrics` as its child.
-4. Make a POST request to `https://app.io.vtex.com/vtex.billing/v0/{account}/{workspace}/_v/billing-metrics` with the following body:
+
+### Step 2 - Registering the `metrics` data (Only for apps with a variable pricing strategy)
+
+If you opted for a variable-charge pricing strategy, you must ensure that your metrics are being tracked and updated over time. Otherwise, users won't be charged the right amount.
+
+1. Create the `policies` field in the app's `manifest.json` file and add the `vtex.billing:save-metrics` as its child.
+2. Make a POST request to `https://app.io.vtex.com/vtex.billing/v0/{account}/{workspace}/_v/billing-metrics` with the following body:
 
 ```
 {
@@ -337,52 +327,8 @@ Remember to remove the curly brackets from the endpoint and body replacing them 
 - `metricId` - ID of the metric specified in the `billingOptions` field.
 - `metricAmount` - Use of metrics for billing. For example: if your metric consists of charging for each SMS sent, the `metricAmount` should be equal to 1.
 
-### Step 2 - Register the use of `metrics`  (Only for apps with a variable pricing strategy)
 
-If you opted for a pricing strategy with a variable rate, you must guarantee that your metrics are being registered and updated over time. Not registering the metric values or updating them correctly means the app's users will not be charged the right value.
-
-VTEX App Store provides the APIs and the infrastructure to register and keep the app's metric data. However, the app is responsible to guarantee that these values are correctly updated over time.
-
-
-To explain how to register these metric values, we will use the SMS Sender app as an example. If your app does not have any metric item, there's no need to register.
-
-**SMS Sender `billingOptions` example** (*manifest.json*)
-
-This app has an item that is charged according to a metric value. That metric charges `BRL 0.07` (defined in `multiplier`) for *each* metric used:
-
-```json
-{
-  ...
-  "billingOptions": {
-    ...
-    "plans": [
-      {
-        ...
-        "price": {
-          "metrics": [
-            {
-              "id": "smsSent",
-              "ranges": [
-                {
-                  "exclusiveFrom": 0,
-                  "multiplier": 0.07
-                }
-              ]
-            }
-          ]
-        }
-      }
-    ]
-  }
-  ...
-}
-```
-
-### Step 3 - Registering the `metrics` data (Only for apps with a variable pricing strategy)
-
-The app's metric values consumption must be registered in order to users be charged correctly.
-
-1. Create a client for the `billing` app or complement it with the `saveBillingMetric` method:
+3. Create a client for the `vtex.billing` app or complement it with the `saveBillingMetric` method:
 
 ```ts
 import {AppClient, IOContext, InstanceOptions} from '@vtex/api'
@@ -406,7 +352,7 @@ export class BillingApp extends AppClient {
 }
 ```
 
-2. Call the `saveBillingMetric` method whenever you need to add (it is accumulative) a new quantity in the metric value:
+4. Call the `saveBillingMetric` method whenever you need to add a new quantity to the metric value:
 
 ```ts
 async function saveSMSBillingMetric(
@@ -423,8 +369,7 @@ async function saveSMSBillingMetric(
   }
 }
 ```
-After the steps above, you are all set. Now VTEX App Store will use all the saved billing metrics, registered by the method `saveBillingMetric`, according to each month to charge the app's users. It is not necessary to inform the date associated with each metric record because it will be used is implicitly defined. 
 
-Each time a metric is saved, it is also recorded the date for each registry, and by the end of the month/cycle, it is known what metrics will be charged within a given date interval.
+Now, all the specified billing metrics will be tracked and updated by the `saveBillingMetric` method.
 
->ℹ️ You can [contact the VTEX support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) to get more information about the contracts and accounts that have installed your app.
+It's worth mentioning that each time the metric is recorded, the date for each register is saved as well. This allows the system to determine which metrics will be charged within a given date frame.
