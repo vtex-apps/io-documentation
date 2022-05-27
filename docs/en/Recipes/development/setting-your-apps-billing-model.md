@@ -28,18 +28,16 @@ Without `billingOptions`, VTEX IO will understand that the app in question shoul
 
 ## Setting the app as public
 
-When making your app public available to the entire VTEX IO ecosystem, you must set up the `billingOptions` field in the app's [`manifest.json`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest) file. In this context, you will need to:
-
-- [Define whether or not the app will be charged.](#step-1---setting-the-apps-pricing-strategy)
-- [Register the `metrics` data](#step-3---registering-the-metrics-data)_(Only for apps with a variable pricing strategy)_.
-
-For more information, please refer to the [`billingOptions` documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options).
+When making your app public available to the VTEX IO ecosystem, you must set up the `billingOptions` field in the app's [`manifest.json`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest) file. In this context, you first need to define whether or not your app will be charged. For more information, please refer to the [`billingOptions` documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options).
 
 >ℹ️ You can [contact the VTEX support team](https://help.vtex.com/tutorial/opening-tickets-to-vtex-support--16yOEqpO32UQYygSmMSSAM) to get more information about the contracts and accounts that have installed your app.
 
-### Step 1 - Setting the app's pricing strategy
+### Step by step
 
-A public app can be charged or not. Take the following steps according to your scenario.
+The first step in making an app public is defining whether the app will be charged or not. Consider the following according to your scenario:
+
+- [Setting the app as free](#setting-the-app-as-free)
+- [Setting the app as charged](#setting-the-app-as-charged)
 
 #### Setting the app as free
 
@@ -47,7 +45,7 @@ A public app can be charged or not. Take the following steps according to your s
 2. Open the `manifest.json` file.
 3. Add the `billingOptions` field to your app's `manifest.json` file and set the `type` property as `free`.
 5. Set up the `support` property to provide a support channel for the app users.
-6. Set up the `availableCountries` property to define in which countries the app will be available.
+6. Set up the `availableCountries` property to define in which countries the app will be available. If you want to make it available for all countries, use `*`.
 
 ```json
   "billingOptions": {
@@ -59,16 +57,13 @@ A public app can be charged or not. Take the following steps according to your s
     "availableCountries" : ["*"]
   }
 ```
-
->ℹ️ The `*` value stands for all countries.
-
 #### Setting the app as charged
 
 1. Open your app in any code editor of your preference.
 2. Open the `manifest.json` file.
 3. Create the `billingOptions` field in the app's `manifest.json` file and set the `type` property as `billable`.
 4. Set up the `support` property to provide a support channel for the app users.
-5. Set up the `availableCountries` property to define in which countries the app will be available.
+5. Set up the `availableCountries` property to define in which countries the app will be available. If you want to make it available for all countries, use `*`.
 
 ```json
   "billingOptions": {
@@ -85,6 +80,7 @@ A public app can be charged or not. Take the following steps according to your s
   - [**Fixed subscription**](#fixed-subscription) - Charges a fixed subscription price per month. This billing model only allows a single subscription plan to be created for the app.
   - [**Fixed subscription + Variable rate**](#fixed-subscription--variable-rate) - Charges a fixed subscription price plus a variable charge based on the app's usage. Apps with a variable rate are charged according to a metric value.
   - [**Variable subscription + Variable rate**](#variable-subscription--variable-rate) - Charges a variable subscription price plus a variable rate based on the app's usage. Apps with a variable rate are charged according to a metric value.
+8. Finally, if you opt for a variable-charge pricing strategy, take the steps presented in the [Registering the metrics data](#registering-the-metrics-data-only-for-apps-with-a-variable-pricing-strategy) section.
 
 ##### Fixed subscription
 
@@ -93,7 +89,8 @@ Establish a subscription plan for your app by setting up the `plan` property and
 - `currency`: Currency code following the ISO.
 - `price.subscription`: Subscription price.
 
-For example:
+<details>
+  <summary>Example of an app with a fixed subscription price</summary>
 
 ```json
     "billingOptions": {
@@ -112,6 +109,8 @@ For example:
       }]
     }
 ```
+  
+</details>
 
 ##### Fixed subscription + variable rate
 
@@ -307,7 +306,7 @@ Therefore, the extra variable rate would be charged as follows:
 
 </details>
 
-### Step 2 - Registering the `metrics` data (Only for apps with a variable pricing strategy)
+### Registering the `metrics` data (Only for apps with a variable pricing strategy)
 
 If you opted for a variable-charge pricing strategy, you must ensure that your metrics are being tracked and updated over time. Otherwise, users won't be charged the right amount.
 
