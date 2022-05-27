@@ -31,53 +31,66 @@ Without `billingOptions`, VTEX IO will understand that the app in question shoul
 When making your app public available to the entire VTEX IO ecosystem, you must set up the `billingOptions` field in the app's [`manifest.json`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest) file. In this context, you will need to:
 
 - Define whether or not the app will be charged.
-- Register the use of metrics.
-- Register metric data.
+- Register the use of metrics _(Only for apps with a variable pricing strategy)_.
+- Register the `metrics` data _(Only for apps with a variable pricing strategy)_.
 
 For more information, please refer to the [`billingOptions` documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-billing-options).
 
-### Step by step
+### Step 1 - Setting the app's pricing strategy
 
-#### Step 1 - Setting the app's pricing
+A public app can be charged or not. Take the following steps according to your scenario.
 
-##### Setting the app as free
+#### Setting the app as free
 
 1. Open your app in any code editor of your preference.
 2. Open the `manifest.json` file.
-3. Add the `billingOptions` field to your app's `manifest.json` file with the `type` property set as `free`.
-4. Provide a support channel for the app users, using the `support` property.
-5. Define in which countries the new app can be made available using the `availableCountries` property, as shown in the example below:
+3. Add the `billingOptions` field to your app's `manifest.json` file and set the `type` property as `free`.
+5. Set up the `support` property to provide a support channel for the app users.
+6. Set up the `availableCountries` property to define in which countries the app will be available.
 
 ```json
   "billingOptions": {
     "type": "free",
+    "support": {
+        "email": "support@com.br",
+        "url": "https://support.com/hc/requests",
+      },
     "availableCountries" : ["*"]
   }
 ```
 
-According to the specified countries, your app can be installed in any VTEX account by any admin user of it.
-
 >ℹ️ The `*` value stands for all countries.
 
-##### Setting the app as charged
+#### Setting the app as charged
 
- When you decide to charge for your app, you will need to add more properties to the `billingOptions` field to set the desired **billing template**. 
-  
-There are three possible billing templates on the VTEX IO platform:
- 
-- **Fixed Subscription** - Charges a fixed monthly amount.
-- **Fixed Subscription + Variable Rate** - Charges a fixed monthly amount and a variable rate according to the use of the app.
-- **Variable Subscription + Variable Rate** - Charges a different amount per month according to the use of the app, in addition to a variable rate also defined according to its use.
-
-###### Fixed Subscription
-
-1. Open your app code in your code editor.
+1. Open your app in any code editor of your preference.
 2. Open the `manifest.json` file.
-3. Create the `billingOptions` field in the app's `manifest.json` file.
-4. Set the `type` property as `billable`.
-5. Provide a support channel for the app users, using the `support` property.
-6. Specify to which countries the new app will be available using the `availableCountries` property.
-7. Establish a subscription plan for your app with the `plan` property and its child properties: `id` (establishing a plan identifier), `currency` (choosing the currency code to be applied according to the ISO), `price`, and `subscription` (both defining the subscription price). 
+3. Create the `billingOptions` field in the app's `manifest.json` file and set the `type` property as `billable`.
+4. Set up the `support` property to provide a support channel for the app users.
+5. Set up the `availableCountries` property to define in which countries the app will be available.
+
+```json
+  "billingOptions": {
+    "type": "billable",
+    "support": {
+        "email": "support@com.br",
+        "url": "https://support.com/hc/requests",
+      },
+    "availableCountries" : ["*"]
+  }
+```
+
+7. Now, choose one of the following billing options and follow the procedures corresponding to your selection.
+  - [**Fixed subscription**](#fixed-subscription) - Charges a fixed subscription price per month. This billing model only allows a single subscription plan to be created for the app.
+  - [**Fixed subscription + Variable rate**](#fixed-subscription--variable-rate) - Charges a fixed subscription price plus a variable charge based on the app's usage.
+  - [**Variable subscription + Variable rate**](#variable-subscription--variable-rate) - Charges a variable subscription price plus a variable rate based on the app's usage.
+
+##### Fixed subscription
+
+Establish a subscription plan for your app by setting up the `plan` property and its child properties: 
+- `id`: Plan identifier.
+- `currency`: Currency code following the ISO.
+- `price.subscription`: Subscription price.
 
 For example:
 
@@ -99,22 +112,16 @@ For example:
     }
 ```
 
->ℹ️ This billing model only allows a single subscription plan to be created for the app.
+##### Fixed subscription + variable rate
 
-###### Fixed subscription + variable rate
+1. Establish a subscription plan for your app by setting up the `plan` property and its child properties:
+  - `id`: Plan identifier.
+  - `currency`: Currency code following the ISO.
+  - `price.subscription`: Subscription price.
+  - `price.metrics`: An array specifying the metric's id and the ranges related to the app's usage and associated extra charge. Notice that you can set one or more metrics to calculate the variable rate.
 
-1. Open your app code in your code editor.
-2. Open the `manifest.json` file.
-3. Create the `billingOptions` field in the app's `manifest.json` file.
-4. Set the `type` property as `billable`.
-5. Provide a support channel for the app users, using the `support` property.
-6. Define in which countries the new app will be made available using the `availableCountries` property.
-7. Establish a subscription plan for your app with the `plan` property and its child properties: `id` (establishing a plan identifier), `currency` (choosing the currency code to be applied according to the ISO), `price`, `metrics`, and `subscription` (all three of them defining the subscription price). 
-8. In the `metrics` array, establish your metric's `id` and also the use range of the app to apply the metric for the extra charge (`ranges`).
-
->ℹ️ Note: by using this billing model, you can set one or more metrics (`metrics`) to calculate the variable rate as you want.
-
-Example of an app with only one metric:
+<details>
+  <summary>Example of an app with a fixed subscription price plus a variable rate that considers only one metric</summary>
 
 ```json
   "billingOptions": {
@@ -124,8 +131,8 @@ Example of an app with only one metric:
     },
     "availableCountries": ["*"],
     "plans": [{
-      "id": "PlanBRL",
-      "currency": "BRL",
+      "id": "PlanUSD",
+      "currency": "USD",
       "price": {
         "subscription": 50,
         "metrics": [{
@@ -151,19 +158,22 @@ Example of an app with only one metric:
   }
 ```
 
-Reading the above code, we understand that:
+From the previous example, we have:
 
--   Fore more than  `0`  (`exclusiveFrom: 0`) SMSs sent  _and_  less or equal than  `2000`  (`inclusiveTo: 2000`), each SMS sent costs  `R$ 0.07`;
--   Fore more than  `2000`  (`exclusiveFrom: 2000`) SMSs sent  _and_  less or equal than  `4000`  (`inclusiveTo: 4000`), each SMS sent costs  `R$ 0.06`;
--   Fore more than  `4000`  (`exclusiveFrom: 4000`), each SMS sent costs  `R$ 0.05`.
+- Each SMS costs `US$ 0.07` when more than `0` (`exclusiveFrom: 0`) SMSs _and_ less than or equal to `2000` (`inclusiveTo: 2000`) SMSs have already been sent.
+- Each SMS costs `US$ 0.06` when more than `2000` (`exclusiveFrom: 2000`) _and_ less than or equal to `4000` (`inclusiveTo: 4000`) SMSs have already been sent.
+- Each SMS costs `US$ 0.05` when more than `4000` (`exclusiveFrom: 4000`) SMSs have already been sent.
 
-According to this metrics, the extra variable rate will be charged as follows:
+Therefore, the extra variable rate would be charged as follows:
 
-- For 1500 SMSs sent =  US$ 30.00 *(1500 x R$ 0.07 = R$ 105.00 = US$ 30.00)*
-- For 3500 SMSs sent  = US$ 60.00 *(3500 x R$ 0.06 = R$ 210.00 = US$ 60.00)*
-- For 7000 SMSs sent = US$ 100.00 *(7000 x R$ 0.05 = R$ 350.00 = US$ 100.00)*
+- For 1500 SMSs =  US$ 30.00 *(1500 x US$ 0.07 = US$ 30.00)*
+- For 3500 SMSs = US$ 60.00 *(3500 x US$ 0.06 = US$ 60.00)*
+- For 7000 SMSs = US$ 100.00 *(7000 x US$ 0.05 = US$ 100.00)*
 
-Example of an app with more than one metric:
+</details>
+
+<details>
+  <summary>Example of an app with a fixed subscription price plus a variable rate that considers more than one metric</summary>
 
 ```json
     "billingOptions": {
@@ -173,10 +183,10 @@ Example of an app with more than one metric:
         "email": "support@com.br",
         "phone": "+5521988887777"
       },
-      "availableCountries": ["GBR", "BRA", "ESP"],
+      "availableCountries": ["USA", "GBR", "BRA", "ESP"],
       "plans": [{
-          "id": "PlanBRL",
-          "currency": "BRL",
+          "id": "PlanUSD",
+          "currency": "USD",
           "price": {
             "subscription": 50,
             "metrics": [{
@@ -205,47 +215,35 @@ Example of an app with more than one metric:
       }]
     }  
 ```
+</details>
 
-Notice that the `metrics` property is key to this model. It is responsible for defining, within its array, how the additional variable rate will be calculated for the subscription plan to which it is linked (`plans`). 
+2. Create the `policies` field in the app's `manifest.json` file and add the `vtex.billing:save-metrics` as its child.
+3. Make a POST request to `https://app.io.vtex.com/vtex.billing/v0/{account}/{workspace}/_v/billing-metrics` with the following body:
 
-When you finish entering the desired metrics in the `billingOptions` field, you must also add them on the VTEX. It is a fundamental step for the platform to correctly charge for the use of your application. To add the desired metrics:
-
-1. Add `vtex.billing:save-metrics` to the `policies` field of the app's `manifest.json` file. If the field does not yet exist in the file, create it.
-2. Make a POST call to the endpoint `https://app.io.vtex.com/vtex.billing/v0/{account}/{workspace}/_v/billing-metrics` with the following body:
-
-```api
+```
 {
  metric_id: {metricId},
  value: {metricAmount},
 }
 ```
 
-In which: 
-
+Remember to remove the curly brackets from the endpoint and body replacing them with real values according to your own scenario.
 - `account` - VTEX account responsible for the app development and maintenance.
 - `Workspace` - Workspace being used for the app development.
-- `metricId` - ID of the metric you want to add to the platform. The identifier must be the same set in the `billingOptions` field.
-- `metricAmount` - Use of metrics for billing. For example: if my metric consists of charging for each SMS sent, the `metricAmount` should be equal to 1.
+- `metricId` - ID of the metric specified in the `billingOptions` field.
+- `metricAmount` - Use of metrics for billing. For example: if your metric consists of charging for each SMS sent, the `metricAmount` should be equal to 1.
 
->⚠️ Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.
+##### Variable subscription + variable rate 
 
-###### Variable subscription + variable rate 
-
-1. Open your app code in your code editor.
-2. Open the `manifest.json` file.
-3. Create the `billingOptions` field in the app's `manifest.json` file.
-4. Set the `type' property to `billable`;
-5. Provide a support channel for the app users, using the `support' property;
-6. Define in which countries the new app can be distributed using the `availableCountries` property;
-7. Establish a subscription plan for your app with the `plan` property and its child properties: `id` (establishing a plan identifier), `currency` (choosing the currency code to be applied according to the ISO), `price`, `metrics`, and `subscription` (all three of them defining the subscription price). 
-8. In the `metrics` array, establish your metric's `id` and also the use range of the app to apply the metric for the extra charge (`ranges`).
-9. Declare a new array for the `plans` property, using its sub-properties to set up what the new subscription plan will be.
-
->ℹ️ The metrics stated in step 6 refer to the subscription plan created in the previous step (5). Since we want the subscription value to be variable, that is, change according to the use of the app, we need to create another array for `plans`, indicating new `id`, `currency` and `price`.
-
-10. Repeat step 6 for the new plan: define the `metrics` property array according to the required charge for app usage.
-
-For example: 
+1. Establish a subscription plan for your app by setting up the `plan` property and its child properties:
+  - `id`: Plan identifier.
+  - `currency`: Currency code following the ISO.
+  - `price.subscription`: Subscription price.
+  - `price.metrics`: An array specifying the metric's id and the ranges related to the app's usage and associated extra charge. Notice that you can set one or more metrics to calculate the variable rate.
+2. Repeat the previous step to create a new subscription plan. This new plan will be a new object inside the `plan` array.
+  
+<details>
+  <summary>Example of an app with a variable subscription and variable rate</summary>
 
 ```json
     "billingOptions": {
@@ -321,34 +319,27 @@ For example:
   }
 ```
 
->ℹ️ Note that this billing model works the same as the previous one (Fixed Subscription + Variable Rate), stating one or more metrics to define the value of the additional variable rate. The difference is that, in this case, we want the subscription to be variable as well, change according to the use of the app. To do this, we add an array of the `plans` property.
+</details>
+  
+3. Create the `policies` field in the app's `manifest.json` file and add the `vtex.billing:save-metrics` as its child.
+4. Make a POST request to `https://app.io.vtex.com/vtex.billing/v0/{account}/{workspace}/_v/billing-metrics` with the following body:
 
-Notice that the `metrics` property is key to this model. It is responsible for defining, within its array, how the additional variable rate will be calculated for the subscription plan to which it is linked (`plans`). 
-
-When you finish declaring the metrics you want in the `billingOptions` field, you must add them on VTEX. It is a fundamental step for the platform to charge for the use of your application. To add the desired metrics:
-
-1. Add `vtex.billing:save-metrics` to the `policies` field of the app's `manifest.json` file. If the field does not exist in the file yet, create it.
-2. Make a POST call to the endpoint `https://app.io.vtex.com/vtex.billing/v0/{account}/{workspace}/_v/billing-metrics` with the following body:
-
-```api
+```
 {
  metric_id: {metricId},
  value: {metricAmount},
 }
 ```
 
-In which: 
+Remember to remove the curly brackets from the endpoint and body replacing them with real values according to your own scenario.
+- `account` - VTEX account responsible for the app development and maintenance.
+- `Workspace` - Workspace being used for the app development.
+- `metricId` - ID of the metric specified in the `billingOptions` field.
+- `metricAmount` - Use of metrics for billing. For example: if your metric consists of charging for each SMS sent, the `metricAmount` should be equal to 1.
 
-- `account` - VTEX account responsible for app development and maintenance.
-- `workspace` - Workspace being used by the app development.
-- `metricId` - ID of the metric you want to add to the platform. The identifier must be the same set in the `billingOptions` field.
-- `metricAmount` - Use of metrics for billing. For example: if my metric consists of charging for each SMS sent, the `metricAmount` should be equal to 1.
+### Step 2 - Register the use of `metrics`  (Only for apps with a variable pricing strategy)
 
->⚠️ Remember to remove the curly brackets from the endpoint and body, replacing them with real values according to your own scenario.
-
-#### Step 2 - Registering the use of metrics
-
-If the app's `billingOptions` has one or more items that are charged according to a metric value, the app itself must register and update the metric values over time. Not registering the metric values or updating them correctly means the app's users will not be charged the right value.
+If you opted for a pricing strategy with a variable rate, you must guarantee that your metrics are being registered and updated over time. Not registering the metric values or updating them correctly means the app's users will not be charged the right value.
 
 VTEX App Store provides the APIs and the infrastructure to register and keep the app's metric data. However, the app is responsible to guarantee that these values are correctly updated over time.
 
@@ -387,7 +378,7 @@ This app has an item that is charged according to a metric value. That metric ch
 }
 ```
 
-#### Step 3 - Registering metric data
+### Step 3 - Registering the `metrics` data (Only for apps with a variable pricing strategy)
 
 The app's metric values consumption must be registered in order to users be charged correctly.
 
