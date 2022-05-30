@@ -1,20 +1,21 @@
 # Managing application logs
 
-Being aware of what happens inside an application is important for debugging. Therefore, application logs are used by developers to keep track of errors, warnings, and informative events. 
+VTEX IO provides a logging service that allows developers to keep track of errors, warnings, and informative events within an application. The VTEX IO logging service collects data from the cloud infrastructure where VTEX applications run and delivers them via the VTEX IO CLI.
 
-To this end, VTEX IO offers a logging service to facilitate the process of developing and debugging an application on the platform. 
+In the following section, you'll learn how to implement the VTEX IO logging service in your apps and how to retrieve their logs.
 
-VTEX IO logging service collects information from the cloud infrastructure, where VTEX applications run, and provides the applications' logs through VTEX IO CLI - our CLI. 
+>ℹ️ The VTEX IO logging service is currently available for Node apps only.
 
-The following step-by-step shows how to implement VTEX IO logging service in your applications and how to retrieve the logs these apps produce.
+## Before you start
+
+To complete this guide, you must have the VTEX IO CLI installed in your machine. For more information, please refer to [this document](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-install).
 
 # Step by step
 
-## Implementing VTEX IO Logging Service
+## Step 1 - Implementing the VTEX IO Logging Service
 
->ℹ️ The VTEX IO Logging Service was designed for node applications and is not yet available for other applications on the platform.
-
-Assuming that you are familiar with how a service node function is implemented on the VTEX IO platform, consider the example below: 
+1. Open your Node app in any code editor of your preference.
+2. Define an object with the `Context` interface as a parameter of a function you wish to provide logging messages. Take the following example:
 
 ```js
 const helloWorld = (Context: ctx) => {
@@ -23,16 +24,15 @@ const helloWorld = (Context: ctx) => {
   logger.info('Hello World!')
 }
 ```
-In this example, our `helloWorld` function receives as a parameter an object with a [**Context**](https://github.com/vtex/node-vtex-api/blob/master/src/service/worker/runtime/typings.ts#L34) interface, which contains many implementations inherent to the platform. 
 
-One of those implementations is called `vtex` - an object containing all [VTEX IO infrastructure](https://github.com/vtex/node-vtex-api/blob/master/src/service/worker/runtime/typings.ts#L116) related metadata, such as `account`, `workspace`, `tenant`, `settings`, and some service implementations. In this case, we used the `logger` service, which is an implementation inside `vtex` responsible for generating log messages.
+In this example, the `helloWorld` function receives an object with a [**Context**](https://github.com/vtex/node-vtex-api/blob/master/src/service/worker/runtime/typings.ts#L34) interface as a parameter. 
 
-After declaring the function, the `logger` object is [destructured](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#destructuring) from the `vtex` context and, in the sequence, `logger.info` is called to save the informational `Hello World!` message in the log. 
+>ℹ️ The `Context` interface contains many implementations inherent to the VTEX IO platform. One of those implementations is called `vtex` - an object containing all [VTEX IO infrastructure](https://github.com/vtex/node-vtex-api/blob/master/src/service/worker/runtime/typings.ts#L116) related metadata, such as `account`, `workspace`, `tenant`, `settings`, and some service implementations. In the previous example, we used the `logger` service, which is an implementation inside `vtex` responsible for generating log messages.
 
-The Logging Service also supports the `warn`,  `error`, and `debug` methods, having different levels that can be used to filter your application logs. For example:
+3. [Destructure](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#destructuring) the `logger` object from the `vtex` context and use its methods (i.e., `error`, `warn`, `info`, and `debug`) to provide error, warning, debugging, or informative messages in the log. Take the following example:
 
 ```js
-  const helloWorld = (Context: ctx) => {
+const helloWorld = (Context: ctx) => {
   const { vtex: { logger } } = ctx
 
   logger.warn('Warning the world!')
@@ -45,15 +45,25 @@ The Logging Service also supports the `warn`,  `error`, and `debug` methods, hav
 
 >ℹ️ Every exception that happens inside a VTEX IO service application is intercepted and automatically logged with a `logger.error` implementation.
 
-## Retrieving application logs
+## Step 2 - Retrieving application logs
 
-Every log written by a running application with our logger implementation is collected and stored for 7 days. Those logs can be retrieved by the [VTEX CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference).
+Every log written by a running application with the VTEX IO logging service is collected and stored for 7 days. These logs can be retrieved by the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference) as in the following:
 
-Using VTEX IO's CLI:
-1. Log in to your VTEX account;
-2. Run the command `vtex logs --all` to retrieve logs from every application installed in your account. 
+1. Log in to your VTEX account.
+2. Install the Logs plugin for the VTEX IO CLI by running the following command:
 
->ℹ️ We suggest running `vtex logs --all > {mylogfile.logs}` to save the log messages in a local file. Remember to replace `{mylogfile.logs}` with the most suitable name for you.
+```
+vtex plugins add logs
+```
+
+3. Check if the installation of the Logs plugin was successful by running `vtex logs --help`.
+4. Retrieve logs from all apps installed in your account by running the following command:
+
+```
+vtex logs --all
+```
+
+As an output, you should see a message similar to the following:
 
 ```
 vtex logs --all
@@ -70,7 +80,11 @@ vtex logs --all
   stack:
    'ForbiddenError: This username is already registered with another email[ErrorStack...]
   routeId: 'login' }
-  ```
-To retrieve logs from a specific application, use the command  `vtex logs {account}.{serviceAppExample}`, replacing `account` with your account name and `serviceAppExample` with the specific application name.
+```
 
->ℹ️ If you want to see log messages that you have previously retrieved, run `vtex logs --past`. You can run `vtex logs --help` to check out other log commands.
+>ℹ️ You can also retrieve logs from a specific app installed in your account by running the following command: `vtex logs {account}.{serviceAppExample}`. Remeber to replace `account` with your account name and `serviceAppExample` with the desired app name.
+
+
+We suggest running `vtex logs --all > {mylogfile.logs}` to save the log messages in a local file. Replace `{mylogfile.logs}` with the most suitable name for you. 
+
+Also, if you want to see log messages that you have previously retrieved, run `vtex logs --past`.
