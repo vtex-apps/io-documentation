@@ -1,14 +1,18 @@
 # Managing application logs
 
-VTEX IO provides a logging service that allows developers to keep track of errors, warnings, and informative events within an application. The VTEX IO logging service collects data from the cloud infrastructure where VTEX applications run and delivers them via the VTEX IO CLI.
+VTEX IO provides a logging service that allows developers to keep track of errors, warnings, and informative events within an application. The VTEX IO Logging Service collects data from the cloud infrastructure where VTEX applications run and delivers them via the VTEX IO CLI.
 
-In the following section, you'll learn how to implement the VTEX IO logging service in your apps and how to retrieve their logs.
+In the following section, you'll learn how to implement the VTEX IO Logging Service in your apps and how to retrieve their logs.
 
->ℹ️ The VTEX IO logging service is currently available for Node apps only.
+>ℹ️ The VTEX IO Logging Service is currently available for Node apps only.
+
+---
 
 ## Before you start
 
 To complete this guide, you must have the VTEX IO CLI installed in your machine. For more information, please refer to [this document](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-install).
+
+---
 
 # Step by step
 
