@@ -1,6 +1,6 @@
 ---
 title: Setting your app's billing model
-description: "Define who can install your app and if its usage will be charged and, if so, how much it will cost for the interested accounts."
+description: "Define who will be allowed to install your app, whether your app will be paid or not, and how much it will cost if so."
 date: "2021-03-30"
 tags: ["billing", "model", "app", "distribution", "monetization", "change"]
 version: "0.x"
