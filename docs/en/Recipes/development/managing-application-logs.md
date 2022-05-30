@@ -12,7 +12,7 @@ To complete this guide, you must have the VTEX IO CLI installed in your machine.
 
 # Step by step
 
-## Step 1 - Implementing the VTEX IO Logging Service
+## Implementing the VTEX IO Logging Service
 
 1. Open your Node app in any code editor of your preference.
 2. Define an object with the `Context` interface as a parameter of a function you wish to provide logging messages. Take the following example:
@@ -45,7 +45,7 @@ const helloWorld = (Context: ctx) => {
 
 >ℹ️ Every exception that happens inside a VTEX IO service application is intercepted and automatically logged with a `logger.error` implementation.
 
-## Step 2 - Retrieving application logs
+## Retrieving application logs
 
 Every log written by a running application with the VTEX IO logging service is collected and stored for 7 days. These logs can be retrieved by the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference) as in the following:
 
