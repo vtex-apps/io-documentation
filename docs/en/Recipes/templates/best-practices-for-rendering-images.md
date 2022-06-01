@@ -21,7 +21,7 @@ In this sense, the Store Framework provides different solutions for images, whic
 - Don't declare the URLs of the desired images directly in the `blocks.json` file. Otherwise, the images may end up deformed.
 - Don't use images with large dimensions. Otherwise, the Site Editor may not be able to crop them. 
 
-## Choosing the most adequate block
+## Choosing the right image block
 
 Store Framework has different solutions for rendering images, each one of them designed for a specific use case. 
 
@@ -35,11 +35,11 @@ In the following, we outlined the main functionalities of each image block so yo
 
 ### Product Summary Image block
 
-When using the Product Summary component, make sure to define at least one of the following props: `aspectRatio`, `width`, `height`, `maxHeight`. These props define image dimensions and enable you to let Product Summary images be of identical size when rendered, even if the images submitted in the admin's Catalog have a different size.
+When using the Product Summary component, define at least one of the following props: `aspectRatio`, `width`, `height`, `maxHeight`. These props define image dimensions and enable you to let Product Summary images be of identical size when rendered, even if the images submitted in the admin's Catalog have a different size.
 
 These props define the image's dimensions and allow product summary images to be presented with the same size, regardless of the dimensions of the images uploaded via the admin's Catalog.
 
->ℹ️ You don't have to specify these four properties in your Product Summary Image block at the same time. Each one has a distinct purpose and can be used independently. For more information on how to implement these props in your theme, please refer to the [**Product Summary Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryimage) documentation.
+>ℹ️ You don't have to specify these four properties in your Product Summary Image block at the same time. Each one has a distinct purpose and can be used independently. For more information on implementing these props, please refer to the [**Product Summary Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryimage) documentation.
 
 For example, by declaring these props, your store's Shelf will have image consistency across all products being displayed, differently from the Shelf example below:
 
