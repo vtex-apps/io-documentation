@@ -9,50 +9,40 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/e
 
 # Rendering images
 
-When setting up your store's theme, you'll often want to use images for the brand's visual identity.
+While building your brand's visual identity, you'll often use images in your store theme. Images, however, can have a huge impact on a website's performance. That's why it's crucial always to follow the best practices for rendering images.
 
-Among the many options available in Store Framework for the use of images, you can **apply configurations to your theme that directly impact the way in which images are cropped, rendered and displayed to end users**.
+In this sense, the Store Framework provides different solutions for images, which impact how images are cropped, rendered, and displayed to end-users. In the following, you'll find our recommended practices for using images and avoiding performance drops with Store Framework.
 
-We have put together a best practices guide that should be followed in order to have your theme's images displayed in the best possible way and thus avoid performance risks when rendering your store's UI.
+---
 
-## Best practices
-
-### Uploading images to your theme's code
+## Uploading images to your theme's code
   
-Images that are uploaded to your theme's code must always [**use the Assets Builder**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-the-assets-builder) or the admin's Site Editor.
-
-Declaring the URLs of the desired images directly in the theme's code in the `blocks.json` file will prevent the images from matching size when rendered, making the UI's image components deformed due to different dimensions.
-  
-The Assets Builder, along with the admin's Site Editor, ensures that uploaded images are cropped to size when rendered in the UI, making their presentation consistent and uniform to end users. 
-
->⚠️ Avoid using images whose dimensions are large since Site Editor may not be able to crop it. 
+- Upload images to your theme's code using the [**Assets Builder**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-the-assets-builder) or the [Site Editor](https://help.vtex.com/en/tutorial/site-editor-overview). The Assets Builder and the Site Editor ensure that the images are properly cropped, providing end-users a consistent and uniform experience.
+- Don't declare the URLs of the desired images directly in the `blocks.json` file. Otherwise, the images may end up deformed.
+- Don't use images with large dimensions. Otherwise, the Site Editor may not be able to crop them. 
 
 ## Choosing the most adequate block
 
-VTEX IO Store Framework has so many different blocks that you can often configure one in your theme that's not the best fit for what you're trying to achieve.   
+Store Framework has different solutions for rendering images, each one of them designed for a specific use case. 
 
-It's no different with images. With so many blocks responsible for rendering images on the UI, identifying the best suited block can be a challenge. 
+In the following, we outlined the main functionalities of each image block so you can identify which solution is the best fit for what you're trying to achieve and avoid performance drops in your store website.
 
-Therefore, another best practice is to **understand the main functionality of each image block** and, consequently, be able to **choose the one that best fits your scenario**.
-  
-The image blocks are:
-
-- [**Logo**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components/logo) - Responsible for rendering your brand's logo. It should preferably be used in your store's Header or Footer. 
-- [**Infocard**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components/infocard) - The Infocard block creates images in the UI which have links and buttons that direct the user's flow. Infocards are recommended in scenarios in which you want to render an image that's specifically tied to a redirect with Call to action buttons/links. 
-- [**Rich Text**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text@0.9.1/) - The Rich Texts blocks are meant to create markdown texts in your UI. It may be a block that seems simple, but it allows plenty of customization, such as passing an image URL to be rendered. The Rich Text is mainly recommended for building text communications that may need to have an image linked to them.
-- [**Product Summary Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary@2.53.3/product-summary-image/) - The Product Summary Image block is responsible for displaying the product image usually attached to other product summary informations, such as name and price. This block, exported by the Product Summary, must be displayed within other store components, such as the Shelf. 
-- [**Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-image@0.4.3/) - The Image block basically renders a image in your store's UI, without links/buttons/markdown texts/product info summary attached to it. It is responsible solely for rendering an image of your choosing in your store's theme. 
+- [**Logo**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components/logo) - Renders your brand's logo. It should preferably be used in your store's Header and Footer. 
+- [**Infocard**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components/infocard) - Renders images in the UI with links and call-to-action buttons that guide the user's flow. Info cards are recommended when you want to render an image directly linked to a call-to-action button.
+- [**Rich Text**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text) - Renders markdown texts. Rich texts allow plenty of customization, such as passing an image URL to be rendered. Rich texts are recommended for building text communications that may need to have an image linked to them.
+- [**Product Summary Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryimage) - Renders the product image attached to a product summary information (e.g., name, price). Product summary images must be displayed within other store components, such as the Shelf.
+- [**Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-image) - Renders an image without links, buttons, markdown texts, or product summary information attached. It is exclusively responsible for rendering an image of your choosing in your store's theme.
 
 ### Product Summary Image block
 
-When we talk about product images being rendered in the Product Summary component, a best practice is to use the `aspectRatio`, `width`, `height` and `maxHeight` props pertaining to the `product-summary-image` block.
+When using the Product Summary component, make sure to define at least one of the following props: `aspectRatio`, `width`, `height`, `maxHeight`. These props define image dimensions and enable you to let Product Summary images be of identical size when rendered, even if the images submitted in the admin's Catalog have a different size.
 
-These props define image dimensions and enable you to let **Product Summary images be of identical size** when rendered (even if each image was originally submitted with a different size in the admin's Catalog).
+These props define the image's dimensions and allow product summary images to be presented with the same size, regardless of the dimensions of the images uploaded via the admin's Catalog.
 
->ℹ️ You do not have to use these 4 props at the same time in your Product Summary Image block. Each one of them has its own functionality and can be used independently. 
+>ℹ️ You don't have to specify these four properties in your Product Summary Image block at the same time. Each one has a distinct purpose and can be used independently. For more information on how to implement these props in your theme, please refer to the [**Product Summary Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryimage) documentation.
 
-This in turn allows your store's Shelf, for example, to have image consistency across all products being displayed, differently from the Shelf example below: 
+For example, by declaring these props, your store's Shelf will have image consistency across all products being displayed, differently from the Shelf example below:
 
 ![beat-practices-images](https://user-images.githubusercontent.com/52087100/80645249-3bdbf680-8a41-11ea-8f63-8b96b20f7c4b.png)
 
-To implement these props in your theme, access the [**Product Summary Image**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary@2.53.3/product-summary-image/) block documentation.
+
