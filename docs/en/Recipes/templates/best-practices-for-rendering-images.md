@@ -9,9 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/new-docs-and-fix/docs/e
 
 # Rendering images
 
-While building your brand's visual identity, you'll often use images in your store theme. Images, however, can have a huge impact on a website's performance. That's why it's crucial always to follow the best practices for rendering images.
-
-In this sense, the Store Framework provides different solutions for images, which impact how images are cropped, rendered, and displayed to end-users. In the following, you'll find our recommended practices for using images and avoiding performance drops with Store Framework.
+While building your brand's visual identity, you'll often use images in your store theme. Images, however, can significantly impact a website's performance. In this sense, Store Framework provides different image blocks for different use cases. Each block defines how images will be cropped, rendered, and displayed to end-users. Hence, to implement the right solution for your use case, please consider the practices presented in the following.
 
 ---
 
