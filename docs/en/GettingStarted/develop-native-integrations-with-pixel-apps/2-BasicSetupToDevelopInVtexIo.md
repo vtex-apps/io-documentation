@@ -1,59 +1,61 @@
 # 1. Setting up your development environment
 
-Any development in the VTEX IO platform begins and ends with the **VTEX IO CLI**. 
+In this part of the tutorial, you will:
 
-It's the communication gateway between your VTEX store and the VTEX IO development platform, allowing you to login, install new apps on the account and manage those already installed, for example.
+- Install all the necessary tools to develop your own Pixel app.
+- Create a new development workspace.
+- Access your store using a workspace.
 
-Follow the instructions to install VTEX IO CLI in your machine and get familiar with it accessing the [VTEX IO CLI installation and command reference](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference/) documentation.
+## Step by step
 
-## Step 1 - Logging in to your VTEX account
+### Step 1 - Installing the VTEX IO CLI
 
-Once VTEX IO’s CLI is installed, you can log in to your VTEX account by running in your terminal the following command:
+Any development in VTEX IO begins and ends with the **VTEX IO CLI**, which works as a communication gateway between your store and the VTEX IO development platform. With VTEX IO’s CLI, you can use the terminal to log in to your VTEX account, manage workspaces, develop apps, and install new ones.
 
-```sh
-$ vtex login accountName
-```
->⚠️ Remember to replace `accountName` with the name of the VTEX account in which you are working.
+1. Install the VTEX IO CLI on your machine by following [this guide](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-install).
+2. Check if the installation was successful by running `vtex`.
 
-By running the command, a browser window will open and ask for your credentials.
+### Step 2 - Logging in to your VTEX account
 
-![toobelt-login](https://user-images.githubusercontent.com/52087100/97626236-500caa80-1a08-11eb-9abb-7e03e7fe609c.png)
+After installing the VTEX IO CLI in your machine, take the following steps to log in to your VTEX account.
 
-## Step 2 - Creating your own workspace
+1. Log in to your VTEX account by running the following command:
 
-When using VTEX IO, any interaction with an account happens in a [**workspace**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace/). 
+  ```sh
+  vtex login accountName
+  ```
 
-It works as a version of the account in which you are logged in, in a way that any development operation done using such a workspace will be isolated, separate from other workspaces and the public version of the account itself (called Master). 
+  >⚠️ Replace `accountName` with the name of your VTEX account.
 
->ℹ️ If you're used to working with Git, think of workspaces as **branches**.
+  ![toobelt-login](https://user-images.githubusercontent.com/52087100/97626236-500caa80-1a08-11eb-9abb-7e03e7fe609c.png)
 
-As you log in to a VTEX store using VTEX IO, you are automatically in its master workspace, meaning you are in the version available to the end user.
+2. After running the command, a browser window will open and ask for your credentials. Please enter the information required to log in to your account successfully.
 
->ℹ️ To confirm this, you can run the `vtex whoami` command in your terminal to find out which **account** and **workspace** is being used by the VTEX IO CLI for your login.
+### Step 2 - Creating a development workspace
 
-To start performing the desired changes in your storefront, you will need to create a [**Development workspace**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-creating-a-development-workspace/). 
+When developing with VTEX IO, you'll use different [**workspaces**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace/). Workspaces are environments isolated from one another. They can be understood as different versions of the same VTEX account. In practice, changes performed in a particular workspace do not affect your store's live version or other developers' work.
 
-Use the `vtex use` command in order to start developing in the VTEX IO platform. For example:
+When you log in to a VTEX account using the VTEX IO CLI, you are automatically in the **master** workspace, which is the version of your store available to end-users. Hence, to avoid changing your store's live version, you must create a **development workspace**.
 
-```sh
-$ vtex use exampleworkspace
-```
+1. Create a development workspace by running the following command:
 
->⚠️ Remember to replace `exampleworkspace`  with a name of your choosing that will be given to the workspace in which you will develop.
+  ```sh
+  vtex use exampleworkspace
+  ```
 
-Following our example above, the command will change your login to the  `exampleworkspace` workspace if it exists. If it does not, VTEX IO CLI will create it: 
+  >⚠️ Replace `exampleworkspace`  with a name of your choosing to identify your new workspace.
 
-![VTEX IO CLI-workspace](https://user-images.githubusercontent.com/52087100/97626248-5438c800-1a08-11eb-9f0d-76753ef5c39a.png)
+2. Enter `Y` to create the new workspace.
 
->ℹ️ The `vtex use` command makes all your operations run in the workspace specified in the command, which means you can shift your operations to Master simply by running `vtex use master` in VTEX IO CLI, for example.
+  ![VTEX IO CLI-workspace](https://user-images.githubusercontent.com/52087100/97626248-5438c800-1a08-11eb-9f0d-76753ef5c39a.png)
 
-## Step 3 - Accessing your store using a workspace
+After running this command, you'll be taken to the `exampleworkspace` workspace, and all your operations will now run in this specified workspace.
 
-Having created your own development workspace in VTEX IO, you can now go to your store by accessing `https://exampleworkspace--accountName.myvtex.com`, where:
+### Step 3 - Accessing your store using a workspace
 
-- `exampleworkspace` should be replaced with the name of the workspace that you've just created. 
-- `accountName` should be replaced with the name of the VTEX account in which you are working.
+After creating a new development workspace, you can access this version of your store by going to: `https://exampleworkspace--accountName.myvtex.com`, where:
 
->ℹ️ You can run `vtex browse` in your terminal to automatically open your browser using the workspace and account in which you are working.
+- `exampleworkspace` - Name of the workspace that you've just created. 
+- `accountName` - Name of the VTEX account in which you are working.
 
-Done! Your VTEX account is now connected to the VTEX IO platform and you are technically ready to start developing your Pixel app!
+Done! You're now ready to start developing your Pixel app!
