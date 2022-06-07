@@ -1,13 +1,23 @@
 # 5. Listening to store events
 
-In some cases, the service provided by the third party solution depends on store Events to properly work.
+Some services provided by third-party solutions may rely on store events. Events are notifications that a web application automatically broadcasts whenever a user performs an important action in a store, such as adding items to the shopping cart or accessing a product page.
 
-We call Events or Pixel Events the **notifications automatically broadcasted by a website whenever users perform critical actions in your store**, such as adding products to the cart or even product page viewing.
+For these scenarios, your Pixel app must be able to listen to the desired events and provide the required data to the third-party service in question.
 
-For this scenario, it is fundamental to develop a script whose aim is to listen to the desired store Events in order to send the needed data to the third party solution. 
+## Step by step
 
-1. Access your app's `react/index.tsx` file.
-2. Write your script according to your Pixel app needs. For example:
+1. Open the `react/index.tsx` file.
+2. Write your script according to your Pixel app needs. Some store events you can use in your Pixel app are:
+
+- `addToCart`- Triggered when a product is added to the cart.
+- `removeItem` - Triggered when a product is removed from the cart
+- `pageView` - Triggered on every loaded page view.
+- `productImpression` - Triggered when product data is visible on the page currently being accessed by users.
+
+>ℹ️ All the available event properties are written in **TypeScript**. Check them out [here](https://github.com/vtex-apps/pixel-app-template/blob/master/react/typings/events.d.ts).
+
+Take the following example of an event implementation in the [Google Tag Manager Pixel app](https://github.com/vtex-apps/google-tag-manager/blob/master/react/index.tsx):
+
 
 ```ts
 import { canUseDOM } from 'vtex.render-runtime'
@@ -326,13 +336,3 @@ if (canUseDOM) {
   window.addEventListener('message', handleEvents)
 }
 ```
-*This is an example of an event implementation in our [Google Tag Manager Pixel app](https://github.com/vtex-apps/google-tag-manager/blob/master/react/index.tsx).*
-
-Some store events you can work with in your Pixel app are, namely:
-
-- `addToCart`- Triggered when a product is added to the cart.
-- `removeItem` - Triggered when a product is removed from the cart
-- `pageView` - Triggered on every loaded page view.
-- `productImpression` - Triggered when product data is visible on the page currently being accessed by users.
-
-All the available event properties are typed in **[TypeScript]** - go through them [here](https://github.com/vtex-apps/pixel-app-template/blob/master/react/typings/events.d.ts).
