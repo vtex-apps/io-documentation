@@ -1,13 +1,15 @@
 # 2. Cloning the boilerplate repository
 
-One of the main steps in your development journey to create a new Pixel app is to copy our boilerplate repository to your local environment and then make the first changes to its `manifest.json` file.
+In this part of this tutorial, you'll clone our **Pixel app boilerplate** into your local files. This boilerplate comes with all the needed settings for you to start developing your new Pixel app.
 
-By copying a boilerplate repository, you will not have to worry about the **default settings** required by the VTEX IO platform: it will import the basic and needed settings for you to start developing your new Pixel app, helping with the **standardization** in the app structure and language.
+## Step by step
 
-Using your terminal, clone our [**Pixel app boilerplate repository**](https://github.com/vtex-apps/pixel-app-template/) to your local environment using `git clone` + the repository's URL. For example:
+1. Using the terminal, clone the [**Pixel app boilerplate repository**](https://github.com/vtex-apps/pixel-app-template/) to your local files by running the following command:
 
-```sh
-$ git clone https://github.com/vtex-apps/pixel-app-template/
-```
+  ```sh
+  git clone https://github.com/vtex-apps/pixel-app-template/
+  ```
+  
+2. Open the `pixel-app-template` folder in any code editor of your preference.
 
-Then, using your code editor, open the boilerplate repository's directory to perform the needed changes in its `manifest.json` file - as we shall see in the following step!
+In the following, you'll learn how to customize this Pixel app to make it your own.
