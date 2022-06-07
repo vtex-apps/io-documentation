@@ -1,6 +1,8 @@
 # Pixel apps
 
-This track will show you how to develop a [Pixel app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-pixel-app) that attends your store's particular needs.
+In this tutorial, you'll learn how to create a custom integration with a third-party solution by developing your own [**Pixel app**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-pixel-app).
+
+Pixel apps are responsible for running scripts on all pages of a store website. You can use them to load JavaScript resources into your web pages and extend the core functionalities of your website.
 
 - [Part 1. Setting up your development environment](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-2-basicsetuptodevelopinvtexio)
 - [Part 2. Cloning the boilerplate repository](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-3-cloningtheboilerplaterepository)
@@ -10,10 +12,8 @@ This track will show you how to develop a [Pixel app](https://developers.vtex.co
 - [Part 6. Structuring documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-7-structuringthedocumentation)
 - [Part 7. Making your Pixel app publicly available](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-8-makingyourpixelapppubliclyavailable)
 
-Several Pixel apps are already available through [VTEX Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), ensuring that your store has the means to natively integrate with the main third party solutions available on the market. 
+## Before you start
 
-It is possible, however, that the integration you’re looking for is not currently available on the [Pixel apps list](https://developers.vtex.com/vtex-developer-docs/docs/pixel-apps/) that are ready to be installed. In such cases, you should **create your desired integration from scratch**.
+Before taking this tutorial, check our [list of Pixel apps](https://developers.vtex.com/vtex-developer-docs/docs/pixel-apps/) and make sure the integration you're looking for is not already available.
 
-> ℹ️ **Info**
->
-> If you’re unsure whether to proceed with **developing a pixel app** or to **customize an HTML tag using Google Tag Manager**, keep in mind that the first option is always the most recommended. Developing a new app will enable a bold integration process with a third party solution, in addition to further evolving the Framework to help other users that may be interested in the same integration.
+Also, if you're wondering whether to **create a Pixel app** or **customize an HTML tag with Google Tag Manager**, keep in mind that the first option is always the most recommended. Creating a new app allows for more freedom during development and may also help other users interested in the same solution.
