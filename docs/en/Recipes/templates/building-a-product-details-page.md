@@ -9,12 +9,8 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Building a Product Details Page
 
-> ⚠️ For this recipe, knowledge of how the flex-layout works is required. If you have any doubts regarding this, we strongly recommend you access this [documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-flex-layout).
-
-### Introduction
-
-Your store's Product Page can be customized by simply changing the `store.product` block in your `store-theme` source code. 
-The `store.product` is a block with child dependencies, which means it consists of other blocks. Since it is flexible, its child blocks can be declared using `flex-layout` to easily build a responsive page.
+Your store's Product Page can be customized by changing the `store.product` block in your `store-theme` source code. 
+The `store.product` is a block with child dependencies, which means it consists of other blocks. Since it is flexible, its child blocks can be declared using `flex-layout` to build a responsive page.
 
 The `store.product` accepts all blocks allowed by the `store` and `flex-layout` blocks as child dependencies, as well as the following blocks list:
 
@@ -48,11 +44,19 @@ The `store.product` accepts all blocks allowed by the `store` and `flex-layout` 
 "product-teaser.product"
 ```
 
-> ℹ *You can always check out the full and updated list [here](https://github.com/vtex-apps/store/blob/master/store/interfaces.json#L49).*
+> ℹ 
+> 
+> You can always check out the full and updated list [here](https://github.com/vtex-apps/store/blob/master/store/interfaces.json#L49).
+
+In the following sections, check out examples of using some child dependencies of `store.product`.
+
+## Before you start
+
+1. knowledge of how the flex-layout works is required. If you have any doubts regarding this, we strongly recommend you access this [documentation](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-flex-layout).
 
 ## Practical example
 
-Let's take a look at our demo store, [Storetheme](https://storetheme.vtex.com/). It has a good example of how to use the `store.product` flexible block:
+The VTEX demo store, [Storetheme](https://storetheme.vtex.com/) has the example of how to use the `store.product` flexible block:
 
 ![storetheme-product-details-page](https://user-images.githubusercontent.com/52087100/64383385-26c2db00-d00c-11e9-96d4-d3b7ecaf0376.png)
 
@@ -149,7 +153,7 @@ As you can see, the `store.product` child dependencies define 5 blocks, the firs
 
 The first row is only declaring the [breadcrumb](https://developers.vtex.com/vtex-developer-docs/docs/vtex-breadcrumb/) and you can see it here:
 
-![](https://i.ibb.co/ZhNry22/image.png)
+![breadcrumb-example](https://i.ibb.co/ZhNry22/image.png)
 
 ```json
 "flex-layout.row#product-breadcrumb": {
@@ -160,7 +164,7 @@ The first row is only declaring the [breadcrumb](https://developers.vtex.com/vte
   },
 ```
 
-Notice that above that it sets out to render the [breadcrumb](https://developers.vtex.com/vtex-developer-docs/docs/vtex-breadcrumb/) block through its `child` array.  If you want to customize the breadcrumb, with changes to its props, you can declare the breadcrumb block and define it according to your goal. For instance:
+Notice that above that it sets out to render the [breadcrumb](https://developers.vtex.com/vtex-developer-docs/docs/vtex-breadcrumb/) block through its `child` array. If you want to customize the breadcrumb with changes to its props, you can declare the breadcrumb block and define it according to your goal. For instance:
  
 ```json
 "breadcrumb": {
