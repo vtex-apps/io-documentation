@@ -19,8 +19,3 @@ To make your new app version available to end-users, you'll need to take the fol
 
 &nbsp;
 ![public](https://user-images.githubusercontent.com/60782333/92799699-61332680-f38a-11ea-8a06-a342607070d9.png)
-&nbsp;
-
-## Step by step
-
-Before you begin, open the terminal and use the [VTEX IO CLI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installment-and-command-reference#command-reference) to log in to the account responsible for promoting the new app version, i.e., **the account specified as the app's vendor in the [Manifest](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest) file.** During all the steps, make sure you're logged into this account.
