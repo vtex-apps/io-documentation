@@ -1,4 +1,4 @@
-# Deploying the app stable version
+# Deploying the app's stable version
 
 This guide will teach you how to deploy the latest stable version of your app so that all accounts having your app installed can be automatically updated with the new stable version.
 
