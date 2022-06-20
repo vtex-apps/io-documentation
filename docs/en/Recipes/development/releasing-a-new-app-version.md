@@ -32,9 +32,9 @@ If you are releasing an app on the [App Store](https://apps.vtex.com/), make sur
 - `vtex release minor stable` - Releases a **minor** stable version.
 - `vtex release patch stable` - Release a **patch** stable version.
 
-- `vtex release major beta` - Release a **major** beta version.
-- `vtex release minor beta` - Release a **minor** beta version.
-- `vtex release patch beta` - Release a **patch** beta version.
+- `vtex release major beta` - Releases a **major** beta version.
+- `vtex release minor beta` - Releases a **minor** beta version.
+- `vtex release patch beta` - Releases a **patch** beta version.
 
 ## Next steps
 
