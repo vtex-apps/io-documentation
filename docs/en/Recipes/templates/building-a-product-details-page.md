@@ -49,6 +49,7 @@ The PDP is defined within the `store.product` block in the Store Theme app, and 
 > ℹ Check out the full and updated list [here](https://github.com/vtex-apps/store/blob/master/store/interfaces.json#L20).
 
 </details>
+<br/>
   
 ## Before you start
 
@@ -243,7 +244,7 @@ The left column of the second row contains the [`product-images`](https://develo
 
 The right column of the second row presents the price, buy button, and other relevant product details. It is, in practice, composed of the following blocks:
 
-![Right column](https://user-images.githubusercontent.com/60782333/174829969-228b1adb-7c6e-44d4-b7d0-febf17aa09b4.png)
+![Right column](https://user-images.githubusercontent.com/60782333/174835415-bfbbca3c-b300-451e-af2a-0038f6b21591.png)
 
 - [`product-name`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-productname): displays the product name, along with its SKU name, if desired.
 - [`product-price`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-components-productprice): displays a properly formatted selling price. You can set it to show the list price (if it's different), installments, etc. Check out below an example of a Product Price displaying both the sale and the list price:
