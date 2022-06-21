@@ -50,9 +50,7 @@ The PDP is defined within the `store.product` block in the Store Theme app, and 
 
 </details>
 
-&nbsp;
- 
-## Before you start
+<h2>Before you start</h2>
 
 To build a responsive PDP, the [`flex-layout`](https://developers.vtex.com/vtex-developer-docs/docs/vtex-flex-layout) will be used. Hence, knowledge of how to use the `flex-layout` block is strongly recommended. For more information, please refer to [this](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-flex-layout) guide. 
 
