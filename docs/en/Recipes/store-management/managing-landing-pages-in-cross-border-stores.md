@@ -31,7 +31,7 @@ After creating a new page, the page's route becomes available only in the store 
 
 1. Open the terminal and install the `vtex.admin-graphql-ide@3.x` app:
   
-  ```
+  ```sh
   vtex install vtex.admin-graphql-ide@3.x
   ```
 
@@ -124,7 +124,7 @@ If you don't want to have this landing page in the *default* binding, check the 
 4. Click on *Query Variables* at the bottom of the page and fill in the *Query Variables* section as in the following.
   - _Replace the values between the curly brackets according to your scenario._
 
-  ```graphql
+  ```json
   {
     "args": {
       "from": "/{URL}",
