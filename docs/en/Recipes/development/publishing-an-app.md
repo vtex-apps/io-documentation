@@ -60,4 +60,4 @@ From this point onwards, you won't be able to link apps or make any code changes
 
 ## Next steps
 
-- [Deploying an app's stable version](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-deploying-an-app-stable-version)
+- [Deploying the app's stable version](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-deploying-the-app-stable-version)
