@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Additional steps on how to configure Google Tag Manager, more specifically, how to configure the "page" field on Google Analytics Settings variables.
 
 ## [0.87.69] - 2022-06-21
 

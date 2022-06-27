@@ -126,6 +126,7 @@ You will create one variable for the storefront - default - and another for the 
 4. Click on **More Settings**, **Fields to Set** and click on `Add Field`.
 5. In **Field**, type `location` and in **Value** `{{Original Location}}`.
 6. Click again on `Add Field` and In **Field**, type `referrer` and in **Value** `{{Original Referrer}}`.
+7. Click again on `Add Field` and In **Field**, type `page` and in **Value** `{{Page Path}}`.
 
 ![img-example](https://user-images.githubusercontent.com/67270558/149200665-162c9354-ccba-4b20-bbcd-ec2339f10ba8.png)
 
@@ -143,9 +144,10 @@ To do this, click on Fields to set and add the `userId` field with its desired v
 4. Click on **More Settings**, **Fields to Set** and click on `Add Field`.
 5. In **Field**, type `location` and in **Value** `{{Original Location}}`.
 6. Click again on `Add Field` and In **Field**, type `referrer` and in **Value** `{{Original Referrer}}`.
-7. Then, go to **Ecommerce**  and tick the `Enable Enhanced Ecommerce Features`.
-8. In `Read data from variable` select `{{ecommerceV2}}`.
-9. Save your changes as **Google Analytics - Checkout and Order Placed**.
+7. Click again on `Add Field` and In **Field**, type `page` and in **Value** `{{Page Path}}`.
+8. Then, go to **Ecommerce**  and tick the `Enable Enhanced Ecommerce Features`.
+9. In `Read data from variable` select `{{ecommerceV2}}`.
+10. Save your changes as **Google Analytics - Checkout and Order Placed**.
 
 > ⚠️ Warning
 >
