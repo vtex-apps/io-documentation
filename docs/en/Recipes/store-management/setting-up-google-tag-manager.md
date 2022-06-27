@@ -123,9 +123,10 @@ You will create one variable for the storefront - default - and another for the 
 1. In the **User-Defined Variables** box, click on `New`.
 2. Click on the **Variable Configuration** box and select **Google Analytics Settings**.
 3. Type in your [**Google Analytics Tracking ID**](https://support.google.com/tagmanager/answer/9207621#ga_id), `{{Analytics Tracking ID}}`.
-4. Click on **More Settings**, **Fields to Set** and click on `Add Field`.
-5. In **Field**, type `location` and in **Value** `{{Original Location}}`.
-6. Click again on `Add Field` and In **Field**, type `referrer` and in **Value** `{{Original Referrer}}`.
+4. Go to **More Settings > Fields to Set**.
+5. Click the **Add Field** button. Then, type `location` in **Field Name** and `{{Original Location}}` in the **Value** field.
+6. Click **Add Field**. Then, type `referrer` in **Field Name** and `{{Original Referrer}}` in the **Value** field.
+7. Click **Add Field**. Then, type `page` in **Field Name** and `{{Page Path}}` in the **Value** field.
 
 ![img-example](https://user-images.githubusercontent.com/67270558/149200665-162c9354-ccba-4b20-bbcd-ec2339f10ba8.png)
 
@@ -140,12 +141,13 @@ To do this, click on Fields to set and add the `userId` field with its desired v
 1. In the **User-Defined Variables** box, click on `New`.
 2. Click on the **Variable Configuration** box and select **Google Analytics Settings**.
 3. Type in your **Google Analytics Tracking ID**, `{{Analytics Tracking ID}}`.
-4. Click on **More Settings**, **Fields to Set** and click on `Add Field`.
-5. In **Field**, type `location` and in **Value** `{{Original Location}}`.
-6. Click again on `Add Field` and In **Field**, type `referrer` and in **Value** `{{Original Referrer}}`.
-7. Then, go to **Ecommerce**  and tick the `Enable Enhanced Ecommerce Features`.
-8. In `Read data from variable` select `{{ecommerceV2}}`.
-9. Save your changes as **Google Analytics - Checkout and Order Placed**.
+4. Go to **More Settings > Fields to Set**.
+5. Click the **Add Field** button. Then, type `location` in **Field Name** and `{{Original Location}}` in the **Value** field.
+6. Click the **Add Field** button. Then, type `referrer` in **Field Name** and `{{Original Referrer}}` in the **Value** field.
+7. Click the **Add Field** button. Then, type `page` in **Field Name** and `{{Page Path}}` in the **Value** field.
+8. Then, go to the **Ecommerce** section and tick the `Enable Enhanced Ecommerce Features` option.
+9. Select the `{{ecommerceV2}}` option in **Read data from variable**.
+10. Save your changes as **Google Analytics - Checkout and Order Placed**.
 
 > ⚠️ Warning
 >
