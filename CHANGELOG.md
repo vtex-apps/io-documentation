@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.88.1] - 2022-07-08
+
 ## [0.88.0] - 2022-06-27
 ### Added
 - Additional steps on how to configure Google Tag Manager, more specifically, how to configure the "page" field on Google Analytics Settings variables.
