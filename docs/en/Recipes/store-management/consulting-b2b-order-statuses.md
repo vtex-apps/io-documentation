@@ -13,7 +13,7 @@ In a B2B business model, your company and your partners may need to share select
 
 For these scenarios, we recommend that you install and set up the [B2B Orders app](#installing-the-b2b-orders-app) in your VTEX account. By communicating with your Enterprise Resource Planning (ERP), this app allows your business’ customers to securely check their order status at any time they want.
 
-> ⚠️ The B2B Orders app is not compatible with the B2B Suite solution. Therefore, these instructions do not apply to stores using the B2B Suite. If you are using the B2B Suite, refer to the B2B Orders History documentation instead.
+> ⚠️ The B2B Orders app is not compatible with the [B2B Suite](https://developers.vtex.com/vtex-developer-docs/docs/vtex-b2b-suite) solution. Therefore, these instructions do not apply to stores using the B2B Suite. If you are using the B2B Suite, refer to the [B2B Orders History](https://developers.vtex.com/vtex-developer-docs/docs/vtex-b2b-orders-history) documentation instead.
 
 
 Check the following sections for information on the [ERP API requirements](#erp-api-requirements) and on how to [install the B2B Orders app](#installing-the-b2b-orders-app) in your store.
