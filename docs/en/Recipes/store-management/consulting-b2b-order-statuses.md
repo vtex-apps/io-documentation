@@ -41,7 +41,7 @@ By exposing the `POST` `api/v1/pedido/pesquisa` endpoint, it will be possible to
 | `revendaId` | integer | Resale ID number. |
 | `porCodigo` | string | Definition of order code or ID that can be used to filter the query. |
 | ↳ `codigo` | string | Order code, such as the order ID, the client ID or the ERP order ID. |
-| ↳ `tipo` | integer | Type of code that will be used in the query.<br><br>If you want to filter the query using PedidoId (web order number, which is the identification number of the order placed through the store’s website), the value should be `0`.<br><br>To filter the query using PedidoClienteId (identification number associated with the customer who made the purchase), the value should be `1`.<br><br>To filter the query using PedidoErpId (ERP order number), set the value to `2`. |
+| ↳ `tipo` | integer | Type of code that will be used in the query.<br><br>If you want to filter the query using PedidoId (web order number, which is the identification number of the order placed through the store’s website), the value should be `0`.<br><br>To filter the query using PedidoClienteId (identification number associated with the customer who made the purchase), the value should be `1`.<br><br>To filter the query using `PedidoErpId` (ERP order number), set the value to `2`. |
 | `porPeriodo` | object | Definition of dates to filter the query. |
 | ↳ `dataInicial` | string | Start date of the query. |
 | ↳ `dataFim` | string | End date of the query. |
