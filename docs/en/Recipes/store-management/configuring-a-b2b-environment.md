@@ -9,11 +9,13 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Configuring a B2B environment
 
-B2B (Business to Business) is an abbreviation used in e-commerce in reference to **commercial transactions between companies**.
+B2B (Business to Business) is an abbreviation used in ecommerce in reference to commercial transactions between companies.
 
-In other words, B2B stores only sell their products to other stores. Because of that, their environments require **user authentication**, since these are usually blocked, completely or partially, for anonymous users.
+In other words, B2B stores only sell their products to other businesses. Because of that, their environments require **user authentication**, since these are usually blocked, completely or partially, for anonymous users.
 
-It is quick and easy to provide a B2B environment for your IO store. Follow the step by step below and learn how to make your store's content available only to users of other customer stores.
+Follow the step by step below and learn how to make your store's content available only to users of other customer stores.
+
+> ⚠️ If you are using the [B2B Suite](https://developers.vtex.com/vtex-developer-docs/docs/vtex-b2b-suite), keep in mind that none of the steps described in this article are compatible with that solution, since B2B Suite provides an alternative solution for access control on B2B stores by using [Storefront Permissions UI](https://developers.vtex.com/vtex-developer-docs/docs/vtex-storefront-permissions-ui). Following the instructions in this guide can cause issues with the B2B Suite implementation.
 
 ## Step by step
 
@@ -52,6 +54,4 @@ In other words, you will add a **field in the profile forms** of the users in qu
 5. In the customer's Data Entity, [create a user field](https://help.vtex.com/tutorial/how-can-i-create-field-in-master-data--frequentlyAskedQuestions_1829#dynamic-storage). According to the previous example, we could create a Boolean type `approved` field, with two possible options: `true` (logged in) and `false` (not logged in)
 6. [Add the newly created field](https://help.vtex.com/tutorial/how-can-i-create-field-in-master-data--frequentlyAskedQuestions_1829#dynamic-storage) to the forms of the target user in order to verify and grant access to these customers.
 
----
-
-There you go! After completing all the steps, your store is **ready** and **safe** to focus your sales to other companies!
+After completing all the steps, your store is ready to focus on selling to other businesses.
