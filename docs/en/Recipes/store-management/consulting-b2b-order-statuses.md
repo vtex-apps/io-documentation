@@ -282,7 +282,7 @@ By exposing the `GET` `api/v1/arquivospedido?pedidoErpId={pedidoErpId}&revendaId
 
 Follow the steps below to install the B2B Orders app.
 
-1. Using the terminal and the [Toolbelt](https://vtex.io/docs/recipes/development/vtex-io-cli-installation-and-command-reference/), [install](https://vtex.io/docs/recipes/store/installing-an-app/) the B2B Orders app in the desired workspace by running `vtex install vtex.omnichannel-order-status`.
+1. Using the terminal and the [Toolbelt](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-vtex-io-cli-installation-and-command-reference), [install](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-installing-an-app) the B2B Orders app in the desired workspace by running `vtex install vtex.omnichannel-order-status`.
 2. In your browser, access your account's admin as in `https://{workspace}--{account}.myvtex.com/admin`. ️Remember to replace `{workspace}` and `{account}` with the workspace and account you are using.
 3. Under **Account Settings**, go to **Apps **> **My apps**.
 4. Look for the **B2B Order** app.
