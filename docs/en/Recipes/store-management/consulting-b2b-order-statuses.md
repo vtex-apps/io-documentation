@@ -36,12 +36,15 @@ The possible requests and response formats for each of the ERP API's required en
 
 By exposing the `POST` `api/v1/pedido/pesquisa` endpoint, it will be possible to search for external orders by filling one of the following objects: `porPeriodo`, `porCodigo` or `porNotaFiscal`.
 
-| Attribute | Type | Description |
+
+#### Request format
+
+| **Attribute** | **Type** | **Description** |
 |---|---|---|
 | `revendaId` | integer | Resale ID number. |
 | `porCodigo` | string | Definition of order code or ID that can be used to filter the query. |
 | ↳ `codigo` | string | Order code, such as the order ID, the client ID or the ERP order ID. |
-| ↳ `tipo` | integer | Type of code that will be used in the query.<br><br>If you want to filter the query using PedidoId (web order number, which is the identification number of the order placed through the store’s website), the value should be `0`.<br><br>To filter the query using PedidoClienteId (identification number associated with the customer who made the purchase), the value should be `1`.<br><br>To filter the query using `PedidoErpId` (ERP order number), set the value to `2`. |
+| ↳ `tipo` | integer | Type of code that will be used in the query.<br><br>If you want to filter the query using `PedidoId` (web order number, which is the identification number of the order placed through the store’s website), the value should be `0`.<br><br>To filter the query using `PedidoClienteId` (identification number associated with the customer who made the purchase), the value should be `1`.<br><br>To filter the query using `PedidoErpId` (ERP order number), set the value to `2`. |
 | `porPeriodo` | object | Definition of dates to filter the query. |
 | ↳ `dataInicial` | string | Start date of the query. |
 | ↳ `dataFim` | string | End date of the query. |
@@ -49,40 +52,57 @@ By exposing the `POST` `api/v1/pedido/pesquisa` endpoint, it will be possible to
 | ↳ `notaFiscal` | string | Invoice number. |
 | ↳ `serieNotaFiscal` | string | Invoice serial number. |
 
-#### Request format
+#### Request body example
 
 ```json
 {
-  "revendaId": number,
+  "revendaId": 55,
   "porCodigo": {
-    "codigo": string,
-    "tipo": number (PedidoId: 0, PedidoClienteId: 1, PedidoErpId: 2)
+    "codigo": "1234",
+    "tipo": 1
   },
   "porPeriodo": {
-    "dataInicial": Date,
-    "dataFim": Date
+    "dataInicial": "2022-07-11T23:28:30Z",
+    "dataFim": "2022-10-11T23:28:30Z"
   },
   "porNotaFiscal": {
-    "notaFiscal": string,
-    "serieNotaFiscal": string
+    "notaFiscal": "987654321",
+    "serieNotaFiscal": "123"
   }
 }
 ```
 
 #### Response format
 
+| **Attribute** | **Type** | **Description** |
+|---|---|---|
+| `itens` | array of objects | Array of objects containing orders data. |
+| ↳ | object | Object containing order data. |
+|   ↳ `pedidoErpId` | string | ERP order number, which is the identification number of the order placed through the store ERP. |
+|   ↳ `pedidoClienteId` | string | Identification number associated with the customer who made the purchase. |
+|   ↳ `totalPedido` | number | Total value of the order. |
+|   ↳ `status` | integer | Order status. |
+|   ↳ `dataPedido` | string | Date of the order. |
+|   ↳ `observacao` | string | Additional order information. |
+|   ↳ `notaFiscal` | string | Invoice number. |
+|   ↳ `serieNotaFiscal` | string | Invoice serial number. |
+
+
+
+#### Response body example
+
 ```json
 {
   "itens": [
     {
-      "pedidoErpId": string,
-      "pedidoClienteId": string,
-      "totalPedido": number,
-      "status": number,
-      "dataPedido": Date,
-      "observacao": string,
-      "notaFiscal": string,
-      "serieNotaFiscal": string,
+      "pedidoErpId": "12345",
+      "pedidoClienteId": "10987",
+      "totalPedido": 456,
+      "status": 1,
+      "dataPedido": "2022-10-11T23:28:30Z",
+      "observacao": "",
+      "notaFiscal": "987654321",
+      "serieNotaFiscal": "123"
     }
   ]
 }
@@ -92,85 +112,120 @@ By exposing the `POST` `api/v1/pedido/pesquisa` endpoint, it will be possible to
 
 By exposing the GET `api/v1/pedido?pedidoErpId={pedidoErpId}&revendaId={revendaId}` endpoint, it will be possible to fetch the details of a specific order directly from the ERP.
 
+#### Request format
+
 | **Attribute** | **Type** | **Description** |
 |---|---|---|
 | `pedidoErpId` | string | ERP order number, which is the identification number of the order placed through the store ERP. |
 | `revendaId` | integer | Resale ID number. |
 
-#### Request format
+#### Request body example
 
 ```json
 {
-  pedidoErpId: string
-  revendaId: number
+  "pedidoErpId": "12345",
+  "revendaId": 2
 }
 ```
 
 #### Response format
 
+| **Attribute** | **Type** | **Description** |
+|---|---|---|
+| `pedidoErpId` | string | ERP order number, which is the identification number of the order placed through the store ERP. |
+| `status` | integer | Order status. |
+| `itens` | array of objects | Array of objects containing information about each item in the order. |
+| ↳ | object | Object containing information about an item. |
+|   ↳ `partNumber` | string |  |
+|   ↳ `descricaoDoProduto` | string | Product description. |
+|   ↳ `quantidade` | number | Item quantity. |
+|   ↳ `valorUnitario` | number | Price per item. |
+|   ↳ `valorTotal` | number | Total value. |
+|   ↳ `comissao` | number | Comission. |
+| `revendaId` | integer | Resale ID number. |
+| `clienteFinalId` | string | Customer's ID. |
+| `clienteFinalCnpj` | string | Customer's CNPJ number. |
+| `clienteFinalCpf` | string | Customer's CPF number. |
+| `valorFrete` | number | Freight value. |
+| `valorTotalPedido` | number | Total order value. |
+| `dataPedido` | string | Date of the order. |
+| `dataPrevisaoEntrega` | string | Delivery date. |
+| `observacao` | string | Additional information. |
+| `notaFiscal` | string | Invoice number. |
+| `serieNotaFiscal` | string | Invoice serial number. |
+| `linkTransportadora` | string | Carrier link. |
+| `formattedAddres` | string | Address. |
+| `zipcode` | string | ZIP code. |
+| `methodPayment` | string | Payment method used in the order. |
+| `corpname` | string | Corporate name. |
+| `corpemail` | string | Corporate email. |
+| `cityState` | string | City and state. |
+| `methodPaymentInfo` | string | Information about the payment method used in the order. |
+| `centrosDeDistribuicao` | array of objects | Array containing objects that represent each Distribution Center. |
+| ↳ | object | Object containing information per Distribution Center. |
+|   ↳ `distributionCenterPrefix` | string | Prefix of the Distribution Center. |
+|   ↳ `itens` | array of objects | Array containing objects with order items information. |
+|      ↳ | object | Object with order items information. |
+|         ↳ `partNumber` | string | |
+|         ↳ `descricaoDoProduto` | string | Product description. |
+|         ↳ `quantidade` | number |  Item quantity. |
+|         ↳ `valorUnitario` | number | Price per item. |
+|         ↳ `valorTotal` | number | Total value. |
+|         ↳ `comissao` | number | Comission. |
+|   ↳ `valorFrete` | number | Freight value. |
+|   ↳ `valorTotalCD` | number | Total delivery value including Distribution Center costs. |
+
+
+#### Response body example
+
 ```json
 {
-  "pedidoErpId": string,
+  "pedidoErpId": "12345",
   "status": 0,
   "itens": [
     {
-      "partNumber": string,
-      "descricaoDoProduto": string,
-      "quantidade": decimal number,
-      "valorUnitario": decimal number,
-      "valorTotal": decimal number,
-      "comissao": decimal number
+      "partNumber": "123",
+      "descricaoDoProduto": "Beautifully handmade laptop case/sleeve made in the Nepal Himalaya. It can be slipped inside your backpack or carried alone with space for all your work bits and pieces!",
+      "quantidade": 2.0,
+      "valorUnitario": 22.0,
+      "valorTotal": 44.0,
+      "comissao": 4.0
     }
   ],
   "revendaId": 2,
-  "clienteFinalId": string,
-  "clienteFinalCnpj": string,
-  "clienteFinalCpf": string,
-  "valorFrete": decimal number,
-  "valorTotalPedido": decimal number,
-  "dataPedido": Date,
-  "dataPrevisaoEntrega": Date,
-  "observacao": string,
-  "notaFiscal": string,
-  "serieNotaFiscal": string,
-  "linkTransportadora": string,
-  "formattedAddres": string,
-  "zipcode": string,
-  "methodPayment": string,
-  "corpname": string,
-  "corpemail": string,
-  "cityState": string,
-  "methodPaymentInfo": string,
+  "clienteFinalId": "109",
+  "clienteFinalCnpj": "55616766000197",
+  "clienteFinalCpf": "48654007028",
+  "valorFrete": 10.0,
+  "valorTotalPedido": 58.0,
+  "dataPedido": "2022-10-11T23:28:30Z",
+  "dataPrevisaoEntrega": "2022-10-11T23:28:30Z",
+  "observacao": "",
+  "notaFiscal": "987654321",
+  "serieNotaFiscal": "123",
+  "linkTransportadora": "https://www.google.com/",
+  "formattedAddres": "Quadra SHIN QI 4 Conjunto 3",
+  "zipcode": "71510230",
+  "methodPayment": "Credit Card",
+  "corpname": "Knowledge Inc.",
+  "corpemail": "qlrmrfuo@knowledgemd.com",
+  "cityState": "BrasiliaDF",
+  "methodPaymentInfo": "Credit Card",
   "centrosDeDistribuicao": [
     {
-      "distributionCenterPrefix": string,
+      "distributionCenterPrefix": "CD1",
       "itens": [
         {
-          "partNumber": string,
-          "descricaoDoProduto": string,
-          "quantidade": decimal number,
-          "valorUnitario": decimal number,
-          "valorTotal": decimal number,
-          "comissao": decimal number
+          "partNumber": "123",
+          "descricaoDoProduto": "Beautifully handmade laptop case/sleeve made in the Nepal Himalaya. It can be slipped inside your backpack or carried alone with space for all your work bits and pieces!",
+          "quantidade": 2.0,
+          "valorUnitario": 22.0,
+          "valorTotal": 44.0,
+          "comissao": 4.0
         }
       ],
-      "valorFrete": decimal number,
-      "valorTotalCD": decimal number
-    },
-    {
-      "distributionCenterPrefix": string,
-      "itens": [
-        {
-          "partNumber": string,
-          "descricaoDoProduto": string,
-          "quantidade": decimal number,
-          "valorUnitario": decimal number,
-          "valorTotal": decimal number,
-          "comissao": decimal number
-        }
-      ],
-      "valorFrete": decimal number,
-      "valorTotalCD": decimal number
+      "valorFrete": 10.0,
+      "valorTotalCD": 10.0
     }
   ]
 }
@@ -180,35 +235,44 @@ By exposing the GET `api/v1/pedido?pedidoErpId={pedidoErpId}&revendaId={revendaI
 
 By exposing the `GET` `api/v1/arquivospedido?pedidoErpId={pedidoErpId}&revendaId={revendaId}` endpoint, it will be possible to query the document files related to a given order by providing the related order number.
 
+#### Request format
+
 | **Attribute** | **Type** | **Description** |
 |---|---|---|
 | `pedidoErpId` | string | ERP order number, which is the identification number of the order placed through the store ERP. |
 | `revendaId` | integer | Resale ID number. |
 
-#### Request format
+#### Request body example
 
 ```json
 {
-  pedidoErpId: string
-  revendaId: number
+  "pedidoErpId": "12345",
+  "revendaId": 2
 }
 ```
 
 #### Response format
 
+| **Attribute** | **Type** | **Description** |
+|---|---|---|
+| `pedidoErpId` | string | ERP order number, which is the identification number of the order placed through the store ERP. |
+| `itens` | array of objects | Array of objects containing information about each document in the order. |
+| ↳ | object | Object containing information about a document. |
+|    ↳ `tipoArquivo` | integer | Type of document. SegundaViaBoleto: 0, SegundaViaTransferencia: 1, Xml: 2, Danfe: 3, NumeroDeSerie: 4, GARE: 5, GNRE: 6, Outros: 7. |
+|    ↳ `descricao` | string | Document description. |
+|    ↳ `url` | string | Document URL. |
+
+
+#### Response body example
+
 ```json
 {
-  "pedidoErpId": string,
+  "pedidoErpId": "12345",
   "itens": [
     {
-      "tipoArquivo": number (SegundaViaBoleto: 0, SegundaViaTransferencia: 1, Xml: 2, Danfe: 3, NumeroDeSerie: 4, GARE: 5, GNRE: 6, Outros: 7),
-      "descricao": string,
-      "url": string
-    },
-    {
-      "tipoArquivo": number,
-      "descricao": string,
-      "url": string
+      "tipoArquivo": 0,
+      "descricao": "Boleto",
+      "url": "https://www.google.com/"
     }
   ]
 }
