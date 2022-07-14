@@ -82,7 +82,7 @@ images
 
 Notice that you can use the `desktop` and `mobile` subfolders to store device-specific images. For example: `public/metadata/images/screenshots/mobile` and `public/metadata/images/screenshots/desktop`.
 
-### The `licenses` folder
+#### The `licenses` folder
 
 The `licenses` folder contains the terms and conditions of your app. Licenses are responsible for establishing the direct business relationship between the vendor and the retailer that installs the app.
 
