@@ -1,6 +1,7 @@
 #  Becoming a registered VTEX App Store developer
 
 The [**VTEX App Store**](https://apps.vtex.com/) is a marketplace for VTEX IO plug-and-play solutions. 
+
 As a developer, you can **share your own solutions** with other VTEX users in the [**VTEX App Store**](https://apps.vtex.com/) so they can also **leverage their business**. 
 
 For that, you must register as a VTEX App Store seller by taking the following steps:
