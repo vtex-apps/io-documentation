@@ -1,6 +1,6 @@
 ---
 title: Intelligent Search middleware
-description: "This guide will show you how to create a middleware for the Intelligent Search API. This way, you will be able to change the request that comes from the client"
+description: "This guide will show you how to create a middleware for the Intelligent Search API. This way, you will be able to change the request that comes from the client."
 date: "2022-07-18"
 tags: ["search", "intelligent", "middleware"]
 version: "0.x"
