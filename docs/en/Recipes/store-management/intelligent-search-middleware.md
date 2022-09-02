@@ -9,7 +9,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 # Intelligent Search middleware
 
-In some situations you may want to change the Intelligent Search API request that comes from the client. For example: "If the client searches for shoes, I want to promote the productId 123". This is possible with the Intelligent Search Middlewares.
+In some situations you may want to change the Intelligent Search API request that comes from the client. For example: "If the client searches for shoes, I want to promote the `productId` 123". This is possible with the Intelligent Search Middlewares.
 
 # Creating an IS (Intelligent Search) API middleware
 
