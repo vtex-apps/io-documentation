@@ -13,7 +13,7 @@ In some situations you may want to change the Intelligent Search API request tha
 
 # Creating an IS (Intelligent Search) API middleware
 
-To create an IS API middleware, you need to create a new VTEX IO app from the [`vtex.is-api-middleware-resolver`](https://github.com/vtex-apps/is-api-middleware-resolver) boilerplate and customize it to establish your own rules, according to the following steps:
+To create an Intelligent Search API middleware, you need to create a new VTEX IO app from the [`vtex.is-api-middleware-resolver`](https://github.com/vtex-apps/is-api-middleware-resolver) boilerplate and customize it to establish your own rules, according to the following steps:
 
 1. Clone the `vtex.is-api-middleware-resolver` app into your machine:
 
