@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- `Intelligent Search middleware` recipe.
+
 ## [0.88.7] - 2022-10-13
 
 ## [0.88.6] - 2022-08-31
