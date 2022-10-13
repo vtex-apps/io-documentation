@@ -103,4 +103,4 @@ query before(
 }
 ```
 
-7. From now on, every time a user searches for `shoes`, the Intelligent Search will promote the product `123`.
+From now on, every time a user searches for `shoes`, the Intelligent Search will promote the product `123`.
