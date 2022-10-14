@@ -1,3 +1,12 @@
+---
+title: Creating a Master Data CRUD app
+description: "Step by step guide on how to build a CRUD app using Master Data and VTEX IO."
+date: "2022-10-14"
+tags: ["master-data", "builder", "app-development"]
+version: "0.x"
+git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/development/creating-a-master-data-crud-app.md"
+---
+
 # Creating a Master Data CRUD app
 
 [Master Data](https://help.vtex.com/tutorial/master-data--4otjBnR27u4WUIciQsmkAw) is a powerful data base solution provided by VTEX to your store. You can use it in any VTEX IO app by connecting to the [Master Data API](https://developers.vtex.com/vtex-rest-api/reference/master-data-api-v2-overview), but this can become a repetitive task.
