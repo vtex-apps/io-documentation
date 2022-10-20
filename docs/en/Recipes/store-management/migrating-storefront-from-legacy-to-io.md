@@ -21,7 +21,6 @@ To develop and test your store, we recommend that you create at least one [devel
 
 Once you have created your workspaces, [open a support ticket](https://help.vtex.com/en/support) requesting the installation of the `vtex.edition-store@5.x` [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) in the workspaces created previously. Do not forget to include the names of the workspaces you wish to use in this process.
 
-To do that, [open a support ticket](https://help.vtex.com/en/support) asking for the edition change. Do not forget to include the names of the workspaces you wish to use in this process.
 
 You can check the Edition app installed in a workspace by running the following command: `vtex edition get`. Please refer to [Edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for further information.
 
