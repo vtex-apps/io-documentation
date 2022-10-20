@@ -23,7 +23,7 @@ Once you have created your workspaces, you must request the setting of the works
 
 To do that, [open a support ticket](https://help.vtex.com/en/support) asking for the edition change. Do not forget to include the names of the workspaces you wish to use in this process.
 
-You can confirm a given workspace’s edition by running the command `vtex edition get`. Learn more about [edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app).
+You can check the Edition app installed in a workspace by running the following command: `vtex edition get`. Please refer to [Edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for further information.
 
 > ⚠️
 >
