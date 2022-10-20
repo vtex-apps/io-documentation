@@ -2,7 +2,7 @@
 
 VTEX provides different storefront solutions for you to choose from, according to your operation’s needs: Legacy CMS Portal and Store Framework. Learn more about [VTEX CMS options](https://help.vtex.com/tracks/cms--2YcpgIljVaLVQYMzxQbc3z).
 
-If your store is already running with the Legacy CMS Portal, but you wish to use Store Framework features, it is possible to migrate it. In this guide, you will learn how to do this step by step.
+If your store runs with the Legacy CMS Portal, we strongly recommend migrating it to Store Framework. For implementation details, please refer to the following sections.
 
 ## Step by step
 
