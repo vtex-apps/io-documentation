@@ -29,7 +29,7 @@ You can confirm a given workspace’s edition by running the command `vtex editi
 >
 > Do not request the edition change for the master workspace of your store. This will make it so that your main domain displays a blank Store Framework template instead of your existing Legacy CMS Portal store.
 
-### Develop and test
+### Step 2 - Developing and testing your storefront
 
 At this point, it is up to your development team to plan and develop your store’s frontend experience. Check these guides to learn how to use VTEX IO to create amazing storefronts with [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework):
 - [CMS IO basic concepts](https://help.vtex.com/tracks/cms--2YcpgIljVaLVQYMzxQbc3z/4yB9wSl79cArd68aRBnBZ2)
