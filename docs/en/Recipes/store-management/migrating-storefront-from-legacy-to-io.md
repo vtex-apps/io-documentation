@@ -37,7 +37,7 @@ At this point, it is up to your development team to plan and develop your storeâ
 - [Storefront apps overview](https://developers.vtex.com/vtex-developer-docs/docs/store-framework-apps)
 - [Building a Store Framework theme](https://developers.vtex.com/vtex-developer-docs/docs/getting-started-3)
 
-### Go live
+### Step 3 - Going live
 
 Once you have developed and tested your new storefront and everything is ready in a production workspace, it is time to go live. This means seamlessly switching the storefront being displayed to shoppers at your storeâ€™s domain. Follow these steps to accomplish this task:
 
