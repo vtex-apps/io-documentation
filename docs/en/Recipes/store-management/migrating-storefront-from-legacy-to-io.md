@@ -27,7 +27,7 @@ You can check the Edition app installed in a workspace by running the following 
 
 > ⚠️
 >
-> Do not request the edition change for the master workspace of your store. This will make it so that your main domain displays a blank Store Framework template instead of your existing Legacy CMS Portal store.
+> Do not request the Edition change for the master workspace of your store. This will make your main domain display a blank Store Framework template instead of your existing Legacy CMS Portal store.
 
 ### Step 2 - Developing and testing your storefront
 
