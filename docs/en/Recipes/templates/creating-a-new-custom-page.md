@@ -149,8 +149,6 @@ You can define your page content performing changes directly to your Store Theme
 
 ![custom-pages-siteeditor](https://user-images.githubusercontent.com/52087100/64428904-36cdcf80-d08b-11e9-8de4-06bf0a89b14f.png)
 
-Once there, feel free to change its content by customizing the page's component. For more on possible customization, access our [Template recipes](https://developers.vtex.com/vtex-developer-docs/docs/concepts-1).
-
 ### Making your theme content publicly available
 
 If you are happy with the changes to your store theme, make your new theme content public. Up until this point, the changes were performed in your development workspace. Access our documentation on [**making your theme content publicly available**](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-making-your-theme-content-public/) and follow the steps detailed there. 
