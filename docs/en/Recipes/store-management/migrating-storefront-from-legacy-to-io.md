@@ -11,11 +11,11 @@ If your store runs with the Legacy CMS Portal, we strongly recommend migrating i
 ## Step by step
 
 To migrate your store from Legacy CMS Portal to [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), follow these steps:
-1. [Setup workspaces](#setup-workspaces)
-2. [Develop and test](#develop-and-test)
-3. [Go live](#go-live)
+1. [Setup workspaces](#step-1-setup-workspaces)
+2. [Develop and test](#step-2-develop-and-test)
+3. [Go live](#step-3-go-live)
 
-### Setup workspaces
+### Step 1 - Setup workspaces
 
 [Workspaces](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) are environments isolated from one another. They can be understood as different versions of the same VTEX account.
 
