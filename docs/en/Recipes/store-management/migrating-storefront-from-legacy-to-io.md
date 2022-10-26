@@ -11,9 +11,9 @@ If your store runs with the Legacy CMS Portal, we strongly recommend migrating i
 ## Step by step
 
 To migrate your store from Legacy CMS Portal to [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), follow these steps:
-1. [Setup workspaces](#step-1-setup-workspaces)
-2. [Develop and test](#step-2-develop-and-test)
-3. [Go live](#step-3-go-live)
+1. [Setup workspaces](#step-1---setup-workspaces)
+2. [Develop and test](#step-2---developing-and-testing-your-storefront)
+3. [Go live](#step-3---going-live)
 
 ### Step 1 - Setup workspaces
 
@@ -23,9 +23,7 @@ To develop and test your store, we recommend that you create at least one [devel
 
 > ⚠️
 >
-> Do not use subaccounts instead of [workspaces](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace). Doing this will cause this issues:
->- Losing all Master Data information, including client profiles, for instance.
->- Changes taking long to be displayed on the storefront due to cache unpredictability. This may even cause store down time when going live with the new storefront.
+> Do not use subaccounts instead of [workspaces](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace). Doing this will cause this issues. The first is losing all Master Data information, including client profiles, for instance. Also, changes taking long to be displayed on the storefront due to cache unpredictability. This may even cause store down time when going live with the new storefront.
 
 #### Set workspace edition
 
