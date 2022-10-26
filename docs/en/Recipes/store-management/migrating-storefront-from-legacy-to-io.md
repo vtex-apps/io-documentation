@@ -23,7 +23,7 @@ To develop and test your store, we recommend that you create at least one [devel
 
 > ⚠️
 >
-> Do not use subaccounts instead of [workspaces](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace). Doing this will cause this issues. The first is losing all Master Data information, including client profiles, for instance. Also, changes taking long to be displayed on the storefront due to cache unpredictability. This may even cause store down time when going live with the new storefront.
+> Do not use subaccounts instead of [workspaces](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace). Doing this will cause two issues. The first is losing all Master Data information, including client profiles, for instance. Also, changes made to the project will take long to be displayed on the storefront due to cache unpredictability. This may even cause store down time when going live with the new storefront.
 
 #### Set workspace edition
 
