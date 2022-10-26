@@ -49,8 +49,8 @@ At this point, it is up to your development team to plan and develop your store�
 Once you have developed and tested your new storefront and everything is ready in a production workspace, it is time to go live. This means seamlessly switching the storefront being displayed to shoppers at your store’s domain. Follow these steps to accomplish this task:
 
 1. Promote the production workspace that is running your new storefront to master. Learn more about how to [promote a workspace to master](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-promoting-a-workspace-to-master).
-2. Request VTEX internal DNS pointing change for Store Framework via [support ticket](https://help.vtex.com/en/support). Use the ticket to schedule the change at least three business days in advance during business hours.
+2. Request VTEX internal DNS pointing change for Store Framework via [support ticket](https://help.vtex.com/en/support). Use the ticket to schedule the change according to the information below. This last step will cause your new storefront to go live.
 
 > ⚠️
 >
-> Request VTEX internal DNS pointing change only after you have promoted your production workspace to master.
+> Request VTEX internal DNS pointing change only after you have promoted your production workspace to master. Do this at least three business days prior to your desired Go live date. Indicate a time from 9 to 17 BRT (UTC-3) for the change to happen.
