@@ -85,12 +85,10 @@ In addition to that, the schema will also be responsible for saving all user dat
       "title": "User notification",
       "description": "Date when the user was notified regarding the product availability. e.g.: ISO (2011-10-05T14:48:00.000Z)."
     }
-  }  
-  {
-    "v-security": {
-      "publicWrite": [ "publicForWrite" ],
-      "publicJsonSchema": true
-    }
+  },  
+  "v-security": {
+    "publicWrite": [ "publicForWrite" ],
+    "publicJsonSchema": true
   }
 }
 ```
