@@ -23,8 +23,25 @@ We do not recommend launching a new VTEX store using [Legacy CMS Portal](https:/
 To go live with your VTEX store, built with [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), follow these steps:
 1. [Set account edition](#step-1---set-account-edition)
 2. [Register host](#step-2---register-host)
-3. [](#step-3---going-live)
+3. [Request internal DNS pointing](#step-3---request-internal-pointing)
+4. [Set up DNS pointing](#step-4---set-up-dns-pointing)
 
 > ⚠️
 >
 > Some of the steps below are time sensitive. Plan the complete go live process in advance taking that into consideration.
+
+### Setp 1 - Set account edition
+
+When developing with Store Framework, you must request the installation of the `vtex.edition-store@5.x` [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) to be able to test and go live. To do this [open a support ticket](https://help.vtex.com/en/support).
+
+> ℹ️
+>
+> Once you have installed the appropriate edition app in the master [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) of your account, other workspaces you create will be created with the same edition app.
+
+You can check the Edition app installed in a workspace by running the following command: `vtex edition get`. Please refer to [Edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for further information.
+
+### Step 2 - Register host
+
+### Step 3 - Request internal DNS pointing
+
+### Step 4 - Set up DNS pointing
