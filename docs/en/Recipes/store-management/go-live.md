@@ -24,7 +24,7 @@ To go live with your VTEX store, built with [Store Framework](https://developers
 1. [Set account edition](#step-1---set-account-edition)
 2. [Register host](#step-2---register-host)
 3. [Request internal DNS pointing](#step-3---request-internal-pointing)
-4. [Set up DNS pointing](#step-4---set-up-dns-pointing)
+4. [Set up regular DNS pointing](#step-4---set-up-dns-pointing)
 
 > ⚠️
 >
@@ -32,16 +32,30 @@ To go live with your VTEX store, built with [Store Framework](https://developers
 
 ### Setp 1 - Set account edition
 
-When developing with Store Framework, you must request the installation of the `vtex.edition-store@5.x` [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) to be able to test and go live. To do this [open a support ticket](https://help.vtex.com/en/support).
+When developing with Store Framework, you must request the installation of the `vtex.edition-store@5.x` [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) to be able to perform tests and go live. Make this request to the VTEX team via [support ticket](https://help.vtex.com/en/support).
 
 > ℹ️
 >
 > Once you have installed the appropriate edition app in the master [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) of your account, other workspaces you create will be created with the same edition app.
 
-You can check the Edition app installed in a workspace by running the following command: `vtex edition get`. Please refer to [Edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for further information.
+You can check the Edition app installed in any given workspace by running the following command in your terminal: `vtex edition get`. Please refer to [Edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for further information.
 
 ### Step 2 - Register host
 
+Before Setting up DNS pointing register your domain as your store's host. Learn more about how to [configure your store's host](https://help.vtex.com/en/tutorial/configuring-domains-in-license-manager--tutorials_2450).
+
 ### Step 3 - Request internal DNS pointing
 
+Once you have registered your store's main domain as described above, you must request VTEX internal DNS pointing change for Store Framework via [support ticket](https://help.vtex.com/en/support).
+
+Use the ticket to schedule the change at least three days in advance of the intended go live date. Indicate a time from 9 to 17 BRT (UTC-3) for the change to happen.
+
+When you receive confirmation of the internal DNS pointing, you have five days to [set up regular DNS pointing](#step-4---set-up-dns-pointing). If you do not set up DNS pointing within this period your internal pointing will be automatically excluded and you will need to request it again as described above.
+
 ### Step 4 - Set up DNS pointing
+
+Within five days of the confirmation of [internal DNS pointing](#step-4---set-up-dns-pointing) you must set up regular DNS pointing. To do this, follow the steps in [Setting up DNS pointing to VTEX](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex--tutorials_4280).
+
+> ℹ️
+>
+> DNS pointing propagation takes 24-48 hours to occur completely, which means that the configured address may not be accessible to all people right after configuration. 
