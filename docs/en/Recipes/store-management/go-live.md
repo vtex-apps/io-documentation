@@ -21,8 +21,8 @@ We do not recommend launching a new VTEX store using [Legacy CMS Portal](https:/
 ## Step by step
 
 To go live with your VTEX store, built with [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), follow these steps:
-1. [](#step-1---setup-workspaces)
-2. [](#step-2---developing-and-testing-your-storefront)
+1. [Set account edition](#step-1---set-account-edition)
+2. [Register host](#step-2---register-host)
 3. [](#step-3---going-live)
 
 > ⚠️
