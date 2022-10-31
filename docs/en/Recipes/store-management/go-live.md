@@ -46,9 +46,12 @@ Before Setting up DNS pointing register your domain as your store's host. Learn 
 
 ### Step 3 - Request internal DNS pointing
 
-Once you have registered your store's main domain as described above, you must request VTEX internal DNS pointing change for Store Framework via [support ticket](https://help.vtex.com/en/support).
+Once you have registered your store's main domain as described above, you must request VTEX internal DNS pointing change for Store Framework via [support ticket](https://help.vtex.com/en/support). When opening your ticket keep in mind that you must:
 
-Use the ticket to schedule the change at least three days in advance of the intended go live date. Indicate a time from 9 to 17 BRT (UTC-3) for the change to happen.
+- Make it clear that you wish to Go live in the title of the ticket.
+- Indicate a time from 9 to 17 BRT (UTC-3) for the internal pointing change to happen.
+- Schedule the change at least three business days in advance.
+- Indicate whether or not your store has any [trade policy conditional rules](https://help.vtex.com/en/tutorial/criar-uma-politica-comercial--563tbcL0TYKEKeOY4IAgAE).
 
 When you receive confirmation of the internal DNS pointing, you have five days to [set up regular DNS pointing](#step-4---set-up-dns-pointing). If you do not set up DNS pointing within this period your internal pointing will be automatically excluded and you will need to request it again as described above.
 
