@@ -28,15 +28,15 @@ To go live with your VTEX store, built with [Store Framework](https://developers
 
 > ⚠️
 >
-> Some of the steps below are time sensitive. Plan the complete go live process in advance taking that into consideration.
+> Consider planning the entire go-live process at least two weeks in advance, as some of the steps below are time-sensitive.
 
 ### Step 1 - Setting the Edition app
 
-When developing with Store Framework, you must request the installation of the `vtex.edition-store@5.x` [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) to be able to perform tests and go live. Make this request to the VTEX team via [support ticket](https://help.vtex.com/en/support).
+Open a [support ticket](https://help.vtex.com/en/support) requesting the installation of the `vtex.edition-store@5.x` [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) in your `master` [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace).
 
 > ℹ️
 >
-> Once the Store Edition is installed in the master [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) of your account, all new workspaces you create will use this same Edition app.
+> Once the Store Edition is installed in the master [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) of your account, all new workspaces you create will use this same Edition app. Other workspaces that existed previously will remain with the [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) they already had.
 
 You can check the Edition app installed in any given workspace by running the following command in your terminal: `vtex edition get`. Please refer to [Edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for further information.
 
@@ -50,15 +50,14 @@ Once you have registered your store's main domain as described above, you must r
 
 - Make it clear that you wish to go live in the title of the ticket.
 - Indicate a time from 9 to 17 BRT (UTC-3) for the internal pointing change to happen.
-- Schedule the change at least three business days in advance.
 - Indicate whether or not your store has any [trade policy conditional rules](https://help.vtex.com/en/tutorial/criar-uma-politica-comercial--563tbcL0TYKEKeOY4IAgAE).
 
-Once you receive a successful reply from the support ticket, you have five days to [set up regular DNS pointing](#step-4---set-up-dns-pointing). Otherwise, your internal pointing will be automatically excluded and you will need to request it again, as described above.
+This process takes about three business days. Once you receive a successful reply from the support ticket, you have five days to [set up regular DNS pointing](#step-4---set-up-dns-pointing). Otherwise, your internal pointing will be automatically excluded and you will need to request it again, as described above.
 
 ### Step 4 - Setting up DNS pointing
 
 Within five days of the confirmation of [internal DNS pointing](#step-4---set-up-dns-pointing) you must set up regular DNS pointing. To do this, follow the steps in [Setting up DNS pointing to VTEX](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex--tutorials_4280).
 
-> ℹ️
+> ⚠️ 
 >
 > DNS pointing propagation takes 24-48 hours to occur completely, which means that the configured address may not be accessible to all people right after configuration. 
