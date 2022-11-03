@@ -55,7 +55,7 @@ Once you have registered your store's main domain as described above, you must r
 
 Once you receive a successful reply from the support ticket, you have five days to [set up regular DNS pointing](#step-4---set-up-dns-pointing). Otherwise, your internal pointing will be automatically excluded and you will need to request it again, as described above.
 
-### Step 4 - Set up DNS pointing
+### Step 4 - Setting up DNS pointing
 
 Within five days of the confirmation of [internal DNS pointing](#step-4---set-up-dns-pointing) you must set up regular DNS pointing. To do this, follow the steps in [Setting up DNS pointing to VTEX](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex--tutorials_4280).
 
