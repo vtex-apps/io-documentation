@@ -21,10 +21,10 @@ We do not recommend launching a new VTEX store using [Legacy CMS Portal](https:/
 ## Step by step
 
 To go live with your VTEX store, built with [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), follow these steps:
-1. [Set account edition](#step-1---set-account-edition)
-2. [Register host](#step-2---register-host)
-3. [Request internal DNS pointing](#step-3---request-internal-pointing)
-4. [Set up regular DNS pointing](#step-4---set-up-dns-pointing)
+1. [Set account edition](#step-1---setting-the-edition-app)
+2. [Register host](#step-2---registering-the-store's-domain)
+3. [Request internal DNS pointing](#step-3---requesting-internal-dns-pointing)
+4. [Set up regular DNS pointing](#step-4---setting-up-dns-pointing)
 
 > ⚠️
 >
@@ -52,11 +52,13 @@ Once you have registered your store's main domain as described above, you must r
 - Indicate a time from 9 to 17 BRT (UTC-3) for the internal pointing change to happen.
 - Indicate whether or not your store has any [trade policy conditional rules](https://help.vtex.com/en/tutorial/criar-uma-politica-comercial--563tbcL0TYKEKeOY4IAgAE).
 
-This process takes about three business days. Once you receive a successful reply from the support ticket, you have five days to [set up regular DNS pointing](#step-4---set-up-dns-pointing). Otherwise, your internal pointing will be automatically excluded and you will need to request it again, as described above.
+This process takes about three business days. Once you receive a successful reply from the support ticket, you have five days to [set up regular DNS pointing](#step-4---setting-up-dns-pointing).
 
 ### Step 4 - Setting up DNS pointing
 
-Within five days of the confirmation of [internal DNS pointing](#step-4---set-up-dns-pointing) you must set up regular DNS pointing. To do this, follow the steps in [Setting up DNS pointing to VTEX](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex--tutorials_4280).
+Within five days of the confirmation of [internal DNS pointing](#step-3---requesting-internal-dns-pointing) you must set up regular DNS pointing.  Otherwise, your internal pointing will be automatically excluded and you will need to request it again, as described above.
+
+To do this, follow the instructions in [Setting up DNS pointing to VTEX](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex--tutorials_4280).
 
 > ⚠️ 
 >
