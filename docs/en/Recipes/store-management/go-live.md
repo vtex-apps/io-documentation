@@ -44,7 +44,7 @@ You can check the Edition app installed in any given workspace by running the fo
 
 Before Setting up DNS pointing register your domain as your store's host. Learn more about how to [configure your store's host](https://help.vtex.com/en/tutorial/configuring-domains-in-license-manager--tutorials_2450).
 
-### Step 3 - Request internal DNS pointing
+### Step 3 - Requesting internal DNS pointing
 
 Once you have registered your store's main domain as described above, you must request VTEX internal DNS pointing change for Store Framework via [support ticket](https://help.vtex.com/en/support). When opening your ticket keep in mind that you must:
 
