@@ -1,22 +1,12 @@
-# Going live
+# Going live with a new store
 
 If you have already set up your store's [commerce features](https://help.vtex.com/tracks) and built the storefront using [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), it is time to go live.
 
 This article will guide you through the steps you must take to make your ecommerce available to online shoppers.
 
-## Go live scenarios
-
-When it comes to the VTEX ecosystem, there are a few different scenarios in which you may wish to launch a new store or storefront.
-
-If you are launching a new store built with Store Framework or migrating from another ecommerce platform, follow the [instructions below](#step-by-step).
-
-If you already have an active VTEX store running the [Legacy CMS Portal](https://help.vtex.com/en/tracks/cms--2YcpgIljVaLVQYMzxQbc3z/1oN446gRGcR2s70RvBCAmj) and wish to migrate your storefront to Store Framework, see the guide on [migrating from Legacy CMS Portal to Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-storefront-from-legacy-to-io).
-
-We do not recommend launching a new VTEX store using [Legacy CMS Portal](https://help.vtex.com/en/tracks/cms--2YcpgIljVaLVQYMzxQbc3z/1oN446gRGcR2s70RvBCAmj). However, if that is your case, see this article on [setting up DNS pointing](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex). Consider [migrating to Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-storefront-from-legacy-to-io).
-
 > ℹ️
 >
-> Learn more about [VTEX CMS options](https://help.vtex.com/tracks/cms--2YcpgIljVaLVQYMzxQbc3z).
+> The steps below also apply if you are migrating your store from another ecommerce platform.
 
 ## Step by step
 
@@ -42,11 +32,15 @@ You can check the Edition app installed in any given workspace by running the fo
 
 ### Step 2 - Registering the store's domain
 
-Before Setting up DNS pointing register your domain as your store's host. Learn more about how to [configure your store's host](https://help.vtex.com/en/tutorial/configuring-domains-in-license-manager--tutorials_2450).
+To launch your store, you must own a [domain name](https://en.wikipedia.org/wiki/Domain_name). If you have not already, you can buy one from a domain provider.
+
+[Configure your domain as your store's host](https://help.vtex.com/en/tutorial/configuring-domains-in-license-manager--tutorials_2450) as presented in this guide to make sure that shoppers will be directed to your new VTEX store.
 
 ### Step 3 - Requesting internal DNS pointing
 
-Once you have registered your store's main domain as described above, you must request VTEX internal DNS pointing change for Store Framework via [support ticket](https://help.vtex.com/en/support). When opening your ticket keep in mind that you must:
+VTEX provides different [storefront solutions](https://help.vtex.com/tracks/cms--2YcpgIljVaLVQYMzxQbc3z). This step ensures that the domain you [registered as your VTEX host](#step-2---registering-the-store's-domain) points users to the storefront built with Store Framework.
+
+Request VTEX internal DNS pointing change for Store Framework via [support ticket](https://help.vtex.com/en/support). When opening your ticket keep in mind that you must:
 
 - Make it clear that you wish to go live in the title of the ticket.
 - Indicate a time from 9 to 17 BRT (UTC-3) for the internal pointing change to happen.
@@ -57,6 +51,8 @@ This process takes about three business days. Once you receive a successful repl
 ### Step 4 - Setting up DNS pointing
 
 Within five days of the confirmation of [internal DNS pointing](#step-3---requesting-internal-dns-pointing) you must set up regular DNS pointing.  Otherwise, your internal pointing will be automatically excluded and you will need to request it again, as described above.
+
+Unlike the previous step, regular DNS pointing must be set up by you and guarantees that your domain points to VTEX so that the platform can deliver your storefront to shoppers.
 
 To do this, follow the instructions in [Setting up DNS pointing to VTEX](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex--tutorials_4280).
 
