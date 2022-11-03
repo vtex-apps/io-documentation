@@ -1,4 +1,4 @@
-# Going live with Store Framework
+# Going live
 
 If you have already set up your store's [commerce features](https://help.vtex.com/tracks) and built the storefront using [Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-what-is-vtex-store-framework), it is time to go live.
 
