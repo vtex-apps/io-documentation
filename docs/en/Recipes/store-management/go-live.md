@@ -30,7 +30,7 @@ To go live with your VTEX store, built with [Store Framework](https://developers
 >
 > Some of the steps below are time sensitive. Plan the complete go live process in advance taking that into consideration.
 
-### Setp 1 - Set account edition
+### Step 1 - Setting the Edition app
 
 When developing with Store Framework, you must request the installation of the `vtex.edition-store@5.x` [Edition app](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) to be able to perform tests and go live. Make this request to the VTEX team via [support ticket](https://help.vtex.com/en/support).
 
