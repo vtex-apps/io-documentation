@@ -10,7 +10,14 @@ When it comes to the VTEX ecosystem, there are a few different scenarios in whic
 
 Click the links below to see specific instructions corresponding to the scenario.
 
+> ℹ️
+>
+> Note that migrating from another ecommerce platform counts as a new store for the scenarios below.
+
 - [New store built with Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-go-live)
-- [Migrating from another ecommerce platform using Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-go-live)
 - [Migrating from Legacy CMS Portal to Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-storefront-from-legacy-to-io)
-- [Launching new store with Legacy CMS Portal](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex)
+- [New store built with Legacy CMS Portal](https://help.vtex.com/en/tutorial/configuring-dns-pointing-to-vtex)
+
+> ⚠️
+>
+> If your store runs with the Legacy CMS Portal, we strongly recommend migrating it to Store Framework.
