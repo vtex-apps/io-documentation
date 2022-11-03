@@ -40,7 +40,7 @@ When developing with Store Framework, you must request the installation of the `
 
 You can check the Edition app installed in any given workspace by running the following command in your terminal: `vtex edition get`. Please refer to [Edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for further information.
 
-### Step 2 - Register host
+### Step 2 - Registering the store's domain
 
 Before Setting up DNS pointing register your domain as your store's host. Learn more about how to [configure your store's host](https://help.vtex.com/en/tutorial/configuring-domains-in-license-manager--tutorials_2450).
 
