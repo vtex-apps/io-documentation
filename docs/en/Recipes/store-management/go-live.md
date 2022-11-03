@@ -53,7 +53,7 @@ Once you have registered your store's main domain as described above, you must r
 - Schedule the change at least three business days in advance.
 - Indicate whether or not your store has any [trade policy conditional rules](https://help.vtex.com/en/tutorial/criar-uma-politica-comercial--563tbcL0TYKEKeOY4IAgAE).
 
-When you receive confirmation of the internal DNS pointing, you have five days to [set up regular DNS pointing](#step-4---set-up-dns-pointing). If you do not set up DNS pointing within this period your internal pointing will be automatically excluded and you will need to request it again as described above.
+Once you receive a successful reply from the support ticket, you have five days to [set up regular DNS pointing](#step-4---set-up-dns-pointing). Otherwise, your internal pointing will be automatically excluded and you will need to request it again, as described above.
 
 ### Step 4 - Set up DNS pointing
 
