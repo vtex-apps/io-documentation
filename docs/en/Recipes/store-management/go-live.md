@@ -8,7 +8,7 @@ This article will guide you through the steps you must take to make your ecommer
 
 When it comes to the VTEX ecosystem, there are a few different scenarios in which you may wish to launch a new store or storefront.
 
-If you are Launching a new store built with Store Framework or migrating from another ecommerce platform, follow the [instructions below](#step-by-step).
+If you are launching a new store built with Store Framework or migrating from another ecommerce platform, follow the [instructions below](#step-by-step).
 
 If you already have an active VTEX store running the [Legacy CMS Portal](https://help.vtex.com/en/tracks/cms--2YcpgIljVaLVQYMzxQbc3z/1oN446gRGcR2s70RvBCAmj) and wish to migrate your storefront to Store Framework, see the guide on [migrating from Legacy CMS Portal to Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-migrating-storefront-from-legacy-to-io).
 
