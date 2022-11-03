@@ -36,7 +36,7 @@ When developing with Store Framework, you must request the installation of the `
 
 > ℹ️
 >
-> Once you have installed the appropriate edition app in the master [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) of your account, other workspaces you create will be created with the same edition app.
+> Once the Store Edition is installed in the master [workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) of your account, all new workspaces you create will use this same Edition app.
 
 You can check the Edition app installed in any given workspace by running the following command in your terminal: `vtex edition get`. Please refer to [Edition apps](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-edition-app) for further information.
 
