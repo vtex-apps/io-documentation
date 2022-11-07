@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "io-documentation",
-  "version": "0.88.17",
+  "version": "0.88.18",
   "title": "VTEX IO Documentation",
   "description": "VTEX IO Documentation",
   "builders": {
