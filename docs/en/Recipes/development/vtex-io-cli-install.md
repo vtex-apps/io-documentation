@@ -136,6 +136,18 @@ Since VTEX IO's CLI is built with [Node.js](https://nodejs.org/en/), you can man
   yarn global add vtex
   ```
 
+To ensure you won't have issues with the installation, you need to run the following command as an admin on your machine.
+
+  ```sh
+  vtex
+  ```
+  
+  To which will appear the following message.
+
+  ![](https://user-images.githubusercontent.com/32786712/205149759-4b6207c9-b497-4e39-82ff-e1358e72699f.png)
+
+  For the next step, you won't need to be in your admin role.
+
 <br>
 </details>
  
