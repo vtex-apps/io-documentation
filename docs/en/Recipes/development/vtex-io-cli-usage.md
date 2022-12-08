@@ -133,7 +133,7 @@ Installed apps are classified as in the following:
 
 ## Authenticating API requests
 
-You can also use the VTEX IO CLI to generate a unique and temporary [user token](https://developers.vtex.com/vtex-rest-api/docs/getting-started-authentication#user-token), which can be useful when running tests with VTEX APIs.
+You can use the VTEX IO CLI to generate a unique and temporary [user token](https://developers.vtex.com/vtex-rest-api/docs/getting-started-authentication#user-token), which can be useful when running tests with VTEX APIs.
 
 To do this, run the following command:
 
