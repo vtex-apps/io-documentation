@@ -133,15 +133,19 @@ Installed apps are classified as in the following:
 
 ## Authenticating API requests
 
-When developing with VTEX IO, instead of using an `appKey` and `appToken` pair, you must use a `VTEX ID token` to call APIs.
+You can also use the VTEX IO CLI to generate a unique and temporary [user token](https://developers.vtex.com/vtex-rest-api/docs/getting-started-authentication#user-token), which can be useful when running tests with VTEX APIs.
 
-To generate a unique and temporary token for VTEX IO, run the following command:
+To do this, run the following command:
 
 ```shell
 $ vtex local token
 ```
 
-The token will be automatically copied to the clipboard.
+The token will be automatically copied to the clipboard and can authenticate requests for 24h. Learn more about [user tokens](https://developers.vtex.com/vtex-rest-api/docs/getting-started-authentication#user-token).
+
+> ⚠️
+>
+> The authentication of VTEX IO apps operations does not require this token. If you are developing VTEX IO apps, see the guide [App authentication](https://developers.vtex.com/vtex-rest-api/docs/getting-started-authentication#app-authentication).
 
 ## Learning more about a command
 
