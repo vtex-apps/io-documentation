@@ -62,6 +62,18 @@ According to your operating system, take the respective steps to install VTEX IO
   
 1. Download the appropriate installer for your Windows system ([64-bit installer](https://vtex.io/vtexcli/install/win-x64); [32-bit installer](https://vtex.io/vtexcli/install/win-x32)).
 2. Open the downloaded file and follow the instructions to finish the installation process.
+3. Run the Windows Terminal with elevated administrator permission by right-clicking on the Windows Terminal icon and selecting "Run as administrator."
+4. Run the following command to complete the installation.
+
+```sh
+vtex
+```
+
+ To which will appear the following message.
+
+  ![](https://user-images.githubusercontent.com/32786712/205149759-4b6207c9-b497-4e39-82ff-e1358e72699f.png)
+
+  For the next step, you won't need to be in your admin role.
 
 <br>
 </details>
@@ -129,12 +141,23 @@ Since VTEX IO's CLI is built with [Node.js](https://nodejs.org/en/), you can man
 
   1. Download and install [**Node.js**](https://nodejs.org/pt-br/download/).
   2. Download and install [**Yarn**](https://classic.yarnpkg.com/en/docs/getting-started).
-  3. Open the terminal.
+  3. Run the Windows Terminal with elevated administrator permission by right-clicking on the Windows Terminal icon and selecting "Run as administrator.
   4. Install the **VTEX IO CLI** by running the following command.
 
   ```sh
   yarn global add vtex
   ```
+  5. Run the following command to complete the installation.
+
+  ```sh
+  vtex
+  ```
+  
+  To which will appear the following message.
+
+  ![](https://user-images.githubusercontent.com/32786712/205149759-4b6207c9-b497-4e39-82ff-e1358e72699f.png)
+
+  For the next step, you won't need to be in your admin role.
 
 <br>
 </details>
