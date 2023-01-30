@@ -11,7 +11,7 @@ git: "https://github.com/vtex-apps/io-documentation/blob/master/docs/en/Recipes/
 
 For development, an app can be linked to a **development workspace** so that any local code change can be automatically synced and made available in that corresponding workspace.
 
->⚠️ Linking an app to a [production workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) is not possible.
+> ⚠️ Linking an app to a [production workspace](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-workspace) is not possible.
 
 ## Step by step
 
