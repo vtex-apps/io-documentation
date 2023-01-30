@@ -36,13 +36,13 @@ Follow the steps below to register as a new seller on VTEX App Store:
 
 1. Logged into the VTEX account in which you are working, run `vtex install vtex.app-store-seller@0.x` in your terminal.
 2. Access the admin of the VTEX account in which you're working. 
-3. In `Other`, access `Seller setup` and fill out the required fields.
+3. In `Installed apps`, access `Seller setup` and fill out the required fields.
 4. Select the sales channel you intend to use to connect to the App Store.
 5. Choose an affiliate ID, made up of 3 consonants:
 
-![submitting-seller-1](https://user-images.githubusercontent.com/52087100/92964918-48d71080-f44b-11ea-8929-b744915e3fb0.png)
+![submitting-seller-1](https://user-images.githubusercontent.com/32786712/208499110-132be032-3ef2-42e1-a19b-f502e12ed4f3.png)
 
-![submitting-seller-2](https://user-images.githubusercontent.com/52087100/92964922-4a083d80-f44b-11ea-886d-39eac7a3cee0.png)
+![submitting-seller-2](https://user-images.githubusercontent.com/32786712/208499227-ee8866eb-9a4e-428c-b976-2a663effeed1.png)
 
 After submitting the request to be a seller, you can check its `status` until our team approves it. This approval is required in order to complete the next steps and be able to successfully publish your app in the VTEX App Store.
 
