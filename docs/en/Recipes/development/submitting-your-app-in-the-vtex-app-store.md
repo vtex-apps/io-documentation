@@ -17,7 +17,9 @@ To share your solutions in the VTEX App Store, you must follow our homologation 
 
 ## Before you start
 
-Before submitting your app to the VTEX App Store, you must be a registered VTEX App Store developer. For more information, check [this guide.](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-becoming-a-registered-vtex-app-store-developer)
+Before submitting your app to the VTEX App Store, you must be a registered VTEX App Store developer. For more information, check [this guide](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-becoming-a-registered-vtex-app-store-developer) and follow the necessary steps.
+
+You should also have already [set your app's billing model](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-setting-your-apps-billing-model) and [prepared it for distribution](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-preparing-your-app-distribution). 
 
 ##  Step by step
 
